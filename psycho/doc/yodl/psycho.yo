@@ -22,11 +22,13 @@ latexpackage()(epsf)
 htmlbodyopt(text)(black)
 htmlbodyopt(bgcolor)(white)
 
+includefile(version)
+
 C(include(abstract))
 
 affiliation(Center of Information Technology, University of Groningen)
 
-report(The `Psycho' project)(Frank B. Brokken)(March 2018)
+report(The `Psycho' project (V. VERSION))(Frank B. Brokken)(March 2018)
 
 chapter(General Outline)
 includefile(general/outline)
@@ -44,4 +46,5 @@ includefile(data/files)
     sect(data matrix organization)
     includefile(data/ratings)
 
-
+    sect(the complete `changelog' file)
+    verbinclude(../../changelog)

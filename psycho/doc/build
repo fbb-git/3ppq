@@ -1,6 +1,10 @@
 #!/bin/bash
 
+echo "SUBST(VERSION)(`sed 's/.*"\(.*\)".*/\1/' ../VERSION | head -n1`)" > yodl/version.yo
+
 cd html
 yodl2html ../yodl/psycho -o psycho.html
-ln -sf psycho.html index.html
+
+rm -f ../yodl/version.yo
+
 

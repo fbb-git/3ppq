@@ -1,0 +1,7 @@
+psycho (0.00.00)
+
+  * Initial installation of 'psycho': gnuplot/ containing gnuplot demo and
+    configuration, setup/ containing the libreoffice-impress setup.odp
+    document. 
+
+ -- Frank B. Brokken <f.b.brokken@rug.nl>  Mon, 12 Mar 2018 09:25:15 +0100

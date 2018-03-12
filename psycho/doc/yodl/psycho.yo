@@ -1,0 +1,47 @@
+
+COMMENT(  Starts a report. The top-level sectioning command  is chapter. )
+
+mailto(f.b.brokken@rug.nl)
+
+DEFINEMACRO(C)(1)(COMMENT(ARG1))
+
+DEFINEMACRO(itt)(1)(it() tt(ARG1))
+DEFINEMACRO(centt)(1)(center(tt(ARG1)))
+
+AfourEnlarged()
+
+COMMENT(
+latexpackage(dutch)(babel)
+setlanguage(dutch)
+latexoptions(dutch)
+END)
+
+latexoptions(11pt)
+latexpackage()(epsf)
+
+htmlbodyopt(text)(black)
+htmlbodyopt(bgcolor)(white)
+
+C(include(abstract))
+
+affiliation(Center of Information Technology, University of Groningen)
+
+report(The `Psycho' project)(Frank B. Brokken)(March 2018)
+
+chapter(General Outline)
+includefile(general/outline)
+
+lchapter(email)(The e-mail interface)
+includefile(email/interface)
+
+    lsect(pscript)(The psychoscript handling received e-mail)
+    includefile(email/psychoscript)
+
+
+lchapter(datafiles)(Overview of used data files)
+includefile(data/files)
+
+    sect(data matrix organization)
+    includefile(data/ratings)
+
+

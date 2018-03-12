@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd html
+yodl2html ../yodl/psycho -o psycho.html
+ln -sf psycho.html index.html
+

@@ -1,0 +1,13 @@
+Rating data are collected in the file tt(data/ratings). This file holds
+comma-separated data of N clients by k date elements. The first line contains
+the column labels, and is also comma-separated. The matrix is sorted by the
+values in the first column (the ID-field). The labels are:
+    itemization(
+    itt(ID): the randomly assigned client-ID. Association between ID and
+        client is stored in the file tt(etc/clients).
+    itt(s1..sx): self-ratings on items 1 through x;
+    itt(m1..mx): meta-ratings on items 1 through x;
+    itt(a1..ax): client ratings on items 1 through x provided by assessor a;
+    itt(b1..bx): client ratings on items 1 through x provided by assessor b;
+    itt(c1..cx): client ratings on items 1 through x provided by assessor c.
+    )

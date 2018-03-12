@@ -1,0 +1,4 @@
+#!/bin/bash
+
+scp html/psycho*.html oosix:/var/www/ssl_icce.rug/psycho/
+# ssh oosix ln -sf psycho.html /var/www/ssl_icce.rug/psycho/index.html

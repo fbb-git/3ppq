@@ -1,0 +1,72 @@
+The e-mail interface consists of the following  elements:
+    itemization(
+    it() The e-mail handler (git repo file tt(bin/psychoscript))
+    it() The authorization file (git repo file
+        (tt(/var/lib/psycho/etc/psychologists)))
+    )
+
+The link(psychoscript)(pscript) file receives e-mail from the psychologists
+containing details about clients. Details must be sent in em(plain text,) so
+make sure that no default html format is selected.
+
+The em(subject) of the mail must contain a pre-agreed psychologist ID and the
+e-mail's envelope must contain the psychologist's e-mail address. The e-mail's
+body must contain these three lines (other lines are ignored):
+
+    verb(
+---BEGIN CLIENT---
+client details
+---END CLIENT---
+    )
+
+The client details contain the following comma-separated fields (subject to
+change):
+    itemization(
+    it() The name to use when addressing the client. Addressing the client
+occurs in an opening statement, like
+        verb(
+Dear name,
+        )
+    or in assessor texts, like
+        verb(
+name likes to attend parties
+        )
+    it() Gender indication: M for male, F for female (this is used to specify
+things like posessive pronouns, like em(his) or em(her));
+    it() The client's e-mail address;
+    it() The initial part of the login-code that must be supplied by the
+client. It is the responsibility of the psychologist to make sure this initial
+part is unique. If the psychologist errs, he/she receives a reply informing
+him/her that he/she made an error, requesting him/her to try again;
+    it() The addressing names of  three external assessors, as well as their
+e-mail addresses (so these are 6 comma-separated fields);
+    it() ... any additional elements, if considered necessary.
+)
+    
+The client is informed about the inital part of the login-code. When receiving
+the invitation e-mail the client receives an additional suffix, to be added to
+the provided login code. This way, assuming that the client verbally received
+the initial part of the login-code during a face-to-face contact with the
+psychologist the required login code cannot be intercepted: only the client
+receives the information allowing him/her to correctly login.
+
+E.g., if the psychologist tells the client that his/her login code starts with
+12, the client may then be informed in the received invitation e-mail that the
+value 101 must be added to the login code received from the psychologist. The
+client thereupon logs in at the psycho-webpage providing login code 12101.
+
+In addition, the client is requested to provide the initial login code to
+his/her assessors. Once the client has submitted his/her self-ratings the
+assessors receive an introductory e-mail requesting them to rate the client,
+and also receiving their individual login-suffix. There is a slight security
+hole here: the client might e-mail the assessors, informing them about the
+initial login code. In theory, this e-mail could be intercepted as well as the
+e-mail sent by the system to the client, thus providing third parties with the
+required details for accessing the system. Lacking stronger forms of security,
+I'm afraid we must accept this slight security hole.
+
+
+
+
+    
+

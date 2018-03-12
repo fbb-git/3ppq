@@ -1,0 +1,21 @@
+The software of the em(psycho) project is organized as follows:
+    itemization(
+    it() Chapter ref(email) describes the organization of the e-mail interface
+        used by the psychologists
+    it() Chapter ref(datafiles) describes the organization of the used data
+        files and programs.
+    )
+
+Currently:  updating this information;          nl()
+Next:       writing tt(bin/psychoscript).
+
+(See also the git project's tt(changelog) file). The git project can be cloned
+using 
+        verb(
+    git clone https://oosix.icce.rug.nl/var/lib/git/psycho.git
+        )
+This installs the files in the directory tt(./psycho). Thereafter, use
+        verb(
+    git pull
+        )
+    to receive the latest updates.

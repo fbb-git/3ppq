@@ -1,0 +1,32 @@
+The following files are used (WIP meaning: em(work in progress), i.e., I'll
+provide details in due time):
+    itemization(
+    itt(/var/lib/psycho): this is the assumed base directory for the following
+        files. Alternative locations are simply realized by changing the base
+        directory's name. The information in this directory is accessible only
+        to the system's tt(psycho) user (or whatever username is associated
+        with our system), and partially accessible to the system's web-server.
+    itt(etc/psychologists): the names, e-mail addresses, identification codes
+        of the involved psychologists;
+    itt(etc/clients): the details submitted by the psychologists about the
+        clients. To the received details a unique randomly selected client ID
+        is assigned which ID is then used in the client's section of the
+        tt(data/ratings) file (see below). The IDs are randomly generated, to
+        prevent time-based association of invitation e-mails and received
+        data.
+    itt(etc/input.gp): the gnuplot configuration file
+    itt(data/ratings): received ratings from clients and assessors, sorted by
+        IDs; 
+    itt(data/weights): weights used for computing factor scores;
+    itt(data/letters/): directory containing variants of letters (WIP) sent to
+        clients and assessors;
+    itt(data/items/): directory containing items (WIP) presented
+        to clients and assessors;
+    itt(bin/psychoscript): script handling incoming e-mail from the
+        psychologists;
+    itt(bin/results): program processing completed data and sending the
+        results to the involved psychologist;
+    itt(bin/login): program verifying clients/assessors login details;
+    itt(www/):  directory containing the system's web-pages (WIP).
+    )
+

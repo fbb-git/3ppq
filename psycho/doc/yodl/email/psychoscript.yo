@@ -1,0 +1,13 @@
+The tt(psychoscript) script is installed in the computer providing the
+web-interface, and is given access to the psycho data.
+
+itemization(
+    it() Using the data in tt(/var/lib/psycho/psychologists) it verifies
+        whether e-mail envelopes and subjects match. If not, the e-mail is
+        ignored.nl()
+        Note: we em(really) should aim for better authentication here, like
+        getting the psychologists to use PGP.
+    it() If OK, the details are added to the tt(etc/clients) (cf. chapter
+        ref(datafiles)), and an welcoming e-mail is sent to the client.
+    it() Option: send an acknowledgement to the psychologist?
+    )

@@ -1,0 +1,15 @@
+Installation assumes a debian (compatible) Linux system, running bf(sendmail).
+
+    itemization(
+    it() The user tt(psycho), group tt(psycho) must be defined;
+    it() bf(/etc/mail/aliases) must define an e-mail address. E.g.,
+        verb(
+    psycho:   "|sudo -u psycho /var/lib/psycho/bin/mailhandler"
+        )
+    it() To allow tt(mailhandler) to process incoming mail, the
+tt(/etc/sudoers.d/xxx) file must contain an entry like:
+        verb(
+    mail    ALL = (psycho)  NOPASSWD:   /var/lib/psycho/bin/mailhandler
+        )
+    )
+

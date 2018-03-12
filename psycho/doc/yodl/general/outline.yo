@@ -7,12 +7,12 @@ The software of the em(psycho) project is organized as follows:
     )
 
 Currently:  updating this information;          nl()
-Next:       writing tt(bin/psychoscript).
+Next:       writing tt(bin/mailhandler).
 
 (See also the git project's tt(changelog) file). The git project can be cloned
 using 
         verb(
-    git clone https://oosix.icce.rug.nl/var/lib/git/psycho.git
+    git clone https://www.icce.rug.nl/git/psycho.git
         )
 This installs the files in the directory tt(./psycho). Thereafter, use
         verb(

@@ -1,11 +1,11 @@
 The e-mail interface consists of the following  elements:
     itemization(
-    it() The e-mail handler (git repo file tt(bin/psychoscript))
+    it() The e-mail handler (git repo file tt(bin/mailhandler))
     it() The authorization file (git repo file
         (tt(/var/lib/psycho/etc/psychologists)))
     )
 
-The link(psychoscript)(pscript) file receives e-mail from the psychologists
+The link(mailhandler)(pscript) file receives e-mail from the psychologists
 containing details about clients. Details must be sent in em(plain text,) so
 make sure that no default html format is selected.
 

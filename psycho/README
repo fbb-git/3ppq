@@ -1,5 +1,7 @@
-gnuplot     -   demo configuration of gnuplot producing line-plots
-setup       -   initial libreoffice-impress .odp file containing the 
-                general project description
-doc         -   documentation in Yodl and html formats
-mail        -   mailhandler 
+gnuplot         -   demo configuration of gnuplot producing line-plots
+setup           -   initial libreoffice-impress .odp file containing the 
+                    general project description
+doc             -   documentation in Yodl and html formats
+psycho          -   files under the account's home directory
+psycho/bin      -   scripts and programs
+

@@ -22,7 +22,7 @@ provide details in due time):
         clients and assessors;
     itt(data/items/): directory containing items (WIP) presented
         to clients and assessors;
-    itt(bin/psychoscript): script handling incoming e-mail from the
+    itt(bin/mailhandler): script handling incoming e-mail from the
         psychologists;
     itt(bin/results): program processing completed data and sending the
         results to the involved psychologist;

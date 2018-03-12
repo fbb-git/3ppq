@@ -1,4 +1,4 @@
-The tt(psychoscript) script is installed in the computer providing the
+The tt(mailhandler) script is installed in the computer providing the
 web-interface, and is given access to the psycho data.
 
 itemization(

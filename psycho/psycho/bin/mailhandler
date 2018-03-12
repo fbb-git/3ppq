@@ -1,0 +1,102 @@
+#!/usr/bin/perl
+
+# Send mail to bison@oosix.icce.rug.nl with contents
+#   BISONC++ GRAMMAR
+#   the input file
+#   BISONC++ GRAMMAR
+# To receive a coverted grammar
+
+
+while ($line = <>)
+{
+    if ($line =~ /From:\s+(.*)\s*$/i)
+    {
+        $reply = $1;
+    }
+    if ($line =~ /Reply-to:\s+(.*)\s*$/i)
+    {
+        $reply = $1;
+    }
+
+    if ($line =~ /BISONC\+\+ GRAMMAR/)
+    {
+        last;
+    }
+}
+
+
+while ($line = <>)
+{
+    if ($line =~ /BISONC\+\+ GRAMMAR/)
+    {
+        last;
+    }
+    push(@grammar, $line);
+}
+
+$reply = "'" . $reply . "'";
+
+chdir "/tmp";
+mkdir "bisoncpp$$";
+mkdir "bisoncpp$$/parser";
+chdir "bisoncpp$$/parser";
+
+open(OUT, ">input") || die $!;          # create the input file
+
+print OUT @grammar;
+close(OUT);
+
+$boundary = "1yeeQ18UyV5L7V7l";
+
+$count = grep(/^%%\s*$/, @grammar);     # do we have the %% separator ?
+if ($count)
+{
+
+#    open(OUT, ">out");
+#    print OUT 
+#        "Service temporarily unavailable. Try again later ($count)\n";
+#    close(OUT);
+
+    `/usr/bin/bisonc++ -V input > bisonc++.msg 2>&1`;
+}
+else
+{
+    open(OUT, ">out");
+    print OUT 
+    "Your input lacks the %% separator between declarations and rules\n";
+    close(OUT);
+}
+
+exit 0 if ($reply =~ s/\@/\@/g) != 1;       # accept only one @
+exit 0 if ($reply =~ s/[`;\n\r]//g) > 0;    # accept no backtick, ; \n or \r
+
+chdir "..";
+
+`zip -r - parser | uuencode -m bisoncpp.zip | sed '
+s/^begin-base64.*//
+s/^====.*//
+' > bisoncpp.uu`;
+
+$first="--$boundary$$\n" .
+"Content-Type: text/plain; charset=us-ascii\n" .
+"Content-Disposition: inline\n" .
+"--$boundary\n" .
+"\n" .
+"The output of your bisonc++ run is in the attached zip archive\n" .
+"\n" .
+"--$boundary\n" .
+"Content-Type: application/zip\n" .
+"Content-Disposition: attachment; filename=\"bisoncpp.zip\"\n" .
+"Content-Transfer-Encoding: base64\n";
+
+`(echo "$first"; cat bisoncpp.uu; echo "--$boundary--") > mail.content`;
+    
+`/usr/bin/mail -a "Content-Type: multipart/mixed; boundary=$boundary" -a "Content-Disposition: inline" -s "Bisonc++ output" $reply < mail.content`;
+
+chdir "..";
+
+`rm -rf bisoncpp$$`;
+
+exit 0;
+
+

@@ -4,6 +4,8 @@ psycho (0.00.01)    (WIP)
 
   * The documentation now shows the current version.
 
+  * oosix defines the mail address psycho@icce.rug.nl, and the /var/lib/psycho
+    account. Incoming mail is properly received.
 
 
 psycho (0.00.00)

@@ -36,9 +36,11 @@ includefile(general/outline)
 lchapter(email)(The e-mail interface)
 includefile(email/interface)
 
-    lsect(pscript)(The psychoscript handling received e-mail)
-    includefile(email/psychoscript)
+    lsect(pscript)(The mailhandler handling received e-mail)
+    includefile(email/mailhandler)
 
+        subsect(Server installation)
+        includefile(email/installation)
 
 lchapter(datafiles)(Overview of used data files)
 includefile(data/files)

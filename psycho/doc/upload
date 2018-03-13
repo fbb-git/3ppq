@@ -1,5 +1,5 @@
 #!/bin/bash
 
-scp html/psycho*.html oosix:/var/www/ssl_icce.rug/psycho/
+scp html/psycho*.html oosix:/var/lib/psycho/www/
 rm -f html/*
 

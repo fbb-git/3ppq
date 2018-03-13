@@ -1,0 +1,343 @@
+/* classes */
+
+.nodisplay
+{
+    display: none;
+}
+
+.one-em
+{
+    height: 1em;
+    width: 1em;
+}
+
+.lastline
+{
+    font-size: 90%;
+    margin:0;
+    padding:0;
+    width:100%; 
+    background: #ffffbb;
+    height:1.5em;
+    display: flex;
+    align-items: center; /* align vertical */
+}
+
+.full               /* used to fillup the page (body) completely */
+{
+    margin:0;
+    padding:0;
+    height:100%;
+    font-family:            Arial, Helvetica, sans-serif;
+}
+
+.padded
+{
+    margin:0;
+    padding: 5px;
+    height:100%;
+    font-family:            Arial, Helvetica, sans-serif;
+}
+
+.background
+{
+    background-image: url(/iimages/oostummain.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.content            /* content section R side of page */
+{
+    float: left; 
+    width:75%;
+}
+
+.container          /* all info in the body up to the footer */
+{        
+    min-height: 85%;
+}
+
+.top-menu-markup
+{
+    background-color: #ffffbb;
+    height: 1.5em;
+}
+
+.spread             /* spread elements over the available width */
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0.25em 0;
+    display: flex;
+    justify-content: center
+}
+
+.li-linewise        /* items in a list next to each other, use with .spread */
+{
+    margin: 0 auto;
+    display: inline;
+}
+
+.large-size         /* images receiving a central position */
+{                   
+/*
+    display:block;
+*/
+    width:auto;
+    height:auto;
+    max-width:500px;
+    max-height:500px;
+}
+
+.restricted-size    /* images rescaled to a restricted size */
+{                   
+/*
+    display:block;
+*/
+    width:auto;
+    height:auto;
+    max-width:175px;
+    max-height:175px;
+}
+
+.centered-image
+{
+    display: block; 
+    margin-top:15px;
+    margin-bottom:15px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.right-side             /* put something to the right with some padding */
+{
+    padding-left: 1em; 
+    float: right;
+}
+
+.left-side             /* put something to the right with some padding */
+{
+    padding-right: 1em; 
+    float: left;
+}
+
+.behind-left-menu      /* grey background behind the left menu */ 
+{
+/*
+    position: fixed;
+    top: 0;
+    z-index: -2;
+
+    width: 8em; 
+    height: 100%;
+
+    padding-left: 0;
+    padding-bottom: 0;
+
+    margin: 2% 1.5em 0 0;
+
+    background: #f6f6f6;
+*/
+}
+
+.topwiper
+{
+/*
+    position: fixed;
+
+    width: 9em;
+    height: 20em;
+
+    padding-left: 0;
+    padding-bottom: 0;
+    margin: 2% 1.5em 0 0;
+    background: white;
+    z-index: -1;
+*/
+}
+
+.wiper                      /* wipes overflow of 'behind-left-menu */
+{
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+
+    padding-left: 0;
+    padding-bottom: 0;
+    margin: 2% 1.5em 0 0;
+    background: white; 
+    z-index: -1;
+}
+
+.left-menu
+{
+    float: left; 
+    text-align: right; 
+    width: 8em; 
+/*
+    height: 100%;
+    min-height: 30em;
+*/
+    padding: 1em 1em 1em 0;
+    margin: 2% 1em 0 0;
+    background-color: #f6f6f6;
+}
+
+.menu-title
+{
+    padding-right: 1em;
+    font-style:oblique;
+    font-size: large;
+}
+
+.title          /* top-title line of the page */
+{
+    padding:10px;
+    font-size: 300%;
+    font-style: oblique;
+    font-weight: bold;
+    height: 1.1em;
+    text-align: center;
+}
+
+.lower          /* information in a section below the top-menu */
+{
+    padding:10px;
+    padding-bottom:1.5em;   /* Height of the footer */
+    font-size: 90%;
+}
+
+.firstline                  /* the first line of the info, starts with a */
+{                           /* red letter */
+    font-size: large;
+}
+.firstline::first-letter
+{
+    color: red;
+    font-style:oblique;
+}
+
+.firstLetter::first-letter
+{
+    color: red;
+    font-style:oblique;
+    font-size: large;
+
+}
+
+/*
+*/
+
+.highlight
+{
+    color: red;
+    font-style:oblique;
+    font-size: large;
+}
+
+
+.note       /* small remark */
+{
+    font-size: small;
+    color: purple;
+}
+
+.calnow
+{
+    font-weight: bold;
+    min-width: 4em;
+}
+
+.calgrey
+{
+    font-weight: bold;
+    background-color: lightgrey;
+}
+
+.caltable tr:nth-child(1) 
+{
+    background-color: white;
+}
+
+.caltable tr:nth-child(even) 
+{
+    background-color: #eeffee;
+}
+
+.caltable tr:nth-child(odd) 
+{
+    background-color: #ddddff;
+}
+
+.light
+{
+    background-color: #eeffee;
+}
+
+.dark
+{
+    background-color: #ddddff;
+}
+
+.medium
+{
+    background-color: #deeeef;
+}
+
+.pubtable
+{
+    border: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.gentable, .gentd 
+{
+    margin-left:auto;
+    margin-right:auto;
+
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.gentd 
+{
+    padding: 15px;
+}
+
+.gentr
+{
+    vertical-align: top;
+}
+
+.leftmargin
+{
+    padding: 1px 0 1px 5px;
+}
+
+.rightmargin
+{
+    padding: 1px 5px 1px 0;
+    text-align: right;
+}
+
+/*
+    .calligraphic
+    {
+        font-size:250%;
+        text-align:center;
+        font-weight: bold;
+        //    font-style: oblique;
+    }
+*/
+
+/*
+    #firstLetter::first-letter
+    {
+        color: red;
+        font-style:oblique;
+        font-size: xx-large;
+    }
+*/
+

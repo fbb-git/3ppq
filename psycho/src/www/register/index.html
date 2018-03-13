@@ -1,0 +1,89 @@
+<!DOCTYPE html><html><head>
+<meta charset="UTF-8">
+<head>
+    <title>Psycho client registration page</title>
+    <link rel="stylesheet" href="psycho.css">
+</head>
+<body class="background">
+<!--        
+        background="/images/background.jpg" 
+        bgcolor="#e6d6c5" leftmargin="0" topmargin="0" 
+        marginheight="0" marginwidth="10">
+-->
+
+<h2 align=center>Psycho Project: client registratie</h2>
+
+Vul het formulier op deze pagina in, klik dan op <tt>Activeren</tt> 
+(onderaan) om de client-registratie te activeren.
+
+<form action="/psychocgi/register" method=post>
+
+<p>
+<div class="medium">
+&nbsp
+<br>
+<table class="spread" style="border-spacing: 4"> <!-- border=0 cellpadding=3 -->
+
+<tr class="light gentr" >
+    <td>Client:</td>
+    <td>naam: <input type=text maxlength=20 name=name size=20></td>
+    <td>&nbsp</td>
+    <td>email: <input type=text maxlength=30 name=name size=30></td>
+</tr>
+
+<tr class="dark gentr" >
+    <td>Geslacht:</td>
+    <td colspan=3> 
+        <input type=checkbox name=M value=M> man
+        &nbsp
+        <input type=checkbox name=F value=F> vrouw 
+    </td>
+</tr>
+
+<tr class="light gentr" >
+    <td>Client Login code:</td>
+    <td>
+        <input type=text name=login size=4 maxlength=8> </br>
+    </td>
+</tr>
+
+<tr class="dark gentr" >
+    <td>Assessor 1:</td>
+    <td>naam: <input type=text maxlength=20 name=name size=20></td>
+    <td>&nbsp</td>
+    <td>email: <input type=text maxlength=30 name=name size=30></td>
+</tr>
+
+<tr class="light gentr" >
+    <td>Assessor 2:</td>
+    <td>naam: <input type=text maxlength=20 name=name size=20></td>
+    <td>&nbsp</td>
+    <td>email: <input type=text maxlength=30 name=name size=30></td>
+</tr>
+
+<tr class="dark gentr" >
+    <td>Assessor 3:</td>
+    <td>naam: <input type=text maxlength=20 name=name size=20></td>
+    <td>&nbsp</td>
+    <td>email: <input type=text maxlength=30 name=name size=30></td>
+</tr>
+
+
+<!--
+assessor1 + e-mail address
+assessor2 + e-mail address
+assessor3 + e-mail address
+-->
+</table>
+<br>
+&nbsp
+</div>
+
+<p>
+    <input type=submit name=action value=Activeren>
+
+</form>
+</body>
+</html>
+
+

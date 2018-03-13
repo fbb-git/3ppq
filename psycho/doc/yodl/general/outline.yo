@@ -7,7 +7,8 @@ The software of the em(psycho) project is organized as follows:
     )
 
 Currently:  updating this information;          nl()
-Next:       writing tt(bin/mailhandler).
+Next:       writing client-registration web-page, activating that page nl()
+Suspended:  writing tt(bin/mailhandler).
 
 (See also the git project's tt(changelog) file). The git project can be cloned
 using 

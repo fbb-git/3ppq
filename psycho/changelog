@@ -7,6 +7,13 @@ psycho (0.00.01)    (WIP)
   * oosix defines the mail address psycho@icce.rug.nl, and the /var/lib/psycho
     account. Incoming mail is properly received.
 
+  * Web-pages are now at /var/lib/psycho/www, using symlinks from
+    /var/www/ssl_icce.rug. 
+
+  * Completed an initial demo version of a web-client registration form. It
+    does not yet perform actions.
+
+ -- Frank B. Brokken <f.b.brokken@rug.nl>  Tue, 13 Mar 2018 17:31:24 +0100
 
 psycho (0.00.00)
 

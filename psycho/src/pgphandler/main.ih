@@ -1,0 +1,6 @@
+#include <iostream>
+#include <string>
+
+std::string password();
+
+using namespace std;

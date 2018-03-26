@@ -1,6 +1,10 @@
 #include <iostream>
 #include <string>
 
+#include <bobcat/exception>
+#include <bobcat/process>
+
 std::string password();
 
 using namespace std;
+using namespace FBB;

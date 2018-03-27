@@ -1,0 +1,7 @@
+#include <bobcat/log>
+
+#include "formhandler/formhandler.h"
+
+using namespace FBB;
+
+extern Log g_log;

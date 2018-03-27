@@ -1,0 +1,20 @@
+#include "options.h"
+
+#include <limits.h>
+#include <stdlib.h>
+
+#include <sys/types.h>          // mkfifo, getuid
+#include <sys/stat.h>
+#include <fcntl.h>              // ::open
+
+#include <grp.h>                // getgrnam
+
+#include <unistd.h>             // unlink, chown, getuid
+
+#include <bobcat/stat>
+#include <bobcat/exception>
+#include <bobcat/arg>
+
+using namespace std;
+using namespace FBB;
+

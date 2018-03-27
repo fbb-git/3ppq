@@ -1,0 +1,20 @@
+Psychologists data base:
+
+psychologist.data
+
+Entries:
+
+    ID, lastClientID, Name, NIP, e-mail, pwdhash
+                      -----------------
+                        encrypted
+
+client.data (encrypted)
+                                                            (may be partially
+                                                             omitted)
+    ID, IDrater1, IDrater2, IDrater3, name, gender, e-mail, email-rater1 ..
+                                                                email-rater3
+
+
+Ratings:
+
+PsychID, ClientID, 42 scores

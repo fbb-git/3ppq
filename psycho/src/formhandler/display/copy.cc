@@ -9,7 +9,9 @@ void Display::copy()
 
         while (true)
         {
-            size_t pos = d_line.find("\\$");
+            size_t pos = d_line.find("\\$");    // \$ starts our eoln-comment:
+                                                // information from \$ to eoln
+                                                // is not shown
             if (pos == string::npos)
             {
                 cout << d_line << endl;

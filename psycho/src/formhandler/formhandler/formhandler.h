@@ -1,24 +1,24 @@
 #ifndef INCLUDED_FORMHANDLER_
 #define INCLUDED_FORMHANDLER_
 
-#include <condition_variable>
-
-#include <string>
-#include <fstream>
+// #include <condition_variable>
+// 
+// #include <string>
+// #include <fstream>
 
 #include <bobcat/cgi>
 
-#include "../../library/options/options.h"
+#include "../options/options.h"
 
 class FormHandler
 {
-//    enum Action
-//    {
-//        LOGIN,              // initial state.
+    enum Action
+    {
+        START,
 //        VERIFY_UNPW,        
 //        CMD,                
 //        LOGOUT,             
-//    };
+    };
 
     Options             d_options;
 
@@ -29,7 +29,7 @@ class FormHandler
 
     FBB::CGI            d_cgi;
 
-//    Action              d_state = LOGIN;
+    Action              d_state = START;
 //
 //    bool                d_help;
 //    bool                d_logout;
@@ -50,7 +50,10 @@ class FormHandler
 //    template <typename Type>
 //    friend MonitorIO &&operator<<(MonitorIO &&tmp, Type const &value);
 
-    static void (FormHandler::*s_handler[])();
+    static void (FormHandler::*s_psychoStates[])();
+    static void (FormHandler::*s_clientStates[])();
+    static void (FormHandler::*s_empty)();          // strange call from
+                                                    // non-existing URI?
 
     public:
         FormHandler(char const *basePath);
@@ -58,24 +61,27 @@ class FormHandler
         void process();
 
     private:
-        size_t getUid();
+        void empty();                           // e.g., wrong URI
+        void psychoStart();
 
-        void login();
-        void verifyUnPw();
-        void monitorCommand();
-        void showHtmlPage();
-        void logout();
-        void autoLogout();
-        void killed();
-
-        void incompleteUnPw();
-        void firstPage();
-        void unknownUser();    
-        void alreadyLoggedIn();
-        void monitorUnPwCheck();
-        void helpInfo();
-
-        MonitorIO monitorSubmit();            // .ih
+//        size_t getUid();
+//
+//        void login();
+//        void verifyUnPw();
+//        void monitorCommand();
+//        void showHtmlPage();
+//        void logout();
+//        void autoLogout();
+//        void killed();
+//
+//        void incompleteUnPw();
+//        void firstPage();
+//        void unknownUser();    
+//        void alreadyLoggedIn();
+//        void monitorUnPwCheck();
+//        void helpInfo();
+//
+//        MonitorIO monitorSubmit();            // .ih
 };
 
 #endif

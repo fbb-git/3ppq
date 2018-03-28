@@ -13,7 +13,7 @@ class Display
     std::ifstream d_file;
     std::string d_line;
 
-    static std::string s_base;
+    static std::string s_base;      // set by FormHandler, calling setBase()
 
     public:
         Display(std::string const &name);
@@ -22,7 +22,7 @@ class Display
         static void setBase(std::string const &base);
 
     private:
-        void copy();
+        void copy();                // copy the skeleton to cout
 };
 
 inline void Display::setBase(std::string const &base)

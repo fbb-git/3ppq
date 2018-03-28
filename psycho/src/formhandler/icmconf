@@ -12,7 +12,7 @@
                             " -fdiagnostics-color=never "
 #define IH                  ".ih"
 #define REFRESH
-#define LDFLAGS             ""
+#define LDFLAGS             "-s"
 #define ADD_LIBRARIES       "bobcat"
 #define ADD_LIBRARY_PATHS   ""
 

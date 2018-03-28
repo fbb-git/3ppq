@@ -3,9 +3,11 @@
 // see README
 
 namespace {
-                // abs. path to the directory containing stubs and skeletons
-    char const g_base[] = "/home/frank/src/psycho/data";
-}
+                // contains the abs. path to the directory 
+                // containing stubs and skeletons
+#include "basedir.f"
+
+} //namespace
 
 Log g_log;                              // generic log facility
 

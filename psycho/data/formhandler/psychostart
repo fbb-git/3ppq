@@ -67,12 +67,13 @@ druk op de knop <em>Inloggen</em>.<p>
     <td style="text-align: right"> Password:</td>
         <td> <input type="password" name="pwd" size="20">
         &nbsp;&nbsp; 
-        <input value="lostpwd" name="submit" type="submit" onclick="nr = 1">
+        <input value="Password kwijt" name="submit" 
+               type="submit" onclick="nr = 1">
         </td>
 </tr>
 </table>
 <p>
-<input value="login" name = "submit" type="submit" onclick="nr = 2">
+<input value="Inloggen" name = "submit" type="submit" onclick="nr = 2">
 
 </div>
 
@@ -80,7 +81,7 @@ druk op de knop <em>Inloggen</em>.<p>
 
 Wanneer u als psycholoog geregistreerd bent bij het NIP kunt u zich
 hier aanmelden voor 3PPQ:
-      <input value="register" name="submit" type="submit" onclick="nr = 3">
+      <input value="Aanmelden" name="submit" type="submit" onclick="nr = 3">
 
 <p>
 <hr>

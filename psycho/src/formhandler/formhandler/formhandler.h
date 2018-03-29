@@ -2,8 +2,9 @@
 #define INCLUDED_FORMHANDLER_
 
 // #include <condition_variable>
-// 
-// #include <string>
+ 
+#include <string>
+
 // #include <fstream>
 
 #include <bobcat/cgi>
@@ -15,11 +16,13 @@ class FormHandler
     enum Action
     {
         START,
+        REQUEST,
 //        VERIFY_UNPW,        
 //        CMD,                
-//        LOGOUT,             
+//        LOGOUT,
     };
 
+    std::string         d_progname;
     Options             d_options;
 
 //    std::ifstream       d_in;
@@ -56,13 +59,16 @@ class FormHandler
                                                     // non-existing URI?
 
     public:
-        FormHandler(char const *basePath);
+        FormHandler(char const *progname, char const *basePath);
         ~FormHandler();
         void process();
 
     private:
+        void setState(void (FormHandler::**handler)());
+
         void empty();                           // e.g., wrong URI
         void psychoStart();
+        void psychoRequest();
 
 //        size_t getUid();
 //

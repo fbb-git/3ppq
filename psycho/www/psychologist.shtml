@@ -3,7 +3,7 @@
 
 <!-- DOCUMENT_URI=/psychologist.shtml -->
 
-<!--#exec cmd="/home/frank/src/psycho/bin/showenv" -->
+<!--#exec cmd="/home/frank/src/psycho/bin/formhandler" -->
 
 </html>
 

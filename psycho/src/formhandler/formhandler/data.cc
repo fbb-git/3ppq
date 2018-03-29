@@ -4,7 +4,8 @@
 
 void (FormHandler::*FormHandler::s_psychoStates[])() =
 {
-    &FormHandler:: psychoStart,           // START,
+//    &FormHandler:: psychoStart,         // START,
+    &FormHandler:: psychoRequest,       // START,
 };
 
 void (FormHandler::*FormHandler::s_clientStates[])() =

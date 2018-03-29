@@ -3,12 +3,13 @@
 <meta http-equiv="content-type" content="text/html;
 charset=windows-1252"><style></style></head>
 
+
 <script>
     var nr = 0;
 
     function validateForm() 
     {
-        var mail = document.forms["3ppqForm"]["email"].value;
+        var mail = document.forms["form"]["email"].value;
         switch (nr)
         {
             case 1:     // pwd vergeten
@@ -28,15 +29,8 @@ charset=windows-1252"><style></style></head>
                     return false;
                 }
             break;
-
-            case 3:
-                alert("OK: aanmelden volgt");
-                return false;
-            break;
         }
-
-        alert("Work in Progress");
-        return false;
+        return true;
     } 
 </script>
 
@@ -58,42 +52,35 @@ druk op de knop <em>Inloggen</em>.<p>
  Wanneer u zich nog niet heeft aangemeld, dan kan dat door op de knop
 <em>Aanmelden</em> (onderaan deze pagina) te drukken.
 
-<form name="3ppqForm" action="/bin/3ppq" 
+<form name="form" action="/bin/pstart" 
       onsubmit="return validateForm()" method="post">
 
 <div style="background-color:#dddddd">
 
 <table>
 <tr>
-    <td style="text-align: right">E-mail adress: </td> 
+    <td style="text-align: right">E-mail adres: </td> 
         <td ><input type="text" name="email" size="50"></td>
 </tr>
 <tr>
     <td style="text-align: right"> Password:</td>
         <td> <input type="password" name="pwd" size="20">
         &nbsp;&nbsp; 
-        <input value="Password vergeten" id="s1" name="submit" type="submit"
-                onclick="nr = 1">
-        </td>
-</tr>
-<tr>
-    <td> 
-       <td> 
+        <input value="Password kwijt" name="submit" 
+               type="submit" onclick="nr = 1">
         </td>
 </tr>
 </table>
 <p>
-<input value="Inloggen" name = "submit" type="submit"
-                onclick="nr = 2">
+<input value="Inloggen" name="submit" type="submit" onclick="nr = 2">
 
 </div>
 
 <hr>
 
-<div>
 Wanneer u als psycholoog geregistreerd bent bij het NIP kunt u zich
 hier aanmelden voor 3PPQ:
-      <input value="Aanmelden" name="submit" type="submit" onclick="nr = 3">
+      <input value="Aanmelden" name="submit" type="submit">
 
 <p>
 <hr>
@@ -103,4 +90,7 @@ hier aanmelden voor 3PPQ:
         <a href="mailto:3ppq@3ppq.nl">3ppq@3ppq.nl</a>
 </footer>
 
-</p></div></form></body></html>
+</form>
+
+</body>
+</html>

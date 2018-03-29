@@ -1,7 +1,8 @@
 #include "formhandler.ih"
 
-FormHandler::FormHandler(char const *basePath)
+FormHandler::FormHandler(char const *progname, char const *basePath)
 :
+    d_progname(progname),
     d_options(basePath),                    // defines all required 
                                             // filenames (like 'log')
                                             // under 'basePath'
@@ -10,7 +11,7 @@ FormHandler::FormHandler(char const *basePath)
 //    d_lockPath(d_options.toMonitor()),
 //    d_out(d_lockPath),
 
-    d_cgi(false, 0)                         // do not escape received info
+    d_cgi(false)                            // do not escape received info
                                             // do not do Content-type...
 
 //    d_help(d_cgi.param1("help") == "1"),
@@ -34,9 +35,14 @@ FormHandler::FormHandler(char const *basePath)
 
     Display::setBase(d_options.base() + "formhandler/");
 
-//    cout << R"(
-//    <form action="/bin/formhandler" method="post">
-//)"; 
+    cout << R"(
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;
+    charset=windows-1252">
+    <style></style>
+)";
 
 }
 

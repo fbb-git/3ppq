@@ -14,5 +14,5 @@ FormHandler::~FormHandler()
 //    <input type="submit" value="submit">
 //)";
 
-    cout << "</body>\n";
+    cout << "</body></html>\n";
 }

@@ -11,10 +11,10 @@ namespace {
 
 Log g_log;                              // generic log facility
 
-int main()
+int main(int argc, char **argv)
 {
-    FormHandler formHandler{ g_base };  // Form handling object
+    FormHandler formHandler{ argv[0], g_base };  // Form handling object
 
-    formHandler.process();              // process incoming forms
+    formHandler.process();                      // process incoming forms
 }
 

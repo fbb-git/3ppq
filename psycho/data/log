@@ -147,3 +147,142 @@ Mar 30 14:59:32 Handler starts
 Mar 30 14:59:32 Starting Handler::process: type = `psychologist'
 Mar 30 15:05:00 Handler starts
 Mar 30 15:05:00 Starting Handler::process: type = `psychologist'
+Mar 30 18:05:27 Handler starts
+Mar 30 18:05:27 Starting Handler::process: type = `psychologist'
+Mar 30 18:09:46 Handler starts
+Mar 30 18:09:46 Starting Handler::process: type = `psychologist'
+Mar 30 18:09:46 Psych::add
+Mar 30 18:12:29 Handler starts
+Mar 30 18:12:29 Starting Handler::process: type = `psychologist'
+Mar 30 18:12:29 Psych::add
+Mar 30 18:12:29 try new registration
+Mar 30 18:14:47 Handler starts
+Mar 30 18:14:47 Starting Handler::process: type = `psychologist'
+Mar 30 18:14:47 Psych::add
+Mar 30 18:18:55 Handler starts
+Mar 30 18:18:55 Starting Handler::process: type = `psychologist'
+Mar 30 18:18:55 Psych::add
+Mar 30 18:18:55 Psych::add reading/home/frank/git/psycho/src/psycho/data/psychologists
+Mar 30 18:23:31 Handler starts
+Mar 30 18:23:31 Starting Handler::process: type = `psychologist'
+Mar 30 18:23:31 Psych::add
+Mar 30 18:23:31 Psych::add reading/home/frank/git/psycho/src/psycho/data/psychologists
+Mar 30 18:23:31 readRecord
+Mar 30 18:26:09 Handler starts
+Mar 30 18:26:09 Starting Handler::process: type = `psychologist'
+Mar 30 18:26:09 Psych::add
+Mar 30 18:26:09 Psych::add reading/home/frank/git/psycho/src/psycho/data/psychologists
+Mar 30 18:26:09 readRecord
+Mar 30 18:26:09 readRecord 2
+Mar 30 18:27:20 Handler starts
+Mar 30 18:27:20 Starting Handler::process: type = `psychologist'
+Mar 30 18:27:20 Psych::add
+Mar 30 18:27:20 Psych::add reading/home/frank/git/psycho/src/psycho/data/psychologists
+Mar 30 18:27:20 readRecord
+Mar 30 18:27:20 readRecord 2
+Mar 30 18:27:20 readRecord 3
+Mar 30 18:27:20 readRecord 4
+Mar 30 18:27:20 readRecord 5
+Mar 30 18:27:20 readRecord true
+Mar 30 18:27:20 Psych::add: record nip = 00000000, cgi nip: 00000000
+Mar 30 18:27:20 Psych: registered 
+Mar 30 18:27:34 Handler starts
+Mar 30 18:27:34 Starting Handler::process: type = `'
+Mar 30 18:27:34 submit:
+Mar 30 18:27:34   `Aanmelden'
+Mar 30 18:37:59 Handler starts
+Mar 30 18:37:59 Starting Handler::process: type = `psychologist'
+Mar 30 18:37:59 Psych::add
+Mar 30 18:37:59 Psych::add reading/home/frank/git/psycho/src/psycho/data/psychologists
+Mar 30 18:37:59 readRecord
+Mar 30 18:37:59 readRecord 2
+Mar 30 18:37:59 readRecord 3
+Mar 30 18:37:59 readRecord 4
+Mar 30 18:37:59 readRecord 5
+Mar 30 18:37:59 readRecord true
+Mar 30 18:37:59 Psych::add: record nip = 00000000, cgi nip: 00000000
+Mar 30 18:37:59 Psych: registered 
+Mar 30 18:38:07 Handler starts
+Mar 30 18:38:07 Starting Handler::process: type = `'
+Mar 30 18:38:07 submit:
+Mar 30 18:38:07   `Aanmelden'
+Mar 30 18:38:50 Handler starts
+Mar 30 18:38:50 Starting Handler::process: type = `psychologist'
+Mar 30 18:38:50 Psych::add
+Mar 30 18:38:50 Psych::add reading/home/frank/git/psycho/src/psycho/data/psychologists
+Mar 30 18:38:50 readRecord
+Mar 30 18:38:50 readRecord 2
+Mar 30 18:38:50 readRecord 3
+Mar 30 18:38:50 readRecord 4
+Mar 30 18:38:50 readRecord 5
+Mar 30 18:38:50 readRecord true
+Mar 30 18:38:50 Psych::add: record nip = 00000000, cgi nip: 00000000
+Mar 30 18:38:50 Psych: registered 
+Mar 30 18:38:56 Handler starts
+Mar 30 18:38:56 Starting Handler::process: type = `'
+Mar 30 18:38:56 submit:
+Mar 30 18:38:56   `Homepage'
+Mar 30 18:39:40 Handler starts
+Mar 30 18:39:40 Starting Handler::process: type = `psychologist'
+Mar 30 18:39:40 Psych::add
+Mar 30 18:39:40 Psych::add reading/home/frank/git/psycho/src/psycho/data/psychologists
+Mar 30 18:39:40 readRecord
+Mar 30 18:39:40 readRecord 2
+Mar 30 18:39:40 readRecord 3
+Mar 30 18:39:40 readRecord 4
+Mar 30 18:39:40 readRecord 5
+Mar 30 18:39:40 readRecord true
+Mar 30 18:39:40 Psych::add: record nip = 00000000, cgi nip: 00000000
+Mar 30 18:39:40 Psych: registered 
+Mar 30 18:40:34 Handler starts
+Mar 30 18:40:34 Starting Handler::process: type = `psychologist'
+Mar 30 18:40:34 Psych::add
+Mar 30 18:40:34 Psych::add reading/home/frank/git/psycho/src/psycho/data/psychologists
+Mar 30 18:40:34 readRecord
+Mar 30 18:40:34 readRecord 2
+Mar 30 18:40:34 readRecord 3
+Mar 30 18:40:34 readRecord 4
+Mar 30 18:40:34 readRecord 5
+Mar 30 18:40:34 readRecord true
+Mar 30 18:40:34 Psych::add: record nip = 00000000, cgi nip: 00000000
+Mar 30 18:40:34 Psych: registered 
+Mar 30 18:41:08 Handler starts
+Mar 30 18:41:08 Starting Handler::process: type = `psychologist'
+Mar 30 18:41:08 Psych::add
+Mar 30 18:41:08 Psych::add reading/home/frank/git/psycho/src/psycho/data/psychologists
+Mar 30 18:41:08 readRecord
+Mar 30 18:41:08 readRecord 2
+Mar 30 18:41:08 readRecord 3
+Mar 30 18:41:08 readRecord 4
+Mar 30 18:41:08 readRecord 5
+Mar 30 18:41:08 readRecord true
+Mar 30 18:41:08 Psych::add: record nip = 00000000, cgi nip: 00000000
+Mar 30 18:41:08 Psych: registered 
+Mar 30 19:02:00 Handler starts
+Mar 30 19:02:00 Starting Handler::process: type = `psychologist'
+Mar 30 19:02:26 Handler starts
+Mar 30 19:02:26 Starting Handler::process: type = `psychologist'
+Mar 30 19:02:26 Psych::add
+Mar 30 19:02:26 Psych::add reading/home/frank/git/psycho/src/psycho/data/psychologists
+Mar 30 19:02:26 readRecord
+Mar 30 19:02:26 readRecord 2
+Mar 30 19:02:26 readRecord 3
+Mar 30 19:02:26 readRecord 4
+Mar 30 19:02:26 readRecord 5
+Mar 30 19:02:26 readRecord true
+Mar 30 19:02:26 Psych::add: record nip = 00000000, cgi nip: 00000000
+Mar 30 19:02:26 Psych: registered 
+Mar 30 19:02:31 Handler starts
+Mar 30 19:02:31 Starting Handler::process: type = `psychologist'
+Mar 30 19:02:47 Handler starts
+Mar 30 19:02:47 Starting Handler::process: type = `psychologist'
+Mar 30 19:02:47 Psych::add
+Mar 30 19:02:47 Psych::add reading/home/frank/git/psycho/src/psycho/data/psychologists
+Mar 30 19:02:47 readRecord
+Mar 30 19:02:47 readRecord 2
+Mar 30 19:02:47 readRecord 3
+Mar 30 19:02:47 readRecord 4
+Mar 30 19:02:47 readRecord 5
+Mar 30 19:02:47 readRecord true
+Mar 30 19:02:47 Psych::add: record nip = 00000000, cgi nip: 00000000
+Mar 30 19:02:47 Psych: registered 

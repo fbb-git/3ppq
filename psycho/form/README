@@ -1,0 +1,53 @@
+The program inserts its html page in a file organized like this:
+
+    <!DOCTYPE html>
+    <html>
+    
+    <!-- DOCUMENT_URI=/psychologist.shtml -->
+    
+    <!--#exec cmd="/home/frank/src/psycho/bin/handler" -->
+    
+    </html>
+
+Since the program is used from different .shtml files it can use the
+DOCUMENT_URI environment variable to determine which page it was called from.
+
+Main's job is to create a Handler, which then processes the form, calling
+its .process() member. 
+
+Handler's constructor (handler1.cc) prepares an FBB::CGI object: the
+CGI object handles the form, and opens the log-file, relative to 
+'basePath', passed from main() as main's g_base: all files are below this
+location, preferably ~/data: a directory 'data' below the user's homedir.
+
+Below, ~/data is used, but note that in fact it is the location specified by
+main.cc's g_base.
+
+
+The skeletons of the webpages to return are found in ~/data/handler. 
+A Display object handles the files in that directory. Display::setBase sets
+~/data/handler for all Display objects.
+
+
+Handler::process() uses the environment variable DOCUMENT_URI to determine
+from which location handler was called. Currently it can be
+/psychologist.shtml and /client.shtml. If another URI is used it is logged by
+Handler::empty(), and the caller is shown an empty page.
+
+members returning web-content do so by creating a Display object, passing it
+the name of the file containing the web-contents. Those files (in
+~/data/handler) may contain \$ characters, signaling eoln comment. eoln
+comment is not written to the returned web-page
+
+
+-------------------------------
+
+To run a test define the environment variable 
+
+    DOCUMENT_URI /psychologist.shtml
+
+and run tmp/bin/binary
+
+
+
+

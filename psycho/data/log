@@ -291,3 +291,38 @@ Mar 29 16:19:36 email =
 Mar 29 16:19:36   `'
 Mar 29 16:19:36 pwd = 
 Mar 29 16:19:36   `'
+Mar 30 11:13:03 Handler starts
+Mar 30 11:13:03 Starting Handler::process
+Mar 30 11:15:54 Handler starts
+Mar 30 11:15:54 Starting Handler::process
+Mar 30 11:16:40 Handler starts
+Mar 30 11:16:40 Starting Handler::process
+Mar 30 11:17:24 Handler starts
+Mar 30 11:17:24 Starting Handler::process
+Mar 30 11:17:24 state:
+Mar 30 11:17:24   `register'
+Mar 30 11:17:24   `register'
+Mar 30 11:17:24 submit:
+Mar 30 11:17:24   `Aanmelden'
+Mar 30 11:17:24 email:
+Mar 30 11:17:24   `'
+Mar 30 11:17:24 pwd:
+Mar 30 11:17:24   `'
+Mar 30 11:19:44 Handler starts
+Mar 30 11:19:44 Starting Handler::process
+Mar 30 11:19:44 state:
+Mar 30 11:19:44   `register'
+Mar 30 11:19:44 submit:
+Mar 30 11:19:44   `Aanmelden'
+Mar 30 11:19:44 email:
+Mar 30 11:19:44   `'
+Mar 30 11:19:44 pwd:
+Mar 30 11:19:44   `'
+Mar 30 11:20:50 Handler starts
+Mar 30 11:20:50 Starting Handler::process
+Mar 30 11:20:50 state:
+Mar 30 11:20:50   `register'
+Mar 30 11:20:50 email:
+Mar 30 11:20:50   `'
+Mar 30 11:20:50 pwd:
+Mar 30 11:20:50   `'

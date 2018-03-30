@@ -1,0 +1,17 @@
+#include "tools.h"
+
+#include <sys/file.h>           // flock
+
+#include <unistd.h>
+#include <sys/types.h>
+
+#include <string>
+#include <numeric>
+#include <random>
+
+#include <bobcat/exception>
+#include <bobcat/stat>
+
+using namespace std;
+using namespace FBB;
+

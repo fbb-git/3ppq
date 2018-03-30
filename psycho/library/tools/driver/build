@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cp driver.cc driver.2
+g++ -Wall driver.cc -L../tmp -lmodules -lbobcat 
+a.out
+
+od -A d -c -w10 driver.2 

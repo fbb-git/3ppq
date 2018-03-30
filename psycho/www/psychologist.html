@@ -1,38 +1,12 @@
 <!DOCTYPE html>
 <html><head>
-<meta http-equiv="content-type" content="text/html;
-charset=windows-1252"><style></style></head>
+    <meta http-equiv="content-type" content="text/html;
+          charset=windows-1252">
+    <style></style>
 
-
-<script>
-    var nr = 0;
-
-    function validateForm() 
-    {
-        var mail = document.forms["form"]["email"].value;
-        switch (nr)
-        {
-            case 1:     // pwd vergeten
-                if (mail == "") 
-                {
-                    alert("E-mail adress moet worden vermeld");
-                    return false;
-                }
-            break;
-
-            case 2:     // inloggen: UN/PW vereist
-                if (mail == "" || 
-                    document.forms["3ppqForm"]["pwd"].value == ""
-                )
-                {
-                    alert("E-mail en password moeten worden vermeld");
-                    return false;
-                }
-            break;
-        }
-        return true;
-    } 
-</script>
+    <script src="/js/preamble.js"></script>
+    <script src="/js/psychologist.js"></script>
+</head>
 
 <body> 
 
@@ -52,8 +26,8 @@ druk op de knop <em>Inloggen</em>.<p>
  Wanneer u zich nog niet heeft aangemeld, dan kan dat door op de knop
 <em>Aanmelden</em> (onderaan deze pagina) te drukken.
 
-<form name="form" action="/bin/pstart" 
-      onsubmit="return validateForm()" method="post">
+<form name="form" action="/bin/form" 
+      onsubmit="return validate()" method="post">
 
 <div style="background-color:#dddddd">
 
@@ -66,22 +40,19 @@ druk op de knop <em>Inloggen</em>.<p>
     <td style="text-align: right"> Password:</td>
         <td> <input type="password" name="pwd" size="20">
         &nbsp;&nbsp; 
-        <input value="Password kwijt" name="submit" 
-               type="submit" onclick="nr = 1">
+        <input value="Password kwijt" type="submit" onclick="nr = 1">
         </td>
 </tr>
 </table>
 <p>
-<input value="Inloggen" name="submit" type="submit" onclick="nr = 2">
+<input type="submit" onclick="nr = 2">
 
 </div>
-
 <hr>
 
 Wanneer u als psycholoog geregistreerd bent bij het NIP kunt u zich
 hier aanmelden voor 3PPQ:
-      <input value="Aanmelden" name="submit" type="submit">
-
+      <input value="Aanmelden" type="submit">
 <p>
 <hr>
 <footer>3PPQ neemt privacy serieus. Download onze 

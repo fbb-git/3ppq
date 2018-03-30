@@ -1,0 +1,7 @@
+#include <bobcat/log>
+
+#include "handler/handler.h"
+
+using namespace FBB;
+
+extern Log g_log;

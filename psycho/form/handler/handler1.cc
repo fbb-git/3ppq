@@ -1,25 +1,20 @@
 #include "handler.ih"
 
-Handler::Handler(char const *basePath)
+Handler::Handler()
 :
-    d_options(basePath),                    // define all required 
-                                            // filenames (like 'log')
-                                            // under 'basePath'
-
-    d_cgi(false)                            // do not escape received info
+    d_cgi(false),                           // do not escape received info
                                             // do not do Content-type...
+    d_psychologist(d_cgi)
 {
-    g_log.open(d_options.log());
-
     g_log << "Handler starts" << endl;
 
-    Display::setBase(d_options.base() + "stubs/");
 
     cout << R"(
 <!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="/css/3ppq.css">
     <style></style>
 )";
 

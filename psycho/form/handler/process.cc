@@ -2,9 +2,20 @@
 
 void Handler::process()
 {
-    g_log << "Starting Handler::process" << endl;
+    string const &type = d_cgi.param1("type");
+ 
+    g_log << "Starting Handler::process: type = `" << type << '\'' << endl;
 
-    empty();
+    if (type == "psychologist")
+        d_psychologist.process();
+
+    else if (type == "client")
+        ; // d_client.process();
+
+    else 
+        empty();
+}
+
 
 //     void (Handler::**handler)() = s_psychoStates;
 // 
@@ -19,8 +30,6 @@ void Handler::process()
 //     setState(handler);                                  // find the FSA state
 // 
 //     (this->*handler[d_state]) ();    // Initial state is START
-}
-
 
 
 

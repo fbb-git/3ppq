@@ -1,29 +1,40 @@
 #ifndef INCLUDED_HANDLER_
 #define INCLUDED_HANDLER_
 
-// #include <condition_variable>
- 
 #include <string>
-
-// #include <fstream>
+#include <unordered_map>
 
 #include <bobcat/cgi>
 
 #include "../../library/options/options.h"
+#include "../psychologist/psychologist.h"
 
 class Handler
 {
-    std::string         d_progname;
-    Options             d_options;
+    FBB::CGI            d_cgi;
+
+    Psychologist d_psychologist;
+    
+    public:
+        Handler();
+        ~Handler();
+        void process();
+
+    private:
+        void empty();
+        void psychoStart();
+        void psychoRequest();
+
+        void logParams();
+};
+
 
 //    std::ifstream       d_in;
 //    int                 d_toMonitorFd;
 //    std::string const  &d_lockPath;
 //    std::ofstream       d_out;
 
-    FBB::CGI            d_cgi;
 
-    std::string         d_state;
 //
 //    bool                d_help;
 //    bool                d_logout;
@@ -44,25 +55,6 @@ class Handler
 //    template <typename Type>
 //    friend MonitorIO &&operator<<(MonitorIO &&tmp, Type const &value);
 
-    static void (Handler::*s_psychoStates[])();
-    static void (Handler::*s_clientStates[])();
-    static void (Handler::*s_empty)();          // strange call from
-                                                    // non-existing URI?
-
-    public:
-        Handler(char const *basePath);
-        ~Handler();
-        void process();
-
-    private:
-//        void setState(void (Handler::**handler)());
-
-        void empty();                           // e.g., wrong URI
-        void psychoStart();
-        void psychoRequest();
-
-
-        void logParams();
 
 //        size_t getUid();
 //
@@ -82,7 +74,7 @@ class Handler
 //        void helpInfo();
 //
 //        MonitorIO monitorSubmit();            // .ih
-};
+
 
 #endif
 

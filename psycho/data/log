@@ -1,328 +1,149 @@
-Mar 28 10:14:24 FormHandler starts
-Mar 28 10:14:24 Starting FormHandler::process
-Mar 28 10:14:24 0: psychoStart
-Mar 28 10:28:15 FormHandler starts
-Mar 28 10:28:15 Starting FormHandler::process
-Mar 28 10:28:15 0: psychoStart
-Mar 28 10:28:41 FormHandler starts
-Mar 28 10:28:41 Starting FormHandler::process
-Mar 28 10:28:41 0: psychoStart
-Mar 28 10:29:15 FormHandler starts
-Mar 28 10:29:15 Starting FormHandler::process
-Mar 28 10:29:15 0: psychoStart
-Mar 29 14:50:03 FormHandler starts
-Mar 29 14:50:03 Starting FormHandler::process
-Mar 29 14:50:37 FormHandler starts
-Mar 29 14:51:16 FormHandler starts
-Mar 29 14:51:16 Starting FormHandler::process
-Mar 29 14:52:36 FormHandler starts
-Mar 29 14:52:36 Starting FormHandler::process
-Mar 29 14:53:04 FormHandler starts
-Mar 29 14:53:04 Starting FormHandler::process
-Mar 29 14:55:59 FormHandler starts
-Mar 29 14:55:59 Starting FormHandler::process
-Mar 29 14:55:59 DOCUMENT_URI environment variable not set
-Mar 29 14:56:30 FormHandler starts
-Mar 29 14:56:30 Starting FormHandler::process
-Mar 29 14:56:30 empy() called with DOCUMENT_URI: `/psycho/psychologist.shtml' and state 0
-Mar 29 14:59:12 FormHandler starts
-Mar 29 14:59:12 Starting FormHandler::process
-Mar 29 14:59:12 empy() called with DOCUMENT_URI: `/psycho/psychologist.shtml' and state 0
-Mar 29 14:59:57 FormHandler starts
-Mar 29 14:59:57 Starting FormHandler::process
-Mar 29 14:59:57 empy() called with DOCUMENT_URI: `/psycho/psychologist.shtml' and state 0
-Mar 29 15:01:37 FormHandler starts
-Mar 29 15:01:37 Starting FormHandler::process
-Mar 29 15:01:37 0: psychoStart
-Mar 29 15:03:09 FormHandler starts
-Mar 29 15:03:09 Starting FormHandler::process
-Mar 29 15:03:09 0: psychoStart
-Mar 29 15:03:55 FormHandler starts
-Mar 29 15:03:55 Starting FormHandler::process
-Mar 29 15:03:55 0: psychoStart
-Mar 29 15:04:36 FormHandler starts
-Mar 29 15:04:36 Starting FormHandler::process
-Mar 29 15:04:36 0: psychoStart
-Mar 29 15:05:59 FormHandler starts
-Mar 29 15:05:59 Starting FormHandler::process
-Mar 29 15:05:59 0: psychoStart
-Mar 29 15:07:08 FormHandler starts
-Mar 29 15:07:08 Starting FormHandler::process
-Mar 29 15:07:08 0: psychoStart
-Mar 29 15:09:06 FormHandler starts
-Mar 29 15:09:06 Starting FormHandler::process
-Mar 29 15:09:06 0: psychoStart
-Mar 29 15:09:11 FormHandler starts
-Mar 29 15:09:11 Starting FormHandler::process
-Mar 29 15:09:11 DOCUMENT_URI environment variable not set
-Mar 29 15:13:53 FormHandler starts
-Mar 29 15:13:53 Starting FormHandler::process
-Mar 29 15:13:53 DOCUMENT_URI environment variable not set
-Mar 29 15:15:08 FormHandler starts
-Mar 29 15:15:08 Starting FormHandler::process
-Mar 29 15:15:08 1: psychoRequest
-Mar 29 15:15:08 state = 
-Mar 29 15:15:08   `1'
-Mar 29 15:15:08 submit = 
-Mar 29 15:15:08   `Aanmelden'
-Mar 29 15:15:08 pwd = 
-Mar 29 15:15:08   `'
-Mar 29 15:15:08 email = 
-Mar 29 15:15:08   `'
-Mar 29 15:18:44 FormHandler starts
-Mar 29 15:18:44 Starting FormHandler::process
-Mar 29 15:18:44 1: psychoRequest
-Mar 29 15:18:44 state = 
-Mar 29 15:18:44   `1'
-Mar 29 15:18:44 submit = 
-Mar 29 15:18:44   `Aanmelden'
-Mar 29 15:18:44 pwd = 
-Mar 29 15:18:44   `'
-Mar 29 15:18:44 email = 
-Mar 29 15:18:44   `'
-Mar 29 15:20:59 FormHandler starts
-Mar 29 15:20:59 Starting FormHandler::process
-Mar 29 15:20:59 1: psychoRequest
-Mar 29 15:20:59 state = 
-Mar 29 15:20:59   `1'
-Mar 29 15:20:59 submit = 
-Mar 29 15:20:59   `Aanmelden'
-Mar 29 15:20:59 pwd = 
-Mar 29 15:20:59   `'
-Mar 29 15:20:59 email = 
-Mar 29 15:20:59   `'
-Mar 29 15:21:10 FormHandler starts
-Mar 29 15:21:10 Starting FormHandler::process
-Mar 29 15:21:10 0: psychoStart
-Mar 29 15:22:36 FormHandler starts
-Mar 29 15:22:36 Starting FormHandler::process
-Mar 29 15:22:36 1: psychoRequest
-Mar 29 15:22:36 state = 
-Mar 29 15:22:36   `1'
-Mar 29 15:22:36 submit = 
-Mar 29 15:22:36   `Aanmelden'
-Mar 29 15:22:36 pwd = 
-Mar 29 15:22:36   `'
-Mar 29 15:22:36 email = 
-Mar 29 15:22:36   `'
-Mar 29 15:23:31 FormHandler starts
-Mar 29 15:23:31 Starting FormHandler::process
-Mar 29 15:23:31 0: psychoStart
-Mar 29 15:38:12 FormHandler starts
-Mar 29 15:38:12 Starting FormHandler::process
-Mar 29 15:38:12 0: psychoStart
-Mar 29 15:40:49 FormHandler starts
-Mar 29 15:40:49 Starting FormHandler::process
-Mar 29 15:40:49 0: psychoStart
-Mar 29 15:41:32 FormHandler starts
-Mar 29 15:41:32 Starting FormHandler::process
-Mar 29 15:41:32 0: psychoStart
-Mar 29 15:43:12 FormHandler starts
-Mar 29 15:43:12 Starting FormHandler::process
-Mar 29 15:43:12 0: psychoStart
-Mar 29 15:43:45 FormHandler starts
-Mar 29 15:43:45 Starting FormHandler::process
-Mar 29 15:43:45 0: psychoStart
-Mar 29 15:44:13 FormHandler starts
-Mar 29 15:44:13 Starting FormHandler::process
-Mar 29 15:44:13 1: psychoRequest
-Mar 29 15:44:13 state = 
-Mar 29 15:44:13   `1'
-Mar 29 15:44:13 submit = 
-Mar 29 15:44:13   `Aanmelden'
-Mar 29 15:44:13 pwd = 
-Mar 29 15:44:13   `'
-Mar 29 15:44:13 email = 
-Mar 29 15:44:13   `'
-Mar 29 15:49:52 FormHandler starts
-Mar 29 15:49:52 Starting FormHandler::process
-Mar 29 15:49:52 1: psychoRequest
-Mar 29 15:49:52 state = 
-Mar 29 15:49:52   `1'
-Mar 29 15:49:52 submit = 
-Mar 29 15:49:52   `Aanmelden'
-Mar 29 15:49:52 pwd = 
-Mar 29 15:49:52   `'
-Mar 29 15:49:52 email = 
-Mar 29 15:49:52   `'
-Mar 29 15:50:09 FormHandler starts
-Mar 29 15:50:09 Starting FormHandler::process
-Mar 29 15:50:09 1: psychoRequest
-Mar 29 15:50:09 state = 
-Mar 29 15:50:09   `1'
-Mar 29 15:50:09 submit = 
-Mar 29 15:50:09   `Aanmelden'
-Mar 29 15:50:09 pwd = 
-Mar 29 15:50:09   `'
-Mar 29 15:50:09 email = 
-Mar 29 15:50:09   `'
-Mar 29 15:50:43 FormHandler starts
-Mar 29 15:50:43 Starting FormHandler::process
-Mar 29 15:50:43 1: psychoRequest
-Mar 29 15:50:43 state = 
-Mar 29 15:50:43   `1'
-Mar 29 15:50:43 submit = 
-Mar 29 15:50:43   `Aanmelden'
-Mar 29 15:50:43 pwd = 
-Mar 29 15:50:43   `'
-Mar 29 15:50:43 email = 
-Mar 29 15:50:43   `'
-Mar 29 15:52:03 FormHandler starts
-Mar 29 15:52:03 Starting FormHandler::process
-Mar 29 15:52:03 1: psychoRequest
-Mar 29 15:52:03 state = 
-Mar 29 15:52:03   `1'
-Mar 29 15:52:03 submit = 
-Mar 29 15:52:03   `Aanmelden'
-Mar 29 15:52:03 pwd = 
-Mar 29 15:52:03   `'
-Mar 29 15:52:03 email = 
-Mar 29 15:52:03   `'
-Mar 29 15:53:21 FormHandler starts
-Mar 29 15:53:21 Starting FormHandler::process
-Mar 29 15:53:21 1: psychoRequest
-Mar 29 15:53:21 state = 
-Mar 29 15:53:21   `1'
-Mar 29 15:53:21 submit = 
-Mar 29 15:53:21   `Aanmelden'
-Mar 29 15:53:21 pwd = 
-Mar 29 15:53:21   `'
-Mar 29 15:53:21 email = 
-Mar 29 15:53:21   `'
-Mar 29 15:54:03 FormHandler starts
-Mar 29 15:54:03 Starting FormHandler::process
-Mar 29 15:54:03 1: psychoRequest
-Mar 29 15:54:03 state = 
-Mar 29 15:54:03   `1'
-Mar 29 15:54:03 submit = 
-Mar 29 15:54:03   `Aanmelden'
-Mar 29 15:54:03 pwd = 
-Mar 29 15:54:03   `'
-Mar 29 15:54:03 email = 
-Mar 29 15:54:03   `'
-Mar 29 15:57:05 FormHandler starts
-Mar 29 15:57:05 Starting FormHandler::process
-Mar 29 15:57:05 1: psychoRequest
-Mar 29 15:57:05 state = 
-Mar 29 15:57:05   `1'
-Mar 29 15:57:05 submit = 
-Mar 29 15:57:05   `Aanmelden'
-Mar 29 15:57:05 pwd = 
-Mar 29 15:57:05   `'
-Mar 29 15:57:05 email = 
-Mar 29 15:57:05   `'
-Mar 29 15:58:36 FormHandler starts
-Mar 29 15:58:36 Starting FormHandler::process
-Mar 29 15:58:36 1: psychoRequest
-Mar 29 15:58:36 state = 
-Mar 29 15:58:36   `1'
-Mar 29 15:58:36 submit = 
-Mar 29 15:58:36   `Aanmelden'
-Mar 29 15:58:36 pwd = 
-Mar 29 15:58:36   `'
-Mar 29 15:58:36 email = 
-Mar 29 15:58:36   `'
-Mar 29 16:00:15 FormHandler starts
-Mar 29 16:00:15 Starting FormHandler::process
-Mar 29 16:00:15 1: psychoRequest
-Mar 29 16:00:15 state = 
-Mar 29 16:00:15   `1'
-Mar 29 16:00:15 submit = 
-Mar 29 16:00:15   `Aanmelden'
-Mar 29 16:00:15 pwd = 
-Mar 29 16:00:15   `'
-Mar 29 16:00:15 email = 
-Mar 29 16:00:15   `'
-Mar 29 16:00:45 FormHandler starts
-Mar 29 16:00:45 Starting FormHandler::process
-Mar 29 16:00:45 1: psychoRequest
-Mar 29 16:00:45 state = 
-Mar 29 16:00:45   `1'
-Mar 29 16:00:45 submit = 
-Mar 29 16:00:45   `Aanmelden'
-Mar 29 16:00:45 pwd = 
-Mar 29 16:00:45   `'
-Mar 29 16:00:45 email = 
-Mar 29 16:00:45   `'
-Mar 29 16:01:20 FormHandler starts
-Mar 29 16:01:20 Starting FormHandler::process
-Mar 29 16:01:20 1: psychoRequest
-Mar 29 16:01:20 state = 
-Mar 29 16:01:20   `1'
-Mar 29 16:01:20 submit = 
-Mar 29 16:01:20   `Aanmelden'
-Mar 29 16:01:20 pwd = 
-Mar 29 16:01:20   `'
-Mar 29 16:01:20 email = 
-Mar 29 16:01:20   `'
-Mar 29 16:15:59 FormHandler starts
-Mar 29 16:15:59 Starting FormHandler::process
-Mar 29 16:15:59 0: psychoRequest
-Mar 29 16:15:59 submit = 
-Mar 29 16:15:59   `Aanmelden'
-Mar 29 16:15:59 email = 
-Mar 29 16:15:59   `'
-Mar 29 16:15:59 pwd = 
-Mar 29 16:15:59   `'
-Mar 29 16:16:12 FormHandler starts
-Mar 29 16:16:12 Starting FormHandler::process
-Mar 29 16:16:12 0: psychoRequest
-Mar 29 16:16:12 submit = 
-Mar 29 16:16:12   `Aanmelden'
-Mar 29 16:16:12 email = 
-Mar 29 16:16:12   `'
-Mar 29 16:16:12 pwd = 
-Mar 29 16:16:12   `'
-Mar 29 16:18:48 FormHandler starts
-Mar 29 16:18:48 Starting FormHandler::process
-Mar 29 16:18:48 0: psychoRequest
-Mar 29 16:18:48 submit = 
-Mar 29 16:18:48   `Aanmelden'
-Mar 29 16:18:48 email = 
-Mar 29 16:18:48   `'
-Mar 29 16:18:48 pwd = 
-Mar 29 16:18:48   `'
-Mar 29 16:19:36 FormHandler starts
-Mar 29 16:19:36 Starting FormHandler::process
-Mar 29 16:19:36 0: psychoRequest
-Mar 29 16:19:36 submit = 
-Mar 29 16:19:36   `Aanmelden'
-Mar 29 16:19:36 email = 
-Mar 29 16:19:36   `'
-Mar 29 16:19:36 pwd = 
-Mar 29 16:19:36   `'
-Mar 30 11:13:03 Handler starts
-Mar 30 11:13:03 Starting Handler::process
-Mar 30 11:15:54 Handler starts
-Mar 30 11:15:54 Starting Handler::process
-Mar 30 11:16:40 Handler starts
-Mar 30 11:16:40 Starting Handler::process
-Mar 30 11:17:24 Handler starts
-Mar 30 11:17:24 Starting Handler::process
-Mar 30 11:17:24 state:
-Mar 30 11:17:24   `register'
-Mar 30 11:17:24   `register'
-Mar 30 11:17:24 submit:
-Mar 30 11:17:24   `Aanmelden'
-Mar 30 11:17:24 email:
-Mar 30 11:17:24   `'
-Mar 30 11:17:24 pwd:
-Mar 30 11:17:24   `'
-Mar 30 11:19:44 Handler starts
-Mar 30 11:19:44 Starting Handler::process
-Mar 30 11:19:44 state:
-Mar 30 11:19:44   `register'
-Mar 30 11:19:44 submit:
-Mar 30 11:19:44   `Aanmelden'
-Mar 30 11:19:44 email:
-Mar 30 11:19:44   `'
-Mar 30 11:19:44 pwd:
-Mar 30 11:19:44   `'
-Mar 30 11:20:50 Handler starts
-Mar 30 11:20:50 Starting Handler::process
-Mar 30 11:20:50 state:
-Mar 30 11:20:50   `register'
-Mar 30 11:20:50 email:
-Mar 30 11:20:50   `'
-Mar 30 11:20:50 pwd:
-Mar 30 11:20:50   `'
+
+Mar 30 14:32:44 Handler starts
+Mar 30 14:32:44 Starting Handler::process: type = `'
+Mar 30 14:32:44 nip:
+Mar 30 14:32:44   `'
+Mar 30 14:32:44 pwd2:
+Mar 30 14:32:44   `'
+Mar 30 14:32:44 naam:
+Mar 30 14:32:44   `'
+Mar 30 14:32:44 submit:
+Mar 30 14:32:44   `Aanmelden'
+Mar 30 14:32:44 pwd:
+Mar 30 14:32:44   `'
+Mar 30 14:32:44 email:
+Mar 30 14:32:44   `'
+Mar 30 14:35:02 Handler starts
+Mar 30 14:35:02 Starting Handler::process: type = `psychologist'
+Mar 30 14:35:06 Handler starts
+Mar 30 14:35:06 Starting Handler::process: type = `'
+Mar 30 14:35:06 nip:
+Mar 30 14:35:06   `'
+Mar 30 14:35:06 pwd2:
+Mar 30 14:35:06   `'
+Mar 30 14:35:06 naam:
+Mar 30 14:35:06   `'
+Mar 30 14:35:06 submit:
+Mar 30 14:35:06   `Aanmelden'
+Mar 30 14:35:06 pwd:
+Mar 30 14:35:06   `'
+Mar 30 14:35:06 email:
+Mar 30 14:35:06   `'
+Mar 30 14:35:20 Handler starts
+Mar 30 14:35:20 Starting Handler::process: type = `psychologist'
+Mar 30 14:35:24 Handler starts
+Mar 30 14:35:24 Starting Handler::process: type = `'
+Mar 30 14:35:24 nip:
+Mar 30 14:35:24   `'
+Mar 30 14:35:24 pwd2:
+Mar 30 14:35:24   `'
+Mar 30 14:35:24 naam:
+Mar 30 14:35:24   `'
+Mar 30 14:35:24 submit:
+Mar 30 14:35:24   `Aanmelden'
+Mar 30 14:35:24 pwd:
+Mar 30 14:35:24   `'
+Mar 30 14:35:24 email:
+Mar 30 14:35:24   `'
+Mar 30 14:37:02 Handler starts
+Mar 30 14:37:02 Starting Handler::process: type = `psychologist'
+Mar 30 14:37:07 Handler starts
+Mar 30 14:37:07 Starting Handler::process: type = `'
+Mar 30 14:37:07 nip:
+Mar 30 14:37:07   `'
+Mar 30 14:37:07 pwd2:
+Mar 30 14:37:07   `'
+Mar 30 14:37:07 naam:
+Mar 30 14:37:07   `'
+Mar 30 14:37:07 submit:
+Mar 30 14:37:07   `Aanmelden'
+Mar 30 14:37:07 pwd:
+Mar 30 14:37:07   `'
+Mar 30 14:37:07 email:
+Mar 30 14:37:07   `'
+Mar 30 14:38:05 Handler starts
+Mar 30 14:38:05 Starting Handler::process: type = `psychologist'
+Mar 30 14:38:10 Handler starts
+Mar 30 14:38:10 Starting Handler::process: type = `'
+Mar 30 14:38:10 nip:
+Mar 30 14:38:10   `'
+Mar 30 14:38:10 pwd2:
+Mar 30 14:38:10   `'
+Mar 30 14:38:10 naam:
+Mar 30 14:38:10   `'
+Mar 30 14:38:10 submit:
+Mar 30 14:38:10   `Aanmelden'
+Mar 30 14:38:10 pwd:
+Mar 30 14:38:10   `'
+Mar 30 14:38:10 email:
+Mar 30 14:38:10   `'
+Mar 30 14:39:32 Handler starts
+Mar 30 14:39:32 Starting Handler::process: type = `psychologist'
+Mar 30 14:40:45 Handler starts
+Mar 30 14:40:45 Starting Handler::process: type = `psychologist'
+Mar 30 14:42:35 Handler starts
+Mar 30 14:42:35 Starting Handler::process: type = `psychologist'
+Mar 30 14:42:59 Handler starts
+Mar 30 14:42:59 Starting Handler::process: type = `psychologist'
+Mar 30 14:43:43 Handler starts
+Mar 30 14:43:43 Starting Handler::process: type = `psychologist'
+Mar 30 14:43:57 Handler starts
+Mar 30 14:43:57 Starting Handler::process: type = `psychologist'
+Mar 30 14:46:49 Handler starts
+Mar 30 14:46:49 Starting Handler::process: type = `psychologist'
+Mar 30 14:46:53 Handler starts
+Mar 30 14:46:53 Starting Handler::process: type = `'
+Mar 30 14:46:53 nip:
+Mar 30 14:46:53   `'
+Mar 30 14:46:53 pwd2:
+Mar 30 14:46:53   `'
+Mar 30 14:46:53 naam:
+Mar 30 14:46:53   `'
+Mar 30 14:46:53 submit:
+Mar 30 14:46:53   `Aanmelden'
+Mar 30 14:46:53 pwd:
+Mar 30 14:46:53   `'
+Mar 30 14:46:53 email:
+Mar 30 14:46:53   `'
+Mar 30 14:47:16 Handler starts
+Mar 30 14:47:16 Starting Handler::process: type = `psychologist'
+Mar 30 14:49:31 Handler starts
+Mar 30 14:49:31 Starting Handler::process: type = `psychologist'
+Mar 30 14:50:00 Handler starts
+Mar 30 14:50:00 Starting Handler::process: type = `psychologist'
+Mar 30 14:50:31 Handler starts
+Mar 30 14:50:31 Starting Handler::process: type = `psychologist'
+Mar 30 14:51:24 Handler starts
+Mar 30 14:51:24 Starting Handler::process: type = `psychologist'
+Mar 30 14:52:15 Handler starts
+Mar 30 14:52:15 Starting Handler::process: type = `psychologist'
+Mar 30 14:52:16 Handler starts
+Mar 30 14:52:16 Starting Handler::process: type = `psychologist'
+Mar 30 14:53:51 Handler starts
+Mar 30 14:53:51 Starting Handler::process: type = `psychologist'
+Mar 30 14:54:00 Handler starts
+Mar 30 14:54:00 Starting Handler::process: type = `'
+Mar 30 14:54:00 naam:
+Mar 30 14:54:00   `k'
+Mar 30 14:54:00 gender:
+Mar 30 14:54:00   `M'
+Mar 30 14:54:00 pwd2:
+Mar 30 14:54:00   `'
+Mar 30 14:54:00 email:
+Mar 30 14:54:00   `k'
+Mar 30 14:54:00 pwd:
+Mar 30 14:54:00   `a'
+Mar 30 14:54:00 submit:
+Mar 30 14:54:00   `Aanmelden'
+Mar 30 14:54:00 nip:
+Mar 30 14:54:00   `9'
+Mar 30 14:54:28 Handler starts
+Mar 30 14:54:28 Starting Handler::process: type = `psychologist'
+Mar 30 14:55:37 Handler starts
+Mar 30 14:55:37 Starting Handler::process: type = `psychologist'
+Mar 30 14:55:52 Handler starts
+Mar 30 14:55:52 Starting Handler::process: type = `psychologist'
+Mar 30 14:59:32 Handler starts
+Mar 30 14:59:32 Starting Handler::process: type = `psychologist'
+Mar 30 15:05:00 Handler starts
+Mar 30 15:05:00 Starting Handler::process: type = `psychologist'

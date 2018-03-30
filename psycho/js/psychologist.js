@@ -2,7 +2,7 @@ var nr = 0;
 
 function validate() 
 {
-    var mail = document.forms["form"]["email"].value;
+    var nip = document.forms["form"]["nip"].value;
 
     switch (nr)
     {
@@ -11,25 +11,26 @@ function validate()
         break;
 
         case 1:
-            if (mail == "") 
+            if (nip == "") 
             {
-                alert("E-mail adress moet worden vermeld");
+                alert("Uw NIP-nummer moet worden vermeld");
                 return false;
             }
             addHidden('state', 'noPwd');
         break;
 
         case 2:     // inloggen: UN/PW vereist
-            if (mail == "" || 
-                document.forms["form"]["pwd"].value == ""
+            if (nip == "" || 
+                document.forms['form']['pwd'].value == ""
             )
             {
-                alert("E-mail en password moeten worden vermeld");
+                alert("NIP-nummer en password moeten worden vermeld");
                 return false;
             }
             addHidden('state', 'login');
         break;
     }
+    addHidden('type', 'psychologist');
     return true;
 } 
 

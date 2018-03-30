@@ -1,19 +1,19 @@
 #include "main.ih"
 
-// see README
-
 namespace {
-                // contains the abs. path to the directory 
-                // containing stubs and skeletons
-#include "basedir.f"
 
-} //namespace
+#include "basedir.f"    // abs. path to the directory containing data files
 
-Log g_log;                              // generic log facility
+} // anonymous
 
-int main(int argc, char **argv)
+Options g_options{ g_base };
+Log g_log{ g_options.log() };           // generic log facility
+
+int main()
 {
-    Handler handler{ g_base };          // Form handling object
+    Display::setBase(g_options.stubs());
+
+    Handler handler;                    // Form handling object
 
     handler.process();                  // process incoming forms
 }

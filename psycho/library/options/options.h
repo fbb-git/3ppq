@@ -6,12 +6,32 @@
 class Options
 {
     std::string d_base;
-//    std::string d_users;
-//    std::string d_states;
-//    std::string d_daemons;
-//    std::string d_objects;
-//    std::string d_globals;
-    std::string d_log;
+
+    public:
+        Options(std::string const &base);
+
+        std::string log() const;
+        std::string stubs() const;
+        std::string const &base() const;
+
+    private:
+};
+
+inline std::string Options::log() const
+{
+    return d_base + "log";
+}
+
+inline std::string const &Options::base() const
+{
+    return d_base;
+}
+
+inline std::string Options::stubs() const
+{
+    return d_base + "stubs/";
+}
+
 
 //    std::string d_toMonitor;
 //    std::string d_fromMonitor;
@@ -19,17 +39,17 @@ class Options
 //    int d_toMonitorFd;
 //    int d_fromMonitorFd;
 
-    public:
-        Options();
-        Options(std::string const &base);
+//    std::string d_users;
+//    std::string d_states;
+//    std::string d_daemons;
+//    std::string d_objects;
+//    std::string d_globals;
 
 //        std::string const &users() const;
 //        std::string const &states() const;
 //        std::string const &daemons() const;
 //        std::string const &objects() const;
 //        std::string const &globals() const;
-        std::string const &log() const;
-        std::string const &base() const;
 
 //        std::string const &toMonitor() const;
 //        std::string const &fromMonitor() const;
@@ -39,12 +59,13 @@ class Options
 //
 //        size_t firstDaemonState() const;
 
-    private:
-        void initialize(std::string const &baseDir);
+//        void initialize(std::string const &baseDir);
+//
+//        int fifoFd(std::string const &fifo);
+//        int makeFifo(std::string const &fifo);
+//
 
-        int fifoFd(std::string const &fifo);
-        int makeFifo(std::string const &fifo);
-};
+////////////////////////////////////////////////////////////////
 
 //inline std::string const &Options::users() const
 //{
@@ -70,16 +91,6 @@ class Options
 //{
 //    return d_globals;
 //}
-
-inline std::string const &Options::log() const
-{
-    return d_log;
-}
-
-inline std::string const &Options::base() const
-{
-    return d_base;
-}
 
 //inline std::string const &Options::toMonitor() const
 //{

@@ -1,0 +1,8 @@
+#include <iostream>
+#include <string>
+
+#include "../dataidx.h"
+
+void usage(std::string const &progname);
+
+using namespace std;

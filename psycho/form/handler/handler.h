@@ -7,6 +7,7 @@
 #include <bobcat/cgi>
 
 #include "../../library/options/options.h"
+
 #include "../psychologist/psychologist.h"
 
 class Handler
@@ -14,7 +15,7 @@ class Handler
     FBB::CGI            d_cgi;
 
     Psychologist d_psychologist;
-    
+
     public:
         Handler();
         ~Handler();

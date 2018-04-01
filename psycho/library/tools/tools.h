@@ -1,7 +1,7 @@
 #ifndef INCLUDED_TOOLS_
 #define INCLUDED_TOOLS_
 
-#include <iostream>         // TMP
+#include <iosfwd>
 #include <fstream>
 
 #include "../types/types.h"
@@ -11,6 +11,16 @@ class Tools
     enum { BUFSIZE = 5000 };
     
     public:
+        static std::string encrypt(std::string const &iv, 
+                                    std::stringstream &str);
+
+        static std::string iv();        // return an initialization vector
+
+                                        // return the 16-byte MD5 hash
+        static std::string md5hash(std::string const &text);
+                                        // lowest 8 bytes of md5hash
+        static uint64_t md5hash8(std::string const &text);
+
         static size_t random(int max);  // next random nr from uniform 
                                         // int distribution [0 .. max)
 
@@ -40,11 +50,15 @@ class Tools
 
         static Uint32 tellg(std::istream &stream);  
 
-        static Uint32 size(std::istream &stream);     // 1.f
-        static Uint32 size(std::ostream &stream);     // 2.f
-        static Uint32 size(std::fstream &stream);     // 3.f
+        static uint64_t size(std::istream &stream);     // 1.f
+        static uint64_t size(std::ostream &stream);     // 2.f
+        static uint64_t size(std::fstream &stream);     // 3.f
 
+    private:
+        static std::string key();
 };
+
+#include "md5hash8.f"
 
 #include "read1.f"
 #include "read2.f"

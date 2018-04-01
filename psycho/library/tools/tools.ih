@@ -8,9 +8,12 @@
 #include <string>
 #include <numeric>
 #include <random>
+#include <sstream>
 
 #include <bobcat/exception>
 #include <bobcat/stat>
+#include <bobcat/digestbuf>
+#include <bobcat/isymcryptstream>
 
 using namespace std;
 using namespace FBB;

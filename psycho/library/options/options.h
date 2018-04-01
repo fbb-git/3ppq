@@ -39,6 +39,8 @@ inline std::string Options::stubs() const
 }
 
 
+extern Options g_options;           // defined in main.cc
+
 //    std::string d_toMonitor;
 //    std::string d_fromMonitor;
 //

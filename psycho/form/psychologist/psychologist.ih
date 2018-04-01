@@ -3,15 +3,15 @@
 //#include <iostream>
 //#define CERR std::cerr << __FILE__": "
 
-#include <fstream>
+#include <algorithm>
 
 #include <bobcat/cgi>
 #include <bobcat/log>
 
 #include "../../library/display/display.h"
-
 #include "../../library/options/options.h"
-extern Options g_options;
+#include "../../library/lfstream/lfstream.h"
+
 extern FBB::Log g_log;
 
 using namespace std;

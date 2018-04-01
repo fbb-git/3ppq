@@ -13,7 +13,7 @@ class Lfstream: public std::fstream
 
     public:
         Lfstream() = default;
-        Lfstream(std::string const &path);
+        Lfstream(std::string const &path);      // constructors don't lock!
 
         ~Lfstream();
 

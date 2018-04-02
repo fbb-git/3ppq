@@ -4,7 +4,7 @@
 int64_t DataIdx::dataOffset(size_t key)
 {
     Entry entry;
-    find(&entry, key);          // find the Entry matching key (may be empty)
+    find(&entry, key);          // find the Entry matching key (may be empty) 
 
     if (entry.key != key)       // not found
         return -1;

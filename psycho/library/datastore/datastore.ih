@@ -1,9 +1,15 @@
 #include "datastore.h"
 
-//#include <iostream>
-//#define CERR std::cerr << __FILE__": "
+#include <unistd.h>
+#include <sys/types.h>
 
-#include "../lockguard/lockguard.h"
+#include <iostream>
+#define CERR std::cerr << __FILE__": "
+
+#include <bobcat/exception>
+
+#include "../tools/tools.h"
 
 using namespace std;
+using namespace FBB;
 

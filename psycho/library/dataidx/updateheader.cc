@@ -1,7 +1,7 @@
 #include "dataidx.ih"
 
-void DataIdx::updateHeader()
+void DataIdx::updateHeader(ostream &out)
 {
-    d_idx.seekp(0);
-    Tools::write(d_idx, d_header, sizeof(d_header));
+    out.seekp(0);
+    Tools::write(out, d_header, sizeof(d_header));
 }

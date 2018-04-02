@@ -1,6 +1,8 @@
 #ifndef INCLUDED_TOOLS_
 #define INCLUDED_TOOLS_
 
+#include <unistd.h>
+
 #include <iosfwd>
 #include <fstream>
 
@@ -12,7 +14,7 @@ class Tools
     
     public:
         static std::string encrypt(std::string const &iv, 
-                                    std::stringstream &str);
+                                    std::stringstream &&str);
 
         static std::string iv();        // return an initialization vector
 
@@ -50,6 +52,9 @@ class Tools
 
         static Uint32 tellg(std::istream &stream);  
 
+        static bool exists(std::string const &fname);   // true: exists
+
+            // files must exist. If not -1 (~0UL) is returned
         static uint64_t size(std::istream &stream);     // 1.f
         static uint64_t size(std::ostream &stream);     // 2.f
         static uint64_t size(std::fstream &stream);     // 3.f
@@ -59,6 +64,7 @@ class Tools
 };
 
 #include "md5hash8.f"
+#include "exists.f"
 
 #include "read1.f"
 #include "read2.f"

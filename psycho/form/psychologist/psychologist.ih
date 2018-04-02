@@ -4,6 +4,7 @@
 //#define CERR std::cerr << __FILE__": "
 
 #include <algorithm>
+#include <sstream>
 
 #include <bobcat/cgi>
 #include <bobcat/log>
@@ -11,6 +12,7 @@
 #include "../../library/display/display.h"
 #include "../../library/options/options.h"
 #include "../../library/lfstream/lfstream.h"
+#include "../../library/lockguard/lockguard.h"
 
 extern FBB::Log g_log;
 

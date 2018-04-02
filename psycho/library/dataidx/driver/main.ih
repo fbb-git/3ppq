@@ -1,8 +1,9 @@
 #include <iostream>
 #include <string>
 
+#include <bobcat/exception>
+
 #include "../dataidx.h"
 
-void usage(std::string const &progname);
 
 using namespace std;

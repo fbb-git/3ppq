@@ -1,6 +1,5 @@
 #include "dataidx.ih"
 
-    // file already locked.
 void DataIdx::extend()
 {
     string wip{ d_idxPath + "-wip" };
@@ -8,28 +7,37 @@ void DataIdx::extend()
     ++d_header[N_BITS];
     initialize(wip);
 
-    ifstream in(d_idxPath);
+    ifstream in{ d_idxPath };
+    ofstream out{ wip };
+
     in.seekg(sizeof(d_header));             // skip the header
 
-    d_header[N_KEYS] = 0;                   // fill the new idx file
+    if (not in)
+        throw Exception{} << "Can't find offset " << sizeof(d_header) << '\n';
+
     while (true)
     {
         Entry entry;
     
         Tools::read(in, &entry, sizeof(Entry));
+        if (not in)
+            break;
+
         if (entry.key == 0)                 // empty slot: try the next one
             continue;
-        
-        size_t idx = hash(entry.key);                       // new location
-        d_idx.seekp(sizeof(d_header) + idx * sizeof(Entry));    // dest. loc.
 
-        Tools::write(d_idx, &entry, sizeof(Entry));      // write the Entry
+        size_t idx = hash(entry.key);                       // new location
+        out.seekp(sizeof(d_header) + idx * sizeof(Entry));  // dest. loc.
+
+        Tools::write(out, &entry, sizeof(Entry));      // write the Entry
     }
 
-    updateHeader();
+    updateHeader(out);
 
     in.close();                                         // close before 
-    d_idx.close();                                      // renaming
+    out.close();                                        // renaming
 
     rename(wip.c_str(), d_idxPath.c_str());             // new idx file ready
 }
+
+

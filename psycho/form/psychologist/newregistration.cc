@@ -2,35 +2,33 @@
 
 void Psychologist::newRegistration()
 {
-    Private private
+    Private priv
     {
         stoull(d_cgi.param1("nip")),
-        d_cgi.param1("gender") == 'M',
+        d_cgi.param1("gender") == "M",
         
         d_cgi.param1("name"),
         d_cgi.param1("name"),         // UPDATE! TODO
         d_cgi.param1("email")
     };
     
-    uint64_t iv = Tools::iv();
+    string iv = Tools::iv();
 
-    string encrypted = Tools::encrypt(record.iv, toString(private));
+    string encrypted = Tools::encrypt(iv, toString(priv));
 
     Record record
     {
         identNr(),
         Tools::md5hash(d_cgi.param1("passwd")),
-        2 * sizeof(uint64_t) +                  // key and iv's sizes
+        static_cast<uint16_t>(
+            2 * sizeof(uint64_t) +                  // key and iv's sizes
             sizeof(Record) + encrypted.size()
+        )
     };
 
     Display{ 
-        d_psychData.add(
-                    Tools::Tools::md5hash8(d_cgi.param1("nip")),    // key
-                    iv, 
-                    toString(record) + encrypted                    // data
-                ) ?
-                    "newregistration" 
+        d_psychData.add(nipKey(), iv, toString(record) + encrypted) ?
+                    "newregistration"
                 :
                     "cantregister"
     };

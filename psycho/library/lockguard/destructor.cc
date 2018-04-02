@@ -2,5 +2,9 @@
 
 LockGuard::~LockGuard()
 {
-    d_lfstream.unlock();
+    if (d_lfstream && d_lockCount)
+    {
+        if (--d_lockCount == 0)
+            d_lfstream->unlock();
+    }
 }

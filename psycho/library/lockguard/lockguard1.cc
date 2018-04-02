@@ -2,7 +2,7 @@
 
 LockGuard::LockGuard(Lfstream &lfstream)
 :
-    d_lfstream(lfstream)
+    d_lfstream(&lfstream)
 {
-    lfstream.lock();
+    lock();
 }

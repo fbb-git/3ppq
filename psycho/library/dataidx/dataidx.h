@@ -24,7 +24,7 @@ class DataIdx
     };
 
     std::string d_idxPath;
-    std::fstream d_idx;
+
     uint16_t d_header[sizeHeader];
 
     public:
@@ -35,12 +35,13 @@ class DataIdx
                                                     // dataIdx of key's record
 
         bool add(size_t key, uint64_t dataSize);  // false: already available
-        int64_t remove(size_t key);         // -1: not found, else Data offset
+        int64_t erase(size_t key);         // -1: not found, else Data offset
+
+        void reduceOffsets(uint64_t offset, uint64_t delta);
 
     private:
         void extend();                  // extend the .idx file
-        void updateHeader();            // flishes d_idx after updating 
-                                        // the hdr.
+        void updateHeader(std::ostream &out);
 
         void initialize(std::string const &path);
         size_t hash(size_t key) const;

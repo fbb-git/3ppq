@@ -3,7 +3,7 @@
 // static
 bool Psychologist::acceptNr(istream &nrs, uint16_t idNr)
 {
-    uint16_t buffer = new uint16_t[100];
+    uint16_t *buffer = new uint16_t[100];
 
     while (true)
     {
@@ -25,12 +25,4 @@ bool Psychologist::acceptNr(istream &nrs, uint16_t idNr)
             return false;                       // try another idNr
         }
     }
-
-                                100);
-
-    nrs.lock();
-    
-}
-
-{
 }

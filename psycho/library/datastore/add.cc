@@ -1,19 +1,18 @@
 #include "datastore.ih"
 
-bool DataStore::add(uint64_t key, uint64_t iv, string const &data)
+bool DataStore::add(uint64_t key, string const &data)
 {
-    LockGuard lck{d_data};
+    fstream out{ open() };
 
-    d_data.seekp(0, ios::end);
+    out.seekp(0, ios::end);
 
-    if (not d_dataIdx.add(key, d_data.tellp()))
+    if (not d_dataIdx.add(key, out.tellp()))
         return false;
-    
-    Tools::write(d_data, &key);
-    Tools::write(d_data, &iv);
-    d_data.write(&data.front(), data.size());
 
-    d_data.flush();
+    Preamble preamble{ key, data.size(), data.size() };    
+    Tools::write(out, &preamble);
+
+    out.write(&data.front(), preamble.available);
 
     return true;
 }

@@ -28,7 +28,7 @@ class Psychologist
         std::string email;
     };
 
-    enum Record
+    struct Record
     {
         uint16_t    nr;             // identification number
         std::string pwdHash;        // MD5 hash of the password
@@ -41,15 +41,11 @@ class Psychologist
     FBB::CGI &d_cgi;
     DataStore d_psychData;      // psychologists' data
 
-    StrVector d_fields;         // TMP (?)
-
     public:
         Psychologist(FBB::CGI &cgi);
         void process();
 
     private:
-        bool readFields(std::istream &in);
-
         void add();
         void alreadyRegistered();
         void newRegistration();
@@ -57,8 +53,11 @@ class Psychologist
         void newPsych();
 
         uint16_t identNr() const;
-        static bool acceptNr(istream &nrs, uint16_t idNr);
-        static std::stringstream toString(Private const &private);
+        uint64_t nipKey() const;    // get key from cgi.param1("nip")
+
+        static bool acceptNr(std::istream &nrs, uint16_t idNr);
+        static std::stringstream toString(Private const &priv);
+        static std::string toString(Record const &rec);
 };
         
 

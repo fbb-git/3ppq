@@ -16,6 +16,9 @@ class Tools
         static std::string encrypt(std::string const &iv, 
                                     std::stringstream &&str);
 
+        static std::string decrypt(std::string const &iv, 
+                                    std::stringstream &&str);
+
         static std::string iv();        // return an initialization vector
 
                                         // return the 16-byte MD5 hash

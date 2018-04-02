@@ -31,8 +31,7 @@ class Psychologist
     struct Record
     {
         uint16_t    nr;             // identification number
-        std::string pwdHash;        // MD5 hash of the password
-        uint16_t    size;           // size of the record
+        std::string pwdHash;        // MD5 hash of the password (16 bytes)
     };
         
     static Map s_state;         // maps state names to handling functions
@@ -58,7 +57,14 @@ class Psychologist
         static bool acceptNr(std::istream &nrs, uint16_t idNr);
         static std::stringstream toString(Private const &priv);
         static std::string toString(Record const &rec);
+
+        size_t getRecord(Record *record, std::string const &data, 
+                                        size_t offset);
+        void getPrivate(Private *priv, std::string const &data, 
+                                        size_t offset);
 };
         
 
 #endif
+
+

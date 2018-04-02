@@ -20,14 +20,16 @@ void Psychologist::newRegistration()
     {
         identNr(),
         Tools::md5hash(d_cgi.param1("passwd")),
-        static_cast<uint16_t>(
-            2 * sizeof(uint64_t) +                  // key and iv's sizes
-            sizeof(Record) + encrypted.size()
-        )
     };
 
+        // to retrieve: d_psychData.get() returns a char buffer:
+        // bytes 0..7 contain the iv, 
+        //  getRecord reads the Record's fields
+        // remaining bytes are the encrypted string
+        // the encrypted string can be converted to a Private record
+        // using getPrivate. 
     Display{ 
-        d_psychData.add(nipKey(), iv, toString(record) + encrypted) ?
+        d_psychData.add(nipKey(), iv + toString(record) + encrypted) ?
                     "newregistration"
                 :
                     "cantregister"

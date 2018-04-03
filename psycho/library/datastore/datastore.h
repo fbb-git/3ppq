@@ -32,5 +32,26 @@ class DataStore
         std::fstream open();
 };
 
+// A common setup of data storage/updates and retrieval works like this:
+//
+//  Storage:
+//  1. determine a key
+//  2. obtain information: part I: not encrypted, part II: encrypted
+//  3. encrypt part II: write to a string
+//  4. determine the size of the unencrypted data (this may conveniently be
+//      stored in the unencrypted data, or it may be written as the first
+//      value in the stored data
+//  4. append the encrypted bytes to the string holding the unencrypted bytes
+//      (+ their size). 
+//  5. store (or update) the data for the specified key.
+//
+//  Retrieval:
+//  1. determine the key.
+//  2. retrieve the key's data
+//  4. determine the location of the encrypted data
+//  5. decrypt the encrypted data
+//  6. convert the unencrypted bytes to, e.g., the unencrypted data struct
+//  7. convert the decrypted bytes to, e.g., the confidential data struct
+    
 #endif
 

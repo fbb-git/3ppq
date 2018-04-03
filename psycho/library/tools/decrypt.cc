@@ -1,13 +1,13 @@
 #include "tools.ih"
 
 // static
-string Tools::decrypt(string const &iv, stringstream &&str)
+string Tools::decrypt(string const &iv, string const &data)
 {
-    ISymCryptStream<DECRYPT> decryptor{ str, "bf-cbc", key(), iv };
+    istringstream in{ data };
+    ISymCryptStream<DECRYPT> decryptor{ in, "bf-cbc", key(), iv };
     
-    str.str("");                // clear the original contents
+    ostringstream out;
+    out << decryptor.rdbuf();   // insert the decrypted contents
 
-    str << decryptor.rdbuf();   // insert the decrypted contents
-
-    return str.str();           // return the decrypted text
+    return out.str();           // return the decrypted text
 }

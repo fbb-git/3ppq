@@ -1,6 +1,15 @@
 #include <iostream>
 #include <string>
+#include <sstream>
 
 #include "../datastore.h"
+#include "../../tools/tools.h"
 
 using namespace std;
+
+extern DataStore dataStore;
+
+void add();
+void retrieve();
+void update();
+void remove();

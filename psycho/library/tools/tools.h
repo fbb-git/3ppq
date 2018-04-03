@@ -14,10 +14,10 @@ class Tools
     
     public:
         static std::string encrypt(std::string const &iv, 
-                                    std::stringstream &&str);
+                                   std::string const &data);
 
         static std::string decrypt(std::string const &iv, 
-                                    std::stringstream &&str);
+                                   std::string const &data);
 
         static std::string iv();        // return an initialization vector
 

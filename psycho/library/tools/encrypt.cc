@@ -1,15 +1,15 @@
 #include "tools.ih"
 
 // static
-string Tools::encrypt(string const &iv, stringstream &&str)
+string Tools::encrypt(string const &iv, string const &data)
 {
-    str.seekg(0);
+    istringstream in{ data };
 
-    ISymCryptStream<ENCRYPT> encryptor{ str, "bf-cbc", key(), iv };
+    ISymCryptStream<ENCRYPT> encryptor{ in, "bf-cbc", key(), iv };
     
-    str.str("");                // clear the original contents
+    ostringstream out;
 
-    str << encryptor.rdbuf();   // insert the encrypted contents
+    out << encryptor.rdbuf();   // insert the encrypted contents
 
-    return str.str();           // return the encrypted text
+    return out.str();           // return the encrypted text
 }

@@ -39,6 +39,7 @@ class Psychologist
     std::string d_path;
     FBB::CGI &d_cgi;
     DataStore d_psychData;      // psychologists' data
+    int d_lockFd;
 
     public:
         Psychologist(FBB::CGI &cgi);
@@ -54,14 +55,15 @@ class Psychologist
         uint16_t identNr() const;
         uint64_t nipKey() const;    // get key from cgi.param1("nip")
 
-        static bool acceptNr(std::istream &nrs, uint16_t idNr);
-        static std::stringstream toString(Private const &priv);
-        static std::string toString(Record const &rec);
-
         size_t getRecord(Record *record, std::string const &data, 
                                         size_t offset);
         void getPrivate(Private *priv, std::string const &data, 
                                         size_t offset);
+
+        std::string publicData() const;
+        std::string privateData() const;
+
+        static bool acceptNr(std::istream &nrs, uint16_t idNr);
 };
         
 

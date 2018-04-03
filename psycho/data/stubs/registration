@@ -26,12 +26,12 @@ Hiervoor hebben we de volgend informatie van u nodig:
 
 <tr class=darkrow>
     <td class=right>Naam: </td> 
-    <td ><input class=margin type="text" name="naam" size="50"></td>
+    <td ><input class=margin type="text" name="name" size="50"></td>
 </tr>
 
 <tr >
     <td class=right>Achternaam: </td> 
-    <td ><input class=margin type="text" name="naam" size="50"></td>
+    <td ><input class=margin type="text" name="lastname" size="50"></td>
 </tr>
 
 <tr class=darkrow>

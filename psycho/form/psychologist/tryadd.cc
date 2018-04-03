@@ -2,14 +2,13 @@
 
 void Psychologist::tryAdd()
 {
-    LockGuard lg;
-    d_psychData.guard(lg);
+    LockGuard lg{ d_lockFd };
 
-    if (d_psychData.find(nipKey()))         // key already exists
+    if (not acceptRegistration())
         alreadyRegistered();
-    else
-        newRegistration();                  // new registration
 }
+
+
 
 //    fstream str(g_options.psychologists(), ios::in);
 //    

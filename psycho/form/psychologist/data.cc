@@ -2,8 +2,9 @@
 
 Psychologist::Map Psychologist::s_state =
 {
-    { "register",   &Psychologist::registration },  // show registration page
-    { "tryAdd",     &Psychologist::tryAdd },        // add new psychologist
+                                                    // show registration page
+    { "registration",   &Psychologist::registration },  
+    { "tryAdd",         &Psychologist::tryAdd },    // add new psychologist
 };
 
 

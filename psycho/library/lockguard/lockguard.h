@@ -1,21 +1,15 @@
 #ifndef INCLUDED_LOCKGUARD_
 #define INCLUDED_LOCKGUARD_
 
-#include "../lfstream/lfstream.h"
+#include <iosfwd>
 
 class LockGuard
 {
-    Lfstream *d_lfstream = 0;
-    size_t d_lockCount = 0;
+    int d_fd;
 
     public:
-        LockGuard() = default;
-        LockGuard(Lfstream &lfstream);
+        LockGuard(std::string const &name, int fd);
         ~LockGuard();
-
-        void lock(Lfstream &lfstream);
-    private:
-        void lock();
 };
         
 

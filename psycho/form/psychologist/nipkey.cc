@@ -1,6 +1,6 @@
 #include "psychologist.ih"
 
-uint64_t Psychologist::nipKey() const
+string Psychologist::nipKey() const
 {
-    return Tools::md5hash8(d_cgi.param1("nip"));
+    return Tools::md5hash(d_cgi.param1("nip"));
 }

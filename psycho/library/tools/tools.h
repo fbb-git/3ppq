@@ -13,6 +13,9 @@ class Tools
     enum { BUFSIZE = 5000 };
     
     public:
+                                // open to RW, create if not existing
+        static std::fstream fstream(std::string const &path);
+
         static std::string encrypt(std::string const &iv, 
                                    std::string const &data);
 
@@ -53,6 +56,9 @@ class Tools
         static bool write(std::ostream &out, 
                         Type const *src, size_t size = sizeof(Type));
 
+                                                        // 3.f
+        static bool write(std::ostream &out, std::string const &str);
+                          
         static Uint32 tellg(std::istream &stream);  
 
         static bool exists(std::string const &fname);   // true: exists
@@ -74,6 +80,7 @@ class Tools
 
 #include "write1.f"
 #include "write2.f"
+#include "write3.f"
 
 #include "tellg.f"
 

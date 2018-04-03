@@ -2,12 +2,19 @@ var nr = 0;
 
 function validate() 
 {
-    if (nr == 1)
+    addHidden("type",   "psychologist");
+
+    switch (nr)
     {
-        addHidden("type",   "psychologist");
-        addHidden("state",  "register");
+        case 1:
+            addHidden("state",  "registration");
+        return true;
+
+        case 2:
+            addHidden("state", "login");
         return true;
     }
+
 
     window.open("/", "_self");
     return false;

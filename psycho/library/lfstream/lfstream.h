@@ -17,7 +17,7 @@ class Lfstream: public std::fstream
 
         ~Lfstream();
 
-        void open(std::string const &path);
+        void open(std::string const &path);     // first closes *this 
 
         void lock() const;
         void unlock();

@@ -7,7 +7,7 @@ function validate()
     switch (nr)
     {
         case 0:
-            addHidden('state', 'register');
+            addHidden('state', 'registration');
         break;
 
         case 1:

@@ -19,7 +19,7 @@ class DataStore
 
     std::string d_path;
     DataIdx d_dataIdx;
-
+    
     public:
         DataStore(std::string const &path);     // full path to the data file
 

@@ -1,0 +1,28 @@
+.js files, handling functions and states have identical names.
+The .js files define type = "psychologist" and state as hidden input fields.
+
+                            next
+file/function               state           description
+-----------------------------------------------------------------------------
+/index.html                                 home page
+    -> client.html                          (not handled in this file)
+    -> psychologist.html                    psychologists entry page
+
+psychologist.html           registration    register as user
+                            login           login as user
+                            noPwd           lost password
+                            
+registration                tryAdd          try to add new user
+
+tryAdd
+    -> acceptRegistration   login           login as user
+                                            (email sent to user)
+    -> alreadyRegistered    login           login as user
+                            registration    register as user
+                            /index.html     to the homepage
+
+
+login
+
+
+noPwd

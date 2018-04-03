@@ -1,8 +1,10 @@
 #include "lockguard.ih"
 
-LockGuard::LockGuard(Lfstream &lfstream)
+LockGuard::LockGuard(std::string const &name, int fd)
 :
-    d_lfstream(&lfstream)
+    d_fd(fd)
 {
-    lock();
+    if (d_fd != -1 && flock(d_fd, LOCK_EX) != 0)
+        g_log << "can't lock " << name << endl;
+
 }

@@ -2,9 +2,7 @@
 
 uint16_t Psychologist::identNr() const
 {
-    Lfstream nrs{ d_path + ".nrs" };         // binary uint16_t file
-
-    LockGuard lg(nrs);
+    fstream nrs{ Tools::fstream(d_path + ".nrs") }; // binary uint16_t file
 
     uint16_t idNr;
     do                                      // generate new random id

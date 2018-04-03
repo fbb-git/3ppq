@@ -10,27 +10,17 @@ void DataIdx::extend()
     ifstream in{ d_idxPath };
     ofstream out{ wip };
 
-    in.seekg(sizeof(d_header));             // skip the header
-
-    if (not in)
-        throw Exception{} << "Can't find offset " << sizeof(d_header) << '\n';
-
-    while (true)
+                                // process all keys
+    for (size_t idx = 0, count = d_header[N_KEYS]; count--; )
     {
         Entry entry;
-    
-        Tools::read(in, &entry, sizeof(Entry));
-        if (not in)
-            break;
+        getEntry(&entry, in, idx++);
 
-        if (entry.key == 0)                 // empty slot: try the next one
+        if (noKey(entry.key))               // empty slot: try the next one
             continue;
 
-        size_t idx = hash(entry.key);                       // new location
-        out.seekp(sizeof(d_header) + idx * sizeof(Entry));  // dest. loc.
-
-        Tools::write(out, &entry, sizeof(Entry));      // write the Entry
-    }
+        putEntry(out, hash(entry.key), entry);
+   }
 
     updateHeader(out);
 

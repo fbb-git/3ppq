@@ -1,16 +1,16 @@
 #include "datastore.ih"
 
-bool DataStore::add(uint64_t key, string const &data)
+bool DataStore::add(std::string const &key, string const &data)
 {
     fstream out{ open() };
 
-    out.seekp(0, ios::end);
+    uint64_t size = Tools::size(out);
 
-    if (not d_dataIdx.add(key, out.tellp()))
+    if (not d_dataIdx.add(key, size))
         return false;
 
-    Preamble preamble{ key, data.size(), data.size() };    
-    Tools::write(out, &preamble);
+    Preamble preamble{ key, data.size(), data.size() };
+    putPreamble(out, size, preamble);
 
     out.write(&data.front(), preamble.available);
 

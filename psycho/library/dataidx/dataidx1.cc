@@ -1,8 +1,8 @@
 #include "dataidx.ih"
 
-DataIdx::DataIdx(string path)
+DataIdx::DataIdx(string dataIdxPath)
 :
-    d_idxPath(path)
+    d_idxPath(dataIdxPath)
 {
     if (Tools::exists(d_idxPath))
     {

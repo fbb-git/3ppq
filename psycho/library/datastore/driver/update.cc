@@ -2,20 +2,23 @@
 
 void update()
 {
-    string line;
-
     while (true)
     {
         cout << "key + text to update or 'q' or Enter: ";
+
+        string line;
         if (not getline(cin, line) || line.empty())
             return;
 
         if (line == "q")
             throw 0;
 
-        uint64_t key = stoull(line);
+        string key = line.substr(0, line.find_first_of(' '));
+        key.resize(DataIdx::KEY_SIZE);
 
-        if (not dataStore.update(key, line))
+        string store = prepare(line);
+
+        if (not dataStore.update(key, store))
             cout << "key " << key << " not available\n";
     }
 

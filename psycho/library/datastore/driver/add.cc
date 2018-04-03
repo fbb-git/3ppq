@@ -2,29 +2,25 @@
 
 void add()
 {
-    string line;
-
     while (true)
     {
         cout << "key + text or 'q' or Enter: ";
+        
+        string line;
         if (not getline(cin, line) || line.empty())
             return;
 
         if (line == "q")
             throw 0;
 
-        string iv = Tools::iv();
+        string key = line.substr(0, line.find_first_of(' '));
+        key.resize(DataIdx::KEY_SIZE);
 
-        string enc = Tools::encrypt(iv, line);
-        string stored = line + '\n' + iv + enc;
-                       
+        string store = prepare(line);
 
-        cout << "line length: " << line.length() << '\n';
-        cout << "enc length: " << enc.length() << '\n';
-        cout << "stored length: " << stored.length() << '\n';
-        uint64_t key = stoull(line);
-
-        if (not dataStore.add(key, stored))
+        if (not dataStore.add(key, store))
             cout << "key " << key << " already stored\n";
     }
 }
+
+

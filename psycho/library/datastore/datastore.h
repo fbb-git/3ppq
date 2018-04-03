@@ -6,13 +6,15 @@
 
 #include "../dataidx/dataidx.h"
 
+// keys must be DataIdx::KEY_SIZE bytes. NOT checked!
+
 class DataStore
 {
     struct Preamble
     {
-        uint64_t key;           // used for back-retrieval
-        size_t   used;          // actual size of the stored data
-        size_t   available;     // size of the available data space
+        std::string key;            // 16 byte MD5 hash
+        size_t      used;           // actual size of the stored data
+        size_t      available;      // size of the available data space
     };
 
     std::string d_path;
@@ -21,16 +23,29 @@ class DataStore
     public:
         DataStore(std::string const &path);     // full path to the data file
 
+        bool find(std::string const &key);
+
                                         // add to the end of d_data (true: OK)
-        bool add(uint64_t key, std::string const &data);
-        bool get(std::string *data, uint64_t key);
-        bool erase(uint64_t key);               // erase data and key
-        bool update(uint64_t key, std::string const &data);
+        bool add(std::string const &key, std::string const &data);
+        bool get(std::string *data, std::string const &key);
+        bool erase(std::string const &key);     // erase data and key
+        bool update(std::string const &key, std::string const &data);
 
     private:
         void reduce(int64_t from, int64_t to);
         std::fstream open();
+
+        static Preamble getPreamble(std::istream &in, uint64_t offset);
+        static void putPreamble(std::ostream &out, uint64_t offset, 
+                                Preamble const &preamble);
 };
+
+inline bool DataStore::find(std::string const &key)
+{
+    return d_dataIdx.dataOffset(key) != -1;     // -1: not found
+}
+
+
 
 // A common setup of data storage/updates and retrieval works like this:
 //

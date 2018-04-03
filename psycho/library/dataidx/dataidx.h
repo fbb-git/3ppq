@@ -19,7 +19,7 @@ class DataIdx
 
     struct Entry
     {
-        size_t key;
+        std::string key;        // KEY_SIZE bytes
         uint64_t offset;
     };
 
@@ -28,14 +28,22 @@ class DataIdx
     uint16_t d_header[sizeHeader];
 
     public:
-        DataIdx(std::string basepath);
+        enum 
+        {
+            KEY_SIZE = 16               // size of MD5 hash
+        };
 
-        int64_t dataOffset(size_t key);             // -1 if not found
+        DataIdx(std::string dataIdxPath);
+
+        int64_t dataOffset(std::string const &key); // -1 if not found
                                                     // otherwise offset in
                                                     // dataIdx of key's record
 
-        bool add(size_t key, uint64_t dataSize);  // false: already available
-        int64_t erase(size_t key);         // -1: not found, else Data offset
+                                                // false: already available
+        bool add(std::string const & key, uint64_t dataSize);  
+
+        int64_t erase(std::string const &key);  // -1: not found, 
+                                                // else Data offset
 
         void reduceOffsets(uint64_t offset, uint64_t delta);
 
@@ -44,11 +52,19 @@ class DataIdx
         void updateHeader(std::ostream &out);
 
         void initialize(std::string const &path);
-        size_t hash(size_t key) const;
+        size_t hash(std::string const &key) const;
 
-            // find the Entry matching 'key': fill entry, return offset in 
-            // the .idx file
-        uint64_t find(Entry *entry, size_t key);
+            // find the Entry matching 'key': fill entry, return the Entry's 
+            // index in the .idx file
+        size_t find(Entry *entry, std::string const &key);
+
+                                        // return offset of the entry
+        void getEntry(Entry *entry, std::istream &in, size_t idx);
+        void putEntry(std::ostream &out, size_t idx, Entry const &entry) 
+                                                                        const;
+        uint64_t offsetOfEntry(size_t idx) const;
+
+        static bool noKey(std::string const &key);
 };
         
 #endif

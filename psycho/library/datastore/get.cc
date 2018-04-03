@@ -1,6 +1,6 @@
 #include "datastore.ih"
 
-bool DataStore::get(string *data, uint64_t key)
+bool DataStore::get(string *data, string const &key)
 {
     int64_t offset = d_dataIdx.dataOffset(key);
     if (offset == -1)
@@ -8,11 +8,10 @@ bool DataStore::get(string *data, uint64_t key)
 
     fstream in{ open() };
 
-    in.seekg(offset);
-    Preamble preamble;
-    Tools::read(in, &preamble);
+    Preamble preamble = getPreamble(in, offset);
 
     data->resize(preamble.used);
     Tools::read(in, &data->front(), preamble.used);
+
     return true;
 }

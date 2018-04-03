@@ -45,11 +45,11 @@ class Psychologist
         void process();
 
     private:
-        void add();
+        void tryAdd();
         void alreadyRegistered();
-        void newRegistration();
+        void acceptRegistration();
 
-        void newPsych();
+        void registration();
 
         uint16_t identNr() const;
         uint64_t nipKey() const;    // get key from cgi.param1("nip")

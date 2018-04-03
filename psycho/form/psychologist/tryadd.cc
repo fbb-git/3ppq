@@ -1,6 +1,6 @@
 #include "psychologist.ih"
 
-void Psychologist::add()
+void Psychologist::tryAdd()
 {
     LockGuard lg;
     d_psychData.guard(lg);

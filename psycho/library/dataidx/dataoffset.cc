@@ -1,7 +1,7 @@
 #include "dataidx.ih"
 
     // return offset in data file where key is found
-int64_t DataIdx::dataOffset(size_t key)
+int64_t DataIdx::dataOffset(string const &key)
 {
     Entry entry;
     find(&entry, key);          // find the Entry matching key (may be empty) 

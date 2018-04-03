@@ -13,3 +13,5 @@ void add();
 void retrieve();
 void update();
 void remove();
+
+string prepare(string const &line);

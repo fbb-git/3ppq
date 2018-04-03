@@ -3,12 +3,13 @@ function validate()
     var form = document.forms["form"];
 
     var name =      form["name"].value;
+    var lastname =  form["lastname"].value;
     var gender =    form["gender"].value;
     var email =     form["email"].value;
     var pwd =       form["pwd"].value;
     var pwd2 =      form["pwd2"].value;
 
-    if (name == "" || email == "" || gender == "" ||
+    if (name == "" || lastname == "" || email == "" || gender == "" ||
         pwd == "" || pwd2 == "")
     {
         alert("Alle velden moeten zijn ingevuld");
@@ -28,7 +29,7 @@ function validate()
     }
 
     addHidden("type",   "psychologist");
-    addHidden("state",  "add");
+    addHidden("state",  "tryAdd");
 
     return true;
 } 

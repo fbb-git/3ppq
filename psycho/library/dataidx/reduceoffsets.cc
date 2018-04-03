@@ -2,29 +2,31 @@
 
 void DataIdx::reduceOffsets(uint64_t offset, uint64_t delta)
 {
-    fstream idx;
-    Exception::open(idx, d_idxPath, ios::in | ios::out);
+    fstream io;
+    Exception::open(io, d_idxPath, ios::in | ios::out);
 
-    idx.seekg(sizeof(d_header));              // skip the header
+    io.seekg(sizeof(d_header));              // skip the header
 
-    for (size_t count = d_header[N_KEYS]; count--; )
+    for (size_t idx = -1, count = d_header[N_KEYS]; count--; )
     {
         Entry entry;
         while (true)
         {
-            Tools::read(idx, &entry);
-            if (entry.key != 0)
+            getEntry(&entry, io, ++idx);
+
+            if (noKey(entry.key))
+                continue;                   // empty entry: get the next one
+
+                // inspect an actual Entry:
+
+            if (entry.offset > offset)      // reduce entry offsets > offset
             {
-                if (entry.offset > offset)      // reduce offsets > offset
-                {
-                    entry.offset -= delta;
-                                                // rewrite the Entry
-                    idx.seekp(-sizeof(Entry), ios::cur);
-                    Tools::write(idx, &entry);
-                    idx.seekg(idx.tellp());
-                }
-                break;                          // find the next one, if
-            }                                   // available
-        }
+                entry.offset -= delta;
+                                            
+                putEntry(io, idx, entry);
+            }
+            
+            break;                          // find the next one, if
+        }                                   // available
     }
 }

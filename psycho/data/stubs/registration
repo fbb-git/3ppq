@@ -1,5 +1,5 @@
     <script src="/js/preamble.js"></script>
-    <script src="/js/newpsych.js"></script>
+    <script src="/js/registration.js"></script>
 </head>
 
 <body> 
@@ -29,29 +29,34 @@ Hiervoor hebben we de volgend informatie van u nodig:
     <td ><input class=margin type="text" name="naam" size="50"></td>
 </tr>
 
-<tr>
+<tr >
+    <td class=right>Achternaam: </td> 
+    <td ><input class=margin type="text" name="naam" size="50"></td>
+</tr>
+
+<tr class=darkrow>
     <td class=right> Geslacht: </td>
     <td> <input type="radio" name="gender" value="M"> M<br>
          <input type="radio" name="gender" value="V"> V     </td>
 </tr>
 
-<tr class=darkrow>
+<tr>
     <td class=right>E-mail adres: </td> 
     <td ><input class=margin type="text" name="email" size="50"></td>
 </tr>
 
-<tr>
+<tr class=darkrow>
     <td class=right>NIP-nummer: </td> 
     <td ><input class=margin pattern='[0-9]{8}' 
                              type="text" name="nip" size="15"> </td>
 </tr>
 
-<tr class=darkrow>
+<tr>
     <td class=right> Password:</td>
     <td> <input class=margin type="password" name="pwd" size="20"> </td>
 </tr>
 
-<tr class=darkrow>
+<tr>
     <td class=right> Verificatie:</td>
     <td> <input class=margin" type="password" name="pwd2" size="20"></td>
 </tr>

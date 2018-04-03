@@ -5,6 +5,7 @@
 
 #include <algorithm>
 #include <sstream>
+#include <chrono>
 
 #include <bobcat/cgi>
 #include <bobcat/log>

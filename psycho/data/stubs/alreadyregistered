@@ -23,15 +23,21 @@ informatie al in ons systeem is geregistreerd.<p>
 <hr>
 <p>
 Druk op de deze knop om uw gegevens aan te passen: 
-    <input value="Aanmelden" name = "submit" type="submit" onclick="nr = 1">
+    <input value="Aanmelden" name = "submit" type="submit">
 
 <p>
-Druk op de deze knop om in te loggen: 
-    <input value="Inloggen" name = "submit" type="submit" onclick="nr = 2">
+Druk op deze knop om in te loggen: 
+    <input value="Inloggen" type="submit"
+     onclick="window.open('/psychologist.html', '_self'); return false;">
 
 <p>
-Druk op de deze knop om terug te keren naar de 3PPQ <em>home-page</em>: 
-        <input value="Homepage" name = "submit" type="submit">
+Druk op deze knop om terug te keren naar de 3PPQ <em>home-page</em>: 
+        <input value="Homepage" type="submit"
+         onclick="window.open('/', '_self'); return false;">
 <hr>
 
 </form>
+
+
+
+

@@ -17,4 +17,6 @@ bool Psychologist::acceptRegistration()
     // TODO sendmail verification to email
 
     Display{ "acceptregistration" };
+
+    return true;
 }

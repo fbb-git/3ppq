@@ -8,3 +8,15 @@ LockGuard::LockGuard(std::string const &name, int fd)
         g_log << "can't lock " << name << endl;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+

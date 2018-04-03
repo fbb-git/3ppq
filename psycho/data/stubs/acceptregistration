@@ -1,5 +1,7 @@
+<!--
     <script src="/js/preamble.js"></script>
     <script src="/js/login.js"></script>
+-->
 </head>
 
 <body> 
@@ -15,7 +17,8 @@ e-mail waarin u wordt gevraagd in te loggen en vervolgens het in de e-mail
 vermelde verificatienummer in te vullen.<p>
 
 Druk op de deze knop om in te loggen:
-    <input value="Inloggen" name = "submit" type="submit">
+    <input value="Inloggen" name = "submit" type="submit"
+     onclick="window.open('/psychologist.html', '_self'); return false;">
 
 
 

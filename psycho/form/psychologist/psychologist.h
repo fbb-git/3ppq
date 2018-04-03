@@ -30,16 +30,20 @@ class Psychologist
 
     struct Record
     {
+        uint16_t    ack;            // if != 0 then e-mail acknowledge
         uint16_t    nr;             // identification number
         std::string pwdHash;        // MD5 hash of the password (16 bytes)
     };
         
-    static Map s_state;         // maps state names to handling functions
+    static Map s_state;             // maps state names to handling functions
 
     std::string d_path;
-    FBB::CGI &d_cgi;
-    DataStore d_psychData;      // psychologists' data
+    std::string d_lockPath;
     int d_lockFd;
+
+    DataStore d_psychData;          // psychologists' data
+
+    FBB::CGI &d_cgi;
 
     public:
         Psychologist(FBB::CGI &cgi);
@@ -48,20 +52,28 @@ class Psychologist
     private:
         void tryAdd();
         void alreadyRegistered();
-        void acceptRegistration();
+        bool acceptRegistration();
 
         void registration();
+        void login();
+
 
         uint16_t identNr() const;
-        uint64_t nipKey() const;    // get key from cgi.param1("nip")
+        std::string nipKey() const; // get key from cgi.param1("nip")
 
-        size_t getRecord(Record *record, std::string const &data, 
-                                        size_t offset);
-        void getPrivate(Private *priv, std::string const &data, 
-                                        size_t offset);
+//        size_t getRecord(Record *record, std::string const &data, 
+//                                        size_t offset);
+//        void getPrivate(Private *priv, std::string const &data, 
+//                                        size_t offset);
 
         std::string publicData() const;
         std::string privateData() const;
+
+        std::string encrypt(std::string const &iv) const;
+        void decrypt(std::string const &data);
+
+        void getUnencrypted(std::string const &data);
+        bool pwMatch();
 
         static bool acceptNr(std::istream &nrs, uint16_t idNr);
 };

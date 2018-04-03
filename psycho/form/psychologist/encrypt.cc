@@ -1,8 +1,6 @@
 #include "psychologist.ih"
 
-string Psychologist::encrypt(string const &iv)
+string Psychologist::encrypt(string const &iv) const
 {
-    Private priv = fillPrivate();
-
     return Tools::encrypt(iv, privateData());    
 }

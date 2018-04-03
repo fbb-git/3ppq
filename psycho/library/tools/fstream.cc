@@ -3,10 +3,10 @@
 // static
 fstream Tools::fstream(std::string const &path)
 {
-    fstream ret{ path, ios::in | ios::out };
+    std::fstream ret{ path, ios::in | ios::out };
 
     if (not ret)
-        Exception::open(ret, ios::in | ios::out | ios::trunc);
+        Exception::open(ret, path, ios::in | ios::out | ios::trunc);
 
     return ret;
 }

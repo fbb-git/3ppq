@@ -4,7 +4,7 @@ string Psychologist::privateData() const
 {
     ostringstream out;
 
-    uint64_t value = stoull(param1("nip"));
+    uint64_t value = stoull(d_cgi.param1("nip"));
     Tools::write(out, &value);
 
     char var = d_cgi.param1("gender") == "M";

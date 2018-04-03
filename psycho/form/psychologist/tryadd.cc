@@ -2,7 +2,7 @@
 
 void Psychologist::tryAdd()
 {
-    LockGuard lg{ d_lockFd };
+    LockGuard lg{ d_lockPath, d_lockFd };
 
     if (not acceptRegistration())
         alreadyRegistered();

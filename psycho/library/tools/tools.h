@@ -13,6 +13,9 @@ class Tools
     enum { BUFSIZE = 5000 };
     
     public:
+        template <typename Type>
+        static Type *as(size_t *skip, std::string const &str);
+
                                 // open to RW, create if not existing
         static std::fstream fstream(std::string const &path);
 
@@ -72,6 +75,7 @@ class Tools
         static std::string key();
 };
 
+#include "as.f"
 #include "md5hash8.f"
 #include "exists.f"
 

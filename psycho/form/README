@@ -1,3 +1,44 @@
+1.  Web server requirements
+
+---------------------------------------------------------------------
+1. Web server requirements:
+
+    Define webRoot  /var/www/html/psycho
+    Define basePath /home/frank/src/psycho
+
+    Alias /css             ${basePath}/css
+    Alias /js              ${basePath}/js
+    Alias /images          ${basePath}/images
+    ScriptAlias /bin       ${basePath}/bin
+
+        # links to {basePath}/www/
+    <Directory "/var/www/psycho" >
+    Require all granted
+       Options Indexes FollowSymLinks MultiViews Includes ExecCGI    
+    </Directory>
+ 
+    <Directory "${basePath}/images" >
+       Require all granted
+    </Directory>
+
+    <Directory "${basePath}/css" >
+       Require all granted
+    </Directory>
+
+    <Directory "${basePath}/js" >
+       Require all granted
+       Options Includes
+    </Directory>
+
+    <Directory "${basePath}/bin" >
+    Require all granted
+       Options FollowSymLinks ExecCGI    
+    </Directory>
+ 
+
+---------------------------------------------------------------------
+Obsolete?:
+
 The program inserts its html page in a file organized like this:
 
     <!DOCTYPE html>

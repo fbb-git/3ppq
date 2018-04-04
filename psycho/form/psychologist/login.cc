@@ -11,16 +11,14 @@ void Psychologist::login()
 
     if (data.empty())
     {
-        this_thread::sleep_for(chrono::seconds(5));
+//        this_thread::sleep_for(chrono::seconds(5));
         Display{ "unknownpsych" };
         return;
     }
 
-    getUnencrypted(data);
-
-    if (not pwMatch())
+    if (not pwdMatch(getUnencrypted(data)))
     {
-        this_thread::sleep_for(chrono::seconds(5));
+//        this_thread::sleep_for(chrono::seconds(5));
         Display{ "pwdfailure" };
         return;
     }

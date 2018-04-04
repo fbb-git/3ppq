@@ -23,6 +23,13 @@ tryAdd
 
 
 login
+    -> unknownPsych         registration        register as user
+                            /index.html         
 
+    -> pwdfailure           /psychologist.html  maybe try again?
+                            /index.html
 
-noPwd
+    -> action                                   TO DO (wip)
+
+noPwd                                           TO DO (wip)
+

@@ -13,6 +13,11 @@ namespace FBB
 
 class Psychologist
 {
+    // data retrieved from d_psychData.get:
+    //  iv (8 bytes)
+    //  Record data (written by publicData): 2 uint16_t, 16 pytes pwd hash
+    //  encrypted data (written by privateData)
+
     typedef std::unordered_map<std::string, void (Psychologist::*)()> Map;
 
     // when these records change after the system's been used then
@@ -56,13 +61,12 @@ class Psychologist
 
         void registration();
         void login();
+        void noPwd();
 
 
         uint16_t identNr() const;
         std::string nipKey() const; // get key from cgi.param1("nip")
 
-//        size_t getRecord(Record *record, std::string const &data, 
-//                                        size_t offset);
 //        void getPrivate(Private *priv, std::string const &data, 
 //                                        size_t offset);
 
@@ -72,8 +76,8 @@ class Psychologist
         std::string encrypt(std::string const &iv) const;
         void decrypt(std::string const &data);
 
-        void getUnencrypted(std::string const &data);
-        bool pwMatch();
+        static Record getUnencrypted(std::string const &data);
+        bool pwdMatch(Record const &) const;
 
         static bool acceptNr(std::istream &nrs, uint16_t idNr);
 };

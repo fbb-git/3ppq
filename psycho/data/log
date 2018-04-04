@@ -16,3 +16,41 @@ Apr  3 20:28:27 Handler starts
 Apr  3 20:28:27 Starting Handler::process: type = `psychologist'
 Apr  3 20:30:41 Handler starts
 Apr  3 20:30:41 Starting Handler::process: type = `psychologist'
+Apr  4 10:08:06 Handler starts
+Apr  4 10:08:06 Starting Handler::process: type = `'
+Apr  4 10:08:06 pwd:
+Apr  4 10:08:06   `'
+Apr  4 10:08:06 nip:
+Apr  4 10:08:06   `'
+Apr  4 10:08:17 Handler starts
+Apr  4 10:08:17 Starting Handler::process: type = `'
+Apr  4 10:08:17 pwd:
+Apr  4 10:08:17   `'
+Apr  4 10:08:17 nip:
+Apr  4 10:08:17   `'
+Apr  4 10:08:21 Handler starts
+Apr  4 10:08:21 Starting Handler::process: type = `'
+Apr  4 10:08:21 pwd:
+Apr  4 10:08:21   `'
+Apr  4 10:08:21 nip:
+Apr  4 10:08:21   `'
+Apr  4 10:12:42 Handler starts
+Apr  4 10:12:42 Starting Handler::process: type = `'
+Apr  4 10:12:42 pwd:
+Apr  4 10:12:42   `'
+Apr  4 10:12:42 nip:
+Apr  4 10:12:42   `'
+Apr  4 10:30:19 Handler starts
+Apr  4 10:30:19 Starting Handler::process: type = `'
+Apr  4 10:30:19 pwd:
+Apr  4 10:30:19   `'
+Apr  4 10:30:19 nip:
+Apr  4 10:30:19   `'
+Apr  4 10:30:43 Handler starts
+Apr  4 10:30:43 Starting Handler::process: type = `psychologist'
+Apr  4 10:31:46 Handler starts
+Apr  4 10:31:46 Starting Handler::process: type = `psychologist'
+Apr  4 10:35:30 Handler starts
+Apr  4 10:35:30 Starting Handler::process: type = `psychologist'
+Apr  4 10:38:14 Handler starts
+Apr  4 10:38:14 Starting Handler::process: type = `psychologist'

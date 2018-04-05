@@ -8,13 +8,13 @@
 
 #include "../../support/options/options.h"
 
-#include "../psychologist/psychologist.h"
+#include "../psych/psych.h"
 
 class Handler
 {
     FBB::CGI            d_cgi;
 
-    Psychologist d_psychologist;
+    Psych d_psych;
 
     public:
         Handler();

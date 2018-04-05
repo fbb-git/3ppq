@@ -1,6 +1,6 @@
-#include "psychologist.ih"
+#include "psych.ih"
 
-void Psychologist::process()
+void Psych::process()
 {
     if (
         auto iter = s_state.find(d_cgi.param1("state")); 

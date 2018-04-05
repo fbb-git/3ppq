@@ -3,7 +3,7 @@ The program inserts its html page in a file organized like this:
     <!DOCTYPE html>
     <html>
     
-    <!-- DOCUMENT_URI=/psychologist.shtml -->
+    <!-- DOCUMENT_URI=/psych.shtml -->
     
     <!--#exec cmd="/home/frank/src/psycho/bin/handler" -->
     
@@ -31,7 +31,7 @@ A Display object handles the files in that directory. Display::setBase sets
 
 Handler::process() uses the environment variable DOCUMENT_URI to determine
 from which location handler was called. Currently it can be
-/psychologist.shtml and /client.shtml. If another URI is used it is logged by
+/psych.shtml and /client.shtml. If another URI is used it is logged by
 Handler::empty(), and the caller is shown an empty page.
 
 members returning web-content do so by creating a Display object, passing it
@@ -44,7 +44,7 @@ comment is not written to the returned web-page
 
 To run a test define the environment variable 
 
-    DOCUMENT_URI /psychologist.shtml
+    DOCUMENT_URI /psych.shtml
 
 and run tmp/bin/binary
 

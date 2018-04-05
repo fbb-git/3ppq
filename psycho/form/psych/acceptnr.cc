@@ -1,7 +1,7 @@
-#include "psychologist.ih"
+#include "psych.ih"
 
 // static
-bool Psychologist::acceptNr(istream &nrs, uint16_t idNr)
+bool Psych::acceptNr(istream &nrs, uint16_t idNr)
 {
     uint16_t *buffer = new uint16_t[100];
 

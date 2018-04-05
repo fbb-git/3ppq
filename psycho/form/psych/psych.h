@@ -1,5 +1,5 @@
-#ifndef INCLUDED_PSYCHOLOGIST_
-#define INCLUDED_PSYCHOLOGIST_
+#ifndef INCLUDED_PSYCH_
+#define INCLUDED_PSYCH_
 
 #include <iosfwd>
 #include <unordered_map>
@@ -11,14 +11,14 @@ namespace FBB
     class CGI;
 };
 
-class Psychologist
+class Psych
 {
     // data retrieved from d_psychData.get:
     //  iv (8 bytes)
     //  Record data (written by publicData): 2 uint16_t, 16 pytes pwd hash
     //  encrypted data (written by privateData)
 
-    typedef std::unordered_map<std::string, void (Psychologist::*)()> Map;
+    typedef std::unordered_map<std::string, void (Psych::*)()> Map;
 
     // when these records change after the system's been used then
     // a convertor is required, converting the old data structure to the new
@@ -51,7 +51,7 @@ class Psychologist
     FBB::CGI &d_cgi;
 
     public:
-        Psychologist(FBB::CGI &cgi);
+        Psych(FBB::CGI &cgi);
         void process();
 
     private:

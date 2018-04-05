@@ -1,6 +1,6 @@
-#include "psychologist.ih"
+#include "psych.ih"
 
-uint16_t Psychologist::identNr() const
+uint16_t Psych::identNr() const
 {
     fstream nrs{ Tools::fstream(d_path + ".nrs") }; // binary uint16_t file
 

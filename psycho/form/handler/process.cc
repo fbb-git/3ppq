@@ -9,8 +9,8 @@ void Handler::process()
                                             d_cgi.param1("state") << '\'' << 
                                             endl;
 
-    if (type == "psychologist")
-        d_psychologist.process();
+    if (type == "psych")
+        d_psych.process();
 
     else if (type == "client")
         ; // d_client.process();
@@ -22,7 +22,7 @@ void Handler::process()
 
 //     void (Handler::**handler)() = s_psychoStates;
 // 
-// //        src.find("/psychologist.shtml") != string::npos ?   s_psychoStates :
+// //        src.find("/psych.shtml") != string::npos ?   s_psychoStates :
 // //        src.find("/client.shtml") != string::npos ?         s_psychoStates :
 // //                                                            &s_empty;
 // 

@@ -1,6 +1,6 @@
 Each js validate function should either do
 
-        addHidden('type, 'psychologist');
+        addHidden('type, 'psych');
 
 or
 

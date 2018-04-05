@@ -1,6 +1,6 @@
-//#include "psychologist.ih"
+//#include "psych.ih"
 //
-//void Psychologist::getPrivate(Private *priv, 
+//void Psych::getPrivate(Private *priv, 
 //                              string const &data, size_t offset)
 //{
 //    istringstream in{ 

@@ -28,7 +28,7 @@ function validate()
         return false;
     }
 
-    addHidden("type",   "psychologist");
+    addHidden("type",   "psych");
     addHidden("state",  "tryAdd");
 
     return true;

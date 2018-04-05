@@ -11,7 +11,7 @@ class Options
         Options(std::string const &base);
 
         std::string log() const;
-        std::string psychologists() const;
+        std::string psych() const;
         std::string stubs() const;
 };
 
@@ -20,9 +20,9 @@ inline std::string Options::log() const
     return d_base + "log";
 }
 
-inline std::string Options::psychologists() const
+inline std::string Options::psych() const
 {
-    return d_base + "data/psychologists";
+    return d_base + "data/psych";
 }
 
 inline std::string Options::stubs() const

@@ -32,7 +32,7 @@ function validate()
             addHidden('state', 'login');
         break;
     }
-    addHidden('type', 'psychologist');
+    addHidden('type', 'psych');
     return true;
 } 
 

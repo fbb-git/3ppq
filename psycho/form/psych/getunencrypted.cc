@@ -1,7 +1,7 @@
-#include "psychologist.ih"
+#include "psych.ih"
 
 // static
-Psychologist::Record Psychologist::getUnencrypted(string const &data)
+Psych::Record Psych::getUnencrypted(string const &data)
 {
     size_t skip = 8;
 

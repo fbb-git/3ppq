@@ -1,7 +1,7 @@
-#include "psychologist.ih"
+#include "psych.ih"
 
     // page opened when the psychologist 
-void Psychologist::login()
+void Psych::login()
 {
     string data;
     {

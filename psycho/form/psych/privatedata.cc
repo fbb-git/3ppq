@@ -1,6 +1,6 @@
-#include "psychologist.ih"
+#include "psych.ih"
 
-string Psychologist::privateData() const
+string Psych::privateData() const
 {
     ostringstream out;
 

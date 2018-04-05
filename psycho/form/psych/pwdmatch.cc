@@ -1,6 +1,6 @@
-#include "psychologist.ih"
+#include "psych.ih"
 
-bool Psychologist::pwdMatch(Record const &record) const
+bool Psych::pwdMatch(Record const &record) const
 {
     ostringstream out;
 

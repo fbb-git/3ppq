@@ -1,6 +1,6 @@
-#include "psychologist.ih"
+#include "psych.ih"
 
-void Psychologist::tryAdd()
+void Psych::tryAdd()
 {
     LockGuard lg{ d_lockPath, d_lockFd };
 
@@ -10,12 +10,12 @@ void Psychologist::tryAdd()
 
 
 
-//    fstream str(g_options.psychologists(), ios::in);
+//    fstream str(g_options.psychs(), ios::in);
 //    
 //    if (not str)
 //    {
 //        str.clear();
-//        str.open(g_options.psychologists(), ios::out);
+//        str.open(g_options.psychs(), ios::out);
 //        str.close();
 //    }
 //    else

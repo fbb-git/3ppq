@@ -12,7 +12,7 @@ to cout. Note that the head is not closed.
 Pages may include stuff that belongs to the head, e.g.,
 
     <script src="/js/preamble.js"></script>
-    <script src="/js/psychologist.js"></script>
+    <script src="/js/psych.js"></script>
 
 and then should do
 

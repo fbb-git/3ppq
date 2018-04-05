@@ -18,7 +18,7 @@ vermelde verificatienummer in te vullen.<p>
 
 Druk op de deze knop om in te loggen:
     <input value="Inloggen" name = "submit" type="submit"
-     onclick="window.open('/psychologist.html', '_self'); return false;">
+     onclick="window.open('/psych.html', '_self'); return false;">
 
 
 

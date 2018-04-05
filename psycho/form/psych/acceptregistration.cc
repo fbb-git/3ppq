@@ -1,6 +1,6 @@
-#include "psychologist.ih"
+#include "psych.ih"
 
-bool Psychologist::acceptRegistration()
+bool Psych::acceptRegistration()
 {
     string iv = Tools::iv();
 

@@ -1,4 +1,4 @@
-#include "psychologist.ih"
+#include "psych.ih"
 
 bool Psychologist::readFields(istream &in)
 {

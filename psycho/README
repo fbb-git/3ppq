@@ -55,6 +55,15 @@ VERSION             - link to form/VERSION
 .js files, handling functions and states have identical names.
 The .js files define type = "psychologist" and state as hidden input fields.
 
+in          file/                       out             next            
+variables   stub            js/         variables       action/state        description
+------------------------------------------------------------------------------------------
+-           /index.html     -           -               client.html         
+                            -           -               psych.html 
+
+-           /psych.html     
+
+
                             next
 file/function               state               description
 -----------------------------------------------------------------------------

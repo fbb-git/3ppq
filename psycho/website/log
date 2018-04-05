@@ -1,0 +1,206 @@
+Apr  4 15:38:48 Handler starts
+Apr  4 15:38:48 Starting Handler::process: type = `'
+Apr  4 15:56:08 can't use /home/frank/git/psycho/src/psycho/website/data/psychologists.lck
+Apr  4 15:56:08 Handler starts
+Apr  4 15:56:08 Starting Handler::process: type = `psychologist'
+Apr  4 15:56:53 can't use /home/frank/git/psycho/src/psycho/website/data/psychologists.lck
+Apr  4 15:56:53 Handler starts
+Apr  4 15:56:53 Starting Handler::process: type = `psychologist'
+Apr  4 15:57:19 can't use /home/frank/git/psycho/src/psycho/website/data/psychologists.lck
+Apr  4 15:57:19 Handler starts
+Apr  4 15:57:19 Starting Handler::process: type = `psychologist'
+Apr  4 15:57:44 can't use /home/frank/git/psycho/src/psycho/website/data/psychologists.lck
+Apr  4 15:57:44 Handler starts
+Apr  4 15:57:44 Starting Handler::process: type = `psychologist'
+Apr  4 16:01:52 Handler starts
+Apr  4 16:01:52 Starting Handler::process: type = `'
+Apr  4 16:02:30 Handler starts
+Apr  4 16:02:30 Starting Handler::process: type = `psychologist'
+Apr  4 16:03:03 Handler starts
+Apr  4 16:03:03 Starting Handler::process: type = `psychologist'
+Apr  4 16:04:04 Handler starts
+Apr  4 16:04:04 Starting Handler::process: type = `psychologist'
+Apr  4 16:05:05 Handler starts
+Apr  4 16:05:05 Starting Handler::process: type = `psychologist'
+Apr  4 16:11:20 Handler starts
+Apr  4 16:11:20 Starting Handler::process: type = `psychologist'
+Apr  4 16:11:20 stored hash: -44 29 -116 -39 -113 0 -78 4 -23 -128 9 -104 -20 -8 66 126 113 -60 -27 13 -81 110 -48 -128 61 -106 5 38 
+Apr  4 16:11:20 pwd = `nip'
+Apr  4 16:11:20 received hash: -44 29 -116 -39 -113 0 -78 4 -23 -128 9 -104 -20 -8 66 126 113 -60 -27 13 -81 110 -48 -128 61 -106 5 38 -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  4 16:19:17 Handler starts
+Apr  4 16:19:17 Starting Handler::process: type = `psychologist'
+Apr  4 16:19:17 stored hash length: 28
+Apr  4 16:19:17 stored hash: -44 29 -116 -39 -113 0 -78 4 -23 -128 9 -104 -20 -8 66 126 113 -60 -27 13 -81 110 -48 -128 61 -106 5 38 
+Apr  4 16:19:17 pwd = `nip'
+Apr  4 16:19:17 hash length: 16
+Apr  4 16:19:17 received hash: -44 29 -116 -39 -113 0 -78 4 -23 -128 9 -104 -20 -8 66 126 113 -60 -27 13 -81 110 -48 -128 61 -106 5 38 -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  4 16:28:04 Handler starts
+Apr  4 16:28:04 Starting Handler::process: type = `psychologist'
+Apr  4 16:28:04 stored hash length: 16
+Apr  4 16:28:04 stored hash: -44 29 -116 -39 -113 0 -78 4 -23 -128 9 -104 -20 -8 66 126 
+Apr  4 16:28:04 pwd = `nip'
+Apr  4 16:28:04 hash length: 16
+Apr  4 16:28:04 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  4 16:33:36 Handler starts
+Apr  4 16:33:36 Starting Handler::process: type = `psychologist'
+Apr  4 16:33:36 stored hash length: 16
+Apr  4 16:33:36 stored hash: -44 29 -116 -39 -113 0 -78 4 -23 -128 9 -104 -20 -8 66 126 
+Apr  4 16:33:36 pwd = `nip'
+Apr  4 16:33:36 hash length: 16
+Apr  4 16:33:36 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  4 16:37:16 Handler starts
+Apr  4 16:37:16 Starting Handler::process: type = `psychologist'
+Apr  4 16:37:16 unencrypted:
+Apr  4 16:37:16 0: § 1: N 2: ¡ 3: ‡ 4: ﬂ 
+Apr  4 16:37:16 5: 
+ 6:  7: ¯ 8: ˜ 9:  
+Apr  4 16:37:16 10: M 11:  12: ‘ 13:  14: å 
+Apr  4 16:37:16 15: Ÿ 16: è 17: 
+ 18: ≤ 19:  
+Apr  4 16:37:16 20: È 21: Ä 22: 	 23: ò 24: Ï 
+Apr  4 16:37:16 25: ¯ 26: B 27: ~ 28: q 29: ƒ 
+Apr  4 16:37:16 30: Â 31:  32: Ø 33: n 34: – 
+Apr  4 16:37:16 35: Ä 36: = 37: ñ 38:  39: & 
+Apr  4 16:37:16 40: a 41: 
+ 42: ˇ 43: ﬂ 44: ˜ 
+Apr  4 16:37:16 45: ∏ 46: Á 47: Ë 48: … 49: ä 
+Apr  4 16:37:16 50: , 51: ™ 52: ˚ 53:  54: è 
+Apr  4 16:37:16 55: í 56: ¿ 57: | 58: 7 59: ’ 
+Apr  4 16:37:16 60: + 61: X 62: · 63: ± 64: ï 
+Apr  4 16:37:16 65: π 66: Ó 67: T 
+Apr  4 16:37:16 stored hash length: 16
+Apr  4 16:37:16 stored hash: -44 29 -116 -39 -113 0 -78 4 -23 -128 9 -104 -20 -8 66 126 
+Apr  4 16:37:16 pwd = `nip'
+Apr  4 16:37:16 hash length: 16
+Apr  4 16:37:16 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  4 16:38:16 Handler starts
+Apr  4 16:38:16 Starting Handler::process: type = `psychologist'
+Apr  4 16:38:16 unencrypted:
+Apr  4 16:38:16 0: -92 1: 78 2: -63 3: -32 4: -33 
+Apr  4 16:38:16 5: 0 6: -16 7: -8 8: -9 9: 25 
+Apr  4 16:38:16 10: 77 11: 3 12: -44 13: 29 14: -116 
+Apr  4 16:38:16 15: -39 16: -113 17: 0 18: -78 19: 4 
+Apr  4 16:38:16 20: -23 21: -128 22: 9 23: -104 24: -20 
+Apr  4 16:38:16 25: -8 26: 66 27: 126 28: 113 29: -60 
+Apr  4 16:38:16 30: -27 31: 13 32: -81 33: 110 34: -48 
+Apr  4 16:38:16 35: -128 36: 61 37: -106 38: 5 39: 38 
+Apr  4 16:38:16 40: 97 41: 0 42: -1 43: -33 44: -9 
+Apr  4 16:38:16 45: -72 46: -25 47: -24 48: -55 49: -118 
+Apr  4 16:38:16 50: 44 51: -86 52: -5 53: 20 54: -113 
+Apr  4 16:38:16 55: -110 56: -64 57: 124 58: 55 59: -43 
+Apr  4 16:38:16 60: 43 61: 88 62: -31 63: -79 64: -107 
+Apr  4 16:38:16 65: -71 66: -18 67: 84 
+Apr  4 16:38:16 stored hash length: 16
+Apr  4 16:38:16 stored hash: -44 29 -116 -39 -113 0 -78 4 -23 -128 9 -104 -20 -8 66 126 
+Apr  4 16:38:16 pwd = `nip'
+Apr  4 16:38:16 hash length: 16
+Apr  4 16:38:16 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  4 16:43:03 Handler starts
+Apr  4 16:43:03 Starting Handler::process: type = `psychologist'
+Apr  4 16:43:03 unencrypted:
+Apr  4 16:43:03 0: -92 1: 78 2: -63 3: -32 
+Apr  4 16:43:03 4: -33 5: 0 6: -16 7: -8 
+Apr  4 16:43:03 8: -9 9: 25 10: 77 11: 3 
+Apr  4 16:43:03 12: -44 13: 29 14: -116 15: -39 
+Apr  4 16:43:03 16: -113 17: 0 18: -78 19: 4 
+Apr  4 16:43:03 20: -23 21: -128 22: 9 23: -104 
+Apr  4 16:43:03 24: -20 25: -8 26: 66 27: 126 
+Apr  4 16:43:03 28: 113 29: -60 30: -27 31: 13 
+Apr  4 16:43:03 32: -81 33: 110 34: -48 35: -128 
+Apr  4 16:43:03 36: 61 37: -106 38: 5 39: 38 
+Apr  4 16:43:03 40: 97 41: 0 42: -1 43: -33 
+Apr  4 16:43:03 44: -9 45: -72 46: -25 47: -24 
+Apr  4 16:43:03 48: -55 49: -118 50: 44 51: -86 
+Apr  4 16:43:03 52: -5 53: 20 54: -113 55: -110 
+Apr  4 16:43:03 56: -64 57: 124 58: 55 59: -43 
+Apr  4 16:43:03 60: 43 61: 88 62: -31 63: -79 
+Apr  4 16:43:03 64: -107 65: -71 66: -18 67: 84 
+Apr  4 16:43:03 stored hash length: 16
+Apr  4 16:43:03 stored hash: -44 29 -116 -39 -113 0 -78 4 -23 -128 9 -104 -20 -8 66 126 
+Apr  4 16:43:03 pwd = `nip'
+Apr  4 16:43:03 hash length: 16
+Apr  4 16:43:03 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  4 16:43:32 Handler starts
+Apr  4 16:43:32 Starting Handler::process: type = `psychologist'
+Apr  4 16:43:59 Handler starts
+Apr  4 16:43:59 Starting Handler::process: type = `psychologist'
+Apr  4 16:44:15 Handler starts
+Apr  4 16:44:15 Starting Handler::process: type = `psychologist'
+Apr  4 16:44:15 unencrypted:
+Apr  4 16:44:15 0: 98 1: -71 2: -39 3: -67 
+Apr  4 16:44:15 4: -64 5: 37 6: -96 7: -34 
+Apr  4 16:44:15 8: 43 9: 11 10: -117 11: 8 
+Apr  4 16:44:15 12: -16 13: -75 14: -103 15: 3 
+Apr  4 16:44:15 16: -28 17: -70 18: 17 19: 58 
+Apr  4 16:44:15 20: 44 21: 26 22: -76 23: 85 
+Apr  4 16:44:15 24: -110 25: -87 26: 108 27: -95 
+Apr  4 16:44:15 28: -30 29: 123 30: -51 31: -51 
+Apr  4 16:44:15 32: -8 33: 60 34: -40 35: 19 
+Apr  4 16:44:15 36: -96 37: 12 38: 6 39: -91 
+Apr  4 16:44:15 40: -94 41: -81 42: -41 43: 25 
+Apr  4 16:44:15 44: 26 45: 6 46: -33 47: -24 
+Apr  4 16:44:15 48: -5 49: 69 50: 47 51: 119 
+Apr  4 16:44:15 52: 70 53: -30 54: -74 55: 23 
+Apr  4 16:44:15 56: -17 57: 74 58: 117 59: -125 
+Apr  4 16:44:15 60: 40 61: 28 62: 80 63: -20 
+Apr  4 16:44:15 64: -61 65: 84 66: -82 67: 3 
+Apr  4 16:44:15 stored hash length: 16
+Apr  4 16:44:15 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  4 16:44:15 pwd = `nip'
+Apr  4 16:44:15 hash length: 16
+Apr  4 16:44:15 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  4 16:46:23 Handler starts
+Apr  4 16:46:23 Starting Handler::process: type = `psychologist'
+Apr  4 16:46:23 stored hash length: 16
+Apr  4 16:46:23 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  4 16:46:23 pwd = `nip'
+Apr  4 16:46:23 hash length: 16
+Apr  4 16:46:23 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  4 16:46:23 actions
+Apr  4 16:47:23 Handler starts
+Apr  4 16:47:23 Starting Handler::process: type = `psychologist'
+Apr  4 16:47:23 stored hash length: 16
+Apr  4 16:47:23 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  4 16:47:23 pwd = `nip'
+Apr  4 16:47:23 hash length: 16
+Apr  4 16:47:23 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  4 16:47:23 actions
+Apr  4 16:48:01 Handler starts
+Apr  4 16:48:01 Starting Handler::process: type = `psychologist'
+Apr  4 16:48:01 stored hash length: 16
+Apr  4 16:48:01 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  4 16:48:01 pwd = `nip'
+Apr  4 16:48:01 hash length: 16
+Apr  4 16:48:01 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  4 16:48:01 actions
+Apr  4 16:48:19 Handler starts
+Apr  4 16:48:19 Starting Handler::process: type = `psychologist'
+Apr  4 16:48:25 Handler starts
+Apr  4 16:48:25 Starting Handler::process: type = `'
+Apr  4 16:48:48 Handler starts
+Apr  4 16:48:48 Starting Handler::process: type = `psychologist'
+Apr  4 16:52:32 Handler starts
+Apr  4 16:52:32 Starting Handler::process: type = `psychologist'
+Apr  4 16:55:51 Handler starts
+Apr  4 16:55:51 Starting Handler::process: type = `psychologist'
+Apr  4 16:56:13 Handler starts
+Apr  4 16:56:13 Starting Handler::process: type = `psychologist'
+Apr  4 16:57:54 Handler starts
+Apr  4 16:57:54 Starting Handler::process: type = `psychologist'
+Apr  4 16:57:59 Handler starts
+Apr  4 16:57:59 Starting Handler::process: type = `'
+Apr  4 16:59:36 Handler starts
+Apr  4 16:59:36 Starting Handler::process: type = `'
+Apr  4 17:03:06 Handler starts
+Apr  4 17:03:06 Starting Handler::process: type = `psychologist'
+Apr  4 17:03:11 Handler starts
+Apr  4 17:03:11 Starting Handler::process: type = `'
+Apr  4 18:06:17 Handler starts
+Apr  4 18:06:17 Starting Handler::process: type = `psychologist'
+Apr  4 18:06:17 Starting Handler::process: state = `login'
+Apr  4 18:06:29 Handler starts
+Apr  4 18:06:29 Starting Handler::process: type = `'
+Apr  4 18:06:29 Starting Handler::process: state = `'
+Apr  4 18:08:01 Handler starts
+Apr  4 18:08:01 Starting Handler::process: type = `psychologist'
+Apr  4 18:08:01 Starting Handler::process: state = `login'

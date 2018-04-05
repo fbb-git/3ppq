@@ -1,0 +1,34 @@
+    <script src="/js/preamble.js"></script>
+    <script src="/js/psychologist.js"></script>
+</head>
+
+<body> 
+
+<h1 style="text-align: center">3PPQ</h1>
+
+<h1>3PPQ - Onbekend NIP nummer</h1>
+
+<!-- img src="/images/aanmelden.jpg" style="float:right"-->
+
+Het door u opgegeven NIP-nummer is onbekend. 
+
+<p>
+<form name="form" action="/bin/form" 
+      onsubmit="return validate()" method="post">
+
+<hr>
+<p>
+Druk op de deze knop om u aan te melden als NIP gebruiker:
+    <input value="Aanmelden" type="submit">
+
+<p>
+Druk op deze knop om terug te keren naar de 3PPQ <em>home-page</em>: 
+        <input value="Homepage" type="submit"
+         onclick="window.open('/', '_self'); return false;">
+<hr>
+
+</form>
+
+
+
+

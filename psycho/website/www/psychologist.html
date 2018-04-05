@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html;
+          charset=windows-1252">
+    <style></style>
+
+    <script src="/js/preamble.js"></script>
+    <script src="/js/psychologist.js"></script>
+</head>
+
+<body> 
+
+<h1 style="text-align: center">3PPQ</h1>
+
+<h1>3PPQ - Psychologen</h1>
+
+<img src="/images/login.png" style="float:right">
+
+Welkom op de psychologen inlog-/registratiepagina van 3PPQ.<p>
+
+<hr>
+
+Wanneer u zich al heeft aangemeld, vul dan onderstaande inlog-gegevens in en
+druk op de knop <em>Inloggen</em>.<p>
+
+ Wanneer u zich nog niet heeft aangemeld, dan kan dat door op de knop
+<em>Aanmelden</em> (onderaan deze pagina) te drukken.
+
+<form name="form" action="/bin/form" 
+      onsubmit="return validate()" method="post">
+
+<div style="background-color:#dddddd">
+
+<table>
+<tr>
+    <td style="text-align: right">NIP-nummer: </td> 
+        <td ><input type="text" name="nip" size="20"></td>
+</tr>
+<tr>
+    <td style="text-align: right"> Password:</td>
+        <td> <input type="password" name="pwd" size="20">
+        &nbsp;&nbsp; 
+        <input type="submit" value="Password kwijt" onclick="nr = 1">
+        </td>
+</tr>
+</table>
+<p>
+<input type="submit" value="Inloggen" onclick="nr = 2">
+</div>
+<hr>
+
+Wanneer u als psycholoog geregistreerd bent bij het NIP kunt u zich
+hier aanmelden voor 3PPQ:
+<input type="submit" value="Aanmelden">
+<p>
+<hr>
+<footer>3PPQ neemt privacy serieus. Download onze 
+    <a href="privacy.pdf"> privacy verklaring</a><br>
+    Vragen of opmerkingen? Stuur dan een e-mail naar 
+        <a href="mailto:3ppq@3ppq.nl">3ppq@3ppq.nl</a>
+</footer>
+
+</form>
+
+</body>
+</html>

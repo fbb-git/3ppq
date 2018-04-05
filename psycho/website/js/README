@@ -1,0 +1,10 @@
+Each js validate function should either do
+
+        addHidden('type, 'psychologist');
+
+or
+
+        addHidden('type, 'client');
+
+before returning, because that determines the handling object.
+

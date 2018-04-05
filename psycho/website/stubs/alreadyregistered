@@ -1,0 +1,43 @@
+    <script src="/js/preamble.js"></script>
+    <script src="/js/alreadyregistered.js"></script>
+</head>
+
+<body> 
+
+<h1 style="text-align: center">3PPQ</h1>
+
+<h1>3PPQ - Aanmelding kan niet worden verwerkt</h1>
+
+<!-- img src="/images/aanmelden.jpg" style="float:right"-->
+
+Uw aanmelding kan niet worden verwerkt, omdat de door u opgegeven
+informatie al in ons systeem is geregistreerd.<p>
+
+<p>
+<form name="form" action="/bin/form" 
+      onsubmit="return validate()" method="post">
+
+<hr>
+<table style="border-collapse: collapse;">
+
+<hr>
+<p>
+Druk op de deze knop om uw gegevens aan te passen: 
+    <input value="Aanmelden" name = "submit" type="submit">
+
+<p>
+Druk op deze knop om in te loggen: 
+    <input value="Inloggen" type="submit"
+     onclick="window.open('/psychologist.html', '_self'); return false;">
+
+<p>
+Druk op deze knop om terug te keren naar de 3PPQ <em>home-page</em>: 
+        <input value="Homepage" type="submit"
+         onclick="window.open('/', '_self'); return false;">
+<hr>
+
+</form>
+
+
+
+

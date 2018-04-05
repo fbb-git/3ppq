@@ -1,7 +1,7 @@
 function validate() 
 {
     addHidden("type",   "psych");
-    addHidden("state",  "registration");
+    addHidden("state",  "signup");
     return true;
 } 
 

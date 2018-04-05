@@ -10,7 +10,7 @@ psycho (0.00.01)    (WIP)
   * Web-pages are now at /var/lib/psycho/www, using symlinks from
     /var/www/ssl_icce.rug. 
 
-  * Completed an initial demo version of a web-client registration form. It
+  * Completed an initial demo version of a web-client signup form. It
     does not yet perform actions.
 
  -- Frank B. Brokken <f.b.brokken@rug.nl>  Tue, 13 Mar 2018 17:31:24 +0100

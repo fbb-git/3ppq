@@ -16,7 +16,7 @@ bool Psych::acceptRegistration()
 
     // TODO sendmail verification to email
 
-    Display{ "acceptregistration" };
+    Display{ "acceptsignup" };
 
     return true;
 }

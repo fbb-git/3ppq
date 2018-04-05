@@ -59,7 +59,7 @@ class Psych
         void alreadyRegistered();
         bool acceptRegistration();
 
-        void registration();
+        void signUp();
         void login();
         void noPwd();
 

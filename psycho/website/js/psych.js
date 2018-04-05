@@ -1,4 +1,4 @@
-var nr = 0;
+var nr;
 
 function validate() 
 {
@@ -9,7 +9,7 @@ function validate()
     switch (nr)
     {
         case 0:
-            addHidden('state', 'registration');
+            addHidden('state', 'signup');
         break;
 
         case 1:

@@ -4,10 +4,10 @@
 
 #include <bobcat/log>
 
-//#include "../../library/types/types.h"
-//#include "../../library/tools/tools.h"
+//#include "../../support/types/types.h"
+//#include "../../support/tools/tools.h"
 
-#include "../../library/display/display.h"
+#include "../../support/display/display.h"
 
 using namespace std;
 using namespace FBB;

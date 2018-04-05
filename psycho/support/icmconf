@@ -17,5 +17,3 @@
 #define ADD_LIBRARY_PATHS   ""
 
 #define DEFCOM              "library"
-
-#include "../precomp"

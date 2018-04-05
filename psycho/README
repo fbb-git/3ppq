@@ -1,7 +1,133 @@
-gnuplot         -   demo configuration of gnuplot producing line-plots
-setup           -   initial libreoffice-impress .odp file containing the 
-                    general project description
-doc             -   documentation in Yodl and html formats
-psycho          -   files under the account's home directory
-psycho/bin      -   scripts and programs
+1. Directory organization
+2. Psychologist FSA
+3. Webserver requirements
+
+1. Directory organization
+=========================
+
+${basePath} - directory below which all files of the project are stored.
+              In ${basePath} run ./preparebase to prepare all directories +
+              required permissions.
+
+${webRoot}  - directory defined as DocumentRoot in the
+              apache2/sites-enabled/xxx file
+              ${webRoot}  could be a link to ${basePath}/www
+
+In ${basePath}
+    
+    bin/        x.www-data, g+rx
+                directory containing the form-program. May be accessed via a
+                soft link
+
+    js/         JavaScript support files: scripts called from webpages/stubs
+
+    css/        project CSS file
+
+    data/       data files created by form
+
+    stubs/      html stub files
+
+    images/     images included by stubs-files and html files
+
+    www/        html files. ${webRoot} links to this directory
+
+
+Other directories and files are entries used during development
+
+    
+README              - this file
+changelog           - project changelog file 
+doc                 -   documentation in Yodl and html formats
+form/               - source files of the form-handling program
+gnuplot             - demo configuration of gnuplot producing line-plots
+icmconf.programs    - icmconf file shared by programs
+log                 - log file
+setup               - initial libreoffice-impress .odp file containing the
+                        general project description
+src                 - source files of related programs
+support             - source files of the support library
+VERSION             - link to form/VERSION
+
+
+2. Psychologist FSA
+===================
+
+.js files, handling functions and states have identical names.
+The .js files define type = "psychologist" and state as hidden input fields.
+
+                            next
+file/function               state               description
+-----------------------------------------------------------------------------
+/index.html                                     home page
+    -> client.html                              (not handled in this file)
+    -> psychologist.html                        psychologists entry page
+                                                
+psychologist.html           registration        register as user
+                            login               login as user
+                            noPwd               lost password
+                                                
+registration                tryAdd              try to add new user
+
+tryAdd
+    -> acceptRegistration   /psychologist.html  (email sent to user)
+                                                
+    -> alreadyRegistered    registration        register as user
+                            /psychologist.html  login as user
+                            /index.html         to the homepage
+
+
+login
+    -> unknownPsych         registration        register as user
+                            /index.html         
+
+    -> pwdfailure           /psychologist.html  maybe try again?
+                            /index.html
+
+    -> action                                   TO DO (wip)
+
+noPwd                                           TO DO (wip)
+
+
+
+3. Web server requirements
+==========================
+
+    Define webRoot  /var/www/html/psycho
+    Define basePath /home/frank/src/psycho/website
+
+    Alias /css             ${basePath}/css
+    Alias /js              ${basePath}/js
+    Alias /images          ${basePath}/images
+    ScriptAlias /bin       ${basePath}/bin
+
+        # links to {basePath}/www/
+    <Directory "/var/www/psycho" >
+    Require all granted
+       Options Indexes FollowSymLinks MultiViews Includes ExecCGI    
+    </Directory>
+ 
+    <Directory "${basePath}/images" >
+       Require all granted
+    </Directory>
+
+    <Directory "${basePath}/css" >
+       Require all granted
+    </Directory>
+
+    <Directory "${basePath}/js" >
+       Require all granted
+       Options Includes
+    </Directory>
+
+    <Directory "${basePath}/bin" >
+    Require all granted
+       Options FollowSymLinks ExecCGI    
+    </Directory>
+ 
+
+
+
+
+
+
 

@@ -23,5 +23,7 @@ void Psychologist::login()
         return;
     }
 
+    g_log << "actions" << endl;
+
     Display{ "actions" };
 }

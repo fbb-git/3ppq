@@ -10,10 +10,10 @@
 #include <bobcat/cgi>
 #include <bobcat/log>
 
-#include "../../library/display/display.h"
-#include "../../library/options/options.h"
-#include "../../library/lfstream/lfstream.h"
-#include "../../library/lockguard/lockguard.h"
+#include "../../support/display/display.h"
+#include "../../support/options/options.h"
+#include "../../support/lockguard/lockguard.h"
+#include "../../support/tools/tools.h"
 
 extern FBB::Log g_log;
 

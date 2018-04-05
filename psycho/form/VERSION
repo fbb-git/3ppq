@@ -1,3 +1,2 @@
-#define AUTHOR  "Frank B. Brokken (f.b.brokken@rug.nl)";
-#define VERSION "0.00.00"
-#define YEARS "2017-2018"
+#define VERSION "0.00.01"
+#define YEARS   "2018"

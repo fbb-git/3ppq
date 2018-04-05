@@ -6,7 +6,7 @@
 
 #include <bobcat/cgi>
 
-#include "../../library/options/options.h"
+#include "../../support/options/options.h"
 
 #include "../psychologist/psychologist.h"
 

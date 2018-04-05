@@ -14,6 +14,6 @@
 #define REFRESH
 #define LDFLAGS             "-s"
 #define ADD_LIBRARIES       "support bobcat crypto"
-#define ADD_LIBRARY_PATHS   "../../library/tmp"
+#define ADD_LIBRARY_PATHS   "../../support/tmp"
 
 #define DEFCOM              "program"

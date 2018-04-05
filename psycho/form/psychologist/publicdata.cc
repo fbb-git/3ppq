@@ -10,7 +10,7 @@ string Psychologist::publicData() const
     value = identNr();
     Tools::write(out, &value);
 
-    Tools::write(out, Tools::md5hash(d_cgi.param1("passwd")));
+    Tools::write(out, Tools::md5hash(d_cgi.param1("pwd")));
 
     return out.str();
 }

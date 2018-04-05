@@ -56,11 +56,11 @@ class Psych
 
     private:
         void tryAdd();
-        void alreadyRegistered();
-        bool acceptRegistration();
+        void rejectSignup();
+        bool acceptSignup();
 
         void signUp();
-        void login();
+        void verify();
         void noPwd();
 
 

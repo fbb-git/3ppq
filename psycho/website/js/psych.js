@@ -4,8 +4,6 @@ function validate()
 {
     var nip = document.forms["form"]["nip"].value;
 
-    alert(" nr = " + nr);
-
     switch (nr)
     {
         case 0:
@@ -29,7 +27,7 @@ function validate()
                 alert("NIP-nummer en password moeten worden vermeld");
                 return false;
             }
-            addHidden('state', 'login');
+            addHidden('state', 'verify');
         break;
     }
     addHidden('type', 'psych');

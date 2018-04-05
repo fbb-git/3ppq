@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ ! -e website ] ; then
+    echo the directory website must exist
+    exit 1
+fi
+
+cd website 
+
+mkdir -p bin js css stubs data images www
+touch log
+
+chgrp -fR www-data bin js css stubs data images www log
+chmod -fR g+r bin js css data stubs images www
+
+chmod -f g+w data log
+chmod -f g+s data

@@ -12,7 +12,7 @@ class Options
 
         std::string log() const;
         std::string psych() const;
-        std::string stubs() const;
+        std::string html() const;
 };
 
 inline std::string Options::log() const
@@ -25,9 +25,9 @@ inline std::string Options::psych() const
     return d_base + "data/psych";
 }
 
-inline std::string Options::stubs() const
+inline std::string Options::html() const
 {
-    return d_base + "stubs/";
+    return d_base + "html/";
 }
 
 extern Options g_options;           // defined in main.cc

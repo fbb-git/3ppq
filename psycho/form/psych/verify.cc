@@ -1,7 +1,7 @@
 #include "psych.ih"
 
     // page opened when the psychologist 
-void Psych::login()
+void Psych::verify()
 {
     string data;
     {
@@ -11,14 +11,16 @@ void Psych::login()
 
     if (data.empty())
     {
-//        this_thread::sleep_for(chrono::seconds(5));
+        g_log << "verify: unknown NIP" << endl;
+        this_thread::sleep_for(chrono::seconds(5));
         Display{ "unknownpsych" };
         return;
     }
 
     if (not pwdMatch(getUnencrypted(data)))
     {
-//        this_thread::sleep_for(chrono::seconds(5));
+        this_thread::sleep_for(chrono::seconds(5));
+        g_log << "verify: incorrect passwd" << endl;
         Display{ "pwdfailure" };
         return;
     }
@@ -27,3 +29,6 @@ void Psych::login()
 
     Display{ "actions" };
 }
+
+
+

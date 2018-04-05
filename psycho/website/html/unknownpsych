@@ -1,5 +1,5 @@
     <script src="/js/preamble.js"></script>
-    <script src="/js/psych.js"></script>
+    <script src="/js/unknownpsych.js"></script>
 </head>
 
 <body> 
@@ -18,7 +18,7 @@ Het door u opgegeven NIP-nummer is onbekend.
 
 <hr>
 <p>
-Druk op de deze knop om u aan te melden als NIP gebruiker:
+Druk op deze knop om u aan te melden als NIP gebruiker:
     <input value="Aanmelden" type="submit">
 
 <p>

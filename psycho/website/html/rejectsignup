@@ -1,5 +1,5 @@
     <script src="/js/preamble.js"></script>
-    <script src="/js/alreadyregistered.js"></script>
+    <script src="/js/rejectsignup.js"></script>
 </head>
 
 <body> 
@@ -18,12 +18,9 @@ informatie al in ons systeem is geregistreerd.<p>
       onsubmit="return validate()" method="post">
 
 <hr>
-<table style="border-collapse: collapse;">
-
-<hr>
 <p>
-Druk op de deze knop om uw gegevens aan te passen: 
-    <input value="Aanmelden" name = "submit" type="submit">
+Druk op deze knop om uw gegevens aan te passen: 
+    <input value="Aanmelden" type="submit">
 
 <p>
 Druk op deze knop om in te loggen: 

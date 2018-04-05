@@ -52,59 +52,41 @@ VERSION             - link to form/VERSION
 2. Psychologist FSA
 ===================
 
-.js files, handling functions and states have identical names.
-The .js files define type = "psychologist" and state as hidden input fields.
+start, psych and client are pseudo states: reached by loading the /index.html,
+/psych.html or /client.html www pages
 
-                                                        next action/
-in              file/                       out             state; Psych                         
-variables       stubs           js/*.js     variables       handling funct.     description      
--------------------------------------------------------------------------------------------------
--               /index.html     -           -               client.html         
-                                                            psych.html 
-                
--               /psych.html     psych       nip             noPwd               nip provided     
-                                            pwd             login               nip, pwd provided
-                                                            signup              no variables     
-                
-noPwd           
-                
-login           actions         
-                unknownpsych
-                pwdfailure
-                
-signup
-
-                            next
-file/function               state               description
------------------------------------------------------------------------------
-/index.html                                     home page
-    -> client.html                              (not handled in this file)
-    -> psychologist.html                        psychologists entry page
-                                                
-psychologist.html           registration        register as user
-                            login               login as user
-                            noPwd               lost password
-                                                
-registration                tryAdd              try to add new user
-
-tryAdd
-    -> acceptRegistration   /psychologist.html  (email sent to user)
-                                                
-    -> alreadyRegistered    registration        register as user
-                            /psychologist.html  login as user
-                            /index.html         to the homepage
+all Psych states also define type=psych
 
 
-login
-    -> unknownPsych         registration        register as user
-                            /index.html         
-
-    -> pwdfailure           /psychologist.html  maybe try again?
-                            /index.html
-
-    -> action                                   TO DO (wip)
-
-noPwd                                           TO DO (wip)
+----------------------------------------------------------------------------------------------------------------------------------------
+                            Psych-fun or                                                        
+state       invars          wwww/ file          html-file       js              out-vars        next state      description
+----------------------------------------------------------------------------------------------------------------------------------------
+start       -               /index.html         -               -               -               psych           
+                                                                                                client          not here, see Client FSA
+                                                                                                
+psych       -               /psych.html         -               psych           nip,pwd         verify          verify UN/PW
+                                                                                                noPwd           new Pwd sent by mail
+                                                                                                signup          sign up as NIP user
+                                                                                                
+verify      nip,pwd         verify()            unknownpsych    unknownpsych    -               start           user cancels
+                                                                                                signup          user signs up
+                                                pwdfailure      -               -               psych           user tries again
+                                                                                                start           user cancels
+                                                actions         -               -               start           TODO: available actions
+                                                                                                
+noPwd                       noPwd()             nopwd           -               -               start           TODO: receive TMP passwd
+                                                                
+signup                      signUp()            signup          signup          name,lastname,  tryAdd          try to add new user
+                                                                                gender,email,   
+                                                                                pwd             
+                                                                
+tryAdd      name,lastname,  tryAdd()                            
+            gender,email,     acceptSignup()    acceptsignup    -               -               psych           login after signing up
+            pwd               rejectSignup()    rejectsignup    rejectsignup    -               signup          try again
+                                                                                                psych           try to login again
+                                                                                                start           user cancels
+----------------------------------------------------------------------------------------------------------------------------------------
 
 
 

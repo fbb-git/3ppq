@@ -15,7 +15,7 @@ Het door u opgegeven password is onjuist.
 
 <hr>
 <p>
-Druk op de deze knop om in te loggen:
+Druk op deze knop om in te loggen:
     <input value="Inloggen" type="submit"
      onclick="window.open('/psych.html', '_self'); return false;">
 

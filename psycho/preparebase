@@ -10,7 +10,7 @@ cd website
 mkdir -p bin js css html data images www mail
 touch log
 
-chgrp -fR .
+chgrp -fR www-data .
 chmod -fR g+r .
 
 chmod -f g+w data log

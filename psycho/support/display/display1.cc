@@ -1,8 +1,9 @@
 #include "display.ih"
 
-Display::Display(string const &name)
+Display::Display(string const &path, StrVector const *dollarVars)
 :
-    d_file(s_base + name)
+    d_path(path),
+    d_dollarVars(dollarVars)
 {
-    copy();                 // write the head of the page to cout
+    copy();
 }

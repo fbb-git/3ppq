@@ -10,12 +10,19 @@
 #include <bobcat/cgi>
 #include <bobcat/log>
 
+#include "../../support/dollartext/dollartext.h"
 #include "../../support/display/display.h"
 #include "../../support/options/options.h"
 #include "../../support/lockguard/lockguard.h"
 #include "../../support/tools/tools.h"
+#include "../../support/mailer/mailer.h"
 
 extern FBB::Log g_log;
 
 using namespace std;
 using namespace FBB;
+
+inline char const *Psych::Private::genderText() const
+{
+    return gender ? "heer" : "mevrouw";
+}

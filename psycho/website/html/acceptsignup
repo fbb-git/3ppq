@@ -8,9 +8,13 @@
 
 <!-- img src="/images/aanmelden.jpg" style="float:right"-->
 
-Uw aanmelding is verwerkt. Ter controle van uw e-mail adres ontvangt u een
-e-mail waarin u wordt gevraagd in te loggen en vervolgens het in de e-mail
-vermelde verificatienummer in te vullen.<p>
+Uw aanmelding is verwerkt.<br>
+
+Ter controle van uw e-mail adres ontvangt u, wanneer u voor de eerste keer
+inlogt, een e-mail waarin een verificatienummer is vermeld.<br>
+
+Dat nummer dient u nadat u voor de eerste keer hebt ingelogd ter verificatie
+van uw e-mail adres eenmalig te vermelden.<p>
 
 <form name="form" action="/bin/form" >
 
@@ -18,6 +22,5 @@ Druk op deze knop om in te loggen:
     <input value="Inloggen" name = "submit" type="submit"
      onclick="window.open('/psych.html', '_self'); return false;">
 
-</form>
 
 

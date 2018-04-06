@@ -7,11 +7,11 @@ fi
 
 cd website 
 
-mkdir -p bin js css stubs data images www
+mkdir -p bin js css stubs data images www mail
 touch log
 
-chgrp -fR www-data bin js css stubs data images www log
-chmod -fR g+r bin js css data stubs images www
+chgrp -fR www-data bin js css stubs data images www log mail
+chmod -fR g+r bin js css data stubs images www mail
 
 chmod -f g+w data log
 chmod -f g+s data

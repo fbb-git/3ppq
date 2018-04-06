@@ -13,6 +13,7 @@ class Options
         std::string log() const;
         std::string psych() const;
         std::string html() const;
+        std::string mail() const;
 };
 
 inline std::string Options::log() const
@@ -28,6 +29,11 @@ inline std::string Options::psych() const
 inline std::string Options::html() const
 {
     return d_base + "html/";
+}
+
+inline std::string Options::mail() const
+{
+    return d_base + "mail/";
 }
 
 extern Options g_options;           // defined in main.cc

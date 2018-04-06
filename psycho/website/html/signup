@@ -31,7 +31,7 @@ Hiervoor hebben we de volgend informatie van u nodig:
 
 <tr >
     <td class=right>Achternaam: </td> 
-    <td ><input class=margin type="text" name="lastname" size="50"></td>
+    <td ><input class=margin type="text" name="lastName" size="50"></td>
 </tr>
 
 <tr class=darkrow>
@@ -66,5 +66,3 @@ Hiervoor hebben we de volgend informatie van u nodig:
 <input value="Aanmelden" name = "submit" type="submit">
 
 <hr>
-
-</form>

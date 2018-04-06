@@ -4,8 +4,6 @@ bool Psych::acceptSignup()
 {
     string iv = Tools::iv();
 
-    // uint16_t verification;
-
     if (
         not d_psychData.add(
                nipKey(), 
@@ -20,7 +18,7 @@ bool Psych::acceptSignup()
     g_log << "acceptSignup OK" << '\n';
     // TODO sendmail verification to email
 
-    Display{ "acceptsignup" };
+    Display{ g_options.html() + "acceptsignup" };
 
     return true;
 }

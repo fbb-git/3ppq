@@ -1,4 +1,14 @@
 #include "display.h"
 
+#include <fstream>
+#include <bobcat/exception>
+
+#include <bobcat/log>
+
+#include "../dollartext/dollartext.h"
+
+extern FBB::Log g_log;
+
 using namespace std;
+using namespace FBB;
 

@@ -2,10 +2,18 @@
 
 Display::~Display()
 {
-    if (not d_line.empty())
-        cout << d_line << '\n';
+    if (d_append)
+    {
+        for (string const &line: *d_append)
+        {
+            g_log << "adding parameter `" << line << '\'' << endl;
+            cout << line << '\n';
+        }
+    }
 
-    cout << d_file.rdbuf() << "<hr>";
+    cout << "\n"
+            "</form>\n"
+            "<hr>\n";
 
     cout.clear();
 }

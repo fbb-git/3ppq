@@ -1,0 +1,15 @@
+#include "dollartext.h"
+
+//#include <iostream>
+//#define CERR std::cerr << __FILE__": "
+
+#include <fstream>
+#include <string>
+
+#include <bobcat/exception>
+
+#include "../types/types.h"
+#include "../options/options.h"
+
+using namespace std;
+using namespace FBB;

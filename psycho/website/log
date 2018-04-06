@@ -93,3 +93,401 @@ Apr  5 15:31:38 verify: unknown NIP
 Apr  5 15:31:42 Handler starts
 Apr  5 15:31:42 Starting Handler::process: type = `psych'
 Apr  5 15:31:42 Starting Handler::process: state = `signup'
+Apr  6 11:48:37 can't use /home/frank/git/psycho/src/psycho/website/data/psych.lck
+Apr  6 11:48:37 Handler starts
+Apr  6 11:48:37 Starting Handler::process: type = `'
+Apr  6 11:48:37 Starting Handler::process: state = `'
+Apr  6 11:49:18 can't use /home/frank/git/psycho/src/psycho/website/data/psych.lck
+Apr  6 11:49:18 Handler starts
+Apr  6 11:49:18 Starting Handler::process: type = `'
+Apr  6 11:49:18 Starting Handler::process: state = `'
+Apr  6 11:50:30 can't use /home/frank/git/psycho/src/psycho/website/data/psych.lck
+Apr  6 11:50:30 Handler starts
+Apr  6 11:50:30 Starting Handler::process: type = `'
+Apr  6 11:50:30 Starting Handler::process: state = `'
+Apr  6 11:51:18 Handler starts
+Apr  6 11:51:18 Starting Handler::process: type = `psych'
+Apr  6 11:51:18 Starting Handler::process: state = `verify'
+Apr  6 11:51:18 stored hash length: 16
+Apr  6 11:51:18 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 11:51:18 pwd = `nip'
+Apr  6 11:51:18 hash length: 16
+Apr  6 11:51:18 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 11:51:18 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 11:53:08 Handler starts
+Apr  6 11:53:08 Starting Handler::process: type = `psych'
+Apr  6 11:53:08 Starting Handler::process: state = `verify'
+Apr  6 11:53:08 stored hash length: 16
+Apr  6 11:53:08 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 11:53:08 pwd = `nip'
+Apr  6 11:53:08 hash length: 16
+Apr  6 11:53:08 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 11:53:08 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 11:54:04 Handler starts
+Apr  6 11:54:04 Starting Handler::process: type = `psych'
+Apr  6 11:54:04 Starting Handler::process: state = `verify'
+Apr  6 11:54:04 stored hash length: 16
+Apr  6 11:54:04 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 11:54:04 pwd = `nip'
+Apr  6 11:54:04 hash length: 16
+Apr  6 11:54:04 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 11:54:04 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 11:54:29 Handler starts
+Apr  6 11:54:29 Starting Handler::process: type = `psych'
+Apr  6 11:54:29 Starting Handler::process: state = `verifyAck'
+Apr  6 12:12:26 can't use /home/frank/git/psycho/src/psycho/website/data/psych.lck
+Apr  6 12:12:26 Handler starts
+Apr  6 12:12:26 Starting Handler::process: type = `'
+Apr  6 12:12:26 Starting Handler::process: state = `'
+Apr  6 12:12:36 Handler starts
+Apr  6 12:12:36 Starting Handler::process: type = `psych'
+Apr  6 12:12:36 Starting Handler::process: state = `verify'
+Apr  6 12:12:36 stored hash length: 16
+Apr  6 12:12:36 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 12:12:36 pwd = `nip'
+Apr  6 12:12:36 hash length: 16
+Apr  6 12:12:36 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 12:12:36 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 12:12:44 Handler starts
+Apr  6 12:12:44 Starting Handler::process: type = `psych'
+Apr  6 12:12:44 Starting Handler::process: state = `verifyAck'
+Apr  6 12:16:13 Handler starts
+Apr  6 12:16:13 Starting Handler::process: type = `psych'
+Apr  6 12:16:13 Starting Handler::process: state = `verify'
+Apr  6 12:16:13 stored hash length: 16
+Apr  6 12:16:13 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 12:16:13 pwd = `nip'
+Apr  6 12:16:13 hash length: 16
+Apr  6 12:16:13 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 12:16:13 private data: 1, 1, frank, , f.b.brokken@rug.nl
+Apr  6 12:16:13 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 12:22:28 Handler starts
+Apr  6 12:22:28 Starting Handler::process: type = `psych'
+Apr  6 12:22:28 Starting Handler::process: state = `verify'
+Apr  6 12:22:28 verify: unknown NIP
+Apr  6 12:22:41 Handler starts
+Apr  6 12:22:41 Starting Handler::process: type = `psych'
+Apr  6 12:22:41 Starting Handler::process: state = `signup'
+Apr  6 12:23:26 Handler starts
+Apr  6 12:23:26 Starting Handler::process: type = `psych'
+Apr  6 12:23:26 Starting Handler::process: state = `tryAdd'
+Apr  6 12:23:26 tryAdd
+Apr  6 12:23:26 acceptSignup OK
+Apr  6 12:24:16 Handler starts
+Apr  6 12:24:16 Starting Handler::process: type = `psych'
+Apr  6 12:24:16 Starting Handler::process: state = `verify'
+Apr  6 12:24:16 stored hash length: 16
+Apr  6 12:24:16 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 12:24:16 pwd = `nip'
+Apr  6 12:24:16 hash length: 16
+Apr  6 12:24:16 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 12:24:16 private data: 1, 1, Frank, Brokken, f.b.brokken@rug.nl
+Apr  6 12:24:16 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 12:32:02 Handler starts
+Apr  6 12:32:02 Starting Handler::process: type = `psych'
+Apr  6 12:32:02 Starting Handler::process: state = `verify'
+Apr  6 12:32:02 stored hash length: 16
+Apr  6 12:32:02 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 12:32:02 pwd = `nip'
+Apr  6 12:32:02 hash length: 16
+Apr  6 12:32:02 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 12:32:02 private data: 1, 1, Frank, Brokken, f.b.brokken@rug.nl
+Apr  6 12:32:02 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 12:32:02 Could not send e-mail (3ppq.nl verification) to frank@localhost.email
+Apr  6 12:42:17 Handler starts
+Apr  6 12:42:17 Starting Handler::process: type = `psych'
+Apr  6 12:42:17 Starting Handler::process: state = `verify'
+Apr  6 12:42:17 stored hash length: 16
+Apr  6 12:42:17 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 12:42:17 pwd = `nip'
+Apr  6 12:42:18 hash length: 16
+Apr  6 12:42:18 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 12:42:18 private data: 1, 1, Frank, Brokken, f.b.brokken@rug.nl
+Apr  6 12:42:18 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 12:42:18 Could not send e-mail (3ppq.nl verification) to frank@localhost
+Apr  6 12:43:28 Handler starts
+Apr  6 12:43:28 Starting Handler::process: type = `psych'
+Apr  6 12:43:28 Starting Handler::process: state = `verifyAck'
+Apr  6 12:46:20 Handler starts
+Apr  6 12:46:20 Starting Handler::process: type = `psych'
+Apr  6 12:46:20 Starting Handler::process: state = `verify'
+Apr  6 12:46:20 stored hash length: 16
+Apr  6 12:46:20 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 12:46:20 pwd = `nip'
+Apr  6 12:46:20 hash length: 16
+Apr  6 12:46:20 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 12:46:20 private data: 1, 1, Frank, Brokken, f.b.brokken@rug.nl
+Apr  6 12:46:20 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 12:46:20 0: e-mail (3ppq.nl verification) sent to frank@localhost
+Apr  6 12:46:41 Handler starts
+Apr  6 12:46:41 Starting Handler::process: type = `psych'
+Apr  6 12:46:41 Starting Handler::process: state = `verifyAck'
+Apr  6 13:33:53 Handler starts
+Apr  6 13:33:53 Starting Handler::process: type = `psych'
+Apr  6 13:33:53 Starting Handler::process: state = `verify'
+Apr  6 13:33:53 stored hash length: 16
+Apr  6 13:33:53 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 13:33:53 pwd = `nip'
+Apr  6 13:33:53 hash length: 16
+Apr  6 13:33:53 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 13:33:53 private data: 1, 1, Frank, Brokken, f.b.brokken@rug.nl
+Apr  6 13:33:53 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 13:33:53 0: e-mail (3ppq.nl verification) sent to frank@localhost
+Apr  6 13:34:04 Handler starts
+Apr  6 13:34:04 Starting Handler::process: type = `psych'
+Apr  6 13:34:04 Starting Handler::process: state = `verifyAck'
+Apr  6 13:47:20 Handler starts
+Apr  6 13:47:20 Starting Handler::process: type = `psych'
+Apr  6 13:47:20 Starting Handler::process: state = `verify'
+Apr  6 13:47:20 stored hash length: 16
+Apr  6 13:47:20 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 13:47:20 pwd = `nip'
+Apr  6 13:47:20 hash length: 16
+Apr  6 13:47:20 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 13:47:20 private data: 1, 1, Frank, Brokken, f.b.brokken@rug.nl
+Apr  6 13:47:20 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 13:47:20 0: e-mail (3ppq.nl verification) sent to frank@localhost
+Apr  6 13:47:29 Handler starts
+Apr  6 13:47:29 Starting Handler::process: type = `psych'
+Apr  6 13:47:29 Starting Handler::process: state = `verifyAck'
+Apr  6 13:47:29 verifyAck get data
+Apr  6 13:47:29 verifyAck unencrypted data
+Apr  6 14:39:14 can't use /home/frank/git/psycho/src/psycho/website/data/psych.lck
+Apr  6 14:39:14 Handler starts
+Apr  6 14:39:14 Starting Handler::process: type = `'
+Apr  6 14:39:14 Starting Handler::process: state = `'
+Apr  6 14:39:30 Handler starts
+Apr  6 14:39:30 Starting Handler::process: type = `psych'
+Apr  6 14:39:30 Starting Handler::process: state = `verify'
+Apr  6 14:39:30 stored hash length: 16
+Apr  6 14:39:30 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 14:39:30 pwd = `nip'
+Apr  6 14:39:30 hash length: 16
+Apr  6 14:39:30 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 14:39:30 private data: 1, 1, Frank, Brokken, f.b.brokken@rug.nl
+Apr  6 14:39:30 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 14:39:30 0: e-mail (3ppq.nl verification) sent to frank@localhost
+Apr  6 14:40:00 Handler starts
+Apr  6 14:40:00 Starting Handler::process: type = `psych'
+Apr  6 14:40:00 Starting Handler::process: state = `verifyAck'
+Apr  6 14:40:00 verifyAck get data nip = 
+Apr  6 14:40:00 verifyAck unencrypted data
+Apr  6 14:51:27 Handler starts
+Apr  6 14:51:27 Starting Handler::process: type = `psych'
+Apr  6 14:51:27 Starting Handler::process: state = `verify'
+Apr  6 14:51:27 stored hash length: 16
+Apr  6 14:51:27 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 14:51:27 pwd = `nip'
+Apr  6 14:51:27 hash length: 16
+Apr  6 14:51:27 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 14:51:27 private data: 1, 1, Frank, Brokken, f.b.brokken@rug.nl
+Apr  6 14:51:27 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 14:51:27 0: e-mail (3ppq.nl verification) sent to frank@localhost
+Apr  6 14:51:27 adding parameter `<input type='hidden' name=' nip' value='00000001'>'
+Apr  6 14:52:34 Handler starts
+Apr  6 14:52:34 Starting Handler::process: type = `psych'
+Apr  6 14:52:34 Starting Handler::process: state = `verify'
+Apr  6 14:52:34 stored hash length: 16
+Apr  6 14:52:34 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 14:52:34 pwd = `nip'
+Apr  6 14:52:34 hash length: 16
+Apr  6 14:52:34 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 14:52:34 private data: 1, 1, Frank, Brokken, f.b.brokken@rug.nl
+Apr  6 14:52:34 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 14:52:34 0: e-mail (3ppq.nl verification) sent to frank@localhost
+Apr  6 14:52:34 adding parameter `<input type='hidden' name='nip' value='00000001'>'
+Apr  6 14:52:44 Handler starts
+Apr  6 14:52:44 Starting Handler::process: type = `psych'
+Apr  6 14:52:44 Starting Handler::process: state = `verifyAck'
+Apr  6 14:52:44 verifyAck get data nip = 00000001
+Apr  6 14:52:44 verifyAck unencrypted data
+Apr  6 14:52:44 verifyAck cmp 5810 and 200
+Apr  6 14:52:44 verifyAck done 2
+Apr  6 14:52:54 Handler starts
+Apr  6 14:52:54 Starting Handler::process: type = `psych'
+Apr  6 14:52:54 Starting Handler::process: state = `verify'
+Apr  6 14:52:54 verify: unknown NIP
+Apr  6 14:55:12 Handler starts
+Apr  6 14:55:12 Starting Handler::process: type = `psych'
+Apr  6 14:55:12 Starting Handler::process: state = `verify'
+Apr  6 14:55:12 stored hash length: 16
+Apr  6 14:55:12 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 14:55:12 pwd = `nip'
+Apr  6 14:55:12 hash length: 16
+Apr  6 14:55:12 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 14:55:12 private data: 1, 1, Frank, Brokken, f.b.brokken@rug.nl
+Apr  6 14:55:12 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 14:55:12 0: e-mail (3ppq.nl verification) sent to frank@localhost
+Apr  6 14:55:12 adding parameter `<input type='hidden' name='nip' value='00000001'>'
+Apr  6 14:55:16 Handler starts
+Apr  6 14:55:16 Starting Handler::process: type = `psych'
+Apr  6 14:55:16 Starting Handler::process: state = `verifyAck'
+Apr  6 14:55:16 verifyAck get data nip = 00000001
+Apr  6 14:55:16 verifyAck unencrypted data
+Apr  6 14:55:16 verifyAck cmp 5810 and 9
+Apr  6 14:55:16 verifyAck done 2
+Apr  6 14:55:16 adding parameter `<input type='hidden' name='nip' value='00000001'>'
+Apr  6 14:55:19 Handler starts
+Apr  6 14:55:19 Starting Handler::process: type = `psych'
+Apr  6 14:55:19 Starting Handler::process: state = `verify'
+Apr  6 14:55:19 stored hash length: 16
+Apr  6 14:55:19 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 14:55:19 pwd = `'
+Apr  6 14:55:19 hash length: 16
+Apr  6 14:55:19 received hash: -44 29 -116 -39 -113 0 -78 4 -23 -128 9 -104 -20 -8 66 126 
+Apr  6 14:55:24 verify: incorrect passwd
+Apr  6 14:58:21 Handler starts
+Apr  6 14:58:21 Starting Handler::process: type = `psych'
+Apr  6 14:58:21 Starting Handler::process: state = `verify'
+Apr  6 14:58:21 stored hash length: 16
+Apr  6 14:58:21 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 14:58:21 pwd = `nip'
+Apr  6 14:58:21 hash length: 16
+Apr  6 14:58:21 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 14:58:21 private data: 1, 1, Frank, Brokken, f.b.brokken@rug.nl
+Apr  6 14:58:21 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 14:58:21 0: e-mail (3ppq.nl verification) sent to frank@localhost
+Apr  6 14:58:21 adding parameter `<input type='hidden' name='nip' value='00000001'>'
+Apr  6 14:58:21 adding parameter `<input type='hidden' name='pwd' value='nip'>'
+Apr  6 14:58:26 Handler starts
+Apr  6 14:58:26 Starting Handler::process: type = `psych'
+Apr  6 14:58:26 Starting Handler::process: state = `verifyAck'
+Apr  6 14:58:26 verifyAck get data nip = 00000001
+Apr  6 14:58:26 verifyAck unencrypted data
+Apr  6 14:58:26 verifyAck cmp 5810 and 9
+Apr  6 14:58:26 verifyAck done 2
+Apr  6 14:58:26 adding parameter `<input type='hidden' name='nip' value='00000001'>'
+Apr  6 14:58:26 adding parameter `<input type='hidden' name='pwd' value='nip'>'
+Apr  6 14:58:34 Handler starts
+Apr  6 14:58:34 Starting Handler::process: type = `psych'
+Apr  6 14:58:34 Starting Handler::process: state = `verify'
+Apr  6 14:58:34 stored hash length: 16
+Apr  6 14:58:34 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 14:58:34 pwd = `nip'
+Apr  6 14:58:34 hash length: 16
+Apr  6 14:58:34 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 14:58:34 private data: 1, 1, Frank, Brokken, f.b.brokken@rug.nl
+Apr  6 14:58:34 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 14:58:34 0: e-mail (3ppq.nl verification) sent to frank@localhost
+Apr  6 14:58:34 adding parameter `<input type='hidden' name='nip' value='00000001'>'
+Apr  6 14:58:34 adding parameter `<input type='hidden' name='pwd' value='nip'>'
+Apr  6 14:58:54 Handler starts
+Apr  6 14:58:54 Starting Handler::process: type = `psych'
+Apr  6 14:58:54 Starting Handler::process: state = `verifyAck'
+Apr  6 14:58:54 verifyAck get data nip = 00000001
+Apr  6 14:58:54 verifyAck unencrypted data
+Apr  6 14:58:54 verifyAck cmp 5810 and 5180
+Apr  6 14:58:54 verifyAck done 2
+Apr  6 14:58:54 adding parameter `<input type='hidden' name='nip' value='00000001'>'
+Apr  6 14:58:54 adding parameter `<input type='hidden' name='pwd' value='nip'>'
+Apr  6 14:59:03 Handler starts
+Apr  6 14:59:03 Starting Handler::process: type = `psych'
+Apr  6 14:59:03 Starting Handler::process: state = `verify'
+Apr  6 14:59:03 stored hash length: 16
+Apr  6 14:59:03 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 14:59:03 pwd = `nip'
+Apr  6 14:59:03 hash length: 16
+Apr  6 14:59:03 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 14:59:03 private data: 1, 1, Frank, Brokken, f.b.brokken@rug.nl
+Apr  6 14:59:03 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 14:59:03 0: e-mail (3ppq.nl verification) sent to frank@localhost
+Apr  6 14:59:03 adding parameter `<input type='hidden' name='nip' value='00000001'>'
+Apr  6 14:59:03 adding parameter `<input type='hidden' name='pwd' value='nip'>'
+Apr  6 14:59:10 Handler starts
+Apr  6 14:59:10 Starting Handler::process: type = `psych'
+Apr  6 14:59:10 Starting Handler::process: state = `verifyAck'
+Apr  6 14:59:10 verifyAck get data nip = 00000001
+Apr  6 14:59:10 verifyAck unencrypted data
+Apr  6 14:59:10 verifyAck cmp 5810 and 5810
+Apr  6 14:59:10 verifyAck update unencrypted data
+Apr  6 14:59:10 verifyAck done 1
+Apr  6 15:01:00 Handler starts
+Apr  6 15:01:00 Starting Handler::process: type = `psych'
+Apr  6 15:01:00 Starting Handler::process: state = `verify'
+Apr  6 15:01:00 stored hash length: 16
+Apr  6 15:01:00 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 15:01:00 pwd = `nip'
+Apr  6 15:01:00 hash length: 16
+Apr  6 15:01:00 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 15:01:00 private data: 1, 1, Frank, Brokken, f.b.brokken@rug.nl
+Apr  6 15:01:00 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 15:01:00 0: e-mail (3ppq.nl verification) sent to frank@localhost
+Apr  6 15:01:00 adding parameter `<input type='hidden' name='nip' value='00000001'>'
+Apr  6 15:01:00 adding parameter `<input type='hidden' name='pwd' value='nip'>'
+Apr  6 15:08:22 Handler starts
+Apr  6 15:08:22 Starting Handler::process: type = `psych'
+Apr  6 15:08:22 Starting Handler::process: state = `verify'
+Apr  6 15:08:22 stored hash length: 16
+Apr  6 15:08:22 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 15:08:22 pwd = `nip'
+Apr  6 15:08:22 hash length: 16
+Apr  6 15:08:22 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 15:08:22 private data: 1, 1, Frank, Brokken, f.b.brokken@rug.nl
+Apr  6 15:08:22 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 15:08:22 0: e-mail (3ppq.nl verification) sent to frank@localhost
+Apr  6 15:08:22 adding parameter `<input type='hidden' name='nip' value='00000001'>'
+Apr  6 15:08:22 adding parameter `<input type='hidden' name='pwd' value='nip'>'
+Apr  6 15:08:36 Handler starts
+Apr  6 15:08:36 Starting Handler::process: type = `psych'
+Apr  6 15:08:36 Starting Handler::process: state = `verifyAck'
+Apr  6 15:08:36 verifyAck done 1
+Apr  6 15:17:11 Handler starts
+Apr  6 15:17:11 Starting Handler::process: type = `psych'
+Apr  6 15:17:11 Starting Handler::process: state = `verify'
+Apr  6 15:17:11 stored hash length: 16
+Apr  6 15:17:11 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 15:17:11 pwd = `nip'
+Apr  6 15:17:11 hash length: 16
+Apr  6 15:17:11 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 15:17:11 private data: 1, 1, Frank, Brokken, f.b.brokken@rug.nl
+Apr  6 15:17:11 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 15:17:11 0: e-mail (3ppq.nl verification) sent to frank@localhost
+Apr  6 15:17:11 adding parameter `<input type='hidden' name='nip' value='00000001'>'
+Apr  6 15:17:11 adding parameter `<input type='hidden' name='pwd' value='nip'>'
+Apr  6 15:17:40 Handler starts
+Apr  6 15:17:40 Starting Handler::process: type = `psych'
+Apr  6 15:17:40 Starting Handler::process: state = `verifyAck'
+Apr  6 15:17:40 verifyAck done 1
+Apr  6 15:19:40 Handler starts
+Apr  6 15:19:40 Starting Handler::process: type = `psych'
+Apr  6 15:19:40 Starting Handler::process: state = `verify'
+Apr  6 15:19:40 stored hash length: 16
+Apr  6 15:19:40 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 15:19:40 pwd = `nip'
+Apr  6 15:19:40 hash length: 16
+Apr  6 15:19:40 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 15:19:40 private data: 1, 1, Frank, Brokken, f.b.brokken@rug.nl
+Apr  6 15:19:40 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 15:19:40 0: e-mail (3ppq.nl verification) sent to frank@localhost
+Apr  6 15:19:40 adding parameter `<input type='hidden' name='nip' value='00000001'>'
+Apr  6 15:19:40 adding parameter `<input type='hidden' name='pwd' value='nip'>'
+Apr  6 15:19:46 Handler starts
+Apr  6 15:19:46 Starting Handler::process: type = `psych'
+Apr  6 15:19:46 Starting Handler::process: state = `verifyAck'
+Apr  6 15:19:46 verifyAck done 1
+Apr  6 15:20:27 Handler starts
+Apr  6 15:20:27 Starting Handler::process: type = `psych'
+Apr  6 15:20:27 Starting Handler::process: state = `verify'
+Apr  6 15:20:27 stored hash length: 16
+Apr  6 15:20:27 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 15:20:27 pwd = `nip'
+Apr  6 15:20:27 hash length: 16
+Apr  6 15:20:27 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 15:20:27 actions
+Apr  6 15:21:03 Handler starts
+Apr  6 15:21:03 Starting Handler::process: type = `psych'
+Apr  6 15:21:03 Starting Handler::process: state = `verify'
+Apr  6 15:21:03 stored hash length: 16
+Apr  6 15:21:03 stored hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 15:21:03 pwd = `nip'
+Apr  6 15:21:03 hash length: 16
+Apr  6 15:21:03 received hash: -16 -75 -103 3 -28 -70 17 58 44 26 -76 85 -110 -87 108 -95 
+Apr  6 15:21:03 private data: 1, 1, Frank, Brokken, f.b.brokken@rug.nl
+Apr  6 15:21:03 verify: mail should be sent to f.b.brokken@rug.nl (temp. sent to frank@localhost)
+Apr  6 15:21:03 0: e-mail (3ppq.nl verification) sent to frank@localhost
+Apr  6 15:21:03 adding parameter `<input type='hidden' name='nip' value='00000001'>'
+Apr  6 15:21:03 adding parameter `<input type='hidden' name='pwd' value='nip'>'
+Apr  6 15:21:11 Handler starts
+Apr  6 15:21:11 Starting Handler::process: type = `psych'
+Apr  6 15:21:11 Starting Handler::process: state = `verifyAck'
+Apr  6 15:21:11 verifyAck done 1

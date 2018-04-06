@@ -1,0 +1,12 @@
+#include "mailer.h"
+
+#include <sstream>
+
+#include <bobcat/log>
+#include <bobcat/cininserter>
+
+extern FBB::Log g_log;
+
+using namespace std;
+using namespace FBB;
+

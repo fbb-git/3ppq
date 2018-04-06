@@ -73,11 +73,12 @@ verify      nip,pwd         verify()            unknownpsych    unknownpsych    
                                                                                                 signup          user signs up
                                                 pwdfailure      -               -               psych           user tries again
                                                                                                 start           user cancels
-                                                actions         -               -               start           TODO: available actions
+                                                verify          -               ack,nip,pwd     verifyAck       user's ack nr is verified
+                                                actions         -               -               start (wip)     TODO
                                                                                                 
-noPwd                       noPwd()             nopwd           -               -               start           TODO: receive TMP passwd
+noPwd                       noPwd()             nopwd           -               -               start (wip)     TODO
                                                                 
-signup                      signUp()            signup          signup          name,lastname,  tryAdd          try to add new user
+signup                      signUp()            signup          signup          name,lastName,  tryAdd          try to add new user
                                                                                 gender,email,   
                                                                                 pwd             
                                                                 
@@ -86,6 +87,11 @@ tryAdd      name,lastname,  tryAdd()
             pwd               rejectSignup()    rejectsignup    rejectsignup    -               signup          try again
                                                                                                 psych           try to login again
                                                                                                 start           user cancels
+
+verifyAck   ack,nip,pwd     verifyAck()         actions         -               -               start (wip)     TODO
+                                                ackerr          -               nip,pwd         start           user cancels
+                                                                                                verify          try again after ack error
+                                                                                -               
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 

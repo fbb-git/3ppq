@@ -26,9 +26,3 @@ Druk op deze knop om terug te keren naar de 3PPQ <em>home-page</em>:
         <input value="Homepage" type="submit"
          onclick="window.open('/', '_self'); return false;">
 <hr>
-
-</form>
-
-
-
-

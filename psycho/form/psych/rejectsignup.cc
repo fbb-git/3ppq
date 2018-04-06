@@ -2,5 +2,5 @@
 
 void Psych::rejectSignup()
 {
-    Display{ "rejectsignup" };
+    Display{ g_options.html() + "rejectsignup" };
 }

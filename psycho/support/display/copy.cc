@@ -2,26 +2,13 @@
 
 void Display::copy()
 {
-    while (true)
+    if (d_dollarVars != 0)
+        cout << DollarText{ d_path, *d_dollarVars }.text();
+    else
     {
-        if (d_line.empty() && not getline(d_file, d_line))
-            return;
-
-        while (true)
-        {
-            size_t pos = d_line.find("\\$");    // \$ starts our eoln-comment:
-                                                // information from \$ to eoln
-                                                // is not shown
-            if (pos == string::npos)
-            {
-                cout << d_line << endl;
-                d_line.clear();
-                break;
-            }
-            
-            cout << d_line.substr(0, pos);
-            d_line.erase(0, pos + 2);
-            return;
-        }
+        ifstream in;
+        Exception::open(in, d_path);
+        cout << in.rdbuf();                 // no variables: file to cout
     }
+
 }

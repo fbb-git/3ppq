@@ -1,0 +1,18 @@
+    <script src="/js/preamble.js"></script>
+    <script src="/js/verify.js"></script>
+</head>
+<body> 
+
+<form name="form" action="/bin/form" 
+      onsubmit="return validate()" method="post">
+
+<h1 style="text-align: center">3PPQ Aanmeldingsverificatie</h1>
+
+Geachte $0 $1,<p>
+
+U heeft per e-mail een verificatienummer ontvangen.<br>
+U kunt het ontvangen nummer hier invullen. Druk vervolgens op de
+<tt>Enter</tt> toets: 
+    <input type="text" name="ack" size="5">
+
+

@@ -2,5 +2,5 @@
 
 void Psych::noPwd()
 {
-    Display{ "nopwd" };
+    Display{ g_options.html() + "nopwd" };
 }

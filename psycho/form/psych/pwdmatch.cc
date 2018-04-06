@@ -1,13 +1,13 @@
 #include "psych.ih"
 
-bool Psych::pwdMatch(Record const &record) const
+bool Psych::pwdMatch() const
 {
     ostringstream out;
 
-    for (int ch: record.pwdHash)
+    for (int ch: d_record.pwdHash)
         out << ch << ' ';
         
-    g_log << "stored hash length: " << record.pwdHash.length() << endl;
+    g_log << "stored hash length: " << d_record.pwdHash.length() << endl;
     g_log << "stored hash: " << out.str() << endl;
 
     string pwd = d_cgi.param1("pwd");
@@ -22,7 +22,7 @@ bool Psych::pwdMatch(Record const &record) const
     g_log << "hash length: " << pwd.length() << endl;
     g_log << "received hash: " << out.str() << endl;
 
-    return record.pwdHash == Tools::md5hash(d_cgi.param1("pwd"));
+    return d_record.pwdHash == Tools::md5hash(d_cgi.param1("pwd"));
 }
 
 

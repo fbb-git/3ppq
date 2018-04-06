@@ -11,8 +11,6 @@ Log g_log{ g_options.log() };           // generic log facility
 
 int main()
 {
-    Display::setBase(g_options.html());
-
     Handler handler;                    // Form handling object
 
     handler.process();                  // process incoming forms

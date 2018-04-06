@@ -2,5 +2,5 @@
 
 void Psych::signUp()
 {
-    Display{ "signup" };
+    Display{ g_options.html() + "signup" };
 }

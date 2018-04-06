@@ -2,40 +2,28 @@
 #define INCLUDED_DISPLAY_
 
 #include <iostream>
-#include <fstream>
+//#include <fstream>
 #include <string>
+
+#include "../types/types.h"
 
 class Display
 {
-    template <typename Type>
-    friend Display &&operator<<(Display &&dest, Type &&arg);
-
-    std::ifstream d_file;
-    std::string d_line;
-
-    static std::string s_base;      // set by Handler, calling setBase()
+    std::string d_path;
+    StrVector const *d_dollarVars = 0;
+    StrVector const *d_append = 0;
 
     public:
-        Display(std::string const &name);
+        Display(std::string const &name, StrVector const *dollarVars = 0);
+
+                                                // usually hidden fields
+        Display(StrVector const &append,        // passing hidden params
+                std::string const &name, StrVector const *sv = 0);
+
         ~Display();
 
-        static void setBase(std::string const &base);
-
     private:
-        void copy();                // copy the skeleton to cout
+        void copy();                    // copy the skeleton to cout
 };
 
-inline void Display::setBase(std::string const &base)
-{
-    s_base = base;
-}
-
-template <typename Type>
-Display &&operator<<(Display &&dest, Type &&arg)
-{
-    std::cout << arg;
-    dest.copy();
-    return std::move(dest);
-}
-        
 #endif

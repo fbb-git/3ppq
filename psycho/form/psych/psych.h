@@ -67,10 +67,10 @@ class Psych
 
     private:
         void tryAdd();
-        void rejectSignup();
+//        void rejectSignup();
         bool acceptSignup();
 
-        void signUp();
+//        void signUp();
         void verify();
         void noPwd();
 

@@ -505,3 +505,17 @@ Apr  6 16:25:27 pwd = `6elQ@R'
 Apr  6 16:25:27 hash length: 16
 Apr  6 16:25:27 received hash: -73 88 117 -113 16 39 38 -41 -106 -113 -107 50 7 -2 -74 -122 
 Apr  6 16:25:27 actions
+Apr  6 17:22:49 Handler starts
+Apr  6 17:22:49 Starting Handler::process: type = `psych'
+Apr  6 17:22:49 Starting Handler::process: state = `signup'
+Apr  6 17:25:34 Handler starts
+Apr  6 17:25:34 Starting Handler::process: type = `psych'
+Apr  6 17:25:34 Starting Handler::process: state = `signup'
+Apr  6 17:44:07 Handler starts
+Apr  6 17:44:07 Starting Handler::process: type = `psych'
+Apr  6 17:44:07 Starting Handler::process: state = `signup'
+Apr  6 17:45:56 Handler starts
+Apr  6 17:45:56 Starting Handler::process: type = `psych'
+Apr  6 17:45:56 Starting Handler::process: state = `tryAdd'
+Apr  6 17:45:56 tryAdd
+Apr  6 17:45:56 acceptSignup fails

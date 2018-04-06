@@ -7,6 +7,6 @@ void Psych::tryAdd()
     g_log << "tryAdd" << endl;
 
     if (not acceptSignup())
-        rejectSignup();
+        Display{ g_options.html() + "rejectsignup" };
 }
 

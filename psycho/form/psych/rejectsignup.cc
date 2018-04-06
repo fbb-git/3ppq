@@ -1,6 +1,6 @@
-#include "psych.ih"
-
-void Psych::rejectSignup()
-{
-    Display{ g_options.html() + "rejectsignup" };
-}
+//#include "psych.ih"
+//
+//void Psych::rejectSignup()
+//{
+//    Display{ g_options.html() + "rejectsignup" };
+//}

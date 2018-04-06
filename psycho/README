@@ -79,13 +79,13 @@ verify      nip,pwd         verify()            unknownpsych    unknownpsych    
 noPwd                       noPwd()             nopwd           -               -               start           continuation option
                                                                                                 psych           same
                                                                 
-signup                      signUp()            signup          signup          name,lastName,  tryAdd          try to add new user
+signup                      /signup.html        -               signup          name,lastName,  tryAdd          try to add new user
                                                                                 gender,email,   
                                                                                 pwd             
                                                                 
 tryAdd      name,lastname,  tryAdd()                            
             gender,email,     acceptSignup()    acceptsignup    -               -               psych           login after signing up
-            pwd               rejectSignup()    rejectsignup    rejectsignup    -               signup          try again
+            pwd                                 rejectsignup    -               -               signup          try again
                                                                                                 psych           try to login again
                                                                                                 start           user cancels
 

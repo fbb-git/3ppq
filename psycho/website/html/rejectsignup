@@ -1,5 +1,3 @@
-    <script src="/js/preamble.js"></script>
-    <script src="/js/rejectsignup.js"></script>
 </head>
 
 <body> 
@@ -14,13 +12,13 @@ Uw aanmelding kan niet worden verwerkt, omdat de door u opgegeven
 informatie al in ons systeem is geregistreerd.<p>
 
 <p>
-<form name="form" action="/bin/form" 
-      onsubmit="return validate()" method="post">
+<form>
 
 <hr>
 <p>
 Druk op deze knop om uw gegevens aan te passen: 
-    <input value="Aanmelden" type="submit">
+    <input value="Aanmelden" type="submit"
+      onclick="window.open('/signup.html', '_self'); return false;">
 
 <p>
 Druk op deze knop om in te loggen: 
@@ -29,6 +27,9 @@ Druk op deze knop om in te loggen:
 
 <p>
 Druk op deze knop om terug te keren naar de 3PPQ <em>home-page</em>: 
-        <input value="Homepage" type="submit"
-         onclick="window.open('/', '_self'); return false;">
+    <input value="Homepage" type="submit"
+     onclick="window.open('/', '_self'); return false;">
 <hr>
+
+
+

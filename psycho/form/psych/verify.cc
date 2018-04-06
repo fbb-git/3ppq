@@ -3,25 +3,15 @@
     // page opened when the psychologist 
 void Psych::verify()
 {
+    LockGuard lg{ d_lockPath, d_lockFd };
+
     string data;
-    {
-        LockGuard lg{ d_lockPath, d_lockFd };
-        d_psychData.get(&data, nipKey());
-    }
-
-    if (data.empty())
-    {
-        g_log << "verify: unknown NIP" << endl;
-        this_thread::sleep_for(chrono::seconds(5));
-        Display{ g_options.html() + "unknownpsych" };
+    if (data = getData(); data.empty())
         return;
-    }
-
-    getUnencrypted(data);
 
     if (not pwdMatch())
     {
-        this_thread::sleep_for(chrono::seconds(5));
+//        this_thread::sleep_for(chrono::seconds(5));
         g_log << "verify: incorrect passwd" << endl;
         Display{ g_options.html() + "pwdfailure" };
         return;
@@ -52,6 +42,7 @@ void Psych::verify()
                 passParam("pwd"),
             },
             g_options.html() + "verify", &sv };
+
         return;
     }
 

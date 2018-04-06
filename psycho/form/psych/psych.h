@@ -35,6 +35,9 @@ class Psych
         char const *genderText() const;
     };
 
+    // to add:  registration time
+    //          flags:  - required pwd change
+    //
     struct Record
     {
         uint16_t    ack;            // if != 0 then e-mail acknowledge
@@ -76,6 +79,8 @@ class Psych
         uint16_t identNr() const;
         std::string nipKey() const; // get key from cgi.param1("nip")
 
+        std::string getData();
+
         std::string publicData() const;
         std::string privateData() const;
 
@@ -89,6 +94,7 @@ class Psych
         std::string passParam(char const *name) const;
 
         static bool acceptNr(std::istream &nrs, uint16_t idNr);
+        static std::string newPassword();
 };
         
 

@@ -28,7 +28,8 @@ void Psych::verifyAck()
             passParam("nip"),
             passParam("pwd")
         },
-        g_options.html() + "ackerr" };
+        g_options.html() + "ackerr" 
+    };
 }
 
 

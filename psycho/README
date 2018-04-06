@@ -76,7 +76,8 @@ verify      nip,pwd         verify()            unknownpsych    unknownpsych    
                                                 verify          -               ack,nip,pwd     verifyAck       user's ack nr is verified
                                                 actions         -               -               start (wip)     TODO
                                                                                                 
-noPwd                       noPwd()             nopwd           -               -               start (wip)     TODO
+noPwd                       noPwd()             nopwd           -               -               start           continuation option
+                                                                                                psych           same
                                                                 
 signup                      signUp()            signup          signup          name,lastName,  tryAdd          try to add new user
                                                                                 gender,email,   

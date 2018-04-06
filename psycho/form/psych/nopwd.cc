@@ -7,7 +7,7 @@ void Psych::noPwd()
     LockGuard lg{ d_lockPath, d_lockFd };
 
     string data;
-    if (data = getData(); data.empty())
+    if (data = getData(); data.empty()) // getData calls Display on error
         return;
 
     d_record.pwdHash = Tools::md5hash(newPwd);

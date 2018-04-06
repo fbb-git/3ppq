@@ -3,6 +3,8 @@
 //#include <iostream>
 //#define CERR std::cerr << __FILE__": "
 
+#include <ctime>
+
 #include <algorithm>
 #include <sstream>
 #include <chrono>

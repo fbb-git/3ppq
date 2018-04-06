@@ -16,12 +16,12 @@ void Psych::getPrivate(string const &data, size_t offset)
     getline(in, d_private.lastName);
     getline(in, d_private.email);
 
-    g_log << "private data: " << 
-                d_private.nip << ", " <<
-                d_private.gender << ", " <<
-                d_private.name << ", " <<
-                d_private.lastName << ", " <<
-                d_private.email << endl;
+//    g_log << "private data: " << 
+//                d_private.nip << ", " <<
+//                d_private.gender << ", " <<
+//                d_private.name << ", " <<
+//                d_private.lastName << ", " <<
+//                d_private.email << endl;
 
 }
 

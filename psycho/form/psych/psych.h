@@ -35,17 +35,17 @@ class Psych
         char const *genderText() const;
     };
 
-    // to add:  registration time
-    //          flags:  - required pwd change
-    //
     struct Record
     {
+        uint32_t    time;           // registration time 
         uint16_t    ack;            // if != 0 then e-mail acknowledge
+        uint16_t    flags;          // room for 16 bit-flags
         uint16_t    nr;             // identification number
         std::string pwdHash;        // MD5 hash of the password (16 bytes)
         uint16_t    size;           // deduced: #bytes occupied by the 
                                     //  unencrypted data
-        std::string toString() const;
+
+        std::string toString() const;   // update when Record is modified
     };
         
     static Map s_state;             // maps state names to handling functions
@@ -67,10 +67,8 @@ class Psych
 
     private:
         void tryAdd();
-//        void rejectSignup();
         bool acceptSignup();
 
-//        void signUp();
         void verify();
         void noPwd();
 

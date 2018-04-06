@@ -16,7 +16,6 @@ bool Psych::acceptSignup()
     }
 
     g_log << "acceptSignup OK" << '\n';
-    // TODO sendmail verification to email
 
     Display{ g_options.html() + "acceptsignup" };
 

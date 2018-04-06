@@ -7,10 +7,12 @@ void Psych::getUnencrypted(string const &data)
     d_record = 
         Record
         {
-            *Tools::as<uint16_t const>(&skip, data),    // ack, beyond IV
-            *Tools::as<uint16_t const>(&skip, data),    // nr, beyond ack
+            *Tools::as<uint32_t const>(&skip, data),    // time, beyond IV
+            *Tools::as<uint16_t const>(&skip, data),    // ack, beyond time
+            *Tools::as<uint16_t const>(&skip, data),    // flags, beyond ack
+            *Tools::as<uint16_t const>(&skip, data),    // nr, beyond flags
             data.substr(skip, 16),                       // pwd hash
 
-            16 + 2 * sizeof(uint16_t)
+            sizeof(uint32_t) + 3 * sizeof(uint16_t) + 16
         };
 }

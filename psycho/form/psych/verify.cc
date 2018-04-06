@@ -6,13 +6,16 @@ void Psych::verify()
     LockGuard lg{ d_lockPath, d_lockFd };
 
     string data;
-    if (data = getData(); data.empty())
+    if (data = getData(); data.empty())     // getData calls Display on error
         return;
+
+g_log << "verify: " << data.length() << '\n';
 
     if (not pwdMatch())
     {
 //        this_thread::sleep_for(chrono::seconds(5));
         g_log << "verify: incorrect passwd" << endl;
+
         Display{ g_options.html() + "pwdfailure" };
         return;
     }
@@ -45,8 +48,6 @@ void Psych::verify()
 
         return;
     }
-
-    g_log << "actions" << endl;
 
     Display{ g_options.html() + "actions" };
 }

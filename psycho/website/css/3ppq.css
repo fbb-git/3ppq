@@ -1,4 +1,3 @@
-    
 .darkrow        /* dark table rows */
 {
     background: #dddddd;
@@ -14,3 +13,33 @@
     margin: 3px;
 }
 
+.title          /* top-title line of the page */
+{
+    padding:10px;
+    font-size: 300%;
+    font-style: oblique;
+    font-weight: bold;
+    height: 1.1em;
+    text-align: center;
+}
+
+.top-menu-markup
+{
+    background-color: #eeffee;
+    height: 1.5em;
+}
+
+.li-linewise        /* items in a list next to each other, use with .spread */
+{
+    margin: 0 auto;
+    display: inline;
+}
+
+.spread             /* spread elements over the available width */              
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0.25em 0;
+    display: flex;
+    justify-content: center
+}

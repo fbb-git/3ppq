@@ -1,1 +1,38 @@
-wip
+</head>
+
+<body> 
+<header class="title">                                                      
+    3PPQ 
+</header>                                                                   
+<nav class="top-menu-markup">                                               
+    <ul class="spread">                                                     
+        <li class="li-linewise">
+            <a href="/wip.html" title="Activiteiten m.b.t. clienten"> 
+                Cli&euml;nt 
+            </a>
+        </li>
+        <li class="li-linewise">
+            <a href="/wip.html" title="Download/selecteer verzamelde data">
+                Data
+            </a>
+        </li>
+        <li class="li-linewise">
+            <a href="/wip.html" title="Contact opnemen met het 3ppq.nl-team"> 
+                Contact 
+            </a>
+        </li>                                                               
+    </ul>                                                                   
+</nav>                                                                      
+ 
+<p>
+<img src="/images/3ppq.jpg" style="float:right">
+
+De in de menubalk vermelde opties zijn nog niet operationeel.
+
+<hr>
+
+<form>
+
+Druk op deze knop om terug te keren naar de 3PPQ <em>home-page</em>: 
+        <input value="Homepage" type="submit"
+         onclick="window.open('/', '_self'); return false;">

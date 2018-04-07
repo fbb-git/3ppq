@@ -1,0 +1,50 @@
+#!/bin/bash
+
+if [ $# -eq 0 ] ; then
+    echo "
+First argument must be the target directory, created if non-existing.
+Run this script as the destination user from the location where this script
+is located. 
+The destination user should be a member of the group www-data.
+The target directory may be specified as a relative or absolute path.
+"
+    exit 1
+fi
+
+website=$1
+
+if [ $website == "website.skel" ] ; then
+    echo "website.skel is reserved. Use another name"
+    exit 1
+fi
+
+website=`realpath ${website}`
+
+mkdir -p ${website}
+
+if [ ! -d ${website} ] ; then
+    echo "no directory \`${website}'"
+    exit 1
+fi
+
+cd website.skel
+tar cf - --exclude '*/ORG' --exclude README . | (cd ${website}; tar xf -)
+
+cd support
+icmbuild
+
+cd ../form
+icmbuild
+
+cp tmp/bin/binary ${website}/bin/
+
+cd ${website}
+
+touch log
+
+chgrp -fR www-data .
+chmod -fR g+r .
+
+chmod -f g+w data log
+chmod -f g+s data
+

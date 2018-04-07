@@ -1,6 +1,0 @@
-#!/bin/bash
-
-cat << EOF
-<html>
-<meta http-equiv="Refresh" content="1; url=http://localhost/psycho/env.shtml">
-</html>

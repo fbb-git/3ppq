@@ -37,7 +37,7 @@ icmbuild
 cd ../form
 icmbuild
 
-cp tmp/bin/binary ${website}/bin/
+cp tmp/bin/binary ${website}/bin/form
 
 cd ${website}
 

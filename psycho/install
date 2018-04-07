@@ -43,9 +43,11 @@ cd ${website}
 
 touch log
 
+chmod o-rwx .                       # no access except for www-data and user
+
 chgrp -fR www-data .
 chmod -fR g+r .
 
-chmod -f g+w data log
+chmod -fR g+w data log
 chmod -f g+s data
 

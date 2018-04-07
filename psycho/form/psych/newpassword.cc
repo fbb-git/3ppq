@@ -7,7 +7,8 @@ string Psych::newPassword()
 
     while (ret.size() != 6)
     {
-        int ch = Tools::random(127);
+                                    // avoid a space as pwd char.
+        int ch = ' ' + 1 + Tools::random(127 - (' ' + 1));
         if (isprint(ch))
             ret += ch;
     }

@@ -13,26 +13,11 @@ void Handler::process()
         d_psych.process();
 
     else if (type == "client")
-        ; // d_client.process();
+        d_client.process();
 
     else 
         empty();
 }
-
-
-//     void (Handler::**handler)() = s_psychoStates;
-// 
-// //        src.find("/psych.shtml") != string::npos ?   s_psychoStates :
-// //        src.find("/client.shtml") != string::npos ?         s_psychoStates :
-// //                                                            &s_empty;
-// 
-// 
-//         // when more URIs are used, use a map to select the appropriate
-//         // handler. 
-// 
-//     setState(handler);                                  // find the FSA state
-// 
-//     (this->*handler[d_state]) ();    // Initial state is START
 
 
 

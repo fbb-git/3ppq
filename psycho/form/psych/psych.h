@@ -89,7 +89,6 @@ class Psych
 
 
         bool pwdMatch() const;
-        std::string passParam(char const *name) const;
 
         static bool acceptNr(std::istream &nrs, uint16_t idNr);
         static std::string newPassword();

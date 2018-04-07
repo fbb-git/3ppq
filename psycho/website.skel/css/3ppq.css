@@ -43,3 +43,15 @@
     display: flex;
     justify-content: center
 }
+
+.center-text
+{
+    text-align: center;
+}
+
+.center-table
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+

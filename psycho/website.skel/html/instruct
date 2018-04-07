@@ -1,0 +1,87 @@
+    <script src="/js/preamble.js"></script>
+    <script src="/js/instruct.js"></script>
+</head>
+
+<body> 
+<header class="title">                                                      
+    3PPQ 
+</header>                                                                   
+
+<h1>3PPQ - Vragenlijstinstructie</h1>
+
+<b>Toelichting en invulinstructie Persoonlijkheid in Perspectief</b><p>
+
+Ten behoeve van een psychologisch onderzoek wordt uw medewerking gevraagd. U
+wordt verzocht de hierna volgende vragenlijst in te vullen.
+
+Deze vragenlijst gaat over u. In de vragenlijst vindt u vragen zoals
+
+<div class=center-text>
+
+    $0 iemand die        <!-- is deze persoon / bent u -->
+        gemakkelijk vrienden maakt?
+    <p>
+
+</div>
+
+<table class=center-table>
+<tr>
+    <td><input type="radio" name="answer" value="1"></td>
+    <td> &nbsp;&nbsp;</td>
+
+    <td><input type="radio" name="answer" value="2"></td>
+    <td> &nbsp;&nbsp;</td>
+
+    <td><input type="radio" name="answer" value="3"></td>
+    <td> &nbsp;&nbsp;</td>
+
+    <td><input type="radio" name="answer" value="4"></td>
+    <td> &nbsp;&nbsp;</td>
+
+    <td><input type="radio" name="answer" value="5"></td>
+</tr>
+<tr>
+    <td class=center-text>nee!</td>
+    <td></td>
+
+    <td class=center-text>nee</td>
+    <td></td>
+
+    <td class=center-text>?</td>
+    <td></td>
+
+    <td class=center-text>ja</td>
+    <td></td>
+
+    <td class=center-text>ja!</td>
+</tr>
+
+</table>
+
+<p>
+
+<hr>
+
+U kunt per vraag &eacute;&eacute;n antwoord selecteren door op het
+bijbehorende knopje te klikken. <p>
+
+Door op een ander knopje te klikken kunt u een gemaakte keuze herzien.<p>
+
+Totdat alle vragen zijn beantwoord (het zijn er 42) kunt u eerder gemaakte
+keuzes herzien door op de knop <input type="submit" value="terug"> te
+klikken. <p>
+
+Zodra u een vraag heeft beantwoord verschijnt de volgende vraag zodra u op de
+knop <input type="submit" value="verder"> klikt.
+
+<hr>
+
+<form name="form" action="/bin/form" 
+      onsubmit="return validate()" method='post'>
+
+De vragenlijst begint nadat u op deze knop heeft geklikt:
+<input type="submit" value="start">
+
+
+
+

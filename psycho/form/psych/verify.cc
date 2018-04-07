@@ -41,8 +41,8 @@ g_log << "verify: " << data.length() << '\n';
 
         Display{
             {
-                passParam("nip"),
-                passParam("pwd"),
+                Tools::passParam(d_cgi, "nip"),
+                Tools::passParam(d_cgi, "pwd"),
             },
             g_options.html() + "verify", &sv };
 

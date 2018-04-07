@@ -1,12 +1,13 @@
-#include "psych.ih"
+#include "tools.ih"
 
-string Psych::passParam(char const *name) const
+// static
+string Tools::passParam(char const *name, string const &value)
 {
     string ret = "<input type='hidden' name='";
 
     ret += name;
     ret += "' value='";
-    ret += d_cgi.param1(name);
+    ret += value;
     ret += "'>";
 
     return ret;

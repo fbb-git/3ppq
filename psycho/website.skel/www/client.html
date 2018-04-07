@@ -4,9 +4,8 @@
     <meta http-equiv="content-type" content="text/html;
           charset=windows-1252">
     <style></style>
-
     <script src="/js/preamble.js"></script>
-    <script src="/js/psych.js"></script>
+    <script src="/js/client.js"></script>
 </head>
 
 <body> 
@@ -19,9 +18,13 @@
 
 <!-- img src="/images/login.png" style="float:right" -->
 
-Deze functionaliteit is nog niet beschikbaar<p>
+<form name="form" action="/bin/form" 
+      onsubmit="return validate()" method="post">
 
-<hr>
+Vul hier het registratienummer in dat u heeft ontvangen en druk vervolgens op
+de <tt>Enter</tt> toets om de vragen in de vragenlijst te beantwoorden:
+
+    <input type="text" name="ack" size="5">
 
 <hr>
 <footer>3PPQ neemt privacy serieus. Download onze 
@@ -30,5 +33,6 @@ Deze functionaliteit is nog niet beschikbaar<p>
         <a href="mailto:3ppq@3ppq.nl">3ppq@3ppq.nl</a>
 </footer>
 
+</form>
 </body>
 </html>

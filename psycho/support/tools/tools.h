@@ -8,6 +8,11 @@
 
 #include "../types/types.h"
 
+namespace FBB
+{
+    class CGI;
+}
+
 class Tools
 {
     enum { BUFSIZE = 5000 };
@@ -15,6 +20,12 @@ class Tools
     public:
         template <typename Type>
         static Type *as(size_t *skip, std::string const &str);
+
+        static long long valueOr(std::string const &value, int fallback);
+
+        static std::string passParam(FBB::CGI &cgi, char const *name);
+        static std::string passParam(char const *name, 
+                                     std::string const &value);
 
                                 // open to RW, create if not existing
         static std::fstream fstream(std::string const &path);

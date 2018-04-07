@@ -25,8 +25,8 @@ void Psych::verifyAck()
 
     Display{
         {
-            passParam("nip"),
-            passParam("pwd")
+            Tools::passParam(d_cgi, "nip"),
+            Tools::passParam(d_cgi, "pwd")
         },
         g_options.html() + "ackerr" 
     };

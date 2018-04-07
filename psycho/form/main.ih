@@ -1,3 +1,5 @@
+#include <exception>
+
 #include <bobcat/log>
 
 #include "handler/handler.h"
@@ -7,3 +9,5 @@ using namespace FBB;
 
 extern Options g_options;
 extern Log g_log;
+
+using namespace std;

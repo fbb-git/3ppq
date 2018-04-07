@@ -8,12 +8,14 @@
 
 #include "../../support/options/options.h"
 
+#include "../client/client.h"
 #include "../psych/psych.h"
 
 class Handler
 {
     FBB::CGI            d_cgi;
 
+    Client d_client;
     Psych d_psych;
 
     public:

@@ -1,0 +1,24 @@
+#include "client.h"
+//#include <iostream>
+//#define CERR std::cerr << __FILE__": "
+
+#include <fstream>
+
+#include <bobcat/exception>
+#include <bobcat/cgi>
+#include <bobcat/log>
+
+#include "../../support/display/display.h"
+#include "../../support/options/options.h"
+#include "../../support/tools/tools.h"
+
+//#include "../../support/dollartext/dollartext.h"
+// #include "../../support/lockguard/lockguard.h"
+// #include "../../support/mailer/mailer.h"
+
+extern FBB::Log g_log;
+
+using namespace std;
+using namespace FBB;
+
+

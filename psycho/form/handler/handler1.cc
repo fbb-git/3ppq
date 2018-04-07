@@ -4,6 +4,7 @@ Handler::Handler()
 :
     d_cgi(false),                           // do not escape received info
                                             // do not do Content-type...
+    d_client(d_cgi),
     d_psych(d_cgi)
 {
     g_log << "Handler starts" << endl;

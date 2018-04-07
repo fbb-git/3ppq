@@ -56,15 +56,15 @@ start, psych and client are pseudo states: reached by loading the /index.html,
 /psych.html or /client.html www pages
 
 all Psych states also define type=psych
-
+all Client states also define type=client
 
 ----------------------------------------------------------------------------------------------------------------------------------------
                             Psych-fun or                                                        
 state       invars          wwww/ file          html-file       js              out-vars        next state      description
 ----------------------------------------------------------------------------------------------------------------------------------------
 start       -               /index.html         -               -               -               psych           
-                                                                                                client          not here, see Client FSA
-                                                                                                
+                                                                                                client
+----------------------------------------------------------------------------------------------------------------------------------------
 psych       -               /psych.html         -               psych           nip,pwd         verify          verify UN/PW
                                                                                                 noPwd           new Pwd sent by mail
                                                                                                 signup          sign up as NIP user
@@ -93,6 +93,16 @@ verifyAck   ack,nip,pwd     verifyAck()         actions         -               
                                                 ackerr          -               nip,pwd         start           user cancels
                                                                                                 verify          try again after ack error
                                                                                 -               
+----------------------------------------------------------------------------------------------------------------------------------------
+client      -               /client.html        -               client          ack             verify          verify ack
+
+verify      ack             verify()            unknownclient   -               -               start           client cancels
+                                                                -               -               client          try again
+                                                                                id              instruct        questionnaire instr.
+instruct    id              -                   -               
+
+quest       id,nr           quest()             quest           quest           id,nr           quest           present questions
+                                                thanks                                          start           end of questions
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 

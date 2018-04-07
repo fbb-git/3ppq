@@ -1,0 +1,43 @@
+    <script src="/js/preamble.js"></script>
+    <script src="/js/quest.js"></script>
+</head>
+
+<body> 
+<header class="title">                                                      
+    3PPQ 
+</header>                                                                   
+
+<h1>3PPQ - Vragenlijst</h1>
+
+Vraag $0: <p>               <!-- nr -->
+    
+<div class=center-text>
+
+    $1 iemand die     <!-- is deze persoon / bent u -->
+        $2
+    <p>
+
+</div>
+
+<form name="form" action="/bin/form" 
+      onsubmit="return validate()" method='post'>
+
+<table class=center-table>
+<tr>
+    <td><input type="radio" name="answer" value="1"> nee!</td>
+    <td> &nbsp;&nbsp;</td>
+
+    <td><input type="radio" name="answer" value="2"> nee</td>
+    <td> &nbsp;&nbsp;</td>
+
+    <td><input type="radio" name="answer" value="3"> ?</td>
+    <td> &nbsp;&nbsp;</td>
+
+    <td><input type="radio" name="answer" value="4"> ja</td>
+    <td> &nbsp;&nbsp;</td>
+
+    <td><input type="radio" name="answer" value="5"> ja!</td>
+</tr>
+</table>
+
+<p>

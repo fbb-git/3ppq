@@ -14,7 +14,13 @@ class Options
         std::string psych() const;
         std::string html() const;
         std::string mail() const;
+        std::string questions() const;
 };
+
+inline std::string Options::questions() const
+{
+    return d_base + "questions/questions.txt";
+}
 
 inline std::string Options::log() const
 {

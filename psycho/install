@@ -28,7 +28,8 @@ if [ ! -d ${website} ] ; then
 fi
 
 cd website.skel
-tar cf - --exclude '*/ORG' --exclude README . | (cd ${website}; tar xf -)
+tar cf - --exclude .filler --exclude '*/ORG' --exclude README . | 
+                                            (cd ${website}; tar xf -)
 
 cd support
 icmbuild

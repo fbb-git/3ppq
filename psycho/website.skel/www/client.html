@@ -14,24 +14,42 @@
     3PPQ
 </header>
 
-<h1>3PPQ - Cli&euml;nt pagina</h1>
+<h1>3PPQ - Respondent loginpagina</h1>
 
 <!-- img src="/images/login.png" style="float:right" -->
 
+<table>
+<tr>
+    <td style="text-align: right">Eerste inlogcode: </td> 
+        <td ><input type="text" name="one" size="5"></td>
+        <td onmouseover="alert(
+                'bent u cli&euml;nt dan hebt u deze code\n' +
+                'van uw psycholoog gekregen\n' +
+                'bent u een naaste ander, dan hebt u deze code\n' +
+                'van de cli&euml;nt gekregen')">
+            &nbsp;?&nbsp;</td>
+</tr>
+<tr>
+    <td style="text-align: right">Eerste inlogcode: </td> 
+        <td ><input type="text" name="two" size="5"></td>
+        <td onmouseover="alert(
+                'deze code heeft u per e-mail ontvangen')">
+            &nbsp;?&nbsp;</td>
+</tr>
+</table>
+
 <form name="form" action="/bin/form" 
       onsubmit="return validate()" method="post">
+<input type="submit" value="login">
 
-Vul hier het registratienummer in dat u heeft ontvangen en druk vervolgens op
-de <tt>Enter</tt> toets om de vragen in de vragenlijst te beantwoorden:
-
-    <input type="text" name="ack" size="5">
-
+<!--
 <hr>
 <footer>3PPQ neemt privacy serieus. Download onze 
     <a href="privacy.pdf"> privacy verklaring</a><br>
     Vragen of opmerkingen? Stuur dan een e-mail naar 
         <a href="mailto:3ppq@3ppq.nl">3ppq@3ppq.nl</a>
 </footer>
+-->
 
 </form>
 </body>

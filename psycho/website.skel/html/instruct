@@ -11,10 +11,7 @@
 
 <b>Toelichting en invulinstructie Persoonlijkheid in Perspectief</b><p>
 
-Ten behoeve van een psychologisch onderzoek wordt uw medewerking gevraagd. U
-wordt verzocht de hierna volgende vragenlijst in te vullen.
-
-Deze vragenlijst gaat over u. In de vragenlijst vindt u vragen zoals
+Deze vragenlijst gaat over hoe u bent. Bijvoorbeeld:
 
 <div class=center-text>
 
@@ -60,27 +57,27 @@ Deze vragenlijst gaat over u. In de vragenlijst vindt u vragen zoals
 
 <p>
 
-<hr>
+kies ja!  als dat zo is<br>
+kies ja als het eerder wel dan niet zo is<br>
+kies ? als het neutraal is of als u het niet weet<br>
+kies nee als het eerder niet dan wel zo is<br>
+kies nee! als het niet zo is
 
-U kunt per vraag &eacute;&eacute;n antwoord selecteren door op het
-bijbehorende knopje te klikken. <p>
+<p>
 
-Door op een ander knopje te klikken kunt u een gemaakte keuze herzien.<p>
+Na beantwoording van een vraag gaat u automatisch naar de volgende vraag
+en via een knop <em>terug</em> naar de vorige.<br>
+U kunt uw antwoorden nog veranderen voor u de vragenlijst verstuurt. 
+<p>
 
-Totdat alle vragen zijn beantwoord (het zijn er 42) kunt u eerder gemaakte
-keuzes herzien door op de knop <input type="submit" value="terug"> te
-klikken. <p>
+Dit onderdeel van de lijst bevat 42 zulke vragen. Als u in een rustig tempo
+werkt, kost het een minuut of tien.
 
-Zodra u een vraag heeft beantwoord verschijnt de volgende vraag zodra u op de
-knop <input type="submit" value="verder"> klikt.
-
-<hr>
+<p>
 
 <form name="form" action="/bin/form" 
       onsubmit="return validate()" method='post'>
-
-De vragenlijst begint nadat u op deze knop heeft geklikt:
-<input type="submit" value="start">
+<input type="submit" value="Start de vragenlijst">
 
 
 

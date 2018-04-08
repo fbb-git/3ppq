@@ -8,11 +8,11 @@ void Client::quest()
 
     g_log << "Client::quest: " << action << ", nr = " << nr << endl;
 
-    if (action == "terug")
-    {
-        g_log << "resetting " << (nr - 1) << " to " << (nr - 2) << endl;
-        nr -= 2;
-    }
+//    if (action == "terug")
+//    {
+//        g_log << "resetting " << (nr - 1) << " to " << (nr - 2) << endl;
+//        nr -= 2;
+//    }
     
     if (nr < -1 or nr >= d_nQuestions)               // illegal number
     {
@@ -42,17 +42,10 @@ void Client::quest()
             Tools::passParam("nr", to_string(nr)),
         };
 
-    endLines.push_back(
-        nr != 0 ?
+    if (nr != 0)
+        endLines.push_back(
 R"(
     <input value="terug" name="action" type="submit">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input value="verder" name="action" type="submit"
-            onclick="val = 1 ">
-)" :
-R"(
-    <input value="verder" name="action" type="submit"
-            onclick="val = 1">
 )"
         );
     

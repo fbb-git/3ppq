@@ -24,10 +24,10 @@ void DataIdx::extend()
 
     updateHeader(out);
 
-    in.close();                                         // close before 
-    out.close();                                        // renaming
+    in.close();                                 // close before 
+    out.close();                                // renaming
 
-    rename(wip.c_str(), d_idxPath.c_str());             // new idx file ready
+    Tools::rename(wip, d_idxPath);              // new idx file ready
 }
 
 

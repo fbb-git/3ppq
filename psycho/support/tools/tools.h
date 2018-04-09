@@ -54,13 +54,23 @@ class Tools
         static bool copy(std::ostream &out, std::istream &in, 
                                             Uint32 begin, Uint32 end);
 
+                    // read members return number of `Type' elements read.
         template <typename Type>                       // 1.f
-        static bool read(std::istream &in, Uint32 offset,
+        static size_t read(std::istream &in, Uint32 offset,
                          Type *dest, size_t size = sizeof(Type));
 
         template <typename Type>                       // 2.f
-        static bool read(std::istream &in, 
+        static size_t read(std::istream &in, 
                          Type *dest, size_t size = sizeof(Type));
+
+        template <typename Type>                       // 1.f
+        static size_t readN(std::istream &in, Uint32 offset,
+                         Type *dest, size_t nToRead = 1);
+
+        template <typename Type>                       // 2.f
+        static size_t readN(std::istream &in, 
+                         Type *dest, size_t nToRead = 1);
+
 
         template<typename Type>                        // 1.f
         static bool write(std::ostream &out, Uint32 offset, 
@@ -72,6 +82,15 @@ class Tools
 
                                                         // 3.f
         static bool write(std::ostream &out, std::string const &str);
+
+        template<typename Type>                        // 1.f
+        static bool writeN(std::ostream &out, Uint32 offset, 
+                        Type const *src, size_t nToWrite = 1);
+
+        template<typename Type>                        // 2.f
+        static bool writeN(std::ostream &out, 
+                        Type const *src, size_t nToWrite = 1);
+
                           
         static Uint32 tellg(std::istream &stream);  
 
@@ -82,6 +101,8 @@ class Tools
         static uint64_t size(std::ostream &stream);     // 2.f
         static uint64_t size(std::fstream &stream);     // 3.f
 
+        static void rename(std::string const &oldName, 
+                           std::string const &newName);
     private:
         static std::string key();
 };
@@ -93,9 +114,15 @@ class Tools
 #include "read1.f"
 #include "read2.f"
 
+#include "readn1.f"
+#include "readn2.f"
+
 #include "write1.f"
 #include "write2.f"
 #include "write3.f"
+
+#include "writen1.f"
+#include "writen2.f"
 
 #include "tellg.f"
 

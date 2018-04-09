@@ -15,7 +15,13 @@ class Options
         std::string html() const;
         std::string mail() const;
         std::string questions() const;
+        std::string nrs() const;
 };
+
+inline std::string Options::nrs() const
+{
+    return d_base + "nrs.bin";
+}
 
 inline std::string Options::questions() const
 {

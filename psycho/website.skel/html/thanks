@@ -1,0 +1,22 @@
+    <script src="/js/preamble.js"></script>
+    <script src="/js/quest.js"></script>
+</head>
+
+<body> 
+<header class="title">                                                      
+    3PPQ 
+</header>                                                                   
+
+<h1>3PPQ - Vragenlijst</h1>
+
+
+Dit was de laatste vraag. Als u wilt kunt u nog antwoorden wijzigen. 
+
+Door op ‘verstuur’ te klikken worden uw antwoorden definitief gemaakt en kunt
+u deze niet meer veranderen.
+
+<form name="form" action="/bin/form" 
+      onsubmit="return validate()" method='post'>
+
+<input value="terug" name="action" type="submit"><br>
+<input value="verstuur" name="action" type="submit"><br>

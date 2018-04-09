@@ -1,0 +1,15 @@
+#include "uniquenr.h"
+//#include <iostream>
+//#define CERR std::cerr << __FILE__": "
+
+#include <algorithm>
+#include <fstream>
+
+#include <bobcat/exception>
+
+#include "../options/options.h"
+#include "../lockguard/lockguard.h"
+#include "../tools/tools.h"
+
+using namespace std;
+using namespace FBB;

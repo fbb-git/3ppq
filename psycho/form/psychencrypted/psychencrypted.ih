@@ -1,0 +1,12 @@
+#include "psychencrypted.h"
+//#include <iostream>
+//#define CERR std::cerr << __FILE__": "
+
+#include <bobcat/log>
+
+#include "../../support/tools/tools.h"
+
+extern FBB::Log g_log;
+
+using namespace std;
+using namespace FBB;

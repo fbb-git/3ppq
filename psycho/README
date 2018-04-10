@@ -58,6 +58,11 @@ start, psych and client are pseudo states: reached by loading the /index.html,
 all Psych states also define type=psych
 all Client states also define type=client
 
+By passing a variable as hidden value the receiving html page receives it. It may be retrieved using
+document.getElementsByName("nip")[0].value;
+
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------
                             Psych-fun or                                                        
 state       invars          wwww/ file          html-file       js              out-vars        next state      description
@@ -74,7 +79,9 @@ verify      nip,pwd         verify()            unknownpsych    unknownpsych    
                                                 pwdfailure      -               -               psych           user tries again
                                                                                                 start           user cancels
                                                 verify          -               ack,nip,pwd     verifyAck       user's ack nr is verified
-                                                actions         -               -               start (wip)     TODO
+                                                actions         -               nip             actions
+
+actions     nip             client()            client                       
                                                                                                 
 noPwd                       noPwd()             nopwd           -               -               start           continuation option
                                                                                                 psych           same

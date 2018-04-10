@@ -54,7 +54,11 @@ void Psych::verify()
         return;
     }
 
-    Display{ g_options.html() + "actions" };
+    Display{
+            {
+                Tools::passParam(d_cgi, "nip"),
+            },
+            g_options.html() + "actions" };
 }
 
 

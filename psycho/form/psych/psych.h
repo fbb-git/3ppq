@@ -62,6 +62,7 @@ class Psych
         void noPwd();
 
         void verifyAck();
+        void client();
 
         uint16_t identNr() const;
         std::string nipKey() const; // get key from cgi.param1("nip")

@@ -56,10 +56,10 @@ try cd ${website}
 
 try touch log
 
-try chgrp -fR www-data .        # website is of group www-data
+chgrp -fR www-data . > /dev/null 2>&1
 
 try chmod o-rwx .               # no access except for www-data and
-# user
+                                # user
 
 try chmod -fR g+w log           # www-data may write log
 

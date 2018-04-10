@@ -1,13 +1,19 @@
+    <script src="/js/preamble.js"></script>
+    <script src="/js/actions.js"></script>
 </head>
 
 <body> 
 <header class="title">                                                      
     3PPQ 
 </header>                                                                   
+<form>
+
 <nav class="top-menu-markup">                                               
     <ul class="spread">                                                     
         <li class="li-linewise">
-            <a href="/wip.html" title="Activiteiten m.b.t. clienten"> 
+            <a href="" title="Activiteiten m.b.t. clienten" 
+                onclick="return validate(1)"
+            > 
                 Cli&euml;nt 
             </a>
         </li>
@@ -37,8 +43,6 @@ De in de menubalk vermelde opties zijn nog niet operationeel.<p>
 Plaats de muis boven een optie voor een korte beschrijving van hun functie.
 
 <hr>
-
-<form>
 
 Druk op deze knop om terug te keren naar de 3PPQ <em>home-page</em>: 
         <input value="Homepage" type="submit"

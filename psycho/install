@@ -7,6 +7,7 @@ Run this script as the destination user from the location where this script
 is located. 
 The destination user should be a member of the group www-data.
 The target directory may be specified as a relative or absolute path.
+
 "
     exit 1
 fi
@@ -16,6 +17,17 @@ website=$1
 if [ $website == "website.skel" ] ; then
     echo "website.skel is reserved. Use another name"
     exit 1
+fi
+
+if [ ! -e website.skel/bin/form ] ; then
+    cd support
+    icmbuild || exit 1
+
+    cd ../form
+    icmbuild || exit 1
+
+    icmbuild install program ../website.skel/bin/form
+    cd ..
 fi
 
 website=`realpath ${website}`
@@ -30,14 +42,6 @@ fi
 cd website.skel
 tar cf - --exclude .filler --exclude '*/ORG' --exclude README . | 
                                             (cd ${website}; tar xf -)
-
-cd support
-icmbuild
-
-cd ../form
-icmbuild
-
-cp tmp/bin/binary ${website}/bin/form
 
 cd ${website}
 

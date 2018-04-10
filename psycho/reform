@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd support
+icmbuild
+cd ../form
+icmbuild
+cp tmp/bin/binary ../website/bin/form
+

@@ -20,7 +20,7 @@ class Options
 
 inline std::string Options::nrs() const
 {
-    return d_base + "nrs.bin";
+    return d_base + "data/nrs.bin";
 }
 
 inline std::string Options::questions() const

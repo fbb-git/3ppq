@@ -4,6 +4,7 @@
 #include <iosfwd>
 #include <unordered_map>
 
+#include "../psychencrypted/psychencrypted.h"
 #include "../../support/datastore/datastore.h"
 
 namespace FBB
@@ -23,18 +24,6 @@ class Psych
     // when these records change after the system's been used then
     // a convertor is required, converting the old data structure to the new
     // then add the required new fields, and recompile
-    struct Private
-    {
-        uint64_t    nip;
-        bool        gender;         // 0: female, 1: male
-        std::string name;           // w/o \n: add #string fields to the
-                                    //         record's length
-        std::string lastName;
-        std::string email;
-
-        char const *genderText() const;
-    };
-
     struct Record
     {
         uint32_t    time;           // registration time 
@@ -59,7 +48,7 @@ class Psych
     FBB::CGI &d_cgi;
 
     Record d_record;
-    Private d_private;
+    PsychEncrypted d_private;
 
     public:
         Psych(FBB::CGI &cgi);
@@ -85,7 +74,7 @@ class Psych
         std::string encrypt(std::string const &iv) const;
 
         void getUnencrypted(std::string const &data);
-        void getPrivate(std::string const &data, size_t offset);
+//        void getPrivate(std::string const &data, size_t offset);
 
 
         bool pwdMatch() const;

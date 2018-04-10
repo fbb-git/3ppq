@@ -15,7 +15,8 @@ void Psych::noPwd()
     data.replace(8, d_record.size, d_record.toString());
     d_psychData.update(nipKey(), data);
 
-    getPrivate(data, 8 + d_record.size);
+    //getPrivate(data, 8 + d_record.size);
+    d_private.get(data.substr(0, 8), data.substr(8 + d_record.size));
 
     Mailer mailer;
     mailer.sendmail(
@@ -24,7 +25,7 @@ void Psych::noPwd()
                 DollarText{ g_options.mail() + "nopwd", 
                     {
                         d_private.genderText(),     // $0
-                        d_private.lastName,         // $1
+                        d_private.lastName(),       // $1
                         newPwd                      // $2
                     }
                 }.text() 

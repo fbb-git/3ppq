@@ -7,8 +7,8 @@ string Psych::privateData() const
     uint64_t value = stoull(d_cgi.param1("nip"));
     Tools::write(out, &value);
 
-    char var = d_cgi.param1("gender") == "M";
-    out.put(var);
+    int gender = d_cgi.param1("gender") == "M";
+    out.put(gender);
 
     out <<  d_cgi.param1("name")        << '\n' <<
             d_cgi.param1("lastName")    << '\n' <<

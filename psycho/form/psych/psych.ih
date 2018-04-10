@@ -18,13 +18,10 @@
 #include "../../support/lockguard/lockguard.h"
 #include "../../support/tools/tools.h"
 #include "../../support/mailer/mailer.h"
+#include "../../support/uniquenr/uniquenr.h"
 
 extern FBB::Log g_log;
 
 using namespace std;
 using namespace FBB;
 
-inline char const *Psych::Private::genderText() const
-{
-    return gender ? "heer" : "mevrouw";
-}

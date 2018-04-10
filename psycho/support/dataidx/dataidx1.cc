@@ -6,7 +6,8 @@ DataIdx::DataIdx(string dataIdxPath)
 {
     if (Tools::exists(d_idxPath))
     {
-        ifstream in{ d_idxPath };
+        ifstream in;
+        Exception::open(in, d_idxPath);
         Tools::read(in, d_header, sizeof(d_header));
     }
     else

@@ -4,7 +4,8 @@ void DataIdx::initialize(std::string const &path)
 {
     d_header[SIZE] = BigInt::prime(d_header[N_BITS]).ulong();
 
-    ofstream out{ path };
+    ofstream out;
+    Exception::open(out, path);
 
     Tools::write(out, d_header, sizeof(d_header));    // write the header
 

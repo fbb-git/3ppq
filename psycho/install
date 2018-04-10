@@ -19,16 +19,13 @@ if [ $website == "website.skel" ] ; then
     exit 1
 fi
 
-if [ ! -e website.skel/bin/form ] ; then
-    cd support
-    icmbuild || exit 1
+try()
+{
+    $* && return
 
-    cd ../form
-    icmbuild || exit 1
-
-    icmbuild install program ../website.skel/bin/form
-    cd ..
-fi
+    echo "Error: failed to $*"
+    exit 1
+}
 
 website=`realpath ${website}`
 
@@ -39,19 +36,35 @@ if [ ! -d ${website} ] ; then
     exit 1
 fi
 
+if [ ! -e ${website}/bin/form ] ; then
+    cd support
+    icmbuild || exit 1
+
+    cd ../form
+    icmbuild || exit 1
+
+    icmbuild install program ${website}/bin/form
+    cd ..
+fi
+
+
 cd website.skel
 tar cf - --exclude .filler --exclude '*/ORG' --exclude README . | 
                                             (cd ${website}; tar xf -)
 
-cd ${website}
+try cd ${website}
 
-touch log
+try touch log
 
-chmod o-rwx .                       # no access except for www-data and user
+try chgrp -fR www-data .        # website is of group www-data
 
-chgrp -fR www-data .
-chmod -fR g+r .
+try chmod o-rwx .               # no access except for www-data and
+# user
 
-chmod -fR g+w data log
-chmod -f g+s data
+try chmod -fR g+w log           # www-data may write log
+
+try chmod g+sw data             # www-data may write data/   
+
+echo ready.
+
 

@@ -20,9 +20,11 @@ class Tools
     public:
         enum 
         {
+            N_OTHER = 3,            // assuming 1 x self, 1 x meta rating
             IV_SIZE = 8,
             KEY_SIZE = 16,
-            HASH_SIZE = 16
+            HASH_SIZE = 16,
+            N_QUESTIONS = 42,
         };
     
         template <typename Type>

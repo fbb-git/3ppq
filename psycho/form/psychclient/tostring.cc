@@ -16,7 +16,6 @@ string PsychClient::toString() const
 
     Tools::write(out, iv);
     Tools::writeN(out, &d_nr);
-    Tools::writeN(out, &d_nCompleted);
 
     return out.str() + enc;
 }

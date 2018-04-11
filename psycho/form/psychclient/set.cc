@@ -1,6 +1,6 @@
 #include "psychclient.ih"
 
-bool PsychClient::set(CGI &cgi)
+bool PsychClient::set(uint16_t psychID, uint8_t login0, CGI &cgi)
 {
     string gender = cgi.param1("gender");
     
@@ -14,6 +14,7 @@ bool PsychClient::set(CGI &cgi)
         return false;
 
     d_nr = ++s_nr;    
+    g_wip.add(psychID, d_nr, d_login0);     // add a new WIP record.
 
     d_name = cgi.param1("name");
     d_lastName = cgi.param1("lastName");

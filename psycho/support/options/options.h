@@ -17,6 +17,7 @@ class Options
         std::string questions() const;
         std::string nrs() const;
         std::string config() const;
+        std::string wip() const;
 };
 
 inline std::string Options::config() const
@@ -27,6 +28,11 @@ inline std::string Options::config() const
 inline std::string Options::nrs() const
 {
     return d_base + "data/nrs.bin";
+}
+
+inline std::string Options::wip() const
+{
+    return d_base + "data/wip";
 }
 
 inline std::string Options::questions() const

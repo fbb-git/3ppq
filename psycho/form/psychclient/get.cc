@@ -5,10 +5,9 @@ void PsychClient::get(string const &data)
     istringstream in(data);
 
     string iv(8, 0);
-
     Tools::readN(in, &iv.front(), 8);
+
     Tools::readN(in, &d_nr);
-    Tools::readN(in, &d_nCompleted);
 
     ostringstream out;
     out << in.rdbuf();

@@ -1,1 +1,7 @@
-../../datastore/driver/rerun
+#!/bin/bash
+
+rm -rf data
+mkdir -p data/data
+
+icmbuild
+tmp/bin/binary

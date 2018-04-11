@@ -4,13 +4,13 @@ void Psych::noPwd()
 {
     string newPwd = newPassword();
 
-    LockGuard lg{ d_lockPath, d_lockFd };
+    LockGuard lg{ d_data.lg() };
 
     if (not get())
         return;
 
     d_pwdHash = Tools::md5hash(newPwd);
-    d_psychData.update(nipKey(), toString());
+    d_data.update(nipKey(), toString());
 
     g_mailer.sendmail(
                 d_email, 

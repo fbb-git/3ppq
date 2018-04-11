@@ -2,7 +2,10 @@
 //#include <iostream>
 //#define CERR std::cerr << __FILE__": "
 
+#include <bobcat/cgi>
+
 #include "../../support/tools/tools.h"
 
 using namespace std;
+using namespace FBB;
 

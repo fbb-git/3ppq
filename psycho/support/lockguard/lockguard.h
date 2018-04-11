@@ -8,7 +8,7 @@ class LockGuard
     int d_fd;
 
     public:
-        LockGuard(std::string const &name, int fd);
+        LockGuard(std::string const &path, int fd);
         ~LockGuard();
 };
         

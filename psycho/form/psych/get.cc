@@ -4,7 +4,7 @@ bool Psych::get()
 {
     string data;
 
-    d_psychData.get(&data, nipKey());
+    d_data.get(&data, nipKey());
 
     if (data.empty())
     {

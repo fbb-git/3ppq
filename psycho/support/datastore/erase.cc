@@ -7,10 +7,10 @@ bool DataStore::erase(string const &key)
     if (offset == -1)
         return false;
 
-    fstream in{ open() };               // cpt the size of the record to erase
+    d_stream.open();                     // cpt the size of the record to erase
     
-    in.seekg(offset);
-    Preamble preamble = getPreamble(in, offset);
+    d_stream.seekg(offset);
+    Preamble preamble = getPreamble(offset);
 
                                         // then determine the next offset
     int64_t nextOffset = offset + sizeof(Preamble) + preamble.available;

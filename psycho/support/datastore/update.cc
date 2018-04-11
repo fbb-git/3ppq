@@ -6,16 +6,16 @@ bool DataStore::update(string const &key, string const &data)
     if (offset == -1)
         return false;                   // no such key
 
-    fstream io{ open() };
+    d_stream.open();
 
-    Preamble preamble{ getPreamble(io, offset) };
+    Preamble preamble{ getPreamble(offset) };
 
     if (data.size() <= preamble.used)       // new does not exceed current
     {
         preamble.used = data.size();        // update preamble and overwrite 
-        putPreamble(io, offset, preamble);  
+        putPreamble(offset, preamble);  
                                             // write the data
-        Tools::write(io, &data.front(), preamble.used);
+        Tools::write(d_stream, &data.front(), preamble.used);
         return true;
     }
 

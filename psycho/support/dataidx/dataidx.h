@@ -19,7 +19,7 @@ class DataIdx
 
     struct Entry
     {
-        std::string key;        // KEY_SIZE bytes
+        std::string key;        // Tools::KEY_SIZE bytes
         uint64_t offset;
     };
 
@@ -28,11 +28,6 @@ class DataIdx
     uint16_t d_header[sizeHeader];
 
     public:
-        enum 
-        {
-            KEY_SIZE = 16               // size of MD5 hash
-        };
-
         DataIdx(std::string dataIdxPath);
 
         int64_t dataOffset(std::string const &key); // -1 if not found

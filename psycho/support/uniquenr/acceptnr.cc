@@ -11,7 +11,7 @@ bool UniqueNr::acceptNr(istream &nrs, uint16_t idNr)
     while (true)
     {
                                                 // read 'nRead' numbers
-        size_t nRead = Tools::read(nrs, buffer, 100 * sizeof(uint16_t));
+        size_t nRead = Tools::readN(nrs, buffer, 100);
 
         if (nRead == 0)                         // all numbers inspected
         {
@@ -20,6 +20,7 @@ bool UniqueNr::acceptNr(istream &nrs, uint16_t idNr)
         }
 
         uint16_t *ptr;
+
                                                 // number already used ?
         if ((ptr = find(buffer, buffer + nRead, idNr)) != buffer + nRead)
         {

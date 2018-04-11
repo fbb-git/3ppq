@@ -7,6 +7,8 @@
 
 #include <string>
 
+#include <bobcat/exception>
+
 #include "../global/global.h"
 
 using namespace std;

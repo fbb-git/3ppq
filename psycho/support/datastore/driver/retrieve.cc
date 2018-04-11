@@ -14,7 +14,7 @@ void retrieve()
             throw 0;
 
         string key = line.substr(0, line.find_first_of(' '));
-        key.resize(DataIdx::KEY_SIZE);
+        key.resize(Tools::KEY_SIZE);
 
         if (not dataStore.get(&line, key))           // just provide the key
             cout << "key " << key << " not available\n";

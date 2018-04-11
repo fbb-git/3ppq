@@ -1,12 +1,17 @@
-#include "uniquenr.h"
+#include "lockstream.h"
+
 //#include <iostream>
 //#define CERR std::cerr << __FILE__": "
 
-#include <algorithm>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 
-#include "../options/options.h"
+#include <bobcat/exception>
+
 #include "../lockguard/lockguard.h"
 #include "../tools/tools.h"
-#include "../lockstream/lockstream.h"
 
 using namespace std;
+using namespace FBB;
+

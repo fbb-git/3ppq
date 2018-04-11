@@ -4,9 +4,10 @@
 #include <string>
 #include <fstream>
 
+#include "../lockstream/lockstream.h"
 #include "../dataidx/dataidx.h"
 
-// keys must be DataIdx::KEY_SIZE bytes. NOT checked!
+// keys must be Tools::KEY_SIZE bytes. NOT checked!
 
 class DataStore
 {
@@ -17,13 +18,15 @@ class DataStore
         size_t      available;      // size of the available data space
     };
 
+    LockStream d_stream;
     std::string d_path;
+
     DataIdx d_dataIdx;
     
     public:
         DataStore(std::string const &path);     // full path to the data file
 
-        bool find(std::string const &key);
+        bool find(std::string const &key);      // inline
 
                                         // add to the end of d_data (true: OK)
         bool add(std::string const &key, std::string const &data);
@@ -31,20 +34,19 @@ class DataStore
         bool erase(std::string const &key);     // erase data and key
         bool update(std::string const &key, std::string const &data);
 
+        LockGuard lg() const;
+
     private:
         void reduce(int64_t from, int64_t to);
-        std::fstream open();
 
-        static Preamble getPreamble(std::istream &in, uint64_t offset);
-        static void putPreamble(std::ostream &out, uint64_t offset, 
-                                Preamble const &preamble);
+        Preamble getPreamble(uint64_t offset);
+        void putPreamble(uint64_t offset, Preamble const &preamble);
 };
 
 inline bool DataStore::find(std::string const &key)
 {
     return d_dataIdx.dataOffset(key) != -1;     // -1: not found
 }
-
 
 
 // A common setup of data storage/updates and retrieval works like this:

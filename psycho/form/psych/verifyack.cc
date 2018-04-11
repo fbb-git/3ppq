@@ -2,7 +2,7 @@
 
 void Psych::verifyAck()
 {
-    LockGuard lg{ d_lockPath, d_lockFd };
+    LockGuard lg{ d_data.lg() };
 
     if (not get())
         return;
@@ -21,7 +21,7 @@ void Psych::verifyAck()
     }
 
     d_ack = 0;
-    d_psychData.update(nipKey(), toString());
+    d_data.update(nipKey(), toString());
 
     Display{ g_options.html() + "actions" };
 }

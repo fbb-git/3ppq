@@ -1,7 +1,6 @@
 #include "datastore.h"
 
-#include <unistd.h>
-#include <sys/types.h>
+//#include <unistd.h>
 
 #include <iostream>
 #define CERR std::cerr << __FILE__": "
@@ -9,6 +8,7 @@
 #include <bobcat/exception>
 
 #include "../tools/tools.h"
+#include "../lockguard/lockguard.h"
 
 using namespace std;
 using namespace FBB;

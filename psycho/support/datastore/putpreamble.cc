@@ -1,12 +1,11 @@
 #include "datastore.ih"
 
-// static
-void DataStore::putPreamble(ostream &out, uint64_t offset, 
-                            Preamble const &preamble)
+void DataStore::putPreamble(uint64_t offset, 
+                                Preamble const &preamble)
 {
-    out.seekp(offset);
+    d_stream.seekp(offset);
 
-    Tools::write(out, &preamble.key.front(), DataIdx::KEY_SIZE);
-    Tools::write(out, &preamble.used);
-    Tools::write(out, &preamble.available);
+    Tools::write(d_stream, &preamble.key.front(), Tools::KEY_SIZE);
+    Tools::write(d_stream, &preamble.used);
+    Tools::write(d_stream, &preamble.available);
 }

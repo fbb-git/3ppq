@@ -18,7 +18,7 @@ try
     for (size_t idx = 0; idx != 10; ++idx)
         cout << UniqueNr::get(1, 20) << ' ';
 
-    cout << "\nEnter a number to find or ^D:\n";
+    cout << "\nEnter a number to remove or ^D:\n";
     while (true)
     {
         cout << "? ";
@@ -30,6 +30,11 @@ try
         UniqueNr::rm(nr);
     }
 
+}
+catch (exception const &exc)
+{
+    cout << exc.what() << '\n';
+    return 1;
 }
 catch (...)
 {

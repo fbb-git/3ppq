@@ -18,12 +18,7 @@ class Psych
 {
     typedef std::unordered_map<std::string, void (Psych::*)()> Map;
 
-    std::string d_path;
-    std::string d_lockPath;
-    int d_lockFd;
-
-    DataStore d_psychData;          // psychologists' data
-
+    DataStore d_data;          // psychologists' data
     FBB::CGI &d_cgi;
 
     static Map      s_state;        // maps state names to handling functions

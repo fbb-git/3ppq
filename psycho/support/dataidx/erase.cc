@@ -10,7 +10,7 @@ int64_t DataIdx::erase(string const &key)
 
     fstream out{ d_idxPath, ios::in | ios::out };
 
-    putEntry(out, idx, { string(KEY_SIZE, 0), 0 });
+    putEntry(out, idx, { string(Tools::KEY_SIZE, 0), 0 });
 
     --d_header[N_KEYS];                 // entry removed
     updateHeader(out);

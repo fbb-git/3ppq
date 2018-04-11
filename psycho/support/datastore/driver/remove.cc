@@ -14,7 +14,7 @@ void remove()
             throw 0;
 
         string key = line;
-        key.resize(DataIdx::KEY_SIZE);
+        key.resize(Tools::KEY_SIZE);
 
         if (not dataStore.erase(key))            // just provide the key
             cout << "key " << line << " not available\n";

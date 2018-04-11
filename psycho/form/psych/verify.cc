@@ -4,7 +4,7 @@
 void Psych::verify()
 {
     {
-        LockGuard lg{ d_lockPath, d_lockFd };
+        LockGuard lg{ d_data.lg() };
         if (not get())
             return;
     }

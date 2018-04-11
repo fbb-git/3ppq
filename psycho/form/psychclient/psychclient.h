@@ -4,10 +4,15 @@
 #include <cstdint>
 #include <string>
 
+namespace FBB
+{
+    class CGI;
+};
+
 class PsychClient
 {
     uint16_t d_nr = 0;
-    uint16_t d_nCompleted = 0;  // #completed data sets for this client
+    uint16_t d_nCompleted;
 
     bool        d_gender = 0;   // 0: female, 1: male
     std::string d_name;
@@ -17,7 +22,7 @@ class PsychClient
     static uint16_t s_nr;
 
     public:
-        PsychClient();
+        bool set(FBB::CGI &cgi);
 
         std::string toString() const;  // includes encrypted person-data
         void get(std::string const &data);

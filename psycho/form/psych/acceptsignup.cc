@@ -27,7 +27,7 @@ bool Psych::acceptSignup()
     d_lastName = d_cgi.param1("lastName");
     d_email = d_cgi.param1("email");
 
-    if (not d_psychData.add(nipKey(), toString()))
+    if (not d_data.add(nipKey(), toString()))
         return false;
 
     Display{ g_options.html() + "acceptsignup" };

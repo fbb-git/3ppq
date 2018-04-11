@@ -2,7 +2,7 @@
 
 void Psych::tryAdd()
 {
-    LockGuard lg{ d_lockPath, d_lockFd };
+    LockGuard lg{ d_data.lg() };
 
 //    g_log << "tryAdd" << endl;
 

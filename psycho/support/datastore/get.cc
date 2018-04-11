@@ -6,12 +6,11 @@ bool DataStore::get(string *data, string const &key)
     if (offset == -1)
         return false;                   // no such key
 
-    fstream in{ open() };
+    d_stream.open();
 
-    Preamble preamble = getPreamble(in, offset);
-
+    Preamble preamble = getPreamble(offset);
     data->resize(preamble.used);
-    Tools::read(in, &data->front(), preamble.used);
+    Tools::read(d_stream, &data->front(), preamble.used);
 
     return true;
 }

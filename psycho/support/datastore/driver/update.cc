@@ -14,7 +14,7 @@ void update()
             throw 0;
 
         string key = line.substr(0, line.find_first_of(' '));
-        key.resize(DataIdx::KEY_SIZE);
+        key.resize(Tools::KEY_SIZE);
 
         string store = prepare(line);
 

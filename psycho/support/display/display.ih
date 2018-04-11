@@ -3,11 +3,8 @@
 #include <fstream>
 #include <bobcat/exception>
 
-#include <bobcat/log>
-
+#include "../global/global.h"
 #include "../dollartext/dollartext.h"
-
-extern FBB::Log g_log;
 
 using namespace std;
 using namespace FBB;

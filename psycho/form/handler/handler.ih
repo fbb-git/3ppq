@@ -1,16 +1,9 @@
 #include "handler.h"
 
-//#include <sstream>
-
-#include <bobcat/log>
-
-//#include "../../support/types/types.h"
-//#include "../../support/tools/tools.h"
-
+#include "../../support/global/global.h"
 #include "../../support/display/display.h"
 
 using namespace std;
 using namespace FBB;
 
-extern Log g_log;
 

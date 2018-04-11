@@ -1,13 +1,12 @@
 #include <exception>
 
-#include <bobcat/log>
+#include "../support/global/global.h"
+#include "../support/options/options.h"
+#include "../support/mailer/mailer.h"
 
-#include "handler/handler.h"
 #include "../support/display/display.h"
 
-using namespace FBB;
-
-extern Options g_options;
-extern Log g_log;
+#include "handler/handler.h"
 
 using namespace std;
+using namespace FBB;

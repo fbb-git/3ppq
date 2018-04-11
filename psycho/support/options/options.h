@@ -16,7 +16,13 @@ class Options
         std::string mail() const;
         std::string questions() const;
         std::string nrs() const;
+        std::string config() const;
 };
+
+inline std::string Options::config() const
+{
+    return d_base + "etc/3ppq_config";
+}
 
 inline std::string Options::nrs() const
 {

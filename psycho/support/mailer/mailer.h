@@ -7,7 +7,7 @@
 class Mailer
 {
     public:
-        void sendmail(std::string const &to, 
+        void sendmail(std::string to, 
                       std::string const &subject, std::string const &txt);
 };
 

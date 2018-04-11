@@ -12,8 +12,7 @@ void Psych::noPwd()
     d_pwdHash = Tools::md5hash(newPwd);
     d_psychData.update(nipKey(), toString());
 
-    Mailer mailer;
-    mailer.sendmail(
+    g_mailer.sendmail(
                 d_email, 
                 "3ppq.nl wijziging",
                 DollarText{ g_options.mail() + "nopwd", 

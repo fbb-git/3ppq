@@ -28,6 +28,8 @@ class Tools
         template <typename Type>
         static Type *as(size_t *skip, std::string const &str);
 
+        static void delay();
+
         static bool checkParam(FBB::CGI &cgi, char const *param);
 
         static long long valueOr(std::string const &value, int fallback);

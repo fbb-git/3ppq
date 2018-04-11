@@ -11,9 +11,7 @@ void Psych::verify()
 
     if (not pwdMatch())
     {
-//        this_thread::sleep_for(chrono::seconds(5));
-        g_log << "verify: incorrect passwd" << endl;
-
+        Tools::delay();
         Display{ g_options.html() + "pwdfailure" };
         return;
     }
@@ -31,12 +29,11 @@ void Psych::verify()
                         to_string(d_ack)    // $2
                     };
 
-//        Mailer mailer;
-//        mailer.sendmail(
-//                    d_email, 
-//                    "3ppq.nl verification",
-//                    DollarText{ g_options.mail() + "verify", sv }.text() 
-//                );
+        g_mailer.sendmail(
+                    d_email, 
+                    "3ppq.nl verification",
+                    DollarText{ g_options.mail() + "verify", sv }.text() 
+                );
 
         Display{
             {

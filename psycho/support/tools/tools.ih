@@ -9,12 +9,15 @@
 #include <numeric>
 #include <random>
 #include <sstream>
+#include <chrono>
 
 #include <bobcat/exception>
 #include <bobcat/stat>
 #include <bobcat/digestbuf>
 #include <bobcat/isymcryptstream>
 #include <bobcat/cgi>
+
+#include "../global/global.h"
 
 using namespace std;
 using namespace FBB;

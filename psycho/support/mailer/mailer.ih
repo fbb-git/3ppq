@@ -2,10 +2,9 @@
 
 #include <sstream>
 
-#include <bobcat/log>
 #include <bobcat/cininserter>
 
-extern FBB::Log g_log;
+#include "../global/global.h"
 
 using namespace std;
 using namespace FBB;

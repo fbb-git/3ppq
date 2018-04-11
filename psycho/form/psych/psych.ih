@@ -7,11 +7,10 @@
 
 #include <algorithm>
 #include <sstream>
-#include <chrono>
 
 #include <bobcat/cgi>
-#include <bobcat/log>
 
+#include "../../support/global/global.h"
 #include "../../support/dollartext/dollartext.h"
 #include "../../support/display/display.h"
 #include "../../support/options/options.h"
@@ -19,8 +18,6 @@
 #include "../../support/tools/tools.h"
 #include "../../support/mailer/mailer.h"
 #include "../../support/uniquenr/uniquenr.h"
-
-extern FBB::Log g_log;
 
 using namespace std;
 using namespace FBB;

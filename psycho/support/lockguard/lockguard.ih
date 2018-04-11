@@ -3,18 +3,11 @@
 //#include <iostream>
 //#define CERR std::cerr << __FILE__": "
 
-//#include <sys/types.h>
-//#include <sys/stat.h>
-//
-//#include <fcntl.h>
-
 #include <sys/file.h>
 
 #include <string>
 
-#include <bobcat/log>
-
-extern FBB::Log g_log;
+#include "../global/global.h"
 
 using namespace std;
 using namespace FBB;

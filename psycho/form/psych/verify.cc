@@ -1,14 +1,13 @@
-
 #include "psych.ih"
 
     // page opened when the psychologist 
 void Psych::verify()
 {
-    LockGuard lg{ d_lockPath, d_lockFd };
-
-    string data;
-    if (data = getData(); data.empty())     // getData calls Display on error
-        return;
+    {
+        LockGuard lg{ d_lockPath, d_lockFd };
+        if (not get())
+            return;
+    }
 
     if (not pwdMatch())
     {
@@ -19,27 +18,22 @@ void Psych::verify()
         return;
     }
 
-//FBB: TMP
-//d_private.get(data.substr(0, 8), data.substr(8 + d_record.size));
 
-    if (d_record.ack != 0)
+    if (d_ack != 0)
     {
-        // getPrivate(data, 8 + d_record.size);
-        d_private.get(data.substr(0, 8), data.substr(8 + d_record.size));
-
-        g_log << "verify: ack. " << d_record.ack << 
-                " to send to " << d_private.email() << 
+        g_log << "verify: ack. " << d_ack << 
+                " to send to " << d_email << 
                 " (temp. not sent)" << endl;
 
         StrVector sv{
-                        d_private.genderText(),     // $0
-                        d_private.lastName(),       // $1
-                        to_string(d_record.ack)     // $2
+                        genderText(),       // $0
+                        d_lastName,         // $1
+                        to_string(d_ack)    // $2
                     };
 
 //        Mailer mailer;
 //        mailer.sendmail(
-//                    d_private.email(), 
+//                    d_email, 
 //                    "3ppq.nl verification",
 //                    DollarText{ g_options.mail() + "verify", sv }.text() 
 //                );

@@ -2,12 +2,12 @@
 
 void Psych::client()
 {
-    // load client data
+    LockGuard lg{ d_lockPath, d_lockFd };
 
-    string data = getData();
+    if (not get())
+        return;
 
-    
-    
+   
     // show client data, modify / delete 
 
     // add client:

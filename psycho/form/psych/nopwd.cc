@@ -6,26 +6,20 @@ void Psych::noPwd()
 
     LockGuard lg{ d_lockPath, d_lockFd };
 
-    string data;
-    if (data = getData(); data.empty()) // getData calls Display on error
+    if (not get())
         return;
 
-    d_record.pwdHash = Tools::md5hash(newPwd);
-
-    data.replace(8, d_record.size, d_record.toString());
-    d_psychData.update(nipKey(), data);
-
-    //getPrivate(data, 8 + d_record.size);
-    d_private.get(data.substr(0, 8), data.substr(8 + d_record.size));
+    d_pwdHash = Tools::md5hash(newPwd);
+    d_psychData.update(nipKey(), toString());
 
     Mailer mailer;
     mailer.sendmail(
-                "frank@localhost", 
+                d_email, 
                 "3ppq.nl wijziging",
                 DollarText{ g_options.mail() + "nopwd", 
                     {
-                        d_private.genderText(),     // $0
-                        d_private.lastName(),       // $1
+                        genderText(),               // $0
+                        d_lastName,                 // $1
                         newPwd                      // $2
                     }
                 }.text() 

@@ -9,6 +9,7 @@ Psych::Map Psych::s_state =
     { "noPwd",        &Psych::noPwd  },     // lost password       
 };
 
+uint16_t Psych::s_nr = 0;
 
 
 

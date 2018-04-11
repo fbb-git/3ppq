@@ -7,12 +7,6 @@
 #include <string>
 #include <unordered_map>
 
-enum Gender
-{
-    FEMALE,
-    MALE
-};
-    
 typedef uint8_t     Uint8;
 typedef uint16_t    Uint16;
 typedef uint32_t    Uint32;

@@ -16,10 +16,19 @@ namespace FBB
 class Tools
 {
     enum { BUFSIZE = 5000 };
-    
+
     public:
+        enum 
+        {
+            IV_SIZE = 8,
+            KEY_SIZE = 16,
+            HASH_SIZE = 16
+        };
+    
         template <typename Type>
         static Type *as(size_t *skip, std::string const &str);
+
+        static bool checkParam(FBB::CGI &cgi, char const *param);
 
         static long long valueOr(std::string const &value, int fallback);
 
@@ -45,6 +54,10 @@ class Tools
 
         static size_t random(int max);  // next random nr from uniform 
                                         // int distribution [0 .. max)
+
+                                        // next random nr from uniform 
+                                        // int distribution [first .. last]
+        static size_t random(int first, int last);  
 
         static void lock(int fd, std::string const &path);
         static int unlock(int fd);      // returns -1

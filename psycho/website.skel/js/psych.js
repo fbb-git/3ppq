@@ -1,8 +1,19 @@
 var nr;
+var forced = 0;
+
+function inspect(key)
+{
+    if (key == 13)
+        forced = 1;
+}
+
 
 function validate() 
 {
     var nip = document.forms["form"]["nip"].value;
+
+    if (forced == 1)
+        nr = 2;
 
     switch (nr)
     {

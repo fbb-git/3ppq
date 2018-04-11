@@ -3,8 +3,10 @@
 
 #include <iosfwd>
 #include <unordered_map>
+#include <vector>
+#include <string>
 
-#include "../psychencrypted/psychencrypted.h"
+#include "../psychclient/psychclient.h"
 #include "../../support/datastore/datastore.h"
 
 namespace FBB
@@ -14,30 +16,7 @@ namespace FBB
 
 class Psych
 {
-    // data retrieved from d_psychData.get:
-    //  iv (8 bytes)
-    //  Record data (written by publicData): 2 uint16_t, 16 pytes pwd hash
-    //  encrypted data (written by privateData)
-
     typedef std::unordered_map<std::string, void (Psych::*)()> Map;
-
-    // when these records change after the system's been used then
-    // a convertor is required, converting the old data structure to the new
-    // then add the required new fields, and recompile
-    struct Record
-    {
-        uint32_t    time;           // registration time 
-        uint16_t    ack;            // if != 0 then e-mail acknowledge
-        uint16_t    flags;          // room for 16 bit-flags
-        uint16_t    nr;             // identification number
-        std::string pwdHash;        // MD5 hash of the password (16 bytes)
-        uint16_t    size;           // deduced: #bytes occupied by the 
-                                    //  unencrypted data
-
-        std::string toString() const;   // update when Record is modified
-    };
-        
-    static Map s_state;             // maps state names to handling functions
 
     std::string d_path;
     std::string d_lockPath;
@@ -47,8 +26,25 @@ class Psych
 
     FBB::CGI &d_cgi;
 
-    Record d_record;
-    PsychEncrypted d_private;
+    static Map      s_state;        // maps state names to handling functions
+    static uint16_t s_nr;
+
+    // data below are saved to file
+
+    uint32_t    d_time;             // registration time 
+    uint16_t    d_ack;              // if != 0 then e-mail acknowledge
+    uint16_t    d_flags;            // room for 16 bit-flags
+    uint16_t    d_nr;               // identification number
+    uint64_t    d_nip;
+    std::string d_pwdHash;          // MD5 hash of the password (16 bytes)
+        
+        // encrypted section:
+    bool        d_gender;           // 0: female, 1: male
+    std::string d_name; 
+    std::string d_lastName;
+    std::string d_email;
+
+    std::vector<PsychClient> d_client;  // client info
 
     public:
         Psych(FBB::CGI &cgi);
@@ -62,28 +58,36 @@ class Psych
         void noPwd();
 
         void verifyAck();
-        void client();
 
-        uint16_t identNr() const;
+        void client();                  // WIP
+
         std::string nipKey() const; // get key from cgi.param1("nip")
-
-        std::string getData();
-
-        std::string publicData() const;
-        std::string privateData() const;
-
-        std::string encrypt(std::string const &iv) const;
-
-        void getUnencrypted(std::string const &data);
-//        void getPrivate(std::string const &data, size_t offset);
-
 
         bool pwdMatch() const;
 
-        static bool acceptNr(std::istream &nrs, uint16_t idNr);
+        std::string toString() const;
+        bool get();
+
+        void unknown();
+        char const *genderText() const;
+
         static std::string newPassword();
 };
+
+inline char const *Psych::genderText() const
+{
+    return d_gender == 0 ? "mevrouw" : "heer";
+}
+
         
+//        std::string publicData() const;
+//        std::string privateData() const;
+//
+//        std::string encrypt(std::string const &iv) const;
+//
+//        void getUnencrypted(std::string const &data);
+//        void getPrivate(std::string const &data, size_t offset);
+//        uint16_t identNr() const;
 
 #endif
 

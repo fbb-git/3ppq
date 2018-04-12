@@ -28,7 +28,7 @@ class Psych
     uint32_t    d_time;             // registration time 
     uint16_t    d_ack;              // if != 0 then e-mail acknowledge
     uint16_t    d_flags;            // room for 16 bit-flags
-    uint16_t    d_nr;               // identification number
+    uint16_t    d_ID;               // identification number
     uint64_t    d_nip;
     std::string d_pwdHash;          // MD5 hash of the password (16 bytes)
         
@@ -72,16 +72,6 @@ inline char const *Psych::genderText() const
 {
     return d_gender == 0 ? "mevrouw" : "heer";
 }
-
-        
-//        std::string publicData() const;
-//        std::string privateData() const;
-//
-//        std::string encrypt(std::string const &iv) const;
-//
-//        void getUnencrypted(std::string const &data);
-//        void getPrivate(std::string const &data, size_t offset);
-//        uint16_t identNr() const;
 
 #endif
 

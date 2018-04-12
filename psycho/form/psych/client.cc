@@ -18,7 +18,7 @@ void Psych::client()
 
     uint8_t login0 = Tools::random(10, 99);
 
-    if (not client.set(d_nr, login0, d_cgi))
+    if (not client.set(d_ID, login0, d_cgi))
         return;
 
     // send instructions to the client, return the initial login code

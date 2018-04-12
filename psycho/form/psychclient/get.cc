@@ -7,7 +7,7 @@ void PsychClient::get(string const &data)
     string iv(8, 0);
     Tools::readN(in, &iv.front(), 8);
 
-    Tools::readN(in, &d_nr);
+    Tools::readN(in, &d_ID);
 
     ostringstream out;
     out << in.rdbuf();

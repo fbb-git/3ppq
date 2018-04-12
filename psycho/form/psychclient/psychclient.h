@@ -12,7 +12,7 @@ namespace FBB
 
 class PsychClient
 {
-    uint16_t d_nr = 0;      // client nr
+    uint16_t d_ID = 0;      // client nr
     bool     d_wip = false; // currently no WIP record
 
     bool        d_gender = 0;   // 0: female, 1: male
@@ -20,9 +20,7 @@ class PsychClient
     std::string d_lastName;
     std::string d_email;
 
-    char d_data[Tools::N_OTHER + 2][Tools::N_ITEMS];
-
-    static uint16_t s_nr;
+//    char d_data[Tools::N_OTHER + 2][Tools::N_ITEMS];
 
     public:
         bool set(FBB::CGI &cgi);

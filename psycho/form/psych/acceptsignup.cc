@@ -21,7 +21,7 @@ bool Psych::acceptSignup()
     d_time = time(0);                       // then the data
     d_ack = Tools::random(1000, 9999);
     d_flags = 0;
-    d_nr = ++s_nr;    
+    d_ID = d_data.nextNr();
     d_pwdHash = Tools::md5hash(d_cgi.param1("pwd"));
     d_name = d_cgi.param1("name");
     d_lastName = d_cgi.param1("lastName");

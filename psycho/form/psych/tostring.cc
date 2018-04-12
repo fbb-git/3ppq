@@ -34,7 +34,7 @@ g_log << "clientData" << endl;
     Tools::writeN(out, &d_time);
     Tools::writeN(out, &d_ack);
     Tools::writeN(out, &d_flags);
-    Tools::writeN(out, &d_nr);
+    Tools::writeN(out, &d_ID);
     Tools::writeN(out, &d_nip);
     Tools::write(out, d_pwdHash);
 

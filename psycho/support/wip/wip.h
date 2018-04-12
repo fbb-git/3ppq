@@ -17,8 +17,6 @@ class WIP
     uint8_t d_login[Tools::N_OTHER + 2];
     std::string d_email[Tools::N_OTHER];
 
-    char d_data[Tools::N_OTHER + 2][Tools::N_QUESTIONS];
-
     public:
         WIP();
         void add(uint16_t psychID, uint16_t clientID, uint8_t login0);

@@ -1,6 +1,7 @@
 #include "dollartext.ih"
 
-string const &DollarText::replaceDollars(string &line) const
+string const &DollarText::replaceLine(string &line,
+                                      StrVector const &elements)
 {
     line += '\n';           // terminate the line, but also make sure that
                             // $ is never the last character
@@ -21,8 +22,8 @@ string const &DollarText::replaceDollars(string &line) const
 
         size_t idx = stoul(line.substr(pos + 1));   // convert to index
 
-        if (idx < d_dollarText.size())               // valid index
-            line.replace(pos, 2, d_dollarText[idx]); // so replace
+        if (idx < elements.size())               // valid index
+            line.replace(pos, 2, elements[idx]); // so replace
 
         --pos;                                  // continue before
     }

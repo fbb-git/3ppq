@@ -1,6 +1,6 @@
 #include "psych.ih"
 
-    // page opened when the psychologist 
+
 void Psych::verify()
 {
     {
@@ -17,36 +17,29 @@ void Psych::verify()
     }
 
 
-    if (d_ack != 0)
+    if (d_ack == 0)
     {
-        g_log << "verify: ack. " << d_ack << 
-                " to send to " << d_email << 
-                " (temp. not sent)" << endl;
-
-        StrVector replacements;
-
-        d_dollarText += genderText();        // $0
-        d_dollarText += d_lastName;          // $1
-        d_dollarText += to_string(d_ack);   // $2
-
-        g_mailer.sendmail(
-                    d_email, 
-                    "3ppq.nl verification",
-                    d_dollarText.replace(replacements, 
-                                         g_options.mail() + "verify") 
-                );
-
         d_display.append("nip");
-        d_display.append("pwd");
-
-        d_display.useReplacements(replacements);
-        d_display.out(g_options.html() + "verify");
-
+        d_display.out(g_options.html() + "actions");
         return;
     }
 
-    d_display.append("nip");
-    d_display.out(g_options.html() + "actions");
+    StrVector replacements{
+                    genderText(),       // $0
+                    d_lastName,         // $1
+                    to_string(d_ack)    // $2
+                };
+
+    g_mailer.sendmail(
+                d_email, 
+                "3ppq.nl verification",
+                DollarText::replaceStream(
+                                g_options.mail() + "verify", replacements
+                            ) 
+            );
+
+    d_display.append({"nip", "pwd"});
+    d_display.out(g_options.html() + "verify", replacements);
 }
 
 

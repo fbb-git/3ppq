@@ -1,6 +1,7 @@
 #include "dollartext.ih"
 
-string DollarText::replacePath(string const &path)
+string DollarText::replaceStream(string const &path, 
+                                 StrVector const &elements)
 {
     ifstream in;
     Exception::open(in, path);
@@ -9,7 +10,7 @@ string DollarText::replacePath(string const &path)
     string line;
 
     while (getline(in, line))
-        ret += replaceDollars(line);
+        ret += replaceLine(line, elements);
 
     return ret;
 }

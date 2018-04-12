@@ -8,7 +8,6 @@
 
 #include "../psychclient/psychclient.h"
 #include "../../support/datastore/datastore.h"
-#include "../../support/dollartext/dollartext.h"
 #include "../../support/display/display.h"
 
 namespace FBB
@@ -23,7 +22,6 @@ class Psych
     DataStore d_data;          // psychologists' data
     FBB::CGI &d_cgi;
 
-    DollarText d_dollarText;
     Display d_display;
 
     static Map      s_state;        // maps state names to handling functions

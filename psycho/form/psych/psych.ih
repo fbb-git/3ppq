@@ -16,6 +16,7 @@
 #include "../../support/tools/tools.h"
 #include "../../support/mailer/mailer.h"
 #include "../../support/uniquenr/uniquenr.h"
+#include "../../support/dollartext/dollartext.h"
 
 using namespace std;
 using namespace FBB;

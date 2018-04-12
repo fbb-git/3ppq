@@ -1,6 +1,7 @@
-1. Directory organization
-2. Psychologist FSA
-3. Webserver requirements
+1.  Directory organization
+2.  Psychologist FSA
+3.  Webserver requirements
+4.  New FSA diagram
 
 1. Directory organization
 =========================
@@ -150,9 +151,24 @@ quest       id,nr           quest()             quest           quest           
     </Directory>
  
 
+4. New FSA diagram
+==================
 
+------------------------------------------------------------------------
+            cgi         handler     next    
+html        vars        (function)  html        xfer    descr
+------------------------------------------------------------------------
+/psych      nip,pwd     verify      action      nip     nip/pwd OK
+                                    newPwd      nip     new pwd by mail
+                                    mailCheck   nip     ack verification
+                                    /noPsych       
+                                    /home
+                        /register 
 
+/noPsych                /home
+                        /register
 
+newPwd      nip
 
-
+action      nip
 

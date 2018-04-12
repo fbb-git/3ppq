@@ -1,10 +1,9 @@
 #include "dollartext.ih"
 
-string DollarText::text() const
+string DollarText::replacePath(string const &path)
 {
     ifstream in;
-
-    Exception::open(in, d_path);
+    Exception::open(in, path);
 
     string ret;
     string line;

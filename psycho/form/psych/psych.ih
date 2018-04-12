@@ -11,8 +11,6 @@
 #include <bobcat/cgi>
 
 #include "../../support/global/global.h"
-#include "../../support/dollartext/dollartext.h"
-#include "../../support/display/display.h"
 #include "../../support/options/options.h"
 #include "../../support/lockguard/lockguard.h"
 #include "../../support/tools/tools.h"

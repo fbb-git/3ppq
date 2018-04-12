@@ -4,7 +4,6 @@
 #include <bobcat/exception>
 
 #include "../global/global.h"
-#include "../dollartext/dollartext.h"
 
 using namespace std;
 using namespace FBB;

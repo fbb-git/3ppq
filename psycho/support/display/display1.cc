@@ -1,9 +1,6 @@
 #include "display.ih"
 
-Display::Display(string const &path, StrVector const *dollarVars)
+Display::Display(CGI &cgi)
 :
-    d_path(path),
-    d_dollarVars(dollarVars)
-{
-    copy();
-}
+    d_cgi(&cgi)
+{}

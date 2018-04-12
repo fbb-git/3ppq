@@ -158,47 +158,157 @@ In all cases where an unknown nip is passed to a function while the nip value
 should be known the /home page is opened. Where /home is mentioned an explicit
 request to open the home-page is provided.
 
-------------------------------------------------------------------------
-            cgi         handler     next    
-html        vars        (function)  html        xfer    descr
-------------------------------------------------------------------------
-/psych      nip,pwd     verify      action      nip     nip/pwd OK
-                                    newPwd      nip     new pwd by mail
-                                    ackCheck    nip     ack verification
-                                    /noPsych       
-                                    /home
-                        /register 
+.h files are html file generated from the website/html directory.
 
-/noPsych                /home
-                        /register
+xferred = means: received vars are all transferred to the next element
 
-/register   nip,pwd,    newPsych    knownPsych          already registered
-            name, etc.
-                                    ackCheck    nip     ack verification
+Psych FSA:
+==========
+
+============================================================================
+                      CGI-vars          
+function/       --------------------
+html            received    xferred     next        descr
+----------------------------------------------------------------------------
+/psych          -           nip,pwd,    verify
+                            mode
+                            -           /register   register   
+----------------------------------------------------------------------------
+verify          nip,pwd,    -           /noPsych    unknown NIP
+                mode        
+                            nip         newPwd.h    request new pwd
+
+                            nip         ackCheck.h  ack nonzero: enter ack
+
+                            nip         action.h    login OK
+----------------------------------------------------------------------------
+/noPsych        -           -           /home       back home
+
+                            -           /register   try to register
+----------------------------------------------------------------------------
+newPwd.h        nip         -           /psych      new pwd sent to e-mail
+----------------------------------------------------------------------------
+ackCheck.h      nip         =           ackCheck    
+----------------------------------------------------------------------------
+ackCheck        nip         =           action.h    ack OK: reset to 0
+
+                            =           ackError.h  ack error
+----------------------------------------------------------------------------
+ackError.h      nip         =           ackCheck.h  try again
+----------------------------------------------------------------------------
+/register       -           nip,pwd,    addPsych    register as new psych.
+                            name,etc.               
+----------------------------------------------------------------------------
+addPsych        nip,pwd                 knownPsych.halready registered
+                name,etc.   
+
+                            nip         ackCheck.h  registered: verify ack
+----------------------------------------------------------------------------
+knownPsych.h    -           -           /register   try again to register
+
+                            -           /home       back home
+----------------------------------------------------------------------------
+action.h        nip         =           client.h    client-related actions  
+
+                            =           profile.h   change own data         
+
+                            =           data.h      handle collected data   
+
+                            =           contact.h   contact the 3ppq team   
+----------------------------------------------------------------------------
+client.h        nip         =           profile.h   change own data         
+
+                            =           data.h      handle collected data   
+
+                            =           contact.h   contact the 3ppq team   
+
+                            nip,        newClient   define new client
+                            client-data         
+----------------------------------------------------------------------------
+profile.h       nip         =           client.h    client-related actions  
+
+                            =           data.h      handle collected data   
+
+                            =           contact.h   contact the 3ppq team   
+----------------------------------------------------------------------------
+contact.h       nip         =           client.h    client-related actions  
+
+                            =           profile.h   change own data         
+
+                            =           data.h      handle collected data   
+----------------------------------------------------------------------------
+data.h          nip         =           client.h    client-related actions  
+
+                            =           profile.h   change own data
+
+                            =           contact.h   contact the 3ppq team   
+----------------------------------------------------------------------------
+newClient       nip,        nip         clexists.h  client exists, try again
+                client-data             
+
+                            nip         client.h                
+----------------------------------------------------------------------------
+clexists.h      nip         =           client.h    
+============================================================================
 
 
-knownPsych              /register                       try again
-                        /home
+Client FSA:
 
+============================================================================
+                      CGI-vars          
+function/       --------------------
+html            received    produced    next        descr
+----------------------------------------------------------------------------
+/client          -          login1,     verify      client logs in
+                            login2
+----------------------------------------------------------------------------
+verify          login1,     -           /noclient   login codes unkown
+                login2       
 
-newPwd                  /psych                          login again
+                            =           others.h    provide e-mail for others
 
-ackCheck    nip         ackCheck    /psych              ack set to 0
-                                    ackError    nip
+                            =,          instruct.h  provide instruction
+                            variables,
+----------------------------------------------------------------------------
+others.h        login1,     =,          others      store e-mail
+                login2,     3 x e-mail
+----------------------------------------------------------------------------
+others          login1,     login1,     instruct.h  provide instruction
+                login2,     login2,     (e-mail ignored if already specified)
+                3 x e-mail  
+----------------------------------------------------------------------------
+instruct.h      login1,     =,          quest       present questions
+                login2,     nr,data,
+                variables,            
+                            
+----------------------------------------------------------------------------
+quest           login1,     =           quest.h
+                login2      
+                variables,  
+                nr,data     
 
-ackError    nip         ackCheck
+                            =           complete.h
+----------------------------------------------------------------------------
+quest.h         login1,     =           quest
+                login2      
+                variables,  
+                nr,data     
+----------------------------------------------------------------------------
+complete.h      login1,     =           quest
+                login2      
+                variables,  
+                nr,data     
 
-
-action      nip         /client                 nip     actions with clients
-                        /profile                nip     change profile
-
-/client     nip         newClient   newClient   nip     define new client
-
-
-newClient   nip         /client                         
-
-
-
+                            =           thanks
+----------------------------------------------------------------------------
+thanks          login1,     -           /home
+                login2    
+                variables,
+                nr,data   
+----------------------------------------------------------------------------
+/noclient       -           -           /client     try again
+                                        /home
+============================================================================
 
 
 

@@ -12,8 +12,6 @@
 #include "../../support/options/options.h"
 #include "../../support/tools/tools.h"
 
-//#include "../../support/dollartext/dollartext.h"
-// #include "../../support/lockguard/lockguard.h"
 // #include "../../support/mailer/mailer.h"
 
 extern FBB::Log g_log;

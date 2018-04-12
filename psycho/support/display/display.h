@@ -1,29 +1,52 @@
 #ifndef INCLUDED_DISPLAY_
 #define INCLUDED_DISPLAY_
 
-#include <iostream>
-//#include <fstream>
 #include <string>
 
+#include <bobcat/cgi>
+
 #include "../types/types.h"
+#include "../dollartext/dollartext.h"
 
 class Display
 {
     std::string d_path;
-    StrVector const *d_dollarVars = 0;
-    StrVector const *d_append = 0;
 
+    DollarText d_dollarText;
+    StrVector d_append;
+
+    FBB::CGI *d_cgi = 0;
+    
     public:
-        Display(std::string const &name, StrVector const *dollarVars = 0);
+        Display() = default;
+        Display(FBB::CGI &cgi);
 
-                                                // usually hidden fields
-        Display(StrVector const &append,        // passing hidden params
-                std::string const &name, StrVector const *sv = 0);
 
-        ~Display();
+        void append(char const *param);         // inl., d_cgi required.
+        void append(char const *param, std::string const &value);
 
-    private:
-        void copy();                    // copy the skeleton to cout
+        void operator+=(std::string const &text);   // inline: 
+                                                    // add replacement text
+
+        void useReplacements(StrVector &src);       // inline, src is moved
+
+        void out(std::string const &name);      // copy the skeleton to cout
+                                                // (clears StrVector contents)
 };
+
+inline void Display::useReplacements(StrVector &src)
+{
+    d_dollarText.useReplacements(src);
+}
+
+inline void Display::append(char const *param)
+{
+    append(param, d_cgi->param1(param));
+}
+
+inline void Display::operator+=(std::string const &text)
+{
+    d_dollarText += text;
+}
 
 #endif

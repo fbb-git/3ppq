@@ -12,7 +12,7 @@ void Psych::verify()
     if (not pwdMatch())
     {
         Tools::delay();
-        Display{ g_options.html() + "pwdfailure" };
+        d_display.out(g_options.html() + "pwdfailure");
         return;
     }
 
@@ -23,33 +23,30 @@ void Psych::verify()
                 " to send to " << d_email << 
                 " (temp. not sent)" << endl;
 
-        StrVector sv{
-                        genderText(),       // $0
-                        d_lastName,         // $1
-                        to_string(d_ack)    // $2
-                    };
+        StrVector replacements;
+
+        d_dollarText += genderText();        // $0
+        d_dollarText += d_lastName;          // $1
+        d_dollarText += to_string(d_ack);   // $2
 
         g_mailer.sendmail(
                     d_email, 
                     "3ppq.nl verification",
-                    DollarText{ g_options.mail() + "verify", sv }.text() 
+                    d_dollarText.replace(replacements, 
+                                         g_options.mail() + "verify") 
                 );
 
-        Display{
-            {
-                Tools::passParam(d_cgi, "nip"),
-                Tools::passParam(d_cgi, "pwd"),
-            },
-            g_options.html() + "verify", &sv };
+        d_display.append("nip");
+        d_display.append("pwd");
+
+        d_display.useReplacements(replacements);
+        d_display.out(g_options.html() + "verify");
 
         return;
     }
 
-    Display{
-            {
-                Tools::passParam(d_cgi, "nip"),
-            },
-            g_options.html() + "actions" };
+    d_display.append("nip");
+    d_display.out(g_options.html() + "actions");
 }
 
 

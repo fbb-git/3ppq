@@ -21,8 +21,8 @@ string const &DollarText::replaceDollars(string &line) const
 
         size_t idx = stoul(line.substr(pos + 1));   // convert to index
 
-        if (idx < d_strVector.size())               // valid index
-            line.replace(pos, 2, d_strVector[idx]); // so replace
+        if (idx < d_dollarText.size())               // valid index
+            line.replace(pos, 2, d_dollarText[idx]); // so replace
 
         --pos;                                  // continue before
     }

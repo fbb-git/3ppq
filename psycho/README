@@ -154,13 +154,17 @@ quest       id,nr           quest()             quest           quest           
 4. New FSA diagram
 ==================
 
+In all cases where an unknown nip is passed to a function while the nip value
+should be known the /home page is opened. Where /home is mentioned an explicit
+request to open the home-page is provided.
+
 ------------------------------------------------------------------------
             cgi         handler     next    
 html        vars        (function)  html        xfer    descr
 ------------------------------------------------------------------------
 /psych      nip,pwd     verify      action      nip     nip/pwd OK
                                     newPwd      nip     new pwd by mail
-                                    mailCheck   nip     ack verification
+                                    ackCheck    nip     ack verification
                                     /noPsych       
                                     /home
                         /register 
@@ -168,7 +172,38 @@ html        vars        (function)  html        xfer    descr
 /noPsych                /home
                         /register
 
-newPwd      nip
+/register   nip,pwd,    newPsych    knownPsych          already registered
+            name, etc.
+                                    ackCheck    nip     ack verification
 
-action      nip
+
+knownPsych              /register                       try again
+                        /home
+
+
+newPwd                  /psych                          login again
+
+ackCheck    nip         ackCheck    /psych              ack set to 0
+                                    ackError    nip
+
+ackError    nip         ackCheck
+
+
+action      nip         /client                 nip     actions with clients
+                        /profile                nip     change profile
+
+/client     nip         newClient   newClient   nip     define new client
+
+
+newClient   nip         /client                         
+
+
+
+
+
+
+
+
+
+
 

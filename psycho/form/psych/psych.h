@@ -22,7 +22,6 @@ class Psych
     FBB::CGI &d_cgi;
 
     static Map      s_state;        // maps state names to handling functions
-    static uint16_t s_nr;
 
     // data below are saved to file
 

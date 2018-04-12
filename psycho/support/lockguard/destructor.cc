@@ -2,5 +2,9 @@
 
 LockGuard::~LockGuard()
 {
-    flock(d_fd, LOCK_UN);
+    if (d_count)
+        --d_count;
+
+    if (d_count == 0)
+        flock(d_fd, LOCK_UN);
 }

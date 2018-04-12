@@ -7,7 +7,6 @@ uint16_t UniqueNr::get(uint16_t first, uint16_t last)
 
     LockStream nrs{ g_options.nrs() };
     nrs.open();
-
     LockGuard lg{ nrs.lg() };
 
     uint16_t nr;

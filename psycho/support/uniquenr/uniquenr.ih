@@ -4,9 +4,12 @@
 
 #include <algorithm>
 
+#include <bobcat/exception>
+
 #include "../options/options.h"
 #include "../lockguard/lockguard.h"
 #include "../tools/tools.h"
 #include "../lockstream/lockstream.h"
 
 using namespace std;
+using namespace FBB;

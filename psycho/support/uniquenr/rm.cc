@@ -4,13 +4,15 @@
 void UniqueNr::rm(uint16_t nr)
 {
     string path = g_options.nrs();
-
-    fstream nrs{ Tools::fstream(path) };
-
-    LockGuard lg{ path, s_lockFd };
-
     string newPath = path + ".tmp";
-    fstream newNrs{ Tools::fstream(newPath) };
+
+    LockStream nrs{ path };
+    nrs.open();
+
+    LockGuard lg{ nrs.lg() };
+
+    ofstream newNrs;
+    Exception::open(newNrs, newPath);
 
     uint16_t *buffer = new uint16_t[100];
 

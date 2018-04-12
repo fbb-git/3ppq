@@ -20,6 +20,8 @@ void add()
 
         if (not dataStore.add(key, store))
             cout << "key " << key << " already stored\n";
+        else
+            cout << "next nr = " << dataStore.nextNr() << '\n';
     }
 }
 

@@ -1,5 +1,6 @@
 #!/bin/bash
 
-rm data/*
+rm -r data
+mkdir -p data
 icmbuild
 tmp/bin/binary

@@ -6,6 +6,7 @@
 class LockGuard
 {
     int d_fd;
+    size_t d_count = 0;
 
     public:
         LockGuard(std::string const &path, int fd);

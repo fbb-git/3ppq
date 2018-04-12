@@ -22,7 +22,7 @@ class DataStore
     std::string d_path;
 
     DataIdx d_dataIdx;
-    
+
     public:
         DataStore(std::string const &path);     // full path to the data file
 
@@ -33,6 +33,7 @@ class DataStore
         bool get(std::string *data, std::string const &key);
         bool erase(std::string const &key);     // erase data and key
         bool update(std::string const &key, std::string const &data);
+        uint16_t nextNr();
 
         LockGuard lg() const;
 

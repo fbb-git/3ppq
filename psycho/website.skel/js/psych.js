@@ -1,48 +1,33 @@
 var nr;
-var forced = 0;
-
-function inspect(key)
-{
-    if (key == 13)
-        forced = 1;
-}
-
 
 function validate() 
 {
-    var nip = document.forms["form"]["nip"].value;
-
-    if (forced == 1)
-        nr = 2;
+    var email = document.forms["form"]["email"].value;
 
     switch (nr)
     {
-        case 0:
-            addHidden('state', 'signup');
-        break;
-
         case 1:
-            if (nip == "") 
+            if (email == "") 
             {
-                alert("Uw NIP-nummer moet worden vermeld");
+                alert("Uw e-mail adres moet worden vermeld");
                 return false;
             }
-            addHidden('state', 'noPwd');
+            addHidden('mode', 'noPwd');
         break;
 
         case 2:     // inloggen: UN/PW vereist
-            if (nip == "" || 
+            if (email == "" || 
                 document.forms['form']['pwd'].value == ""
             )
             {
-                alert("NIP-nummer en password moeten worden vermeld");
+                alert("e-mail adres en password moeten worden vermeld");
                 return false;
             }
-            addHidden('state', 'verify');
+            addHidden('mode', 'login');
         break;
     }
+    addHidden('state', 'verify');
     addHidden('type', 'psych');
-    return true;
 } 
 
 

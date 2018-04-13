@@ -185,13 +185,13 @@ Psych FSA:
 function/       --------------------
 html        OK  received    xferred     next        descr
 ----------------------------------------------------------------------------
-/psych       -  -           nip,pwd,    verify
-                            mode
+/psych       +  -           e-mail,     verify
+                            pwd, mode
 
                             -           /register   register   
 ----------------------------------------------------------------------------
-verify       -  nip,pwd,    -           /noPsych    unknown NIP
-                mode        
+verify       W  email,      -           /noPsych    unknown NIP
+                mode,pwd    
                             nip         /newPwd     request new pwd
 
                             nip         ackCheck.h  ack nonzero: enter ack

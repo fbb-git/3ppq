@@ -1,0 +1,418 @@
+/Concept webteksten 3PPQ                     
+/
+/
+/ Homepage
+/
+/(Mogelijkheid om te switchen naar Engelse vertaling invoegen?)
+/
+/
+/                                       
+/                        Persoonlijkheid in perspectief
+/
+/De Drie Perspectieven Persoonlijkheids Questionnaire (3PPQ) is een instrument 
+/voor psychologisch persoonlijkheidsonderzoek, waarin het perspectief van de 
+/te onderzoeken persoon zelf, dat van anderen uit diens omgeving, en dat van 
+/de persoon daarop (metaperspectief) worden betrokken. Een beschrijving van de 
+/3PPQ staat in [dit artikel].
+/(Eventueel de samenvatting daarvan in een kader opnemen, gevolgd door [lees 
+/verder]).
+/
+/Met behulp van deze website kan dit onderzoek geautomatiseerd worden 
+/uitgevoerd.
+/
+/De 3PPQ is na registratie op deze website vrij te gebruiken door leden van 
+/het Nederlands Instituut van Psychologen (NIP). Andere belangstellende 
+/professionals die de 3PPQ willen afnemen kunnen hiertoe een verzoek indienen 
+/via info@3ppq.nl. 
+/(De simpelste manier is volgens mij om automatisch via de `vind een 
+/psycholoog' functie van de NIP-site te checken of iemand lid is (via naam en 
+/lidmaatschapsnummer). Bij een treffer krijgt de psycholoog inlogcodes om in 
+/het besloten gedeelte van onze website te komen. Zo niet, dan eventueel 
+/handmatig checken en met de betrokkene in overleg treden.) 
+/
+/
+/                            Inloggen als psycholoog
+/                                       
+/                                 leidt naar pagina 2
+/                    Inloggen om de vragenlijst in te vullen 
+/                                        
+/                          leidt naar pagina 3 
+/                                       
+/
+/
+/
+/Privacyverklaring (bijlage 6) in footer? 
+/ Psycholoog > loginpagina
+/
+/
+/Uw e-mailadres: -invulveld-
+/Uw wachtwoord:  -invulveld- 
+/                                     login
+/                                     login
+/
+/      leidt naar pagina 3  
+/
+/
+/
+/                             Wachtwoord vergeten?
+/    
+/      leidt naar pagina 2.1  
+/
+/
+/
+/Geen inloggegevens? U dient zich eenmalig te registreren om een 
+/gebruikersaccount aan te maken.
+/                                  Registreren
+/
+/      leidt naar pagina 2.2
+/
+FBB
+
+ Psycholoog > loginpagina > reset wachtwoord
+
+
+Vul hieronder uw e-mailadres in. U ontvangt per e-mail een link waarmee u een 
+nieuw wachtwoord kunt aanmaken.
+
+E-mailadres:    -invulveld-
+                                   verstuur
+                                   verstuur
+
+
+(Bijlage 2)
+
+
+ Psycholoog > loginpagina > eenmalige registratie
+       
+Uw voorletters en naam: -invulveld-
+NIP-lidmaatschapsnummer:    -invulveld-
+E-mailadres:    -invulveld-
+Werkzaam op het gebied van: -voorkeuzemenu GGZ, A&O, onderwijs, 
+onderzoek, anders-
+                                   verstuur
+                                   verstuur
+
+
+Hierna volgt melding: Uw inloggegevens zullen worden toegestuurd naar het 
+opgegeven e-mailadres.
+(Bijlage 1)
+       
+
+       
+ Psycholoog > actiepagina
+
+
+                                Accountgegevens
+
+     Mogelijkheid om wachtwoord te wijzigen
+
+
+                               Activeren afname
+
+      Leidt naar pagina 3.1
+         
+
+                              Resultaten ophalen
+
+      Leidt naar resultaten
+        
+
+ Psycholoog > actiepagina > activeren afname
+    
+E-mailadres cliënt:     -invulveld-
+Naam:               -invulveld-     -?-  bijv. Donald of meneer 
+Trump
+Geslacht:   -M/V        
+Eerste deel inlogcode:  -invulveld- -?-  bestaat uit een ID psycholoog 
+(waardoor het programma de psycholoog kan herkennen) i.c.m. een uniek ID 
+cliënt (waaraan de psycholoog de cliënt kan herkennen). (De psycholoog 
+dient dit eerste deel van de inlogcode aan de cliënt door te geven; de 
+cliënt ontvangt per e-mail het tweede deel van de inlogcode (zie ook pagina 
+4. `respondent').) (Bijlage 4)
+
+U dient uw cliënt de procedure vooraf uit te leggen (en deze uitleg 
+eventueel op een briefje aan de cliënt mee te geven): "Voor een 
+persoonlijkheidsonderzoek wil ik u vragen of u online een vragenlijst wilt 
+invullen. Het is daarbij de bedoeling dat ook drie anderen die u goed kennen 
+deze vragenlijst invullen, zodat we een beeld van uw persoonlijkheid kunnen 
+krijgen vanuit meerdere perspectieven. U krijgt per e-mail een uitnodiging om 
+de vragenlijst in te vullen. In de e-mail staat een link waarmee u op de 
+vragenlijst kunt inloggen. U dient dan twee inlogcodes in te vullen. De 
+eerste inlogcode geef ik u nu. De tweede inlogcode staat, samen met een link 
+om in te loggen, in de e-mail die u ontvangt. Zo weet u zeker dat onbevoegden 
+geen toegang hebben tot de vragenlijst. Naast de beide inlogcodes dient u ook 
+de e-mailadressen van de drie anderen die u wilt vragen de vragenlijst over u 
+in te vullen bij de hand te hebben. Bespreek met hen van tevoren of zij dit 
+goed vinden, en geef hen ook de eerste de inlogcode (dezelfde die u hebt). 
+Zij ontvangen daarna per e-mail een tweede inlogcode en een link om op de 
+vragenlijst in te loggen. Deze anderen blijven anoniem. De e-mailadressen 
+worden na het invullen van de vragenlijst gewist. Alleen ik weet door de 
+eerste inlogcode dat het om u gaat." 
+
+Indien er een cliënt is die de vragenlijst wil laten invullen door een ander 
+die geen mogelijkheid heeft deze online in te vullen, is een paper & 
+pencilversie van de vragenlijst beschikbaar. Deze dient met een gefrankeerde 
+retourenvelop in een gesloten envelop aan de cliënt meegegeven te worden. De 
+cliënt kan na het inloggen het e-mailadres van de psycholoog opgeven, die de 
+antwoorden van deze papieren respondent over kan nemen in de online omgeving. 
+(Willen we dat? Zo ja, dan ergens een linkje naar een pdf-je met een 
+derdenvragenlijst.)
+(Wanneer de vragenlijsten zijn ingevuld krijgt de psycholoog een e-mail dat 
+de rapportage klaar staat.) (Bijlage 3)
+
+ Respondent > loginpagina
+
+Eerste inlogcode:    -invulveld-    -?-  bent u cliënt dan hebt u deze 
+code van uw psycholoog gekregen
+    -?-  bent u een naaste ander, dan hebt u deze code van de cliënt 
+gekregen
+Tweede inlogcode:  -invulveld-      -?-  deze code hebt u via e-mail 
+ontvangen
+                                     login
+                                     login
+
+    
+(Op basis van het laatste cijfer van de tweede code (1, 2, 3, 4, voor resp. 
+zelf, eerste ander, tweede ander en derde ander) komt de respondent op de 
+juiste volgpagina terecht: zie 4.1, en 4.2. De cliënt is dus de eerste die 
+inlogt, omdat de e-mailadressen van de anderen nog niet bekend zijn.)
+
+        
+
+ Respondent > zelf
+       
+Uw psycholoog heeft u gevraagd drie anderen te benaderen om de vragenlijst 
+over u in te vullen. Om deze drie anderen een uitnodiging hiervoor te kunnen 
+sturen, dient u hieronder hun e-mailadressen invullen. Zorgt u er alstublieft 
+voor de e-mailadressen correct in te vullen.
+
+E-mailadres eerste ander:   -invulveld-
+E-mailadres tweede ander:   -invulveld-
+E-mailadres derde ander:    -invulveld-
+                                   verstuur
+                                   verstuur
+
+
+(Als op `verstuur' wordt geklikt terwijl er geen drie e-mailadressen 
+ingevoerd zijn zou er schermpje moeten oppoppen met melding: `U hebt nog geen 
+drie e-mailadressen ingevuld'.)
+
+Hierna volgt melding: De door u ingevulde e-mailadressen van anderen zijn 
+ontvangen. 
+Zij ontvangen een uitnodiging om aan het onderzoek mee te doen.
+Klik hier om verder te gaan.
+
+De drie anderen krijgen per e-mail een uitnodiging (bijlage 5)
+ Respondent > zelf > uitleg 1
+          
+Deze vragenlijst gaat over hoe u bent. Bijvoorbeeld:
+
+Bent u iemand die makkelijk vrienden maakt?
+
+<   ja! ja  ?   nee nee!    >
+
+kies ja!  als dat zo is
+kies ja als het eerder wel dan niet zo is
+kies ? als het neutraal is of als u het niet weet
+kies nee als het eerder niet dan wel zo is
+kies nee! als het niet zo is
+
+Via > gaat u naar de volgende vraag en via < naar de vorige.  
+U kunt uw antwoorden nog veranderen voor u de vragenlijst verstuurt. 
+
+Dit onderdeel van de lijst bevat 42 zulke vragen. Als u in een rustig tempo 
+werkt, kost het een minuut of tien.
+
+                             Start de vragenlijst
+                                       
+
+                           Leidt naar pagina 5 (vorm A)
+
+
+ Respondent > zelf > uitleg 2
+
+
+In het vorige onderdeel hebt u de vragenlijst ingevuld over uzelf. In dit 
+tweede en laatste onderdeel van de vragenlijst is de vraag hoe anderen vinden 
+dat u bent. Bijvoorbeeld:
+
+Vinden anderen u iemand die makkelijk vrienden maakt?   
+<   ja! ja  ?   nee nee!    >
+
+Denk bij `anderen' niet aan een bepaalde persoon, maar aan anderen in het 
+algemeen.
+Zulke vragen zijn vaak lastiger te beantwoorden, maar meestal hebt u wel een 
+idee.
+
+                             Start de vragenlijst
+
+                                       
+
+                           Leidt naar pagina 5 (vorm B)
+                                       
+                                       
+
+ Respondent > ander > uitleg
+
+
+Deze vragenlijst gaat over hoe [naam cliënt] is. Bijvoorbeeld:
+
+Is [naam cliënt] iemand die makkelijk vrienden maakt?   
+
+<   ja! ja  ?   nee nee!    >
+
+kies ja!  als dat zo is
+kies ja als het eerder wel dan niet zo is
+kies ? als het neutraal is of als u het niet weet
+kies nee als het eerder niet dan wel zo is
+kies nee! als het niet zo is
+
+Via > gaat u naar de volgende vraag en via < naar de vorige.
+U kunt uw antwoord nog veranderen voor u verder gaat. 
+
+Dit onderdeel van de lijst bevat 42 zulke vragen. Als u in een rustig tempo 
+werkt, kost het een minuut of tien.
+
+U blijft zelf anoniem in dit onderzoek. Uw antwoorden worden niet aan [naam 
+cliënt] doorgegeven. Uit de antwoorden van u en van twee anderen die 
+dezelfde vragenlijst invullen, wordt een gemiddelde berekend. Dit gemiddelde 
+en de betekenis ervan worden met [naam cliënt] besproken.  
+
+                             Start de vragenlijst
+                                       
+
+
+                           Leidt naar pagina 5 (vorm C)
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+ De vragenlijst
+
+([veld] dient afhankelijk van de respondent ingevuld te worden met: `Bent u' 
+(vorm A),
+`Vinden anderen u' (vorm B) of `Is [naam cliënt]' (vorm C).
+[hem/haar] en [zijn/haar] kan aangepast worden afhankelijk van geslacht.)
+
+(Mijns inziens na iedere `verder' een nieuwe pagina. Veel mensen doen zulke 
+dingen op hun telefoon en dan is het teveel gepriegel als er meerdere vragen 
+op 1 pagina staan. Men moet op volgende klikken om naar de volgende vraag te 
+gaan. Als op volgende wordt geklikt zonder dat een antwoord is gegeven, 
+verschijnt een pop-up met melding `u hebt de vraag nog niet beantwoord'. Zo 
+worden overgeslagen items voorkomen.)
+
+
+1 [veld] iemand die moeilijk van een standpunt is af te brengen?
+
+    ja! ja  ?   nee nee!    >   
+ 
+2 [veld] iemand die zaken ernstig opneemt?
+
+<   ja! ja  ?   nee nee!    >   
+ 
+3 [veld] iemand die ingewikkelde problemen aankan?  
+
+<   ja! ja  ?   nee nee!    >       
+4 [veld] iemand die zich snel bedreigd voelt?       
+
+<   ja! ja  ?   nee nee!    >       
+5 [veld] iemand die alles best vindt?               
+ 
+et cetera
+
+6 [veld] iemand die aan andermans spullen zit?          
+
+7 [veld] iemand die overal mee instemt?             
+    
+8 [veld] iemand die een hekel heeft aan verrassingen?
+        
+9 [veld] iemand die tegen kritiek kan?              
+
+10 [veld] iemand die zich laat beïnvloeden?             
+
+11 [veld] iemand die met rust gelaten wil worden?           
+
+12 [veld] iemand die overal iets achter zoekt?          
+
+13 [veld] iemand die ongelovig reageert?                
+
+14 [veld] iemand die anderen bijstaat?              
+
+15 [veld] iemand die graag aardig gevonden wil worden?      
+
+16 [veld] iemand die anderen het laat werk doen?            
+
+17 [veld] iemand die hardop lacht?                  
+
+18 [veld] iemand die moeilijk te begrijpen is?          
+
+19 [veld] iemand die doet wat van [hem/haar] verwacht wordt?        
+
+20 [veld] iemand die zich aan de regels houdt?          
+
+21 [veld] iemand die iets met iemand deelt?             
+
+22 [veld] iemand die doorgaat tot het doel is bereikt?      
+
+23 [veld] iemand die snel in de war raakt?              
+
+24 [veld] iemand die mensen weet te boeien?         
+
+25 [veld] iemand die anderen in verlegenheid brengt?        
+
+26 [veld] iemand die anders doet dan verwacht?          
+
+27 [veld] iemand die ongevraagde adviezen geeft?            
+
+28 [veld] iemand die goede raad aanneemt?           
+
+29 [veld] iemand die anderen veel toelaat?              
+
+30 [veld] iemand die onmiddellijk reageert?             
+
+31 [veld] iemand die bevelen opvolgt?               
+
+32 [veld] iemand die doet wat anderen doen?         
+
+33 [veld] iemand die tegen de stroom in zwemt?          
+
+34 [veld] iemand die alles doet om [zijn/haar] zin te krijgen?      
+
+35 [veld] iemand die iets doet zonder nadenken?         
+
+36 [veld] iemand die openstaat voor ideeën?         
+
+37 [veld] iemand die beslissingen aan anderen overlaat?     
+
+38 [veld] iemand die weet waarover [hij/zij] spreekt?           
+
+39 [veld] iemand die graag iets nieuws leert?           
+
+40 [veld] iemand die zaken overdrijft?              
+
+41 [veld] iemand die hulp afslaat?                  
+
+42 [veld] iemand die bedenktijd neemt?                  
+Dit was de laatste vraag. Als u wilt kunt u nog antwoorden wijzigen. Door op 
+`verstuur' te klikken worden uw antwoorden definitief gemaakt en kunt u deze 
+niet meer veranderen.
+
+                                      verstuur
+                                   verstuur
+      
+
+Na vorm A volgt een melding: U heb het eerste gedeelte van de vragenlijst 
+ingevuld. Klik hier voor het laatste gedeelte van de vragenlijst.
+Na vorm B en C volgt een melding: Hartelijk dank voor het invullen van de 
+vragenlijst.
+Klik hier om uit te loggen.
+
+

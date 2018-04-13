@@ -9,64 +9,64 @@
     <script src="/js/psych.js"></script>
 </head>
 
-<body> 
+<body class="full"> 
+<div class="container">
 
 <header class='title'>
-    3PPQ
+          Persoonlijkheid in perspectief
 </header>
 
-<h1>3PPQ - Psychologen</h1>
+<h1>Inloggen als psycholoog</h1>
 
-<img src="/images/login.png" style="float:right">
-
-Welkom op de psychologen inlog-/registratiepagina van 3PPQ.<p>
+<img src="/images/login.jpg" style="float:right">
 
 <hr>
-
-Wanneer u zich al heeft aangemeld, vul dan onderstaande inlog-gegevens in en
-druk op de knop <em>Inloggen</em>.<p>
-
- Wanneer u zich nog niet heeft aangemeld, dan kan dat door op de knop
-<em>Aanmelden</em> (onderaan deze pagina) te drukken.
 
 <form name="form" action="/bin/form" 
       onsubmit="return validate()" method="post">
 
 <div style="background-color:#dddddd">
-
 <table>
 <tr>
-    <td style="text-align: right">NIP-nummer: </td> 
-        <td ><input type="text" name="nip" size="20"></td>
+    <td style="text-align: right">Uw e-mail adres: </td> 
+        <td ><input type="email" name="email" size="40"></td>
 </tr>
 <tr>
-    <td style="text-align: right"> Password:</td>
-        <td> <input type="password" name="pwd" size="20" 
-                onkeydown="inspect(event.keyCode)">
-        &nbsp;&nbsp; 
-        <input type="submit" value="Password kwijt" onclick="nr = 1">
+    <td style="text-align: right">Uw wachtwoord:</td>
+        <td> 
+            <input type="password" name="pwd" size="40" 
+                   onkeydown="inspect(event.keyCode)">
         </td>
+    </td>
+</tr>
+<tr>
+    <td></td>
+    <td>
+        <input type="submit" value="Inloggen" onclick="nr = 2">
+        <input type="submit" value="Wachtwoord kwijt" onclick="nr = 1">
+    </td>
 </tr>
 </table>
-<p>
-<input type="submit" value="Inloggen" onclick="nr = 2">
 </div>
-<hr>
 
-Wanneer u als psycholoog geregistreerd bent bij het NIP kunt u zich
-hier aanmelden voor 3PPQ:
-<!--input type="submit" value="Aanmelden" onclick="nr = 0"-->
-<input type="submit" value="Aanmelden" 
-    onclick="window.open('/signup.html', '_self'); return false;">
-<p>
 <hr>
-<footer>3PPQ neemt privacy serieus. Download onze 
-    <a href="privacy.pdf"> privacy verklaring</a><br>
-    Vragen of opmerkingen? Stuur dan een e-mail naar 
-        <a href="mailto:3ppq@3ppq.nl">3ppq@3ppq.nl</a>
-</footer>
 
 </form>
+</div>      <!-- container -->
+
+<footer class="lastline">
+
+Als u een NIP-geregistreerde psycholoog bent, dan kunt u zich 
+<a href="/register.html">hier aanmelden</a>, waarna u gebruik kunt maken van
+onze faciliteiten.<p>
+
+</footer>
+
+<!--
+    <input type="submit" value="Aanmelden" 
+    onclick="window.open('/signup.html', '_self'); return false;">
+-->
+<hr>
 
 </body>
 </html>

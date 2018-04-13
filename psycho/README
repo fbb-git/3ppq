@@ -185,18 +185,22 @@ Psych FSA:
 function/       --------------------
 html        OK  received    xferred     next        descr
 ----------------------------------------------------------------------------
-/psych       +  -           e-mail,     verify
+/psych       +  -           email,      verify
                             pwd, mode
 
                             -           /register   register   
 ----------------------------------------------------------------------------
 verify       W  email,      -           /noPsych    unknown NIP
                 mode,pwd    
-                            nip         /newPwd     request new pwd
+                            email       /newPwd     request new pwd
 
-                            nip         ackCheck.h  ack nonzero: enter ack
+                            -           /pwdError   incorrect pwd
 
-                            nip         action.h    login OK
+                            email       ackCheck.h  ack nonzero: enter ack
+
+                            email       action.h    login OK
+----------------------------------------------------------------------------
+/pwdError    -  -           -           /psych      try again
 ----------------------------------------------------------------------------
 /noPsych     -  -           -           /home       back home
 
@@ -204,13 +208,13 @@ verify       W  email,      -           /noPsych    unknown NIP
 ----------------------------------------------------------------------------
 /newPwd      -  -           -           /psych      new pwd sent to e-mail
 ----------------------------------------------------------------------------
-ackCheck.h   -  nip         =           ackCheck    
+ackCheck.h   -  email       =           ackCheck    
 ----------------------------------------------------------------------------
-ackCheck     -  nip         =           action.h    ack OK: reset to 0
+ackCheck     -  email       =           action.h    ack OK: reset to 0
 
                             =           ackError.h  ack error
 ----------------------------------------------------------------------------
-ackError.h   -  nip         =           ackCheck.h  try again
+ackError.h   -  email       =           ackCheck.h  try again
 ----------------------------------------------------------------------------
 /register    -  -           nip,pwd,    addPsych    register as new psych.
                             name,etc.               
@@ -218,13 +222,13 @@ ackError.h   -  nip         =           ackCheck.h  try again
 addPsych     -  nip,pwd                 knownPsych.halready registered
                 name,etc.   
 
-                            nip         ackCheck.h  registered: verify ack
+                            email       ackCheck.h  registered: verify ack
 ----------------------------------------------------------------------------
 knownPsych.h -  -           -           /register   try again to register
 
                             -           /home       back home
 ----------------------------------------------------------------------------
-action.h     -  nip         =           client.h    client-related actions  
+action.h     -  email       =           client.h    client-related actions  
 
                             =           profile.h   change own data         
 
@@ -232,7 +236,7 @@ action.h     -  nip         =           client.h    client-related actions
 
                             =           contact.h   contact the 3ppq team   
 ----------------------------------------------------------------------------
-client.h     -  nip         =           profile.h   change own data         
+client.h     -  email       =           profile.h   change own data         
 
                             =           data.h      handle collected data   
 
@@ -241,30 +245,30 @@ client.h     -  nip         =           profile.h   change own data
                             =,          newClient   define new client
                             client-data         
 ----------------------------------------------------------------------------
-profile.h    -  nip         =           client.h    client-related actions  
+profile.h    -  email       =           client.h    client-related actions  
 
                             =           data.h      handle collected data   
 
                             =           contact.h   contact the 3ppq team   
 ----------------------------------------------------------------------------
-contact.h    -  nip         =           client.h    client-related actions  
+contact.h    -  email       =           client.h    client-related actions  
 
                             =           profile.h   change own data         
 
                             =           data.h      handle collected data   
 ----------------------------------------------------------------------------
-data.h       -  nip         =           client.h    client-related actions  
+data.h       -  email       =           client.h    client-related actions  
 
                             =           profile.h   change own data
 
                             =           contact.h   contact the 3ppq team   
 ----------------------------------------------------------------------------
-newClient    -  nip,        nip         clexists.h  client exists, try again
+newClient    -  nip,        email       clexists.h  client exists, try again
                 client-data             
 
-                            nip         client.h                
+                            email       client.h                
 ----------------------------------------------------------------------------
-clexists.h   -  nip         =           client.h    
+clexists.h   -  email       =           client.h    
 ============================================================================
 
 

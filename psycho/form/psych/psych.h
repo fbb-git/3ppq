@@ -48,6 +48,8 @@ class Psych
         void process();
 
     private:
+        void homePage();
+
         void tryAdd();
         bool acceptSignup();
 

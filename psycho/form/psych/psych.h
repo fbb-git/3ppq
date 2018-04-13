@@ -48,26 +48,31 @@ class Psych
         void process();
 
     private:
+        bool get();
+        std::string emailKey() const;   // get key from cgi.param1("email")
         void homePage();
+
+        void verify();
+        void notRegistered();
+        void confirmNewPwd();
+
+
+        void login();
+        bool pwdMatch() const;
+        void requestAck();
+
 
         void tryAdd();
         bool acceptSignup();
 
-        void verify();
         void noPwd();
 
         void verifyAck();
 
         void client();                  // WIP
 
-        std::string nipKey() const; // get key from cgi.param1("nip")
-
-        bool pwdMatch() const;
-
         std::string toString() const;
-        bool get();
 
-        void unknown();
         char const *genderText() const;
 
         static std::string newPassword();

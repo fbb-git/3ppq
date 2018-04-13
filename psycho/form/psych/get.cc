@@ -4,11 +4,11 @@ bool Psych::get()
 {
     string data;
 
-    d_data.get(&data, nipKey());
+    d_data.get(&data, emailKey());
 
     if (data.empty())
     {
-        unknown();
+        notRegistered();
         return false;
     }
 

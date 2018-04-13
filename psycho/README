@@ -1,5 +1,4 @@
 1.  Directory organization
-2.  Psychologist FSA
 3.  Webserver requirements
 4.  New FSA diagram
 
@@ -48,70 +47,6 @@ setup               - initial libreoffice-impress .odp file containing the
 src                 - source files of related programs
 support             - source files of the support library
 VERSION             - link to form/VERSION
-
-
-2. Psychologist FSA
-===================
-
-start, psych and client are pseudo states: reached by loading the /index.html,
-/psych.html or /client.html www pages
-
-all Psych states also define type=psych
-all Client states also define type=client
-
-By passing a variable as hidden value the receiving html page receives it. It may be retrieved using
-document.getElementsByName("nip")[0].value;
-
-
-
-----------------------------------------------------------------------------------------------------------------------------------------
-                            Psych-fun or                                                        
-state       invars          wwww/ file          html-file       js              out-vars        next state      description
-----------------------------------------------------------------------------------------------------------------------------------------
-start       -               /index.html         -               -               -               psych           
-                                                                                                client
-----------------------------------------------------------------------------------------------------------------------------------------
-psych       -               /psych.html         -               psych           nip,pwd         verify          verify UN/PW
-                                                                                                noPwd           new Pwd sent by mail
-                                                                                                signup          sign up as NIP user
-                                                                                                
-verify      nip,pwd         verify()            unknownpsych    unknownpsych    -               start           user cancels
-                                                                                                signup          user signs up
-                                                pwdfailure      -               -               psych           user tries again
-                                                                                                start           user cancels
-                                                verify          -               ack,nip,pwd     verifyAck       user's ack nr is verified
-                                                actions         -               nip             actions
-
-actions     nip             client()            client                       
-                                                                                                
-noPwd                       noPwd()             nopwd           -               -               start           continuation option
-                                                                                                psych           same
-                                                                
-signup                      /signup.html        -               signup          name,lastName,  tryAdd          try to add new user
-                                                                                gender,email,   
-                                                                                pwd             
-                                                                
-tryAdd      name,lastname,  tryAdd()                            
-            gender,email,     acceptSignup()    acceptsignup    -               -               psych           login after signing up
-            pwd                                 rejectsignup    -               -               signup          try again
-                                                                                                psych           try to login again
-                                                                                                start           user cancels
-
-verifyAck   ack,nip,pwd     verifyAck()         actions         -               -               start (wip)     TODO
-                                                ackerr          -               nip,pwd         start           user cancels
-                                                                                                verify          try again after ack error
-                                                                                -               
-----------------------------------------------------------------------------------------------------------------------------------------
-client      -               /client.html        -               client          ack             verify          verify ack
-
-verify      ack             verify()            unknownclient   -               -               start           client cancels
-                                                                -               -               client          try again
-                                                                                id              instruct        questionnaire instr.
-instruct    id              -                   -               
-
-quest       id,nr           quest()             quest           quest           id,nr           quest           present questions
-                                                thanks                                          start           end of questions
-----------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -183,38 +118,54 @@ Psych FSA:
 ============================================================================
                       CGI-vars          
 function/       --------------------
-html        OK  received    xferred     next        descr
+html        OK  received    xferred     next            descr
 ----------------------------------------------------------------------------
 /psych       +  -           email,      verify
                             pwd, mode
 
-                            -           /register   register   
+                            -           /register       register   
 ----------------------------------------------------------------------------
-verify       W  email,      -           /noPsych    unknown NIP
-                mode,pwd    
-                            email       /newPwd     request new pwd
-
-                            -           /pwdError   incorrect pwd
-
-                            email       ackCheck.h  ack nonzero: enter ack
-
-                            email       action.h    login OK
+verify       +  email,      -           notregistered.h unknown email
+                mode,pwd               
+                            email       confirmnewpwd.h request new pwd
+                                       
+                            -           pwderror.h      incorrect pwd
+                                       
+                            email       ackcheck.h      ack nonzero
+                                       
+                            email       action.h        login OK
 ----------------------------------------------------------------------------
-/pwdError    -  -           -           /psych      try again
+confirmnewpwd.h + email     -           /psych      try again to login
+
+                            email       newPwd      change the pwd
 ----------------------------------------------------------------------------
-/noPsych     -  -           -           /home       back home
+notregistered.h + -         -           /psych      try again
 
                             -           /register   try to register
+                                        
+                            -           /home       back home
 ----------------------------------------------------------------------------
-/newPwd      -  -           -           /psych      new pwd sent to e-mail
-----------------------------------------------------------------------------
-ackCheck.h   -  email       =           ackCheck    
-----------------------------------------------------------------------------
-ackCheck     -  email       =           action.h    ack OK: reset to 0
+pwderror.h   +  -           -           /psych      try again
 
-                            =           ackError.h  ack error
+                            -           /home       back home
 ----------------------------------------------------------------------------
-ackError.h   -  email       =           ackCheck.h  try again
+/newPwd      W  email       email       newPwd      new pwd sent to e-mail
+
+                            -           /psych      canceled new pwd request
+----------------------------------------------------------------------------
+newPwd      -  email        -           /psych      login after pwd-change
+----------------------------------------------------------------------------
+ackcheck.h   +  email       =,ack       ackCheck    
+----------------------------------------------------------------------------
+ackCheck     +  email,ack   email       action.h    ack OK: reset to 0
+
+                            email       ackerror.h  ack error
+----------------------------------------------------------------------------
+ackerror.h   W  email       =           ackError    try again
+            
+                                        /home       back home
+----------------------------------------------------------------------------
+ackError     -  email       =           ackcheck.h  try again
 ----------------------------------------------------------------------------
 /register    -  -           nip,pwd,    addPsych    register as new psych.
                             name,etc.               
@@ -329,11 +280,3 @@ thanks       -  login1,     -           /home
 /noclient    -  -           -           /client     try again
                                         /home
 ============================================================================
-
-
-
-
-
-
-
-

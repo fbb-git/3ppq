@@ -1,0 +1,7 @@
+function validate() 
+{
+    var email = document.forms["form"]["email"].value;
+
+    addHidden('state',  "");
+    addHidden('type',   'psych');
+}

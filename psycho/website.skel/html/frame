@@ -1,0 +1,13 @@
+    <script src="/js/preamble.js"></script>
+    <script src="/js/XXX.js"></script>
+</head>
+
+<body class="full"> 
+<div class="container">
+
+<header class='title'>
+          Persoonlijkheid in perspectief
+</header>
+
+<form name="form" action="/bin/form" onsubmit="return validate()" 
+      method="post">

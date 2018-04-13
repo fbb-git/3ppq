@@ -1,0 +1,21 @@
+#include "psych.ih"
+
+void Psych::requestAck()
+{
+    StrVector replacements{
+                    genderText(),       // $0
+                    d_lastName,         // $1
+                    to_string(d_ack)    // $2
+                };
+
+    g_mailer.sendmail(
+                d_email, 
+                "3ppq.nl verification",
+                DollarText::replaceStream(
+                                g_options.mail() + "requestack", replacements
+                            ) 
+            );
+
+    d_display.append("email");
+    d_display.out(g_options.html() + "ackcheck", replacements);
+}

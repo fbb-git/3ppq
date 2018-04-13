@@ -1,6 +1,6 @@
 #include "psych.ih"
 
-string Psych::nipKey() const
+string Psych::emailKey() const
 {
-    return Tools::md5hash(d_cgi.param1("nip"));
+    return Tools::md5hash(d_cgi.param1("email"));
 }

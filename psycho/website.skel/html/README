@@ -9,15 +9,19 @@ Pages are included after copying
         <style></style>
 
 to cout. Note that the head is not closed.
-Pages may include stuff that belongs to the head, e.g.,
+Pages may include stuff that belongs to the head: start by including 'head':
 
     <script src="/js/preamble.js"></script>
-    <script src="/js/psych.js"></script>
+    <script src="/js/XXX.js"></script>
+</head>
 
-and then should do
+<body class="full"> 
+<div class="container">
 
-    </head>
-    <body>
+<header class='title'>
+          Persoonlijkheid in perspectief
+</header>
+
 
 followed by the body's contents.
 At the end, </body> is provided by the 'form' program

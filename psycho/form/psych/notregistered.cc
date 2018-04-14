@@ -2,8 +2,8 @@
 
 void Psych::notRegistered()
 {
-    g_log << "NIP `" << d_cgi.param1("email") << "' not registered" << endl;
+    Tools::debug() << "notRegistered: `" << d_cgi.param1("email") << '\'' << 
+                                                                        endl;
     Tools::delay();
-
-    Display{ g_options.html() + "notregistered" };
+    d_display.out(g_options.html() + "notregistered.h");
 }

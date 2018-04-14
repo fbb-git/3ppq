@@ -9,8 +9,6 @@
 
 <h1>Niet geregistreerd e-mail adres</h1>
 
-<hr>
-
 Het door u vermelde e-mail adres is bij 3PPQ niet bekend.
 
 <p>
@@ -22,12 +20,12 @@ aanmelden als gebruiker van de 3PPQ faciliteiten door op de knop
 <em>Aanmelden</em> te klikken.
 <p>
 
-Door op de knop <em>Aanmelden</em> te klikken keert u terug naar de
+Door op de knop <em>3PPQ</em> te klikken keert u terug naar de
 3PPQ-homepage. 
 <p>
 
 <form>
-<div style="background-color:#dddddd">
+<div class=lightgrey>
 <table>
 <tr>
     <td>

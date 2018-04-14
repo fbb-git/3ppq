@@ -5,21 +5,22 @@ void Mailer::sendmail(string to, string const &subject,
 {
     string mailRequest = g_config.findKeyTail("mail:");
 
-    if (mailRequest == "send" or mailRequest.empty())
+    if (mailRequest == "log")
     {
-        if (mailRequest == "log")
-            g_log << "would have sent mail to `" << to << "', subject: `" <<
-                    subject << "', contents: `" << txt.substr(0, 20) << 
+        Tools::stdLog() << "would have sent mail to `" << to << 
+                    "', subject: `" << subject << "', contents: `" << txt <<
                     '\'' << endl; 
-        else if (mailRequest.find('@' != string::npos))
-            to = mailRequest;
-        else 
-        {
-            if (mailRequest != "off")
-                g_log << "ignoring config-file specification `mail: " << 
-                            mailRequest << '\'' << endl;
-            return;
-        }
+        return; 
+    }
+
+    if (mailRequest == "off")
+        return;
+
+    if (mailRequest.find('@' != string::npos))
+    {
+        Tools::stdLog() << "mail to " << to << " is sent to " << 
+                            mailRequest << endl;
+        to = mailRequest;
     }
 
     istringstream text{ txt };

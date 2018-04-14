@@ -47,6 +47,16 @@ Plaats de muis boven een optie voor een korte beschrijving van hun functie.
 
 <hr>
 
-Druk op deze knop om terug te keren naar de 3PPQ <em>home-page</em>: 
-        <input value="Homepage" type="submit"
-         onclick="window.open('/', '_self'); return false;">
+Door op de knop <em>3PPQ</em> te klikken keert u terug naar de
+3PPQ-homepage. 
+<p>
+
+<div class=lightgrey>
+<table style="border-collapse: collapse;">
+<tr class=darkrow>
+<td>
+    <input type="submit" value="3PPQ" 
+        onclick="window.open('/index.html', '_self'); return false;">
+</td>
+</table>
+</div>

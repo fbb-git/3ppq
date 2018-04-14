@@ -16,6 +16,6 @@ void Psych::requestAck()
                             ) 
             );
 
-    d_display.append("email");
-    d_display.out(g_options.html() + "ackcheck", replacements);
+    d_display.append({ "email", "pwd", "mode" });
+    d_display.out(g_options.html() + "requestack.h", replacements);
 }

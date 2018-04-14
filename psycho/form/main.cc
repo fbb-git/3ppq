@@ -16,16 +16,17 @@ Mailer      g_mailer;
 int main()
 try
 {
-g_log << 1 << endl;
+    Tools::setLogLevel();
+
+    Tools::debug() << "start" << endl;
 
     Handler handler;                    // Form handling object
-
-g_log << 2 << endl;
 
     handler.process();                  // process incoming forms
 }
 catch (exception const &exc)
 {
+    g_log.setLevel(0);
     g_log << "EXCEPTION: " << exc.what() << endl;
 }
 

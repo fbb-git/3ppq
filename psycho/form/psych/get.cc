@@ -21,7 +21,6 @@ bool Psych::get()
     Tools::readN(in, &d_ack);
     Tools::readN(in, &d_flags);
     Tools::readN(in, &d_ID);
-    Tools::readN(in, &d_nip);
     d_pwdHash.resize(Tools::HASH_SIZE);
     Tools::read(in, &d_pwdHash.front(), Tools::HASH_SIZE);
 
@@ -51,9 +50,15 @@ bool Psych::get()
 
     in.str(decrypted);                      // obtain the confidential data
     Tools::readN(in, &d_gender, 1);
+    Tools::readN(in, &d_nip);
+    Tools::readN(in, &d_field);
     getline(in, d_name);
     getline(in, d_lastName);
     getline(in, d_email);
 
     return true;
 }
+
+
+
+

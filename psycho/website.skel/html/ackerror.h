@@ -9,9 +9,6 @@
           Persoonlijkheid in perspectief
 </header>
 
-<form name="form" action="/bin/form" 
-      onsubmit="return validate()" method="post">
-
 <h1>Aanmeldingsverificatienummer onjuist</h1>
 
 <!-- img src="/images/aanmelden.jpg" style="float:right"-->
@@ -24,7 +21,6 @@ vullen, of klik op de knop <em>3PPQ</em> om terug te keren naar de
 
 <form name="form" action="/bin/form" 
       onsubmit="return validate()" method="post">
-
 
 <div style="background-color:#dddddd">
 <table>

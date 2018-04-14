@@ -32,11 +32,12 @@ class Psych
     uint16_t    d_ack;              // if != 0 then e-mail acknowledge
     uint16_t    d_flags;            // room for 16 bit-flags
     uint16_t    d_ID;               // identification number
-    uint64_t    d_nip;
     std::string d_pwdHash;          // MD5 hash of the password (16 bytes)
         
         // encrypted section:
     bool        d_gender;           // 0: female, 1: male
+    uint64_t    d_nip;
+    uint8_t     d_field;            // occupation field(s)
     std::string d_name; 
     std::string d_lastName;
     std::string d_email;
@@ -55,19 +56,20 @@ class Psych
         void verify();
         void notRegistered();
         void confirmNewPwd();
-
+        void newPwd();
 
         void login();
         bool pwdMatch() const;
         void requestAck();
 
+        void addPsych();
+        uint8_t parseField();
+        bool validRegistrationData(uint64_t *nip, uint8_t *field);
 
-        void tryAdd();
-        bool acceptSignup();
+        void verifyAck();
 
         void noPwd();
 
-        void verifyAck();
 
         void client();                  // WIP
 

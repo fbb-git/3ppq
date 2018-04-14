@@ -3,8 +3,7 @@
 #include "../support/global/global.h"
 #include "../support/options/options.h"
 #include "../support/mailer/mailer.h"
-
-#include "../support/display/display.h"
+#include "../support/tools/tools.h"
 
 #include "handler/handler.h"
 

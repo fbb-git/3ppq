@@ -1,6 +1,6 @@
 #include "psych.ih"
 
-bool Psych::acceptSignup()
+bool Psych::accept()
 {
     d_nip = Tools::valueOr(d_cgi.param1("nip"), 0);
 

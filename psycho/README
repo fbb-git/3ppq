@@ -97,186 +97,208 @@ hyperlink for opening the home-page is provided.
 
 xferred = means: received vars are all transferred to the next element
 
+T: to do, W: WIP
 
-Home page:
+17: increment BEFORE defining a state
+    (this is the LAST USED state number)
+    prefix W to indicate: available, but under construction.
+
+Home page:  
 ==========
-============================================================================
-                      CGI-vars          
-function/       --------------------
-html        OK  received    xferred     next        descr
-----------------------------------------------------------------------------
-/home        +  -           -           /psych      psychologists entry
-
-                            -           /client     client entry
-
-                            -           /register   psych. registration
-============================================================================
-
-
+=============================================================================
+                         CGI-vars          
+   function/       --------------------
+   html            received    xferred     next        descr
+-----------------------------------------------------------------------------
+ 1 /home           -           -         2 /psych      psychologists entry pt
+   
+                               -           /client     client entry pt
+   
+                               -         3 /register   psych. registration
+=============================================================================
+   
+   
 Psych FSA:
 ==========
-============================================================================
-                      CGI-vars          
-function/       --------------------
-html        OK  received    xferred     next            descr
-----------------------------------------------------------------------------
-/psych       +  -           email,      verify
-                            pwd, mode
-
-                            -           /register       register   
-----------------------------------------------------------------------------
-verify       +  email,      -           notregistered.h unknown email
-                mode,pwd               
-                            email       confirmnewpwd.h request new pwd
-                                       
-                            -           pwderror.h      incorrect pwd
-                                       
-                            email       ackcheck.h      ack nonzero
-                                       
-                            email       action.h        login OK
-----------------------------------------------------------------------------
-confirmnewpwd.h + email     -           /psych      try again to login
-
-                            email       newPwd      change the pwd
-----------------------------------------------------------------------------
-notregistered.h + -         -           /psych      try again
-
-                            -           /register   try to register
-                                        
-                            -           /home       back home
-----------------------------------------------------------------------------
-pwderror.h   +  -           -           /psych      try again
-
-                            -           /home       back home
-----------------------------------------------------------------------------
-/newPwd      W  email       email       newPwd      new pwd sent to e-mail
-
-                            -           /psych      canceled new pwd request
-----------------------------------------------------------------------------
-newPwd      -  email        -           /psych      login after pwd-change
-----------------------------------------------------------------------------
-ackcheck.h   +  email       =,ack       ackCheck    
-----------------------------------------------------------------------------
-ackCheck     +  email,ack   email       action.h    ack OK: reset to 0
-
-                            email       ackerror.h  ack error
-----------------------------------------------------------------------------
-ackerror.h   W  email       =           ackError    try again
-            
-                                        /home       back home
-----------------------------------------------------------------------------
-ackError     -  email       =           ackcheck.h  try again
-----------------------------------------------------------------------------
-/register    -  -           nip,pwd,    addPsych    register as new psych.
-                            name,etc.               
-----------------------------------------------------------------------------
-addPsych     -  nip,pwd                 knownPsych.halready registered
-                name,etc.   
-
-                            email       ackCheck.h  registered: verify ack
-----------------------------------------------------------------------------
-knownPsych.h -  -           -           /register   try again to register
-
-                            -           /home       back home
-----------------------------------------------------------------------------
-action.h     -  email       =           client.h    client-related actions  
-
-                            =           profile.h   change own data         
-
-                            =           data.h      handle collected data   
-
-                            =           contact.h   contact the 3ppq team   
-----------------------------------------------------------------------------
-client.h     -  email       =           profile.h   change own data         
-
-                            =           data.h      handle collected data   
-
-                            =           contact.h   contact the 3ppq team   
-
-                            =,          newClient   define new client
-                            client-data         
-----------------------------------------------------------------------------
-profile.h    -  email       =           client.h    client-related actions  
-
-                            =           data.h      handle collected data   
-
-                            =           contact.h   contact the 3ppq team   
-----------------------------------------------------------------------------
-contact.h    -  email       =           client.h    client-related actions  
-
-                            =           profile.h   change own data         
-
-                            =           data.h      handle collected data   
-----------------------------------------------------------------------------
-data.h       -  email       =           client.h    client-related actions  
-
-                            =           profile.h   change own data
-
-                            =           contact.h   contact the 3ppq team   
-----------------------------------------------------------------------------
-newClient    -  nip,        email       clexists.h  client exists, try again
-                client-data             
-
-                            email       client.h                
-----------------------------------------------------------------------------
-clexists.h   -  email       =           client.h    
-============================================================================
-
-
-Client FSA:
-===========
-============================================================================
-                      CGI-vars          
-function/       --------------------
-html        OK  received    produced    next        descr
-----------------------------------------------------------------------------
-/client      -   -          login1,     verify      client logs in
-                            login2
-----------------------------------------------------------------------------
-verify       -  login1,     -           /noclient   login codes unkown
-                login2       
-
-                            =           others.h    provide e-mail for others
-
-                            =,          instruct.h  provide instruction
-                            variables,
-----------------------------------------------------------------------------
-others.h     -  login1,     =,          others      store e-mail
-                login2,     3 x e-mail
-----------------------------------------------------------------------------
-others       -  login1,     login1,     instruct.h  provide instruction
-                login2,     login2,     (e-mail ignored if already specified)
-                3 x e-mail  
-----------------------------------------------------------------------------
-instruct.h   -  login1,     =,          quest       present questions
-                login2,     nr,data,
-                variables,            
-                            
-----------------------------------------------------------------------------
-quest        -  login1,     =           quest.h
-                login2      
-                variables,  
-                nr,data     
-
-                            =           complete.h
-----------------------------------------------------------------------------
-quest.h      -  login1,     =           quest
-                login2      
-                variables,  
-                nr,data     
-----------------------------------------------------------------------------
-complete.h   -  login1,     =           quest
-                login2      
-                variables,  
-                nr,data     
-
-                            =           thanks
-----------------------------------------------------------------------------
-thanks       -  login1,     -           /home
-                login2    
-                variables,
-                nr,data   
-----------------------------------------------------------------------------
-/noclient    -  -           -           /client     try again
-                                        /home
-============================================================================
+=============================================================================
+                         CGI-vars          
+   function/       --------------------
+   html            received     xferred     next            descr
+------------------------------------------------------------------------------
+ 2 /psych          -            email,    4 verify
+                                pwd, 
+                                mode: 
+                                noPwd,login
+                                
+                                -         3 /register       register   
+-----------------------------------------------------------------------------
+ 3 /register        -           nip,pwd,  8 addPsych        new registration
+                                name,etc.               
+                                          1 /home
+------------------------------------------------------------------------------
+ 4 verify          email,       -         5 notregistered.h unknown email
+                   mode,pwd               
+                                email     6 confirmnewpwd.h request new pwd
+                                          
+                                -         7 pwderror.h      incorrect pwd
+                                          
+                                =        12 requestack.h    ack is nonzero
+                                
+                                          
+                                email   W17 action.h        login OK
+-----------------------------------------------------------------------------
+ 5 notregistered.h -            -         2 /psych          login
+   
+                                -         3 /register       register
+                                           
+                                -         1 /home
+-----------------------------------------------------------------------------
+ 6 confirmnewpwd.h email        -         2 /psych      try again to login
+   
+                                email    15 newPwd      change the pwd
+-----------------------------------------------------------------------------
+ 7 pwderror.h       -           -         2 /psych      try again
+   
+                                -         1 /home
+-----------------------------------------------------------------------------
+ 8 addPsych     -   nip,pwd               9 knownpsych.h    already registered
+                    name,etc.   
+                                         10 rejectpsych.h   invalid data  
+                    
+                                email    11 ackcheck.h  registered: verify ack
+------------------------------------------------------------------------------
+ 9 knownpsych.h     -           -         3 /register   try again to register
+                    
+                                          2 /psych      or login
+                    
+                                -         1 /home
+------------------------------------------------------------------------------
+10 rejectpsych.h    -           -         3 /register   try again to register
+                    
+                                -         1 /home
+------------------------------------------------------------------------------
+11 ackcheck.h       -           -         2 /psych
+                    
+                                -         1 /home
+------------------------------------------------------------------------------
+12 requestack.h     email,mode  =,ack    13 verifyAck
+                    pwd
+-----------------------------------------------------------------------------
+13 verifyAck       email,ack    email   W17 action.h    ack OK: reset to 0
+                   mode,pwd
+                                email    14 ackerror.h  ack error
+                                mode,pwd
+-----------------------------------------------------------------------------
+14 ackerror.h       email,mode  =         4 verify      try again
+                    pwd
+                                          1 /home
+------------------------------------------------------------------------------
+15 newPwd          email        -        16 newpwd.h    info: newpwd by mail
+-----------------------------------------------------------------------------
+16 newpwd.h         -           -         2 /psych      login again
+   
+                                -         1 /home
+   
+-----------------------------------------------------------------------------
+17 action.h     -   email       =           client.h    client-related actions
+(W)                 
+                                =           profile.h   change own data       
+                    
+                                =           data.h      handle collected data 
+                    
+                                =           contact.h   contact the 3ppq team 
+------------------------------------------------------------------------------
+   client.h     -   email       =           profile.h   change own data       
+                    
+                                =           data.h      handle collected data 
+                    
+                                =           contact.h   contact the 3ppq team 
+                    
+                                =,          newClient   define new client
+                                client-data         
+------------------------------------------------------------------------------
+   profile.h    -   email       =           client.h    client-related actions
+                    
+                                =           data.h      handle collected data 
+                    
+                                =           contact.h   contact the 3ppq team 
+------------------------------------------------------------------------------
+   contact.h    -   email       =           client.h    client-related actions
+                    
+                                =           profile.h   change own data       
+                    
+                                =           data.h      handle collected data 
+------------------------------------------------------------------------------
+   data.h       -   email       =           client.h    client-related actions
+                    
+                                =           profile.h   change own data
+                    
+                                =           contact.h   contact the 3ppq team 
+------------------------------------------------------------------------------
+   newClient    -   nip,        email       clexists.h  client exists, 
+                    client-data                         try again
+                    
+                                email       client.h                
+------------------------------------------------------------------------------
+   clexists.h   -   email       =           client.h    
+==============================================================================
+                    
+                    
+Client FSA:         
+===========         
+==============================================================================
+                          CGI-vars          
+   function/        --------------------
+   html        OK   received    produced    next        descr
+------------------------------------------------------------------------------
+   /client      -    -          login1,     verify      client logs in
+                                login2
+------------------------------------------------------------------------------
+   verify       -   login1,     -           /noclient   login codes unkown
+                    login2       
+                    
+                                =           others.h    provide e-mail for 
+                                                        others
+                    
+                             ====,          instruct.h  provide instruction
+                                variables,
+------------------------------------------------------------------------------
+   others.h     -   login1,  ====,          others      store e-mail
+                    login2,     3 x e-mail
+------------------------------------------------------------------------------
+   others       -   login1,     login1,     instruct.h  provide instruction
+                    login2,     login2,                 (e-mail ignored if 
+                    3 x e-mail                          already specified)
+------------------------------------------------------------------------------
+   instruct.h   -   login1,  ====,          quest       present questions
+                    login2,     nr,data,
+                    variables,            
+                                
+------------------------------------------------------------------------------
+   quest        -   login1,     =           quest.h
+                    login2      
+                    variables,  
+                    nr,data     
+                    
+                                =           complete.h
+------------------------------------------------------------------------------
+   quest.h      -   login1,     =           quest
+                    login2      
+                    variables,  
+                    nr,data     
+------------------------------------------------------------------------------
+   complete.h   -   login1,     =           quest
+                    login2      
+                    variables,  
+                    nr,data     
+                    
+                                =           thanks
+------------------------------------------------------------------------------
+   thanks       -   login1,     -         1 /home
+                    login2    
+                    variables,
+                    nr,data   
+------------------------------------------------------------------------------
+   /noclient    -   -           -           /client     try again
+                                         1 /home
+=============================================================================

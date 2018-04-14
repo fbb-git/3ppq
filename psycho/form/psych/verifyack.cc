@@ -1,6 +1,6 @@
 #include "psych.ih"
 
-void Psych::ackCheck()
+void Psych::verifyAck()
 {
     LockGuard lg{ d_data.lg() };
 
@@ -12,14 +12,15 @@ void Psych::ackCheck()
     uint16_t ack = Tools::valueOr(d_cgi.param1("ack"), 0);
     if (ack == 0 || ack != d_ack)
     {
-        d_display.out(g_options.html() + "ackerror");
+        d_display.append({ "email", "mode", "pwd" });
+        d_display.out(g_options.html() + "ackerror.h");
         return;
     }
 
     d_ack = 0;
     d_data.update(emailKey(), toString());
 
-    d_display.out(g_options.html() + "actions");
+    d_display.out(g_options.html() + "actions.h");
 }
 
 

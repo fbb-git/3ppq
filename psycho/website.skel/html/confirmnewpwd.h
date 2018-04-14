@@ -37,8 +37,3 @@ knop <em>Login</em>, om terug te keren naar de login-pagina.
 </tr>
 </table>
 </div>
-
-
-
-
-

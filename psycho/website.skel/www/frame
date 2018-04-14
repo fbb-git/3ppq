@@ -1,30 +1,42 @@
+<!DOCTYPE html>
+<html><head>
+    <link rel="stylesheet" href="/css/3ppq.css">
+    <meta http-equiv="content-type" content="text/html;
+          charset=windows-1252">
+
     <script src="/js/preamble.js"></script>
     <script src="/js/XXX.js"></script>
 </head>
 
-<body class="full"> 
+<body class="full">
+
 <div class="container">
 
 <header class='title'>
-          Persoonlijkheid in perspectief
+            Persoonlijkheid in perspectief
 </header>
 
-<form name="form" action="/bin/form" onsubmit="return validate()" 
-      method="post">
+======================================================================
+    <img src="/images/3ppqUL.jpg" style="float:right">
+
+<h1>    </h1>
+
+CONTENTS
 
 
 
-
+==================================================================
 Klik op de knop <em>Inloggen</em> om in te loggen.
 <p>
 Door op de knop <em>3PPQ</em> te klikken keert u terug naar de
 3PPQ-homepage. 
 <p>
 
-<div class=lightgrey>
+<div class="lightgrey">
 <table style="border-collapse: collapse;">
-<tr class=darkrow>
+<tr class="darkrow">
 
+<td class=right>
 <td>
     <input type="submit" value="Inloggen" 
         onclick="window.open('/psych.html', '_self'); return false;">
@@ -37,7 +49,6 @@ Door op de knop <em>3PPQ</em> te klikken keert u terug naar de
     <input type="submit" value="3PPQ" 
         onclick="window.open('/index.html', '_self'); return false;">
 </td>
-</table>
 </div>
 
 
@@ -48,3 +59,8 @@ Door op de knop <em>3PPQ</em> te klikken keert u terug naar de
         <a href="mailto:3ppq@3ppq.nl">3ppq@3ppq.nl</a>
 </footer>
 ==================================================================
+
+
+</div>  <!-- container -->
+</body></shtml>
+

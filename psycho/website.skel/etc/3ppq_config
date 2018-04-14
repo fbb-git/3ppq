@@ -10,3 +10,8 @@ mail: log
     # omit if no delay after specifying incorrect passwd etc.
     # otherwise: delay in seconds
 # delay: 5
+
+    # log: off  (or not specified)  -- nothing is logged
+    # log: debug                    -- all messages are logged
+    # log: std                      -- all but the debug msgs are logged
+log: debug

@@ -17,8 +17,6 @@
 #include <bobcat/isymcryptstream>
 #include <bobcat/cgi>
 
-#include "../global/global.h"
-
 using namespace std;
 using namespace FBB;
 

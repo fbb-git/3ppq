@@ -20,7 +20,7 @@ Klik op de knop <em>Inloggen</em> om in te loggen, of klik op de knop
 <p>
 
 <form>
-<div style="background-color:#dddddd">
+<div class=lightgrey>
 <table>
 <tr>
     <td>

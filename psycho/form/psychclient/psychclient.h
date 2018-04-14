@@ -20,10 +20,9 @@ class PsychClient
     std::string d_lastName;
     std::string d_email;
 
-//    char d_data[Tools::N_OTHER + 2][Tools::N_ITEMS];
-
     public:
-        bool set(FBB::CGI &cgi);
+        // PASSIVE!
+        bool set(uint16_t psychID, uint8_t login0, FBB::CGI &cgi);
 
         std::string toString() const;  // includes encrypted person-data
         void get(std::string const &data);

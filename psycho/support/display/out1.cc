@@ -2,6 +2,8 @@
 
 void Display::out(string const &path)
 {
+    state(path);
+
     ifstream in;
     Exception::open(in, path);
 

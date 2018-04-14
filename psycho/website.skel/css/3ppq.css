@@ -8,6 +8,11 @@
     background: #dddddd;
 }
 
+.lightgrey        /* dark table rows */
+{
+    background: #f0f0f0;
+}
+
 .full               /* used to fillup the page (body) completely */
 {
     margin:0px 5px;        /* left, right: 5px */

@@ -5,16 +5,14 @@ string Psych::toString() const
     ostringstream out;                      // encrypt confidential data
 
     Tools::writeN(out, &d_gender, 1);
+    Tools::writeN(out, &d_nip);
+    Tools::writeN(out, &d_field);
     out <<  d_name      << '\n' <<
             d_lastName  << '\n' <<
             d_email     << '\n';
 
-g_log << "Psych::toString encrypt conf.data" << endl;
-
     string iv = Tools::iv();
     string encrypted = Tools::encrypt(iv, out.str());
-
-g_log << "encrypted " << encrypted.size() << " bytes" << endl;
 
     out.str("");                            // convert client info to string
     for (auto const &client: d_client)    
@@ -26,8 +24,6 @@ g_log << "encrypted " << encrypted.size() << " bytes" << endl;
     }
     string clientData = out.str();
 
-g_log << "clientData" << endl;
-
     out.str("");                            // write the Psych's data    
 
     Tools::write(out, iv);                  // first the encryption IV
@@ -35,7 +31,6 @@ g_log << "clientData" << endl;
     Tools::writeN(out, &d_ack);
     Tools::writeN(out, &d_flags);
     Tools::writeN(out, &d_ID);
-    Tools::writeN(out, &d_nip);
     Tools::write(out, d_pwdHash);
 
     uint16_t size = encrypted.size();       // write size of encrypted data
@@ -48,8 +43,6 @@ g_log << "clientData" << endl;
     if (size)
         Tools::write(out, clientData);      // write the client data
 
-g_log << "total length: " << out.str().size() << endl;
-    
     return out.str();                       // return the binary string    
 }
 

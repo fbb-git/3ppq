@@ -31,6 +31,7 @@ class Display
 
     private:
         void end();
+        static void state(std::string const &path);
 };
 
 inline void Display::append(char const *param)

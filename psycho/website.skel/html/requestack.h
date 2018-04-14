@@ -1,5 +1,5 @@
     <script src="/js/preamble.js"></script>
-    <script src="/js/ackcheck.js"></script>
+    <script src="/js/requestack.js"></script>
 </head>
 
 <body class="full"> 
@@ -17,16 +17,18 @@
 Geachte $0 $1,<p>
 
 U heeft per e-mail een verificatienummer ontvangen.<br>
-U kunt het ontvangen nummer hier invullen. Druk vervolgens op de
+U kunt het ontvangen nummer hieronder invullen. Druk vervolgens op de
 <tt>Enter</tt> toets: 
 
-<div style="background-color:#dddddd">
+<div class=lightgrey>
 <table>
 <tr>
-    <input type="text" name="ack" size="5">
+    <td>
+        Verificatienummer:
+    </td>
+    <td>
+        <input type="text" name="ack" size="5">
+    </td>
 </tr>
 </table>
 </div>
-
-
-

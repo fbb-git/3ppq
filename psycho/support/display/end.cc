@@ -2,9 +2,12 @@
 
 void Display::end()
 {
+    for (string append: d_append)
+        cout << append << '\n';
+
     cout << "\n"
             "</form>\n"
-            "<hr>\n";
+            "<br>\n";
 
     d_append.clear();
     cout.clear();

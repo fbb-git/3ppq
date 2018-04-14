@@ -1,71 +1,3 @@
-/Concept webteksten 3PPQ                     
-/
-/
-/ Homepage
-/
-/(Mogelijkheid om te switchen naar Engelse vertaling invoegen?)
-/
-/
-/                                       
-/                        Persoonlijkheid in perspectief
-/
-/De Drie Perspectieven Persoonlijkheids Questionnaire (3PPQ) is een instrument 
-/voor psychologisch persoonlijkheidsonderzoek, waarin het perspectief van de 
-/te onderzoeken persoon zelf, dat van anderen uit diens omgeving, en dat van 
-/de persoon daarop (metaperspectief) worden betrokken. Een beschrijving van de 
-/3PPQ staat in [dit artikel].
-/(Eventueel de samenvatting daarvan in een kader opnemen, gevolgd door [lees 
-/verder]).
-/
-/Met behulp van deze website kan dit onderzoek geautomatiseerd worden 
-/uitgevoerd.
-/
-/De 3PPQ is na registratie op deze website vrij te gebruiken door leden van 
-/het Nederlands Instituut van Psychologen (NIP). Andere belangstellende 
-/professionals die de 3PPQ willen afnemen kunnen hiertoe een verzoek indienen 
-/via info@3ppq.nl. 
-/(De simpelste manier is volgens mij om automatisch via de `vind een 
-/psycholoog' functie van de NIP-site te checken of iemand lid is (via naam en 
-/lidmaatschapsnummer). Bij een treffer krijgt de psycholoog inlogcodes om in 
-/het besloten gedeelte van onze website te komen. Zo niet, dan eventueel 
-/handmatig checken en met de betrokkene in overleg treden.) 
-/
-/
-/                            Inloggen als psycholoog
-/                                       
-/                                 leidt naar pagina 2
-/                    Inloggen om de vragenlijst in te vullen 
-/                                        
-/                          leidt naar pagina 3 
-/                                       
-/
-/
-/
-/Privacyverklaring (bijlage 6) in footer? 
-/ Psycholoog > loginpagina
-/
-/
-/Uw e-mailadres: -invulveld-
-/Uw wachtwoord:  -invulveld- 
-/                                     login
-/                                     login
-/
-/      leidt naar pagina 3  
-/
-/
-/
-/                             Wachtwoord vergeten?
-/    
-/      leidt naar pagina 2.1  
-/
-/
-/
-/Geen inloggegevens? U dient zich eenmalig te registreren om een 
-/gebruikersaccount aan te maken.
-/                                  Registreren
-/
-/      leidt naar pagina 2.2
-/
 FBB
 
  Psycholoog > loginpagina > reset wachtwoord
@@ -416,3 +348,73 @@ vragenlijst.
 Klik hier om uit te loggen.
 
 
+
+
+/Concept webteksten 3PPQ                     
+/
+/
+/ Homepage
+/
+/(Mogelijkheid om te switchen naar Engelse vertaling invoegen?)
+/
+/
+/                                       
+/                        Persoonlijkheid in perspectief
+/
+/De Drie Perspectieven Persoonlijkheids Questionnaire (3PPQ) is een instrument 
+/voor psychologisch persoonlijkheidsonderzoek, waarin het perspectief van de 
+/te onderzoeken persoon zelf, dat van anderen uit diens omgeving, en dat van 
+/de persoon daarop (metaperspectief) worden betrokken. Een beschrijving van de 
+/3PPQ staat in [dit artikel].
+/(Eventueel de samenvatting daarvan in een kader opnemen, gevolgd door [lees 
+/verder]).
+/
+/Met behulp van deze website kan dit onderzoek geautomatiseerd worden 
+/uitgevoerd.
+/
+/De 3PPQ is na registratie op deze website vrij te gebruiken door leden van 
+/het Nederlands Instituut van Psychologen (NIP). Andere belangstellende 
+/professionals die de 3PPQ willen afnemen kunnen hiertoe een verzoek indienen 
+/via info@3ppq.nl. 
+/(De simpelste manier is volgens mij om automatisch via de `vind een 
+/psycholoog' functie van de NIP-site te checken of iemand lid is (via naam en 
+/lidmaatschapsnummer). Bij een treffer krijgt de psycholoog inlogcodes om in 
+/het besloten gedeelte van onze website te komen. Zo niet, dan eventueel 
+/handmatig checken en met de betrokkene in overleg treden.) 
+/
+/
+/                            Inloggen als psycholoog
+/                                       
+/                                 leidt naar pagina 2
+/                    Inloggen om de vragenlijst in te vullen 
+/                                        
+/                          leidt naar pagina 3 
+/                                       
+/
+/
+/
+/Privacyverklaring (bijlage 6) in footer? 
+/ Psycholoog > loginpagina
+/
+/
+/Uw e-mailadres: -invulveld-
+/Uw wachtwoord:  -invulveld- 
+/                                     login
+/                                     login
+/
+/      leidt naar pagina 3  
+/
+/
+/
+/                             Wachtwoord vergeten?
+/    
+/      leidt naar pagina 2.1  
+/
+/
+/
+/Geen inloggegevens? U dient zich eenmalig te registreren om een 
+/gebruikersaccount aan te maken.
+/                                  Registreren
+/
+/      leidt naar pagina 2.2
+/

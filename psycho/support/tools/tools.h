@@ -7,6 +7,7 @@
 #include <fstream>
 
 #include "../types/types.h"
+#include "../global/global.h"
 
 namespace FBB
 {
@@ -20,15 +21,23 @@ class Tools
     public:
         enum 
         {
+            LOG_DEBUG = 0,
+            LOG_STD = 10,
+            LOG_OFF,
             N_OTHER = 3,            // assuming 1 x self, 1 x meta rating
             IV_SIZE = 8,
             KEY_SIZE = 16,
             HASH_SIZE = 16,
             N_QUESTIONS = 42,
+            MAX_PSYCH_FIELD = 16,
         };
     
         template <typename Type>
         static Type *as(size_t *skip, std::string const &str);
+
+        static void setLogLevel();  
+        static std::ostream &debug();       // debug emessage 
+        static std::ostream &stdLog();      // std log message
 
         static void delay();
 
@@ -146,5 +155,8 @@ class Tools
 #include "size1.f"
 #include "size2.f"
 #include "size3.f"
+
+#include "debug.f"
+#include "stdlog.f"
 
 #endif

@@ -18,5 +18,4 @@ Client::Client(CGI &cgi)
         getline(questions, line);
         d_lines.push_back(line);
     }
-    g_log << "First question: " << d_lines.front() << endl;
 }

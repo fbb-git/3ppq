@@ -8,17 +8,12 @@ function validate()
     var email =     form["email"].value;
     var pwd =       form["pwd"].value;
     var pwd2 =      form["pwd2"].value;
+    var field =     form["field"].value;
 
     if (name == "" || lastName == "" || email == "" || gender == "" ||
         pwd == "" || pwd2 == "")
     {
         alert("Alle velden moeten zijn ingevuld");
-        return false;
-    }
-
-    if (email.indexOf("@") == -1)
-    {
-        alert("Een e-mail adres moet een @ bevatten");
         return false;
     }
 
@@ -29,7 +24,7 @@ function validate()
     }
 
     addHidden("type",   "psych");
-    addHidden("state",  "tryAdd");
+    addHidden("state",  "addPsych");
 
     return true;
 } 

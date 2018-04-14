@@ -39,7 +39,7 @@
 </nav>                                                                      
  
 <p>
-<img src="/images/3ppq.jpg" style="float:right">
+<img src="/images/3ppqUL.jpg" style="float:right">
 
 De in de menubalk vermelde opties zijn nog niet operationeel.<p>
 

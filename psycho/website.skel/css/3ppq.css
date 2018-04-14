@@ -1,6 +1,8 @@
 .container          /* all info in the body up to the footer */
 {
     min-height: 85%;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .darkrow        /* dark table rows */
@@ -18,7 +20,7 @@
     margin:0px 5px;        /* left, right: 5px */
     padding:0;
     height:100%;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Verdana;    /* Arial, Helvetica, sans-serif;
 }
 
 .lastline                                                                       

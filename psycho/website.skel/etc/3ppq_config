@@ -6,7 +6,7 @@
 
     #   omit if a default replyTo should e used
     #   use only if the 3ppq.nl domain is recognized by the mail system
-# replyTo: noreply@3ppq.nl
+replyTo: noreply@3ppq.nl
 
     #   omit if no delay after specifying incorrect passwd etc.
     #   otherwise: delay in seconds

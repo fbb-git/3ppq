@@ -47,6 +47,9 @@ if [ ! -e ${website}/bin/form ] ; then
     cd ..
 fi
 
+if [ form/tmp/bin/binary -nt ${website}/bin/form ] ; then
+    cp form/tmp/bin/binary ${website}/bin/form 
+fi
 
 cd website.skel
 tar cf - --exclude .filler --exclude '*/ORG' --exclude README . | 

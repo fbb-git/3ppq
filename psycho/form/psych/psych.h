@@ -26,6 +26,9 @@ class Psych
 
     static Map      s_state;        // maps state names to handling functions
 
+    static char const *s_actions[]; // client.h, data.h, profile.h, contact.h
+    static size_t s_actionsSize;
+
     // data below are saved to file
 
     uint32_t    d_time;             // registration time 
@@ -67,6 +70,10 @@ class Psych
         bool validRegistrationData(uint64_t *nip, uint8_t *field);
 
         void verifyAck();
+        std::string messages();         // messages for this psychologist
+        void actions();                 // from actions.h
+        void profile();                 // update profile
+
 
         void noPwd();
 

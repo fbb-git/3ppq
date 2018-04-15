@@ -27,7 +27,7 @@ knop <em>Login</em>, om terug te keren naar de login-pagina.
 <div style="background-color:#dddddd">
 <table>
 <tr>
-    <td ><input type="submit" value="Bevestig Aanvraag Nieuw Wachtwoord></td>
+    <td ><input type="submit" value="Bevestig Aanvraag Nieuw Wachtwoord"></td>
 </tr>
 <tr>
     <td>

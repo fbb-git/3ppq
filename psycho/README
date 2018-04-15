@@ -99,7 +99,7 @@ xferred = means: received vars are all transferred to the next element
 
 T: to do, W: WIP
 
-17: increment BEFORE defining a state
+18: increment BEFORE defining a state
     (this is the LAST USED state number)
     prefix W to indicate: available, but under construction.
 
@@ -145,7 +145,7 @@ Psych FSA:
                                 =        12 requestack.h    ack is nonzero
                                 
                                           
-                                email   W17 action.h        login OK
+                                email   W17 actions.h       login OK
 -----------------------------------------------------------------------------
  5 notregistered.h -            -         2 /psych          login
    
@@ -184,8 +184,9 @@ Psych FSA:
 12 requestack.h     email,mode  =,ack    13 verifyAck
                     pwd
 -----------------------------------------------------------------------------
-13 verifyAck       email,ack    email   W17 action.h    ack OK: reset to 0
-                   mode,pwd
+13 verifyAck       email,ack    email    17 actions.h   ack OK: reset to 0
+                   mode,pwd                             pass messages
+
                                 email    14 ackerror.h  ack error
                                 mode,pwd
 -----------------------------------------------------------------------------
@@ -200,15 +201,19 @@ Psych FSA:
                                 -         1 /home
    
 -----------------------------------------------------------------------------
-17 action.h     -   email       =           client.h    client-related actions
-(W)                 
-                                =           profile.h   change own data       
+17 actions.h    -   email       =           action      pass on action req.
+                 
+
+------------------------------------------------------------------------------
+   action       -   email       =           client.h    client-related actions
+                    
+                                =        18 profile.h   change own data       
                     
                                 =           data.h      handle collected data 
                     
                                 =           contact.h   contact the 3ppq team 
 ------------------------------------------------------------------------------
-   client.h     -   email       =           profile.h   change own data       
+   client.h     -   email       =        18 profile.h   change own data       
                     
                                 =           data.h      handle collected data 
                     
@@ -217,21 +222,37 @@ Psych FSA:
                                 =,          newClient   define new client
                                 client-data         
 ------------------------------------------------------------------------------
-   profile.h    -   email       =           client.h    client-related actions
-                    
+18 profile.h    -   email       =           client.h    client-related actions
+                        
                                 =           data.h      handle collected data 
                     
                                 =           contact.h   contact the 3ppq team 
+
+                                =,
+                                new data    profile     process the new
+                                                        profile data
+
+                                =           /home
+------------------------------------------------------------------------------
+   profile      -   new data,   -           /psych      login again
+                    email
+                                =           proferr.h   error in new data
+------------------------------------------------------------------------------
+   proferr.h    -   new data,   =           /psych      login again
+                    email
+                                email    18 profile.h   change own data
+
+                                =           /home
 ------------------------------------------------------------------------------
    contact.h    -   email       =           client.h    client-related actions
                     
-                                =           profile.h   change own data       
+                                =        18 profile.h   change own data       
                     
                                 =           data.h      handle collected data 
 ------------------------------------------------------------------------------
    data.h       -   email       =           client.h    client-related actions
                     
-                                =           profile.h   change own data
+                                =        18 profile.h   change own data
                     
                                 =           contact.h   contact the 3ppq team 
 ------------------------------------------------------------------------------

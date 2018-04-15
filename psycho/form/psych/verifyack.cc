@@ -20,7 +20,12 @@ void Psych::verifyAck()
     d_ack = 0;
     d_data.update(emailKey(), toString());
 
-    d_display.out(g_options.html() + "actions.h");
+    d_display.out(
+            g_options.html() + "actions.h",
+            {
+                messages()
+            }
+        );
 }
 
 

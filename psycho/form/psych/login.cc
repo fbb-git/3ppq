@@ -16,5 +16,10 @@ void Psych::login()
     }
 
     d_display.append("email");
-    d_display.out(g_options.html() + "actions.h");      // logged in.
+    d_display.out(
+        g_options.html() + "actions.h",
+        {
+            messages()
+        }
+    );      // logged in.
 }

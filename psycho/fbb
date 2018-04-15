@@ -1,0 +1,30 @@
+#!/bin/bash
+
+install website
+
+cd website
+
+rm -f www/cplusplus
+
+ln -sf /usr/share/doc/c++-annotations/html www/cplusplus
+
+echo "
+    #   mail: send      - send mail (default)
+    #   mail: log       - log info
+    #   mail: ...@...   - send mail to ...@...
+    #   mail: off       - ignore mail requests
+mail: log
+
+    #   omit if a default replyTo should e used
+    #   use only if the 3ppq.nl domain is recognized by the mail system
+# replyTo: noreply@3ppq.nl
+
+    #   omit if no delay after specifying incorrect passwd etc.
+    #   otherwise: delay in seconds
+# delay: 5
+
+    # log: off  (or not specified)  -- nothing is logged
+    # log: debug                    -- all messages are logged
+    # log: std                      -- all but the debug msgs are logged
+log: debug
+" > etc/3ppq_config

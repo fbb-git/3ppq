@@ -1,8 +1,0 @@
-#!/bin/bash
-
-cd website
-
-rm -f www/cplusplus
-
-ln -sf /usr/share/doc/c++-annotations/html www/cplusplus
-

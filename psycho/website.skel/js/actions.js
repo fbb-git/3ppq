@@ -1,18 +1,9 @@
-function validate(nr) 
+function validate(action) 
 {
-    var nip = document.getElementsByName("nip")[0].value;
-
+    addHidden("action", action); 
+    addHidden("state",  "actions");
     addHidden("type",   "psych");
 
-    switch (nr)
-    {
-        case 1:
-            addHidden("state",  "client");
-        break;
-    }
-
-    addHidden("nip",    nip);
-
-    return true;
+    document.getElementsByName('form')[0].submit();
 } 
 

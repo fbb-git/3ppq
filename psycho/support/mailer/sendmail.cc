@@ -16,7 +16,7 @@ void Mailer::sendmail(string to, string const &subject,
     if (mailRequest == "off")
         return;
 
-    if (mailRequest.find('@' != string::npos))
+    if (mailRequest.find('@') != string::npos)
     {
         Tools::stdLog() << "mail to " << to << " is sent to " << 
                             mailRequest << endl;
@@ -25,9 +25,9 @@ void Mailer::sendmail(string to, string const &subject,
 
     istringstream text{ txt };
     
-    string replyTo{ "-r " + g_config.findKeyTail("mail:") };
-    if (replyTo.length() > 3)
-        replyTo.clear();
+    string replyTo{ g_config.findKeyTail("replyTo:") };
+    if (not replyTo.empty())
+        replyTo.insert(0, "-r ");
 
     CinInserter mail;
     mail.execute("/usr/bin/mail " + replyTo + " -s '" + subject + "' " + to);
@@ -35,8 +35,8 @@ void Mailer::sendmail(string to, string const &subject,
     mail << text.rdbuf();
     mail.stop();
 
-    g_log << "mail (" << subject << ") sent to " << to << 
-                                ", return code: " << mail.ret() << endl;
+    Tools::stdLog() << "mail (" << subject << ") sent to " << to << 
+                       ", return code: " << mail.ret() << endl;
 }
 
 

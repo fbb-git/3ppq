@@ -2,13 +2,14 @@
     #   mail: log       - log info
     #   mail: ...@...   - send mail to ...@...
     #   mail: off       - ignore mail requests
-mail: log
+# mail: log
 
-    # omit if a default replyTo should e used
+    #   omit if a default replyTo should e used
+    #   use only if the 3ppq.nl domain is recognized by the mail system
 # replyTo: noreply@3ppq.nl
 
-    # omit if no delay after specifying incorrect passwd etc.
-    # otherwise: delay in seconds
+    #   omit if no delay after specifying incorrect passwd etc.
+    #   otherwise: delay in seconds
 # delay: 5
 
     # log: off  (or not specified)  -- nothing is logged

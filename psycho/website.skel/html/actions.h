@@ -15,13 +15,13 @@
     <ul class="spread">                                                     
         <li class="li-linewise">
             <a href="" title="Activiteiten m.b.t. clienten" 
-                onclick="action = 1;" > 
+                onclick="validate(1)" > 
                 Cli&euml;nt 
             </a>
         </li>
         <li class="li-linewise">
             <a href="/wip.html" title="Download/selecteer verzamelde data"
-                onclick="action = 2;" >
+                onclick="validate(2)" >
                 Data
             </a>
         </li>
@@ -35,7 +35,7 @@
         </li>
         <li class="li-linewise">
             <a href="/wip.html" title="Contact opnemen met het 3ppq.nl-team"
-                onclick="action = 4;" >
+                onclick="validate(4)" >
                 Contact 
             </a>
         </li>                                                               
@@ -45,9 +45,9 @@
 <p>
 <img src="/images/3ppqUL.jpg" class=logo>
 
-De in de menubalk vermelde opties zijn nog niet operationeel.<p>
-
+De in de menubalk vermelde opties zijn mogelijk deels operationeel.<br>
 Plaats de muis boven een optie voor een korte beschrijving van hun functie.
+<p>
 
 <!-- messages for the psychologist -->
 $0

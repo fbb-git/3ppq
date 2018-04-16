@@ -51,27 +51,18 @@ u voor de eerste keer inlogt.
 </tr>
 
 <tr class=darkrow>
-    <td class=right> Geslacht: </td>
-    <td> <input type="radio" name="gender" value="M"> M<br>
-         <input type="radio" name="gender" value="V"> V     </td>
-</tr>
-
-<tr>
     <td class=right>E-mail adres: </td> 
     <td ><input class=margin type="email" name="email" size="50"></td>
 </tr>
 
-<tr class=darkrow>
+<tr>
     <td class=right>NIP-nummer: </td> 
-    <td ><input class=margin pattern='[0-9]{8}' 
+    <td ><input class=margin pattern='[0-9]{1,8}' 
                              type="text" name="nip" size="15"> </td>
 </tr>
 
-<tr >
+<tr class=darkrow>
     <td class=right>Werkzaam op het gebied van:</td>
-
-    <!-- field=1&field=2... -->
-
     <td >
         <input type="checkbox" name="field" value="1"> A&O<br> 
         <input type="checkbox" name="field" value="2"> GGZ<br> 
@@ -82,12 +73,12 @@ u voor de eerste keer inlogt.
 </tr>
 
 <tr>
-    <td class="right darkrow"> Wachtwoord:</td>
+    <td class=right> Wachtwoord:</td>
     <td> <input class=margin type="password" name="pwd" size="20"> </td>
 </tr>
 
 <tr>
-    <td class="right darkrow"> Verificatie:</td>
+    <td class=right> Wachtwoord nogmaals:</td>
     <td> <input class=margin" type="password" name="pwd2" size="20"></td>
 </tr>
 </table>

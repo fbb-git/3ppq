@@ -4,13 +4,13 @@ function validate()
 
     var name =      form["name"].value;
     var lastName =  form["lastName"].value;
-    var gender =    form["gender"].value;
     var email =     form["email"].value;
+    var nip =       form["nip"].value;
     var pwd =       form["pwd"].value;
     var pwd2 =      form["pwd2"].value;
     var field =     form["field"].value;
 
-    if (name == "" || lastName == "" || email == "" || gender == "" ||
+    if (name == "" || lastName == "" || email == "" || nip == 0 ||
         pwd == "" || pwd2 == "")
     {
         alert("Alle velden moeten zijn ingevuld");

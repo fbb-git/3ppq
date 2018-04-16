@@ -49,7 +49,6 @@ bool Psych::get()
     }
 
     in.str(decrypted);                      // obtain the confidential data
-    Tools::readN(in, &d_gender, 1);
     Tools::readN(in, &d_nip);
     Tools::readN(in, &d_field);
     getline(in, d_name);

@@ -3,7 +3,7 @@
 void Psych::requestAck()
 {
     StrVector replacements{
-                    genderText(),       // $0
+                    d_name,             // $0
                     d_lastName,         // $1
                     to_string(d_ack)    // $2
                 };

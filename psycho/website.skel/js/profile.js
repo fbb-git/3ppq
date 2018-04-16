@@ -1,9 +1,7 @@
-window.onload = setFields();
-
 function setFields()
 {
     if (fields & 1)
-        document.getElementById("c1").checked = true;
+        document.getElementById("c").checked = true;
     if (fields & 2)
         document.getElementById("c2").checked = true;
     if (fields & 4)
@@ -40,7 +38,7 @@ function validate()
     var nip =       form["nip"].value;
 
     if (name == "" || lastName == "" || newemail == "" || 
-        pwd == "" || nip == "")
+        pwd == "" || nip == 0)
     {
         alert("Naam, NIP-nummer, e-mail en\n" + 
               "huidig wachtwoord moeten zijn ingevuld");
@@ -54,7 +52,7 @@ function validate()
     }
 
     addHidden("type",   "psych");
-    addHidden("state",  "udateProfile");
+    addHidden("state",  "profile");
 
     return true;
 } 

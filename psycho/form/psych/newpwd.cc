@@ -18,7 +18,7 @@ void Psych::newPwd()
                 DollarText::replaceStream(
                     g_options.mail() + "newpwd",
                     {
-                        genderText(),
+                        d_name,
                         d_lastName,
                         pwd
                     }

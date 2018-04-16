@@ -26,9 +26,6 @@ class Psych
 
     static Map      s_state;        // maps state names to handling functions
 
-    static char const *s_actions[]; // client.h, data.h, profile.h, contact.h
-    static size_t s_actionsSize;
-
     // data below are saved to file
 
     uint32_t    d_time;             // registration time 
@@ -38,7 +35,6 @@ class Psych
     std::string d_pwdHash;          // MD5 hash of the password (16 bytes)
         
         // encrypted section:
-    bool        d_gender;           // 0: female, 1: male
     uint64_t    d_nip;
     uint8_t     d_field;            // occupation field(s)
     std::string d_name; 
@@ -71,8 +67,10 @@ class Psych
 
         void verifyAck();
         std::string messages();         // messages for this psychologist
-        void actions();                 // from actions.h
-        void profile();                 // update profile
+
+        void profilePage();             // show profile page
+        void profile();                 // update current profile
+        bool validProfileData(uint8_t *field);
 
 
         void noPwd();
@@ -82,15 +80,8 @@ class Psych
 
         std::string toString() const;
 
-        char const *genderText() const;
-
         static std::string newPassword();
 };
-
-inline char const *Psych::genderText() const
-{
-    return d_gender == 0 ? "mevrouw" : "heer";
-}
 
 #endif
 

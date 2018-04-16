@@ -30,6 +30,7 @@ class Tools
             HASH_SIZE = 16,
             N_QUESTIONS = 42,
             MAX_PSYCH_FIELD = 16,
+            MIN_PWD_LENGTH = 3,
         };
     
         template <typename Type>

@@ -2,5 +2,5 @@
 
 string Psych::messages()
 {
-    return "<p><hr>no messages<hr><p>";
+    return "<h1>Er zijn geen berichten</h1>";
 }

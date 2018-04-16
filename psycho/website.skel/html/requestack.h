@@ -14,7 +14,7 @@
 
 <h1>3PPQ Aanmeldingsverificatie</h1>
 
-Geachte $0 $1,<p>
+Beste $0 $1,<p>
 
 U heeft per e-mail een verificatienummer ontvangen.<br>
 U kunt het ontvangen nummer hieronder invullen. Druk vervolgens op de

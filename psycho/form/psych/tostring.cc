@@ -4,7 +4,6 @@ string Psych::toString() const
 {
     ostringstream out;                      // encrypt confidential data
 
-    Tools::writeN(out, &d_gender, 1);
     Tools::writeN(out, &d_nip);
     Tools::writeN(out, &d_field);
     out <<  d_name      << '\n' <<

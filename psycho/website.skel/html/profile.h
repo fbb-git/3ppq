@@ -21,32 +21,38 @@
 <form name="form" action="/bin/form" 
 onsubmit="alert('validate'); return false; return validate()" method="post">
 
+
 <nav class="top-menu-markup">                                               
     <ul class="spread">                                                     
         <li class="li-linewise">
             <a href="" title="Activiteiten m.b.t. clienten" 
-            > 
+                onclick="validate(1)" > 
                 Cli&euml;nt 
             </a>
         </li>
         <li class="li-linewise">
-            <a href="/wip.html" title="Download/selecteer verzamelde data">
+            <a href="/wip.html" title="Download/selecteer verzamelde data"
+                onclick="validate(2)" >
                 Data
             </a>
         </li>
-        <li class="li-linewise">
-            <a href="" title="Wijzig uw eigen gegevens"
-                onclick="return false;">
+        <li class=li-linewise>
+            <a href="#" title="Wijzig uw eigen gegevens"
+                onclick="return false"
+            >
                 Profiel
             </a>
+
         </li>
         <li class="li-linewise">
-            <a href="/wip.html" title="Contact opnemen met het 3ppq.nl-team"> 
+            <a href="/wip.html" title="Contact opnemen met het 3ppq.nl-team"
+                onclick="validate(4)" >
                 Contact 
             </a>
         </li>                                                               
     </ul>                                                                   
 </nav>                                                                      
+ 
 
 <h1>Wijzigen van uw profiel</h1>
 
@@ -92,14 +98,13 @@ Door op de knop <em>3PPQ</em> te klikken keert u terug naar de
 </tr>
 <tr>
     <td class=right>NIP-nummer: </td> 
-    <td ><input class=margin pattern='[0-9]{8}' 
+    <td ><input class=margin pattern='[0-9]{1,8}' 
                              type="text" name="nip" size="15"> </td>
 </tr>
 
 <tr class=darkrow>
     <td class=right>Werkzaam op het gebied van:</td>
 
-    <!-- field=1&field=2... -->
     <td >
         <input type="checkbox" id="c1"  name="field" value="1"> A&amp;O<br> 
         <input type="checkbox" id="c2"  name="field" value="2"> GGZ<br> 
@@ -114,29 +119,27 @@ Door op de knop <em>3PPQ</em> te klikken keert u terug naar de
         (optioneel) </td>
 </tr>
 <tr>
-    <td class=right> Verificatie:</td>
+    <td class=right> Wachtwoord nogmaals:</td>
     <td> <input class=margin type="password" name="newpwd2" size="20">
         (indien u uw wachtwoord wijzigt)
 </tr>
 </table>
-
+<script> window.onload= setFields(); </script>
 <p>
 </div>
 
-<table>
-<tr>
-    <td class="right"> Huidig wachtwoord:</td>
+<table style="border-collapse: collapse;">
+<tr class=darkrow>
+    <td >Huidig wachtwoord:</td>
     <td> <input class=margin type="password" name="pwd" size="20"
          onkeydown='key(event)'
         > </td>
 
 </tr>
-<tr>
-    <td></td>
-    <td>
+<tr class=darkrow>
+    <td colspan="2">
         Vul in en druk op <em>Enter</em> om uw wijzigingen te activeren
     </td>
-</tr>
 <tr>
     <td>&nbsp;</td>
 </tr>
@@ -148,4 +151,7 @@ Door op de knop <em>3PPQ</em> te klikken keert u terug naar de
 </tr>
 
 </table>
+
+
+
 

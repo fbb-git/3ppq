@@ -8,6 +8,15 @@ void Psych::clientPage()
             return;
     }
 
+    string clientInfo;
+    string clientSelect;
+;
+    if (d_client.size())                // any defined clients?
+    {                                   // then create the <select> section
+        infoClient(&clientInfo, &clientSelect);  
+
+    
+
     d_display.append("email");
 
     d_display.out(

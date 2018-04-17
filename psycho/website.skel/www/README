@@ -32,10 +32,13 @@ Welkom op de 3PPQ website.<p>
 <!--
 <select size=4 class=selection>
 -->
+<div>
+
+<div style='margin-right: 10px; float:left'>
 <span style="font-family: courier;">
 Swedish Cars&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; more
 </span><br>
-<select size=4 style="font-family: courier; min-width:70px; border:solid,3px; overflow-y: scroll;">
+<select size=6 style="font-family: courier; min-width:70px; border:solid,3px; overflow-y: scroll;">
     <option value="1" selected >
             prefix1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; more
     </option>
@@ -45,4 +48,15 @@ Swedish Cars&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; more
     <option value="5">5             </option>
     <option value="6">6             </option>
 </select>
+</div>
+
+<div style='float; margin-left:10px'> 
+hello world<p>
+multiple lines
+</div>
+
+</div>
 <p>
+
+</body>
+</html>

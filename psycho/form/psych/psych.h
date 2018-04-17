@@ -10,6 +10,8 @@
 #include "../../support/datastore/datastore.h"
 #include "../../support/display/display.h"
 
+#include <bobcat/align>
+
 namespace FBB
 {
     class CGI;
@@ -77,9 +79,13 @@ class Psych
 
 
         void client();                  // WIP
+        void infoClient(std::string *clientArray, std::string *clientSelect);
+
+
 
         std::string toString() const;
-
+        static std::string setWidth(std::string const &txt, size_t length,
+                                    FBB::Manipulator align = std::left);
         static std::string newPassword();
 };
 

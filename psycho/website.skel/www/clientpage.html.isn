@@ -1,61 +1,51 @@
+<!--    
+    $0: clients[] contents
+    $1: nClients, loginNr
+
+    hidden request: ""      -- merely show
+                    add     -- add client
+                    update  -- change client
+            activate:   0   -- client not active
+                        1   -- activate this client
+-->
+
 <!DOCTYPE html>
 <html><head>
     <link rel="stylesheet" href="/css/3ppq.css">
     <meta http-equiv="content-type" content="text/html;
           charset=windows-1252">
+
+UPDATE:
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <style></style>
-    <script src="/js/preamble.js"></script>
-    <!-- 
-        script src="/js/client.js"></script
-    -->
- 
+
+-------------------------------------------------------------------------
     <script>
-var clients = [
-    [1,1523973235,1234,"Name","Lastname","lastname@mailhost.nl"],
-    [2,1523973235,2341,"Name2","Lastname2","lastname2@mailhost.nl"],
-    [3,1523973235,3412,"Name3","Lastname3","name3@mailhost.nl"],
+        var clients = [
+    
+            <!-- $0 -->
+            [1,1523973235,1234,"Name","Lastname","lastname@mailhost.nl"],
+            [2,1523973235,2341,"Name2","Lastname2","lastname2@mailhost.nl"],
+            [3,1523973235,3412,"Name3","Lastname3","name3@mailhost.nl"],
+    
         ];
+    
+        <!-- $1 -->
+        var nClients = 3;
+        var login0 = 1950;
+    </script>
 
-    function update()
-    {
-        var form = document.forms["form"];
-
-        var nr = document.getElementById("selectID").value;
-
-        form['ID'].value = clients[nr][0];
-        form['name'].value = clients[nr][3];
-        form['lastName'].value = clients[nr][4];
-        form['email'].value = clients[nr][5];
-        form['login0'].value = clients[nr][2];
-        form['action'].value = "Wijzigen";
-    }
-
-    function resetFields()
-    {
-        var form = document.forms["form"];
-
-        form['ID'].value = 4;           // received from client.cc
-        form['name'].value = "";
-        form['lastName'].value = ""
-        form['email'].value = "";
-        form['login0'].value = 1950;    // received from client.cc
-        form['action'].value = "Toevoegen";
-        document.getElementById('check').style.display = 'none';
-        return false;
-    }
-
-</script>
+    <script src="/js/preamble.js"></script>
+    <script src="/js/clientpage.js"></script>
+ 
 
 </head>
 
 <body class="full">
-
 <div class="container">
-
 <header class='title'>
             Persoonlijkheid in perspectief
 </header>
-
 <img src="/images/client.jpg" class=logo>
 
 
@@ -96,133 +86,127 @@ onsubmit="alert('validate'); return false; return validate()" method="post">
 
 <h1>Client-configuratie</h1>
 
+<!-- $2 -->
+    <table>
+    <tr>
+    <td>
+        <div style='margin-right: 1em; float:left'>
+            <span style='font-family: courier; font-size: 18px'><b>
+            &nbsp;ID Naam&nbsp; Achternaam</b>
+            </span><br>
+    
+            <select 
+                class=clientSelect
+                size=3              <--- aantal te displayen elementen
+                id='selectID' 
+                onclick="update()"
+            >
+            <option value=0>&nbsp;&nbsp;1  Name&nbsp; Lastname</option>
+            <option value=1>&nbsp;&nbsp;2  Name1      Lastname2</option>
+            <option value=2>&nbsp;&nbsp;3  Name2      Lastname3</option>
+            </select>
+        </div>
+    </td>
+    <td style='vertical-align: top'>    
+        <div style='float; margin-left:1em'> 
+            &nbsp;
+            <p>
+            <input type=submit value=Verwijder onclick='remove()'><br>
+            (verwijdert gemarkeerde cli&euml;nten)<br>
+        </div>
+    </td>
+    </tr>
+    </table>
 
-<!-- $0 -->
-<table>
-<tr>
-<td>
-    <div style='margin-right: 10px; float:left'>
-        <span style='font-family: courier; font-size: 18px'><b>
-        &nbsp;ID Naam&nbsp; Achternaam</b>
-        </span><br>
+<!-- $2 ends -->
 
-        <select size=3 id='selectID' 
-            style='font-family: courier;  font-size: 18px; border:solid,3px; overflow-y: scroll'
-            onclick="update()"
-        >
-        <option value=0>&nbsp;&nbsp;1  Name&nbsp; Lastname</option>
-        <option value=1>&nbsp;&nbsp;2  Name1      Lastname2</option>
-        <option value=2>&nbsp;&nbsp;3  Name2      Lastname3</option>
-        </select>
-    </div>
-</td>
-<td style='vertical-align: top'>    
-    <div style='float; margin-top: 50px; margin-left:10px'> 
-        <input type=submit value=Verwijder><br>
-        (verwijdert gemarkeerde cli&euml;nten)<br>
-    </div>
-</td>
-</tr>
-</table>
 
 <h3>Cli&euml;nt:</h3>
 
 <table class=lightgrey style="border-collapse: collapse;">
 <tr>
-        <td><div style='margin-left:5em'></div></td>
+    <td><div style='margin-left:5em'></div></td>
 </tr>
 
 <tr>
     <td></td>
     <td>
-    <table style="border-collapse: collapse;">
-
-<tr>
-    <td ><input type=submit value="Velden wissen"
-                onclick='return resetFields()'></td>
-</tr>
-
-<tr >
-    <td class=right>ID: </td> 
-    <td ><input class=margin type="text" name=ID value="4" readonly
-                size="50"></td>
-</tr>
-<tr class="darkrow">
-    <td class=right>Naam: </td> 
-    <td ><input class=margin type="text" name="name"
-                size="50"></td>
-</tr>
-
-<tr >
-    <td class=right>Achternaam: </td> 
-    <td ><input class=margin type="text" name="lastName"
-                size="50"></td>
-</tr>
-
-<tr class=darkrow>
-    <td class=right>E-mail adres: </td> 
-    <td ><input class=margin type="text" name="email" value="$2"
-                size="50"></td>
-</tr>
-<tr >
-    <td class=right>login code: </td> 
-    <td ><input class=margin type="text" name=login0 readonly
-                size="5"></td>
-</tr>
-<tr id=check>
-        <td class=right> Activeren:</td>
-    <td> <input type=checkbox name=activate>
-</tr>
-<tr>
-    <td class=right> of: Actief sinds:</td>
-    <td> <script>
-    function timeConverter(UNIX_timestamp){
-  var a = new Date(UNIX_timestamp * 1000);
-  var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  var year = a.getFullYear();
-  var month = months[a.getMonth()];
-  var date = a.getDate();
-  var hour = a.getHours();
-  var min = a.getMinutes();
-  var sec = a.getSeconds();
-  var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
-  return time;
-}
-    document.write(timeConverter(1523973235));
-    </script>
-</td>
-</tr>
-<tr class=darkrow>
-    <td>
-    <input type="submit" name='action' value="Toevoegen">
+        <table style="border-collapse: collapse;">
+            <tr>
+                <td ><input type=submit value="Velden wissen"
+                            onclick='return resetFields()'></td>
+            </tr>
+            
+            <tr >
+                <td class=right>ID: </td> 
+                <td ><input class=margin type="text" name=ID value="4" readonly
+                            size="50"></td>
+            </tr>
+            <tr class="darkrow">
+                <td class=right>Naam: </td> 
+                <td ><input class=margin type="text" name="name"
+                            size="50"></td>
+            </tr>
+            
+            <tr >
+                <td class=right>Achternaam: </td> 
+                <td ><input class=margin type="text" name="lastName"
+                            size="50"></td>
+            </tr>
+            
+            <tr class=darkrow>
+                <td class=right> Geslacht: </td>
+                <td> <input type="radio" name="gender" value="M"> M<br>
+                     <input type="radio" name="gender" value="V"> V     </td>
+            </tr>
+            
+            
+            <tr>
+                <td class=right>E-mail adres: </td> 
+                <td ><input class=margin type="text" name="email" value="$2"
+                            size="50"></td>
+            </tr>
+            <tr  class=darkrow>
+                <td class=right>login code: </td> 
+                <td ><input class=margin type="text" name=login0 readonly
+                            size="5"></td>
+            </tr>
+            <tr id=check>
+                    <td class=right> Activeren:</td>
+                    <td> <input type=checkbox name=active>
+            </tr>
+            <tr>
+                <td class=right> of: Actief sinds:</td>
+                <td> <script>showDate()</script>
+            </td>
+            </tr>
+            <tr class=darkrow>
+                <td>
+                <input type="submit" name='action' value="Toevoegen">
+                </td>
+                <td>(deze cli&euml;nt toevoegen (of: gegevens wijzigen))</td>
+            </tr>
+        </table>
     </td>
-    <td>(deze cli&euml;nt toevoegen (of: gegevens wijzigen))</td>
-</tr>
-
-</table>
-</td>
 </tr>
 </table>
-
 
 
 <!-- script> window.onload= setFields(); </script -->
 <p>
 
-    Door op de knop <em>3PPQ</em> te klikken keert u terug naar de
-    3PPQ-homepage. 
-    <p>
+Door op de knop <em>3PPQ</em> te klikken keert u terug naar de 3PPQ-homepage. 
+<p>
 
 <table style="border-collapse: collapse;">
 <tr>
     <td>
-    <input type="submit" value="3PPQ"
-           onclick="return home()">
+        <input type="submit" value="3PPQ" onclick="return home()">
     </td>
 </tr>
-
 </table>
 
+-------------------------------------------------------------
 </form>
 </div>
 </body>

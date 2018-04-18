@@ -1,3 +1,11 @@
+.clientSelect
+{
+    font-family: courier;  
+    font-size: 18px; 
+    border:solid,3px; 
+    overflow-y: scroll;
+}
+
 .container          /* all info in the body up to the footer */
 {
     min-height: 85%;
@@ -66,12 +74,10 @@
 
 .title          /* top-title line of the page */
 {
-    padding:10px;
-    font-size: 300%;
+    padding:2em;
+    font-size: 200%;
     font-style: oblique;
     font-weight: bold;
-/*    height: 1.1em;
-*/
     text-align: center;
 }
 

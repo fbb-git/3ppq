@@ -5,8 +5,9 @@ Pages are included after copying
     <head>
         <meta http-equiv="content-type" content="text/html;
               charset=windows-1252"> 
-         <link rel="stylesheet" type="text/css" href="/css/3ppq.css">
-        <style></style>
+        <link rel="stylesheet" type="text/css" href="/css/3ppq.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 to cout. Note that the head is not closed.
 Pages may include stuff that belongs to the head: start by including 'head':
@@ -19,12 +20,12 @@ Pages may include stuff that belongs to the head: start by including 'head':
 <div class="container">
 
 <header class='title'>
-          Persoonlijkheid in perspectief
+    Persoonlijkheid in perspectief
 </header>
 
 
 followed by the body's contents.
-At the end, </body> is provided by the 'form' program
+At the end, </div></body></html> is provided by the 'form' program
 
 
 Forms must be named 'form', validation js functions should be called
@@ -32,6 +33,12 @@ Forms must be named 'form', validation js functions should be called
 
     <form name="form" action="/bin/form" onsubmit="return validate()" 
           method="post">
+
+The matching
+
+    </form>
+
+must be added by the skeleton.
 
 Input-submit fields do not need 'name=' fields, as the form's states are used
 to determine the next action

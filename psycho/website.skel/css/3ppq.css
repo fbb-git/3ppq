@@ -6,6 +6,29 @@
     overflow-y: scroll;
 }
 
+.leftFloat
+{
+    margin-right: 1em; 
+    float:left;
+}
+
+.float
+{
+    float;
+    margin-right: 1em;
+}
+
+.courier18
+{
+    font-family: courier; 
+    font-size: 18px;
+}
+
+.topAlign
+{
+    vertical-align: top;
+}
+
 .container          /* all info in the body up to the footer */
 {
     min-height: 85%;

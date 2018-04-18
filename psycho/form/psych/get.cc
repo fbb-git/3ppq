@@ -21,6 +21,7 @@ bool Psych::get()
     Tools::readN(in, &d_ack);
     Tools::readN(in, &d_flags);
     Tools::readN(in, &d_ID);
+    Tools::readN(in, &d_nextClientID);
     d_pwdHash.resize(Tools::HASH_SIZE);
     Tools::read(in, &d_pwdHash.front(), Tools::HASH_SIZE);
 

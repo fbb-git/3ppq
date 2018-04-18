@@ -31,6 +31,7 @@ class Tools
             N_QUESTIONS = 42,
             MAX_PSYCH_FIELD = 16,
             MIN_PWD_LENGTH = 3,
+            MAX_CLIENT_SELECT_ROWS = 5,
         };
     
         template <typename Type>

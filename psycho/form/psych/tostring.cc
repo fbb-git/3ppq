@@ -30,6 +30,7 @@ string Psych::toString() const
     Tools::writeN(out, &d_ack);
     Tools::writeN(out, &d_flags);
     Tools::writeN(out, &d_ID);
+    Tools::writeN(out, &d_nextClientID);
     Tools::write(out, d_pwdHash);
 
     uint16_t size = encrypted.size();       // write size of encrypted data

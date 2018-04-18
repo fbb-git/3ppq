@@ -43,6 +43,7 @@ class Psych
     std::string d_lastName;
     std::string d_email;
 
+    uint16_t    d_nextClientID;
     std::vector<PsychClient> d_client;  // client info
 
     public:
@@ -79,12 +80,13 @@ class Psych
 
 
         void client();                  // WIP
-        void infoClient(std::string *clientArray, std::string *clientSelect);
+        void infoClient(std::string *clientArray, std::string *clientVars,
+                        std::string *clientSelect);
 
 
 
         std::string toString() const;
-        static std::string setWidth(std::string const &txt, size_t length,
+        static std::string fixedWidth(std::string const &txt, size_t length,
                                     FBB::Manipulator align = std::left);
         static std::string newPassword();
 };

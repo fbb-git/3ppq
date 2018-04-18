@@ -31,7 +31,7 @@ UPDATE:
         ];
     
         <!-- $1 -->
-        var nClients = 3;
+        var nextID = 3;
         var login0 = 1950;
     </script>
 

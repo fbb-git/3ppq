@@ -1,7 +1,7 @@
 #include "psych.ih"
 
 // static
-string Psych::setWidth(string const &txt, size_t length, Manipulator align)
+string Psych::fixedWidth(string const &txt, size_t length, Manipulator align)
 {
     string blanks;
     for (size_t idx = ret.length(); idx < length; ++idx)

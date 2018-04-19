@@ -11,7 +11,7 @@ xferred = means: received vars are all transferred to the next element
 
 T: to do, W: WIP
 
-20: increment BEFORE defining a state
+22: increment BEFORE defining a state
     (this is the LAST USED state number)
     prefix W to indicate: available, but under construction.
 
@@ -112,7 +112,7 @@ Psych FSA:
    
                                 -         1 /home
 -----------------------------------------------------------------------------
-17 actions.h    -   email       =           client.h    client-related actions
+17 actions.h    -   email       =        21 clientPage  client-related actions
                     
                                 =        18 profilePage show profile data     
                     
@@ -122,7 +122,7 @@ Psych FSA:
 ------------------------------------------------------------------------------
 18 profilePage      email       =        19 profile.h   profile mod. page
 ------------------------------------------------------------------------------
-19 profile.h        email       =           client.h    client-related actions
+19 profile.h        email       =        21 clientPage  client-related actions
                         
                                 =           data.h      handle collected data 
                     
@@ -142,14 +142,20 @@ Psych FSA:
                                                             profile error
                                 =         1 /home
 ------------------------------------------------------------------------------
-   client.h     -   email       =        18 profile.h   change own data       
-                    
-                                =           data.h      handle collected data 
-                    
-                                =           contact.h   contact the 3ppq team 
-                    
-                                =,          newClient   define new client
+21 clientPage       email       =,       22 clientpage.h show client options
                                 client-data         
+                    
+------------------------------------------------------------------------------
+22 clientpage.h     email,      =           clientPage
+                    client-data             
+
+                                email       data.h      handle collected data 
+                    
+                                email       contact.h   contact the 3ppq team 
+                    
+                                email    18 profile.h   change own data       
+
+                                -         1 /home
 ------------------------------------------------------------------------------
    proferr.h    -   new data,   =           /psych      login again
                     email

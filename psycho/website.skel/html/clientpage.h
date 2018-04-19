@@ -85,8 +85,8 @@ $2
             <tr class=darkrow>
                 <td class=right> Geslacht: </td>
                 <td> 
-                    <input type=radio name=gender value=M> M<br>
-                    <input type=radio name=gender value=V> V
+                    <input id=gender1 type=radio name=gender value=M> M<br>
+                    <input id=gender2 type=radio name=gender value=V> V
                 </td>
             </tr>
             <tr>

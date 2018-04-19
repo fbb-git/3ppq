@@ -34,11 +34,11 @@ function showActivate()
     document.getElementById('check1').style.display = 'table-cell';
 }
 
-//function setGender()
-//{
-////    document.getElementById('gender1').disabled = false;
-////    document.getElementById('gender2').disabled = false;
-//}
+function setGender()
+{
+    document.getElementById('gender1').disabled = false;
+    document.getElementById('gender2').disabled = false;
+}
 
 function hideActive()
 {
@@ -46,11 +46,11 @@ function hideActive()
     document.getElementById('check2').style.display = 'none';
 }
 
-//function fixGender()
-//{
-////    document.getElementById('gender1').disabled = true;
-////    document.getElementById('gender2').disabled = true;
-//}
+function fixGender()
+{
+    document.getElementById('gender1').disabled = true;
+    document.getElementById('gender2').disabled = true;
+}
 
 function resetFields()
 {
@@ -60,7 +60,7 @@ function resetFields()
 
     hideTime();
     showActivate();
-//    setGender();
+    setGender();
 
     document.getElementById("actionText").innerHTML = 
                                         "deze client toevoegen";
@@ -79,10 +79,8 @@ function update()
 {
     var form = document.forms["form"];
     var idx = document.getElementById("selectID").value;
-//
-////    fixGender();
-//
-//
+
+    fixGender();
 
     clientID = idx;
 

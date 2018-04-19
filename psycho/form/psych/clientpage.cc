@@ -1,6 +1,7 @@
 #include "psych.ih"
 
 void Psych::clientPage()
+try
 {
     {
         LockGuard lg { d_data.lg() };
@@ -8,32 +9,48 @@ void Psych::clientPage()
             return;
     
         string request = d_cgi.param1("request");
-    
+
+g_log << "clientpage request = `" << request << '\'' << endl;
+
         if (request == "add")
             addClient();
         else if (request == "update")
             updateClient();
+        else if (request == "remove")
+            removeClient();
+
+        d_data.update(emailKey(), toString());
     }
 
+    ostringstream out;                          // construct the variables
+    out << setw(7) << ' ' << "var nextID = " << d_lastClientID + 1 << ";\n" <<
+           setw(7) << ' ' << "var login0 = " << 
+                                        Tools::random(10, 99)   << ";\n";
+    string clientVars = out.str();
+
     string clientArray;
-    string clientVars;
     string clientSelect;
 
                                         // any defined clients?
     if (d_client.size())                // then create the <select> section
-        infoClient(&clientArray, &clientVars, &clientSelect);  
+        infoClient(&clientArray, &clientSelect);  
 
-    
+//g_log << "start display: array = " << clientArray << endl;
+g_log << "start display: vars = " << clientVars << endl;
+//g_log << "start display: select = " << clientSelect << endl;
 
     d_display.append("email");
-    d_display.append("request", "");
     d_display.out(
-        g_options.html() + "clientPage.h"
+        g_options.html() + "clientpage.h",
         {
-            d_name,
-            d_lastName,
-            d_email,
-            to_string(d_field)
+            clientArray,
+            clientVars,
+            clientSelect
         }
     );
 }
+catch (bool invalid)
+{
+    homePage();
+}
+

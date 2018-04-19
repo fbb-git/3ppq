@@ -16,8 +16,8 @@ string Psych::toString() const
     out.str("");                            // convert client info to string
     for (auto const &client: d_client)    
     {
-        string clientStr = client.toString();
-        uint16_t size = clientStr.size();
+        string clientStr = client.toString();   // all data of this client
+        uint16_t size = clientStr.size();       // its size
         Tools::writeN(out, &size);
         Tools::write(out, clientStr);
     }
@@ -30,13 +30,15 @@ string Psych::toString() const
     Tools::writeN(out, &d_ack);
     Tools::writeN(out, &d_flags);
     Tools::writeN(out, &d_ID);
-    Tools::writeN(out, &d_nextClientID);
+    Tools::writeN(out, &d_lastClientID);
     Tools::write(out, d_pwdHash);
 
     uint16_t size = encrypted.size();       // write size of encrypted data
     Tools::writeN(out, &size);
     Tools::write(out, encrypted);           // and the data themselves    
 
+
+g_log << "writing data of " << d_client.size() << " clients" << endl;
 
     size = d_client.size();             // # of client data elements
     Tools::writeN(out, &size);

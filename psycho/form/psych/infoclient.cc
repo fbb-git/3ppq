@@ -2,36 +2,36 @@
 
     // at least some clients are available.
 
-void Psych::infoClient(string *array, string *vars, string *select)
+void Psych::infoClient(string *array, string *select)
 {
     size_t nameLength = 0;
     for (auto const &client: d_client)
-        nameLength = ::max(nameLength, client.d_name.length());
+        nameLength = ::max(nameLength, client.name().length());
     nameLength += 2;
 
 
+    ostringstream out;
     for (auto const &client: d_client)      // construct the client array
     {
-        ostringstream out;
+    g_log << client.id() << ": active = " << client.active() << 
+                            ", login0 = " << client.login0() << endl;
 
         out << setw(11) << '[' <<   
-                client.id()         << ','      << 
-                client.activeTime() << ",\""'   <<
-                client.name()       << "\",\""  << 
-                client.lastName()   << "\",\""  << 
-                client.email()      << "\"],\n";
-
-        *array = out.str();
+                client.id()         << ','      <<      //  0
+                client.gender()     << ','      <<      //  1
+                client.active()     << ','      <<      //  2
+                client.login0()     << ",\""    <<      //  3
+                client.name()       << "\",\""  <<      //  4
+                client.lastName()   << "\",\""  <<      //  5
+                client.email()      << "\"],\n";        //  6
     }
+    *array = out.str();
 
-    ostringstream out;                          // construct the variables
-    out << setw(7) << ' ' << "var nextID = " << d_nextClientID  << ";\n" <<
-           setw(7) << ' ' << "var login0 = " << 
-                                        Tools::random(10, 99)   << ";\n";
-    *vars = out.str();
-
-    out.str("");
-
+    size_t nRows = std::max(Tools::min(d_client.size(), 
+                                       Tools::MAX_CLIENT_SELECT_ROWS),
+                            2UL);
+    
+    out.str("");                      // construct the select tag
     out << R"(
     <table>
     <tr>
@@ -42,13 +42,14 @@ void Psych::infoClient(string *array, string *vars, string *select)
             </span><br>
             <select class=clientSelect id=selectID onclick='update()' size=)" 
                                                                             <<
-                ::min(d_client.size(), MAX_CLIENT_SELECT_ROWS) << ">\n";
+                nRows << ">\n";
 
+    size_t idx = 0;
     for (auto const &client: d_client)
-        out << setw(11) << ' ' << "<option value=" << client.id() << '>' <<
-                fixedWidth(client.id(), 3, right) << ' ' << 
+        out << setw(11) << ' ' << "<option value=" << idx++ << '>' <<
+                fixedWidth(to_string(client.id()), 3, Tools::RIGHT) << ' ' << 
                 fixedWidth(client.name(), nameLength) << ' ' <<
-                client.lastName() << "</option>";
+                client.lastName() << "</option>\n";
 
     out << R"(
             </select>
@@ -59,7 +60,7 @@ void Psych::infoClient(string *array, string *vars, string *select)
             &nbsp;
             <p>
             <input type=submit value=Verwijder onclick='remove()'><br>
-            (verwijdert gemarkeerde cli&euml;nten)<br>
+            (verwijdert de gemarkeerde cli&euml;nt)<br>
         </div>
     </td>
     </tr>

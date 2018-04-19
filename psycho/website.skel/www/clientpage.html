@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html><head>
+    <link rel="stylesheet" href="/css/3ppq.css">
+    <meta http-equiv="content-type" content="text/html;
+          charset=windows-1252">
+    <style></style>
+    <script src="/js/preamble.js"></script>
+    <!-- 
+        script src="/js/client.js"></script
+    -->>
+ 
+    <script>
+var clients = [
+    [1,1523973235,1234,"Name","Lastname","lastname@mailhost.nl"],
+    [2,1523973235,2341,"Name2","Lastname2","lastname2@mailhost.nl"],
+    [3,1523973235,3412,"Name3","Lastname3","name3@mailhost.nl"],
+        ];
+</script>
+
+</head>
+
+<body class="full">
+
+<div class="container">
+
+<header class='title'>
+            Persoonlijkheid in perspectief
+</header>
+
+<form name="form" action="/bin/form" 
+onsubmit="alert('validate'); return false; return validate()" method="post">
+
+
+<nav class="top-menu-markup">                                               
+    <ul class="spread">                                                     
+        <li class="li-linewise">
+            <a href="" title="Activiteiten m.b.t. clienten" 
+                onclick="return false" > 
+                Cli&euml;nt 
+            </a>
+        </li>
+        <li class="li-linewise">
+            <a href="/wip.html" title="Download/selecteer verzamelde data"
+                onclick="validate(2)" >
+                Data
+            </a>
+        </li>
+        <li class=li-linewise>
+            <a href="#" title="Wijzig uw eigen gegevens"
+                onclick="validate(3)"
+            >
+                Profiel
+            </a>
+
+        </li>
+        <li class="li-linewise">
+            <a href="/wip.html" title="Contact opnemen met het 3ppq.nl-team"
+                onclick="validate(4)" >
+                Contact 
+            </a>
+        </li>                                                               
+    </ul>                                                                   
+</nav>                                                                      
+ 
+
+<h1>Client-configuratie</h1>
+
+
+<img src="/images/client.jpg" class=logo>
+
+
+
+<!-- $0 -->
+<div>
+    <div style='margin-right: 10px; float:left'>
+    <span style='font-family: courier;'><b>
+    &nbsp;ID  Naam&nbsp;  Achternaam</b>
+    </span><br>
+    <select size=3 style='font-family: courier; border:solid,3px; 
+            overflow-y: scroll'>
+    <option value=1>&nbsp;&nbsp;1 Name&nbsp; Lastname</option>
+    <option value=2>&nbsp;&nbsp;2 Name1      Lastname2</option>
+    <option value=3>&nbsp;&nbsp;3 Name2      Lastname3</option>
+    </select>
+    </div>
+    
+    <div style='float; margin-left:10px'> 
+    <input type=submit name=Verwijder>  Verwijder gemarkeerde cli&euml;nten<br>
+    </div>
+</div>
+<p>
+
+<div>
+    <div style='margin-right: 10px; float:left'>
+        Cli&euml;nt:
+    </div>
+
+<div class="lightgrey">
+
+<table style="border-collapse: collapse;">
+
+<tr >
+    <td class=right>ID: </td> 
+    <td ><input class=margin type="text" value="4" readonly
+                size="50"></td>
+</tr>
+<tr class="darkrow">
+    <td class=right>Naam: </td> 
+    <td ><input class=margin type="text" name="name"
+                size="50"></td>
+</tr>
+
+<tr >
+    <td class=right>Achternaam: </td> 
+    <td ><input class=margin type="text" name="lastName"
+                size="50"></td>
+</tr>
+
+<tr class=darkrow>
+    <td class=right>E-mail adres: </td> 
+    <td ><input class=margin type="text" name="newemail" value="$2"
+                size="50"></td>
+</tr>
+    <td class=right> Activeren:</td>
+    <td> <input type=checkbox name=activate>
+</tr>
+</tr>
+    <td class=right> of: Actief sinds:</td>
+    <td> <script>
+    function timeConverter(UNIX_timestamp){
+  var a = new Date(UNIX_timestamp * 1000);
+  var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  var year = a.getFullYear();
+  var month = months[a.getMonth()];
+  var date = a.getDate();
+  var hour = a.getHours();
+  var min = a.getMinutes();
+  var sec = a.getSeconds();
+  var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
+  return time;
+}
+    document.write(timeConverter(1523973235 * 1000));
+    </script>
+</td>
+</tr>
+
+</table>
+<!-- script> window.onload= setFields(); </script -->
+<p>
+
+    <div>
+    
+</div>
+
+    Door op de knop <em>3PPQ</em> te klikken keert u terug naar de
+    3PPQ-homepage. 
+    <p>
+
+<table style="border-collapse: collapse;">
+<tr>
+    <td>
+    <input type="submit" value="3PPQ"
+           onclick="return home()">
+    </td>
+</tr>
+
+</table>
+
+
+
+

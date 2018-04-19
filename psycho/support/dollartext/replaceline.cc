@@ -1,5 +1,7 @@
 #include "dollartext.ih"
 
+#include <iostream>
+
 string const &DollarText::replaceLine(string &line,
                                       StrVector const &elements)
 {
@@ -10,12 +12,17 @@ string const &DollarText::replaceLine(string &line,
 
     while (true)
     {
+cerr << "find $ in `" << line.substr(0, pos) << '\'' << '\n';
+
         pos = line.rfind('$', pos);
         if (pos == string::npos)
             return line;
 
         if (not isdigit(line[pos + 1]))             // no digit
         {
+            if (pos == 0)                           // $ in column 0
+                break;
+
             --pos;                                  // try before pos
             continue;
         }

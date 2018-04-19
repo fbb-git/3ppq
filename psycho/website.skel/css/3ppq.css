@@ -4,6 +4,7 @@
     font-size: 18px; 
     border:solid,3px; 
     overflow-y: scroll;
+    min-width: 14em;
 }
 
 .leftFloat

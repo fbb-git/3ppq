@@ -1,0 +1,52 @@
+    HIDDEN request: ""      -- merely show
+                    add     -- add client
+                    update  -- change client
+                    remove  -- remove client
+            clientIdx       -- selected client ID for update/remove
+            activate:   0   -- client not active
+                        1   -- activate this client
+
+$-0:
+            [1,1523973235,1234,"Name","Lastname","lastname@mailhost.nl"],
+            [2,1523973235,2341,"Name2","Lastname2","lastname2@mailhost.nl"],
+            [3,1523973235,3412,"Name3","Lastname3","name3@mailhost.nl"],
+
+
+$-1:
+        var nextID = 3;
+        var login0 = 1950;
+
+
+$-2: (of: "")
+    <table>
+    <tr>
+    <td>
+        <div style='margin-right: 1em; float:left'>
+            <span style='font-family: courier; font-size: 18px'><b>
+            &nbsp;ID Naam&nbsp; Achternaam</b>
+            </span><br>
+    
+            <select 
+                class=clientSelect
+                size=3              <--- aantal te displayen elementen
+                id='selectID' 
+                onclick="update()"
+            >
+            <option value=0>&nbsp;&nbsp;1  Name&nbsp; Lastname</option>
+            <option value=1>&nbsp;&nbsp;2  Name1      Lastname2</option>
+            <option value=2>&nbsp;&nbsp;3  Name2      Lastname3</option>
+            </select>
+        </div>
+    </td>
+    <td style='vertical-align: top'>    
+        <div style='float; margin-left:1em'> 
+            &nbsp;
+            <p>
+            <input type=submit value=Verwijder onclick='remove()'><br>
+            (verwijdert gemarkeerde cli&euml;nten)<br>
+        </div>
+    </td>
+    </tr>
+    </table>
+
+

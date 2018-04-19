@@ -18,5 +18,6 @@ function validate(action)
     addHidden("type",   "psych");
 
     document.getElementsByName('form')[0].submit();
+    return false;
 } 
 

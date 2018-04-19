@@ -28,17 +28,13 @@ followed by the body's contents.
 At the end, </div></body></html> is provided by the 'form' program
 
 
-Forms must be named 'form', validation js functions should be called
+All pages must be forms, validation js functions should be called
 'validate'. A standard form opening looks like this:
 
     <form name="form" action="/bin/form" onsubmit="return validate()" 
           method="post">
 
-The matching
-
-    </form>
-
-must be added by the skeleton.
+The matching     </form> is added by the program.
 
 Input-submit fields do not need 'name=' fields, as the form's states are used
 to determine the next action

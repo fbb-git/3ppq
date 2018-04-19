@@ -1,6 +1,7 @@
 #ifndef INCLUDED_PSYCHCLIENT_
 #define INCLUDED_PSYCHCLIENT_
 
+#include <ctime>
 #include <cstdint>
 #include <string>
 #include <vector>
@@ -12,49 +13,68 @@ namespace FBB
 
 class PsychClient
 {
-    uint16_t d_ID = 0;      // client nr
-    uint32_t d_activeTime;  // active since, or 0 if not active
-    uint8_t  d_login0;      // login nr passed by Psych to Client
+    uint16_t d_ID = 0;              // client nr
+    uint32_t d_active = 0;      // active since, or 0 if not active
+    uint8_t  d_login0 = 0;          // login nr passed by Psych to Client
 
-    bool        d_gender = 0;   // 0: female, 1: male
+    bool        d_gender = false;   // false: female, true: male
     std::string d_name;
     std::string d_lastName;
     std::string d_email;
 
     public:
-        // PASSIVE!
-        bool set(uint16_t psychID, uiint16_t ID, uint8_t login0, 
-                 FBB::CGI &cgi);
+        PsychClient() = default;        // for vectors etc.
+        PsychClient(uint16_t ID, uint32_t active, uint8_t login0, bool gender,
+                    std::string const &name, std::string const &lastName,
+                    std::string const &email);
+
+//        // PASSIVE!
+//        bool set(uint16_t psychID, uiint16_t ID, uint8_t login0, 
+//                 FBB::CGI &cgi);
 
         std::string toString() const;  // includes encrypted person-data
         void get(std::string const &data);
 
-        uint16_t id() const
-        uint32_t activeTime() const; 
-        uint8_t  login0 const;
-        
-        char const *genterText() const;
+        void activate();
+        void update(std::string const &name, std::string const &lastName,
+                    std::string const &email);
 
-        std::string name() const;
-        std::string lastName() const;
-        std::string email() const;
+        uint16_t id() const;
+        uint32_t active() const; 
+        uint16_t login0() const;        // uint8_t is a character!!
+        bool     gender() const;        
+        char const *genderText() const;
+
+        std::string const &name() const;
+        std::string const &lastName() const;
+        std::string const &email() const;
 
     private:
 };
+
+inline void PsychClient::activate()
+{
+    d_active = time(0);
+}
 
 inline uint16_t PsychClient:: id() const
 {
     return d_ID;
 }
         
-inline uint32_t PsychClient::activeTime() const
+inline uint32_t PsychClient::active() const
 {
-    return d_activeTime;
+    return d_active;
 }
         
-inline uint8_t PsychClient::login0() const
+inline uint16_t PsychClient::login0() const
 {
     return d_login0;
+}
+        
+inline bool PsychClient::gender() const
+{
+    return d_gender;
 }
         
 inline char const *PsychClient::genderText() const

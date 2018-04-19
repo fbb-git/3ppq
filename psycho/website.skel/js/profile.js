@@ -22,8 +22,31 @@ function home()
     return false;
 }
 
-function validate() 
+function validate(action) 
 {
+    var state = 
+        [ 
+            "clientPage", 
+            "dataPage", 
+            "profilePage", 
+            "contactPage" 
+        ];
+
+    if (action < 1 || action > 5 )
+    {
+        window.open('/index.html', '_self'); 
+        return false;
+    }
+
+    addHidden("type",   "psych");
+
+    if (action < 5)
+    {
+        addHidden("state",  state[action - 1]);
+        document.getElementsByName('form')[0].submit();
+        return;
+    }
+
     goHome = 0;
 
     var form = document.forms["form"];
@@ -51,16 +74,15 @@ function validate()
         return false;
     }
 
-    addHidden("type",   "psych");
     addHidden("state",  "profile");
-
-    return true;
+    document.getElementsByName('form')[0].submit();
 } 
 
 function key(event)
 {
     var enter = event.which || event.keyCode;
-    if (enter == 13 && validate())
+    if (enter == 13 && validate(5))
         document.getElementsByName('form')[0].submit();
 }
+
 

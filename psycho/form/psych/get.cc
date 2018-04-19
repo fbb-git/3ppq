@@ -21,7 +21,7 @@ bool Psych::get()
     Tools::readN(in, &d_ack);
     Tools::readN(in, &d_flags);
     Tools::readN(in, &d_ID);
-    Tools::readN(in, &d_nextClientID);
+    Tools::readN(in, &d_lastClientID);
     d_pwdHash.resize(Tools::HASH_SIZE);
     Tools::read(in, &d_pwdHash.front(), Tools::HASH_SIZE);
 
@@ -33,8 +33,11 @@ bool Psych::get()
     decrypted = Tools::decrypt(iv, decrypted);  // and decrypt them
 
 
-    size = d_client.size();             // # of client data elements
+//    size = d_client.size();             // # of client data elements
     Tools::readN(in, &size);
+
+g_log << "Reading data of " << size << " clients" << endl;
+
     if (size)
     {
         d_client.resize(size);          // read # ClientData records

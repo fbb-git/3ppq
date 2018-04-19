@@ -5,6 +5,7 @@
 
 #include <iosfwd>
 #include <fstream>
+#include <algorithm>
 
 #include "../types/types.h"
 #include "../global/global.h"
@@ -33,7 +34,16 @@ class Tools
             MIN_PWD_LENGTH = 3,
             MAX_CLIENT_SELECT_ROWS = 5,
         };
-    
+
+        enum Align
+        {
+            LEFT,
+            RIGHT
+        };
+
+        template <typename T1, typename T2>
+        static T1 min(T1 t1, T2 t2);
+
         template <typename Type>
         static Type *as(size_t *skip, std::string const &str);
 
@@ -134,6 +144,8 @@ class Tools
     private:
         static std::string key();
 };
+
+#include "min.f"
 
 #include "as.f"
 #include "md5hash8.f"

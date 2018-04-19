@@ -14,14 +14,14 @@
 <nav class="top-menu-markup">                                               
     <ul class="spread">                                                     
         <li class="li-linewise">
-            <a href="" title="Activiteiten m.b.t. clienten" 
+            <a href="#" title="Activiteiten m.b.t. clienten" 
                 onclick="validate(1)" > 
                 Cli&euml;nt 
             </a>
         </li>
         <li class="li-linewise">
-            <a href="/wip.html" title="Download/selecteer verzamelde data"
-                onclick="validate(2)" >
+            <a href="#" title="Download/selecteer verzamelde data"
+                onclick="return false; validate(2)" >
                 Data
             </a>
         </li>
@@ -34,8 +34,8 @@
 
         </li>
         <li class="li-linewise">
-            <a href="/wip.html" title="Contact opnemen met het 3ppq.nl-team"
-                onclick="validate(4)" >
+            <a href="#" title="Contact opnemen met het 3ppq.nl-team"
+                onclick="return false; validate(4)" >
                 Contact 
             </a>
         </li>                                                               

@@ -1,67 +1,12 @@
-<!--    
-    HIDDEN request: ""      -- merely show
-                    add     -- add client
-                    update  -- change client
-                    remove  -- remove client
-            clientIdx       -- selected client ID for update/remove
-            activate:   0   -- client not active
-                        1   -- activate this client
-
-$0:
-            [1,1523973235,1234,"Name","Lastname","lastname@mailhost.nl"],
-            [2,1523973235,2341,"Name2","Lastname2","lastname2@mailhost.nl"],
-            [3,1523973235,3412,"Name3","Lastname3","name3@mailhost.nl"],
-
-
-$1:
-        var nClients = 3;
-        var login0 = 1950;
-
-
-$2: (of: "")
-    <table>
-    <tr>
-    <td>
-        <div style='margin-right: 1em; float:left'>
-            <span style='font-family: courier; font-size: 18px'><b>
-            &nbsp;ID Naam&nbsp; Achternaam</b>
-            </span><br>
-    
-            <select 
-                class=clientSelect
-                size=3              <--- aantal te displayen elementen
-                id='selectID' 
-                onclick="update()"
-            >
-            <option value=0>&nbsp;&nbsp;1  Name&nbsp; Lastname</option>
-            <option value=1>&nbsp;&nbsp;2  Name1      Lastname2</option>
-            <option value=2>&nbsp;&nbsp;3  Name2      Lastname3</option>
-            </select>
-        </div>
-    </td>
-    <td style='vertical-align: top'>    
-        <div style='float; margin-left:1em'> 
-            &nbsp;
-            <p>
-            <input type=submit value=Verwijder onclick='remove()'><br>
-            (verwijdert gemarkeerde cli&euml;nten)<br>
-        </div>
-    </td>
-    </tr>
-    </table>
-
--------------------------------------------------------------------->
     <script>
         var clients = [
 $0    
         ];
-    
 $1
     </script>
+
     <script src="/js/preamble.js"></script>
     <script src="/js/clientpage.js"></script>
- 
-
 </head>
 
 <body class="full">
@@ -72,7 +17,7 @@ $1
 <img src="/images/client.jpg" class=logo>
 
 
-<form name="form" action="/bin/form" method="post">
+<form name="form" action="/bin/form" onsubmit='return false' method="post">
 
 <nav class="top-menu-markup">                                               
     <ul class="spread">                                                     
@@ -122,13 +67,12 @@ $2
         <table style="border-collapse: collapse;">
             <tr>
                 <td ><input type=submit value="Velden wissen"
-                            onclick='return resetFields()'></td>
+                            onclick='resetFields()'></td>
             </tr>
             <tr>
                 <td class=right>ID: </td> 
-                <td ><input class=margin type=text name=ID value=
-                    <script>document.write(nClients)</script>
-                            readonly size=5></td>
+                <td ><input class=margin type=text name=ID readonly size=5>
+                </td>
             </tr>
             <tr class=darkrow>
                 <td class=right>Naam: </td> 
@@ -147,7 +91,7 @@ $2
             </tr>
             <tr>
                 <td class=right>E-mail adres: </td> 
-                <td ><input class=margin type=email name=email size=50></td>
+                <td ><input class=margin type=email name=clEmail size=50></td>
             </tr>
             <tr class=darkrow>
                 <td class=right>login code: </td> 
@@ -155,24 +99,25 @@ $2
                             size=5></td>
             </tr>
             <tr>
-                <td id=time1 class=right> of: Actief sinds:</td>
-                <td id=time2> <script>showDate()</script></td>
+                <td id=time1 class=right> Actief sinds:</td>
+                <td id=time2> <span id=dateText></span></td>
             </tr>
             <tr>
                 <td id=check1 class=right> Activeren:</td>
-                <td id=check2> <input type=checkbox name=active></td>
+                <td id=check2> <input type=checkbox name=active value=1></td>
             </tr>
             <tr class=darkrow>
                 <td>
                 <input type=submit name='action' value=Toevoegen
                     onclick='process()'>
                 </td>
-                <td><script>actionText()</script></td>
+                <td>(<span id=actionText>deze client toevoegen</span>)</td>
             </tr>
         </table>
     </td>
 </tr>
 </table>
+<script> window.onload=setValues(); </script>
 <p>
 
 Door op de knop <em>3PPQ</em> te klikken keert u terug naar de 3PPQ-homepage. 
@@ -186,7 +131,6 @@ Door op de knop <em>3PPQ</em> te klikken keert u terug naar de 3PPQ-homepage.
 </tr>
 </table>
 
-</form>
 
 
 

@@ -10,17 +10,19 @@ using namespace std;
 
 Options g_options{ g_base };
 
-int main()
+int main(int argc, char **argv)
 try
 {
-    cout << DollarText{ 
-                "verify",           
-                {
-                    "heer",     // $0
-                    "Hofstee",  // $1
-                    "123"       // $2
-                }
-            }.text();
+    if (argc == 1)
+        cout << "provide file argument\n";
+    else
+        cout << DollarText::replaceStream(argv[1],  
+                    {
+                        "heer",     // $0
+                        "Hofstee",  // $1
+                        "123"       // $2
+                    }
+                ) << '\n';
 }
 catch (...)
 {

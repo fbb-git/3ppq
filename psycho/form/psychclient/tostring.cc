@@ -16,6 +16,8 @@ string PsychClient::toString() const
 
     Tools::write(out, iv);
     Tools::writeN(out, &d_ID);
+    Tools::writeN(out, &d_active);
+    Tools::writeN(out, &d_login0);
 
     return out.str() + enc;
 }

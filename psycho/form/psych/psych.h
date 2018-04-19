@@ -9,6 +9,7 @@
 #include "../psychclient/psychclient.h"
 #include "../../support/datastore/datastore.h"
 #include "../../support/display/display.h"
+#include "../../support/tools/tools.h"
 
 #include <bobcat/align>
 
@@ -43,7 +44,7 @@ class Psych
     std::string d_lastName;
     std::string d_email;
 
-    uint16_t    d_nextClientID;
+    uint16_t    d_lastClientID;
     std::vector<PsychClient> d_client;  // client info
 
     public:
@@ -79,15 +80,20 @@ class Psych
         void noPwd();
 
 
-        void client();                  // WIP
-        void infoClient(std::string *clientArray, std::string *clientVars,
-                        std::string *clientSelect);
+//        void client();                  // WIP
 
-
+        void clientPage();
+        void infoClient(std::string *clientArray, std::string *clientSelect);
+        void addClient();
+        void updateClient();
+        void removeClient();
+        uint32_t validClientData();         // throws false on failure
+        void activateClient(PsychClient &client);
+        std::vector<PsychClient>::iterator existingClient();
 
         std::string toString() const;
         static std::string fixedWidth(std::string const &txt, size_t length,
-                                    FBB::Manipulator align = std::left);
+                                      Tools::Align align = Tools::LEFT);
         static std::string newPassword();
 };
 

@@ -13,8 +13,8 @@ void Psych::infoClient(string *array, string *select)
     ostringstream out;
     for (auto const &client: d_client)      // construct the client array
     {
-    g_log << client.id() << ": active = " << client.active() << 
-                            ", login0 = " << client.login0() << endl;
+//    g_log << client.id() << ": active = " << client.active() << 
+//                            ", login0 = " << client.login0() << endl;
 
         out << setw(11) << '[' <<   
                 client.id()         << ','      <<      //  0

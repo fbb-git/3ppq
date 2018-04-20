@@ -10,7 +10,7 @@ try
     
         string request = d_cgi.param1("request");
 
-g_log << "clientpage request = `" << request << '\'' << endl;
+//g_log << "clientpage request = `" << request << '\'' << endl;
 
         if (request == "add")
             addClient();
@@ -35,9 +35,7 @@ g_log << "clientpage request = `" << request << '\'' << endl;
     if (d_client.size())                // then create the <select> section
         infoClient(&clientArray, &clientSelect);  
 
-//g_log << "start display: array = " << clientArray << endl;
-g_log << "start display: vars = " << clientVars << endl;
-//g_log << "start display: select = " << clientSelect << endl;
+//g_log << "start display: vars = " << clientVars << endl;
 
     d_display.append("email");
     d_display.out(

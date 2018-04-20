@@ -109,6 +109,10 @@ class Tools
         static size_t readN(std::istream &in, 
                          Type *dest, size_t nToRead = 1);
 
+                                                // dest: resized to nToRead
+        static size_t readN(std::istream &in, std::string &dest,    // 3.cc
+                                              size_t nToRead);
+
 
         template<typename Type>                        // 1.f
         static bool write(std::ostream &out, Uint32 offset, 
@@ -120,6 +124,9 @@ class Tools
 
                                                         // 3.f
         static bool write(std::ostream &out, std::string const &str);
+
+                                                        // 4.f
+        static bool writeN(std::ostream &out, std::string const &str);
 
         template<typename Type>                        // 1.f
         static bool writeN(std::ostream &out, Uint32 offset, 
@@ -160,6 +167,7 @@ class Tools
 #include "write1.f"
 #include "write2.f"
 #include "write3.f"
+#include "write4.f"
 
 #include "writen1.f"
 #include "writen2.f"

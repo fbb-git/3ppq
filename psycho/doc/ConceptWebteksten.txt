@@ -1,47 +1,45 @@
-FBB
-
- Psycholoog > loginpagina > reset wachtwoord
-
-
-Vul hieronder uw e-mailadres in. U ontvangt per e-mail een link waarmee u een 
-nieuw wachtwoord kunt aanmaken.
-
-E-mailadres:    -invulveld-
-                                   verstuur
-                                   verstuur
-
-
-(Bijlage 2)
-
-
- Psycholoog > loginpagina > eenmalige registratie
-       
-Uw voorletters en naam: -invulveld-
-NIP-lidmaatschapsnummer:    -invulveld-
-E-mailadres:    -invulveld-
-Werkzaam op het gebied van: -voorkeuzemenu GGZ, A&O, onderwijs, 
-onderzoek, anders-
-                                   verstuur
-                                   verstuur
-
-
-Hierna volgt melding: Uw inloggegevens zullen worden toegestuurd naar het 
-opgegeven e-mailadres.
-(Bijlage 1)
-       
-
-       
- Psycholoog > actiepagina
-
-
-                                Accountgegevens
-
-     Mogelijkheid om wachtwoord te wijzigen
-
-
-                               Activeren afname
-
-      Leidt naar pagina 3.1
+// Psycholoog > loginpagina > reset wachtwoord
+//
+//
+//Vul hieronder uw e-mailadres in. U ontvangt per e-mail een link waarmee u een 
+//nieuw wachtwoord kunt aanmaken.
+//
+//E-mailadres:    -invulveld-
+//                                   verstuur
+//                                   verstuur
+//
+//
+//(Bijlage 2)
+//
+//
+// Psycholoog > loginpagina > eenmalige registratie
+//       
+//Uw voorletters en naam: -invulveld-
+//NIP-lidmaatschapsnummer:    -invulveld-
+//E-mailadres:    -invulveld-
+//Werkzaam op het gebied van: -voorkeuzemenu GGZ, A&O, onderwijs, 
+//onderzoek, anders-
+//                                   verstuur
+//                                   verstuur
+//
+//
+//Hierna volgt melding: Uw inloggegevens zullen worden toegestuurd naar het 
+//opgegeven e-mailadres.
+//(Bijlage 1)
+//       
+//
+//       
+// Psycholoog > actiepagina
+//
+//
+//                                Accountgegevens
+//
+//     Mogelijkheid om wachtwoord te wijzigen
+//
+//
+//                               Activeren afname
+//
+//      Leidt naar pagina 3.1
          
 
                               Resultaten ophalen

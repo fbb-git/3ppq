@@ -2,8 +2,6 @@
 
 void Psych::addClient()
 {
-    g_log << "Add client ID " << d_lastClientID + 1 << endl;
-
     uint32_t active= validClientData();
 
     d_client.push_back(
@@ -17,8 +15,6 @@ void Psych::addClient()
                 d_cgi.param1("clEmail")
             )
     );
-
-g_log << "LOGIN CODE = " << d_client.back().login0() << endl;
 
     if (active)
         activateClient(d_client.back());

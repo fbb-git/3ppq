@@ -24,8 +24,7 @@ try
 
     ostringstream out;                          // construct the variables
     out << setw(7) << ' ' << "var nextID = " << d_lastClientID + 1 << ";\n" <<
-           setw(7) << ' ' << "var login0 = " << 
-                                        Tools::random(10, 99)   << ";\n";
+           setw(7) << ' ' << "var login0 = '';";
     string clientVars = out.str();
 
     string clientArray;

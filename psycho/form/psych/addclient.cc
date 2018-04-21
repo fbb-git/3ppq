@@ -8,7 +8,7 @@ void Psych::addClient()
         PsychClient(
                 ++d_lastClientID, 
                 active, 
-                Tools::random(10, 99),
+                stoul(d_cgi.param1("login0")),   // 0,//Tools::random(10, 99),
                 d_cgi.param1("gender") == "M",
                 d_cgi.param1("name"),
                 d_cgi.param1("lastName"),

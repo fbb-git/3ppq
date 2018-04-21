@@ -1,10 +1,29 @@
 var clientID;
 var choice = "add";
+var xgender;
 
 function hideTime()
 {
     document.getElementById('time1').style.display = 'none';
     document.getElementById('time2').style.display = 'none';
+}
+
+function showTime()
+{
+    document.getElementById('time2').style.display = 'table-cell';
+    document.getElementById('time1').style.display = 'table-cell';
+}
+
+function hideActivate()
+{
+    document.getElementById('check1').style.display = 'none';
+    document.getElementById('check2').style.display = 'none';
+}
+
+function showActivate()
+{
+    document.getElementById('check2').style.display = 'table-cell';
+    document.getElementById('check1').style.display = 'table-cell';
 }
 
 function setValues()
@@ -14,6 +33,9 @@ function setValues()
     form.reset();
 
     form["login0"].value = login0;
+//    if (login0 == 0)
+        form['login0'].readonly = false;
+
     form["ID"].value = nextID;
 
     if (clients.length > 0)
@@ -22,32 +44,16 @@ function setValues()
     hideTime();
 }
 
-function showTime()
-{
-    document.getElementById('time2').style.display = 'table-cell';
-    document.getElementById('time1').style.display = 'table-cell';
-}
-
-function showActivate()
-{
-    document.getElementById('check2').style.display = 'table-cell';
-    document.getElementById('check1').style.display = 'table-cell';
-}
-
 function setGender()
 {
+    xgender = 0;
     document.getElementById('gender1').disabled = false;
     document.getElementById('gender2').disabled = false;
 }
 
-function hideActive()
-{
-    document.getElementById('check1').style.display = 'none';
-    document.getElementById('check2').style.display = 'none';
-}
-
 function fixGender()
 {
+    xgender = document.forms['form']['gender'];
     document.getElementById('gender1').disabled = true;
     document.getElementById('gender2').disabled = true;
 }
@@ -66,7 +72,9 @@ function resetFields()
                                         "deze client toevoegen";
     setValues();
 
-//    form['ID'].readOnly = false;
+    var loginCode = document.getElementById("login0");
+    loginCode.readOnly = false;
+    loginCode.value = '';
 
     form['action'].value = "Toevoegen";
     choice = "add";
@@ -84,8 +92,6 @@ function update()
 
     clientID = idx;
 
-//alert("client: " + clients[idx][0]);
-
 //      0       1       2        3      4           5           6
 //      ID    sex  active 
 //      [1,     0,      0,  login0  "Name", "lastname",     "email"]
@@ -98,11 +104,11 @@ function update()
     form['lastName'].value = clients[idx][5];
     form['clEmail'].value = clients[idx][6];
 
-//alert("active: " + clients[idx][2]);
+    document.getElementById("login0").readOnly = true;
 
     if (clients[idx][2] == 0)                   // active
     {
-        showActive();
+        showActivate();
         hideTime();
     }
     else
@@ -110,16 +116,14 @@ function update()
         document.getElementById("dateText").innerHTML = 
                             showDate(clients[idx][2]);
         showTime();
-        hideActive();
+        hideActivate();
     }
-   
+
     form['action'].value = "Wijzigen";
-    document.getElementById("actionText").innerHTML = 
-                                        "gegevens wijzigen";
+    document.getElementById("actionText").innerHTML = "gegevens wijzigen";
 
     choice = "update";
 
-//  alert("update " + idx);
     form['activate'].value = document.getElementById('active').value;
 }
 
@@ -136,7 +140,6 @@ function showDate(seconds)
 
 function home()
 {
-//    alert("home");
     window.open('/index.html', '_self'); 
     return false;
 }
@@ -161,8 +164,6 @@ function validate(action)           // actions from the menu
 
 function remove()
 {
-//    alert("remove");
-
     var form = document.forms["form"];
     var idx = document.getElementById("selectID").value;
 
@@ -185,8 +186,6 @@ function remove()
 
 function process()
 {
-//    alert("process");
-
     var form = document.forms["form"];
 
     var name = form['name'].value;
@@ -202,11 +201,16 @@ function process()
         return false;
     }
 
-//    alert("request: " + choice);
-
     addHidden("request",    choice);
 
     addHidden("state",      'clientPage');
     addHidden("type",       "psych");
+
+    if (xgender != 0)
+        addHidden("xgender", xgender.value);
+
     document.getElementsByName('form')[0].submit();
 }
+
+
+

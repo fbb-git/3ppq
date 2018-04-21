@@ -12,8 +12,6 @@ string const &DollarText::replaceLine(string &line,
 
     while (true)
     {
-cerr << "find $ in `" << line.substr(0, pos) << '\'' << '\n';
-
         pos = line.rfind('$', pos);
         if (pos == string::npos)
             return line;

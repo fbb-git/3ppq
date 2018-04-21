@@ -95,7 +95,7 @@ $2
             </tr>
             <tr class=darkrow>
                 <td class=right>login code: </td> 
-                <td ><input class=margin type=text name=login0 readonly
+                <td ><input id=login0 class=margin type=text name=login0
                             size=5></td>
             </tr>
             <tr>

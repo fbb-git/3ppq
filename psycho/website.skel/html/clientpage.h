@@ -94,8 +94,9 @@ $2
                 <td ><input class=margin type=email name=clEmail size=50></td>
             </tr>
             <tr class=darkrow>
-                <td class=right>login code: </td> 
-                <td ><input id=login0 class=margin type=text name=login0
+                <td class=right><span id=loginCodeText></span>: </td> 
+                <td ><input id=login0 pattern='[1-9][0-9]' 
+                            class=margin type=text name=login0
                             size=5></td>
             </tr>
             <tr>

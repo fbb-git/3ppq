@@ -32,11 +32,10 @@ function setValues()
 
     form.reset();
 
-    form["login0"].value = login0;
-//    if (login0 == 0)
-        form['login0'].readonly = false;
-
+    form['login0'].readonly = false;
     form["ID"].value = nextID;
+    document.getElementById("loginCodeText").innerHTML = 
+                    "login code (> 10, 2 cijfers)";
 
     if (clients.length > 0)
         form['selectID'].value = "";
@@ -73,6 +72,8 @@ function resetFields()
     setValues();
 
     var loginCode = document.getElementById("login0");
+    document.getElementById("loginCodeText").innerHTML = 
+                    "login code (> 10, 2 cijfers)";
     loginCode.readOnly = false;
     loginCode.value = '';
 
@@ -104,6 +105,8 @@ function update()
     form['lastName'].value = clients[idx][5];
     form['clEmail'].value = clients[idx][6];
 
+    document.getElementById("loginCodeText").innerHTML = 
+                    "login code";
     document.getElementById("login0").readOnly = true;
 
     if (clients[idx][2] == 0)                   // active

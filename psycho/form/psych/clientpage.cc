@@ -10,7 +10,7 @@ try
     
         string request = d_cgi.param1("request");
 
-//g_log << "clientpage request = `" << request << '\'' << endl;
+g_log << "clientpage request = `" << request << '\'' << endl;
 
         if (request == "add")
             addClient();

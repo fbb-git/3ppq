@@ -1,6 +1,6 @@
 var clientID;
 var choice = "add";
-var xgender;
+var xgender = 0;
 
 function hideTime()
 {
@@ -52,7 +52,7 @@ function setGender()
 
 function fixGender()
 {
-    xgender = document.forms['form']['gender'];
+    xgender = document.forms['form']['gender'].value;
     document.getElementById('gender1').disabled = true;
     document.getElementById('gender2').disabled = true;
 }
@@ -196,6 +196,7 @@ function process()
     var clEmail = form['clEmail'].value;
     var gender = form['gender'].value;
 
+
     if (name == "" || lastName == "" || clEmail == "" ||
         (gender != "M" && gender != "V") )
     {
@@ -210,7 +211,7 @@ function process()
     addHidden("type",       "psych");
 
     if (xgender != 0)
-        addHidden("xgender", xgender.value);
+        addHidden("xgender", xgender);
 
     document.getElementsByName('form')[0].submit();
 }

@@ -12,10 +12,10 @@
 <form name="form" action="/bin/form" onsubmit="return validate()" 
       method="post">
 
-Uw psycholoog heeft u gevraagd drie anderen te benaderen om de vragenlijst 
-over u in te vullen. Om deze drie anderen een uitnodiging hiervoor te kunnen 
-sturen, dient u hieronder hun e-mailadressen invullen. Zorgt u er alstublieft 
-voor de e-mailadressen correct in te vullen.
+Uw psycholoog heeft u gevraagd drie anderen te benaderen om de vragenlijst
+over u in te vullen. Om deze drie anderen een uitnodiging hiervoor te kunnen
+sturen, dient u hieronder hun e-mailadressen in te vullen. Zorgt u er
+alstublieft voor de e-mailadressen correct in te vullen.
 
 <div class="lightgrey">
 
@@ -32,7 +32,7 @@ voor de e-mailadressen correct in te vullen.
 </tr>
 
 <tr class=darkrow>
-    <td class=right>E-mail adres eerste ander: </td> 
+    <td class=right>E-mail adres derde ander: </td> 
     <td ><input class=margin type=email name=e2 size=50></td>
 </tr>
 
@@ -44,7 +44,4 @@ voor de e-mailadressen correct in te vullen.
 <input type=submit value=Verstuur>
 
 
-Hierna volgt melding: De door u ingevulde e-mailadressen van anderen zijn 
-ontvangen. 
-Zij ontvangen een uitnodiging om aan het onderzoek mee te doen.
-Klik hier om verder te gaan.
+

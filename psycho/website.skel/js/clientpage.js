@@ -82,19 +82,16 @@ function update()
 
     clientID = idx;
 
-//      0       1       2       3       4           5           6
+//      0       1       2     3           4           5
 //      ID    sex  active 
-//      [1,     0,      0,     --,   "Name", "lastname",   "email"]
+//      [1,     0,      0,    "Name", "lastname",   "email"]
 
     form['ID'].value = clients[idx][0];
     form['gender'].value = clients[idx][1] ? 'M' : 'V';
-
 //      [2] is active time
-//      [3]: currently not used
-
-    form['name'].value = clients[idx][4];
-    form['lastName'].value = clients[idx][5];
-    form['clEmail'].value = clients[idx][6];
+    form['name'].value = clients[idx][3];
+    form['lastName'].value = clients[idx][4];
+    form['clEmail'].value = clients[idx][5];
 
 //    document.getElementById("loginCodeText").innerHTML = 
 //                    "login code";

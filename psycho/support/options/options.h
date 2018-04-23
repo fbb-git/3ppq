@@ -6,6 +6,7 @@
 class Options
 {
     std::string d_base;
+    std::string d_psychEmail;
 
     public:
         Options(std::string const &base);
@@ -17,7 +18,7 @@ class Options
         std::string questions() const;
         std::string nrs() const;
         std::string config() const;
-        std::string wip() const;
+        std::string dataDir() const;                // ends in '/'
 };
 
 inline std::string Options::config() const
@@ -30,9 +31,9 @@ inline std::string Options::nrs() const
     return d_base + "data/nrs.bin";
 }
 
-inline std::string Options::wip() const
+inline std::string Options::dataDir() const
 {
-    return d_base + "data/wip";
+    return d_base + "data/";
 }
 
 inline std::string Options::questions() const

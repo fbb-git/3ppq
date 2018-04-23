@@ -1,8 +1,8 @@
     <script>
+        // 0: id, 1: gender, 2: active, 3: name, 4: lastname, 5: email
         var clients = [
 $0    
         ];
-$1
     </script>
 
     <script src="/js/preamble.js"></script>
@@ -53,7 +53,7 @@ $1
 
 <h1>Client-configuratie</h1>
 
-$2
+$1
 
 <h3>Cli&euml;nt:</h3>
 

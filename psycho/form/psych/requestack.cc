@@ -10,6 +10,7 @@ void Psych::requestAck()
 
     g_mailer.sendmail(
                 d_email, 
+                d_email, 
                 "3ppq.nl verification",
                 DollarText::replaceStream(
                                 g_options.mail() + "requestack", replacements

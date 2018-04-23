@@ -16,9 +16,9 @@ g_log << "valid client data: active: " << active <<
             ", name: " << d_cgi.param1("name") << 
             ", lastname: " << d_cgi.param1("lastName") << endl;
 
-
     if (                                            // inspect data validity
         count(clEmail.begin(), clEmail.end(), '@') == 1 &&
+        Tools::valueOr(d_cgi.param1("ID"), 0) != 0      &&
         Tools::checkParam(d_cgi, "name")                &&
         Tools::checkParam(d_cgi, "lastName")            &&
         Tools::checkParam(d_cgi, "clEmail")             &&
@@ -26,7 +26,7 @@ g_log << "valid client data: active: " << active <<
     )
         return active;
 
-g_log << "valid data fails " << endl;
+g_log << "VALID DATA FAILS " << endl;
 
     return active;
 

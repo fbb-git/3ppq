@@ -1,8 +1,12 @@
     #   mail: send      - send mail (default)
+    #   mail: psych     - mail to logged in psychologist
     #   mail: log       - log info
     #   mail: ...@...   - send mail to ...@...
     #   mail: off       - ignore mail requests
 # mail: log
+
+    #   URL to use when referring to website
+url:  https://3ppq.nl
 
     #   omit if a default replyTo should e used
     #   use only if the 3ppq.nl domain is recognized by the mail system

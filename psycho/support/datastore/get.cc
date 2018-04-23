@@ -9,8 +9,7 @@ bool DataStore::get(string *data, string const &key)
     d_stream.open();
 
     Preamble preamble = getPreamble(offset);
-    data->resize(preamble.used);
-    Tools::read(d_stream, &data->front(), preamble.used);
+    Tools::readN(d_stream, *data, preamble.used);
 
     return true;
 }

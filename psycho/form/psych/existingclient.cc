@@ -4,9 +4,9 @@ vector<PsychClient>::iterator Psych::existingClient()
 {
 //g_log << "existingClient RECEIVES ID " << d_cgi.param1("ID") << endl;
 
-    uint16_t ID = Tools::valueOr(d_cgi.param1("ID"), d_lastClientID + 1);
+    uint16_t ID = Tools::valueOr(d_cgi.param1("ID"), 0);
 
-    if (ID > d_lastClientID)
+    if (ID == 0)
         throw false;
 
 //g_log << "Looking for ID " << ID << endl;

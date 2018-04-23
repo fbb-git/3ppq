@@ -15,7 +15,7 @@ bool DataStore::update(string const &key, string const &data)
         preamble.used = data.size();        // update preamble and overwrite 
         putPreamble(offset, preamble);  
                                             // write the data
-        Tools::write(d_stream, &data.front(), preamble.used);
+        Tools::writeN(d_stream, data);
         return true;
     }
 

@@ -5,21 +5,25 @@ void WIPdata::write(ostream &out) const
     Tools::writeN(out, &d_psychID);
     Tools::writeN(out, &d_clientID);
     Tools::writeN(out, &d_start);
-    Tools::writeN(out, &d_flags);
-    Tools::writeN(out, &d_login0);
-    Tools::writeN(out, &d_loginClient);
-    Tools::writeN(out, &d_loginOther1);
-    Tools::writeN(out, &d_loginOther2);
-    Tools::writeN(out, &d_loginOther3);
+    Tools::writeN(out, &d_clientLogin);
+
+    for (auto login: d_otherLogin)
+        Tools::writeN(out, &login);
+
+    Tools::writeN(out, &d_selfRatings);
+    Tools::writeN(out, &d_metaRatings);
+    
+    for (auto const &ratings: d_otherRatings)
+        Tools::writeN(out, ratings);
 
     string iv{ Tools::iv() };
     Tools::writeN(out, iv);
 
-    string encrypted = 
-                    Tools::encrypt(
-                        iv, 
-                        d_other1 + '\n' + d_other2 + '\n' + d_other3 + '\n'
-                    );
+    ostringstream txt;
+    for (auto const &mail: d_otherMail)
+        txt << mail << '\n';
+
+    string encrypted = Tools::encrypt(iv, txt.str());
     uint16_t size = encrypted.size();
 
     Tools::writeN(out, &size);

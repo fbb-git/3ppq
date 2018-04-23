@@ -19,31 +19,30 @@ string Psych::toString() const
         string clientStr = client.toString();   // all data of this client
         uint16_t size = clientStr.size();       // its size
         Tools::writeN(out, &size);
-        Tools::write(out, clientStr);
+        Tools::writeN(out, clientStr);
     }
     string clientData = out.str();
 
     out.str("");                            // write the Psych's data    
 
-    Tools::write(out, iv);                  // first the encryption IV
+    Tools::writeN(out, iv);                 // first the encryption IV
     Tools::writeN(out, &d_time);
     Tools::writeN(out, &d_ack);
     Tools::writeN(out, &d_flags);
     Tools::writeN(out, &d_ID);
-    Tools::writeN(out, &d_lastClientID);
-    Tools::write(out, d_pwdHash);
+    Tools::writeN(out, d_pwdHash);
 
     uint16_t size = encrypted.size();       // write size of encrypted data
     Tools::writeN(out, &size);
-    Tools::write(out, encrypted);           // and the data themselves    
+    Tools::writeN(out, encrypted);          // and the data themselves    
 
 
-g_log << "writing data of " << d_client.size() << " clients" << endl;
+//g_log << "writing data of " << d_client.size() << " clients" << endl;
 
     size = d_client.size();             // # of client data elements
     Tools::writeN(out, &size);
     if (size)
-        Tools::write(out, clientData);      // write the client data
+        Tools::writeN(out, clientData);     // write the client data
 
     return out.str();                       // return the binary string    
 }

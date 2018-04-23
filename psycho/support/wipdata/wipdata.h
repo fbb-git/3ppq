@@ -5,91 +5,56 @@
 #include <cstdint>
 #include <string>
 
+#include "../tools/tools.h"
+
 class WIPdata
 {
-    uint16_t d_psychID;
-    uint16_t d_clientID;
+    uint16_t d_psychID = 0;
+    uint16_t d_clientID = 0;
 
-    uint32_t d_start;                   // starting time
+    uint32_t d_start = 0;               // starting time
 
-    struct CompletedFlags
-    {
-        int self:   1;
-        int meta:   1;
-        int other1: 1;
-        int other2: 1;
-        int other3: 1;
-    };
+    uint16_t d_clientLogin = 0;
+    uint16_t d_otherLogin[Tools::N_OTHER];
 
-    CompletedFlags d_flags = {0};     
+    std::string d_selfRatings;
+    std::string d_metaRatings;
+    std::string d_otherRatings[Tools::N_OTHER];
 
-    uint16_t d_login0;
-    uint16_t d_loginClient;
-    uint16_t d_loginOther1;
-    uint16_t d_loginOther2;
-    uint16_t d_loginOther3;
-
-    std::string d_other1;
-    std::string d_other2;
-    std::string d_other3;
+    std::string d_otherMail[Tools::N_OTHER];
 
     public:
-        WIPdata(uint16_t psychID, uint16_t clientID, uint16_t login0);
+        enum Type
+        {
+            INIT,
+            UPDATE
+        };
 
-        uint16_t login0() const;
-        uint16_t loginClient() const;
-        uint16_t loginOther1() const;
-        uint16_t loginOther2() const;
-        uint16_t loginOther3() const;
+        WIPdata(uint16_t psychID, uint16_t clientID, Type type);
+
+        uint16_t clientLogin() const;
+        uint16_t otherLogin(size_t idx) const;
         
-        std::string const &mailOther1() const;
-        std::string const &mailOther2() const;
-        std::string const &mailOther3() const;
+        std::string const &otherMail(size_t idx) const;
 
-        void write(std::ostream &out) const;
-        void read(std::istream &in);
     private:
+        void read(std::istream &in);
+        void write(std::ostream &out) const;
+        std::string path() const;
 };
 
-inline uint16_t WIPdata::login0() const
+inline uint16_t WIPdata::clientLogin() const
 {
-    return d_login0;
+    return d_clientLogin;
 }
 
-inline uint16_t WIPdata::loginClient() const
+inline uint16_t WIPdata::otherLogin(size_t idx) const
 {
-    return d_loginClient;
+    return d_otherLogin[idx];
 }
-
-inline uint16_t WIPdata::loginOther1() const
+inline std::string const &WIPdata::otherMail(size_t idx) const
 {
-    return d_loginOther1;
+    return d_otherMail[idx];
 }
-
-inline uint16_t WIPdata::loginOther2() const
-{
-    return d_loginOther2;
-}
-
-inline uint16_t WIPdata::loginOther3() const
-{
-    return d_loginOther3;
-}
-
-inline std::string const &WIPdata::mailOther1() const
-{
-    return d_other1;
-}
-
-inline std::string const &WIPdata::mailOther2() const
-{
-    return d_other2;
-}
-
-inline std::string const &WIPdata::mailOther3() const
-{
-    return d_other3;
-}
-
 
 #endif

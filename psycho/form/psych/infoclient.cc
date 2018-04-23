@@ -19,11 +19,10 @@ void Psych::infoClient(string *array, string *select)
         out << setw(11) << '[' <<   
                 client.id()         << ','      <<      //  0
                 client.gender()     << ','      <<      //  1
-                client.active()     << ','      <<      //  2
-                client.login0()     << ",\""    <<      //  3
-                client.name()       << "\",\""  <<      //  4
-                client.lastName()   << "\",\""  <<      //  5
-                client.email()      << "\"],\n";        //  6
+                client.active()     << ",\""    <<      //  2
+                client.name()       << "\",\""  <<      //  3
+                client.lastName()   << "\",\""  <<      //  4
+                client.email()      << "\"],\n";        //  5
     }
     *array = out.str();
 

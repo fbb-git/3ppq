@@ -1,7 +1,7 @@
 #include "mailer.ih"
 
-void Mailer::sendmail(string to, string const &subject, 
-                      string const &txt)
+void Mailer::sendmail(string const &psychEmail, string to, 
+                      string const &subject,    string const &txt)
 {
     string mailRequest = g_config.findKeyTail("mail:");
 
@@ -22,6 +22,9 @@ void Mailer::sendmail(string to, string const &subject,
                             mailRequest << endl;
         to = mailRequest;
     }
+    else if (mailRequest == "psych")
+        to = psychEmail;
+
 
     istringstream text{ txt };
     

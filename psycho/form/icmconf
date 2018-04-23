@@ -5,7 +5,7 @@
 #define OBJ_EXT             ".o"
 #define SHAREDREQ           ""
 #define TMP_DIR             "tmp"
-//#define USE_ALL             "a"
+#define USE_ALL             "a"
 #define USE_ECHO              ON
 #define CXX                 "g++"
 #define CXXFLAGS            " --std=c++17 -Wall -O2" \

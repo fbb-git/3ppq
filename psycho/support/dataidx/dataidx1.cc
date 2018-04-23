@@ -8,7 +8,7 @@ DataIdx::DataIdx(string dataIdxPath)
     {
         ifstream in;
         Exception::open(in, d_idxPath);
-        Tools::read(in, d_header, sizeof(d_header));
+        Tools::readB(in, d_header, sizeof(d_header));
     }
     else
     {

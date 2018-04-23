@@ -5,7 +5,7 @@ void DataStore::putPreamble(uint64_t offset,
 {
     d_stream.seekp(offset);
 
-    Tools::write(d_stream, &preamble.key.front(), Tools::KEY_SIZE);
-    Tools::write(d_stream, &preamble.used);
-    Tools::write(d_stream, &preamble.available);
+    Tools::writeN(d_stream, preamble.key);
+    Tools::writeN(d_stream, &preamble.used);
+    Tools::writeN(d_stream, &preamble.available);
 }

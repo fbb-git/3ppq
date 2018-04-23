@@ -24,8 +24,6 @@ void Psych::addPsych()
     d_lastName  = d_cgi.param1("lastName");
     d_email     = d_cgi.param1("email");
 
-    d_lastClientID = 0;
-
     LockGuard lg{ d_data.lg() };
 
     d_display.out(g_options.html() + 

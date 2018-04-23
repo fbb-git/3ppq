@@ -6,7 +6,7 @@ display
 dataidx
 datastore
 mailer
-uniquenr
+# uniquenr
 global
 lockstream
 dollartext

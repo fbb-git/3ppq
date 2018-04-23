@@ -23,8 +23,6 @@ g_log << "clientpage request = `" << request << '\'' << endl;
     }
 
     ostringstream out;                          // construct the variables
-    out << setw(7) << ' ' << "var nextID = " << d_lastClientID + 1 << ";\n;";
-    string clientVars = out.str();
 
     string clientArray;
     string clientSelect;
@@ -33,14 +31,11 @@ g_log << "clientpage request = `" << request << '\'' << endl;
     if (d_client.size())                // then create the <select> section
         infoClient(&clientArray, &clientSelect);  
 
-//g_log << "start display: vars = " << clientVars << endl;
-
     d_display.append("email");
     d_display.out(
         g_options.html() + "clientpage.h",
         {
             clientArray,
-            clientVars,
             clientSelect
         }
     );

@@ -15,6 +15,9 @@ echo "
     #   mail: off       - ignore mail requests
 mail: log
 
+    #   URL to use when referring to website
+url:  http://localhost
+
     #   omit if a default replyTo should e used
     #   use only if the 3ppq.nl domain is recognized by the mail system
 # replyTo: noreply@3ppq.nl

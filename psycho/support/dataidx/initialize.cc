@@ -7,7 +7,7 @@ void DataIdx::initialize(std::string const &path)
     ofstream out;
     Exception::open(out, path);
 
-    Tools::write(out, d_header, sizeof(d_header));    // write the header
+    Tools::writeB(out, d_header, sizeof(d_header));    // write the header
 
     out.seekp(d_header[SIZE] * sizeof(Entry) - 1, ios::cur);
     out.put(0);

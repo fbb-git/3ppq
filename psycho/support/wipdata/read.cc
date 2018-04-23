@@ -1,28 +1,33 @@
 #include "wipdata.ih"
 
-void WIPdata::read(istream &out)
+void WIPdata::read(istream &in)
 {
-    Tools::readN(out, &d_psychID);
-    Tools::readN(out, &d_clientID);
-    Tools::readN(out, &d_start);
-    Tools::readN(out, &d_flags);
-    Tools::readN(out, &d_login0);
-    Tools::readN(out, &d_loginClient);
-    Tools::readN(out, &d_loginOther1);
-    Tools::readN(out, &d_loginOther2);
-    Tools::readN(out, &d_loginOther3);
+    Tools::readN(in, &d_psychID);
+    Tools::readN(in, &d_clientID);
+    Tools::readN(in, &d_start);
+    Tools::readN(in, &d_clientLogin);
+
+
+    for (auto login: d_otherLogin)
+        Tools::readN(in, &login);
+
+    Tools::readN(in, d_selfRatings, Tools::N_QUESTIONS);
+    Tools::readN(in, d_metaRatings, Tools::N_QUESTIONS);
+
+    for (auto &ratings: d_otherRatings)
+        Tools::readN(in, ratings, Tools::N_QUESTIONS);
 
     string iv;
-    Tools::readN(out, iv, Tools::KEY_SIZE);
+    Tools::readN(in, iv, Tools::KEY_SIZE);
 
     uint16_t size;
-    Tools::readN(out, &size);
+    Tools::readN(in, &size);
 
     string encrypted;
-    Tools::readN(out, encrypted, size);
+    Tools::readN(in, encrypted, size);
 
     istringstream addresses{ Tools::decrypt(iv, encrypted) };
-    getline(addresses, d_other1);
-    getline(addresses, d_other2);
-    getline(addresses, d_other3);
+    for (auto &mail: d_otherMail)
+        getline(addresses, mail);
 }
+

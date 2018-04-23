@@ -44,7 +44,6 @@ class Psych
     std::string d_lastName;
     std::string d_email;
 
-    uint16_t    d_lastClientID;
     std::vector<PsychClient> d_client;  // client info
 
     public:
@@ -90,7 +89,7 @@ class Psych
         uint32_t validClientData();         // throws false on failure
         void activateClient(PsychClient &client);
         std::vector<PsychClient>::iterator existingClient();
-
+        std::string clientLink(uint16_t clientID, uint16_t loginValue) const;
         std::string toString() const;
         static std::string fixedWidth(std::string const &txt, size_t length,
                                       Tools::Align align = Tools::LEFT);

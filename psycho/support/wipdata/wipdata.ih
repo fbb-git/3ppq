@@ -2,10 +2,14 @@
 //#include <iostream>
 //#define CERR std::cerr << __FILE__": "
 
+#include <bobcat/exception>
+
 #include <ctime>
 #include <sstream>
 
-#include "../tools/tools.h"
+#include "../options/options.h"
+#include "../lockstream/lockstream.h"
+#include "../lockguard/lockguard.h"
 
 using namespace std;
-
+using namespace FBB;

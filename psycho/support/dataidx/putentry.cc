@@ -4,6 +4,6 @@ void DataIdx::putEntry(ostream &out, size_t idx, Entry const &entry) const
 {
     out.seekp(offsetOfEntry(idx));
 
-    Tools::write(out, &entry.key.front(), Tools::KEY_SIZE);
-    Tools::write(out, &entry.offset);    
+    Tools::writeN(out, entry.key);
+    Tools::writeN(out, &entry.offset);    
 }

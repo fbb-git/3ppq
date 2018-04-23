@@ -5,14 +5,14 @@
 <body class="full"> 
 <div class="container">
 
+<img src="/images/3ppqUL.jpg" class=logo>
+
 <header class='title'>
           Persoonlijkheid in perspectief
 </header>
 
 <form name="form" action="/bin/form" onsubmit="return validate()" 
       method="post">
-
-
 
 
 Klik op de knop <em>Inloggen</em> om in te loggen.

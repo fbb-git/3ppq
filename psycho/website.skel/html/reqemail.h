@@ -5,6 +5,8 @@
 <body class="full"> 
 <div class="container">
 
+<img src="/images/3ppqUL.jpg" class=logo>
+
 <header class='title'>
           Persoonlijkheid in perspectief
 </header>

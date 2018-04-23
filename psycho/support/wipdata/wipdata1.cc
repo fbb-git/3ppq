@@ -1,22 +1,22 @@
 #include "wipdata.ih"
 
-WIPdata::WIPdata(uint16_t psychID, uint16_t clientID, Type type)
+WIPdata::WIPdata(uint16_t psychID, uint16_t clientID)
 :
     d_psychID(psychID),
     d_clientID(clientID),
-    d_start(time(0))
+    d_start(time(0)),
+    d_clientLogin(Tools::random(1000, 9999)),
+    d_selfRatings(Tools::N_QUESTIONS, 0),
+    d_metaRatings(Tools::N_QUESTIONS, 0)
 {
     string name = path();
 
-    LockStream io{ name };
-    LockGuard lg = io.lg();
+    d_io = LockStream{ name };
 
-    if (type == UPDATE)
-    {
-        io.open();
-        read(io);
-        return;
-    }
+    LockGuard lg = d_io.lg();
+
+    if (Tools::exists(name))
+        throw Exception{} << name << " already exists";
 
     for (auto &login: d_otherLogin)
         login = Tools::random(1000, 9999);
@@ -27,9 +27,6 @@ WIPdata::WIPdata(uint16_t psychID, uint16_t clientID, Type type)
     for (auto &ratings: d_otherRatings)
         ratings.resize(Tools::N_QUESTIONS);
 
-    if (Tools::exists(name))
-        throw Exception{} << name << " already exists";
-
-    io.open();
-    write(io);
+    d_io.open();
+    write();
 }

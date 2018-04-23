@@ -5,7 +5,7 @@ void Psych::login()
     if (not pwdMatch())
     {
         Tools::delay();
-        d_display.out(g_options.html() + "pwderror.h");
+        d_display.out("pwderror.h");
         return;
     }
 
@@ -17,7 +17,7 @@ void Psych::login()
 
     d_display.append("email");
     d_display.out(
-        g_options.html() + "actions.h",
+        "actions.h",
         {
             messages()
         }

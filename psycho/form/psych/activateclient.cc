@@ -4,7 +4,7 @@ void Psych::activateClient(PsychClient &client)
 {
     client.activate();
 
-    WIPdata wipData{ d_ID, client.id(), WIPdata::INIT };
+    WIPdata wipData{ d_ID, client.id() };
 
     g_mailer.sendmail(
         d_email,

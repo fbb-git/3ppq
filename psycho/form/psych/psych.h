@@ -53,7 +53,6 @@ class Psych
     private:
         bool get();
         std::string emailKey() const;   // get key from cgi.param1("email")
-        void homePage();
 
         void verify();
         void notRegistered();

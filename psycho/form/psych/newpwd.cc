@@ -26,7 +26,7 @@ void Psych::newPwd()
                 )
             );
 
-    d_display.out(g_options.html() + "newpwd.h");
+    d_display.out("newpwd.h");
 }
 
 

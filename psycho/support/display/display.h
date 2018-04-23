@@ -29,6 +29,8 @@ class Display
         void out(std::string const &name,       // copy the skeleton to cout
                  StrVector const &elements);    // $-replacement elements
 
+        void homePage();
+
     private:
         void end();
         static void state(std::string const &path);

@@ -1,23 +1,24 @@
 #include "wipdata.ih"
 
-void WIPdata::write(ostream &out) const
+void WIPdata::write() const
 {
-    Tools::writeN(out, &d_psychID);
-    Tools::writeN(out, &d_clientID);
-    Tools::writeN(out, &d_start);
-    Tools::writeN(out, &d_clientLogin);
+    Tools::writeN(d_io, &d_psychID);
+    Tools::writeN(d_io, &d_clientID);
+    Tools::writeN(d_io, &d_start);
+    Tools::writeN(d_io, &d_clientLogin);
 
     for (auto login: d_otherLogin)
-        Tools::writeN(out, &login);
+        Tools::writeN(d_io, &login);
 
-    Tools::writeN(out, &d_selfRatings);
-    Tools::writeN(out, &d_metaRatings);
+    
+    Tools::writeN(d_io, d_selfRatings);
+    Tools::writeN(d_io, d_metaRatings);
     
     for (auto const &ratings: d_otherRatings)
-        Tools::writeN(out, ratings);
+        Tools::writeN(d_io, ratings);
 
     string iv{ Tools::iv() };
-    Tools::writeN(out, iv);
+    Tools::writeN(d_io, iv);
 
     ostringstream txt;
     for (auto const &mail: d_otherMail)
@@ -26,6 +27,6 @@ void WIPdata::write(ostream &out) const
     string encrypted = Tools::encrypt(iv, txt.str());
     uint16_t size = encrypted.size();
 
-    Tools::writeN(out, &size);
-    Tools::writeN(out, encrypted);
+    Tools::writeN(d_io, &size);
+    Tools::writeN(d_io, encrypted);
 }

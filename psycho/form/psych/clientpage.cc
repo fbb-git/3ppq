@@ -33,7 +33,7 @@ g_log << "clientpage request = `" << request << '\'' << endl;
 
     d_display.append("email");
     d_display.out(
-        g_options.html() + "clientpage.h",
+        "clientpage.h",
         {
             clientArray,
             clientSelect
@@ -42,6 +42,6 @@ g_log << "clientpage request = `" << request << '\'' << endl;
 }
 catch (bool invalid)
 {
-    homePage();
+    d_display.homePage();
 }
 

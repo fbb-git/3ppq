@@ -9,7 +9,7 @@ void Psych::profile()
 
     if (d_cgi.param1("email") != d_email)
     {
-        homePage();
+        d_display.homePage();
         return;
     }
 
@@ -19,7 +19,7 @@ void Psych::profile()
         
         d_display.append("email");
         d_display.out(
-            g_options.html() + "actions.h",
+            "actions.h",
             {
                 R"(
 <h1>Wachtwoord onjuist</h1>
@@ -36,7 +36,7 @@ Het opgegeven (huidig) wachtwoord is onjuist.
     {
         d_display.append("email");
         d_display.out(
-            g_options.html() + "actions.h",
+            "actions.h",
             {
                 R"(
 <h1>Profiel wijzigingen zijn niet verwerkt</h1>
@@ -72,13 +72,13 @@ Ook dient een eventueel nieuw wachtwoord twee keer te zijn vermeld.
     
     if (newpwd.length() > 0)                // new password
     {                                       // new login
-        d_display.out(g_options.html() + "psychpage.h");
+        d_display.out("psychpage.h");
         return;
     }
    
     d_display.append("email");
     d_display.out(
-        g_options.html() + "actions.h",
+        "actions.h",
         {
             R"(
 <h1>Uw profiel is aangepast</h1>

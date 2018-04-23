@@ -1,7 +1,9 @@
 #include "display.ih"
 
-void Display::out(string const &path)
+void Display::out(string const &name)
 {
+    string path = g_options.html() + name;
+
     state(path);
 
     ifstream in;

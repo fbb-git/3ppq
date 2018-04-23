@@ -2,7 +2,8 @@
 
 Client::Client(CGI &cgi)
 :
-    d_cgi(cgi)
+    d_cgi(cgi),
+    d_display(d_cgi)
 {
     ifstream questions;
     Exception::open(questions, g_options.questions());

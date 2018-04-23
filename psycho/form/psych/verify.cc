@@ -19,7 +19,7 @@ void Psych::verify()
     else if (mode == "login")
         login();
     else
-        homePage();
+        d_display.homePage();
 }
 
 

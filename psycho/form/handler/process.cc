@@ -5,9 +5,11 @@ void Handler::process()
     string const &type = d_cgi.param1("type");
  
     g_log << "Starting Handler::process: type = `" << type << '\'' << endl;
-    g_log << "Starting Handler::process: state = `" << 
-                                            d_cgi.param1("state") << '\'' << 
-                                            endl;
+
+    if (type.empty())
+        g_log << "No type. Query = `" << d_cgi.query() << '\'' << endl;
+    else
+        g_log << "state = `" << d_cgi.param1("state") << '\'' << endl;
 
     if (type == "psych")
         d_psych.process();
@@ -15,7 +17,7 @@ void Handler::process()
     else if (type == "client")
         d_client.process();
 
-    else 
+    else if (not d_client.accept(d_cgi.query()))
         empty();
 }
 

@@ -11,7 +11,7 @@ void Psych::addPsych()
 {
     if (not validRegistrationData(&d_nip, &d_field))
     {
-        d_display.out(g_options.html() + "rejectpsych.h");
+        d_display.out("rejectpsych.h");
         return;
     }
 
@@ -26,13 +26,11 @@ void Psych::addPsych()
 
     LockGuard lg{ d_data.lg() };
 
-    d_display.out(g_options.html() + 
-        (
+    d_display.out(
             d_data.add(emailKey(), toString()) ?
                 "ackcheck.h"
             :
                 "knownpsych.h" 
-        )
     );
 }
 

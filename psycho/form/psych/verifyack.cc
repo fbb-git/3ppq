@@ -13,7 +13,7 @@ void Psych::verifyAck()
     if (ack == 0 || ack != d_ack)
     {
         d_display.append({ "email", "mode", "pwd" });
-        d_display.out(g_options.html() + "ackerror.h");
+        d_display.out("ackerror.h");
         return;
     }
 
@@ -21,7 +21,7 @@ void Psych::verifyAck()
     d_data.update(emailKey(), toString());
 
     d_display.out(
-            g_options.html() + "actions.h",
+            "actions.h",
             {
                 messages()
             }

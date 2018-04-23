@@ -11,7 +11,7 @@ void Psych::profilePage()
     d_display.append("email");
 
     d_display.out(
-        g_options.html() + "profile.h",
+        "profile.h",
         {
             d_name,
             d_lastName,

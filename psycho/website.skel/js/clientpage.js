@@ -32,11 +32,6 @@ function setValues()
 
     form.reset();
 
-    form['login0'].readonly = false;
-    form["ID"].value = nextID;
-    document.getElementById("loginCodeText").innerHTML = 
-                    "login code (> 10, 2 cijfers)";
-
     if (clients.length > 0)
         form['selectID'].value = "";
 
@@ -71,12 +66,6 @@ function resetFields()
                                         "deze client toevoegen";
     setValues();
 
-    var loginCode = document.getElementById("login0");
-    document.getElementById("loginCodeText").innerHTML = 
-                    "login code (> 10, 2 cijfers)";
-    loginCode.readOnly = false;
-    loginCode.value = '';
-
     form['action'].value = "Toevoegen";
     choice = "add";
 
@@ -93,21 +82,22 @@ function update()
 
     clientID = idx;
 
-//      0       1       2        3      4           5           6
+//      0       1       2       3       4           5           6
 //      ID    sex  active 
-//      [1,     0,      0,  login0  "Name", "lastname",     "email"]
+//      [1,     0,      0,     --,   "Name", "lastname",   "email"]
 
     form['ID'].value = clients[idx][0];
     form['gender'].value = clients[idx][1] ? 'M' : 'V';
-//    //[2] is active time
-    form['login0'].value = clients[idx][3];
+
+//      [2] is active time
+//      [3]: currently not used
+
     form['name'].value = clients[idx][4];
     form['lastName'].value = clients[idx][5];
     form['clEmail'].value = clients[idx][6];
 
-    document.getElementById("loginCodeText").innerHTML = 
-                    "login code";
-    document.getElementById("login0").readOnly = true;
+//    document.getElementById("loginCodeText").innerHTML = 
+//                    "login code";
 
     if (clients[idx][2] == 0)                   // active
     {
@@ -171,13 +161,6 @@ function remove()
     var idx = document.getElementById("selectID").value;
 
     clientID = clients[idx][0];
-
-    if (clientID < 1 || clientID >= nextID)
-    {
-        alert("Klik op een client in het linker overzicht\n" +
-              "om de te verwijderen client te selecteren");
-        return false;
-    }
 
     addHidden("request",    'remove');
     addHidden("ID",          clientID);

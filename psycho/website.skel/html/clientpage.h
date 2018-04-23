@@ -71,11 +71,12 @@ $2
             </tr>
             <tr>
                 <td class=right>ID: </td> 
-                <td ><input class=margin type=text name=ID readonly size=5>
+                <td ><input class=margin pattern='[0-9]+' 
+                            type=text name=ID size=5>
                 </td>
             </tr>
             <tr class=darkrow>
-                <td class=right>Naam: </td> 
+                <td class=right>Aanspreeknaam: </td> 
                 <td ><input class=margin type=text name=name size=50></td>
             </tr>
             <tr >
@@ -94,20 +95,14 @@ $2
                 <td ><input class=margin type=email name=clEmail size=50></td>
             </tr>
             <tr class=darkrow>
-                <td class=right><span id=loginCodeText></span>: </td> 
-                <td ><input id=login0 pattern='[1-9][0-9]' 
-                            class=margin type=text name=login0
-                            size=5></td>
-            </tr>
-            <tr>
-                <td id=time1 class=right> Actief sinds:</td>
+                <td id=time1 class=right> Verstuurd op:</td>
                 <td id=time2> <span id=dateText></span></td>
             </tr>
-            <tr>
-                <td id=check1 class=right> Activeren:</td>
+            <tr class=darkrow>
+                <td id=check1 class=right> Verstuur:</td>
                 <td id=check2> <input type=checkbox name=active value=1></td>
             </tr>
-            <tr class=darkrow>
+            <tr>
                 <td>
                 <input type=submit name='action' value=Toevoegen
                     onclick='process()'>

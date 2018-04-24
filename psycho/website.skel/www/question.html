@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html><head>
+    <link rel="stylesheet" href="/css/3ppq.css">
+    <meta http-equiv="content-type" content="text/html;
+          charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="/js/preamble.js"></script>
+    <script src="/js/qstr.js"></script>
+    <script src="/js/question.js"></script>
+</head>
+
+<body class="full">
+
+<div class="container">
+
+<header class='title'>
+            Persoonlijkheid in perspectief
+</header>
+
+    <img src="/images/3ppqUL.jpg" class=logo>
+
+Vraag <script>var questionNr = sessionStorage.idx; 
+              document.write(++questionNr)</script> <p>
+    
+<div class=center-text>
+
+     <!-- is deze persoon / bent u -->
+    <script>document.write(sessionStorage.opening);
+            sessionStorage.opening = "..."</script> iemand die
+
+        <script>document.write(qStr(sessionStorage.idx))</script>
+    <p>
+</div>
+
+<form name=form action="/bin/form" onsubmit="return false;" method=post>
+
+<table class=center-table>
+<tr>
+    <td><input type=radio id=backID1 name=one
+                onClick="back()"></td>
+    <td> &nbsp;&nbsp;</td>
+
+    <td><input type=radio name=one id=nr1
+                onClick="answer(1)"></td>
+    <td> &nbsp;&nbsp;</td>
+
+    <td><input type=radio name=one id=nr2
+                onClick="answer(2)"></td>
+    <td> &nbsp;&nbsp;</td>
+
+    <td><input type=radio name=one id=nr3
+                onClick="answer(3)"></td>
+    <td> &nbsp;&nbsp;</td>
+
+    <td><input type=radio name=one id=nr4
+                onClick="answer(4)"></td>
+    <td> &nbsp;&nbsp;</td>
+
+    <td><input type=radio name=one id=nr5
+                onClick="answer(5)"></td>
+    <td> &nbsp;&nbsp;</td>
+
+    <td><input type=radio id=forwardID1 name=one
+                onClick="forward()"></td>
+    <td> &nbsp;&nbsp;</td>
+</tr>
+<tr>
+    <td id=backID2 class=center-text>&lt;</td>
+    <td></td>
+
+    <td class=center-text>nee!</td>
+    <td></td>
+
+    <td class=center-text>nee</td>
+    <td></td>
+
+    <td class=center-text>?</td>
+    <td></td>
+
+    <td class=center-text>ja</td>
+    <td></td>
+
+    <td class=center-text>ja!</td>
+    <td></td>
+
+    <td id=forwardID2 class=center-text>&gt;</td>
+</tr>
+
+</table>
+
+<script>window.onload = setArrows();</script>
+
+<p>
+
+</form>
+</div>  <!-- container -->
+</body></shtml>
+

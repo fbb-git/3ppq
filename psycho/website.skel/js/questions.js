@@ -42,3 +42,4 @@ var questions = [
     "hulp afslaat",                                         // 41. 
     "bedenktijd neemt",                                     // 42. 
 ];
+

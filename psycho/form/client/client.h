@@ -36,13 +36,15 @@ class Client
         void metaRatings(WIPdata &wipData);
         void trySaveData();
 
+        void selfInstructions(WIPdata const &wipData);
+
         void pidCid(WIPdata const &wipData);
         void inviteOther(std::string const &otherMail);
         void storeEmail();
 
 //////////////////////////////////////////////////////////////////////////
-        void verify();
-        void quest();           // question 0: 1st question, no back
+//        void verify();
+//        void quest();           // question 0: 1st question, no back
                                 // last q.: no next, but finish
 };
         

@@ -4,7 +4,6 @@
 #include <iosfwd>
 #include <unordered_map>
 
-#include "../../support/types/types.h"
 #include "../../support/display/display.h"
 
 namespace FBB
@@ -20,10 +19,6 @@ class Client
 
     FBB::CGI &d_cgi;
     Display d_display;
-
-    int d_nQuestions;               // compared against negative values
-                                    // in quest.cc, hence 'int'
-    StrVector d_lines;
 
     static Map s_state;             // maps state names to handling functions
 

@@ -1,15 +1,24 @@
     <script src="/js/preamble.js"></script>
-    <script src="/js/instruct.js"></script>
+    <script src="/js/questions.js"></script>
+    <script src="/js/instruction.js"></script>
+    <script>
+        sessionStorage.opening = "$0";
+    </script>
 </head>
 
-<body> 
-<header class="title">                                                      
-    3PPQ 
-</header>                                                                   
+<body class="full"> 
+<div class="container">
 
-<h1>3PPQ - Vragenlijstinstructie</h1>
+<img src="/images/3ppqUL.jpg" class=logo>
 
-<b>Toelichting en invulinstructie Persoonlijkheid in Perspectief</b><p>
+<header class='title'>
+          Persoonlijkheid in perspectief
+</header>
+
+<form name="form" action="/bin/form" onsubmit="return validate()" 
+      method="post">
+
+<b>Toelichting en invulinstructie</b><p>
 
 Deze vragenlijst gaat over hoe u bent. Bijvoorbeeld:
 
@@ -42,7 +51,7 @@ Deze vragenlijst gaat over hoe u bent. Bijvoorbeeld:
     <td></td>
 
     <td class=center-text>nee</td>
-    <td></td>
+        <td></td>
 
     <td class=center-text>?</td>
     <td></td>
@@ -70,7 +79,7 @@ en via een knop <em>terug</em> naar de vorige.<br>
 U kunt uw antwoorden nog veranderen voor u de vragenlijst verstuurt. 
 <p>
 
-Dit onderdeel van de lijst bevat 42 zulke vragen. Als u in een rustig tempo
+Dit onderdeel van de lijst bevat 42 vragen. Als u in een rustig tempo
 werkt, kost het een minuut of tien.
 
 <p>
@@ -78,6 +87,8 @@ werkt, kost het een minuut of tien.
 <form name="form" action="/bin/form" 
       onsubmit="return validate()" method='post'>
 <input type="submit" value="Start de vragenlijst">
+
+
 
 
 

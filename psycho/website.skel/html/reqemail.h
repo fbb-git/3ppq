@@ -14,10 +14,14 @@
 <form name="form" action="/bin/form" onsubmit="return validate()" 
       method="post">
 
-Uw psycholoog heeft u gevraagd drie anderen te benaderen om de vragenlijst
-over u in te vullen. Om deze drie anderen een uitnodiging hiervoor te kunnen
-sturen, dient u hieronder hun e-mailadressen in te vullen. Zorgt u er
-alstublieft voor de e-mailadressen correct in te vullen.
+De laatste fase van het psychologisch onderzoek bestaat eruit dat drie anderen
+worden benaderd om de vragenlijst over u in te vullen.
+
+<p>
+
+Om deze drie anderen een uitnodiging te kunnen sturen, dient u hieronder hun
+e-mailadressen in te vullen. Zorgt u er alstublieft voor de e-mailadressen
+correct in te vullen.
 
 <div class="lightgrey">
 

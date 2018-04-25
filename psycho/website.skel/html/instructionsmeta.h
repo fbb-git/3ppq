@@ -2,7 +2,7 @@
     <script src="/js/questions.js"></script>
     <script src="/js/instructions.js"></script>
     <script>
-        sessionStorage.opening = "$0";      // is deze persoon; bent u
+        sessionStorage.opening = "$0";      // vinden anderen u
     </script>
 </head>
 
@@ -20,15 +20,11 @@
 
 <b>Toelichting en invulinstructie</b><p>
 
-Deze vragenlijst gaat over hoe u bent. Bijvoorbeeld:
+In het vorige onderdeel hebt u de vragenlijst ingevuld over uzelf. In dit 
+tweede en laatste onderdeel van de vragenlijst is de vraag hoe anderen vinden 
+dat u bent. Bijvoorbeeld:
 
-<div class=center-text>
-
-    $0 iemand die        <!-- is deze persoon / bent u -->
-        gemakkelijk vrienden maakt?
-    <p>
-
-</div>
+Vinden anderen u iemand die makkelijk vrienden maakt?   
 
 <table class=center-table>
 <tr>
@@ -79,25 +75,13 @@ Deze vragenlijst gaat over hoe u bent. Bijvoorbeeld:
 
 <p>
 
-<ul>
-<li>kies ja!  als dat zo is<br>
-<li>kies ja als het eerder wel dan niet zo is<br>
-<li>kies ? als het neutraal is of als u het niet weet<br>
-<li>kies nee als het eerder niet dan wel zo is<br>
-<li>kies nee! als het niet zo is
-</ul>
+Denk bij <em>anderen</em> niet aan een bepaalde persoon, maar aan anderen in
+het algemeen.
 
 <p>
 
-Na beantwoording van een vraag gaat u automatisch naar de volgende vraag. Via
-<tt>&lt;</tt> kunt u terug naar de vorige vraag, en via <tt>&gt;</tt> naar de
-volgende vraag<br>
-
-U kunt uw antwoorden nog veranderen voor u de vragenlijst verstuurt. 
-<p>
-
-Dit onderdeel van de lijst bevat 42 vragen. Als u in een rustig tempo
-werkt, kost het een minuut of tien.
+Zulke vragen zijn vaak lastiger te beantwoorden, maar meestal heeft u wel een 
+idee.
 
 <p>
 

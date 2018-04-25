@@ -18,9 +18,7 @@ bool Client::selfRatings(WIPdata &wipData)
 //        }
 //    }
 
-    selfInstructions(hash, wipData);
-
-    g_log << "self ratings: WIP" << endl;
+    selfInstructions(wipData);
     return true;
 }
 

@@ -49,46 +49,46 @@
 
  Psycholoog > actiepagina > activeren afname
     
-E-mailadres cliënt:     -invulveld-
-Naam:               -invulveld-     -?-  bijv. Donald of meneer 
-Trump
-Geslacht:   -M/V        
-Eerste deel inlogcode:  -invulveld- -?-  bestaat uit een ID psycholoog 
-(waardoor het programma de psycholoog kan herkennen) i.c.m. een uniek ID 
-cliënt (waaraan de psycholoog de cliënt kan herkennen). (De psycholoog 
-dient dit eerste deel van de inlogcode aan de cliënt door te geven; de 
-cliënt ontvangt per e-mail het tweede deel van de inlogcode (zie ook pagina 
-4. `respondent').) (Bijlage 4)
-
-U dient uw cliënt de procedure vooraf uit te leggen (en deze uitleg 
-eventueel op een briefje aan de cliënt mee te geven): "Voor een 
-persoonlijkheidsonderzoek wil ik u vragen of u online een vragenlijst wilt 
-invullen. Het is daarbij de bedoeling dat ook drie anderen die u goed kennen 
-deze vragenlijst invullen, zodat we een beeld van uw persoonlijkheid kunnen 
-krijgen vanuit meerdere perspectieven. U krijgt per e-mail een uitnodiging om 
-de vragenlijst in te vullen. In de e-mail staat een link waarmee u op de 
-vragenlijst kunt inloggen. U dient dan twee inlogcodes in te vullen. De 
-eerste inlogcode geef ik u nu. De tweede inlogcode staat, samen met een link 
-om in te loggen, in de e-mail die u ontvangt. Zo weet u zeker dat onbevoegden 
-geen toegang hebben tot de vragenlijst. Naast de beide inlogcodes dient u ook 
-de e-mailadressen van de drie anderen die u wilt vragen de vragenlijst over u 
-in te vullen bij de hand te hebben. Bespreek met hen van tevoren of zij dit 
-goed vinden, en geef hen ook de eerste de inlogcode (dezelfde die u hebt). 
-Zij ontvangen daarna per e-mail een tweede inlogcode en een link om op de 
-vragenlijst in te loggen. Deze anderen blijven anoniem. De e-mailadressen 
-worden na het invullen van de vragenlijst gewist. Alleen ik weet door de 
-eerste inlogcode dat het om u gaat." 
-
-Indien er een cliënt is die de vragenlijst wil laten invullen door een ander 
-die geen mogelijkheid heeft deze online in te vullen, is een paper & 
-pencilversie van de vragenlijst beschikbaar. Deze dient met een gefrankeerde 
-retourenvelop in een gesloten envelop aan de cliënt meegegeven te worden. De 
-cliënt kan na het inloggen het e-mailadres van de psycholoog opgeven, die de 
-antwoorden van deze papieren respondent over kan nemen in de online omgeving. 
-(Willen we dat? Zo ja, dan ergens een linkje naar een pdf-je met een 
-derdenvragenlijst.)
-(Wanneer de vragenlijsten zijn ingevuld krijgt de psycholoog een e-mail dat 
-de rapportage klaar staat.) (Bijlage 3)
+//E-mailadres cliënt:     -invulveld-
+//Naam:               -invulveld-     -?-  bijv. Donald of meneer 
+//Trump
+//Geslacht:   -M/V        
+//Eerste deel inlogcode:  -invulveld- -?-  bestaat uit een ID psycholoog 
+//(waardoor het programma de psycholoog kan herkennen) i.c.m. een uniek ID 
+//cliënt (waaraan de psycholoog de cliënt kan herkennen). (De psycholoog 
+//dient dit eerste deel van de inlogcode aan de cliënt door te geven; de 
+//cliënt ontvangt per e-mail het tweede deel van de inlogcode (zie ook pagina 
+//4. `respondent').) (Bijlage 4)
+//
+//U dient uw cliënt de procedure vooraf uit te leggen (en deze uitleg 
+//eventueel op een briefje aan de cliënt mee te geven): "Voor een 
+//persoonlijkheidsonderzoek wil ik u vragen of u online een vragenlijst wilt 
+//invullen. Het is daarbij de bedoeling dat ook drie anderen die u goed kennen 
+//deze vragenlijst invullen, zodat we een beeld van uw persoonlijkheid kunnen 
+//krijgen vanuit meerdere perspectieven. U krijgt per e-mail een uitnodiging om 
+//de vragenlijst in te vullen. In de e-mail staat een link waarmee u op de 
+//vragenlijst kunt inloggen. U dient dan twee inlogcodes in te vullen. De 
+//eerste inlogcode geef ik u nu. De tweede inlogcode staat, samen met een link 
+//om in te loggen, in de e-mail die u ontvangt. Zo weet u zeker dat onbevoegden 
+//geen toegang hebben tot de vragenlijst. Naast de beide inlogcodes dient u ook 
+//de e-mailadressen van de drie anderen die u wilt vragen de vragenlijst over u 
+//in te vullen bij de hand te hebben. Bespreek met hen van tevoren of zij dit 
+//goed vinden, en geef hen ook de eerste de inlogcode (dezelfde die u hebt). 
+//Zij ontvangen daarna per e-mail een tweede inlogcode en een link om op de 
+//vragenlijst in te loggen. Deze anderen blijven anoniem. De e-mailadressen 
+//worden na het invullen van de vragenlijst gewist. Alleen ik weet door de 
+//eerste inlogcode dat het om u gaat." 
+//
+//Indien er een cliënt is die de vragenlijst wil laten invullen door een ander 
+//die geen mogelijkheid heeft deze online in te vullen, is een paper & 
+//pencilversie van de vragenlijst beschikbaar. Deze dient met een gefrankeerde 
+//retourenvelop in een gesloten envelop aan de cliënt meegegeven te worden. De 
+//cliënt kan na het inloggen het e-mailadres van de psycholoog opgeven, die de 
+//antwoorden van deze papieren respondent over kan nemen in de online omgeving. 
+//(Willen we dat? Zo ja, dan ergens een linkje naar een pdf-je met een 
+//derdenvragenlijst.)
+//(Wanneer de vragenlijsten zijn ingevuld krijgt de psycholoog een e-mail dat 
+//de rapportage klaar staat.) (Bijlage 3)
 
  Respondent > loginpagina
 

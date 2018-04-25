@@ -1,3 +1,4 @@
+
 #include "client.ih"
 
     // when ratings are already available, then throw false, resulting in
@@ -14,15 +15,11 @@ void Client::answered()
     switch (uint16_t type = stoul(d_cgi.param1("ratingType")))
     {
         case SELF:
-            if (wipData.selfRatings.front() != 0)
-                throw false;
-            wipData.setSelfRatings(ratings);
+            selfCompleted(wipData, ratings);
         break;
 
         case META:
-            if (wipData.metaRatings.front() != 0)
-                throw false;
-            wipData.setMetaRatings(ratings);
+            metaCompleted(wipData, ratings);
         break;
 
         default:
@@ -33,7 +30,7 @@ void Client::answered()
         break;
     }
 
-    checkCompleted(wipData);
+    checkCompleted(wipData);    // only with others
 }
 
 

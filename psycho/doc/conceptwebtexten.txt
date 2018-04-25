@@ -134,30 +134,30 @@ Klik hier om verder te gaan.
 
 De drie anderen krijgen per e-mail een uitnodiging (bijlage 5)
 
- Respondent > zelf > uitleg 1
-          
-Deze vragenlijst gaat over hoe u bent. Bijvoorbeeld:
-
-Bent u iemand die makkelijk vrienden maakt?
-
-<   ja! ja  ?   nee nee!    >
-
-kies ja!  als dat zo is
-kies ja als het eerder wel dan niet zo is
-kies ? als het neutraal is of als u het niet weet
-kies nee als het eerder niet dan wel zo is
-kies nee! als het niet zo is
-
-Via > gaat u naar de volgende vraag en via < naar de vorige.  
-U kunt uw antwoorden nog veranderen voor u de vragenlijst verstuurt. 
-
-Dit onderdeel van de lijst bevat 42 zulke vragen. Als u in een rustig tempo 
-werkt, kost het een minuut of tien.
-
-                             Start de vragenlijst
-                                       
-
-                           Leidt naar pagina 5 (vorm A)
+// Respondent > zelf > uitleg 1
+//          
+//Deze vragenlijst gaat over hoe u bent. Bijvoorbeeld:
+//
+//Bent u iemand die makkelijk vrienden maakt?
+//
+//<   ja! ja  ?   nee nee!    >
+//
+//kies ja!  als dat zo is
+//kies ja als het eerder wel dan niet zo is
+//kies ? als het neutraal is of als u het niet weet
+//kies nee als het eerder niet dan wel zo is
+//kies nee! als het niet zo is
+//
+//Via > gaat u naar de volgende vraag en via < naar de vorige.  
+//U kunt uw antwoorden nog veranderen voor u de vragenlijst verstuurt. 
+//
+//Dit onderdeel van de lijst bevat 42 zulke vragen. Als u in een rustig tempo 
+//werkt, kost het een minuut of tien.
+//
+//                             Start de vragenlijst
+//                                       
+//
+//                           Leidt naar pagina 5 (vorm A)
 
 
  Respondent > zelf > uitleg 2
@@ -216,126 +216,116 @@ en de betekenis ervan worden met [naam cliënt] besproken.
                            Leidt naar pagina 5 (vorm C)
                                        
                                        
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
- De vragenlijst
-
-([veld] dient afhankelijk van de respondent ingevuld te worden met: `Bent u' 
-(vorm A),
-`Vinden anderen u' (vorm B) of `Is [naam cliënt]' (vorm C).
-[hem/haar] en [zijn/haar] kan aangepast worden afhankelijk van geslacht.)
-
-(Mijns inziens na iedere `verder' een nieuwe pagina. Veel mensen doen zulke 
-dingen op hun telefoon en dan is het teveel gepriegel als er meerdere vragen 
-op 1 pagina staan. Men moet op volgende klikken om naar de volgende vraag te 
-gaan. Als op volgende wordt geklikt zonder dat een antwoord is gegeven, 
-verschijnt een pop-up met melding `u hebt de vraag nog niet beantwoord'. Zo 
-worden overgeslagen items voorkomen.)
-
-
-1 [veld] iemand die moeilijk van een standpunt is af te brengen?
-
-    ja! ja  ?   nee nee!    >   
- 
-2 [veld] iemand die zaken ernstig opneemt?
-
-<   ja! ja  ?   nee nee!    >   
- 
-3 [veld] iemand die ingewikkelde problemen aankan?  
-
-<   ja! ja  ?   nee nee!    >       
-4 [veld] iemand die zich snel bedreigd voelt?       
-
-<   ja! ja  ?   nee nee!    >       
-5 [veld] iemand die alles best vindt?               
- 
-et cetera
-
-6 [veld] iemand die aan andermans spullen zit?          
-
-7 [veld] iemand die overal mee instemt?             
-    
-8 [veld] iemand die een hekel heeft aan verrassingen?
-        
-9 [veld] iemand die tegen kritiek kan?              
-
-10 [veld] iemand die zich laat beïnvloeden?             
-
-11 [veld] iemand die met rust gelaten wil worden?           
-
-12 [veld] iemand die overal iets achter zoekt?          
-
-13 [veld] iemand die ongelovig reageert?                
-
-14 [veld] iemand die anderen bijstaat?              
-
-15 [veld] iemand die graag aardig gevonden wil worden?      
-
-16 [veld] iemand die anderen het laat werk doen?            
-
-17 [veld] iemand die hardop lacht?                  
-
-18 [veld] iemand die moeilijk te begrijpen is?          
-
-19 [veld] iemand die doet wat van [hem/haar] verwacht wordt?        
-
-20 [veld] iemand die zich aan de regels houdt?          
-
-21 [veld] iemand die iets met iemand deelt?             
-
-22 [veld] iemand die doorgaat tot het doel is bereikt?      
-
-23 [veld] iemand die snel in de war raakt?              
-
-24 [veld] iemand die mensen weet te boeien?         
-
-25 [veld] iemand die anderen in verlegenheid brengt?        
-
-26 [veld] iemand die anders doet dan verwacht?          
-
-27 [veld] iemand die ongevraagde adviezen geeft?            
-
-28 [veld] iemand die goede raad aanneemt?           
-
-29 [veld] iemand die anderen veel toelaat?              
-
-30 [veld] iemand die onmiddellijk reageert?             
-
-31 [veld] iemand die bevelen opvolgt?               
-
-32 [veld] iemand die doet wat anderen doen?         
-
-33 [veld] iemand die tegen de stroom in zwemt?          
-
-34 [veld] iemand die alles doet om [zijn/haar] zin te krijgen?      
-
-35 [veld] iemand die iets doet zonder nadenken?         
-
-36 [veld] iemand die openstaat voor ideeën?         
-
-37 [veld] iemand die beslissingen aan anderen overlaat?     
-
-38 [veld] iemand die weet waarover [hij/zij] spreekt?           
-
-39 [veld] iemand die graag iets nieuws leert?           
-
-40 [veld] iemand die zaken overdrijft?              
-
-41 [veld] iemand die hulp afslaat?                  
-
-42 [veld] iemand die bedenktijd neemt?                  
-Dit was de laatste vraag. Als u wilt kunt u nog antwoorden wijzigen. Door op 
-`verstuur' te klikken worden uw antwoorden definitief gemaakt en kunt u deze 
-niet meer veranderen.
-
+// De vragenlijst
+//
+//([veld] dient afhankelijk van de respondent ingevuld te worden met: `Bent u' 
+//(vorm A),
+//`Vinden anderen u' (vorm B) of `Is [naam cliënt]' (vorm C).
+//[hem/haar] en [zijn/haar] kan aangepast worden afhankelijk van geslacht.)
+//
+//(Mijns inziens na iedere `verder' een nieuwe pagina. Veel mensen doen zulke 
+//dingen op hun telefoon en dan is het teveel gepriegel als er meerdere vragen 
+//op 1 pagina staan. Men moet op volgende klikken om naar de volgende vraag te 
+//gaan. Als op volgende wordt geklikt zonder dat een antwoord is gegeven, 
+//verschijnt een pop-up met melding `u hebt de vraag nog niet beantwoord'. Zo 
+//worden overgeslagen items voorkomen.)
+//
+//
+//1 [veld] iemand die moeilijk van een standpunt is af te brengen?
+//
+//    ja! ja  ?   nee nee!    >   
+// 
+//2 [veld] iemand die zaken ernstig opneemt?
+//
+//<   ja! ja  ?   nee nee!    >   
+// 
+//3 [veld] iemand die ingewikkelde problemen aankan?  
+//
+//<   ja! ja  ?   nee nee!    >       
+//4 [veld] iemand die zich snel bedreigd voelt?       
+//
+//<   ja! ja  ?   nee nee!    >       
+//5 [veld] iemand die alles best vindt?               
+// 
+//et cetera
+//
+//6 [veld] iemand die aan andermans spullen zit?          
+//
+//7 [veld] iemand die overal mee instemt?             
+//    
+//8 [veld] iemand die een hekel heeft aan verrassingen?
+//        
+//9 [veld] iemand die tegen kritiek kan?              
+//
+//10 [veld] iemand die zich laat beïnvloeden?             
+//
+//11 [veld] iemand die met rust gelaten wil worden?           
+//
+//12 [veld] iemand die overal iets achter zoekt?          
+//
+//13 [veld] iemand die ongelovig reageert?                
+//
+//14 [veld] iemand die anderen bijstaat?              
+//
+//15 [veld] iemand die graag aardig gevonden wil worden?      
+//
+//16 [veld] iemand die anderen het laat werk doen?            
+//
+//17 [veld] iemand die hardop lacht?                  
+//
+//18 [veld] iemand die moeilijk te begrijpen is?          
+//
+//19 [veld] iemand die doet wat van [hem/haar] verwacht wordt?        
+//
+//20 [veld] iemand die zich aan de regels houdt?          
+//
+//21 [veld] iemand die iets met iemand deelt?             
+//
+//22 [veld] iemand die doorgaat tot het doel is bereikt?      
+//
+//23 [veld] iemand die snel in de war raakt?              
+//
+//24 [veld] iemand die mensen weet te boeien?         
+//
+//25 [veld] iemand die anderen in verlegenheid brengt?        
+//
+//26 [veld] iemand die anders doet dan verwacht?          
+//
+//27 [veld] iemand die ongevraagde adviezen geeft?            
+//
+//28 [veld] iemand die goede raad aanneemt?           
+//
+//29 [veld] iemand die anderen veel toelaat?              
+//
+//30 [veld] iemand die onmiddellijk reageert?             
+//
+//31 [veld] iemand die bevelen opvolgt?               
+//
+//32 [veld] iemand die doet wat anderen doen?         
+//
+//33 [veld] iemand die tegen de stroom in zwemt?          
+//
+//34 [veld] iemand die alles doet om [zijn/haar] zin te krijgen?      
+//
+//35 [veld] iemand die iets doet zonder nadenken?         
+//
+//36 [veld] iemand die openstaat voor ideeën?         
+//
+//37 [veld] iemand die beslissingen aan anderen overlaat?     
+//
+//38 [veld] iemand die weet waarover [hij/zij] spreekt?           
+//
+//39 [veld] iemand die graag iets nieuws leert?           
+//
+//40 [veld] iemand die zaken overdrijft?              
+//
+//41 [veld] iemand die hulp afslaat?                  
+//
+//42 [veld] iemand die bedenktijd neemt?                  
+//Dit was de laatste vraag. Als u wilt kunt u nog antwoorden wijzigen. Door op 
+//`verstuur' te klikken worden uw antwoorden definitief gemaakt en kunt u deze 
+//niet meer veranderen.
+//
                                       verstuur
                                    verstuur
       
@@ -349,71 +339,71 @@ Klik hier om uit te loggen.
 
 
 
-/Concept webteksten 3PPQ                     
-/
-/
-/ Homepage
-/
-/(Mogelijkheid om te switchen naar Engelse vertaling invoegen?)
-/
-/
-/                                       
-/                        Persoonlijkheid in perspectief
-/
-/De Drie Perspectieven Persoonlijkheids Questionnaire (3PPQ) is een instrument 
-/voor psychologisch persoonlijkheidsonderzoek, waarin het perspectief van de 
-/te onderzoeken persoon zelf, dat van anderen uit diens omgeving, en dat van 
-/de persoon daarop (metaperspectief) worden betrokken. Een beschrijving van de 
-/3PPQ staat in [dit artikel].
-/(Eventueel de samenvatting daarvan in een kader opnemen, gevolgd door [lees 
-/verder]).
-/
-/Met behulp van deze website kan dit onderzoek geautomatiseerd worden 
-/uitgevoerd.
-/
-/De 3PPQ is na registratie op deze website vrij te gebruiken door leden van 
-/het Nederlands Instituut van Psychologen (NIP). Andere belangstellende 
-/professionals die de 3PPQ willen afnemen kunnen hiertoe een verzoek indienen 
-/via info@3ppq.nl. 
-/(De simpelste manier is volgens mij om automatisch via de `vind een 
-/psycholoog' functie van de NIP-site te checken of iemand lid is (via naam en 
-/lidmaatschapsnummer). Bij een treffer krijgt de psycholoog inlogcodes om in 
-/het besloten gedeelte van onze website te komen. Zo niet, dan eventueel 
-/handmatig checken en met de betrokkene in overleg treden.) 
-/
-/
-/                            Inloggen als psycholoog
-/                                       
-/                                 leidt naar pagina 2
-/                    Inloggen om de vragenlijst in te vullen 
-/                                        
-/                          leidt naar pagina 3 
-/                                       
-/
-/
-/
-/Privacyverklaring (bijlage 6) in footer? 
-/ Psycholoog > loginpagina
-/
-/
-/Uw e-mailadres: -invulveld-
-/Uw wachtwoord:  -invulveld- 
-/                                     login
-/                                     login
-/
-/      leidt naar pagina 3  
-/
-/
-/
-/                             Wachtwoord vergeten?
-/    
-/      leidt naar pagina 2.1  
-/
-/
-/
-/Geen inloggegevens? U dient zich eenmalig te registreren om een 
-/gebruikersaccount aan te maken.
-/                                  Registreren
-/
-/      leidt naar pagina 2.2
-/
+///Concept webteksten 3PPQ                     
+//
+//
+// Homepage
+//
+//(Mogelijkheid om te switchen naar Engelse vertaling invoegen?)
+//
+//
+//                                       
+//                        Persoonlijkheid in perspectief
+//
+//De Drie Perspectieven Persoonlijkheids Questionnaire (3PPQ) is een instrument 
+//voor psychologisch persoonlijkheidsonderzoek, waarin het perspectief van de 
+//te onderzoeken persoon zelf, dat van anderen uit diens omgeving, en dat van 
+//de persoon daarop (metaperspectief) worden betrokken. Een beschrijving van de 
+//3PPQ staat in [dit artikel].
+//(Eventueel de samenvatting daarvan in een kader opnemen, gevolgd door [lees 
+//verder]).
+//
+//Met behulp van deze website kan dit onderzoek geautomatiseerd worden 
+//uitgevoerd.
+//
+//De 3PPQ is na registratie op deze website vrij te gebruiken door leden van 
+//het Nederlands Instituut van Psychologen (NIP). Andere belangstellende 
+//professionals die de 3PPQ willen afnemen kunnen hiertoe een verzoek indienen 
+//via info@3ppq.nl. 
+//(De simpelste manier is volgens mij om automatisch via de `vind een 
+//psycholoog' functie van de NIP-site te checken of iemand lid is (via naam en 
+//lidmaatschapsnummer). Bij een treffer krijgt de psycholoog inlogcodes om in 
+//het besloten gedeelte van onze website te komen. Zo niet, dan eventueel 
+//handmatig checken en met de betrokkene in overleg treden.) 
+//
+//
+//                            Inloggen als psycholoog
+//                                       
+//                                 leidt naar pagina 2
+//                    Inloggen om de vragenlijst in te vullen 
+//                                        
+//                          leidt naar pagina 3 
+//                                       
+//
+//
+//
+//Privacyverklaring (bijlage 6) in footer? 
+// Psycholoog > loginpagina
+//
+//
+//Uw e-mailadres: -invulveld-
+//Uw wachtwoord:  -invulveld- 
+//                                     login
+//                                     login
+//
+//      leidt naar pagina 3  
+//
+//
+//
+//                             Wachtwoord vergeten?
+//    
+//      leidt naar pagina 2.1  
+//
+//
+//
+//Geen inloggegevens? U dient zich eenmalig te registreren om een 
+//gebruikersaccount aan te maken.
+//                                  Registreren
+//
+//      leidt naar pagina 2.2
+//

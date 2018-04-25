@@ -7,16 +7,17 @@ g_log << "Client accept: " << query << endl;
 
     WIPdata wipData(query);
 
-    LockGuard lg = wipData.read();
+    LockGuard lg = wipData.read();      // if reading fails, show /index.html
     
     string hash = query.substr(query.find('=') + 1);
 
-    if (hash == Tools::md5hashText(to_string(wipData.clientLogin())))
-        return clientPage(wipData);
+    if (hash == loginHash(wipData.clientLogin()))   // self/meta ratings use
+        return clientPage(wipData);                 // identical hashes
 
-    for (size_t idx = 0; idx != Tools::N_OTHER; ++idx)
+                                                        // otherwise activate
+    for (size_t idx = 0; idx != Tools::N_OTHER; ++idx)  // an 'other' rater
     {
-        if (hash == Tools::md5hashText(to_string(wipData.otherLogin(idx))))
+        if (hash == loginHash(wipData.otherLogin(idx)))
             return otherPage(wipData, idx);
     }
 

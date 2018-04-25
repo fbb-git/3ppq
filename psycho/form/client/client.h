@@ -15,6 +15,13 @@ class WIPdata;
 
 class Client
 {
+    enum RatingType
+    {
+        SELF,
+        META,
+        OTHER           // + idx
+    };
+
     typedef std::unordered_map<std::string, void (Client::*)()> Map;
 
     FBB::CGI &d_cgi;
@@ -41,6 +48,10 @@ class Client
         void pidCid(WIPdata const &wipData);
         void inviteOther(std::string const &otherMail);
         void storeEmail();
+
+        std::string loginHash(uint16_t login) const;
+        void checkCompleted(WIPdata const &wipData) const;
+        bool otherRatingsCompleted(WIPdata const &wipData) const;
 
 //////////////////////////////////////////////////////////////////////////
 //        void verify();

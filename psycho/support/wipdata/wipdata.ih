@@ -6,6 +6,7 @@
 
 #include <ctime>
 #include <sstream>
+#include <iomanip>
 
 #include "../options/options.h"
 #include "../lockstream/lockstream.h"

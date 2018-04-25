@@ -4,6 +4,7 @@ function validate()
 
     sessionStorage.psychID = form['pid'].value;
     sessionStorage.clientID = form['cid'].value;
+    sessionStorage.ratingType = form['ratingType'].value;
 
     sessionStorage.idx = 0;
 

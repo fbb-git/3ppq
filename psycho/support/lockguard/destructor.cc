@@ -6,5 +6,9 @@ LockGuard::~LockGuard()
         --d_count;
 
     if (d_fd != -1 and d_count == 0)
-        flock(d_fd, LOCK_UN);
+    {
+        if (Tools::exists(d_path)
+            flock(d_fd, LOCK_UN);
+        else
+            unlink( (d_path + ".lck").c_str() );
 }

@@ -34,7 +34,7 @@ var questions = [
     "tegen de stroom in zwemt",                             // 33. 
     "alles doet om zijn/haar zin te krijgen",               // 34. 
     "iets doet zonder nadenken",                            // 35. 
-    "openstaat voor ideeën",                                // 36. 
+    "openstaat voor idee&euml;n",                           // 36. 
     "beslissingen aan anderen overlaat",                    // 37. 
     "weet waarover hij/zij spreekt",                        // 38. 
     "graag iets nieuws leert",                              // 39. 

@@ -6,33 +6,40 @@
 //  sessionStorage.questions = questions array
 //  sessionStorage.ratings = Array(questions.length);
 
+var nQuestions = 0;
+var idx = 0;
+
 function submit()
 {
-    addHidden('type',   'client');
-    addHidden('state',  'answered');
+    addHidden('type',       'client');
+    addHidden('state',      'answered');
+
+    addHidden('ratings',    sessionStorage.ratings);
+    addHidden('pid',        sessionStorage.psychID);
+    addHidden('cid',        sessionStorage.clientID);
+    addHidden('ratingType', sessionStorage.ratingType);
+    
     document.form.submit();
 }
 
 function answer(value)
 {
     var ratings = sessionStorage.ratings;
-    var idx = sessionStorage.idx;
+//    var idx = Number(sessionStorage.idx);
 
     sessionStorage.ratings = 
         ratings.substr(0, idx) + value + ratings.substr(idx + 1);
 
-    if (++sessionStorage.idx != sessionStorage.nQuestions)
-        window.location.reload();
-    else
-        submit();
+    if ((1 + idx) != nQuestions)
+        ++sessionStorage.idx;
+
+    window.location.reload();
 }
 
 function forward()
 {
-    if (sessionStorage.idx + 1 == sessionStorage.nQuestions)
+    if (idx + 1 == nQuestions)
         submit();
-//    else if (sessionStorage.ratings[sessionStorage.idx] == 0)
-//        alert("U heeft deze vraag nog niet beantwoord...");
     else
     {
         ++sessionStorage.idx;
@@ -56,19 +63,31 @@ function setArrows()
 
     document.forms["form"].reset();
 
-    var answer = sessionStorage.ratings[sessionStorage.idx];
+    idx = Number(sessionStorage.idx);
+    nQuestions = Number(sessionStorage.nQuestions);
+
+    var answer = Number(sessionStorage.ratings[idx]);
+
+    var lastDivVisible = 'hidden';
 
     if (answer >= 1 && answer <= 5)
+    {
+        if (1 + idx == nQuestions)
+            lastDivVisible = 'visible';
+        
         document.getElementById("nr" + answer).checked = true;
-    
-    var backwardVisible = sessionStorage.idx == 0 ? 'hidden' : 'visible';
+    }
+    document.getElementById('lastDiv').style.visibility = lastDivVisible;
 
+
+    var backwardVisible = idx == 0 ? 'hidden' : 'visible';
     document.getElementById('backID1').style.visibility = backwardVisible;
     document.getElementById('backID2').style.visibility = backwardVisible;
 
-    var forwardVisible = answer == 0 ?
-                                'hidden'
-                            :
+
+    var forwardVisible = answer == 0 || idx + 1 == nQuestions ? 
+                                'hidden' 
+                            : 
                                 'visible';
 
     document.getElementById('forwardID1').style.visibility = forwardVisible;

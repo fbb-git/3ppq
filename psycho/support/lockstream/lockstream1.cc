@@ -7,5 +7,4 @@ LockStream::LockStream(string const &path)
 {
     if (d_lockFd == -1)
         throw Exception{} << "can't use " << d_path << ".lck";
-    
 }

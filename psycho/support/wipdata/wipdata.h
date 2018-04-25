@@ -10,6 +10,8 @@
 
 class WIPdata
 {
+    friend std::ostream &operator<<(std::ostream &out, WIPdata const &data);
+
     uint16_t d_psychID = 0;
     uint16_t d_clientID = 0;
 
@@ -44,12 +46,19 @@ class WIPdata
         std::string const &metaRatings() const;
         std::string const &otherRatings(size_t idx) const;
 
+        void setSelfRatings(std::string const &ratings);
+        void setMetaRatings(std::string const &ratings);
+        void setOtherRatings(size_t idx, std::string const &ratings);
+
         LockGuard read();
         void write() const;
 
     private:
         void read(std::istream &in);
         std::string path() const;
+        std::ostream &insert(std::ostream &out) const;
+        void insertRatings(std::ostream &out, int type, size_t endTime,
+                           std::string const &ratings) const;
 };
 
 inline uint16_t WIPdata::psychID() const
@@ -95,5 +104,28 @@ inline std::string const &WIPdata::otherRatings(size_t idx) const
 {
     return d_otherRatings[idx];
 }
+
+inline void setSelfRatings(std::string const &ratings)
+{
+    d_selfRatings = ratings;
+}
+
+inline void setMetaRatings(std::string const &ratings)
+{
+    d_metaRatings = ratings;
+}
+
+inline void setOtherRatings(size_t idx, std::string const &ratings)
+{
+    d_otherRatings[idx] = ratings;
+}
+
+std::ostream &operator<<(std::ostream &out, WIPdata const &data)
+{
+    return data.insert(out);
+}
     
 #endif
+
+
+

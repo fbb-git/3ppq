@@ -18,8 +18,14 @@ class Options
         std::string questions() const;
         std::string nrs() const;
         std::string config() const;
+        std::string data() const;
         std::string dataDir() const;                // ends in '/'
 };
+
+inline std::string Options::data() const
+{
+    return dataDir() + "data.csv";
+}
 
 inline std::string Options::config() const
 {

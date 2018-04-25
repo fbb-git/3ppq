@@ -21,7 +21,9 @@
     <img src="/images/3ppqUL.jpg" class=logo>
 
 Vraag <script>var questionNr = sessionStorage.idx; 
-              document.write(++questionNr)</script> <p>
+              document.write(++questionNr)</script> 
+<script>
+              document.write(sessionStorage.nQuestions)</script> <p>
     
 <div class=center-text>
 
@@ -33,7 +35,7 @@ Vraag <script>var questionNr = sessionStorage.idx;
     <p>
 </div>
 
-<form name=form action="/bin/form" onsubmit="return false;" method=post>
+<form name=form action="/bin/form" onsubmit="submit()" method=post>
 
 <table class=center-table>
 <tr>
@@ -88,6 +90,18 @@ Vraag <script>var questionNr = sessionStorage.idx;
 </tr>
 
 </table>
+
+<p>
+<div id=lastDiv>
+
+Dit was de laatste vraag. Als u wilt kunt u nog antwoorden wijzigen. Door op
+onderstaande knop `Verstuur' te klikken worden uw antwoorden definitief
+en kunt u deze niet meer veranderen.
+
+<p>    
+<input type=submit value=Verstuur>
+
+</div>
 
 <script>window.onload = setArrows();</script>
 

@@ -1,5 +1,5 @@
     #   mail: send      - send mail (default)
-    #   mail: psych     - mail to logged in psychologist
+    #   mail: psych     - mail to logged in / responsible psychologist
     #   mail: log       - log info
     #   mail: ...@...   - send mail to ...@...
     #   mail: off       - ignore mail requests

@@ -12,25 +12,11 @@ void Client::answered()
     
     std::string const &ratings = d_cgi.param1("ratings");
 
-    switch (uint16_t type = stoul(d_cgi.param1("ratingType")))
-    {
-        case SELF:
-            selfCompleted(wipData, ratings);
-        break;
-
-        case META:
-            metaCompleted(wipData, ratings);
-        break;
-
-        default:
-            type -= OTHER;
-            if (type > N_OTHER || wipData.otherRatings[type].front() != 0)
-                throw false;
-            wipData.setOtherRatings(ratings);
-        break;
-    }
-
-    checkCompleted(wipData);    // only with others
+    size_t type = stoul(d_cgi.param1("ratingType"));
+    if (type >= s_completedSize)
+        throw false;
+                                    // self-, meta-, otherCompleted
+    (this->*s_completed[type])(wipData, ratings);
 }
 
 

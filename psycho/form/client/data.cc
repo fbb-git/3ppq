@@ -8,6 +8,13 @@ Client::Map Client::s_state =
     { "answered",   &Client::answered  },       // handle received answers
 };
 
+Client::CompletedHandler Client::s_completed[] =
+{
+    &Client::selfCompleted,             // RatingType: SELF
+    &Client::metaCompleted,             // RatingType: META
+    &Client::otherCompleted,            // RatingType: OTHER
+};
 
+size_t const Client::s_completedSize = size(s_completed);
 
 

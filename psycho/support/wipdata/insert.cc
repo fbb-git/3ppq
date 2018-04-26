@@ -14,4 +14,6 @@ ostream &WIPdata::insert(ostream &out) const
         insertRatings(out, 3, endTime, d_otherRatings[idx]);
 
     out.flush();
+
+    return out;
 }

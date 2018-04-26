@@ -21,6 +21,11 @@ void WIPdata::write() const
     Tools::writeN(d_io, iv);
 
     ostringstream txt;
+
+    Tools::writeN(txt, &d_gender);
+    txt << d_clientName << '\n' << 
+           d_psychMail << '\n';
+
     for (auto const &mail: d_otherMail)
         txt << mail << '\n';
 

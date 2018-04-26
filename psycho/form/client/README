@@ -5,14 +5,70 @@ psychologist activates a client -> WIPdata data/pid.cid is initialized.
     mail is sent to the client, showing
             http://.../bin/form?pid.cid=hash
 
+All incoming form data enter at Handler::process().
+Handler::process() catches bool values, opening the /index.html homepage
+
+
 bin/form?... results in calling Client::accept
 
-Client::accept:
-    hash == md5(clientlogin):       clientPage
-    hash == md5(otherlogin(idx)):   otherPage
+Client::accept():
+    hash == md5(clientlogin):       clientPage()
+    hash == md5(otherlogin(idx)):   otherPage()
     otherwise: throw false
 
-    clientPage:
-        no wipData.selfRatings:     selfRatings
+    clientPage():
+        no wipData.selfRatings:     selfRatings()
+
+            selfRatings(SELF):      selfinstructions.h
+                                        (sets sessionStorage.
+                                              pid, cid, ratingType,
+                                              questions, ratings,
+                                              other (not used, used with
+                                                other ratings)
+                                        )
+                                                                
+                selfinstructions.h:     /question.html
+                                                d_cgi: pid, cid, ratingType, 
+                                                       other, ratings, 
+                                                       type: client, 
+                                            -> state: answered
+                                            -> http://.../bin/form
+                                            ----------------------
+            
+            selfRatings(META):      metainstructions.h
+                                        (like selfinstructions.h)
+
+
+            emailRequest():         emailrequest.h
+
+
+    otherPage(idx)                  otherinstructions.h
+                                        (like selfinstructions.h)
+
+
+Client::answered:
+    ratingType: SELF                selfCompleted()     
+                                        -> clientPage()
+                                                d_cgi: pid, cid,
+                                            -> state: storeEmail
+                                            -> http://.../bin/form
+                                            ----------------------
+
+    ratingType: META                metaCompleted()
+
+
+    ratingType: OTHER               otherCompleted() 
+                                        checkCompleted()
+
+
+Client::storeEmail:                 wipData.setOtherMail()
+                                    inviteOther()
+                                    alldone.h
+
+
+
+
+
+
 
 

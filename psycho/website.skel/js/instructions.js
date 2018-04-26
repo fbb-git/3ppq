@@ -4,6 +4,8 @@ function validate()
 
     sessionStorage.pid = form['pid'].value;
     sessionStorage.cid = form['cid'].value;
+
+    sessionStorage.other = form['other'].value;
     sessionStorage.ratingType = form['ratingType'].value;
 
     sessionStorage.idx = 0;

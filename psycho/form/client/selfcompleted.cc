@@ -1,8 +1,8 @@
 #include "client.ih"
 
-void Client::selfCompleted(WIPdata const &wipData, string const &ratings)
+void Client::selfCompleted(WIPdata &wipData, string const &ratings)
 {
-    if (wipData.selfRatings.front() != 0)
+    if (wipData.selfRatings().front() != 0)
         throw false;
 
     wipData.setSelfRatings(ratings);

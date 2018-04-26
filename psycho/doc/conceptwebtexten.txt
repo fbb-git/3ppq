@@ -158,64 +158,64 @@ De drie anderen krijgen per e-mail een uitnodiging (bijlage 5)
 //                                       
 //
 //                           Leidt naar pagina 5 (vorm A)
-
-
- Respondent > zelf > uitleg 2
-
-
-In het vorige onderdeel hebt u de vragenlijst ingevuld over uzelf. In dit 
-tweede en laatste onderdeel van de vragenlijst is de vraag hoe anderen vinden 
-dat u bent. Bijvoorbeeld:
-
-Vinden anderen u iemand die makkelijk vrienden maakt?   
-<   ja! ja  ?   nee nee!    >
-
-Denk bij `anderen' niet aan een bepaalde persoon, maar aan anderen in het 
-algemeen.
-Zulke vragen zijn vaak lastiger te beantwoorden, maar meestal hebt u wel een 
-idee.
-
-                             Start de vragenlijst
-
-                                       
-
-                           Leidt naar pagina 5 (vorm B)
-                                       
-                                       
-
- Respondent > ander > uitleg
-
-
-Deze vragenlijst gaat over hoe [naam cliënt] is. Bijvoorbeeld:
-
-Is [naam cliënt] iemand die makkelijk vrienden maakt?   
-
-<   ja! ja  ?   nee nee!    >
-
-kies ja!  als dat zo is
-kies ja als het eerder wel dan niet zo is
-kies ? als het neutraal is of als u het niet weet
-kies nee als het eerder niet dan wel zo is
-kies nee! als het niet zo is
-
-Via > gaat u naar de volgende vraag en via < naar de vorige.
-U kunt uw antwoord nog veranderen voor u verder gaat. 
-
-Dit onderdeel van de lijst bevat 42 zulke vragen. Als u in een rustig tempo 
-werkt, kost het een minuut of tien.
-
-U blijft zelf anoniem in dit onderzoek. Uw antwoorden worden niet aan [naam 
-cliënt] doorgegeven. Uit de antwoorden van u en van twee anderen die 
-dezelfde vragenlijst invullen, wordt een gemiddelde berekend. Dit gemiddelde 
-en de betekenis ervan worden met [naam cliënt] besproken.  
-
-                             Start de vragenlijst
-                                       
-
-
-                           Leidt naar pagina 5 (vorm C)
-                                       
-                                       
+//
+//
+// Respondent > zelf > uitleg 2
+//
+//
+//In het vorige onderdeel hebt u de vragenlijst ingevuld over uzelf. In dit 
+//tweede en laatste onderdeel van de vragenlijst is de vraag hoe anderen vinden 
+//dat u bent. Bijvoorbeeld:
+//
+//Vinden anderen u iemand die makkelijk vrienden maakt?   
+//<   ja! ja  ?   nee nee!    >
+//
+//Denk bij `anderen' niet aan een bepaalde persoon, maar aan anderen in het 
+//algemeen.
+//Zulke vragen zijn vaak lastiger te beantwoorden, maar meestal hebt u wel een 
+//idee.
+//
+//                             Start de vragenlijst
+//
+//                                       
+//
+//                           Leidt naar pagina 5 (vorm B)
+//                                       
+//                                       
+//
+// Respondent > ander > uitleg
+//
+//
+//Deze vragenlijst gaat over hoe [naam cliënt] is. Bijvoorbeeld:
+//
+//Is [naam cliënt] iemand die makkelijk vrienden maakt?   
+//
+//<   ja! ja  ?   nee nee!    >
+//
+//kies ja!  als dat zo is
+//kies ja als het eerder wel dan niet zo is
+//kies ? als het neutraal is of als u het niet weet
+//kies nee als het eerder niet dan wel zo is
+//kies nee! als het niet zo is
+//
+//Via > gaat u naar de volgende vraag en via < naar de vorige.
+//U kunt uw antwoord nog veranderen voor u verder gaat. 
+//
+//Dit onderdeel van de lijst bevat 42 zulke vragen. Als u in een rustig tempo 
+//werkt, kost het een minuut of tien.
+//
+//U blijft zelf anoniem in dit onderzoek. Uw antwoorden worden niet aan [naam 
+//cliënt] doorgegeven. Uit de antwoorden van u en van twee anderen die 
+//dezelfde vragenlijst invullen, wordt een gemiddelde berekend. Dit gemiddelde 
+//en de betekenis ervan worden met [naam cliënt] besproken.  
+//
+//                             Start de vragenlijst
+//                                       
+//
+//
+//                           Leidt naar pagina 5 (vorm C)
+//                                       
+//                                       
 // De vragenlijst
 //
 //([veld] dient afhankelijk van de respondent ingevuld te worden met: `Bent u' 

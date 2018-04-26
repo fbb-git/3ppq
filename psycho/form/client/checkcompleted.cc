@@ -1,15 +1,15 @@
 #include "client.ih"
 
-void Client::checkCompleted(WIPdata const &wipData)
+void Client::checkCompleted(WIPdata const &wipData) const
 {
     if (
-        wipData.selfRatings.front() == 0    or
-        wipData.metaRatings.front() == 0    or
+        wipData.selfRatings().front() == 0    or
+        wipData.metaRatings().front() == 0    or
         not otherRatingsCompleted(wipData)
     )
         return;
 
-    LockStream data{ d_options.data() };
+    LockStream data{ g_options.data() };
 
     data.open();
     LockGuard lg = data.lg();

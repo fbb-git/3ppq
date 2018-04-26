@@ -29,6 +29,10 @@ void WIPdata::read(istream &in)
     string decrypted;
     istringstream addresses{ decrypted = Tools::decrypt(iv, encrypted) };
 
+    Tools::readN(addresses, &d_gender);
+    getline(addresses, d_psychMail);
+    getline(addresses, d_clientName);
+
     for (auto &mail: d_otherMail)
         getline(addresses, mail);
 }

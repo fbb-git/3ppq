@@ -1,5 +1,5 @@
     <script src="/js/preamble.js"></script>
-    <script src="/js/reqemail.js"></script>
+    <script src="/js/emailrequest.js"></script>
 </head>
 
 <body class="full"> 
@@ -14,8 +14,8 @@
 <form name="form" action="/bin/form" onsubmit="return validate()" 
       method="post">
 
-De laatste fase van het psychologisch onderzoek bestaat eruit dat drie anderen
-worden benaderd om de vragenlijst over u in te vullen.
+In de laatste fase van het psychologisch onderzoek worden drie anderen
+benaderd om de vragenlijst over u in te vullen.
 
 <p>
 
@@ -48,6 +48,7 @@ correct in te vullen.
 </div>
 
 <input type=submit value=Verstuur>
+
 
 
 

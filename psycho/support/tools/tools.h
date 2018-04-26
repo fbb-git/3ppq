@@ -70,6 +70,10 @@ struct Tools
 
     static std::string iv();        // return an initialization vector
 
+                                    // produce the pid.cid=hash hyperlink
+    static std::string link(uint16_t psychID, uint16_t clientID, 
+                                              uint16_t loginValue);
+
                                     // return the 16-byte MD5 hash
     static std::string md5hash(std::string const &text);
 

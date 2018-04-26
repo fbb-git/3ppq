@@ -17,6 +17,7 @@ function submit()
     addHidden('ratings',    sessionStorage.ratings);
     addHidden('pid',        sessionStorage.pid);
     addHidden('cid',        sessionStorage.cid);
+    addHidden('other',      sessionStorage.other);
     addHidden('ratingType', sessionStorage.ratingType);
     
     document.form.submit();

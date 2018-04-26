@@ -17,9 +17,15 @@ class LockStream: public std::fstream
         LockStream(std::string const &path);
 
         void open();
+        std::string const &path() const;
 
         LockGuard lg() const;
     private:
 };
+
+inline std::string const &LockStream::path() const
+{
+    return d_path;
+}
         
 #endif

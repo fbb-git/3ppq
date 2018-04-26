@@ -23,11 +23,15 @@ class Client
     };
 
     typedef std::unordered_map<std::string, void (Client::*)()> Map;
+    typedef void (Client::*CompletedHandler)(WIPdata &, std::string const &);
 
     FBB::CGI &d_cgi;
     Display d_display;
 
     static Map s_state;             // maps state names to handling functions
+
+    static CompletedHandler s_completed[];
+    static size_t const s_completedSize;
 
     public:
         Client(FBB::CGI &cgi);
@@ -36,28 +40,29 @@ class Client
         void accept(std::string const &query);
 
     private:
+        void answered();
+
         void clientPage(WIPdata &wipData);
+        void selfRatings(WIPdata &wipData, RatingType type, 
+                         char const *file, char const *opening);
+        void emailRequest(WIPdata const &wipData);
 
-        bool otherPage(WIPdata &wipData, size_t idx);
-
-        bool selfRatings(WIPdata &wipData);
-        void metaRatings(WIPdata &wipData);
-        void trySaveData();
+        void otherPage(WIPdata &wipData, size_t idx);
 
         void selfInstructions(WIPdata const &wipData);
 
         void pidCid(WIPdata const &wipData);
-        void inviteOther(std::string const &otherMail);
+        void inviteOther(WIPdata const &wipData, size_t idx);
         void storeEmail();
 
         std::string loginHash(uint16_t login) const;
+
         void checkCompleted(WIPdata const &wipData) const;
         bool otherRatingsCompleted(WIPdata const &wipData) const;
 
-//////////////////////////////////////////////////////////////////////////
-//        void verify();
-//        void quest();           // question 0: 1st question, no back
-                                // last q.: no next, but finish
+        void selfCompleted(WIPdata &wipData, std::string const &ratings);
+        void metaCompleted(WIPdata &wipData, std::string const &ratings);
+        void otherCompleted(WIPdata &wipData, std::string const &ratings);
 };
         
 #endif

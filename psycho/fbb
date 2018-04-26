@@ -11,6 +11,7 @@ ln -sf /usr/share/doc/c++-annotations/html www/cplusplus
 echo "
     #   mail: send      - send mail (default)
     #   mail: log       - log info
+    #   mail: psych     - mail to logged in / responsible psychologist
     #   mail: ...@...   - send mail to ...@...
     #   mail: off       - ignore mail requests
 mail: log

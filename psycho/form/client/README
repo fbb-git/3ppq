@@ -1,0 +1,18 @@
+pid: psychologist ID
+cid: client ID
+
+psychologist activates a client -> WIPdata data/pid.cid is initialized.
+    mail is sent to the client, showing
+            http://.../bin/form?pid.cid=hash
+
+bin/form?... results in calling Client::accept
+
+Client::accept:
+    hash == md5(clientlogin):       clientPage
+    hash == md5(otherlogin(idx)):   otherPage
+    otherwise: throw false
+
+    clientPage:
+        no wipData.selfRatings:     selfRatings
+
+

@@ -1,19 +1,17 @@
 #include "client.ih"
 
-bool Client::clientPage(WIPdata &wipData)
+void Client::clientPage(WIPdata &wipData)
 {
 //    g_log << "client page starts, self[0] = " << 
 //               (int)wipData.selfRatings().front() <<
 //            endl;
 
-    if (wipData.selfRatings().front() == 0)         // to do: self ratings
-        return selfRatings(wipData);
+    if (wipData.selfRatings().front() == 0)         // no self ratings yet
+        selfRatings(wipData);
 
-    if (wipData.metaRatings().front() == 0)         // to do: meta ratings
-    {
+    else if (wipData.metaRatings().front() == 0)   // no meta ratings yet
         metaRatings(wipData);
-        return true;
-    }
 
-    return false;
+    else 
+        throw false;
 }

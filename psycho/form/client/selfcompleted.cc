@@ -7,13 +7,5 @@ void Client::selfCompleted(WIPdata const &wipData, string const &ratings)
 
     wipData.setSelfRatings(ratings);
 
-    pidCid(wipData);
-
-    d_display.append("ratingType", to_string(META));
-
-    d_display.out("instructionsmeta.h",
-        {
-            "Vinden anderen u"
-        }
-    );
+    clientPage(wipData);                // start the meta-ratings
 }

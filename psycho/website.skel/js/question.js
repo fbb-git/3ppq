@@ -1,5 +1,5 @@
-//  sessionStorage.psychID = form['psychID'].value;
-//  sessionStorage.clientID = form['clientID'].value;
+//  sessionStorage.pid = form['pid'].value;
+//  sessionStorage.cid = form['cid'].value;
 
 //  sessionStorage.idx = 0;
 //  sessionStorage.nQuestions = form['nQuestions'].value;
@@ -15,8 +15,8 @@ function submit()
     addHidden('state',      'answered');
 
     addHidden('ratings',    sessionStorage.ratings);
-    addHidden('pid',        sessionStorage.psychID);
-    addHidden('cid',        sessionStorage.clientID);
+    addHidden('pid',        sessionStorage.pid);
+    addHidden('cid',        sessionStorage.cid);
     addHidden('ratingType', sessionStorage.ratingType);
     
     document.form.submit();
@@ -55,7 +55,7 @@ function back()
             
 function setArrows()
 {
-    if ( !(sessionStorage.psychID > 0) )
+    if ( !(sessionStorage.pid > 0) )
     {
         window.open('/index.html', '_self'); 
         return;

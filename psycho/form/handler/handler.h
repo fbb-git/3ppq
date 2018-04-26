@@ -24,13 +24,14 @@ class Handler
         void process();
 
     private:
-        void empty();
         void psychoStart();
         void psychoRequest();
 
         void logParams();
 };
 
+
+//        void empty();
 
 //    std::ifstream       d_in;
 //    int                 d_toMonitorFd;

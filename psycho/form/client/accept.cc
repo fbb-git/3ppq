@@ -1,29 +1,31 @@
 #include "client.ih"
 
-bool Client::accept(string const &query)
-try
+void Client::accept(string const &query)
 {
 g_log << "Client accept: " << query << endl;
 
     WIPdata wipData(query);
 
-    LockGuard lg = wipData.read();      // if reading fails, show /index.html
+    LockGuard lg = wipData.read();      // if reading fails, throw false,
+                                        // results in showing /index.html
     
     string hash = query.substr(query.find('=') + 1);
 
     if (hash == loginHash(wipData.clientLogin()))   // self/meta ratings use
-        return clientPage(wipData);                 // identical hashes
+    {
+        clientPage(wipData);                        // identical hashes
+        return;
+    }
 
                                                         // otherwise activate
     for (size_t idx = 0; idx != Tools::N_OTHER; ++idx)  // an 'other' rater
     {
         if (hash == loginHash(wipData.otherLogin(idx)))
-            return otherPage(wipData, idx);
+        {
+            otherPage(wipData, idx);
+            return;
+        }
     }
 
-    return false;
-}
-catch (...)
-{
-    return false;
+    throw false;
 }

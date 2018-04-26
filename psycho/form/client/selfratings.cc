@@ -18,7 +18,15 @@ bool Client::selfRatings(WIPdata &wipData)
 //        }
 //    }
 
-    selfInstructions(wipData);
+    pidCid(wipData);
+    d_display.append("ratingType", to_string(SELF));
+
+    d_display.out("selfinstructions.h", 
+        {
+            "Bent u"
+        }
+    );
+
     return true;
 }
 

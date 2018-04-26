@@ -2,8 +2,8 @@ function validate()
 {
     var form = document.forms["form"];
 
-    sessionStorage.psychID = form['pid'].value;
-    sessionStorage.clientID = form['cid'].value;
+    sessionStorage.pid = form['pid'].value;
+    sessionStorage.cid = form['cid'].value;
     sessionStorage.ratingType = form['ratingType'].value;
 
     sessionStorage.idx = 0;

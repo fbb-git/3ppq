@@ -1,6 +1,7 @@
 #include "handler.ih"
 
 void Handler::process()
+try
 {
     string const &type = d_cgi.param1("type");
  
@@ -17,8 +18,14 @@ void Handler::process()
     else if (type == "client")
         d_client.process();
 
-    else if (not d_client.accept(d_cgi.query()))
-        empty();
+    else 
+        d_client.accept(d_cgi.query());
+}
+catch (bool)
+{
+    logParams();
+    Display display(d_cgi);
+    display.homePage();
 }
 
 

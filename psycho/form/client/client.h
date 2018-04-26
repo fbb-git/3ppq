@@ -31,12 +31,13 @@ class Client
 
     public:
         Client(FBB::CGI &cgi);
-        void process();
 
-        bool accept(std::string const &query);
+        void process();
+        void accept(std::string const &query);
 
     private:
-        bool clientPage(WIPdata &wipData);
+        void clientPage(WIPdata &wipData);
+
         bool otherPage(WIPdata &wipData, size_t idx);
 
         bool selfRatings(WIPdata &wipData);

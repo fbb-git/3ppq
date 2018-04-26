@@ -1,4 +1,4 @@
-var clientID;
+var cid;
 var choice = "add";
 var xgender = 0;
 
@@ -80,7 +80,7 @@ function update()
 
     fixGender();
 
-    clientID = idx;
+    cid = idx;
 
 //      0       1       2     3           4           5
 //      ID    sex  active 
@@ -157,10 +157,10 @@ function remove()
     var form = document.forms["form"];
     var idx = document.getElementById("selectID").value;
 
-    clientID = clients[idx][0];
+    cid = clients[idx][0];
 
     addHidden("request",    'remove');
-    addHidden("ID",          clientID);
+    addHidden("ID",          cid);
     addHidden("state",      'clientPage');
     addHidden("type",       "psych");
 

@@ -11,7 +11,7 @@
           Persoonlijkheid in perspectief
 </header>
 
-<form name="form" action="/bin/form" onsubmit="alldone()" method="post">
+<form name="form" action="/bin/form" onsubmit="validate()" method="post">
 
 Hartelijk dank voor het invullen van de vragenlijst.
 

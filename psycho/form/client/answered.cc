@@ -13,6 +13,13 @@ void Client::answered()
     std::string const &ratings = d_cgi.param1("ratings");
 
     size_t type = stoul(d_cgi.param1("ratingType"));
+
+g_log << "Client::answered: ratingType = " << type << endl;
+g_log << "           received rating 0 = " << (int)ratings.front() << endl;
+g_log << "               self rating 0 = " << (int)wipData.selfRatings().front() << endl;
+g_log << "               meta rating 0 = " << (int)wipData.metaRatings().front() << endl;
+
+
     if (type >= s_completedSize)
         throw false;
                                     // self-, meta-, otherCompleted

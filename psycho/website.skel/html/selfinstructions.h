@@ -21,6 +21,7 @@
 <b>Toelichting en invulinstructie</b><p>
 
 Deze vragenlijst gaat over hoe u bent. Bijvoorbeeld:
+<p>
 
 <div class=center-text>
 

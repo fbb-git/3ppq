@@ -10,8 +10,6 @@ function validate()
 
     sessionStorage.idx = 0;
 
-    var nQuestions = questions.length;
-
     sessionStorage.questions = questions.join('|') + '|';
 
     var answers = Array(questions.length);

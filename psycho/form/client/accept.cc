@@ -10,7 +10,7 @@ g_log << "Client accept: " << query << endl;
                                         // results in showing /index.html
     
     string hash = query.substr(query.find('=') + 1);
-    if (hash.length() != Tools::HASH_SIZE)
+    if (hash.length() != Tools::HASH_TXT_SIZE)
         throw false;
 
     if (hash == loginHash(wipData.clientLogin()))   // self/meta ratings use

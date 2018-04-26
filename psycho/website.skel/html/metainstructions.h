@@ -24,6 +24,8 @@ In het vorige onderdeel hebt u de vragenlijst ingevuld over uzelf. In dit
 tweede en laatste onderdeel van de vragenlijst is de vraag hoe anderen vinden 
 dat u bent. Bijvoorbeeld:
 
+<p>
+
 Vinden anderen u iemand die makkelijk vrienden maakt?   
 
 <table class=center-table>

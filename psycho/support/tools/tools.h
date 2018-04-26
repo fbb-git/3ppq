@@ -26,6 +26,7 @@ struct Tools
         IV_SIZE = 8,
         KEY_SIZE = 16,
         HASH_SIZE = 16,
+        HASH_TXT_SIZE = 32,
         N_QUESTIONS = 42,
         MAX_PSYCH_FIELD = 16,
         MIN_PWD_LENGTH = 3,

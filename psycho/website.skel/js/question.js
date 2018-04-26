@@ -9,7 +9,7 @@
 var nQuestions = 0;
 var idx = 0;
 
-function submit()
+function validate()
 {
     addHidden('type',       'client');
     addHidden('state',      'answered');

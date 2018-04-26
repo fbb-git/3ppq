@@ -22,6 +22,8 @@
 
 Deze vragenlijst gaat over hoe $1 is. Bijvoorbeeld:
 
+<p>
+
 <div class=center-text>
 
     Is $1 iemand die gemakkelijk vrienden maakt?

@@ -2,6 +2,8 @@
 
 void WIPdata::write() const
 {
+    d_io.seekp(0);
+
     Tools::writeN(d_io, &d_psychID);
     Tools::writeN(d_io, &d_clientID);
     Tools::writeN(d_io, &d_start);
@@ -34,4 +36,7 @@ void WIPdata::write() const
 
     Tools::writeN(d_io, &size);
     Tools::writeN(d_io, encrypted);
+
+    if (not d_io.good())
+        throw Exception{} << "writing WIPdata failed";
 }

@@ -14,7 +14,7 @@ echo "
     #   mail: psych     - mail to logged in / responsible psychologist
     #   mail: ...@...   - send mail to ...@...
     #   mail: off       - ignore mail requests
-mail: log
+mail: frank@localhost
 
     #   URL to use when referring to website
 url:  http://localhost

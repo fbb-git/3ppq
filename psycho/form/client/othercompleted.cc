@@ -15,6 +15,8 @@ void Client::otherCompleted(WIPdata &wipData, string const &ratings)
     wipData.setOtherRatings(otherIdx, ratings);
     wipData.rmOtherLogin(otherIdx);
 
+    wipData.write();
+
     d_display.out("alldone.h");
 
     checkCompleted(wipData);   

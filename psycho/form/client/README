@@ -11,6 +11,10 @@ Handler::process() catches bool values, opening the /index.html homepage
 
 bin/form?... results in calling Client::accept
 
+
+If type == client, then client.process() is called. In here, the 'state' cgi
+value determines what to do. If the state is not found, then false is thrown.
+
 Client::accept():
     hash == md5(clientlogin):       clientPage()
     hash == md5(otherlogin(idx)):   otherPage()

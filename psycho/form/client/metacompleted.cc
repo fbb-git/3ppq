@@ -2,10 +2,12 @@
 
 void Client::metaCompleted(WIPdata &wipData, string const &ratings)
 {
-    if (wipData.metaRatings().front() != 0)
-        throw false;
+    g_log << "meta completed " << (int)wipData.metaRatings().front() << endl;
 
-    wipData.setMetaRatings(ratings);
+    if (wipData.metaRatings().front() == 0)
+        wipData.setMetaRatings(ratings);
+
+    wipData.write();
 
     clientPage(wipData);                    // start the e-mail collection
 }

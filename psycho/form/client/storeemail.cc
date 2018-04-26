@@ -17,5 +17,7 @@ void Client::storeEmail()
 
     wipData.rmClientLogin();
 
+    wipData.write();
+
     d_display.out("alldone.h");
 }

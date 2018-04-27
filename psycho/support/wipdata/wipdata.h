@@ -156,11 +156,6 @@ inline void WIPdata::rmClientLogin()
     d_clientLogin = 0;
 }
 
-inline void WIPdata::rmOtherLogin(size_t idx)
-{
-    d_otherLogin[idx] = 0;
-}
-
 inline void WIPdata::setSelfRatings(std::string const &ratings)
 {
     cleanup(d_selfRatings, ratings);

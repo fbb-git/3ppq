@@ -15,7 +15,7 @@ void Psych::newPwd()
     g_mailer.sendmail(
                 d_email, 
                 d_email, 
-                "3ppq.nl wijziging",
+                "Nieuw wachtwoord 3ppq.nl",
                 DollarText::replaceStream(
                     g_options.mail() + "newpwd",
                     {

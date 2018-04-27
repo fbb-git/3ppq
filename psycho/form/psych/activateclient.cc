@@ -8,18 +8,19 @@ void Psych::activateClient(PsychClient &client)
                      client.name() + ' ' + client.lastName(), 
                      client.gender() };
 
+    string psychName{ d_name + ' ' + d_lastName };
+ 
     g_mailer.sendmail(
         d_email,
         client.email(), 
-        "Een uitnodiging van uw psycholoog",
+        "Verzoek namens " + psychName + "om een vragenlijst in te vullen",
         DollarText::replaceStream(
-            g_options.mail() + "login0", 
+            g_options.mail() + "activateclient", 
             {
                 client.genderText(),                                    // $0
-                client.name(),                                          // $1
-                client.lastName(),                                      // $2
+                client.name() + ' ' + client.lastName(),                // $1
+                psychName,                                              // $2
                 Tools::link(d_ID, client.id(), wipData.clientLogin()),  // $3
-                d_email                                                 // $4
             }
         )
     );

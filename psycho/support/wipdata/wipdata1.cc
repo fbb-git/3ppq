@@ -1,6 +1,6 @@
 #include "wipdata.ih"
 
-WIPdata::WIPdata(std::string const &psychMail, 
+WIPdata::WIPdata(std::string const &psychEmail, 
                       uint16_t psychID, uint16_t clientID, 
                       string const &clientName, bool gender)
 :
@@ -12,7 +12,7 @@ WIPdata::WIPdata(std::string const &psychMail,
     d_clientLogin(Tools::random(1000, 9999)),
     d_selfRatings(Tools::N_QUESTIONS, 0),
     d_metaRatings(Tools::N_QUESTIONS, 0),
-    d_psychMail(psychMail)
+    d_psychEmail(psychEmail)
 {
     string name = path();
 
@@ -35,3 +35,7 @@ WIPdata::WIPdata(std::string const &psychMail,
     d_io.open();
     write();
 }
+
+
+
+

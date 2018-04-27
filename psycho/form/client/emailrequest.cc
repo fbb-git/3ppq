@@ -2,7 +2,7 @@
 
 void Client::emailRequest(WIPdata const &wipData)
 {
-    if (not wipData.otherMail(0).empty())
+    if (not wipData.otherEmail(0).empty())
         throw false;
 
     pidCid(wipData);

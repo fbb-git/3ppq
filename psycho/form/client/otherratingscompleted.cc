@@ -1,6 +1,6 @@
 #include "client.ih"
 
-bool Client::otherRatingsCompleted(WIPdata const &wipData) const
+bool Client::otherRatingsCompleted(WIPdata &wipData) const
 {
     for (size_t idx = 0; idx != Tools::N_OTHER; ++idx)
     {

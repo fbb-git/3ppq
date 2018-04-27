@@ -1,4 +1,3 @@
-
 #include "client.ih"
 
     // when ratings are already available, then throw false, resulting in
@@ -14,11 +13,10 @@ void Client::answered()
 
     size_t type = stoul(d_cgi.param1("ratingType"));
 
-g_log << "Client::answered: ratingType = " << type << endl;
-g_log << "           received rating 0 = " << (int)ratings.front() << endl;
-g_log << "               self rating 0 = " << (int)wipData.selfRatings().front() << endl;
-g_log << "               meta rating 0 = " << (int)wipData.metaRatings().front() << endl;
-
+//g_log << "Client::answered: ratingType = " << type << endl;
+//g_log << "           received rating 0 = " << (int)ratings.front() << endl;
+//g_log << "               self rating 0 = " << (int)wipData.selfRatings().front() << endl;
+//g_log << "               meta rating 0 = " << (int)wipData.metaRatings().front() << endl;
 
     if (type >= s_completedSize)
         throw false;

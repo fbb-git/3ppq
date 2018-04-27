@@ -1,6 +1,6 @@
 #include "client.ih"
 
-void Client::checkCompleted(WIPdata const &wipData) const
+void Client::checkCompleted(WIPdata &wipData) const
 {
     if (
         wipData.selfRatings().front() == 0    or
@@ -8,6 +8,8 @@ void Client::checkCompleted(WIPdata const &wipData) const
         not otherRatingsCompleted(wipData)
     )
         return;
+
+g_log << "data collection completed: writing " << g_options.data() << endl;
 
     LockStream data{ g_options.data() };
 
@@ -18,5 +20,8 @@ void Client::checkCompleted(WIPdata const &wipData) const
     
     data << wipData << endl;
 
-    unlink(data.path().c_str());
+    wipData.remove();
+
+g_log << "data stored" << endl;
+
 }

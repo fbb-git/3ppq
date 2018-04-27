@@ -2,15 +2,36 @@
 
 void Psych::updateClient()
 {
-    uint32_t active = validClientData(); // input fm the form is valid
-
+    uint32_t reqActive = validClientData(); // input fm the form is valid,
+                                            // 'active' is time(0) if active
+                                            // was specified
     auto clientIter = existingClient();
 
-    g_log << "Updateclient ID " << clientIter->id() << ' ' << active << endl;
-
-    if (active != 0 && clientIter->active() == 0)
-        activateClient(*clientIter);
+    g_log << "Updateclient ID " << clientIter->id() << ' ' << reqActive << 
+                                                                        endl;
+    if (clientIter->active() != 0)          // client active
+    {
+        if (not WIPdata::exists(d_ID, clientIter->id()))
+            clientIter->deactivate();               // #2   (see below)
+    }
+    else if (reqActive != 0)
+        activateClient(*clientIter);                // #3, #4
+    else
+        WIPdata::remove(d_ID, clientIter->id());    // #5
 
     clientIter->update(d_cgi.param1("name"), d_cgi.param1("lastName"), 
                        d_cgi.param1("clEmail"));
 }
+
+//  -------------------------------------------------------------------------
+//                  client      
+//  nr  reqActive   active    wipExists              action
+//  -------------------------------------------------------------------------
+//   1      .          1           1                    -
+//   2      .          1           0      deactivate client (data completed)
+//   3      1          0           1      should not happen: activate client
+//   4      1          0           0      activate client
+//   5      0          0           1      rm wipfile
+//   6      0          0           0                    -
+//  -------------------------------------------------------------------------
+

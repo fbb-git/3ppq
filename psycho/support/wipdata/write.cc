@@ -26,9 +26,9 @@ void WIPdata::write() const
 
     Tools::writeN(txt, &d_gender);
     txt << d_clientName << '\n' << 
-           d_psychMail << '\n';
+           d_psychEmail << '\n';
 
-    for (auto const &mail: d_otherMail)
+    for (auto const &mail: d_otherEmail)
         txt << mail << '\n';
 
     string encrypted = Tools::encrypt(iv, txt.str());

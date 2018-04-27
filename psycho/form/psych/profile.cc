@@ -67,6 +67,9 @@ Ook dient een eventueel nieuw wachtwoord twee keer te zijn vermeld.
     {
         d_data.erase(emailKey());
         d_email = newemail;
+                                                // update e-mail addresses
+        std::vector<LockGuard> lg = updateWIPemail();       // in WIP files
+
         d_data.add(Tools::md5hash(d_email), toString());
     }
     

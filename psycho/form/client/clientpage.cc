@@ -5,6 +5,7 @@ void Client::clientPage(WIPdata &wipData)
     g_log << "clientPage: " << (int)wipData.selfRatings().front() << endl;
     g_log << "            " << (int)wipData.metaRatings().front() << endl;
 
+
     if (wipData.selfRatings().front() == 0)         // no self ratings yet
         selfRatings(wipData, SELF, "selfinstructions.h", "Bent u");
 

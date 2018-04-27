@@ -8,7 +8,7 @@ g_log << "Client accept: " << query << endl;
 
     LockGuard lg = wipData.read();      // if reading fails, throw false,
                                         // results in showing /index.html
-    
+
     string hash = query.substr(query.find('=') + 1);
     if (hash.length() != Tools::HASH_TXT_SIZE)
         throw false;
@@ -18,12 +18,17 @@ g_log << "Client accept: " << query << endl;
         clientPage(wipData);                        // identical hashes
         return;
     }
-
+g_log << "hash = " << hash << endl;
                                                         // otherwise activate
     for (size_t idx = 0; idx != Tools::N_OTHER; ++idx)  // an 'other' rater
     {
+g_log << "Idx: " << idx << ", otherlogin: " << wipData.otherLogin(idx) << 
+", hash: " << loginHash(wipData.otherLogin(idx)) << endl;
+
         if (hash == loginHash(wipData.otherLogin(idx)))
         {
+g_log << "BINGO!" << endl;
+
             otherPage(wipData, idx);
             return;
         }

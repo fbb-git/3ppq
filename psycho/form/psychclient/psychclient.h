@@ -31,6 +31,7 @@ class PsychClient
         void get(std::string const &data);
 
         void activate();
+        void deactivate();
         void update(std::string const &name, std::string const &lastName,
                     std::string const &email);
 
@@ -47,6 +48,11 @@ class PsychClient
 inline void PsychClient::activate()
 {
     d_active = time(0);
+}
+
+inline void PsychClient::deactivate()
+{
+    d_active = 0;
 }
 
 inline uint16_t PsychClient:: id() const

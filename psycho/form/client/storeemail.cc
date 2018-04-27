@@ -11,7 +11,7 @@ void Client::storeEmail()
 
     for (size_t idx = 0; idx != Tools::N_OTHER; ++idx)
     {
-        wipData.setOtherMail(idx, d_cgi.param1("e" + to_string(idx)));
+        wipData.setOtherEmail(idx, d_cgi.param1("e" + to_string(idx)));
         inviteOther(wipData, idx);
     }
 

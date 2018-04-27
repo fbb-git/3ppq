@@ -18,6 +18,8 @@ namespace FBB
     class CGI;
 };
 
+class LockGuard;
+
 class Psych
 {
     typedef std::unordered_map<std::string, void (Psych::*)()> Map;
@@ -77,9 +79,6 @@ class Psych
 
         void noPwd();
 
-
-//        void client();                  // WIP
-
         void clientPage();
         void infoClient(std::string *clientArray, std::string *clientSelect);
         void addClient();
@@ -92,6 +91,8 @@ class Psych
         static std::string fixedWidth(std::string const &txt, size_t length,
                                       Tools::Align align = Tools::LEFT);
         static std::string newPassword();
+
+        std::vector<LockGuard> updateWIPemail() const;
 };
 
 #endif

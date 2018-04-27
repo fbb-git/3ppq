@@ -2,9 +2,16 @@
 
 void Client::inviteOther(WIPdata const &wipData, size_t idx)
 {
+    g_log << "inviteOther: name: " << wipData.clientName() << 
+            ", psych e-mail: " << wipData.psychEmail() << 
+            ", hash: " << loginHash(wipData.otherLogin(idx)) <<
+            endl;
+
+    
+            
     g_mailer.sendmail(
-        wipData.psychMail(),
-        wipData.otherMail(idx),
+        wipData.psychEmail(),
+        wipData.otherEmail(idx),
         "Verzoek tot deelname aan een psychologisch onderzoek",
         DollarText::replaceStream(
             g_options.mail() + "other", 
@@ -14,7 +21,7 @@ void Client::inviteOther(WIPdata const &wipData, size_t idx)
                 Tools::link(wipData.psychID(),          // $2
                             wipData.clientID(),
                             wipData.otherLogin(idx)), 
-                wipData.psychMail()                     // $3
+                wipData.psychEmail()                     // $3
             }
         )
     );

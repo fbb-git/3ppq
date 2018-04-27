@@ -2,13 +2,13 @@
 //#include <iostream>
 //#define CERR std::cerr << __FILE__": "
 
-#include <bobcat/exception>
-
 #include <ctime>
 #include <sstream>
 #include <iomanip>
+#include <algorithm>
 
-#include "../options/options.h"
+#include <bobcat/exception>
+
 #include "../lockstream/lockstream.h"
 #include "../lockguard/lockguard.h"
 

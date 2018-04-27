@@ -9,12 +9,12 @@ uint32_t Psych::validClientData()
     if (gender.empty())
         gender = d_cgi.param1("xgender");
 
-g_log << "valid client data: active: " << active << 
-            ", email: " <<  clEmail << 
-            ", ID: " << d_cgi.param1("ID") << 
-            ", gender: " << gender << 
-            ", name: " << d_cgi.param1("name") << 
-            ", lastname: " << d_cgi.param1("lastName") << endl;
+//g_log << "valid client data: active: " << active << 
+//            ", email: " <<  clEmail << 
+//            ", ID: " << d_cgi.param1("ID") << 
+//            ", gender: " << gender << 
+//            ", name: " << d_cgi.param1("name") << 
+//            ", lastname: " << d_cgi.param1("lastName") << endl;
 
     if (                                            // inspect data validity
         count(clEmail.begin(), clEmail.end(), '@') == 1 &&
@@ -26,9 +26,7 @@ g_log << "valid client data: active: " << active <<
     )
         return active;
 
-g_log << "VALID DATA FAILS " << endl;
-
-    return active;
+g_log << "NO VALID CLIENT DATA" << endl;
 
     throw false;
 }

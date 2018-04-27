@@ -5,6 +5,7 @@
 #include <cstdint>
 #include <string>
 
+#include "../options/options.h"
 #include "../tools/tools.h"
 #include "../lockstream/lockstream.h"
 
@@ -12,9 +13,9 @@ class WIPdata
 {
     friend std::ostream &operator<<(std::ostream &out, WIPdata const &data);
 
-    uint16_t d_psychID = 0;
-    uint16_t d_clientID = 0;
-    bool     d_gender;                  // false: female, true: male;
+    uint16_t    d_psychID = 0;
+    uint16_t    d_clientID = 0;
+    bool        d_gender;               // false: female, true: male;
     std::string d_clientName;           // full name of the client
 
     uint32_t d_start = 0;               // starting time
@@ -26,8 +27,8 @@ class WIPdata
     std::string d_metaRatings;
     std::string d_otherRatings[Tools::N_OTHER];
 
-    std::string d_psychMail;
-    std::string d_otherMail[Tools::N_OTHER];
+    std::string d_psychEmail;
+    std::string d_otherEmail[Tools::N_OTHER];
 
     mutable LockStream d_io;
 
@@ -46,9 +47,11 @@ class WIPdata
         uint16_t clientLogin() const;
         uint16_t otherLogin(size_t idx) const;
 
-        std::string const &psychMail() const;
-        std::string const &otherMail(size_t idx) const;
-        void setOtherMail(size_t idx, std::string const &mail);
+        std::string const &psychEmail() const;
+        void setPsychEmail(std::string const &email);
+
+        std::string const &otherEmail(size_t idx) const;
+        void setOtherEmail(size_t idx, std::string const &mail);
 
         std::string const &selfRatings() const;
         std::string const &metaRatings() const;
@@ -66,12 +69,21 @@ class WIPdata
         LockGuard read();
         void write() const;
 
+        void remove();                      
+
+        static bool exists(uint16_t pid, uint16_t cid);
+        static void remove(uint16_t pid, uint16_t cid);     // 2.cc
+
+
     private:
         void read(std::istream &in);
         std::string path() const;
         std::ostream &insert(std::ostream &out) const;
         void insertRatings(std::ostream &out, int type, size_t endTime,
                            std::string const &ratings) const;
+
+        static void cleanup(std::string &dest, std::string const &ratings);
+        static std::string path(uint16_t pid, uint16_t cid);
 };
 
 inline uint16_t WIPdata::psychID() const
@@ -99,9 +111,14 @@ inline uint16_t WIPdata::otherLogin(size_t idx) const
     return d_otherLogin[idx];
 }
 
-inline std::string const &WIPdata::psychMail() const
+inline std::string const &WIPdata::psychEmail() const
 {
-    return d_psychMail;
+    return d_psychEmail;
+}
+
+inline void WIPdata::setPsychEmail(std::string const &email)
+{
+    d_psychEmail = email;
 }
 
 inline std::string const &WIPdata::clientName() const
@@ -109,14 +126,14 @@ inline std::string const &WIPdata::clientName() const
     return d_clientName;
 }
 
-inline std::string const &WIPdata::otherMail(size_t idx) const
+inline std::string const &WIPdata::otherEmail(size_t idx) const
 {
-    return d_otherMail[idx];
+    return d_otherEmail[idx];
 }
 
-inline void WIPdata::setOtherMail(size_t idx, std::string const &mail)
+inline void WIPdata::setOtherEmail(size_t idx, std::string const &mail)
 {
-    d_otherMail[idx] = mail;
+    d_otherEmail[idx] = mail;
 }
 
 inline std::string const &WIPdata::selfRatings() const
@@ -146,17 +163,29 @@ inline void WIPdata::rmOtherLogin(size_t idx)
 
 inline void WIPdata::setSelfRatings(std::string const &ratings)
 {
-    d_selfRatings = ratings;
+    cleanup(d_selfRatings, ratings);
 }
 
 inline void WIPdata::setMetaRatings(std::string const &ratings)
 {
-    d_metaRatings = ratings;
+    cleanup(d_metaRatings, ratings);
 }
 
 inline void WIPdata::setOtherRatings(size_t idx, std::string const &ratings)
 {
-    d_otherRatings[idx] = ratings;
+    cleanup(d_otherRatings[idx], ratings);
+}
+
+//static
+inline bool WIPdata::exists(uint16_t pid, uint16_t cid)
+{
+    return Tools::exists(path(pid, cid));
+}
+
+//static
+inline std::string WIPdata::path(uint16_t pid, uint16_t cid)
+{
+    return g_options.dataDir() + to_string(pid) + '.' + to_string(cid);
 }
 
 inline std::ostream &operator<<(std::ostream &out, WIPdata const &data)

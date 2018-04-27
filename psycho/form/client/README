@@ -65,7 +65,7 @@ Client::answered:
                                         checkCompleted()
 
 
-Client::storeEmail:                 wipData.setOtherMail()
+Client::storeEmail:                 wipData.setOtherEmail()
                                     inviteOther()
                                     alldone.h
 

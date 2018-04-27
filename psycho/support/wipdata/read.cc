@@ -7,8 +7,7 @@ void WIPdata::read(istream &in)
     Tools::readN(in, &d_start);
     Tools::readN(in, &d_clientLogin);
 
-
-    for (auto login: d_otherLogin)
+    for (auto &login: d_otherLogin)
         Tools::readN(in, &login);
 
     Tools::readN(in, d_selfRatings, Tools::N_QUESTIONS);
@@ -30,10 +29,10 @@ void WIPdata::read(istream &in)
     istringstream addresses{ decrypted = Tools::decrypt(iv, encrypted) };
 
     Tools::readN(addresses, &d_gender);
-    getline(addresses, d_psychMail);
     getline(addresses, d_clientName);
+    getline(addresses, d_psychEmail);
 
-    for (auto &mail: d_otherMail)
+    for (auto &mail: d_otherEmail)
         getline(addresses, mail);
 }
 

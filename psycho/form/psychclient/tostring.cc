@@ -5,7 +5,8 @@ string PsychClient::toString() const
     ostringstream out;
 
     Tools::writeN(out, &d_gender, 1);
-    out <<  d_name      << '\n' <<
+    out <<  d_ident     << '\n' <<
+            d_name      << '\n' <<
             d_lastName  << '\n' <<
             d_email     << '\n';
 

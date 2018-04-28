@@ -1,0 +1,14 @@
+#include <iostream>
+#include <string>
+
+#include <bobcat/log>
+
+#include "../../../support/options/options.h"
+#include "../../../support/datastore/datastore.h"
+
+#include "../psych.h"
+
+void usage(std::string const &progname);
+
+using namespace std;
+using namespace FBB;

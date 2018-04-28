@@ -16,6 +16,7 @@ void PsychClient::get(string const &data)
     in.str(Tools::decrypt(iv, out.str()));
 
     Tools::readN(in, &d_gender, 1);
+    getline(in, d_ident);
     getline(in, d_name);
     getline(in, d_lastName);
     getline(in, d_email);

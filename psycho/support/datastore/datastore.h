@@ -37,6 +37,10 @@ class DataStore
 
         LockGuard lg() const;
 
+        void open();
+        bool get(std::string *data, uint64_t offset);   // get record from
+                                                    // the DataStore by offset
+
     private:
         void reduce(int64_t from, int64_t to);
 

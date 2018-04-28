@@ -71,6 +71,9 @@ class Psych
         Psych(FBB::CGI &cgi);
         void process();
 
+        void read(std::string const &data);
+        std::string const &eMail() const;
+
     private:
         bool get();
         std::string emailKey() const;   // get key from cgi.param1("email")
@@ -133,6 +136,11 @@ class Psych
 
         std::vector<LockGuard> updateWIPemail() const;
 };
+
+inline std::string const &Psych::eMail() const
+{
+    return d_email;
+}
 
 #endif
 

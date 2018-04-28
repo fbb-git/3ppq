@@ -13,10 +13,13 @@ namespace FBB
 
 class PsychClient
 {
-    uint16_t d_ID = 0;              // client nr
+    uint16_t d_ID = 0;              // internal client nr
     uint32_t d_active = 0;          // active since, or 0 if not active
 
     bool        d_gender = false;   // false: female, true: male
+
+    std::string d_ident;            // id used by the psychologist for this
+                                    // client
     std::string d_name;
     std::string d_lastName;
     std::string d_email;
@@ -24,6 +27,7 @@ class PsychClient
     public:
         PsychClient() = default;        // for vectors etc.
         PsychClient(uint16_t ID, bool gender,
+                    std::string const &ident,
                     std::string const &name, std::string const &lastName,
                     std::string const &email);
 

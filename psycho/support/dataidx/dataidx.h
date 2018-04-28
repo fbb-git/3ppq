@@ -42,6 +42,9 @@ class DataIdx
 
         void reduceOffsets(uint64_t offset, uint64_t delta);
 
+        static uint16_t nEntries(std::istream &dataIdx);
+        static uint64_t nextOffset(std::istream &dataIdx);
+
     private:
         void extend();                  // extend the .idx file
         void updateHeader(std::ostream &out);
@@ -61,5 +64,6 @@ class DataIdx
 
         static bool noKey(std::string const &key);
 };
+
         
 #endif

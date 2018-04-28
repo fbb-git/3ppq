@@ -4,10 +4,10 @@
 
 void Psych::infoClient(string *array, string *select)
 {
-    size_t nameLength = 0;
+    size_t idLength = 0;
     for (auto const &client: d_client)
-        nameLength = ::max(nameLength, client.name().length());
-    nameLength += 2;
+        idLength = ::max(idLength, client.ident().length());
+    idLength += 2;
 
 
     ostringstream out;
@@ -16,8 +16,8 @@ void Psych::infoClient(string *array, string *select)
 //    g_log << client.id() << ": active = " << client.active() << 
 //                            ", login0 = " << client.login0() << endl;
 
-        out << setw(11) << '[' <<   
-                client.id()         << ','      <<      //  0
+        out << setw(11) << "[\"" <<   
+                client.ident()      << "\","    <<      //  0
                 client.gender()     << ','      <<      //  1
                 client.active()     << ",\""    <<      //  2
                 client.name()       << "\",\""  <<      //  3
@@ -36,8 +36,8 @@ void Psych::infoClient(string *array, string *select)
     <tr>
     <td>
         <div class=leftFloat>
-            <span class=courier18><b>
-            &nbsp;ID )" << fixedWidth("Naam", nameLength) << R"(Achternaam</b>
+            <span class=courier18 style='margin-left: 4px' ><b>)" << fixedWidth("ID", idLength) <<
+            R"(&nbsp;Naam</b>
             </span><br>
             <select class=clientSelect id=selectID onclick='process("show")'
                      size=)" << nRows << ">\n";
@@ -45,9 +45,8 @@ void Psych::infoClient(string *array, string *select)
     size_t idx = 0;
     for (auto const &client: d_client)
         out << setw(11) << ' ' << "<option value=" << idx++ << '>' <<
-                fixedWidth(to_string(client.id()), 3, Tools::RIGHT) << ' ' << 
-                fixedWidth(client.name(), nameLength) << ' ' <<
-                client.lastName() << "</option>\n";
+                fixedWidth(client.ident(), idLength) << ' ' << 
+                client.name() <<  ' ' <<  client.lastName() << "</option>\n";
 
     out << R"(
             </select>

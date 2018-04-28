@@ -5,13 +5,10 @@ void Psych::profile()
     LockGuard lg { d_data.lg() };
 
     if (not get())
-        return;
+        throw false;
 
     if (d_cgi.param1("email") != d_email)
-    {
-        d_display.homePage();
-        return;
-    }
+        throw false;
 
     if (not pwdMatch())
     {

@@ -12,12 +12,13 @@ $0
 <body class="full">
 <div class="container">
 <header class='title'>
+    <img src="/images/client.jpg" class=logo>
     Persoonlijkheid in perspectief
 </header>
-<img src="/images/client.jpg" class=logo>
-
 
 <form name="form" action="/bin/form" onsubmit='return false' method="post">
+
+$3
 
 <nav class="top-menu-markup">                                               
     <ul class="spread">                                                     
@@ -49,7 +50,6 @@ $0
         </li>                                                               
     </ul>                                                                   
 </nav>                                                                      
- 
 
 <h1>Client-configuratie</h1>
 
@@ -65,10 +65,6 @@ $1
     <td></td>
     <td>
         <table style="border-collapse: collapse;">
-            <tr>
-                <td ><input type=submit value="Velden wissen"
-                            onclick='resetFields()'></td>
-            </tr>
             <tr>
                 <td class=right>ID: </td> 
                 <td ><input class=margin pattern='[0-9]+' 
@@ -98,17 +94,11 @@ $1
                 <td id=time1 class=right> Verstuurd op:</td>
                 <td id=time2> <span id=dateText></span></td>
             </tr>
-            <tr class=darkrow>
-                <td id=check1 class=right> Verstuur:</td>
-                <td id=check2> <input type=checkbox name=active value=1></td>
-            </tr>
             <tr>
-                <td>
-                <input type=submit name='action' value=Toevoegen
-                    onclick='process()'>
-                </td>
-                <td>(<span id=actionText>deze client toevoegen</span>)</td>
-            </tr>
+                <td>&nbsp</td>
+            <tr>
+            <!-- submitActions -->
+            $2
         </table>
     </td>
 </tr>

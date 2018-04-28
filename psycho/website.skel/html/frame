@@ -5,10 +5,9 @@
 <body class="full"> 
 <div class="container">
 
-<img src="/images/3ppqUL.jpg" class=logo>
-
 <header class='title'>
-          Persoonlijkheid in perspectief
+    <img src="/images/3ppqUL.jpg" class=logo>
+    Persoonlijkheid in perspectief
 </header>
 
 <form name="form" action="/bin/form" onsubmit="return validate()" 

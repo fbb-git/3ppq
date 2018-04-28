@@ -15,7 +15,8 @@
 <div class="container">
 
 <header class='title'>
-            Persoonlijkheid in perspectief
+    <img src="/images/profile.jpg" class=logo>
+    Persoonlijkheid in perspectief
 </header>
 
 <form name="form" action="/bin/form" method="post">
@@ -54,8 +55,6 @@
 
 <h1>Wijzigen van uw profiel</h1>
 
-
-<img src="/images/profile.jpg" class=logo>
 
 Nadat u uw profiel-gegevens hebt gewijzigd dient u uw wachtwoord te vermelden
 om de nieuwe gegevens te activeren.

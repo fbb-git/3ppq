@@ -23,7 +23,7 @@ class PsychClient
 
     public:
         PsychClient() = default;        // for vectors etc.
-        PsychClient(uint16_t ID, uint32_t active, bool gender,
+        PsychClient(uint16_t ID, bool gender,
                     std::string const &name, std::string const &lastName,
                     std::string const &email);
 

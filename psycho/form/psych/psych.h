@@ -22,14 +22,33 @@ class LockGuard;
 
 class Psych
 {
-    typedef std::unordered_map<std::string, void (Psych::*)()> Map;
+    struct DisplayInfo
+    {
+        std::string submitActions;
+        size_t      clientIdx;          // show this client idx unless >=
+    };                                  // d_client.size()
+
+    typedef std::unordered_map<std::string, void (Psych::*)()>  Map;
+    typedef std::unordered_map<std::string, 
+                               DisplayInfo (Psych::*)()>      Map2display;
 
     DataStore d_data;          // psychologists' data
     FBB::CGI &d_cgi;
 
     Display d_display;
 
-    static Map      s_state;        // maps state names to handling functions
+    static Map          s_state;    // maps state names to handling functions
+    static Map2display  s_clientPageRequest;    // maps "request" values to 
+                                                // functions returning strings
+
+    static std::string s_activate;
+    static std::string s_add;
+    static std::string s_addActive;
+    static std::string s_deactivate;
+    static std::string s_erase;
+    static std::string s_remove;
+    static std::string s_update;
+    
 
     // data below are saved to file
 
@@ -80,13 +99,33 @@ class Psych
         void noPwd();
 
         void clientPage();
+        void displayClientPage(DisplayInfo const &displayInfo);
+
         void infoClient(std::string *clientArray, std::string *clientSelect);
-        void addClient();
-        void updateClient();
-        void removeClient();
+
+        void selectTag(std::string *clientArray, std::string *clientSelect);
+        size_t buildClientArray(string *array) const;
+        void buildSelectTag(std::string *select, size_t idLength) const;
+        void startSelect(std::ostream &out, size_t idLength) const;
+        void endSelect(std::ostream &out) const;
+
+
+        DisplayInfo activateClient();             // 2.cc
+        DisplayInfo addClient();
+        DisplayInfo addActivateClient();
+        DisplayInfo deactivateClient();
+        DisplayInfo removeClient();
+        DisplayInfo showClient();
+        DisplayInfo updateClient();
+
+        uint16_t validClientIdx();
+        void pushClient();
+
         uint32_t validClientData();         // throws false on failure
         void activateClient(PsychClient &client);
-        std::vector<PsychClient>::iterator existingClient();
+
+//        std::vector<PsychClient>::iterator existingClient();
+
         std::string toString() const;
         static std::string fixedWidth(std::string const &txt, size_t length,
                                       Tools::Align align = Tools::LEFT);

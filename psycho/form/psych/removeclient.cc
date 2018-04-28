@@ -1,11 +1,15 @@
 #include "psych.ih"
 
-void Psych::removeClient()
+Psych::DisplayInfo Psych::removeClient()
 {
-    g_log << "Remove client" << endl;
-    auto clientIter = existingClient();
+    uint16_t idx = validClientIdx();
 
-    g_log << "Remove client ID " << clientIter->id() << endl;
+//    g_log << "Remove client" << endl;
 
-    d_client.erase(clientIter);
+    d_client.erase(d_client.begin() + idx);
+
+    return  {
+                s_add + s_addActive,
+                d_client.size()
+            };
 }

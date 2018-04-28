@@ -39,9 +39,8 @@ void Psych::infoClient(string *array, string *select)
             <span class=courier18><b>
             &nbsp;ID )" << fixedWidth("Naam", nameLength) << R"(Achternaam</b>
             </span><br>
-            <select class=clientSelect id=selectID onclick='update()' size=)" 
-                                                                            <<
-                nRows << ">\n";
+            <select class=clientSelect id=selectID onclick='process("show")'
+                     size=)" << nRows << ">\n";
 
     size_t idx = 0;
     for (auto const &client: d_client)
@@ -58,8 +57,8 @@ void Psych::infoClient(string *array, string *select)
         <div class=float> 
             &nbsp;
             <p>
-            <input type=submit value=Verwijder onclick='remove()'><br>
-            (verwijdert de gemarkeerde cli&euml;nt)<br>
+            (klik op een client in het linker overzicht<br>
+             om de clientgegevens te zien of te wijzigen)<br>
         </div>
     </td>
     </tr>

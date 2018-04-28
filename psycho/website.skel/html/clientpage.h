@@ -67,17 +67,19 @@ $1
         <table style="border-collapse: collapse;">
             <tr>
                 <td class=right>ID: </td> 
-                <td ><input class=margin pattern='[0-9]+' 
-                            type=text name=ID size=5>
+                <td ><input class=margin pattern="^[-'\w.:;/]+$"
+                            type=text name=ident size=5>
                 </td>
             </tr>
             <tr class=darkrow>
                 <td class=right>Aanspreeknaam: </td> 
-                <td ><input class=margin type=text name=name size=50></td>
+                <td ><input class=margin type=text name=name 
+                        pattern="^['\w.\s]+$" size=50></td>
             </tr>
             <tr >
                 <td class=right>Achternaam: </td> 
-                <td ><input class=margin type=text name=lastName size=50></td>
+                <td ><input class=margin type=text name=lastName 
+                        pattern="^['\w.\s]+$" size=50></td>
             </tr>
             <tr class=darkrow>
                 <td class=right> Geslacht: </td>
@@ -95,7 +97,7 @@ $1
                 <td id=time2> <span id=dateText></span></td>
             </tr>
             <tr>
-                <td>&nbsp</td>
+                <td>&nbsp;</td>
             <tr>
             <!-- submitActions -->
             $2

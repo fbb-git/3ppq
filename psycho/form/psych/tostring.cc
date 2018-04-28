@@ -28,7 +28,7 @@ string Psych::toString() const
     Tools::writeN(out, iv);                 // first the encryption IV
     Tools::writeN(out, &d_time);
     Tools::writeN(out, &d_ack);
-    Tools::writeN(out, &d_flags);
+    Tools::writeN(out, &d_nClients);
     Tools::writeN(out, &d_ID);
     Tools::writeN(out, d_pwdHash);
 

@@ -52,7 +52,7 @@ function setValues()
             form['selectID'].value = "";
         else
         {
-            form['ID'].value =          clients[idx][0];
+            form['ident'].value =          clients[idx][0];
 
             form['gender'].value = clients[idx][1] ? 'M' : 'V';
             fixGender();        

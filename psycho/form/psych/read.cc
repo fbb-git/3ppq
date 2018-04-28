@@ -9,7 +9,7 @@ void Psych::read(std::string const &data)
     Tools::readN(in, iv, Tools::IV_SIZE);   // first the IV
     Tools::readN(in, &d_time);              // then the data
     Tools::readN(in, &d_ack);
-    Tools::readN(in, &d_flags);
+    Tools::readN(in, &d_nClients);
     Tools::readN(in, &d_ID);
     Tools::readN(in, d_pwdHash, Tools::HASH_SIZE);
 

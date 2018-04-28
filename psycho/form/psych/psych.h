@@ -54,8 +54,9 @@ class Psych
 
     uint32_t    d_time;             // registration time 
     uint16_t    d_ack;              // if != 0 then e-mail acknowledge
-    uint16_t    d_flags;            // room for 16 bit-flags
+    uint16_t    d_nClients;         // # clients this psychologist
     uint16_t    d_ID;               // identification number
+                                    
     std::string d_pwdHash;          // MD5 hash of the password (16 bytes)
         
         // encrypted section:

@@ -6,10 +6,10 @@ void Psych::pushClient()
 
     d_client.push_back(
         PsychClient(
-                stoul(d_cgi.param1("ID")),
+                ++d_nClients,
                 d_cgi.param1("gender") == "M",
-                d_cgi.param1("ID"),             // in fact: ident selected by
-                d_cgi.param1("name"),           // the psychologist
+                d_cgi.param1("ident"),
+                d_cgi.param1("name"),
                 d_cgi.param1("lastName"),
                 d_cgi.param1("clEmail")
             )

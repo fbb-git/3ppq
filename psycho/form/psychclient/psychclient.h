@@ -36,7 +36,8 @@ class PsychClient
 
         void activate();
         void deactivate();
-        void update(std::string const &name, std::string const &lastName,
+        void update(std::string const &ident,
+                    std::string const &name, std::string const &lastName,
                     std::string const &email);
 
         uint16_t id() const;
@@ -44,6 +45,7 @@ class PsychClient
         bool     gender() const;        
         char const *genderText() const;
 
+        std::string const &ident() const;
         std::string const &name() const;
         std::string const &lastName() const;
         std::string const &email() const;
@@ -82,6 +84,11 @@ inline char const *PsychClient::genderText() const
 inline std::string const &PsychClient::name() const
 {
     return d_name;
+}
+        
+inline std::string const &PsychClient::ident() const
+{
+    return d_ident;
 }
         
 inline std::string const &PsychClient::lastName() const

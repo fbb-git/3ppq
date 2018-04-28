@@ -30,12 +30,12 @@ string Psych::s_activate = R"(
 string Psych::s_add = R"(
                 <input type=submit name='action' value=Toevoegen
                     title="client toevoegen"
-                    onclick='process("add")' >)";
+                    onclick='submitRequest("add")' >)";
 
 string Psych::s_addActive = R"(
                 <input type=submit name='action' value="Toevoegen + versturen"
                     title="client toevoegen + uitnodiging versturen"
-                    onclick='process("addActivate")' >)";
+                    onclick=submitRequest("addActivate")' >)";
 
 string Psych::s_erase = R"(
                 <input type=submit value="Velden wissen"

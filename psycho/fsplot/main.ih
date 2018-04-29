@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+
+#include <exception>
+
+#include <bobcat/arg>
+
+#include "ratings/ratings.h"
+#include "fscores/fscores.h"
+#include "gnuplot/gnuplot.h"
+
+namespace Icmbuild
+{
+    extern char version[];
+    extern char years[];
+    extern char author[];
+};
+
+void usage(std::string const &progname);
+
+using namespace std;
+using namespace FBB;

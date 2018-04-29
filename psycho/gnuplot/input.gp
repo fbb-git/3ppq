@@ -20,7 +20,7 @@ set output "plot.pdf"
 
 set title "Results for SubjectName"
 
-set xrange [0:6]
+set xrange [0:7]
 set yrange [-1:1]
 
 set arrow from 1, -1 to 1, 0.95 nohead
@@ -38,19 +38,29 @@ set label "Top4" at 4, 0.97 center
 set arrow from 5, -1 to 5, 0.95 nohead
 set label "Top5" at 5, 0.97 center
 
-
-set arrow from 0, 0 to 6, 0 nohead
-
-set xtics ("Agree." 1, "Consc." 2, "Activ." 3, "Neurot" 4, "Extrav" 5)
-
-set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 5 ps 1   # --- blue
-set style line 2 lc rgb '#dd181f' lt 1 lw 2 pt 5 ps 1   # --- red
-set style line 3 lc rgb '#18dd1f' lt 1 lw 2 pt 5 ps 1   # --- green
+set arrow from 6, -1 to 6, 0.95 nohead
+set label "Top6" at 6, 0.97 center
 
 
-plot 'file.dat' index 0 with linespoints ls 1 title 'self rating', \
-     ''         index 1 with linespoints ls 2 title 'peer rating',  \
-     ''         index 2 with linespoints ls 3 title 'spouse rating'
+set arrow from 0, 0 to 7, 0 nohead
+
+set xtics ("Agree." 1, "Consc." 2, "Activ." 3, "Neurot" 4, "Extrav" 5, "Alg." 6)
+
+set for [i=1:5] linetype i dt i
+
+set style line 1 lt 1 lc rgb '#0060ad'  lw 2 pt 5 ps 1   # --- blue
+set style line 2 lt 2 lc rgb '#dd181f'  lw 2 pt 4 ps 1   # --- red
+set style line 3 lt 5 lc rgb '#18dd1f'  lw 3 pt 3 ps 1   # --- green
+
+
+plot 'file.dat' index 0 with linespoints ls 1 title 'self rating'   at 0.95, 0.9 ,    \
+     ''         index 1 with linespoints ls 2 title 'peer rating'   at 0.95, 0.88 ,   \
+     ''         index 2 with linespoints ls 3 title 'spouse rating' at 0.95, 0.86
+
+
+#plot 'file.dat' index 0 with linespoints ls 1 title 'self rating', \
+#     ''         index 1 with linespoints ls 2 title 'peer rating', \
+#     ''         index 2 with linespoints ls 3 title 'spouse rating' 
 
 
 

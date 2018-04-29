@@ -1,0 +1,12 @@
+#include "gnuplot.h"
+
+//#include <iostream>
+//#define CERR std::cerr << __FILE__": "
+
+#include <bobcat/process>
+#include <bobcat/tempstream>
+
+#include "../ratings/ratings.h"
+
+using namespace std;
+using namespace FBB;

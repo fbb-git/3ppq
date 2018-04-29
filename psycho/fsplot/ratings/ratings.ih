@@ -1,0 +1,14 @@
+#include "ratings.h"
+
+#include <iostream>
+//#define CERR std::cerr << __FILE__": "
+
+#include <fstream>
+#include <algorithm>
+
+#include <bobcat/exception>
+#include <bobcat/csv4180>
+#include <bobcat/string>
+
+using namespace std;
+using namespace FBB;

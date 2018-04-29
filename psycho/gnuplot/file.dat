@@ -6,11 +6,14 @@
 
 # Gnu population in Antarctica since 1965
 
+# note: TWO empty lines following a data set.
+
 1   .5
 2   .5
 3   -.5
 4   0
 5   .9
+6   .8
 
 
 1   .75
@@ -18,6 +21,7 @@
 3   .5
 4   .9
 5   .9
+6   .7
 
 
 1   .6  
@@ -25,6 +29,5 @@
 3   .5 
 4   .2 
 5   .7 
+6   .65
 
-
-     

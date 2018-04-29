@@ -1,4 +1,4 @@
-set terminal pdf color size 30 cm, 20 cm
+set terminal pdf color size 15 cm, 10 cm
 set output "plot.pdf"
 
 # sset title ’This is a plot of $y=\sin(x)$’    $...$: cursief
@@ -48,14 +48,18 @@ set xtics ("Agree." 1, "Consc." 2, "Activ." 3, "Neurot" 4, "Extrav" 5, "Alg." 6)
 
 set for [i=1:5] linetype i dt i
 
-set style line 1 lt 1 lc rgb '#0060ad'  lw 2 pt 5 ps 1   # --- blue
-set style line 2 lt 2 lc rgb '#dd181f'  lw 2 pt 4 ps 1   # --- red
-set style line 3 lt 5 lc rgb '#18dd1f'  lw 3 pt 3 ps 1   # --- green
+set style line 1 lt 1 lc rgb '#000000'  lw 2 pt 5 ps 1   # --- blue
+set style line 2 lt 2 lc rgb '#111111'  lw 2 pt 4 ps 1   # --- red
+set style line 3 lt 5 lc rgb '#222222'  lw 3 pt 3 ps 1   # --- green
+
+# set style line 1 lt 1 lc rgb '#0060ad'  lw 2 pt 5 ps 1   # --- blue
+# set style line 2 lt 2 lc rgb '#dd181f'  lw 2 pt 4 ps 1   # --- red
+# set style line 3 lt 5 lc rgb '#18dd1f'  lw 3 pt 3 ps 1   # --- green
 
 
-plot 'file.dat' index 0 with linespoints ls 1 title 'self rating'   at 0.95, 0.9 ,    \
-     ''         index 1 with linespoints ls 2 title 'peer rating'   at 0.95, 0.88 ,   \
-     ''         index 2 with linespoints ls 3 title 'spouse rating' at 0.95, 0.86
+plot 'file.dat' index 0 with linespoints ls 1 title 'self rating'   at 0.90, 0.98,    \
+     ''         index 1 with linespoints ls 2 title 'peer rating'   at 0.90, 0.96 ,   \
+     ''         index 2 with linespoints ls 3 title 'spouse rating' at 0.90, 0.94
 
 
 #plot 'file.dat' index 0 with linespoints ls 1 title 'self rating', \

@@ -24,7 +24,7 @@ onsubmit="alert('validate'); return false; return validate()" method="post">
 <nav class="top-menu-markup">                                               
     <ul class="spread">                                                     
         <li class="li-linewise">
-            <a href="" title="Activiteiten m.b.t. clienten" 
+            <a href="" title="Activiteiten m.b.t. cli&euml;nten" 
                 onclick="return false" > 
                 Cli&euml;nt 
             </a>
@@ -53,7 +53,7 @@ onsubmit="alert('validate'); return false; return validate()" method="post">
 </nav>                                                                      
  
 
-<h1>Client-configuratie</h1>
+<h1>Cli&euml;nt-configuratie</h1>
 
 
 <img src="/images/client.jpg" class=logo>

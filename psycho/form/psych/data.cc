@@ -24,17 +24,17 @@ Psych::Map2display Psych::s_clientPageRequest =
 
 string Psych::s_activate = R"(
                 <input type=submit name='action' value="Versturen"
-                    title="verstuur een uitnodiging aan deze client"
+                    title="verstuur een uitnodiging aan deze cli&euml;nt"
                     onclick='process("activate")'>)";
 
 string Psych::s_add = R"(
                 <input type=submit name='action' value=Toevoegen
-                    title="client toevoegen"
+                    title="cli&euml;nt toevoegen"
                     onclick='submitRequest("add")' >)";
 
 string Psych::s_addActive = R"(
                 <input type=submit name='action' value="Toevoegen + versturen"
-                    title="client toevoegen + uitnodiging versturen"
+                    title="cli&euml;nt toevoegen + uitnodiging versturen"
                     onclick=submitRequest("addActivate")' >)";
 
 string Psych::s_erase = R"(
@@ -45,17 +45,17 @@ string Psych::s_erase = R"(
 string Psych::s_deactivate = R"(
                 <input type=submit name='action' value="Deactiveren"
                     title=
-                        "be&euml;indig de vragenlijstafname voor deze client"
+                        "be&euml;indig de vragenlijstafname voor deze cli&euml;nt"
                     onclick='process("deactivate")' >)";
 
 string Psych::s_remove = R"(
                 <input type=submit name='action' value="Verwijderen"
-                    title = "verwijder deze client"
+                    title = "verwijder deze cli&euml;nt"
                     onclick='process("remove")' >)";
 
 string Psych::s_update = R"(
                 <input type=submit name='action' value=Wijzigen
-                    title="client gegevens wijzigen"
+                    title="cli&euml;nt gegevens wijzigen"
                     onclick='process("update")' >)";
 
 

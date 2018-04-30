@@ -14,7 +14,7 @@
 <nav class="top-menu-markup">                                               
     <ul class="spread">                                                     
         <li class="li-linewise">
-            <a href="#" title="Activiteiten m.b.t. clienten" 
+            <a href="#" title="Activiteiten m.b.t. cli&euml;nten" 
                 onclick="validate(1)" > 
                 Cli&euml;nt 
             </a>

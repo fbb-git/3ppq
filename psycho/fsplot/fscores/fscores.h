@@ -5,19 +5,32 @@
 
 #include "../values/values.h"
 
-class Fscores: private Values
+struct Fscores: public Values
 {
     typedef std::vector< std::vector<double> > Dvector2;
 
-    static double s_weights[N_FACTORS][N_QUESTIONS];
-
-    Dvector2 const &d_data;
+    private:
+        Dvector2 d_fscores;
+    
+        static double s_weights[N_FACTORS][N_QUESTIONS];
+    
+        Dvector2 const &d_data;
 
     public:
         Fscores(Dvector2 const &data);
-        Dvector2 compute() const;
+
+        Dvector2 const &scores() const;
+        Dvector2 table() const;
 
     private:
+        void compute();
 };
         
+inline Fscores::Dvector2 const &Fscores::scores() const
+{
+    return d_fscores;
+}
+
 #endif
+
+

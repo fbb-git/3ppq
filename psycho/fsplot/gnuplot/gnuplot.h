@@ -13,10 +13,10 @@ class Gnuplot: private Values
     typedef std::vector< std::vector<double> > Dvector2;
 
     Ratings const &d_ratings;
-    Dvector2 d_fscores;             // TYPES * N_FACTORS
+    Dvector2 const &d_fscores;              // TYPES * N_FACTORS
 
     public:
-        Gnuplot(Ratings const &ratings, Dvector2 &&fscores);
+        Gnuplot(Ratings const &ratings, Dvector2 const &fscores);
         void plot() const;
 
     private:

@@ -6,7 +6,7 @@
 
 #include "../values/values.h"
 
-class Ratings: private Values
+class Ratings: public Values
 {
     std::string d_psychID;
     std::string d_clientIdent;

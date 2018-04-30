@@ -14,12 +14,15 @@ int main(int argc, char **argv)
 try
 {
     Arg &arg = Arg::initialize("hv", longOptions, longEnd, argc, argv);
-    arg.versionHelp(usage, Icmbuild::version, 1);
+    arg.versionHelp(usage, Icmbuild::version, 2);
 
     Ratings ratings(argv[1]);
+
     Fscores fscores(ratings.data());
 
-    Gnuplot gnuplot{ ratings, fscores.compute() };
+    writeTable(argv[2], fscores.table());
+
+    Gnuplot gnuplot{ ratings, fscores.scores() };
     gnuplot.plot();
 }
 catch (int x)

@@ -2,9 +2,14 @@
 #include <string>
 
 #include <exception>
+#include <vector>
+#include <iomanip>
+#include <fstream>
 
 #include <bobcat/arg>
+#include <bobcat/exception>
 
+#include "values/values.h"
 #include "ratings/ratings.h"
 #include "fscores/fscores.h"
 #include "gnuplot/gnuplot.h"
@@ -17,6 +22,9 @@ namespace Icmbuild
 };
 
 void usage(std::string const &progname);
+void writeTable(char const *path, Fscores::Dvector2 const &reportValues);
 
 using namespace std;
 using namespace FBB;
+
+

@@ -13,7 +13,7 @@ Psych::Map Psych::s_state =
 
 Psych::Map2display Psych::s_clientPageRequest =
 {
-    { "activate",       &Psych::activateClient },       // 2.cc
+    { "activate",       &Psych::activateClient },
     { "add",            &Psych::addClient }, 
     { "addActivate",    &Psych::addActivateClient }, 
     { "deactivate",     &Psych::deactivateClient }, 

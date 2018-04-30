@@ -114,7 +114,7 @@ class Psych
         void endSelect(std::ostream &out) const;
 
 
-        DisplayInfo activateClient();             // 2.cc
+        DisplayInfo activateClient();
         DisplayInfo addClient();
         DisplayInfo addActivateClient();
         DisplayInfo deactivateClient();
@@ -126,7 +126,7 @@ class Psych
         void pushClient();
 
         uint32_t validClientData();         // throws false on failure
-        void activateClient(PsychClient &client);
+        void inviteClient(PsychClient &client);
 
 //        std::vector<PsychClient>::iterator existingClient();
 

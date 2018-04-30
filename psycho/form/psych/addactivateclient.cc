@@ -4,7 +4,7 @@ Psych::DisplayInfo Psych::addActivateClient()
 {
     pushClient();
 
-    activateClient(d_client.back());
+    inviteClient(d_client.back());
 
     return  {
                 s_update + s_deactivate + s_remove,

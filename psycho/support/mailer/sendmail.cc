@@ -14,7 +14,11 @@ void Mailer::sendmail(string const &psychEmail, string to,
     }
 
     if (mailRequest == "off")
+    {
+        g_log << " mail to " << to << " not sent: mailRequest = " << 
+                        mailRequest << endl;
         return;
+    }
 
     if (mailRequest.find('@') != string::npos)
     {
@@ -23,14 +27,19 @@ void Mailer::sendmail(string const &psychEmail, string to,
         to = mailRequest;
     }
     else if (mailRequest == "psych")
+    {
         to = psychEmail;
-
+        Tools::stdLog() << "mail to " << to << " is sent to the psych: " << 
+                            to << endl;
+    }
 
     istringstream text{ txt };
     
     string replyTo{ g_config.findKeyTail("replyTo:") };
     if (not replyTo.empty())
         replyTo.insert(0, "-r ");
+
+    g_log << "sending mail..." << endl;
 
     CinInserter mail;
     mail.execute("/usr/bin/mail " + replyTo + " -s '" + subject + "' " + to);

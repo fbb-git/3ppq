@@ -2,6 +2,8 @@
 
 void Psych::activateClient(PsychClient &client)
 {
+    g_log << "activateClient starts" << endl;
+
     client.activate();
 
     WIPdata wipData{ d_email, d_ID, client.id(), 
@@ -9,7 +11,10 @@ void Psych::activateClient(PsychClient &client)
                      client.gender() };
 
     string psychName{ d_name + ' ' + d_lastName };
- 
+
+    string link =  Tools::link(d_ID, client.id(), wipData.clientLogin());
+    g_log << "activateClient: link = " << link << endl;
+
     g_mailer.sendmail(
         d_email,
         client.email(), 
@@ -20,7 +25,7 @@ void Psych::activateClient(PsychClient &client)
                 client.genderText(),                                    // $0
                 client.name() + ' ' + client.lastName(),                // $1
                 psychName,                                              // $2
-                Tools::link(d_ID, client.id(), wipData.clientLogin()),  // $3
+                link,  // $3
             }
         )
     );

@@ -18,7 +18,7 @@ void Client::inviteOther(WIPdata const &wipData, size_t idx)
                 wipData.clientName(),                   // $0
                 wipData.gender() ? "hem" : "haar",      // $1
                 Tools::link(wipData.psychID(),          // $2
-                            wipData.clientID(),
+                            wipData.clientIdent(),
                             wipData.otherLogin(idx))
             }
         )

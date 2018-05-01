@@ -6,6 +6,8 @@ Psych::DisplayInfo Psych::activateClient()
 
     uint16_t idx = validClientIdx();
 
+    rmExistingWIPdata(d_client[idx], "renewed");
+
     inviteClient(d_client[idx]);
     
     return  {

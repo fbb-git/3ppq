@@ -40,7 +40,7 @@ class PsychClient
                     std::string const &name, std::string const &lastName,
                     std::string const &email);
 
-        uint16_t id() const;
+        uint16_t ID() const;
         uint32_t active() const; 
         bool     gender() const;        
         char const *genderText() const;
@@ -61,7 +61,7 @@ inline void PsychClient::deactivate()
     d_active = 0;
 }
 
-inline uint16_t PsychClient:: id() const
+inline uint16_t PsychClient:: ID() const
 {
     return d_ID;
 }

@@ -14,7 +14,7 @@ var questions = [
     "ongelovig reageert",                                   // 13. 
     "anderen bijstaat",                                     // 14. 
     "graag aardig gevonden wil worden",                     // 15. 
-    "anderen het laat werk doen",                           // 16. 
+    "anderen het werk laat doen",                           // 16. 
     "hardop lacht",                                         // 17. 
     "moeilijk te begrijpen is",                             // 18. 
     "doet wat van hem/haar verwacht wordt",                 // 19. 

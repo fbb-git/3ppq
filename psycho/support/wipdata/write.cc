@@ -5,7 +5,9 @@ void WIPdata::write() const
     d_io.seekp(0);
 
     Tools::writeN(d_io, &d_psychID);
-    Tools::writeN(d_io, &d_clientID);
+
+    d_io << d_clientIdent << '\n';
+
     Tools::writeN(d_io, &d_start);
     Tools::writeN(d_io, &d_clientLogin);
 

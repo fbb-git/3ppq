@@ -28,17 +28,6 @@ Psych::DisplayInfo Psych::updateClient()
 //        WIPdata::remove(d_ID, clientIter->id());    // #5
 //
 
-//  -------------------------------------------------------------------------
-//                  client      
-//  nr  reqActive   active    wipExists              action
-//  -------------------------------------------------------------------------
-//   1      .          1           1                    -
-//   2      .          1           0      deactivate client (data completed)
-//   3      1          0           1      should not happen: activate client
-//   4      1          0           0      activate client
-//   5      0          0           1      rm wipfile
-//   6      0          0           0                    -
-//  -------------------------------------------------------------------------
 
 
 

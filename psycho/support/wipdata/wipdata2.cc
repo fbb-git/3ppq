@@ -9,5 +9,6 @@ WIPdata::WIPdata(string const &query)
         throw false;
 
     d_psychID = stoul(query.substr(0, dot));
-    d_clientID = stoul(query.substr(dot + 1));
+    ++dot;
+    d_clientIdent = query.substr(dot, equal - dot);
 }

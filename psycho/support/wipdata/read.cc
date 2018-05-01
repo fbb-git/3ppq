@@ -3,7 +3,9 @@
 void WIPdata::read(istream &in)
 {
     Tools::readN(in, &d_psychID);
-    Tools::readN(in, &d_clientID);
+
+    getline(in, d_clientIdent);
+
     Tools::readN(in, &d_start);
     Tools::readN(in, &d_clientLogin);
 

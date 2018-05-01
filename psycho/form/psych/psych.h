@@ -76,7 +76,7 @@ class Psych
         std::string const &eMail() const;
 
     private:
-        bool get();
+        bool get();                     // get psych record
         std::string emailKey() const;   // get key from cgi.param1("email")
 
         void verify();
@@ -102,7 +102,7 @@ class Psych
 
         void noPwd();
 
-        void clientPage();
+        void clientPage();                  // show the client page
         void displayClientPage(DisplayInfo const &displayInfo);
 
         void infoClient(std::string *clientArray, std::string *clientSelect);
@@ -113,17 +113,31 @@ class Psych
         void startSelect(std::ostream &out, size_t idLength) const;
         void endSelect(std::ostream &out) const;
 
+//  -------------------------------------------------------------------------
+//                  client      
+//  nr  reqActive   active    wipExists              action
+//  -------------------------------------------------------------------------
+//   1      .          1           1                    -
+//   2      .          1           0      deactivate client (data completed)
+//   3      1          0           1      should not happen: activate client
+//   4      1          0           0      activate client
+//   5      0          0           1      rm wipfile
+//   6      0          0           0                    -
+//  -------------------------------------------------------------------------
 
-        DisplayInfo activateClient();
-        DisplayInfo addClient();
-        DisplayInfo addActivateClient();
-        DisplayInfo deactivateClient();
+        DisplayInfo activateClient();   // handles 3 by removing existing file
+        DisplayInfo addClient();        // logs 5
+        DisplayInfo addActivateClient();// logs 5
+        DisplayInfo deactivateClient(); // logs 6 if no wip file
         DisplayInfo removeClient();
         DisplayInfo showClient();
         DisplayInfo updateClient();
 
         uint16_t validClientIdx();
         void pushClient();
+
+        void rmExistingWIPdata(PsychClient const &client, 
+                              char const *txt) const;
 
         uint32_t validClientData();         // throws false on failure
         void inviteClient(PsychClient &client);

@@ -2,6 +2,5 @@
 
 string WIPdata::path() const
 {
-    return g_options.dataDir() + to_string(d_psychID) + '.' + 
-                                 to_string(d_clientID);
+    return g_options.dataDir() + to_string(d_psychID) + '.' + d_clientIdent;
 }

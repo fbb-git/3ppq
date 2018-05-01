@@ -5,7 +5,7 @@ void  WIPdata::insertRatings(ostream &out, int type, size_t endTime,
 {
     out <<
         setw(3) << d_psychID <<         ',' <<
-        setw(3) << d_clientID <<        ',' <<
+        setw(5) << d_clientIdent <<     ',' <<
                    type <<              ',' <<
         setw(10)<< d_start <<           ',' <<
         setw(10)<< endTime;

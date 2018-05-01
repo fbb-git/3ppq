@@ -1,11 +1,11 @@
 #include "wipdata.ih"
 
 WIPdata::WIPdata(std::string const &psychEmail, 
-                      uint16_t psychID, uint16_t clientID, 
+                      uint16_t psychID, string const &clientIdent, 
                       string const &clientName, bool gender)
 :
     d_psychID(psychID),
-    d_clientID(clientID),
+    d_clientIdent(clientIdent),
     d_gender(gender),
     d_clientName(clientName),
     d_start(time(0)),

@@ -14,7 +14,7 @@ class WIPdata
     friend std::ostream &operator<<(std::ostream &out, WIPdata const &data);
 
     uint16_t    d_psychID = 0;
-    uint16_t    d_clientID = 0;
+    std::string d_clientIdent;
     bool        d_gender;               // false: female, true: male;
     std::string d_clientName;           // full name of the client
 
@@ -34,13 +34,13 @@ class WIPdata
 
     public:
         WIPdata(std::string const &psychEmail,          // new WIPdata
-                uint16_t psychID, uint16_t clientID, 
+                uint16_t psychID, std::string const &clientIdent, 
                 std::string const &clientName, bool gender);
         WIPdata(std::string const &query);              // update WIPdata
         WIPdata(std::string const &pid, std::string const &cid); // same
 
         uint16_t psychID() const;
-        uint16_t clientID() const;
+        std::string const &clientIdent() const;
         bool gender() const;
         std::string const &clientName() const;
 
@@ -71,8 +71,8 @@ class WIPdata
 
         void remove();                      
 
-        static bool exists(uint16_t pid, uint16_t cid);
-        static void remove(uint16_t pid, uint16_t cid);     // 2.cc
+        static bool exists(uint16_t pid, std::string const &cid);
+        static void remove(uint16_t pid, std::string const &cid);     // 2.cc
 
 
     private:
@@ -83,7 +83,7 @@ class WIPdata
                            std::string const &ratings) const;
 
         static void cleanup(std::string &dest, std::string const &ratings);
-        static std::string path(uint16_t pid, uint16_t cid);
+        static std::string path(uint16_t pid, std::string const &cid);
 };
 
 inline uint16_t WIPdata::psychID() const
@@ -91,9 +91,9 @@ inline uint16_t WIPdata::psychID() const
     return d_psychID;
 }
 
-inline uint16_t WIPdata::clientID() const
+inline std::string const &WIPdata::clientIdent() const
 {
-    return d_clientID;
+    return d_clientIdent;
 }
 
 inline bool WIPdata::gender() const
@@ -172,15 +172,15 @@ inline void WIPdata::setOtherRatings(size_t idx, std::string const &ratings)
 }
 
 //static
-inline bool WIPdata::exists(uint16_t pid, uint16_t cid)
+inline bool WIPdata::exists(uint16_t pid, std::string const &cid)
 {
     return Tools::exists(path(pid, cid));
 }
 
 //static
-inline std::string WIPdata::path(uint16_t pid, uint16_t cid)
+inline std::string WIPdata::path(uint16_t pid, std::string const &cid)
 {
-    return g_options.dataDir() + to_string(pid) + '.' + to_string(cid);
+    return g_options.dataDir() + to_string(pid) + '.' + cid;
 }
 
 inline std::ostream &operator<<(std::ostream &out, WIPdata const &data)

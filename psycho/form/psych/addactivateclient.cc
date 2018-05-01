@@ -4,6 +4,8 @@ Psych::DisplayInfo Psych::addActivateClient()
 {
     pushClient();
 
+    rmExistingWIPdata(d_client.back(), "removed");
+
     inviteClient(d_client.back());
 
     return  {

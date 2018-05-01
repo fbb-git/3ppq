@@ -1,7 +1,7 @@
 #include "wipdata.ih"
 
 // static
-void WIPdata::remove(uint16_t pid, uint16_t cid)
+void WIPdata::remove(uint16_t pid, string const &cid)
 {
     string wipPath = path(pid, cid);
 

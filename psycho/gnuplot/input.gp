@@ -34,23 +34,24 @@ set title "  "
 #   Legenda Font 
 set key font ",24"
 
-set xrange [0:7]
-set yrange [-.5:1]
+set xrange [0:7.2]
+set yrange [-.5:.75]
 
-#set arrow from 1, -1 to 1, 1 nohead
-#set arrow from 2, -1 to 2, 1 nohead
-#set arrow from 3, -1 to 3, 1 nohead
-#set arrow from 4, -1 to 4, 1 nohead
-#set arrow from 5, -1 to 5, 1 nohead
-#set label "Top1" at 1, 0.97 center
+set arrow from 1, -.01 to 1, .01 nohead
+set arrow from 2, -.01 to 2, .01 nohead
+set arrow from 3, -.01 to 3, .01 nohead
+set arrow from 4, -.01 to 4, .01 nohead
+set arrow from 5, -.01 to 5, .01 nohead
+# set label "Top1" at 1, 0.97 center
 
+set arrow from 0, 0 to 7.2, 0 nohead
 
 #set xtics font "Times-Roman,52" ("Agree." 1, "Consc." 2, "Activ." 3, "Neurot" 4, "Extrav" 5, "Alg." 6)
 set xtics  font ",24" ("Extraversie." 1, "Mildheid" 2, "Ordelijkheid" 3, "Emot.Stab." 4, "Autonomie" 5)
-set xtics offset 0,15
+set xtics offset 0,18
 
 #set ytics font "Times-Roman,52" (" -1.0" -1, " -0.5" -.5, "0" 0, "0.5" 0.5, "1" 1)
-set ytics font ",24" (" -1.0" -1, " -0.5" -.5, "0" 0, "0.5" 0.5, "1" 1)
+set ytics font ",24" (" -0.5" -.5, "0" 0, "0.5" .5, "0.75" .75)
 
 # set for [i=1:9] linetype i dt i
 
@@ -60,9 +61,9 @@ set ytics font ",24" (" -1.0" -1, " -0.5" -.5, "0" 0, "0.5" 0.5, "1" 1)
 #   pt  -   pointtype
 #   ps  -   pointsize
 
-set style line 1 dt 1       lc rgb '#000000'   lw 1 pt 5 ps 1   # --- blue
-set style line 2 dt " . "   lc rgb '#111111'   lw 1 pt 4 ps 1   # --- red
-set style line 3 dt "-"   lc rgb '#222222'   lw 1 pt 3 ps 1   # --- green
+set style line 1 dt 1       lc rgb '#000000'    lw 1 pt 5 ps 1   # --- blue
+set style line 2 dt 2   lc rgb '#000000'        lw 1 pt 4 ps 1   # --- red
+set style line 3 dt 3   lc rgb '#000000'        lw 5 pt 3 ps 1   # --- green
 
 # set style line 1 lt 1 lc rgb '#0060ad'  lw 2 pt 5 ps 1   # --- blue
 # set style line 2 lt 2 lc rgb '#dd181f'  lw 2 pt 4 ps 1   # --- red

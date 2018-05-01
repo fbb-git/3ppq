@@ -1,5 +1,7 @@
 #include "fscores.ih"
 
+//  Extraversie  Mildheid  Ordelijkh. Emot.Stab. Autonomie  Algemeen
+
 // double Fscores::s_weights[N_QUESTIONS][N_FACTORS] = 
 // {
 //    { 0.0046,  -0.0417,   0.0201,   0.0221,   0.0182,   0.0163},

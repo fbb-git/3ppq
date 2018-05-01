@@ -43,7 +43,7 @@
 
 \begin{center}
 \begin{figure}[h]
-\centerline{\scalebox{.4}{\epsffile{plot.ps}}}
+\centerline{\scalebox{.5}{\epsffile{plot.ps}}}
 \caption*{\label{}}
 \end{figure}
 \end{center}

@@ -1,4 +1,5 @@
 #include "client.h"
+
 //#include <iostream>
 //#define CERR std::cerr << __FILE__": "
 
@@ -13,6 +14,8 @@
 #include "../../support/wipdata/wipdata.h"
 #include "../../support/lockguard/lockguard.h"
 #include "../../support/mailer/mailer.h"
+
+#include "../report/report.h"
 
 extern FBB::Log g_log;
 

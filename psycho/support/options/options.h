@@ -11,16 +11,22 @@ class Options
     public:
         Options(std::string const &base);
 
-        std::string log() const;
-        std::string psych() const;
-        std::string html() const;
-        std::string mail() const;
-        std::string questions() const;
-        std::string nrs() const;
+        std::string binDir() const;                 // ends in '/'
         std::string config() const;
         std::string data() const;
         std::string dataDir() const;                // ends in '/'
+        std::string html() const;
+        std::string log() const;
+        std::string mail() const;
+        std::string nrs() const;
+        std::string psych() const;
+        std::string questions() const;
 };
+
+inline std::string Options::binDir() const
+{
+    return dataDir() + "bin/";
+}
 
 inline std::string Options::data() const
 {

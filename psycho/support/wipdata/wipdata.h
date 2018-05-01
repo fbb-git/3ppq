@@ -71,13 +71,14 @@ class WIPdata
 
         void remove();                      
 
+        std::string path() const;
+
         static bool exists(uint16_t pid, std::string const &cid);
         static void remove(uint16_t pid, std::string const &cid);     // 2.cc
 
 
     private:
         void read(std::istream &in);
-        std::string path() const;
         std::ostream &insert(std::ostream &out) const;
         void insertRatings(std::ostream &out, int type, size_t endTime,
                            std::string const &ratings) const;
@@ -85,6 +86,11 @@ class WIPdata
         static void cleanup(std::string &dest, std::string const &ratings);
         static std::string path(uint16_t pid, std::string const &cid);
 };
+
+inline std::string WIPdata::path() const
+{
+    return path(d_psychID, d_clientIdent);
+}
 
 inline uint16_t WIPdata::psychID() const
 {

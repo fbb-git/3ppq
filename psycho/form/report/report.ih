@@ -1,0 +1,11 @@
+#include "report.h"
+
+//#include <iostream>
+//#define CERR std::cerr << __FILE__": "
+
+#include <bobcat/process>
+
+#include "../../support/wipdata/wipdata.h"
+
+using namespace std;
+using namespace FBB;

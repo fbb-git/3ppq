@@ -20,6 +20,9 @@ g_log << "data collection completed: writing " << g_options.data() << endl;
     
     data << wipData << endl;
 
+    Report report{ wipData };
+    report.generate();
+
     wipData.remove();
 
 g_log << "data stored" << endl;

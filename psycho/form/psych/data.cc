@@ -35,7 +35,7 @@ string Psych::s_add = R"(
 string Psych::s_addActive = R"(
                 <input type=submit name='action' value="Toevoegen + versturen"
                     title="cli&euml;nt toevoegen + uitnodiging versturen"
-                    onclick=submitRequest("addActivate")' >)";
+                    onclick='submitRequest("addActivate")' >)";
 
 string Psych::s_erase = R"(
                 <input type=submit value="Velden wissen"
@@ -45,7 +45,7 @@ string Psych::s_erase = R"(
 string Psych::s_deactivate = R"(
                 <input type=submit name='action' value="Deactiveren"
                     title=
-                        "be&euml;indig de vragenlijstafname voor deze cli&euml;nt"
+                    "be&euml;indig de vragenlijstafname voor deze cli&euml;nt"
                     onclick='process("deactivate")' >)";
 
 string Psych::s_remove = R"(

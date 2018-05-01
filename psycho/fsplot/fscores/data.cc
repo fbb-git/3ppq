@@ -46,6 +46,10 @@
 //    {-0.0449,   0.0226,   0.0164,  -0.0081,   0.0167,   0.0184},
 // };
 
+// sum of absolute values:
+//      0.9999    1         1         0.9998    1.0001    0.9999
+
+
 double Fscores::s_weights[N_FACTORS][N_QUESTIONS] = 
 {
     { 

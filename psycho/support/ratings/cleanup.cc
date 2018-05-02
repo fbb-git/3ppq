@@ -5,14 +5,17 @@ void Ratings::cleanup(vector< vector<string> > const &data)
     d_psychID = String::trim(data[0][0]);
     d_clientIdent = String::trim(data[0][1]);
 
+    d_from = stoul(data[0][3]);
+    d_until = stoul(data[0][4]);
+
     for (size_t idx = 0; idx != 2; ++idx)
     {
-        if (data[idx][TYPE].find_first_of("12") == string::npos)
+        if (data[idx][Tools::TYPE].find_first_of("12") == string::npos)
             throw Exception{} << "data ordering corruped: line " << idx + 1 <<
                                 ", expected 1 or 2, found " << 
-                                data[idx][TYPE];
+                                data[idx][Tools::TYPE];
 
-        transform(data[idx].begin() + N_PRE, data[idx].end(), 
+        transform(data[idx].begin() + Tools::N_PRE, data[idx].end(), 
                   d_data[idx].begin(), 
                       [&](string const &value)
                       {
@@ -21,18 +24,18 @@ void Ratings::cleanup(vector< vector<string> > const &data)
                   );
     }
 
-    for (size_t idx = 2; idx != N_LINES; ++idx)
+    for (size_t idx = 2; idx != Tools::N_LINES; ++idx)
     {
-        if (data[idx][TYPE].find("3") == string::npos)
+        if (data[idx][Tools::TYPE].find("3") == string::npos)
             throw Exception{} << "data ordering corruped: line " << idx + 1 <<
-                                ", expected 3, found " << data[idx][TYPE];
+                        ", expected 3, found " << data[idx][Tools::TYPE];
 
         double *dest = &d_data[2][0];
 
-        for_each(data[idx].begin() + N_PRE, data[idx].end(), 
+        for_each(data[idx].begin() + Tools::N_PRE, data[idx].end(), 
             [&](string const &value)
             {
-                *dest++ += stod(value) / (N_LINES - 2);
+                *dest++ += stod(value) / (Tools::N_LINES - 2);
             }
         );
     }

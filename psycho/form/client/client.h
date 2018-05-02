@@ -40,6 +40,8 @@ class Client
         void accept(std::string const &query);
 
     private:
+        void testing();          // for testing purposes only
+
         void answered();
 
         void clientPage(WIPdata &wipData);

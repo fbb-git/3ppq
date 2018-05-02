@@ -9,8 +9,10 @@
 
 #include <bobcat/exception>
 
+#include "../tools/tools.h"
 #include "../lockstream/lockstream.h"
 #include "../lockguard/lockguard.h"
+#include "../ratings/ratings.h"
 
 using namespace std;
 using namespace FBB;

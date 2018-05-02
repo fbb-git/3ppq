@@ -52,7 +52,7 @@
 //      0.9999    1         1         0.9998    1.0001    0.9999
 
 
-double Fscores::s_weights[N_FACTORS][N_QUESTIONS] = 
+double Fscores::s_weights[Tools::N_FACTORS][Tools::N_QUESTIONS] = 
 {
     { 
         .0046, -.0169, -.0265, -.0236, -.0177,  .0247, -.0012, -.0294,

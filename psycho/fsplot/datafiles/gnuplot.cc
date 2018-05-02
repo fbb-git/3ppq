@@ -7,12 +7,12 @@ void DataFiles::gnuplot(char const *path) const
 
     for (
         size_t perspective = 0; 
-            perspective != Values::N_PERSPECTIVES;
+            perspective != Tools::N_PERSPECTIVES;
                 ++perspective
     )
     {
         for (
-            size_t factor = 0, end = Values::N_FACTORS - 1; 
+            size_t factor = 0, end = Tools::N_FACTORS - 1; 
                 factor != end; 
                     ++factor
         )

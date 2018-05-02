@@ -1,0 +1,30 @@
+Een korte beschrijving van de rapportage constructie (zie report.pdf).
+
+1. Als startpunt zijn de beoordelingsdata in csv formaat (1) alsmede het
+   record met de data v.d. psycholoog (2) beschikbaar. In (1) refereren X.Y
+   aan resp. the psych. ID en de client identifier.
+
+2. Het systeem start `fsplot' (grijze blokjes zijn programma's). Fsplot leest
+   (1) en creert de `gnuplot' configuratie (4) uit een beschikbare mal
+   (3). Tevens maakt fsplot de plot-data (5) uit (1) in een formaat dat door
+   gnuplot wordt vereist. Tevens maakt fsplot de tabel met scores (7) die in
+   het rapport worden opgenomen.
+
+3. Het systeem start gnuplot. Gnuplot leest (4) en (5) en produceert de plot
+   in encapsulated postscript formaat (6: plot.eps)
+
+4. Uit een LaTeX mal (8) construeert het systeem report.latex (9) waaruit
+   `latex' en `dvipdf' de uiteindelijke report.pdf (10) construeert. 
+
+De file report.pdf blijft beschikbaar in het systeem onder een lokatie waar
+alleen de psycholoog toegang toe heeft. Daartoe wordt een directory aangemaakt
+die als toegangsinformatie de `credentials' van de psycholoog vereist.
+
+Tevens wordt report.pdf (10) opgenomen in de file report.zip (11) die per
+e-mail naar de psycholoog wordt gestuurd. In deze e-mail staat oa dat het
+rapport ook via de webinterface kan worden opgevraagd. Omdat het systeem
+*nergens* het password van de client opslaat kan deze zip niet worden
+versleuteld met het password van de client. Daarom wordt in de profiel-pagina
+het gebruikte encryptie-password vermeld. Die pagina is alleen toegankelijk
+voor de psycholoog en vanwege de https verbinding kan daar het
+encryptiepassword veilig worden vermeld.

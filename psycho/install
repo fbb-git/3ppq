@@ -12,6 +12,8 @@ The target directory may be specified as a relative or absolute path.
     exit 1
 fi
 
+base=`pwd`
+
 website=$1
 
 if [ $website == "website.skel" ] ; then
@@ -40,19 +42,32 @@ if [ ! -e ${website}/bin/form ] ; then
     cd support
     icmbuild || exit 1
 
-    cd ../form
+    cd ${base}/form
     icmbuild || exit 1
 
     icmbuild install program ${website}/bin/form
-    cd ..
 fi
 
-if [ form/tmp/bin/binary -nt ${website}/bin/form ] ; then
-    cp form/tmp/bin/binary ${website}/bin/form 
+try cd ${base}
+
+if [ ! -e ${website}/bin/fsplot ] ; then
+    cd ../fsplot
+    icmbuild || exit 1
+
+    icmbuild install program ${website}/bin/fsplot
 fi
 
-cd website.skel
-tar cf - --exclude .filler --exclude '*/ORG' --exclude README . | 
+try cd ${base}
+
+for program in form fsplot
+do
+    if [ ${program}/tmp/bin/binary -nt ${website}/bin/${program} ] ; then
+        cp ${program}/tmp/bin/binary ${website}/bin/${program}
+    fi
+done
+
+try cd website.skel
+tar cf - --exclude .filler --exclude '*/ORG' --exclude README . |
                                             (cd ${website}; tar xf -)
 
 try cd ${website}

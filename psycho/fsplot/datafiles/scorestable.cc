@@ -19,13 +19,13 @@ void DataFiles::scoresTable(char const *path) const
                         "Algemene Factor",
                     };
 
-    for (size_t factor = 0; factor != N_FACTORS; ++factor)
+    for (size_t factor = 0; factor != Tools::N_FACTORS; ++factor)
     {
         out <<
             "    \\makecell[l]{" << label[factor] << '}';
 
         size_t col = 0;
-        for (; col != N_PERSPECTIVES; ++col)
+        for (; col != Tools::N_PERSPECTIVES; ++col)
             out <<  " &\n"
                     "    \\makecell[r]{" << d_fscores[factor][col] << '}';
 
@@ -34,7 +34,7 @@ void DataFiles::scoresTable(char const *path) const
 
         out << showpos;
 
-        for (; col != REPORT_COLUMNS; ++col)
+        for (; col != Tools::REPORT_COLUMNS; ++col)
             out <<  " &\n"
                     "    \\makecell[r]{" << d_fscores[factor][col] << '}';
 

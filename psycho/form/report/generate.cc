@@ -2,5 +2,5 @@
 
 void Report::generate()
 {
-    Process fsplot{ g_options.binDir() + "fsplot " };
+//    Process fsplot{ g_options.binDir() + "fsplot " };
 }

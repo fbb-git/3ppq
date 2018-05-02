@@ -2,13 +2,13 @@
 #define INCLUDED_FSCORES_
 
 #include "../../support/types/types.h"
-#include "../values/values.h"
+#include "../../support/tools/tools.h"
 
-class Fscores: public Values
+class Fscores
 {
     Dvector2 d_fscores;
 
-    static double s_weights[N_FACTORS][N_QUESTIONS];
+    static double s_weights[Tools::N_FACTORS][Tools::N_QUESTIONS];
 
     Dvector2 const &d_data;
 

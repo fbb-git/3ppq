@@ -15,6 +15,6 @@
 //#define PRECOMP             "-x c++-header"
 #define REFRESH
 #define LDFLAGS             ""
-#define ADD_LIBRARIES       "bobcat"
-#define ADD_LIBRARY_PATHS   ""
+#define ADD_LIBRARIES       "support bobcat"
+#define ADD_LIBRARY_PATHS   "../../support/tmp"
 #define DEFCOM     "program"

@@ -28,7 +28,7 @@ set margins 15, 5, 7, 7
 # plot [-3.14:3.14] sin(x), x with lines, "file.dat"
 # plot [0:6] "file.dat" with linespoints
 
-set title "  "
+# set title "  "
 # Results for SubjectName"
 
 #   Legenda Font 
@@ -46,8 +46,13 @@ set arrow from 5, -.01 to 5, .01 nohead
 
 set arrow from 0, 0 to 7.2, 0 nohead
 
+#   Legenda Font 
+set key font ",24"
+
+
 #set xtics font "Times-Roman,52" ("Agree." 1, "Consc." 2, "Activ." 3, "Neurot" 4, "Extrav" 5, "Alg." 6)
-set xtics  font ",24" ("Extraversie." 1, "Mildheid" 2, "Ordelijkheid" 3, "Emot.Stab." 4, "Autonomie" 5)
+set xtics  font ",24" ("Extraversie." 1, "Mildheid" 2, "Ordelijkheid" \
+                        3, "Emot.Stab." 4, "Autonomie" 5)
 set xtics offset 0,18
 
 #set ytics font "Times-Roman,52" (" -1.0" -1, " -0.5" -.5, "0" 0, "0.5" 0.5, "1" 1)
@@ -61,7 +66,7 @@ set ytics font ",24" (" -0.5" -.5, "0" 0, "0.5" .5, "0.75" .75)
 #   pt  -   pointtype
 #   ps  -   pointsize
 
-set style line 1 dt 1       lc rgb '#000000'    lw 1 pt 5 ps 1   # --- blue
+set style line 1 dt 1   lc rgb '#000000'        lw 1 pt 5 ps 1   # --- blue
 set style line 2 dt 2   lc rgb '#000000'        lw 1 pt 4 ps 1   # --- red
 set style line 3 dt 3   lc rgb '#000000'        lw 5 pt 3 ps 1   # --- green
 

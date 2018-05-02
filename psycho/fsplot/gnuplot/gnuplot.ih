@@ -6,7 +6,8 @@
 #include <bobcat/process>
 #include <bobcat/tempstream>
 
-#include "../ratings/ratings.h"
+#include "../../support/tools/tools.h"
+#include "../../support/ratings/ratings.h"
 
 using namespace std;
 using namespace FBB;

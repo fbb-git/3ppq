@@ -1,8 +1,6 @@
 #include "report.ih"
 
 Report::Report(WIPdata const &wipData)
-:
-    d_psychEmail(wipData.psychEmail()),
-    d_path(wipData.path())
-{
-}
+//:
+//    d_csv(g_options.dataDir() + wipData.pidCid() + ".csv");
+{}

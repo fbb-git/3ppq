@@ -15,17 +15,25 @@ class Options
         std::string config() const;
         std::string data() const;
         std::string dataDir() const;                // ends in '/'
+        std::string tmpDir() const;                 // ends in '/'
         std::string html() const;
         std::string log() const;
         std::string mail() const;
         std::string nrs() const;
         std::string psych() const;
+        std::string latexMold() const;
+        std::string gnuplotMold() const;
         std::string questions() const;
 };
 
 inline std::string Options::binDir() const
 {
     return dataDir() + "bin/";
+}
+
+inline std::string Options::tmpDir() const
+{
+    return dataDir() + "tmp/";
 }
 
 inline std::string Options::data() const
@@ -71,6 +79,16 @@ inline std::string Options::html() const
 inline std::string Options::mail() const
 {
     return d_base + "mail/";
+}
+
+inline std::string Options::gnuplotMold() const
+{
+    return d_base + "mold/gnuplot";
+}
+
+inline std::string Options::latexMold() const
+{
+    return d_base + "mold/latex";
 }
 
 extern Options g_options;           // defined in main.cc

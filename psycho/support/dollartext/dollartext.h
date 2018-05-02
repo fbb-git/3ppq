@@ -7,13 +7,19 @@
 
 struct DollarText
 {
-    static std::string replaceStream( 
-                            std::string const &path,
+    static std::string replaceStream(                   // contents in return-
+                            std::string const &path,    //              value
                             StrVector const &elements
                         );
 
 
-    static std::string const &replaceLine(
+    static void replace(                                // contents to 'out'
+                            std::ostream &out, std::string const &inPath,
+                            StrVector const &elements
+                        );
+
+
+    static std::string const &replaceLine(              // one single line.
                                     std::string &line,
                                     StrVector const &elements
                             );

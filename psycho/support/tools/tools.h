@@ -31,7 +31,14 @@ struct Tools
         MAX_PSYCH_FIELD = 16,
         MIN_PWD_LENGTH = 3,
         MAX_CLIENT_SELECT_ROWS = 5,
-        BUFSIZE = 5000
+        BUFSIZE = 5000,
+
+        N_FACTORS = 6,
+        N_LINES = 5,        // # lines to process
+        N_PRE = 5,          // psychID, ident, type, begintime, endtime
+        TYPE = 2,           // field holding the data-type (1: self, etc)
+        N_PERSPECTIVES = 3,         // self, meta, other(average)
+        REPORT_COLUMNS = 3 + 3,     // Perspectives + differences
     };
 
     enum Align

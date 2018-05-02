@@ -16,7 +16,7 @@ try
     Arg &arg = Arg::initialize("hv", longOptions, longEnd, argc, argv);
     arg.versionHelp(usage, Icmbuild::version, 4);
 
-    Ratings ratings(argv[1]);               // extract the data from the csvs
+    Ratings ratings{ argv[1] };             // extract the data from the csvs
 
     Fscores fscores(ratings.data());        // compute the factor scores
 

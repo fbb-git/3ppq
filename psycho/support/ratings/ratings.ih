@@ -10,5 +10,7 @@
 #include <bobcat/csv4180>
 #include <bobcat/string>
 
+#include "../tools/tools.h"
+
 using namespace std;
 using namespace FBB;

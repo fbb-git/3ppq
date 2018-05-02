@@ -39,6 +39,9 @@ class WIPdata
         WIPdata(std::string const &query);              // update WIPdata
         WIPdata(std::string const &pid, std::string const &cid); // same
 
+        WIPdata(char const *csvFile, char const *psychEmail,    // mainly for
+                bool gender, char const *clientName);           // testing
+
         uint16_t psychID() const;
         std::string const &clientIdent() const;
         bool gender() const;
@@ -71,25 +74,35 @@ class WIPdata
 
         void remove();                      
 
+        void readCSV(char const *csvFile);
+
         std::string path() const;
+        std::string pidCid() const;
 
         static bool exists(uint16_t pid, std::string const &cid);
         static void remove(uint16_t pid, std::string const &cid);     // 2.cc
 
 
     private:
+        void assign(std::string &dest, std::vector<double> const &src);
         void read(std::istream &in);
         std::ostream &insert(std::ostream &out) const;
         void insertRatings(std::ostream &out, int type, size_t endTime,
                            std::string const &ratings) const;
 
         static void cleanup(std::string &dest, std::string const &ratings);
+        static std::string pidCid(uint16_t pid, std::string const &cid);
         static std::string path(uint16_t pid, std::string const &cid);
 };
 
 inline std::string WIPdata::path() const
 {
     return path(d_psychID, d_clientIdent);
+}
+
+inline std::string WIPdata::pidCid() const
+{
+    return pidCid(d_psychID, d_clientIdent);
 }
 
 inline uint16_t WIPdata::psychID() const
@@ -186,7 +199,13 @@ inline bool WIPdata::exists(uint16_t pid, std::string const &cid)
 //static
 inline std::string WIPdata::path(uint16_t pid, std::string const &cid)
 {
-    return g_options.dataDir() + to_string(pid) + '.' + cid;
+    return g_options.dataDir() + pidCid(pid, cid);
+}
+
+//static
+inline std::string WIPdata::pidCid(uint16_t pid, std::string const &cid)
+{
+    return to_string(pid) + '.' + cid;
 }
 
 inline std::ostream &operator<<(std::ostream &out, WIPdata const &data)

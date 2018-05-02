@@ -4,8 +4,9 @@ Client::Map Client::s_state =
 {
     { "storeEmail", &Client::storeEmail  },     // store e-mail adresses and
                                                 // invide others.
-
     { "answered",   &Client::answered  },       // handle received answers
+
+    { "testing",    &Client::testing },
 };
 
 Client::CompletedHandler Client::s_completed[] =

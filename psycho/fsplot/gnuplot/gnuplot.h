@@ -5,11 +5,9 @@
 
 #include "../../support/types/types.h"
 
-#include "../values/values.h"
-
 class Ratings;
 
-class Gnuplot: public Values
+class Gnuplot
 {
     Ratings const &d_ratings;
     Dvector2 const &d_fscores;              // TYPES * N_FACTORS

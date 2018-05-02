@@ -2,10 +2,9 @@
 #define INCLUDED_DATAFILES_
 
 #include "../../support/types/types.h"
+#include "../../support/tools/tools.h"
 
-#include "../values/values.h"
-
-class DataFiles: public Values
+class DataFiles
 {
     Dvector2 d_fscores;
 

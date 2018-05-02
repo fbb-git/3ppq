@@ -24,13 +24,15 @@ typedef std::unordered_map<std::string, Uint16> IDMap;
 
 typedef std::unordered_map<std::string, Int32> VariableMap;
 
-typedef std::pair<int, int>             IntPair;
+typedef std::pair<int, int>                 IntPair;
 
-typedef std::vector<Uint8>          Uint8Vector;
-typedef std::vector<Uint16>         Uint16Vector;
-typedef std::vector<Int32>          Int32Vector;
-typedef std::vector<Uint32>         Uint32Vector;
-typedef std::vector<std::string>    StrVector;
+typedef std::vector<Uint8>                  Uint8Vector;
+typedef std::vector<Uint16>                 Uint16Vector;
+typedef std::vector<Int32>                  Int32Vector;
+typedef std::vector<Uint32>                 Uint32Vector;
+typedef std::vector<std::string>            StrVector;
+typedef std::vector< std::vector<double> >  Dvector2;
+
 
 constexpr Uint8 uint8_(auto value)
 {

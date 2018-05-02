@@ -2,6 +2,7 @@
 
 void WIPdata::read(istream &in)
 {
+g_log << "WIPdata::read" << endl;
     Tools::readN(in, &d_psychID);
 
     getline(in, d_clientIdent);
@@ -36,5 +37,10 @@ void WIPdata::read(istream &in)
 
     for (auto &mail: d_otherEmail)
         getline(addresses, mail);
+
+g_log << "WIPdata::read DONE" << endl;
 }
+
+
+
 

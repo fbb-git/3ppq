@@ -1,7 +1,7 @@
 set terminal eps color  size 30 cm, 20 cm
 
-# $1: path of the .eps file to create. 
-set output "$1"
+# $0: path of the .eps file to create. 
+set output "$0"
 
 #           L   R  B  T
 set margins 15, 5, 7, 7
@@ -36,8 +36,8 @@ set style line 1 dt 1   lc rgb '#000000'    lw 1 pt 5 ps 1
 set style line 2 dt 2   lc rgb '#000000'    lw 1 pt 4 ps 1
 set style line 3 dt 3   lc rgb '#000000'    lw 5 pt 3 ps 1
 
-# $2: path of the data file. 
-plot '$2' index 0 with linespoints ls 1 title 'zelfperspectief',   \
+# $1: path of the data file. 
+plot '$1' index 0 with linespoints ls 1 title 'zelfperspectief',   \
      ''         index 1 with linespoints ls 2 title 'metaperspectief',   \
      ''         index 2 with linespoints ls 3 title 'anderperspectief'
 

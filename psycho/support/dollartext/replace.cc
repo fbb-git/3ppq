@@ -9,7 +9,7 @@ void DollarText::replace(ostream &out, string const &inPath,
 
     string line;
     while (getline(in, line))
-        out << replaceLine(line, elements) << '\n';
+        out << replaceLine(line, elements);
 
     out.flush();
 }

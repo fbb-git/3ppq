@@ -28,12 +28,12 @@ class Options
 
 inline std::string Options::binDir() const
 {
-    return dataDir() + "bin/";
+    return d_base + "bin/";
 }
 
 inline std::string Options::tmpDir() const
 {
-    return dataDir() + "tmp/";
+    return d_base + "tmp/";
 }
 
 inline std::string Options::data() const
@@ -83,12 +83,12 @@ inline std::string Options::mail() const
 
 inline std::string Options::gnuplotMold() const
 {
-    return d_base + "mold/gnuplot";
+    return d_base + "molds/gnuplot";
 }
 
 inline std::string Options::latexMold() const
 {
-    return d_base + "mold/latex";
+    return d_base + "molds/latex";
 }
 
 extern Options g_options;           // defined in main.cc

@@ -81,8 +81,6 @@ try chmod o-rwx .               # no access except for www-data and
 
 try chmod -fR g+w log           # www-data may write log
 
-try chmod g+sw data             # www-data may write data/   
+try chmod g+sw data tmp         # www-data may write data/ and tmp/
 
 echo ready.
-
-

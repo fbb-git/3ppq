@@ -12,7 +12,12 @@ LockGuard WIPdata::read()
         throw false;
 
     d_io.open();
+
     read(d_io);
 
     return lg;
 }
+
+
+
+

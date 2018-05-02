@@ -70,22 +70,24 @@ class WIPdata
         bool hasEmail() const;          // email addresses available
 
         LockGuard read();
+
         void write() const;
 
         void remove();                      
 
-        void readCSV(char const *csvFile);
-
         std::string path() const;
         std::string pidCid() const;
+
+        uint32_t startTime() const;
 
         static bool exists(uint16_t pid, std::string const &cid);
         static void remove(uint16_t pid, std::string const &cid);     // 2.cc
 
+        void read(std::istream &in);            // for testing purposes only
+        void write(std::ostream &out) const;
 
     private:
         void assign(std::string &dest, std::vector<double> const &src);
-        void read(std::istream &in);
         std::ostream &insert(std::ostream &out) const;
         void insertRatings(std::ostream &out, int type, size_t endTime,
                            std::string const &ratings) const;
@@ -128,6 +130,11 @@ inline uint16_t WIPdata::clientLogin() const
 inline uint16_t WIPdata::otherLogin(size_t idx) const
 {
     return d_otherLogin[idx];
+}
+
+inline uint32_t WIPdata::startTime() const
+{
+    return d_start;
 }
 
 inline std::string const &WIPdata::psychEmail() const

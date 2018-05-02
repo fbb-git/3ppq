@@ -1,7 +1,5 @@
 #include "dollartext.ih"
 
-#include <iostream>
-
 string const &DollarText::replaceLine(string &line,
                                       StrVector const &elements)
 {

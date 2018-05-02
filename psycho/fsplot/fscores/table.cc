@@ -1,6 +1,6 @@
-    #include "fscores.ih"
+#include "fscores.ih"
 
-Fscores::Dvector2 Fscores::table() const
+Dvector2 Fscores::table() const
 {
     Dvector2 ret(N_FACTORS, vector<double>(REPORT_COLUMNS));
 

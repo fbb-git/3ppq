@@ -1,32 +1,28 @@
 #ifndef INCLUDED_FSCORES_
 #define INCLUDED_FSCORES_
 
-#include <vector>
-
+#include "../../support/types/types.h"
 #include "../values/values.h"
 
-struct Fscores: public Values
+class Fscores: public Values
 {
-    typedef std::vector< std::vector<double> > Dvector2;
+    Dvector2 d_fscores;
 
-    private:
-        Dvector2 d_fscores;
-    
-        static double s_weights[N_FACTORS][N_QUESTIONS];
-    
-        Dvector2 const &d_data;
+    static double s_weights[N_FACTORS][N_QUESTIONS];
+
+    Dvector2 const &d_data;
 
     public:
         Fscores(Dvector2 const &data);
 
         Dvector2 const &scores() const;
-        Dvector2 table() const;
+        Dvector2 table() const;             // table of FACTORS x REPORTCOLS
 
     private:
         void compute();
 };
         
-inline Fscores::Dvector2 const &Fscores::scores() const
+inline Dvector2 const &Fscores::scores() const
 {
     return d_fscores;
 }

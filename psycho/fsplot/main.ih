@@ -12,6 +12,7 @@
 #include "values/values.h"
 #include "ratings/ratings.h"
 #include "fscores/fscores.h"
+#include "datafiles/datafiles.h"
 #include "gnuplot/gnuplot.h"
 
 namespace Icmbuild
@@ -22,7 +23,6 @@ namespace Icmbuild
 };
 
 void usage(std::string const &progname);
-void writeTable(char const *path, Fscores::Dvector2 const &reportValues);
 
 using namespace std;
 using namespace FBB;

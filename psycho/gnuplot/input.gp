@@ -1,8 +1,8 @@
-#set terminal pdf color size 60 cm, 40 cm
-#set output "plot.pdf"
+set terminal pdf color size 30 cm, 20 cm
+set output "plot.pdf"
 
-set terminal eps color  size 30 cm, 20 cm
-set output "plot.eps"
+#set terminal eps color  size 30 cm, 20 cm
+#set output "plot.eps"
 
 #           L   R  B  T
 set margins 15, 5, 7, 7
@@ -34,7 +34,7 @@ set margins 15, 5, 7, 7
 #   Legenda Font 
 set key font ",24"
 
-set xrange [0:7.2]
+set xrange [0:6]
 set yrange [-.5:.75]
 
 set arrow from 1, -.01 to 1, .01 nohead
@@ -44,7 +44,7 @@ set arrow from 4, -.01 to 4, .01 nohead
 set arrow from 5, -.01 to 5, .01 nohead
 # set label "Top1" at 1, 0.97 center
 
-set arrow from 0, 0 to 7.2, 0 nohead
+set arrow from 0, 0 to 6, 0 nohead
 
 #   Legenda Font 
 set key font ",24"
@@ -66,22 +66,22 @@ set ytics font ",24" (" -0.5" -.5, "0" 0, "0.5" .5, "0.75" .75)
 #   pt  -   pointtype
 #   ps  -   pointsize
 
-set style line 1 dt 1   lc rgb '#000000'        lw 1 pt 5 ps 1   # --- blue
-set style line 2 dt 2   lc rgb '#000000'        lw 1 pt 4 ps 1   # --- red
-set style line 3 dt 3   lc rgb '#000000'        lw 5 pt 3 ps 1   # --- green
+set style line 1 dt 1   lc rgb '#000000'        lw  6 pt 5 ps 1   # --- blue
+set style line 2 dt 2   lc rgb '#000000'        lw  8 pt 2 ps 1   # --- red
+set style line 3 dt 3   lc rgb '#000000'        lw  8 pt 2 ps 1   # --- green
 
 # set style line 1 lt 1 lc rgb '#0060ad'  lw 2 pt 5 ps 1   # --- blue
 # set style line 2 lt 2 lc rgb '#dd181f'  lw 2 pt 4 ps 1   # --- red
 # set style line 3 lt 5 lc rgb '#18dd1f'  lw 3 pt 3 ps 1   # --- green
 
 
-plot 'file.dat' index 0 with linespoints ls 1 title 'zelfperspectief',   \
-     ''         index 1 with linespoints ls 2 title 'metaperspectief',   \
-     ''         index 2 with linespoints ls 3 title 'anderperspectief'
+# plot 'file.dat' index 0 with linespoints ls 3 title 'zelfperspectief',   \
+#      ''         index 1 with linespoints ls 2 title 'metaperspectief',   \
+#      ''         index 2 with linespoints ls 1 title 'anderperspectief'
 
-# plot 'file.dat' index 0 with linespoints ls 1 title 'zelfperspectief'   at 0.14, 0.98,    \
-#      ''         index 1 with linespoints ls 2 title 'metaperspectief'   at 0.34, 0.98,   \
-#      ''         index 2 with linespoints ls 3 title 'anderperspectief'  at 0.56, 0.98
+plot 'file.dat' index 0 with linespoints ls 3 title 'zelfperspectief'   at 0.23, 0.94,    \
+     ''         index 1 with linespoints ls 2 title 'metaperspectief'   at 0.50, 0.94,   \
+     ''         index 2 with linespoints ls 1 title 'anderperspectief'  at 0.76, 0.94
 
 
 #plot 'file.dat' index 0 with linespoints ls 1 title {/Times=20 'self rating'}, \

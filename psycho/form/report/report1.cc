@@ -3,6 +3,7 @@
 Report::Report(WIPdata const &wipData)
 :
     d_pidCid(wipData.pidCid()),
+    d_clientIdent(wipData.clientIdent()),
     d_csvName(g_options.tmpDir() + d_pidCid + ".csv"),
     d_from(wipData.startTime()),
     d_psychEmail(wipData.psychEmail())

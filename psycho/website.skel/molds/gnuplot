@@ -6,8 +6,10 @@ set output "$0"
 #           L   R  B  T
 set margins 15, 5, 7, 7
 
-set xrange [0:7.2]
+set xrange [0:6]
 set yrange [-.5:.75]
+
+set arrow from 0, -.57 to 0,.82 lw 3 heads
 
 set arrow from 1, -.01 to 1, .01 nohead
 set arrow from 2, -.01 to 2, .01 nohead
@@ -15,7 +17,7 @@ set arrow from 3, -.01 to 3, .01 nohead
 set arrow from 4, -.01 to 4, .01 nohead
 set arrow from 5, -.01 to 5, .01 nohead
 
-set arrow from 0, 0 to 7.2, 0 nohead
+set arrow from 0, 0 to 6, 0 nohead
 
 #   Legenda Font 
 set key font ",24"
@@ -32,13 +34,12 @@ set ytics font ",24" (" -0.5" -.5, "0" 0, "0.5" .5, "0.75" .75)
 #   pt  -   pointtype
 #   ps  -   pointsize
 
-set style line 1 dt 1   lc rgb '#000000'    lw 1 pt 5 ps 1
-set style line 2 dt 2   lc rgb '#000000'    lw 1 pt 4 ps 1
-set style line 3 dt 3   lc rgb '#000000'    lw 5 pt 3 ps 1
+set style line 1 dt 1   lc rgb '#000000'    lw 6 pt 5 ps 1
+set style line 2 dt 2   lc rgb '#000000'    lw 8 pt 2 ps 1
+set style line 3 dt 3   lc rgb '#000000'    lw 8 pt 2 ps 1
 
 # $1: path of the data file. 
-plot '$1' index 0 with linespoints ls 1 title 'zelfperspectief',   \
-     ''         index 1 with linespoints ls 2 title 'metaperspectief',   \
-     ''         index 2 with linespoints ls 3 title 'anderperspectief'
-
+plot '$1' index 0 with linespoints ls 3 title 'zelfperspectief' at 0.29,0.91,\
+     ''   index 1 with linespoints ls 2 title 'metaperspectief' at 0.56,0.91,\
+     ''   index 2 with linespoints ls 1 title 'anderperspectief' at 0.82,0.91
 

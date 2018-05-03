@@ -90,3 +90,7 @@ plot 'file.dat' index 0 with linespoints ls 3 title 'zelfperspectief'   at 0.23,
 
 
 # pandoc -s -S article.html -o article.docx
+
+
+
+

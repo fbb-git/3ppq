@@ -11,6 +11,7 @@ void Client::testing()
 
     Report report{ wipData };
     report.fsplot();
+    report.latex();
 
     g_log << "Going home" << endl;
 

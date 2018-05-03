@@ -8,6 +8,7 @@ class WIPdata;
 class Report
 {
     std::string d_pidCid;
+    std::string d_clientIdent;
     std::string d_csvName;
 
     uint32_t d_from;
@@ -19,10 +20,19 @@ class Report
     public:
         Report(WIPdata const &wipData);
         void fsplot();
+        void latex() const;
 
         void generate();
 
     private:
+        std::string headerInfo() const;
+        std::string latexScoresTable() const;
 };
         
 #endif
+
+
+
+
+
+

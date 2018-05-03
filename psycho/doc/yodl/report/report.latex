@@ -4,17 +4,19 @@
 \usepackage{caption}
 \usepackage{graphics}
 \usepackage{a4wide}
+\usepackage{eso-pic}
+\usepackage[demo]{graphicx}
+
 
 \usepackage[T1]{fontenc}
 \usepackage{makecell}
 \hfuzz=4pt % don't fuss when less than 4pt
 \input{/usr/share/yodl/xlatin1.tex}
-\setlength{\parskip}{3mm} % height between par
-\setlength{\parindent}{0mm} % no par indent
-%\addtolength{\textheight}{2cm}
-%\addtolength{\voffset}{-2cm}
+%\setlength{\parskip}{3mm} % height between par
+%\setlength{\parindent}{0mm} % no par indent
 
-% ... \addtowidth{\textwidth}{2cm}
+\newcommand\AtPageUpperRight[1]{\AtPageUpperLeft{%
+   \makebox[\paperwidth][r]{#1}}}
 
 % no \title{..} info
 % no \author{..} info
@@ -24,10 +26,14 @@
 % no title, so no \maketitle
 % no \tableofcontents generated
 
+\AddToShipoutPictureBG*{%
+  \AtPageUpperRight{\raisebox{-\height}{\frame{
+    \includegraphics[width=4cm]{3ppqUL.eps}}}}}
+
 \begin{tabular}{ll}
-    \makecell[l]{Client:}  & 
-    \makecell[l]{P. Puk}  
-\\
+%    \makecell[l]{Client:}  & 
+%    \makecell[l]{P. Puk}  
+%\\
     \makecell[l]{Client identificatie:}  & 
     \makecell[l]{12345b}   
 \\

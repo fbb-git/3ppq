@@ -17,6 +17,7 @@ class Options
         std::string dataDir() const;                // ends in '/'
         std::string tmpDir() const;                 // ends in '/'
         std::string html() const;
+        std::string imagesDir() const;              // ends in '/'
         std::string log() const;
         std::string mail() const;
         std::string nrs() const;
@@ -54,6 +55,11 @@ inline std::string Options::nrs() const
 inline std::string Options::dataDir() const
 {
     return d_base + "data/";
+}
+
+inline std::string Options::imagesDir() const
+{
+    return d_base + "images/";
 }
 
 inline std::string Options::questions() const

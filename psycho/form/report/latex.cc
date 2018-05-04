@@ -5,19 +5,19 @@ void Report::latex() const
 {
     string const &mold = g_options.latexMold();
 
+
     string base { g_options.tmpDir() + d_pidCid };
 
-    string latexIn{ base + ".latex" };
     {
         ofstream latex;
-        Exception::open(latex, latexIn);
+        Exception::open(latex, latexInput);
     
         DollarText::replace(
                         latex, mold, 
                         { 
                             g_options.imagesDir() + "3ppqUL.eps",
                             headerInfo(),
-                            d_eps,
+                            d_gnuplotEps,
                             latexScoresTable()
                         }
                     );

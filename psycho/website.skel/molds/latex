@@ -1,0 +1,88 @@
+\documentclass[dutch]{article}
+\usepackage[dutch]{babel}
+\usepackage{epsf}
+\usepackage{caption}
+\usepackage{tikz}
+
+\usepackage[T1]{fontenc}
+\usepackage{makecell}
+\hfuzz=4pt % don't fuss when less than 4pt
+\input{/usr/share/yodl/xlatin1.tex}
+
+\addtolength{\textheight}{3cm}
+\addtolength{\voffset}{-3cm}
+
+\addtolength{\textwidth}{3cm}
+\addtolength{\hoffset}{-1.5cm}
+
+\setlength{\parskip}{3mm} % height between par
+\setlength{\parindent}{0mm} % no par indent
+
+\begin{document}
+
+\thispagestyle{empty}
+\tikz[remember picture,overlay]
+%           more negative x coordinate: more to the left
+%           more negative y coordinate: lower
+  \node [shift={(-3.7cm,.3cm)}] at (current page.north east)
+    {\includegraphics[width=2.3cm]{$0}};
+%                               $ 0: logo eps file
+
+\begin{tabular}{ll}
+%  $ 1: client and psychologist information 
+$1
+\end{tabular}
+
+\vspace{-1cm}
+
+\begin{center}
+\begin{figure}[h]
+%                                   $ 2: name of the plot eps file
+\centerline{\scalebox{.5}{\epsffile{$2}}}
+\caption*{\label{}}
+\end{figure}
+\end{center}
+
+\vspace{-2.5cm}
+
+\section*{Scores}
+\begin{center}
+\begin{tabular}{lrrrcrrr}
+    \hline
+    \makecell[l]{}  & 
+    \multicolumn{3}{c}{\makecell[c]{Perspectief}} & 
+    \makecell[l]{}  & 
+    \multicolumn{3}{c}{\makecell[c]{Verschil}} 
+\\
+    \cline{2-4}
+    \cline{6-8}
+
+    \makecell[l]{}  & 
+    \makecell[r]{Zelf-}  & 
+    \makecell[r]{Meta-}  & 
+    \makecell[r]{Ander-}  & 
+    \makecell[l]{}  & 
+    \makecell[r]{Z-M}  & 
+    \makecell[r]{Z-A}  & 
+    \makecell[r]{M-A} 
+ \\
+    \hline
+%   $ 3: name of the scores file
+$3
+    \hline
+\end{tabular}
+\end{center}
+
+\section*{Uitleg}
+
+Het zelfperspectief geeft uw beoordeling over uzelf weer. In het
+metaperspectief wordt weergegeven hoe u in het algemeen door anderen
+beoordeeld denkt te worden. Het anderperspectief geeft het gemiddelde weer van
+de beoordelingen van de drie anderen die u hebt gevraagd de vragenlijst over u
+in te vullen.  In de grafiek kunt u zien in welke mate een eigenschap aanwezig
+is. De maximale score is +1 (eigenschap extreem aanwezig), de minimale score
+is -1 (eigenschap extreem afwezig), met een nul als neutrale score. Plus of
+min zegt niets over goed of slecht. Daarnaast worden de verschillen tussen de
+perspectieven vermeld: hoe hoger de score, hoe groter het verschil.
+
+\end{document}

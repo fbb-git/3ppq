@@ -1,0 +1,163 @@
+\documentclass[dutch]{article}
+\usepackage[dutch]{babel}
+\usepackage{epsf}
+\usepackage{caption}
+%\usepackage{graphics}
+%\usepackage{a4wide}
+%\usepackage{eso-pic}
+%\usepackage[demo]{graphicx}
+\usepackage{tikz}
+\usepackage{mwe}% example pictures
+
+\usepackage[T1]{fontenc}
+\usepackage{makecell}
+\hfuzz=4pt % don't fuss when less than 4pt
+\input{/usr/share/yodl/xlatin1.tex}
+
+\addtolength{\textheight}{3cm}
+\addtolength{\voffset}{-3cm}
+
+\addtolength{\textwidth}{3cm}
+\addtolength{\hoffset}{-1.5cm}
+
+\setlength{\parskip}{3mm} % height between par
+\setlength{\parindent}{0mm} % no par indent
+
+
+%\newcommand\AtPageUpperRight[1]{\AtPageUpperLeft{%
+%   \makebox[\paperwidth][r]{#1}}}
+
+\begin{document}
+
+%\AddToShipoutPictureBG*{%
+%  \AtPageUpperRight{\raisebox{-\height}{\frame{
+%%                               $ 0: logo eps file
+%    \includegraphics[width=3cm]{/home/frank/git/psycho/src/psycho/website/images/3ppqUL.eps}
+% }}}}
+
+\thispagestyle{empty}
+\tikz[remember picture,overlay]
+%  \node[anchor=north east,inner sep=2.2cm] at (current page.north east)
+%           more negative x coordinate: more to the left
+%           more negative y coordinate: lower
+  \node [shift={(-3.7cm,.3cm)}] at (current page.north east)
+{\includegraphics[width=2.3cm]{/home/frank/git/psycho/src/psycho/website/images/3ppqUL.eps}};
+% {\includegraphics[width=2cm]{example-image}};
+
+\begin{tabular}{ll}
+%  $ 1: client and psychologist information 
+    \makecell[l]{Client identificatie:} &
+    \makecell[l]{es}
+\\
+    \makecell[l]{Afnamedatum:} &
+    \makecell[l]{ 1 May 2018}
+
+\end{tabular}
+
+\vspace{-1cm}
+
+\begin{center}
+\begin{figure}[h]
+%                                   $ 2: name of the plot eps file
+\centerline{\scalebox{.5}{\epsffile{1.es.eps}}}
+\caption*{\label{}}
+\end{figure}
+\end{center}
+
+\vspace{-2.5cm}
+
+\section*{Scores}
+\begin{center}
+\begin{tabular}{lrrrcrrr}
+    \hline
+    \makecell[l]{}  & 
+    \multicolumn{3}{c}{\makecell[c]{Perspectief}} & 
+    \makecell[l]{}  & 
+    \multicolumn{3}{c}{\makecell[c]{Verschil}} 
+\\
+    \cline{2-4}
+    \cline{6-8}
+
+    \makecell[l]{}  & 
+    \makecell[r]{Zelf-}  & 
+    \makecell[r]{Meta-}  & 
+    \makecell[r]{Ander-}  & 
+    \makecell[l]{}  & 
+    \makecell[r]{Z-M}  & 
+    \makecell[r]{Z-A}  & 
+    \makecell[r]{M-A} 
+ \\
+    \hline
+%   $ 3: name of the scores file
+    \makecell[l]{Extraversie} &
+    \makecell[r]{0.27} &
+    \makecell[r]{-0.01} &
+    \makecell[r]{-0.01} &
+    \makecell[l]{} &
+    \makecell[r]{+0.28} &
+    \makecell[r]{-0.00} &
+    \makecell[r]{+0.00}
+\\
+    \makecell[l]{Mildheid} &
+    \makecell[r]{0.02} &
+    \makecell[r]{0.15} &
+    \makecell[r]{0.21} &
+    \makecell[l]{} &
+    \makecell[r]{-0.19} &
+    \makecell[r]{-0.06} &
+    \makecell[r]{+0.00}
+\\
+    \makecell[l]{Ordelijkheid} &
+    \makecell[r]{0.12} &
+    \makecell[r]{-0.08} &
+    \makecell[r]{0.13} &
+    \makecell[l]{} &
+    \makecell[r]{-0.01} &
+    \makecell[r]{-0.21} &
+    \makecell[r]{+0.00}
+\\
+    \makecell[l]{Emotionele Stabiliteit} &
+    \makecell[r]{-0.26} &
+    \makecell[r]{0.02} &
+    \makecell[r]{-0.20} &
+    \makecell[l]{} &
+    \makecell[r]{-0.06} &
+    \makecell[r]{+0.22} &
+    \makecell[r]{+0.00}
+\\
+    \makecell[l]{Automomie} &
+    \makecell[r]{0.02} &
+    \makecell[r]{-0.11} &
+    \makecell[r]{0.11} &
+    \makecell[l]{} &
+    \makecell[r]{-0.09} &
+    \makecell[r]{-0.22} &
+    \makecell[r]{+0.00}
+\\
+    \makecell[l]{Algemene Factor} &
+    \makecell[r]{0.19} &
+    \makecell[r]{0.02} &
+    \makecell[r]{0.33} &
+    \makecell[l]{} &
+    \makecell[r]{-0.14} &
+    \makecell[r]{-0.31} &
+    \makecell[r]{+0.00}
+\\
+
+    \hline
+\end{tabular}
+\end{center}
+
+\section*{Uitleg}
+
+Het zelfperspectief geeft uw beoordeling over uzelf weer. In het
+metaperspectief wordt weergegeven hoe u in het algemeen door anderen
+beoordeeld denkt te worden. Het anderperspectief geeft het gemiddelde weer van
+de beoordelingen van de drie anderen die u hebt gevraagd de vragenlijst over u
+in te vullen.  In de grafiek kunt u zien in welke mate een eigenschap aanwezig
+is. De maximale score is +1 (eigenschap extreem aanwezig), de minimale score
+is -1 (eigenschap extreem afwezig), met een nul als neutrale score. Plus of
+min zegt niets over goed of slecht. Daarnaast worden de verschillen tussen de
+perspectieven vermeld: hoe hoger de score, hoe groter het verschil.
+
+\end{document}

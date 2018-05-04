@@ -4,27 +4,26 @@ void Report::fsplot()
 {
     string const &mold = g_options.gnuplotMold();
 
-    string base { g_options.tmpDir() + d_pidCid };
+    ofstream gnuplotIn{ d_gnuplotInput };
+    ofstream plotData{ d_gnuplotData };
 
-    ofstream gnuplotIn{ base + ".gp" };
-    ofstream plotData{ base + ".dat" };
+    DollarText::replace(gnuplotIn, mold, { d_gnuplotEps, d_gnuplotData } );
 
-    d_eps =  base + ".eps";
-    d_scores = base + ".scores";
+    string command =  g_options.binDir() + "fsplot " +
+                        d_csvPath       + ' ' +
+                        d_gnuplotInput  + ' ' +
+                        d_gnuplotData   + ' ' +
+                        d_fScores ;
 
-    DollarText::replace(gnuplotIn, mold, { d_eps, base + ".dat" } );
-
-    Process fsplot { Process::NONE, 
-                     g_options.binDir() + "fsplot " +   // call fsplot
-                        d_csvName + ' ' +               // csv file
-                        base + ".gp" + ' ' +    // gnuplot input file
-                                                        // (writes d_eps)
-                        base + ".dat" + ' ' +     // data for gnuplot
-                        d_scores                        // scores table
-            };
+    Process fsplot { Process::NONE, command };
 
     fsplot.start();
-    fsplot.waitForChild();
+
+    if (fsplot.waitForChild() != 0)
+    {
+        g_log << "Command `" << command << "' failed" << endl;
+        throw false;
+    }
 }
 
 

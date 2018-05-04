@@ -20,3 +20,7 @@ replyTo: noreply@3ppq.nl
     # log: debug                    -- all messages are logged
     # log: std                      -- all but the debug msgs are logged
 log: debug
+
+    # path names of used child process, not residing in website/bin
+latex: /usr/bin/latex
+

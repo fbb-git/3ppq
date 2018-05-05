@@ -8,7 +8,13 @@ namespace
         Arg::LongOption{"version", 'v'},
     };
     auto longEnd = longOptions + size(longOptions);
-}
+
+#include "../basedir.f" // abs. path to the website's base directory
+
+} // anonymous
+
+Options g_options{ g_base };
+ConfigFile  g_config{ g_options.config(), ConfigFile::RemoveComment };
 
 int main(int argc, char **argv)
 try

@@ -10,6 +10,7 @@
 #include <bobcat/exception>
 
 #include "../support/ratings/ratings.h"
+#include "../support/options/options.h"
 
 #include "fscores/fscores.h"
 #include "datafiles/datafiles.h"

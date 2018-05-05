@@ -2,10 +2,11 @@
 
 int Gnuplot::plot(char const *gnuplotIn) const
 {
-    Process gnuplot{Process::NONE,  "/usr/bin/gnuplot "s  + gnuplotIn };
+    Process process{Process::IGNORE_COUT_CERR,  
+                    g_config.findKeyTail("gnuplot:")  + ' ' + gnuplotIn };
  
-    gnuplot.start();
+    process.start();
 
-    return gnuplot.waitForChild();
+    return process.waitForChild();
 }
 

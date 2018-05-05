@@ -1,6 +1,8 @@
 #include "report.ih"
 
-void Report::generate()
+void Report::generate() const
 {
-//    Process fsplot{ g_options.binDir() + "fsplot " };
+    fsplot();
+    latex();
+    dvipdf();
 }

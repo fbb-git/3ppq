@@ -32,6 +32,7 @@ try
     dataFiles.scoresTable(argv[4]);
 
     Gnuplot gnuplot{ ratings, fscores.scores() };
+
     return gnuplot.plot(argv[2]);
 }
 catch (int x)

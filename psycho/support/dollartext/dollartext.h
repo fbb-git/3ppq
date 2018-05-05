@@ -14,9 +14,10 @@ struct DollarText
 
 
     static void replace(                                // contents to 'out'
-                            std::ostream &out, std::string const &inPath,
-                            StrVector const &elements
-                        );
+                        std::string const &dest, 
+                        std::string const &inPath,
+                        StrVector const &elements
+                    );
 
 
     static std::string const &replaceLine(              // one single line.

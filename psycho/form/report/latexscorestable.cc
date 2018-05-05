@@ -3,7 +3,7 @@
 string Report::latexScoresTable() const
 {
     ifstream scores;
-    Exception::open(scores, d_scores);
+    Exception::open(scores, d_fScores);
 
     ostringstream latexScores;
     latexScores << scores.rdbuf();

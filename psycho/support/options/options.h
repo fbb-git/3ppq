@@ -11,30 +11,73 @@ class Options
     public:
         Options(std::string const &base);
 
-        std::string binDir() const;                 // ends in '/'
+        std::string baseDir() const;          // all Dir-entries end in '/'
+        std::string binDir() const;     
+        std::string dataDir() const;    
+        std::string tmpDir() const;     
+        std::string imagesDir() const;  
+        std::string htaccessDir() const;
+        std::string resultsDir() const; 
+        std::string moldsDir() const;   
+        std::string mailDir() const;    
+        std::string htmlDir() const;    
+
         std::string config() const;
         std::string data() const;
-        std::string dataDir() const;                // ends in '/'
-        std::string tmpDir() const;                 // ends in '/'
-        std::string html() const;
-        std::string imagesDir() const;              // ends in '/'
         std::string log() const;
-        std::string mail() const;
         std::string nrs() const;
         std::string psych() const;
-        std::string latexMold() const;
-        std::string gnuplotMold() const;
         std::string questions() const;
 };
+
+inline std::string Options::baseDir() const
+{
+    return d_base;
+}
 
 inline std::string Options::binDir() const
 {
     return d_base + "bin/";
 }
 
+inline std::string Options::resultsDir() const
+{
+    return d_base + "www/results/";
+}
+
 inline std::string Options::tmpDir() const
 {
     return d_base + "tmp/";
+}
+
+inline std::string Options::dataDir() const
+{
+    return d_base + "data/";
+}
+
+inline std::string Options::htaccessDir() const
+{
+    return d_base + "htaccess/";
+}
+
+inline std::string Options::moldsDir() const
+{
+    return d_base + "molds/";
+}
+
+inline std::string Options::imagesDir() const
+{
+    return d_base + "images/";
+}
+
+inline std::string Options::htmlDir() const
+{
+    return d_base + "html/";
+}
+
+inline std::string Options::mailDir() const
+{
+    return d_base + "mail/";
 }
 
 inline std::string Options::data() const
@@ -52,16 +95,6 @@ inline std::string Options::nrs() const
     return d_base + "data/nrs.bin";
 }
 
-inline std::string Options::dataDir() const
-{
-    return d_base + "data/";
-}
-
-inline std::string Options::imagesDir() const
-{
-    return d_base + "images/";
-}
-
 inline std::string Options::questions() const
 {
     return d_base + "questions/questions.txt";
@@ -75,26 +108,6 @@ inline std::string Options::log() const
 inline std::string Options::psych() const
 {
     return d_base + "data/psych";
-}
-
-inline std::string Options::html() const
-{
-    return d_base + "html/";
-}
-
-inline std::string Options::mail() const
-{
-    return d_base + "mail/";
-}
-
-inline std::string Options::gnuplotMold() const
-{
-    return d_base + "molds/gnuplot";
-}
-
-inline std::string Options::latexMold() const
-{
-    return d_base + "molds/latex";
 }
 
 extern Options g_options;           // defined in main.cc

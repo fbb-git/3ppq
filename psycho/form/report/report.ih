@@ -6,12 +6,10 @@
 #include <sstream>
 #include <iomanip>
 
-#include <bobcat/process>
-#include <bobcat/tempstream>
-
 #include "../../support/types/types.h"
 #include "../../support/wipdata/wipdata.h"
 #include "../../support/dollartext/dollartext.h"
+#include "../../support/tools/tools.h"
 
 using namespace std;
 using namespace FBB;

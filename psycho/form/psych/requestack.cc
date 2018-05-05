@@ -13,7 +13,8 @@ void Psych::requestAck()
                 d_email, 
                 "Activatie 3ppq.nl account",
                 DollarText::replaceStream(
-                                g_options.mail() + "requestack", replacements
+                                g_options.mailDir() + "requestack", 
+                                replacements
                             ) 
             );
 

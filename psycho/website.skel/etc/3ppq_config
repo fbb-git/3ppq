@@ -22,5 +22,8 @@ replyTo: noreply@3ppq.nl
 log: debug
 
     # path names of used child process, not residing in website/bin
-latex: /usr/bin/latex
+gnuplot:    /usr/bin/gnuplot
+latex:      /usr/bin/latex
+dvipdf:     /usr/bin/dvipdf
+htpasswd:   /usr/bin/htpasswd
 

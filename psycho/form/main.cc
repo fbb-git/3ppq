@@ -2,7 +2,7 @@
 
 namespace {
 
-#include "basedir.f" // abs. path to the website's base directory
+#include "../basedir.f" // abs. path to the website's base directory
 
 } // anonymous
 

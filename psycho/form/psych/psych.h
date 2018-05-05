@@ -91,8 +91,10 @@ class Psych
         void addPsych();
         uint8_t parseField();
         bool validRegistrationData(uint64_t *nip, uint8_t *field);
+        void resultsDir(std::string const &pwd) const;
 
         void verifyAck();
+
         std::string messages();         // messages for this psychologist
 
         void profilePage();             // show profile page
@@ -150,6 +152,8 @@ class Psych
         static std::string newPassword();
 
         std::vector<LockGuard> updateWIPemail() const;
+
+        void htpasswd(std::string const &pwd) const; // new htpasswd file
 };
 
 inline std::string const &Psych::eMail() const

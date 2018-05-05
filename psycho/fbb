@@ -2,6 +2,8 @@
 
 install website
 
+echo NOTE: 2ppq.config is replaced by this script: check $0
+
 cd website
 
 rm -f www/cplusplus
@@ -31,4 +33,10 @@ url:  http://localhost
     # log: debug                    -- all messages are logged
     # log: std                      -- all but the debug msgs are logged
 log: debug
+
+    # path names of used child process, not residing in website/bin
+gnuplot:    /usr/bin/gnuplot
+latex:      /usr/bin/latex
+dvipdf:     /usr/bin/dvipdf
+htpasswd:   /usr/bin/htpasswd
 " > etc/3ppq_config

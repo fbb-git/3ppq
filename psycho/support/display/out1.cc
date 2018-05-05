@@ -2,7 +2,7 @@
 
 void Display::out(string const &name)
 {
-    string path = g_options.html() + name;
+    string path = g_options.htmlDir() + name;
 
     state(path);
 

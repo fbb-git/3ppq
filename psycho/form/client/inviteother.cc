@@ -13,7 +13,7 @@ void Client::inviteOther(WIPdata const &wipData, size_t idx)
         "Verzoek namens " + wipData.clientName() + 
                                         " om een vragenlijst in te vullen",
         DollarText::replaceStream(
-            g_options.mail() + "inviteother", 
+            g_options.mailDir() + "inviteother", 
             {
                 wipData.clientName(),                   // $0
                 wipData.gender() ? "hem" : "haar",      // $1

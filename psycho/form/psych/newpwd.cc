@@ -17,7 +17,7 @@ void Psych::newPwd()
                 d_email, 
                 "Nieuw wachtwoord 3ppq.nl",
                 DollarText::replaceStream(
-                    g_options.mail() + "newpwd",
+                    g_options.mailDir() + "newpwd",
                     {
                         d_name,
                         d_lastName,
@@ -25,6 +25,8 @@ void Psych::newPwd()
                     }
                 )
             );
+
+    htpasswd(pwd);
 
     d_display.out("newpwd.h");
 }

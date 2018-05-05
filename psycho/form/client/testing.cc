@@ -10,8 +10,7 @@ void Client::testing()
     LockGuard lg = wipData.read();
 
     Report report{ wipData };
-    report.fsplot();
-    report.latex();
+    report.generate();
 
     g_log << "Going home" << endl;
 

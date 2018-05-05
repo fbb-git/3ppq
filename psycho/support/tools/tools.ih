@@ -3,7 +3,8 @@
 // #include <sys/file.h>           // flock
 // 
 // #include <unistd.h>
-// #include <sys/types.h>
+
+#include <sys/types.h>
 
 #include <string>
 // #include <numeric>
@@ -16,6 +17,9 @@
 #include <bobcat/digestbuf>
 #include <bobcat/isymcryptstream>
 #include <bobcat/cgi>
+#include <bobcat/process>
+
+#include "../global/global.h"
 
 using namespace std;
 using namespace FBB;

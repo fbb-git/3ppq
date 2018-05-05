@@ -33,23 +33,26 @@ typedef std::vector<Uint32>                 Uint32Vector;
 typedef std::vector<std::string>            StrVector;
 typedef std::vector< std::vector<double> >  Dvector2;
 
-
-constexpr Uint8 uint8_(auto value)
+template <typename Type>
+constexpr Uint8 uint8_(Type value)
 {
     return static_cast<Uint8>(value);   // st. cast is needed when value is
 }                                       // a strongly typed enum.
 
-constexpr Uint16 uint16_(auto value)
+template <typename Type>
+constexpr Uint16 uint16_(Type value)
 {
     return value;
 }
 
-constexpr Uint32 uint32_(auto value)
+template <typename Type>
+constexpr Uint32 uint32_(Type value)
 {
     return value;
 }
 
-constexpr size_t size_t_(auto value)
+template <typename Type>
+constexpr size_t size_t_(Type value)
 {
     return value;
 }

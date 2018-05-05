@@ -53,15 +53,24 @@ Ook dient een eventueel nieuw wachtwoord twee keer te zijn vermeld.
     d_lastName      = d_cgi.param1("lastName");
     d_field         = field;
 
+    string htPwd = d_cgi.param1("pwd");
+
     string newpwd = d_cgi.param1("newpwd");
 
+    bool updateHtPwd = false;
+
     if (newpwd.length() > 0)
-        d_pwdHash = Tools::md5hash(d_cgi.param1("newpwd"));
+    {
+        updateHtPwd = true;
+        d_pwdHash = Tools::md5hash(htPwd = newpwd);
+    }
 
     if (newemail == d_email)                    // same key: update, else new
         d_data.update(emailKey(), toString());  // record.
     else
     {
+        updateHtPwd = true;
+
         d_data.erase(emailKey());
         d_email = newemail;
                                                 // update e-mail addresses
@@ -69,7 +78,10 @@ Ook dient een eventueel nieuw wachtwoord twee keer te zijn vermeld.
 
         d_data.add(Tools::md5hash(d_email), toString());
     }
-    
+
+    if (updateHtPwd)
+        htpasswd(htPwd);        
+
     if (newpwd.length() > 0)                // new password
     {                                       // new login
         d_display.out("psychpage.h");

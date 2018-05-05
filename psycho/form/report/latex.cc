@@ -1,44 +1,18 @@
 #include "report.ih"
 
-    // fsplot has generated d_scores
+    // LaTeX produces d_pathPrefix.dvi from d_pathPrefix.latex, produced by
+    // fsplot
 void Report::latex() const
 {
-    string const &mold = g_options.latexMold();
+    writeLatexInputFile();    
 
-
-    string base { g_options.tmpDir() + d_pidCid };
-
-    {
-        ofstream latex;
-        Exception::open(latex, latexInput);
-    
-        DollarText::replace(
-                        latex, mold, 
-                        { 
-                            g_options.imagesDir() + "3ppqUL.eps",
-                            headerInfo(),
-                            d_gnuplotEps,
-                            latexScoresTable()
-                        }
-                    );
-    }
-    
-    g_log << "calling `/usr/bin/latex " << latexIn << '\'' << endl;
-
-    Process latex { Process::IGNORE_COUT_CERR, 
-                    "/usr/bin/latex "     // call LaTeX
+    string command = g_config.findKeyTail("latex:") +  " "
                     "--output-directory=" + g_options.tmpDir() + " "
                     "--aux-directory=" + g_options.tmpDir() +    " " +
-                    latexIn
-            };
+                    d_latexInput;
 
-    g_log << "starting\n";
-    latex.start();
-
-    g_log << "waiting\n";
-    latex.waitForChild();
-
-    g_log << "done\n";
+    for (size_t idx = 0; idx != 2; ++idx)
+        Tools::childProcess(command);
 }
 
 

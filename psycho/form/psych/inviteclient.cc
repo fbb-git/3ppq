@@ -18,7 +18,7 @@ void Psych::inviteClient(PsychClient &client)
         client.email(), 
         "Verzoek namens " + psychName + " om een vragenlijst in te vullen",
         DollarText::replaceStream(
-            g_options.mail() + "activateclient", 
+            g_options.mailDir() + "activateclient", 
             {
                 client.genderText(),                        // $0
                 client.name() + ' ' + client.lastName(),    // $1

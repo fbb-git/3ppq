@@ -57,6 +57,8 @@ struct Tools
     static std::ostream &debug();       // debug emessage 
     static std::ostream &stdLog();      // std log message
 
+    static void childProcess(std::string const &command);   // throws false
+                                                            // on failure
     static void delay();
 
     static bool checkParam(FBB::CGI &cgi, char const *param);
@@ -89,6 +91,9 @@ struct Tools
                                     // displayable text string
     static std::string md5hashText(std::string const &text);
 
+    static void mkdir(std::string const &path);     // throws false on failure
+                                                    // logging the error to
+                                                    // g_log
 
     static size_t random(int max);  // next random nr from uniform 
                                     // int distribution [0 .. max)

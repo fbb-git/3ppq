@@ -2,7 +2,6 @@
 
 void Psych::read(std::string const &data)
 {
-
     istringstream in(data);                  // read the data
 
     string iv;

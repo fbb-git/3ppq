@@ -1,0 +1,22 @@
+#include <libgen.h>
+
+#include <iostream>
+#include <string>
+#include <exception>
+
+#include "../support/tools/tools.h"
+#include "../support/options/options.h"
+#include "../support/datastore/datastore.h"
+#include "../support/lockguard/lockguard.h"
+#include "../form/psych/psych.h"
+
+namespace Icmbuild
+{
+    extern char version[];
+    extern char years[];
+    extern char author[];
+};
+
+void usage(std::string const &progname);
+
+using namespace std;

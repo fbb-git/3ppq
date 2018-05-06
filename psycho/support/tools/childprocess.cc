@@ -8,7 +8,7 @@ void Tools::childProcess(string const &command)
 
     if (process.waitForChild() != 0)
     {
-        g_log << "Chil process `" << command << "' failed" << endl;
+        g_log << "Child process `" << command << "' failed" << endl;
         throw false;
     }
 }

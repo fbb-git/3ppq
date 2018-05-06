@@ -23,8 +23,25 @@ g_log << "data collection completed: writing " << g_options.data() << endl;
     Report report{ wipData };
     report.generate();
 
+    g_mailer.sendmail(
+        wipData.psychEmail(),
+        wipData.psychEmail(),
+        "Resultaten 3ppq voor client " + wipData.clientIdent() + 
+                                        " zijn beschikbaar",
+        DollarText::replaceStream(
+            g_options.mailDir() + "results", 
+            {
+                wipData.clientIdent(),                  // $0
+            }
+        )
+    );
+    
     wipData.remove();
 
 g_log << "data stored" << endl;
 
 }
+
+
+
+

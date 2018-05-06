@@ -2,9 +2,9 @@
 // 
 // vector<PsychClient>::iterator Psych::existingClient()
 // {
-// //g_log << "existingClient RECEIVES ID " << d_cgi.param1("ID") << endl;
+// //g_log << "existingClient RECEIVES ID " << d_cgi->param1("ID") << endl;
 // 
-//     uint16_t ID = Tools::valueOr(d_cgi.param1("ID"), 0);
+//     uint16_t ID = Tools::valueOr(d_cgi->param1("ID"), 0);
 // 
 //     if (ID == 0)
 //         throw false;

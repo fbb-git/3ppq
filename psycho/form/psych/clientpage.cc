@@ -4,7 +4,7 @@ void Psych::clientPage()
 {
     DisplayInfo displayInfo = { s_add + s_addActive };
 
-g_log << "clientpage request = `" << d_cgi.param1("request") << '\'' << endl;
+g_log << "clientpage request = `" << d_cgi->param1("request") << '\'' << endl;
 
 
     {
@@ -15,7 +15,7 @@ g_log << "clientpage request = `" << d_cgi.param1("request") << '\'' << endl;
         displayInfo.clientIdx = d_client.size();
 
         if (
-            auto iter = s_clientPageRequest.find(d_cgi.param1("request")); 
+            auto iter = s_clientPageRequest.find(d_cgi->param1("request")); 
             iter != s_clientPageRequest.end()
         )
         {

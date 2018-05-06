@@ -7,9 +7,9 @@ Psych::DisplayInfo Psych::updateClient()
                                             // was specified
     uint16_t idx = validClientIdx();
 
-    d_client[idx].update(d_cgi.param1("ident"), 
-                         d_cgi.param1("name"), d_cgi.param1("lastName"), 
-                         d_cgi.param1("clEmail"));
+    d_client[idx].update(d_cgi->param1("ident"), 
+                         d_cgi->param1("name"), d_cgi->param1("lastName"), 
+                         d_cgi->param1("clEmail"));
 
     return showClient();
 }

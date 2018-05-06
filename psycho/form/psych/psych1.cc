@@ -1,8 +1,6 @@
 #include "psych.ih"
 
-Psych::Psych(CGI &cgi)
+Psych::Psych()
 :
-    d_data(g_options.psych()),
-    d_cgi(cgi),
-    d_display(cgi)
+    d_data(g_options.psych())
 {}

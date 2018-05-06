@@ -1,16 +1,13 @@
 #include "psych.ih"
 
-bool Psych::get()
+bool Psych::get(std::string const &key)
 {
     string data;
 
-    d_data.get(&data, emailKey());
+    d_data.get(&data, key);
 
     if (data.empty())
-    {
-        notRegistered();
         return false;
-    }
 
     read(data);
 

@@ -4,5 +4,6 @@
     parameters (e.g., tt(onsubmit)) may be used by the page-designer.
 
     When submitting forms, the posted parameters may have specific values (in
-    which case these are mentioned in the overviews) or the value is
-    specified in the form (indicated by a question mark)
+    which case these are mentioned in the overviews) or the value is specified
+    in the form or provided by the system as hidden input tag. Below, such
+    variable parameter values are indicated by question marks.

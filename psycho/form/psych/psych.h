@@ -33,7 +33,7 @@ class Psych
                                DisplayInfo (Psych::*)()>      Map2display;
 
     DataStore d_data;          // psychologists' data
-    FBB::CGI &d_cgi;
+    FBB::CGI *d_cgi = 0;
 
     Display d_display;
 
@@ -69,13 +69,15 @@ class Psych
     std::vector<PsychClient> d_client;  // client info
 
     public:
+        Psych();                    // used by the 'psychrecords' program
         Psych(FBB::CGI &cgi);
         void process();
 
-        void read(std::string const &data);
         std::string const &eMail() const;
+        bool get(std::string const &key);
 
     private:
+        void read(std::string const &data);
         bool get();                     // get psych record
         std::string emailKey() const;   // get key from cgi.param1("email")
 

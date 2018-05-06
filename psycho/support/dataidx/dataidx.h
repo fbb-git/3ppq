@@ -17,17 +17,17 @@ class DataIdx
     static constexpr uint16_t   s_primeBits = 6;        // inital # prime bits
     static constexpr double     s_loadFactor = 0.6;
 
-    struct Entry
-    {
-        std::string key;        // Tools::KEY_SIZE bytes
-        uint64_t offset;
-    };
-
     std::string d_idxPath;
 
     uint16_t d_header[sizeHeader];
 
     public:
+        struct Entry
+        {
+            std::string key;        // Tools::KEY_SIZE bytes
+            uint64_t offset;
+        };
+
         DataIdx(std::string dataIdxPath);
 
         int64_t dataOffset(std::string const &key); // -1 if not found
@@ -42,8 +42,9 @@ class DataIdx
 
         void reduceOffsets(uint64_t offset, uint64_t delta);
 
-        static uint16_t nEntries(std::istream &dataIdx);
-        static uint64_t nextOffset(std::istream &dataIdx);
+        Entry *nextEntry(uint64_t *offset) const;   // next entry at/beyond 
+                                                    // offset 
+                                                    // (not thread-safe!)
 
     private:
         void extend();                  // extend the .idx file

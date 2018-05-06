@@ -7,7 +7,7 @@ void Psych::profile()
     if (not get())
         throw false;
 
-    if (d_cgi.param1("email") != d_email)
+    if (d_cgi->param1("email") != d_email)
         throw false;
 
     if (not pwdMatch())
@@ -48,14 +48,14 @@ Ook dient een eventueel nieuw wachtwoord twee keer te zijn vermeld.
         return;
     }
 
-    string newemail = d_cgi.param1("newemail");
-    d_name          = d_cgi.param1("name");
-    d_lastName      = d_cgi.param1("lastName");
+    string newemail = d_cgi->param1("newemail");
+    d_name          = d_cgi->param1("name");
+    d_lastName      = d_cgi->param1("lastName");
     d_field         = field;
 
-    string htPwd = d_cgi.param1("pwd");
+    string htPwd = d_cgi->param1("pwd");
 
-    string newpwd = d_cgi.param1("newpwd");
+    string newpwd = d_cgi->param1("newpwd");
 
     bool updateHtPwd = false;
 

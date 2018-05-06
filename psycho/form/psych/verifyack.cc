@@ -9,7 +9,7 @@ void Psych::verifyAck()
 
     d_display.append("email");
 
-    uint16_t ack = Tools::valueOr(d_cgi.param1("ack"), 0);
+    uint16_t ack = Tools::valueOr(d_cgi->param1("ack"), 0);
     if (ack == 0 || ack != d_ack)
     {
         d_display.append({ "email", "mode", "pwd" });

@@ -12,24 +12,24 @@
 
 bool Psych::validProfileData(uint8_t *field)
 {
-    string newemail = d_cgi.param1("newemail");
+    string newemail = d_cgi->param1("newemail");
 
     *field = parseField();
 
-    string newpwd = d_cgi.param1("newpwd");
+    string newpwd = d_cgi->param1("newpwd");
 
     return                                     // inspect data validity
-        (d_nip = Tools::valueOr(d_cgi.param1("nip"), 0))    &&
+        (d_nip = Tools::valueOr(d_cgi->param1("nip"), 0))    &&
         count(newemail.begin(), newemail.end(), '@') == 1   &&
         *field != static_cast<uint8_t>(~0)                  &&
-        newpwd == d_cgi.param1("newpwd2")                   &&
+        newpwd == d_cgi->param1("newpwd2")                   &&
         (                                                   
             newpwd.empty() ||                               
             newpwd.length() >= Tools::MIN_PWD_LENGTH        
         )                                                   && 
-        Tools::checkParam(d_cgi, "name")                    &&
-        Tools::checkParam(d_cgi, "lastName")                &&
-        Tools::checkParam(d_cgi, "newemail");
+        Tools::checkParam(*d_cgi, "name")                    &&
+        Tools::checkParam(*d_cgi, "lastName")                &&
+        Tools::checkParam(*d_cgi, "newemail");
 }
 
 

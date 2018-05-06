@@ -15,16 +15,16 @@ void Psych::addPsych()
         return;
     }
 
-    string pwd{ d_cgi.param1("pwd") };
+    string pwd{ d_cgi->param1("pwd") };
 
     d_time      = time(0);                      // assign remaining fields
     d_ack       = Tools::random(1000, 9999);
     d_nClients  = 0;
     d_ID        = d_data.nextNr();
     d_pwdHash   = Tools::md5hash(pwd);
-    d_name      = d_cgi.param1("name");
-    d_lastName  = d_cgi.param1("lastName");
-    d_email     = d_cgi.param1("email");
+    d_name      = d_cgi->param1("name");
+    d_lastName  = d_cgi->param1("lastName");
+    d_email     = d_cgi->param1("email");
 
     LockGuard lg{ d_data.lg() };
 

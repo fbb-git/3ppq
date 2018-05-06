@@ -12,7 +12,7 @@ void Psych::verify()
             return;
     }
 
-    string mode = d_cgi.param1("mode");
+    string mode = d_cgi->param1("mode");
 
     if (mode == "noPwd")
         confirmNewPwd();

@@ -1,0 +1,61 @@
+WEBPAGE(home-page)
+            (no)(index.html)(none)(none)(home-page of 3ppq.nl)
+
+WEBPAGE(psychologist page)(yes)(psych.html)(none)(
+        posts must offer the following parameter/value combinations:
+        itemization(
+            itt(mode:) tt(noPwd) (request new password) or tt(login): the
+                        psychologist logs in
+            cgi(state)(verify)
+            cgi(type)(psych)
+            cgi(email)(?)   (e-mail address)
+            cgi(pwd)(?)     (password)
+        )
+        )(login page for registered psychologists)
+
+WEBPAGE(questions presenting page)
+        (yes)
+        (question.html)
+        (Question information is stored in the browser's tt(sessionStorage)
+    area. Available tt(sessionStorage.X) variables are (specifying X in the
+    itemization):
+        itemization(
+        itt(idx): the question's index number
+        itt(pid): the psychologist's (internal) ID
+        itt(cid): the client's (internal) ID
+        itt(nQuestions): the number of questions in the questionnaire
+        itt(questions): the array of questions
+        itt(ratingType): 1: self, 2: meta, 3: other
+        itt(ratings):   the array of collected answers (0: not answered,
+            otherwise 1 through 5).
+        ))
+        (Once all (!) questions have been answered the following
+    cgi-parameters are defined before submitting the form:
+        itemization(
+            cgi(type)(client)
+            cgi(state)(answered)
+            cgi(ratings)(sessionStorage.ratings)
+            cgi(pid)(sessionStorage.pid)
+            cgi(cid)(sessionStorage.cid);
+            cgi(ratingType)(sessionStorage.ratingType)
+        )
+        )
+        (Page presenting all questions, eventually submitting the answers)
+        
+WEBPAGE(registration page)(yes)(register.html)(none)(
+        posts must offer the following parameter/value combinations:
+        itemization(
+            cgi(name)(?)    (first name of the psychologist)
+            cgi(lastName)(?)    (last name of the psychologist)
+            cgi(email)(?)   (e-mail address)
+            cgi(nip)(?)   (nip-number)
+            cgi(field)(?)   (values are or-ed combinations of
+                        1, A&O; 2 GGZ; 4: Education (`Onderwijs'); 
+                        8: Research (`Onderzoek') or 16: other (`anders'))
+            cgi(pwd)(?)     (password)
+            cgi(pwd2)(?)    (password confirmation)
+            cgi(state)(addPsych)
+            cgi(type)(psych)
+        )
+        )(registration page for NIP-psychologists)
+        

@@ -1,0 +1,8 @@
+    Web-pages that are active form must define tt(form) tags, at least
+    defining tt(action="/bin/form") and tt(method="post") parameters as shown:
+    verb( <form name="form" action="/bin/form" method="post"> ) Additional
+    parameters (e.g., tt(onsubmit)) may be used by the page-designer.
+
+    When submitting forms, the posted parameters may have specific values (in
+    which case these are mentioned in the overviews) or the value is
+    specified in the form (indicated by a question mark)

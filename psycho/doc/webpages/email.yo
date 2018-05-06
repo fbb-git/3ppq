@@ -1,0 +1,44 @@
+The following e-mail molds are in use:
+
+itemization(
+    itt(activateclient), inviting the client to participate in the 
+            questionnaire data collection procedure. $-parameters are:
+        itemization(
+        it() $0: the client's name
+        it() $1: the client's last name
+        it() $2: the name of the psychologist
+        it() $3: the hyperlink to the instructions page
+            )
+
+    itt(inviteother),  inviting others to participate in the 
+            questionnaire data collection procedure. $-parameters are:
+        itemization(
+        it() $0: the client's name (first + last)
+        it() $1: the gender-based personal pronoun (him, her (em(`hem,
+                haar')))
+        it() $2: the hyperlink to the instructions page
+            )
+
+    itt(newpwd), informing the client about his/her newly generated password. 
+        $-parameters are:
+        itemization(
+        it() $0: the client's name
+        it() $1: the client's last name
+        it() $2: the newly generated password
+            )
+
+    itt(requestack), welcoming a new psychologist, and informing him/her about
+        his/her account activation number.        $-parameters are:
+        itemization(
+        it() $0: the client's name
+        it() $1: the client's last name
+        it() $2: the activation number
+            )
+
+    
+    itt(results), informing a psychologist that the report about a client is
+        available. $-parameter is:
+        itemization(
+        it() $0: the client's identification (note: em(not) the client's name)
+            )
+)

@@ -1,0 +1,179 @@
+WEBPAGE(check valid e-mail)(yes)(ackcheck.h)(none)(none)
+        (Confirm receipt of registration)
+
+WEBPAGE(incorrect verification number received)(yes)(ackerror.h)
+        (
+            itemization(
+                cgi(email)(?)
+                cgi(mode)(?)
+                cgi(pwd)(?)
+            )
+        )
+        (
+            itemization(
+                cgi(email)(?)
+                cgi(mode)(?)
+                cgi(pwd)(?)
+            )
+        )
+        (Offer another possibility for entering the verfication number)
+
+WEBPAGE(general actions entry page)(yes)(actions.h)
+        (
+            itemization(
+                cgi(email)(?)
+            ) 
+            
+        )
+        (
+            itemization(
+                itt(state): 
+            tt(clientPage)  - to go to the page defining actions with clients; 
+            tt(dataPage) - to go to the page defining actions with data; 
+            tt(profilePage) - to go to the page to modify profile data;
+            tt(contactPage) - to go to the page with contact details;
+            )
+        )
+        (
+            Context: $0: general messages/information shown on the page
+        )
+
+WEBPAGE(shows the clients-page)(yes)(clientpage.h)
+        (
+            itemization(
+            cgi(email)(?)
+            cgi(show)(clientIdx)    (index of a selected client)
+        ))
+        (
+            itemization(
+                itt(request). Action request. May be:
+                    itemization(
+                       itt(activate) to activate questionnaire presentation;
+                       itt(add) to add a new client
+                       itt(addActivate) add and activate a new client
+                       itt(deactivate) to stop collecting quest. data
+                       itt(remove) to remove a client
+                       itt(show) to show the data about a selected client
+                       itt(update) to change the client's information
+                    )
+                cgi(state)(clientPage)
+                cgi(type)(psych)
+                cgi(email)(?)
+                cgi(show)(clientIdx)    (index of a selected client)
+        ))
+        (
+            Context information:
+            itemization(
+            it() $0: Javascript array elements of the available
+                clients. Elements and their indices:
+                verb(
+            0: id, 
+            1: gender, 
+            2: active since (or 0), 
+            3: name, 
+            4: lastname, 
+            5: email
+                )
+            it() $1: tt(<select>) tag allowing the psychologist to select a
+                client (once clients are defined)
+            it() $2: client erase option
+            it() $3: hidden e-mail and show cgi parameters (show: currently
+                    selected client-index)
+            )
+        )
+
+WEBPAGE(confirm the new password request)(yes)(confirmnewpwd.h)
+        (itemization(
+            cgi(email)(?) 
+        ))
+        (            itemization(
+                cgi(state)(newPwd)
+                cgi(type)(psych)
+                cgi(email)(?)
+        ))
+        (Allow the psychologist to actually change his/her password)
+
+WEBPAGE(e-mail already in use)(yes)(knownpsych.h)
+        (none)
+        (none)
+        (Allow the psychologist to alter the specified e-mail address or
+         to login/register.)
+
+WEBPAGE(confirmation that the password was changed)(yes)(newpwd.h) 
+        (none)
+        (none)
+        (no further requirements)
+
+WEBPAGE(unknown e-mail address)(yes)(notregistered.h)
+        (none)
+        (none)
+        (
+            The specified loing e-mail address is not registered.
+            No further requirements.
+        )
+
+WEBPAGE(shows the psychologist's personal data)(yes)(profile.h)
+        (
+            itemization(
+                cgi(email)(?)
+            )
+        )
+        (
+            The ?-specified values are equal to the current values unless
+            modified. The tt(newpwd) field should remain empty if the current
+            password is kept.
+            itemization(
+                cgi(name)(?)        The psychologist's name
+                cgi(lastName)(?)    The psychologist's last name
+                cgi(newemail)(?)    The psychologist's new e-mail address
+                cgi(newpwd)(?)      The psychologist's new password 
+                cgi(newpwd2)(?)     The psychologist's new password
+                                        confirmation 
+                cgi(field)(?)       The psychologist's professional field(s)
+                cgi(pwd)(?)         The psychologist's current password
+                cgi(nip)(?)         The psychologist's NIP number
+                cgi(state)(profile)
+                cgi(type)(psych)
+        ))
+        (
+            Personalized data:
+            itemization(
+            it() $0: the psychologist's name
+            it() $1: the psychologist's last name
+            it() $2: the psychologist's current e-mail address
+            it() $3: the psychologist's currently selected professional fields
+        ))
+                    
+WEBPAGE(shortcut to the psychologist's page tt(psych.html))(no)(psychpage.h)
+            (none)
+            (none)
+            (directly opening the tt(psych.html) page)
+
+WEBPAGE(incorrect password)(yes)(pwderror.h)
+            (none)
+            (none)
+            (Feedback that an incorrect password was specified. Currently 
+                offering links to tt(psych.html) and the 3ppq home-page)
+
+WEBPAGE(confirm receipt of verification number)(yes)(requestack.h)
+            (
+                itemization(
+                cgi(email)(?)
+                cgi(pwd)(?)
+                cgi(mode)(?)
+            ))
+            (
+                itemization(
+                cgi(email)(?)
+                cgi(pwd)(?)
+                cgi(mode)(?)
+                cgi(state)(verifyAck)
+                cgi(type)(psych)
+            ))
+            (
+                Personalized data:
+                itemization(
+                it() $0: the psychologist's name
+                it() $1: the psychologist's last name
+            ))
+

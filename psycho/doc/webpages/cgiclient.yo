@@ -1,0 +1,117 @@
+WEBPAGE(thank-you page)(yes)(alldone.h)
+        (none)
+        (none)
+        (
+            Thank-you page for clients/others for answering the
+            questionnaire. Shown when the answers have been received.
+        )
+
+WEBPAGE(request other e-mail addresses)(yes)(emailrequest.h)
+        (
+            itemization(
+            cgi(pid)(?)     - psychologists ID
+            cgi(cid)(?)     - client ID
+            )
+        )
+        (
+            itemization(
+            cgi(pid)(?)     - psychologists ID
+            cgi(cid)(?)     - client ID
+            cgi(e1)(?)      - e-mail address
+            cgi(e2)(?)      - e-mail address
+            cgi(e3)(?)      - e-mail address
+            cgi(state)(storeEmail)
+            cgi(type)(client)
+            )
+        )
+        (
+            Return three e-mail addresses to the system.
+        )
+
+WEBPAGE(client meta-instructions)(yes)(metainstructions.h)
+        (
+            itemization(
+            cgi(pid)(?)     - psychologists ID
+            cgi(cid)(?)     - client ID
+            cgi(other)(-)
+            cgi(ratingType)(2)
+            )
+        )
+        (
+            itemization(
+            cgi(pid)(?)     - psychologists ID
+            cgi(cid)(?)     - client ID
+            cgi(other)(?)   - other-number 
+            cgi(ratingType)(?)   - 1: self, 2: meta, 3: other
+            )
+        )
+        (
+            Configuration parameters:
+            itemization(
+            it() $0: Initial opening frase (e.g, `Are you' (em(`Bent u')))
+            )
+            The sessionStorage variables are defined so tt(questions.html) can
+            retrieve them.nl()
+            All questions must be available in a javascript array
+            `tt(questions)'.nl()
+            After initialization the page opens tt(questions.html) 
+        )
+
+WEBPAGE(`other'-instructions)(yes)(otherinstructions.h)
+        (
+            itemization(
+            cgi(pid)(?)     - psychologists ID
+            cgi(cid)(?)     - client ID
+            cgi(other)(?)   - other-number 
+            cgi(ratingType)(3)
+            )
+        )
+        (
+            itemization(
+            cgi(pid)(?)     - psychologists ID
+            cgi(cid)(?)     - client ID
+            cgi(other)(?)   - other-number 
+            cgi(ratingType)(?)   - 1: self, 2: meta, 3: other
+            )
+        )
+        (
+            Configuration parameters:
+            itemization(
+            it() $0: the text tt(Is)
+            it() $0: the client's name (name and lastName)
+            )
+            The sessionStorage variables are defined so tt(questions.html) can
+            retrieve them.nl()
+            All questions must be available in a javascript array
+            `tt(questions)'.nl()
+            After initialization the page opens tt(questions.html) 
+        )
+
+WEBPAGE(client self-instructions)(yes)(selfinstructions.h)
+        (
+            itemization(
+            cgi(pid)(?)     - psychologists ID
+            cgi(cid)(?)     - client ID
+            cgi(other)(-)
+            cgi(ratingType)(1)
+            )
+        )
+        (
+            itemization(
+            cgi(pid)(?)     - psychologists ID
+            cgi(cid)(?)     - client ID
+            cgi(other)(?)   - other-number 
+            cgi(ratingType)(?)   - 1: self, 2: meta, 3: other
+            )
+        )
+        (
+            Configuration parameters:
+            itemization(
+            it() $0: Initial opening frase (e.g, `Are you' (em(`Bent u')))
+            )
+            The sessionStorage variables are defined so tt(questions.html) can
+            retrieve them.nl()
+            All questions must be available in a javascript array
+            `tt(questions)'.nl()
+            After initialization the page opens tt(questions.html) 
+        )

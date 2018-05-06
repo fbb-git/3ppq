@@ -1,0 +1,66 @@
+
+COMMENT(  Starts an article. The top-level sectioning command  is (n)sect. )
+
+mailto(f.b.brokken@rug.nl)
+
+DEFINEMACRO(C)(1)(COMMENT(ARG1))
+DEFINEMACRO(itt)(1)(it() tt(ARG1))
+DEFINEMACRO(centt)(1)(center(tt(ARG1)))
+
+DEFINEMACRO(WEBPAGE)(6)(
+nsubsect(ARG1)
+itemization(
+    it() Form: ARG2
+    it() Filename: tt(ARG3)
+    it() Preconditions: ARG4
+    it() Postconditions: ARG5
+    it() Purpose/additional info: ARG6
+))
+
+DEFINEMACRO(cgi)(2)(it() tt(ARG1: ARG2))
+
+notableofcontents()
+AfourEnlarged()
+
+latexpackage(dutch)(babel)
+setlanguage(dutch)
+latexoptions(12pt)
+latexoptions(dutch)
+latexpackage()(epsf)
+
+htmlbodyopt(text)(black)
+htmlbodyopt(bgcolor)(white)
+
+COMMENT(
+When including a file put the abstract text in the abstract() macro's
+argument. 
+
+includefile(abstract)   
+END COMMENT)
+
+affiliation(Center of Information Technology, University of Groningen)
+
+article(3ppq: overview of webpages)(Frank B. Brokken)(May 2018)
+
+sect(Introduction)
+includefile(intro)
+
+    subsect(Page Types)
+    includefile(pagetypes)
+
+    subsect(Forms) 
+    includefile(forms)
+
+sect(Web-pages)
+includefile(web)
+
+sect(CGI-pages)
+
+    subsect(CGI-pages for Psychologists)
+    includefile(cgipsych)
+
+    subsect(CGI-pages for Clients)
+    includefile(cgiclient)
+
+sect(E-mail molds)
+includefile(email)

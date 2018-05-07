@@ -4,6 +4,9 @@
 #include <string>
 #include <exception>
 
+#include <bobcat/log>
+#include <bobcat/configfile>
+
 #include "../support/tools/tools.h"
 #include "../support/options/options.h"
 #include "../support/datastore/datastore.h"
@@ -20,3 +23,4 @@ namespace Icmbuild
 void usage(std::string const &progname);
 
 using namespace std;
+using namespace FBB;

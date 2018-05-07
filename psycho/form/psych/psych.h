@@ -75,6 +75,7 @@ class Psych
 
         std::string const &eMail() const;
         bool get(std::string const &key);
+        uint16_t ID() const;
 
     private:
         void read(std::string const &data);
@@ -160,6 +161,11 @@ class Psych
 inline std::string const &Psych::eMail() const
 {
     return d_email;
+}
+
+inline uint16_t Psych::ID() const
+{
+    return d_ID;
 }
 
 #endif

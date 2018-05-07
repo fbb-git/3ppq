@@ -21,9 +21,9 @@ replyTo: noreply@3ppq.nl
     # log: std                      -- all but the debug msgs are logged
 log: debug
 
-    # path names of used child process, not residing in website/bin
+    # pathnames of used child process, not residing in website/bin
 gnuplot:    /usr/bin/gnuplot
 latex:      /usr/bin/latex
 dvipdf:     /usr/bin/dvipdf
 htpasswd:   /usr/bin/htpasswd
-
+rm:         /bin/rm

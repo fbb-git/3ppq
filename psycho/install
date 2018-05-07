@@ -82,6 +82,6 @@ try chmod o-rwx .               # no access except for www-data and
 try chmod -fR g+w log           # www-data may write log
 
                                 # www-data may write several directories
-try chmod g+sw data tmp www/results htaccess        
+try chmod g+w data tmp www/results htaccess        
 
 echo ready.

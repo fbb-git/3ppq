@@ -20,7 +20,7 @@ WIPdata::WIPdata(std::string const &psychEmail,
 
     LockGuard lg = d_io.lg();
 
-    if (Tools::exists(name))
+    if (Tools::rwExists(name))
         throw Exception{} << name << " already exists";
 
     for (auto &login: d_otherLogin)

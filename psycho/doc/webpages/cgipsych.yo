@@ -80,6 +80,10 @@ WEBPAGE(shows the clients-page)(yes)(clientpage.h)
             it() $3: hidden e-mail and show cgi parameters (show: currently
                     selected client-index)
             )
+            When a report is available for a selected client a hyperling to
+tt(/report.html) is provided, using tt(localStorage.idx) and
+tt(localStorage.email) to pass, respectively, the index of the selected client
+array element and the psychologist's e-mail address to tt(/report.html).
         )
 
 WEBPAGE(confirm the new password request)(yes)(confirmnewpwd.h)

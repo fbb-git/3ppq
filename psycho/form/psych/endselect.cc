@@ -1,17 +1,23 @@
 #include "psych.ih"
 
-void Psych::endSelect(ostream &out) const
+void Psych::endSelect(ostream &out, vector<bool> const &reportExists) const
 {
     out << R"(
             </select>
-        </div>
     </td>
     <td class=topAlign>    
         <div class=float> 
             &nbsp;
-            <p>
-            <input type=submit value=Verwijder onclick='remove()'><br>
-            (verwijdert de gemarkeerde cli&euml;nt)<br>
+            <br>
+             Klik op een client in het linker overzicht<br>
+             om de clientgegevens te zien of te wijzigen<br>
+            )" << 
+            (
+                reportExists.empty() ? 
+                    "" 
+                : 
+                    "R: beoordelingsrapport is beschikbaar."
+            ) << R"(
         </div>
     </td>
     </tr>

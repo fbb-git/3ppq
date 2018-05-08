@@ -28,7 +28,7 @@ void Psych::addPsych()
 
     LockGuard lg{ d_data.lg() };
 
-    resultsDir(pwd);
+    reportsDir(pwd);
 
     d_display.out(
         d_data.add(emailKey(), toString()) ? "ackcheck.h" : "knownpsych.h"

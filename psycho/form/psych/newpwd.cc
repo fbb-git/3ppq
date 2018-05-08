@@ -26,8 +26,6 @@ void Psych::newPwd()
                 )
             );
 
-    htpasswd(pwd);
-
     d_display.out("newpwd.h");
 }
 

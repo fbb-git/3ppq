@@ -30,6 +30,7 @@ function showDate(seconds)
 function home()
 {
     window.open('/index.html', '_self'); 
+    return false;
 }
 
 function setValues()
@@ -114,4 +115,15 @@ function validate(action)           // actions from the menu
     addHidden("state",  state[action - 1]);
     addHidden("type",   "psych");
     document.getElementsByName('form')[0].submit();
+} 
+
+function report(idx)           // show the report of this client
+{
+    if (idx  < 0 || idx >= clients.length || clients[idx][6] != 1)
+        return home();
+
+    var form = document.forms["form"];
+
+    localStorage.idx = idx;
+    localStorage.email = form["email"].value;
 } 

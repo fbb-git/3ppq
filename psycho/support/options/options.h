@@ -16,8 +16,7 @@ class Options
         std::string dataDir() const;    
         std::string tmpDir() const;     
         std::string imagesDir() const;  
-        std::string htaccessDir() const;
-        std::string resultsDir() const; 
+        std::string reportsDir() const; 
         std::string moldsDir() const;   
         std::string mailDir() const;    
         std::string htmlDir() const;    
@@ -40,9 +39,9 @@ inline std::string Options::binDir() const
     return d_base + "bin/";
 }
 
-inline std::string Options::resultsDir() const
+inline std::string Options::reportsDir() const
 {
-    return d_base + "www/results/";
+    return d_base + "results/";
 }
 
 inline std::string Options::tmpDir() const
@@ -53,11 +52,6 @@ inline std::string Options::tmpDir() const
 inline std::string Options::dataDir() const
 {
     return d_base + "data/";
-}
-
-inline std::string Options::htaccessDir() const
-{
-    return d_base + "htaccess/";
 }
 
 inline std::string Options::moldsDir() const

@@ -4,7 +4,7 @@ DataIdx::DataIdx(string dataIdxPath)
 :
     d_idxPath(dataIdxPath)
 {
-    if (Tools::exists(d_idxPath))
+    if (Tools::rwExists(d_idxPath))
     {
         ifstream in;
         Exception::open(in, d_idxPath);

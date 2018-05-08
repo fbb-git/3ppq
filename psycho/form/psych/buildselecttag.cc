@@ -1,6 +1,7 @@
 #include "psych.ih"
 
-void Psych::buildSelectTag(string *select, size_t idLength) const
+void Psych::buildSelectTag(string *select, vector<bool> const &reportExists,
+                           size_t idLength) const
 {
     ostringstream out;
 
@@ -9,12 +10,16 @@ void Psych::buildSelectTag(string *select, size_t idLength) const
     size_t idx = 0;
     for (auto const &client: d_client)
     {
-        out << setw(11) << ' ' << "<option value=" << idx++ << '>' <<
-                fixedWidth(client.ident(), idLength, Tools::RIGHT) << ' ' << 
-                client.name() << ' ' << client.lastName() << "</option>\n";
+        out << setw(11) << ' ' << "<option value=" << idx << '>' <<
+                fixedWidth(client.ident(), idLength) <<  
+                (reportExists[idx] ? "R" : "&nbsp;") << ' ' <<
+                client.name() <<  ' ' <<  client.lastName() << "</option>\n";
+        ++idx;
     }
 
-    endSelect(out);
+    endSelect(out, reportExists);
 
     *select = out.str();    
 }
+
+

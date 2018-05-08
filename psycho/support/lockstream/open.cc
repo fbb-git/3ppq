@@ -10,7 +10,7 @@ void LockStream::open()
 
     fstream::open(d_path, ios::in | ios::out);
 
-    if (not Tools::exists(d_path))
+    if (not Tools::rwExists(d_path))
         Exception::open(
             static_cast<fstream &>(*this), 
             d_path, ios::in | ios::trunc | ios::out);

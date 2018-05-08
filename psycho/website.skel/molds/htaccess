@@ -1,4 +1,0 @@
-AuthName "3ppq Resultaten Rapportage"
-AuthType Basic
-AuthUserFile $0htaccess/$1
-require valid-user

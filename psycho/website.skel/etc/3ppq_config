@@ -25,5 +25,4 @@ log: debug
 gnuplot:    /usr/bin/gnuplot
 latex:      /usr/bin/latex
 dvipdf:     /usr/bin/dvipdf
-htpasswd:   /usr/bin/htpasswd
 rm:         /bin/rm

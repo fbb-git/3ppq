@@ -8,7 +8,7 @@ LockGuard WIPdata::read()
 
     LockGuard lg{ d_io.lg() };
 
-    if (not Tools::exists(name))
+    if (not Tools::rwExists(name))
         throw false;
 
     d_io.open();

@@ -1,5 +1,5 @@
     <script>
-        // 0: id, 1: gender, 2: active, 3: name, 4: lastname, 5: email
+    // 0: id, 1: gender, 2: active, 3: name, 4: lastname, 5: email, 6: report
         var clients = [
 $0    
         ];
@@ -69,6 +69,7 @@ $1
                 <td class=right>ID: </td> 
                 <td ><input class=margin pattern="^[-'\w.:;/]+$"
                             type=text name=ident size=5>
+                $4
                 </td>
             </tr>
             <tr class=darkrow>

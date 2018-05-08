@@ -200,7 +200,7 @@ inline void WIPdata::setOtherRatings(size_t idx, std::string const &ratings)
 //static
 inline bool WIPdata::exists(uint16_t pid, std::string const &cid)
 {
-    return Tools::exists(path(pid, cid));
+    return Tools::rwExists(path(pid, cid));
 }
 
 //static

@@ -94,8 +94,8 @@ class Psych
         void addPsych();
         uint8_t parseField();
         bool validRegistrationData(uint64_t *nip, uint8_t *field);
-        void resultsDir(std::string const &pwd) const;
-        void htpasswd(std::string const &pwd) const; // new htpasswd file
+        void reportsDir(std::string const &pwd) const;
+//        void htpasswd(std::string const &pwd) const; // new htpasswd file
 
         void verifyAck();
 
@@ -110,14 +110,21 @@ class Psych
 
         void clientPage();                  // show the client page
         void displayClientPage(DisplayInfo const &displayInfo);
+        std::string reportHyperlink(size_t idx) const;
 
         void infoClient(std::string *clientArray, std::string *clientSelect);
+        size_t buildClientArray(std::string *array, 
+                                std::vector<bool> &reportExists) const;
+        void buildSelectTag(std::string *select, 
+                            std::vector<bool> const &reportExists, 
+                            size_t idLength) const;
+        void startSelect(std::ostream &out,  size_t idLength) const;
+        void endSelect(std::ostream &out, 
+                       std::vector<bool> const &reportExists) const;
 
-        void selectTag(std::string *clientArray, std::string *clientSelect);
-        size_t buildClientArray(string *array) const;
-        void buildSelectTag(std::string *select, size_t idLength) const;
-        void startSelect(std::ostream &out, size_t idLength) const;
-        void endSelect(std::ostream &out) const;
+        void report();                      // download a report
+
+//        void selectTag(std::string *clientArray, std::string *clientSelect);
 
 //  -------------------------------------------------------------------------
 //                  client      

@@ -16,7 +16,7 @@ Report::Report(WIPdata const &wipData)
 
     d_latexInput(d_pathPrefix   + "latex"),
     d_dviFile(d_pathPrefix      + "dvi"),
-    d_pdfFile(g_options.resultsDir() + to_string(wipData.psychID()) + '/' +
+    d_pdfFile(g_options.reportsDir() + to_string(wipData.psychID()) + '/' +
                                                         d_pidCid + ".pdf"),
 
     d_clientIdent(wipData.clientIdent()),

@@ -133,7 +133,7 @@ struct Tools
 
     static bool writeN(std::ostream &out, std::string const &str);  // 3.f
                       
-    static bool exists(std::string const &fname);   // true: exists
+    static bool rwExists(std::string const &fname);   // true: exists for R/W
 
         // files must exist. If not -1 (~0UL) is returned
     static uint64_t size(std::fstream &stream);     // 3.f

@@ -22,7 +22,8 @@ void Psych::displayClientPage(DisplayInfo const &displayInfo)
             R"(
 <input type='hidden' name='email' value=')" + d_email + R"('>
 <input type='hidden' name='show' value=')" +
-                to_string(displayInfo.clientIdx) + "'>\n"
+                to_string(displayInfo.clientIdx) + "'>\n",
+            reportHyperlink(displayInfo.clientIdx)
         }
     );
 }

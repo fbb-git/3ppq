@@ -7,14 +7,12 @@ void Psych::startSelect(ostream &out, size_t idLength) const
                             2UL);
     
     out << R"(
-    <table>
-    <tr>
-    <td>
-        <div class=leftFloat>
-            <span class=courier18><b>
-            &nbsp;ID )" << fixedWidth("ID", idLength) << R"(Naam</b>
-            </span><br>
-            <select class=clientSelect id=selectID onclick='update()' size=)" 
-                                                                            <<
-                nRows << ">\n";
+    <table>         
+    <tr>            
+    <td class=topAlign>
+            <span class=monospace style=' margin-left: 4px' > 
+                  <b>ID&nbsp;&nbsp;&nbsp;Naam</b> </span>
+            <br>
+            <select class=monospace id=selectID onclick='process("show")'
+                     size=)" << nRows << ">\n";
 }

@@ -6,7 +6,6 @@ void Psych::clientPage()
 
 g_log << "clientpage request = `" << d_cgi->param1("request") << '\'' << endl;
 
-
     {
         LockGuard lg { d_data.lg() };
         if (not get())

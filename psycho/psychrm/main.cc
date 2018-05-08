@@ -36,15 +36,10 @@ try
         {
             cout << argv[1] << "(ID = " << ID << ") was removed\n";
 
-                                                // remove the htaccess/ID file
-            Tools::childProcess(g_config.findKeyTail("rm:") + " -f " +
-                                g_options.htaccessDir() + ID);
-            cout << g_options.htaccessDir() + ID << " was removed\n";
-
-                                                // remove the results/ID dir
+                                                // remove the reports/ID dir
             Tools::childProcess(g_config.findKeyTail("rm:") + " -rf " +
-                                g_options.resultsDir() + ID);
-            cout << "directory " << g_options.resultsDir() + ID << 
+                                g_options.reportsDir() + ID);
+            cout << "directory " << g_options.reportsDir() + ID << 
                     " was removed\n";
         }
     }

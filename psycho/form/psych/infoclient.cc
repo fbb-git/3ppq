@@ -23,17 +23,28 @@ void Psych::infoClient(string *array, string *select)
                 client.name()       << "\",\""  <<      //  3
                 client.lastName()   << "\",\""  <<      //  4
                 client.email()      << "\"],\n";        //  5
+// add element(s) about available report.pdf
     }
+
+        out << setw(11) << "[\"" <<   
+                "ident"      << "\","    <<      //  0
+                "0"           << ','      <<      //  1
+                "0"           << ",\""    <<      //  2
+                "name"        << "\",\""  <<      //  3
+                "lastName"    << "\",\""  <<      //  4
+                "email@localhost"  << "\"],\n";        //  5
+
     *array = out.str();
 
     size_t nRows = std::max(Tools::min(d_client.size(), 
                                        Tools::MAX_CLIENT_SELECT_ROWS),
                             2UL);
     
-    out.str("");                      // construct the select tag
+                    // 1st column: <select> tag, 2nd column: download links, 3rd column: description
+    out.str("");    // construct the select tag, inside a table
     out << R"(
-    <table>
-    <tr>
+    <table>         
+    <tr>            
     <td>
         <div class=leftFloat>
             <span class=courier18 style='margin-left: 4px' ><b>)" << fixedWidth("ID", idLength) <<

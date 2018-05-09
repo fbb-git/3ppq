@@ -1,18 +1,78 @@
-definitieve factorlabels in de factorplot. Momenteel: Wim's posting 3 May 2018 19:44:40
-logo op alle webpagina's
-toevoegen entry Documenten op de psychologenpagina
-verwijderen entry Contact van de psychologenpagina
+TODO
+====
+
+Logo op alle webpagina's
+
+Toevoegen entry Documenten op de psychologenpagina
+
 Documentenpagina met hyperlinks naar 3ppq vorm [1-3] naar 3ppq-vorm-[1-3].pdf
-Elektronische toelichting: geen toelichting op antwoordmogelijkheden, omcirkelen wordt kiezen
-Homepage empty
-Homepage mal: Wim, 3 May 2018 11:28:41      -- te groot
-Rapportage met Naam als pen-invulbaar veld
-Rapportage beschikbaar via aanklikveld wanneer clientgegevens worden opgevraagd 
+    (Beschikbaar in posting 29 Apr 2018 18:51:55). Zie ook gebruiksprotocol
+    (28 Apr 2018 21:08:46)
+
+Entry 'Data' om de verzamelde data te kunnen downloaden (2 May 2018 08:00:06).
+
+VOORSTEL: Documenten en Data samenvoegen 
+
+
+Verwijderen entry Contact van de psychologenpagina (2 May 2018 08:00:06)
+
+Elektronische toelichting: geen toelichting op antwoordmogelijkheden, 
+    omcirkelen wordt kiezen
+
+Homepage mal: Wim, 3 May 2018 11:28:41, 6 May 2018 17:17:21     -- te groot
+              (vervangt voorstel uit posting 29 Apr 2018 17:15:25,
+               zie ook 19 Apr 2018 10:27:06)
+
 NIP nummer tonen bij 't opvragen van 't profiel door een psycholoog.
 
+Gegenereerde rapporten blijven een maand beschikbaar (en daarna mogelijk nog
+    enige tijd via backup-restores, cf. 2 May 2018 11:31:12)
 
+2 May 2018 08:00:06: Portaal? (da's normaliter de home-page)
+
+Client spelling: trema's
+
+
+===========================================================================
+Open vragen:
+============
+
+Labels in de gnuplot: zelfperspectief etc (29 Apr 2018 16:47:30) of
+                      zelf            etc (29 Apr 2018 16:53:04)?
+
+Client volgorde OK? Momenteel: zelfbeoordelingen, metabeoordelingen, e-mail
+    adres specificatie (zie ook 27 Apr 2018 14:01:43 en 25 Apr 2018 13:10:59)
+
+Wat doen we bij 't uitblijven van beoordelingen, m.n. door de anderen?
+    (26 Apr 2018 11:29:27, 25 Apr 2018 12:53:50)
+
+Wachtwoord vereisten (15 Apr 2018 13:31:47)? 
+
+
+===========================================================================
 Gedaan:
+=======
 
-Uitleg in rapportage zoals voorgesteld door Wim (3 May 2018 18:40:11)
+Homepage empty
 
-Date: Wed, 2 May 2018 11:31:12 +0200
+Rapportage beschikbaar via aanklikveld wanneer clientgegevens worden
+    opgevraagd  
+Uitleg in rapportage zoals voorgesteld door Wim 8 May 2018
+Definitieve factorlabels: Wim's posting 8 May 2018
+
+Vermelding van 3ppq@3ppq.nl uit e-mails is verwijderd (zie ook 27 Apr 2018
+        19:27:57) 
+
+E-mail teksten aangepast (27 Apr 2018 19:27:57, 27 Apr 2018 16:15:34)
+
+Rapportage met Naam als pen-invulbaar veld (29 Apr 2018 16:47:30)
+
+Client-identificatie kan ook niet-numeriek zijn ( 27 Apr 2018 17:59:02,
+        21 Apr 2018 22:01:01)
+
+'Activeren' -> 'Versturen', `Naam' -> `Aanspreeknaam'  (21 Apr 2018 21:57:19)
+
+
+
+
+

@@ -24,17 +24,20 @@ set yrange [-.6:.8]
 set key font ",24"
 
 # Factor labels, U and D
-set label "Extravert" at 1, .75 center font ",24" 
-set label "Mild"      at 2, .75 center font ",24" 
-set label "Ordelijk"  at 3, .75 center font ",24" 
-set label "Stabiel"   at 4, .75 center font ",24" 
-set label "Autonoom"  at 5, .75 center font ",24" 
+set label "Spontaan"        at 1, .75 center font ",24" 
+set label "Teruggetrokken"  at 1,-.55 center font ",24" 
 
-set label "Introvert" at 1,-.55 center font ",24" 
-set label "Hard"      at 2,-.55 center font ",24" 
-set label "Ordeloos"  at 3,-.55 center font ",24" 
-set label "Labiel"    at 4,-.55 center font ",24" 
-set label "Volgzaam"  at 5,-.55 center font ",24" 
+set label "Mild"            at 2, .75 center font ",24" 
+set label "Ontoegeeflijk"   at 2,-.55 center font ",24" 
+
+set label "Voorspelbaar"    at 3, .75 center font ",24" 
+set label "Onvoorspelbaar"  at 3,-.55 center font ",24" 
+
+set label "Onverstoorbaar"  at 4, .75 center font ",24" 
+set label "Instabiel"       at 4,-.55 center font ",24" 
+
+set label "Kritisch"        at 5, .75 center font ",24" 
+set label "Onkritisch"      at 5,-.55 center font ",24" 
 
 # Vertical axes, L and R
 set arrow from 0,.7 to 0,.8 lw 2 nohead

@@ -11,5 +11,7 @@
 #include "../../support/dollartext/dollartext.h"
 #include "../../support/tools/tools.h"
 
+#include "../psych/psych.h"
+
 using namespace std;
 using namespace FBB;

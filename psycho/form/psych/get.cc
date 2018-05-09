@@ -4,7 +4,10 @@ bool Psych::get(std::string const &key)
 {
     string data;
 
-    d_data.get(&data, key);
+    {
+        LockGuard lg { d_data.lg() };
+        d_data.get(&data, key);
+    }
 
     if (data.empty())
         return false;

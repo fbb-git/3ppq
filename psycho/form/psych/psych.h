@@ -77,6 +77,8 @@ class Psych
         bool get(std::string const &key);
         uint16_t ID() const;
 
+        std::string fullName() const;
+
     private:
         void read(std::string const &data);
         bool get();                     // get psych record
@@ -164,6 +166,11 @@ class Psych
 
         std::vector<LockGuard> updateWIPemail() const;
 };
+
+inline std::string Psych::fullName() const
+{
+    return d_name + ' ' + d_lastName;
+}
 
 inline std::string const &Psych::eMail() const
 {

@@ -23,6 +23,10 @@ g_log << "data collection completed: writing " << g_options.data() << endl;
     Report report{ wipData };
     report.generate();
 
+    Psych psych;
+    if (not psych.get(wipData.psychEmail()))
+        throw false;
+
     g_mailer.sendmail(
         wipData.psychEmail(),
         wipData.psychEmail(),
@@ -31,7 +35,8 @@ g_log << "data collection completed: writing " << g_options.data() << endl;
         DollarText::replaceStream(
             g_options.mailDir() + "results", 
             {
-                wipData.clientIdent(),                  // $0
+                psych.fullName(),
+                wipData.clientIdent(),                  // $1
             }
         )
     );

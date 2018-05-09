@@ -1,8 +1,5 @@
 #include "client.h"
 
-//#include <iostream>
-//#define CERR std::cerr << __FILE__": "
-
 #include <fstream>
 
 #include <bobcat/exception>
@@ -15,6 +12,7 @@
 #include "../../support/lockguard/lockguard.h"
 #include "../../support/mailer/mailer.h"
 
+#include "../psych/psych.h"
 #include "../report/report.h"
 
 extern FBB::Log g_log;

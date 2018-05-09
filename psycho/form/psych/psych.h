@@ -104,7 +104,10 @@ class Psych
 
         void profilePage();             // show profile page
         void profile();                 // update current profile
+        bool validPwd();
+        bool checkProfileData(uint8_t *field);
         bool validProfileData(uint8_t *field);
+        bool changedPwd();
 
 
         void noPwd();
@@ -160,7 +163,7 @@ class Psych
         void requireOneOf(char const *name, char const *charSet);
         void requireEqual(char const *name, std::string const &target);
         void requireContents(char const *name);
-
+        long long requireNumber(char const *name);
 
 //        uint32_t validClientData();         // throws false on failure
         void inviteClient(PsychClient &client);

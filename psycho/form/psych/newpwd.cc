@@ -2,6 +2,8 @@
 
 void Psych::newPwd()
 {
+    requireOneOf("email", "@");
+
     string pwd = newPassword();
 
     LockGuard lg{ d_data.lg() };

@@ -2,6 +2,8 @@
 
 void Psych::profilePage()
 {
+    requireEqual("email", d_eMail); // all forms must have the psych's e-mail
+
     {
         LockGuard lg { d_data.lg() };
         if (not get())

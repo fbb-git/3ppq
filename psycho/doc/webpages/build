@@ -1,0 +1,5 @@
+#!/bin/bash
+
+yodl2all webpages
+
+rm -f *.aux *.log *.dvi *.ps *.latex

@@ -57,24 +57,10 @@ onsubmit="alert('validate'); return false; return validate()" method="post">
 <h1>Cli&euml;nt-configuratie</h1>
 
 
-<img src="/images/client.jpg" class=logo>
+<!-- img src="/images/client.jpg" class=float -->
 
 
 <script>availableClients()</script>
-
-<!-- write the client <select> entry, if available,
-    end in 
-$0
-
-<!--
-    Wijzig de hieronder vermelde gegevens. Vermeld dan uw huidige wachtwoord en
-    druk op de <em>Enter</em> toets. 
-    <p>
-    
-    Door op de knop <em>3PPQ</em> te klikken keert u terug naar de
-    3PPQ-homepage. 
-    <p>
--->
 
 <div class="lightgrey">
 

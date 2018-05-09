@@ -18,7 +18,7 @@ vector<LockGuard> Psych::updateWIPemail() const
         WIPdata wipData{ name.substr(name.rfind('/') + 1) };
 
         lg.push_back(wipData.read());
-        wipData.setPsychEmail(d_email);
+        wipData.setPsychEmail(d_eMail);
         wipData.write();
     }
 

@@ -22,7 +22,7 @@ class PsychClient
                                     // client
     std::string d_name;
     std::string d_lastName;
-    std::string d_email;
+    std::string d_eMail;
 
     public:
         PsychClient() = default;        // for vectors etc.
@@ -48,7 +48,7 @@ class PsychClient
         std::string const &ident() const;
         std::string const &name() const;
         std::string const &lastName() const;
-        std::string const &email() const;
+        std::string const &eMail() const;
 };
 
 inline void PsychClient::activate()
@@ -96,9 +96,9 @@ inline std::string const &PsychClient::lastName() const
     return d_lastName;
 }
         
-inline std::string const &PsychClient::email() const
+inline std::string const &PsychClient::eMail() const
 {
-    return d_email;
+    return d_eMail;
 }
         
 #endif

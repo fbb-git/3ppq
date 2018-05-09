@@ -24,7 +24,7 @@ void Psych::addPsych()
     d_pwdHash   = Tools::md5hash(pwd);
     d_name      = d_cgi->param1("name");
     d_lastName  = d_cgi->param1("lastName");
-    d_email     = d_cgi->param1("email");
+    d_eMail     = d_cgi->param1("email");
 
     LockGuard lg{ d_data.lg() };
 

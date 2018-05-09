@@ -2,17 +2,17 @@
 
 Psych::DisplayInfo Psych::deactivateClient()
 {
-//    uint32_t active= validClientData();
+    PsychClient &client = validClientData();
 
-    uint16_t idx = validClientIdx();
-
-    if (WIPdata::exists(d_ID, d_client[idx].ident()))
-        WIPdata::remove(d_ID, d_client[idx].ident());
+    if (WIPdata::exists(d_ID, client.ident()))
+        WIPdata::remove(d_ID, client.ident());
     else
         Tools::debug() << "deactivate: non-existing wip data " << 
-                            d_ID << '.' << d_client[idx].ident() << endl;
+                            d_ID << '.' << client.ident() << endl;
 
-    d_client[idx].deactivate();
+    client.deactivate();
+
+    size_t idx = &client - &d_client.front();
 
     return  {
                 s_update + s_activate + s_remove,

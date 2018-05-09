@@ -2,14 +2,14 @@
 
 Psych::DisplayInfo Psych::activateClient()
 {
-//    uint32_t active= validClientData();
+    PsychClient &client = validClientData();
 
-    uint16_t idx = validClientIdx();
+    rmExistingWIPdata(client, "renewed");
 
-    rmExistingWIPdata(d_client[idx], "renewed");
-
-    inviteClient(d_client[idx]);
+    inviteClient(client);
     
+    size_t idx = &client - &d_client.front();
+
     return  {
                 s_update + s_deactivate + s_remove,
                 idx

@@ -8,7 +8,7 @@ string Psych::toString() const
     Tools::writeN(out, &d_field);
     out <<  d_name      << '\n' <<
             d_lastName  << '\n' <<
-            d_email     << '\n';
+            d_eMail     << '\n';
 
     string iv = Tools::iv();
     string encrypted = Tools::encrypt(iv, out.str());

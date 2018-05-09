@@ -7,7 +7,7 @@ void Psych::profile()
     if (not get())
         throw false;
 
-    if (d_cgi->param1("email") != d_email)
+    if (d_cgi->param1("email") != d_eMail)
         throw false;
 
     if (not pwdMatch())
@@ -60,16 +60,16 @@ Ook dient een eventueel nieuw wachtwoord twee keer te zijn vermeld.
     if (newpwd.length() > 0)
         d_pwdHash = Tools::md5hash(htPwd = newpwd);
 
-    if (newemail == d_email)                    // same key: update, else new
+    if (newemail == d_eMail)                    // same key: update, else new
         d_data.update(emailKey(), toString());  // record.
     else
     {
         d_data.erase(emailKey());
-        d_email = newemail;
+        d_eMail = newemail;
                                                 // update e-mail addresses
         std::vector<LockGuard> lg = updateWIPemail();       // in WIP files
 
-        d_data.add(Tools::md5hash(d_email), toString());
+        d_data.add(Tools::md5hash(d_eMail), toString());
     }
 
     if (newpwd.length() > 0)                // new password

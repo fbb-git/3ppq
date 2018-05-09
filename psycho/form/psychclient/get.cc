@@ -19,5 +19,5 @@ void PsychClient::get(string const &data)
     getline(in, d_ident);
     getline(in, d_name);
     getline(in, d_lastName);
-    getline(in, d_email);
+    getline(in, d_eMail);
 }

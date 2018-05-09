@@ -90,7 +90,7 @@ Door op de knop <em>3PPQ</em> te klikken keert u terug naar de
 <tr>
     <td class=right>NIP-nummer: </td> 
     <td ><input class=margin pattern='[0-9]{1,8}' 
-                             type="text" name="nip" size="15"> </td>
+                type="text" name="nip" value="$4" size="15" > </td>
 </tr>
 
 <tr class=darkrow>

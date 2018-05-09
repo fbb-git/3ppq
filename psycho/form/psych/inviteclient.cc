@@ -4,7 +4,7 @@ void Psych::inviteClient(PsychClient &client)
 {
     client.activate();
 
-    WIPdata wipData{ d_email, d_ID, client.ident(), 
+    WIPdata wipData{ d_eMail, d_ID, client.ident(), 
                      client.name() + ' ' + client.lastName(), 
                      client.gender() };
 
@@ -14,8 +14,8 @@ void Psych::inviteClient(PsychClient &client)
     Tools::debug() << "inviteClient: link = " << link << endl;
 
     g_mailer.sendmail(
-        d_email,
-        client.email(), 
+        d_eMail,
+        client.eMail(), 
         "Verzoek namens " + psychName + " om een vragenlijst in te vullen",
         DollarText::replaceStream(
             g_options.mailDir() + "activateclient", 

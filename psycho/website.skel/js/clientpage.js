@@ -12,7 +12,6 @@
  
 function fixGender()
 {
-    xgender = document.forms['form']['gender'].value;
     document.getElementById('gender1').disabled = true;
     document.getElementById('gender2').disabled = true;
 }
@@ -39,9 +38,9 @@ function setValues()
 
     form.reset();
 
-//      0       1       2     3           4           5
-//      ID    sex  active 
-//      [1,     0,      0,    "Name", "lastname",   "email"]
+//      0       1       2     3           4           5         6
+//      ID    sex  active                                     rapport
+//      [1,     0,      0,    "Name", "lastname",   "email",    1]
 
     hideTime();
 

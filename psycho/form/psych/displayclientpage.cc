@@ -20,7 +20,7 @@ void Psych::displayClientPage(DisplayInfo const &displayInfo)
                 s_erase + displayInfo.submitActions + "\n"
             "</td></tr>",
             R"(
-<input type='hidden' name='email' value=')" + d_email + R"('>
+<input type='hidden' name='email' value=')" + d_eMail + R"('>
 <input type='hidden' name='show' value=')" +
                 to_string(displayInfo.clientIdx) + "'>\n",
             reportHyperlink(displayInfo.clientIdx)

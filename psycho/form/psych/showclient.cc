@@ -2,11 +2,11 @@
 
 Psych::DisplayInfo Psych::showClient()
 {
-//    uint32_t active= validClientData();
+    PsychClient &client = validClientData();
 
-    uint16_t idx = validClientIdx();
+    string const &action = client.active() ? s_deactivate : s_activate;
 
-    string const &action = d_client[idx].active() ? s_deactivate : s_activate;
+    size_t idx = &client - &d_client.front();
 
     return  {
                 s_update + action + s_remove,

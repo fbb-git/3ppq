@@ -2,7 +2,11 @@
 
 void Psych::pushClient()
 {
-//    uint32_t active= validClientData();
+    requireContents("ident");
+    requireContents("name");
+    requireContents("lastName");
+    requireOneOf("gender",  "FM");
+    requireOneOf("clEmail", "@");
 
     d_client.push_back(
         PsychClient(

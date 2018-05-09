@@ -2,13 +2,13 @@
 
 Psych::DisplayInfo Psych::removeClient()
 {
-    uint16_t idx = validClientIdx();
+    PsychClient &client = validClientData();
 
-    WIPdata::remove(d_ID, d_client[idx].ident());
-    Tools::stdLog() << "Remove client " << d_ID << ' ' << 
-                       d_client[idx].ident() << endl;
+    WIPdata::remove(d_ID, client.ident());
+    Tools::stdLog() << "Remove client " << d_ID << ' ' << client.ident() << 
+                                                                        endl;
 
-    d_client.erase(d_client.begin() + idx);
+    d_client.erase( d_client.begin() + (&client - &d_client.front()) );
 
     return  {
                 s_add + s_addActive,

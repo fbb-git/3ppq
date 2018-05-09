@@ -8,7 +8,7 @@ string PsychClient::toString() const
     out <<  d_ident     << '\n' <<
             d_name      << '\n' <<
             d_lastName  << '\n' <<
-            d_email     << '\n';
+            d_eMail     << '\n';
 
     string iv = Tools::iv();
     string enc = Tools::encrypt(iv, out.str());

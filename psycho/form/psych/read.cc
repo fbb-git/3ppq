@@ -43,5 +43,5 @@ g_log << "Reading data of " << size << " clients" << endl;
     Tools::readN(in, &d_field);
     getline(in, d_name);
     getline(in, d_lastName);
-    getline(in, d_email);
+    getline(in, d_eMail);
 }

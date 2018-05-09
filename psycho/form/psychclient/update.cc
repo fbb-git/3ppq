@@ -7,5 +7,5 @@ void PsychClient::update(string const &ident,
     d_ident = ident;
     d_name = name;
     d_lastName = lastName;
-    d_email = email;
+    d_eMail = email;
 }

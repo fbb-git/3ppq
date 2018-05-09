@@ -1,33 +1,14 @@
 #include "psych.ih"
 
-uint32_t Psych::validClientData()
+PsychClient &Psych::validClientData()
 {
-    uint32_t active = d_cgi->param1("active") == "1" ? time(0) : 0;
+    PsychClient &client = d_client[validClientIdx()];
 
-    string clEmail = d_cgi->param1("clEmail");
-    string gender = d_cgi->param1("gender");
-    if (gender.empty())
-        gender = d_cgi->param1("xgender");
+    requireEqual("ident",    client.ident());
+    requireEqual("name",     client.name());
+    requireEqual("lastName", client.lastName());
+    requireEqual("clEmail",  client.eMail());
 
-//g_log << "valid client data: active: " << active << 
-//            ", email: " <<  clEmail << 
-//            ", ID: " << d_cgi->param1("ident") << 
-//            ", gender: " << gender << 
-//            ", name: " << d_cgi->param1("name") << 
-//            ", lastname: " << d_cgi->param1("lastName") << endl;
-
-    if (                                            // inspect data validity
-        count(clEmail.begin(), clEmail.end(), '@') == 1 &&
-        Tools::checkParam(*d_cgi, "ident")               &&
-        Tools::checkParam(*d_cgi, "name")                &&
-        Tools::checkParam(*d_cgi, "lastName")            &&
-        Tools::checkParam(*d_cgi, "clEmail")             &&
-        (gender == "M" || gender == "V")
-    )
-        return active;
-
-g_log << "NO VALID CLIENT DATA" << endl;
-
-    throw false;
+    return client;
 }
 

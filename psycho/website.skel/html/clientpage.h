@@ -14,7 +14,6 @@ $0
 
 <div class="container">
 <header class='title'>
-    <img src="/images/client.jpg" class=logo>
     Persoonlijkheid in perspectief
 </header>
 
@@ -48,6 +47,8 @@ $3
 </nav>                                                                      
 
 <h1>Cli&euml;nt-configuratie</h1>
+
+    <img src="/images/client.jpg" class=logo>
 
 $1
 

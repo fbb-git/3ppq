@@ -61,8 +61,7 @@ WEBPAGE(registration page)(yes)(register.html)(none)(
         
 
 WEBPAGE(report page)(yes)(report.html)
-        (
-        information is passed from the clientpage to the reportpage using
+        (information is passed from the clientpage to the reportpage using
         tt(localStorage): 
         itemization(
             itt(localStorage.idx): the psychologist's client-index. Note
@@ -70,14 +69,13 @@ WEBPAGE(report page)(yes)(report.html)
                 of the client in the psychologist's client-array.
             itt(localStorage.email) the psychologist's e-mail address
         ))
-        (
-        itemization(
+        (itemization(
             cgi(show)(?) (the index of the client array's element to use)
             cgi(email)(?) (the psychologist's e-mail address)
             cgi(state)(report) 
             cgi(type)(psych) 
         ))
-        )(The member tt(Psych::report) returns the report generated for the
+        (The member tt(Psych::report) returns the report generated for the
 indicated client. The report is overwritten by another report once new ratings
 become available after asking the client to fill out the questionnaire once
 more)

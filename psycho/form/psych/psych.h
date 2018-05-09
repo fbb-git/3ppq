@@ -64,7 +64,7 @@ class Psych
     uint8_t     d_field;            // occupation field(s)
     std::string d_name; 
     std::string d_lastName;
-    std::string d_email;
+    std::string d_eMail;
 
     std::vector<PsychClient> d_client;  // client info
 
@@ -97,7 +97,6 @@ class Psych
         uint8_t parseField();
         bool validRegistrationData(uint64_t *nip, uint8_t *field);
         void reportsDir(std::string const &pwd) const;
-//        void htpasswd(std::string const &pwd) const; // new htpasswd file
 
         void verifyAck();
 
@@ -148,13 +147,22 @@ class Psych
         DisplayInfo showClient();
         DisplayInfo updateClient();
 
-        uint16_t validClientIdx();
+        PsychClient &validClientData();
+        size_t validClientIdx();
+
         void pushClient();
 
         void rmExistingWIPdata(PsychClient const &client, 
                               char const *txt) const;
 
-        uint32_t validClientData();         // throws false on failure
+                                    // all require members throw false on
+                                    // failure
+        void requireOneOf(char const *name, char const *charSet);
+        void requireEqual(char const *name, std::string const &target);
+        void requireContents(char const *name);
+
+
+//        uint32_t validClientData();         // throws false on failure
         void inviteClient(PsychClient &client);
 
 //        std::vector<PsychClient>::iterator existingClient();
@@ -174,7 +182,7 @@ inline std::string Psych::fullName() const
 
 inline std::string const &Psych::eMail() const
 {
-    return d_email;
+    return d_eMail;
 }
 
 inline uint16_t Psych::ID() const

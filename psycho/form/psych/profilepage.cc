@@ -15,8 +15,9 @@ void Psych::profilePage()
         {
             d_name,
             d_lastName,
-            d_email,
-            to_string(d_field)
+            d_eMail,
+            to_string(d_field),
+            to_string(d_nip)
         }
     );
 }

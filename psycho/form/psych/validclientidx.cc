@@ -1,11 +1,13 @@
 #include "psych.ih"
 
-uint16_t Psych::validClientIdx()
+size_t Psych::validClientIdx()
 {
-    uint16_t idx = Tools::valueOr(d_cgi->param1("clientIdx"), d_client.size());
+    size_t idx = Tools::valueOr(d_cgi->param1("clientIdx"), d_client.size());
 
-    if (idx == d_client.size())
-        throw false;
+    if (idx < d_client.size())
+        return idx;
 
-    return idx;
+    throw false;
 }
+
+

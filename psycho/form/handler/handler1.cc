@@ -30,27 +30,4 @@ R"(
 
 
 
-//    d_in(d_options.fromMonitor()),
-//    d_toMonitorFd(d_options.toMonitorFd()),
-//    d_lockPath(d_options.toMonitor()),
-//    d_out(d_lockPath),
-
-//    d_help(d_cgi.param1("help") == "1"),
-//    d_logout(d_cgi.param1("logout") == "1"),
-//    d_uid(getUid()),
-//    d_uName(d_cgi.param1("uname")),
-//    d_pwd(d_cgi.param1("pwd")),
-//    d_next(d_cgi.param1("next"))
-
-
-//    try                                 // if no state parameter is available
-//    {                                   // the default is used.
-//        d_state = static_cast<Action>(stoul(d_cgi.param1("state")));
-//    }
-//    catch (...)
-//    {}
-
-
-
-
 

@@ -1,6 +1,8 @@
 </head>
 
 <body class="full"> 
+    <img src="/images/3ppqUL.jpg" class=logo>
+
 <div class="container">
 
 <header class='title'>

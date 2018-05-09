@@ -3,9 +3,9 @@
 </head>
 
 <body class="full"> 
-<div class="container">
+    <img src="/images/3ppqUL.jpg" class=logo>
 
-<img src="/images/3ppqUL.jpg" class=logo>
+<div class="container">
 
 <header class='title'>
           Persoonlijkheid in perspectief

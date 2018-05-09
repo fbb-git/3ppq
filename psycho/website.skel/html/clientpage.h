@@ -31,7 +31,7 @@ $3
             </a>
         </li>
         <li class="li-linewise">
-            <a href="/wip.html" title="Download/selecteer verzamelde data"
+            <a href="/wip.html" title="Download data en documenten"
                 onclick="validate(2)" >
                 Data
             </a>
@@ -44,12 +44,6 @@ $3
             </a>
 
         </li>
-        <li class="li-linewise">
-            <a href="/wip.html" title="Contact opnemen met het 3ppq.nl-team"
-                onclick="validate(4)" >
-                Contact 
-            </a>
-        </li>                                                               
     </ul>                                                                   
 </nav>                                                                      
 

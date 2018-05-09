@@ -43,12 +43,6 @@
             </a>
 
         </li>
-        <li class="li-linewise">
-            <a href="#" title="Contact opnemen met het 3ppq.nl-team"
-                onclick="return false; validate(4)" >
-                Contact 
-            </a>
-        </li>                                                               
     </ul>                                                                   
 </nav>                                                                      
  

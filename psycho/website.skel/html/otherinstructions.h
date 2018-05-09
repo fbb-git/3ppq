@@ -80,16 +80,6 @@ Deze vragenlijst gaat over hoe $1 is. Bijvoorbeeld:
 
 <p>
 
-<ul>
-<li>kies ja!  als dat zo is<br>
-<li>kies ja als het eerder wel dan niet zo is<br>
-<li>kies ? als het neutraal is of als u het niet weet<br>
-<li>kies nee als het eerder niet dan wel zo is<br>
-<li>kies nee! als het niet zo is
-</ul>
-
-<p>
-
 De vragenlijst bestaat uit 42 van dergelijke vragen. Als u in een rustig tempo
 werkt, kost het een minuut of tien.
 

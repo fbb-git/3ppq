@@ -80,16 +80,6 @@ Deze vragenlijst gaat over hoe u bent. Bijvoorbeeld:
 
 <p>
 
-<ul>
-<li>kies ja!  als dat zo is<br>
-<li>kies ja als het eerder wel dan niet zo is<br>
-<li>kies ? als het neutraal is of als u het niet weet<br>
-<li>kies nee als het eerder niet dan wel zo is<br>
-<li>kies nee! als het niet zo is
-</ul>
-
-<p>
-
 Na beantwoording van een vraag gaat u automatisch naar de volgende vraag. Via
 <tt>&lt;</tt> kunt u terug naar de vorige vraag, en via <tt>&gt;</tt> naar de
 volgende vraag<br>

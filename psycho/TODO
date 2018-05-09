@@ -1,3 +1,4 @@
+
 TODO
 ====
 
@@ -12,16 +13,11 @@ Entry 'Data' om de verzamelde data te kunnen downloaden (2 May 2018 08:00:06).
 VOORSTEL: Documenten en Data samenvoegen 
 
 
-Verwijderen entry Contact van de psychologenpagina (2 May 2018 08:00:06)
-
-Elektronische toelichting: geen toelichting op antwoordmogelijkheden, 
-    omcirkelen wordt kiezen
-
 Homepage mal: Wim, 3 May 2018 11:28:41, 6 May 2018 17:17:21     -- te groot
               (vervangt voorstel uit posting 29 Apr 2018 17:15:25,
                zie ook 19 Apr 2018 10:27:06)
 
-NIP nummer tonen bij 't opvragen van 't profiel door een psycholoog.
+WIP:  NIP nummer tonen bij 't opvragen van 't profiel door een psycholoog.
 
 Gegenereerde rapporten blijven een maand beschikbaar (en daarna mogelijk nog
     enige tijd via backup-restores, cf. 2 May 2018 11:31:12)
@@ -30,6 +26,7 @@ Gegenereerde rapporten blijven een maand beschikbaar (en daarna mogelijk nog
 
 Client spelling: trema's
 
+Testen van de volledige functionaliteit
 
 ===========================================================================
 Open vragen:
@@ -50,6 +47,11 @@ Wachtwoord vereisten (15 Apr 2018 13:31:47)?
 ===========================================================================
 Gedaan:
 =======
+
+Elektronische toelichting: geen toelichting op antwoordmogelijkheden, 
+        [nvt: omcirkelen wordt kiezen] (4 May 2018 17:05:50)
+
+Verwijderen entry Contact van de psychologenpagina (2 May 2018 08:00:06)
 
 Logo op alle webpagina's
 

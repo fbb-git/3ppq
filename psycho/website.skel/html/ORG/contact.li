@@ -1,0 +1,6 @@
+        <li class="li-linewise">
+            <a href="/wip.html" title="Contact opnemen met het 3ppq.nl-team"
+                onclick="validate(4)" >
+                Contact 
+            </a>
+        </li>                                                               

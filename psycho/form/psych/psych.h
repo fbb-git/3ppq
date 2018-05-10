@@ -154,7 +154,7 @@ class Psych
         PsychClient &validClientData();
         size_t validClientIdx();
 
-        void pushClient();
+        bool pushClient();
 
         void rmExistingWIPdata(PsychClient const &client, 
                               char const *txt) const;

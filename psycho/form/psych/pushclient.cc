@@ -1,6 +1,6 @@
 #include "psych.ih"
 
-void Psych::pushClient()
+bool Psych::pushClient()
 {
     requireContents("ident");
     requireContents("name");
@@ -8,6 +8,13 @@ void Psych::pushClient()
     requireOneOf("gender",  "FM");
     requireOneOf("clEmail", "@");
 
+    string const &ident = d_cgi->param1("ident");
+
+    for( PsychClient const &client: d_client)
+    {
+        if (client.ident() == ident)
+            return false;
+    }
     d_client.push_back(
         PsychClient(
                 ++d_nClients,
@@ -18,4 +25,5 @@ void Psych::pushClient()
                 d_cgi->param1("clEmail")
             )
     );
+    return true;
 }

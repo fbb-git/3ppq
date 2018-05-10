@@ -7,10 +7,6 @@
 
 <div class="container">
 
-<header class='title'>
-          Persoonlijkheid in perspectief
-</header>
-
 <form name="form" action="/bin/form" method="post">
 
 <nav class="top-menu-markup">                                               
@@ -39,8 +35,6 @@
 </nav>                                                                      
  
 <p>
-<img src="/images/3ppqUL.jpg" class=logo>
-
 De in de menubalk vermelde opties zijn mogelijk deels operationeel.<br>
 Plaats de muis boven een optie voor een korte beschrijving van hun functie.
 <p>

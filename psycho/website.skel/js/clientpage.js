@@ -54,7 +54,7 @@ function setValues()
         {
             form['ident'].value =          clients[idx][0];
 
-            form['gender'].value = clients[idx][1] ? 'M' : 'V';
+            form['gender'].value = clients[idx][1] ? 'M' : 'F';
             fixGender();        
 
             if (clients[idx][2] != 0)
@@ -76,10 +76,10 @@ function setValues()
  
 function submitRequest(request)
 {
-     addHidden("request",   request);
-     addHidden("state",     "clientPage");
-     addHidden("type",      "psych");
-     document.getElementsByName('form')[0].submit();
+    addHidden("request",   request);
+    addHidden("state",     "clientPage");
+    addHidden("type",      "psych");
+    document.getElementsByName('form')[0].submit();
 } 
 
 function resetFields()
@@ -100,18 +100,7 @@ function process(action)
 
 function validate(action)           // actions from the menu
 {
-    var state = 
-        [ 
-            "clientPage", 
-            "dataPage", 
-            "profilePage", 
-            "contactPage" 
-        ];
-
-    if (action < 1 || action > 4 )
-        return home();
-
-    addHidden("state",  state[action - 1]);
+    addHidden("state",  action);
     addHidden("type",   "psych");
     document.getElementsByName('form')[0].submit();
 } 

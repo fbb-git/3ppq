@@ -2,11 +2,11 @@
 
 Psych::DisplayInfo Psych::addActivateClient()
 {
-    pushClient();
-
-    rmExistingWIPdata(d_client.back(), "removed");
-
-    inviteClient(d_client.back());
+    if (pushClient())
+    {
+        rmExistingWIPdata(d_client.back(), "removed");
+        inviteClient(d_client.back());
+    }
 
     return  {
                 s_update + s_deactivate + s_remove,

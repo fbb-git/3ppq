@@ -28,13 +28,13 @@ $3
         </li>
         <li class="li-linewise">
             <a href="/wip.html" title="Download data en documenten"
-                onclick="validate(2)" >
+                onclick="validate('dataPage')" >
                 Data
             </a>
         </li>
         <li class=li-linewise>
             <a href="#" title="Wijzig uw eigen gegevens"
-                onclick="validate(3)"
+                onclick="validate('profilePage')"
             >
                 Profiel
             </a>
@@ -78,7 +78,7 @@ $1
                 <td class=right> Geslacht: </td>
                 <td> 
                     <input id=gender1 type=radio name=gender value=M> M<br>
-                    <input id=gender2 type=radio name=gender value=V> V
+                    <input id=gender2 type=radio name=gender value=F> V
                 </td>
             </tr>
             <tr>

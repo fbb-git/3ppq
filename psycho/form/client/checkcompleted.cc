@@ -24,7 +24,7 @@ g_log << "data collection completed: writing " << g_options.data() << endl;
     report.generate();
 
     Psych psych;
-    if (not psych.get(wipData.psychEmail()))
+    if (not psych.get(Tools::md5hash(wipData.psychEmail())))
         throw false;
 
     g_mailer.sendmail(
@@ -40,6 +40,10 @@ g_log << "data collection completed: writing " << g_options.data() << endl;
             }
         )
     );
+    
+    for (char const *name: 
+                    Glob{ g_options.tmpDir() + wipData.pidCid() + ".*" } )
+        unlink(name);
     
     wipData.remove();
 

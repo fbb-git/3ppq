@@ -12,12 +12,12 @@ Documentenpagina met hyperlinks naar 3ppq vorm [1-3] naar 3ppq-vorm-[1-3].pdf
 
 Entry 'Data' om de verzamelde data te kunnen downloaden (2 May 2018 08:00:06).
 
-VOORSTEL: Documenten en Data samenvoegen 
-
 
 Homepage mal: Wim, 3 May 2018 11:28:41, 6 May 2018 17:17:21     -- te groot
               (vervangt voorstel uit posting 29 Apr 2018 17:15:25,
                zie ook 19 Apr 2018 10:27:06)
+            Opzet wordt: conform postings 10 May 2018 09:48:05, 
+                                          10 May 2018 09:37:06 
 
 Niet-geactiveerde psycholoog registraties worden na twee dagen verwijderd.
 
@@ -25,32 +25,39 @@ Niet-geactiveerde psycholoog registraties worden na twee dagen verwijderd.
 
 Functionaliteitstest
 
-===========================================================================
-Open vragen:
-============
-
-Labels in de gnuplot: zelfperspectief etc (29 Apr 2018 16:47:30) of
-                      zelf            etc (29 Apr 2018 16:53:04)?
-
-Client volgorde OK? Momenteel: zelfbeoordelingen, metabeoordelingen, e-mail
-    adres specificatie (zie ook 27 Apr 2018 14:01:43 en 25 Apr 2018 13:10:59)
-
 Wat doen we bij 't uitblijven van beoordelingen, m.n. door de anderen?
     (26 Apr 2018 11:29:27, 25 Apr 2018 12:53:50)
+     (10 May 2018 01:38:58: 1 herinnerings-email naar 'ander' na een week)
 
-Wachtwoord vereisten (15 Apr 2018 13:31:47)? 
+
+Wachtwoord vereisten (15 Apr 2018 13:31:47): 
+    10 May 2018 01:38:58: lengte van 5 characters, minstens bestaand uit een
+    letter, cijfer, en een niet alfa-numeriek teken: .,\/#!$%\^&\*;:{}=\-_`~()
+
+
+Gegenereerde rapporten blijven een maand beschikbaar (en daarna mogelijk nog
+    enige tijd via backup-restores, cf. 2 May 2018 11:31:12)
+
+Beschkbaar maken van een lege plot 10 May 2018 11:27:36
+
+Beschikbaar maken van een demo-plot 10 May 2018 11:27:36
 
 
 ===========================================================================
 Gedaan:
 =======
 
-Gegenereerde rapporten blijven een maand beschikbaar (en daarna mogelijk nog
-    enige tijd via backup-restores, cf. 2 May 2018 11:31:12)
-        geimplementeerd via 't volgende dagelijks geexecuteerde crontab
-        command: 
+VOORSTEL: Documenten en Data samenvoegen (doen we niet: 10 May 2018 01:38:58)
 
-        find ~/ssl/reports 
+Labels in de gnuplot: zelfperspectief etc (29 Apr 2018 16:47:30) of
+                      zelf            etc (29 Apr 2018 16:53:04)?
+                      (lange labels: 10 May 2018 01:38:58)
+
+Geen 'persoonlijkheid in perspectief' header  (10 May 2018 01:38:58)
+
+Client volgorde OK? Momenteel: zelfbeoordelingen, metabeoordelingen, e-mail
+    adres specificatie (zie ook 27 Apr 2018 14:01:43 en 25 Apr 2018 13:10:59)
+    (10 May 2018 01:38:58)
 
 Client spelling: trema's
 
@@ -58,6 +65,9 @@ NIP nummer tonen bij 't opvragen van 't profiel door een psycholoog.
 
 Elektronische toelichting: geen toelichting op antwoordmogelijkheden, 
         [nvt: omcirkelen wordt kiezen] (4 May 2018 17:05:50)
+
+Elektronische toelichting: toelichting op antwoordmogelijkheden nu:
+        Kies het meest passende antwoord (10 May 2018 01:39:07)
 
 Verwijderen entry Contact van de psychologenpagina (2 May 2018 08:00:06)
 
@@ -81,6 +91,19 @@ Client-identificatie kan ook niet-numeriek zijn ( 27 Apr 2018 17:59:02,
         21 Apr 2018 22:01:01)
 
 'Activeren' -> 'Versturen', `Naam' -> `Aanspreeknaam'  (21 Apr 2018 21:57:19)
+
+
+Vervalt: (10 May 2018 11:27:36)
+Een pagina toevoegen waar de client een nieuw adres (of twee, of drie,
+afhankelijk van hoeveel beoordelingen er al zijn ontvangen) kan invullen. De
+email adressen van de anderen die tot dan niet hebben gereageerd worden
+verwijderd, en vervangen door de nieuwe. 10 May 2018 01:38:58)
+
+
+
+===========================================================================
+Open vragen:
+============
 
 
 

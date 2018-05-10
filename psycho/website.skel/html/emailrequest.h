@@ -7,10 +7,6 @@
 
 <div class="container">
 
-<header class='title'>
-          Persoonlijkheid in perspectief
-</header>
-
 <form name="form" action="/bin/form" onsubmit="return validate()" 
       method="post">
 

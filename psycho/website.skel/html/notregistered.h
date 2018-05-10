@@ -5,10 +5,6 @@
 
 <div class="container">
 
-<header class='title'>
-          Persoonlijkheid in perspectief
-</header>
-
 <h1>Niet geregistreerd e-mail adres</h1>
 
 Het door u vermelde e-mail adres is bij 3PPQ niet bekend.

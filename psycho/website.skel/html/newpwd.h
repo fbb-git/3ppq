@@ -5,13 +5,6 @@
 
 <div class="container">
 
-<header class='title'>
-          Persoonlijkheid in perspectief
-</header>
-
-
-</head>
-
 <h1>Uw wachtwoord is gewijzigd.</h1>
 
 Een nieuw wachtwoord is naar uw e-mail adres gestuurd.<p>

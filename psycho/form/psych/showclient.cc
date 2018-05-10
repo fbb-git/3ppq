@@ -2,7 +2,7 @@
 
 Psych::DisplayInfo Psych::showClient()
 {
-    PsychClient &client = validClientData();
+    PsychClient &client = d_client[validClientIdx()];
 
     string const &action = client.active() ? s_deactivate : s_activate;
 

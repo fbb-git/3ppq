@@ -13,9 +13,6 @@ $0
     <img src="/images/3ppqUL.jpg" class=logo>
 
 <div class="container">
-<header class='title'>
-    Persoonlijkheid in perspectief
-</header>
 
 <form name="form" action="/bin/form" onsubmit='return false' method="post">
 
@@ -47,8 +44,6 @@ $3
 </nav>                                                                      
 
 <h1>Cli&euml;nt-configuratie</h1>
-
-    <img src="/images/client.jpg" class=logo>
 
 $1
 

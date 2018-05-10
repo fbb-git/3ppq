@@ -7,10 +7,6 @@
 
 <div class="container">
 
-<header class='title'>
-          Persoonlijkheid in perspectief
-</header>
-
 <h1>Aanvraag nieuw wachtwoord</h1>
 
 Door op de knop <em>Bevestig Aanvraag Nieuw Wachtwoord</em> te klikken vervalt

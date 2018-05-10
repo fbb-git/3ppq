@@ -7,10 +7,6 @@
 
 <div class="container">
 
-<header class='title'>
-          Persoonlijkheid in perspectief
-</header>
-
 <h1>Aanmeldingsverificatienummer onjuist</h1>
 
 <!-- img src="/images/aanmelden.jpg" class=logo-->

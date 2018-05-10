@@ -9,10 +9,6 @@
 
 <img src="/images/3ppqUL.jpg" class=logo>
 
-<header class='title'>
-          Persoonlijkheid in perspectief
-</header>
-
 <form name="form" action="/bin/form" onsubmit="validate()" method="post">
 
 Hartelijk dank voor het invullen van de vragenlijst.

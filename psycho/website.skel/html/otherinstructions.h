@@ -11,10 +11,6 @@
 
 <div class="container">
 
-<header class='title'>
-          Persoonlijkheid in perspectief
-</header>
-
 <form name="form" action="/bin/form" onsubmit="return validate()" 
       method="post">
 
@@ -77,6 +73,9 @@ Deze vragenlijst gaat over hoe $1 is. Bijvoorbeeld:
 </tr>
 
 </table>
+<p>
+
+Kies het meest passende antwoord.
 
 <p>
 

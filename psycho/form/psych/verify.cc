@@ -4,8 +4,6 @@
 
 void Psych::verify()
 {
-    requireEqual("email", d_eMail);
-
     Tools::debug() << "state: verify" << endl;
 
     {

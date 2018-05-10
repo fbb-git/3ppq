@@ -3,11 +3,6 @@
 
 <div class="container">
 
-<header class='title'>
-          Persoonlijkheid in perspectief
-</header>
-</head>
-
 <h1>Uw aanmelding is verwerkt</h1>
 
 Ter controle van uw e-mail adres ontvangt u, wanneer u voor de eerste keer

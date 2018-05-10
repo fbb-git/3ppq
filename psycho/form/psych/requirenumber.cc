@@ -7,5 +7,8 @@ try
 }
 catch (...)
 {
+    g_log << "cgi param " << name << " `" << d_cgi->param1(name) << 
+                                            "': NaN" << endl;
+
     throw false;
 }

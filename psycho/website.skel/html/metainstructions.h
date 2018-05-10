@@ -11,10 +11,6 @@
 
 <div class="container">
 
-<header class='title'>
-          Persoonlijkheid in perspectief
-</header>
-
 <form name="form" action="/bin/form" onsubmit="return validate()" 
       method="post">
 
@@ -74,6 +70,9 @@ Vinden anderen u iemand die makkelijk vrienden maakt?
 </tr>
 
 </table>
+<p>
+
+Kies het meest passende antwoord.
 
 <p>
 

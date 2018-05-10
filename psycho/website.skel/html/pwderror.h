@@ -5,10 +5,6 @@
 
 <div class="container">
 
-<header class='title'>
-          Persoonlijkheid in perspectief
-</header>
-
 <h1>Wachtwoord onjuist</h1>
 
 <hr>

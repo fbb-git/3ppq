@@ -41,7 +41,7 @@ inline std::string Options::binDir() const
 
 inline std::string Options::reportsDir() const
 {
-    return d_base + "results/";
+    return d_base + "reports/";
 }
 
 inline std::string Options::tmpDir() const

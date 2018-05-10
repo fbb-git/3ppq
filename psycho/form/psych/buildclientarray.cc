@@ -30,7 +30,7 @@ size_t Psych::buildClientArray(string *array,
                 client.active()     << ",\""    <<      //  2
                 client.name()       << "\",\""  <<      //  3
                 client.lastName()   << "\",\""  <<      //  4
-                client.email()      << "\","    <<      //  5
+                client.eMail()      << "\","    <<      //  5
                 reportExists.back() << "],\n";          //  6
     }
     *array = out.str();

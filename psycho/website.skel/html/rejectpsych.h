@@ -5,11 +5,6 @@
 
 <div class="container">
 
-<header class='title'>
-          Persoonlijkheid in perspectief
-</header>
-
-
 <h1>Aanmelding kan niet worden verwerkt</h1>
 
 Uw aanmelding kan niet worden verwerkt: de verstrekte informatie is onvolledig

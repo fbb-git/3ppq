@@ -114,17 +114,18 @@ class Psych
 
         void clientPage();                  // show the client page
         void displayClientPage(DisplayInfo const &displayInfo);
-        std::string reportHyperlink(size_t idx) const;
+        std::string reportHyperlink(std::vector<bool> &reportExists, 
+                                    size_t idx) const;
 
-        void infoClient(std::string *clientArray, std::string *clientSelect);
+        void infoClient(std::string *clientArray, std::string *clientSelect,
+                        std::vector<bool> &reportExists);
         size_t buildClientArray(std::string *array, 
                                 std::vector<bool> &reportExists) const;
         void buildSelectTag(std::string *select, 
                             std::vector<bool> const &reportExists, 
                             size_t idLength) const;
         void startSelect(std::ostream &out,  size_t idLength) const;
-        void endSelect(std::ostream &out, 
-                       std::vector<bool> const &reportExists) const;
+        void endSelect(std::ostream &out, bool foundReport) const;
 
         void report();                      // download a report
 

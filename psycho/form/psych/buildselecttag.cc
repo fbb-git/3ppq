@@ -8,8 +8,11 @@ void Psych::buildSelectTag(string *select, vector<bool> const &reportExists,
     startSelect(out, idLength);
 
     size_t idx = 0;
+    bool foundReport = false;
     for (auto const &client: d_client)
     {
+        foundReport |= reportExists[idx];
+
         out << setw(11) << ' ' << "<option value=" << idx << '>' <<
                 fixedWidth(client.ident(), idLength) <<  
                 (reportExists[idx] ? "R" : "&nbsp;") << ' ' <<
@@ -17,7 +20,7 @@ void Psych::buildSelectTag(string *select, vector<bool> const &reportExists,
         ++idx;
     }
 
-    endSelect(out, reportExists);
+    endSelect(out, foundReport);
 
     *select = out.str();    
 }

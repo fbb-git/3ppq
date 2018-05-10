@@ -1,6 +1,7 @@
 #include "psych.ih"
 
 bool Psych::validRegistrationData(uint64_t *nip, uint8_t *field)
+try
 {
     *nip = requireNumber("nip");
     requireOneOf("email", "@");
@@ -16,7 +17,13 @@ bool Psych::validRegistrationData(uint64_t *nip, uint8_t *field)
         pwd.length() < Tools::MIN_PWD_LENGTH    ||
         *nip == 0
     )
-        throw false;
+        return false;
 
     *field = parseField();
+    return true;
 }
+catch (bool)
+{
+    return false;
+}
+

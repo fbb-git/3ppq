@@ -1,8 +1,8 @@
 #include "psych.ih"
 
-void Psych::endSelect(ostream &out, vector<bool> const &reportExists) const
+void Psych::endSelect(ostream &out, bool foundReport) const
 {
-    out << R"(
+    out << R"_(
             </select>
     </td>
     <td class=topAlign>    
@@ -11,17 +11,17 @@ void Psych::endSelect(ostream &out, vector<bool> const &reportExists) const
             <br>
              Klik op een client in het linker overzicht<br>
              om de clientgegevens te zien of te wijzigen<br>
-            )" << 
+            )_" << 
             (
-                reportExists.empty() ? 
-                    "" 
-                : 
+                foundReport ? 
                     "R: beoordelingsrapport is beschikbaar."
-            ) << R"(
+                : 
+                    "" 
+            ) << R"_(
         </div>
     </td>
     </tr>
     </table>
-)";
+)_";
 
 }

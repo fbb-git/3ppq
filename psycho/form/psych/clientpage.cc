@@ -2,8 +2,6 @@
 
 void Psych::clientPage()
 {
-    requireEqual("email", d_eMail); // all forms must have the psych's e-mail
-
     DisplayInfo displayInfo = { s_add + s_addActive };
 
 //g_log << "clientpage request = `" << d_cgi->param1("request") << "', "
@@ -19,10 +17,13 @@ void Psych::clientPage()
         LockGuard lg { d_data.lg() };
         if (not get())
             throw false;
+
+                                    // all forms must have the psych's e-mail
+        requireEqual("email", d_eMail); 
     
         displayInfo.clientIdx = d_client.size();
 
-        if (
+        if (                        // determine the function to perform
             auto iter = s_clientPageRequest.find(d_cgi->param1("request")); 
             iter != s_clientPageRequest.end()
         )

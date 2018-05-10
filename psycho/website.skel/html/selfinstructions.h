@@ -11,10 +11,6 @@
 
 <div class="container">
 
-<header class='title'>
-          Persoonlijkheid in perspectief
-</header>
-
 <form name="form" action="/bin/form" onsubmit="return validate()" 
       method="post">
 
@@ -77,7 +73,9 @@ Deze vragenlijst gaat over hoe u bent. Bijvoorbeeld:
 </tr>
 
 </table>
+<p>
 
+Kies het meest passende antwoord.
 <p>
 
 Na beantwoording van een vraag gaat u automatisch naar de volgende vraag. Via

@@ -4,7 +4,7 @@ string Report::headerInfo() const
 {
     Psych psych;
 
-    if (not psych.get(d_psychEmail))
+    if (not psych.get(Tools::md5hash(d_psychEmail)))
         throw false;
 
     ostringstream out;
@@ -13,18 +13,16 @@ string Report::headerInfo() const
     tm tmValue{ *localtime(&timeValue) };
 
     out << 
-R"_(    \makecell[l]{Naam cli\"ent:} 
+R"_1_(    \makecell[l]{Naam cli\"ent:} 
 \\
     \makecell[l]{Cli\"ent identificatie:} &
-    \makecell[l]{)" <<  d_clientIdent   << R"(}
+    \makecell[l]{)_1_" <<  d_clientIdent   << R"_2_(}
 \\
     \makecell[l]{Afnamedatum:} &
-    \makecell[l]{)_" << put_time(&tmValue, "%e %b %Y") << R"_(}
+    \makecell[l]{)_2_" << put_time(&tmValue, "%e %b %Y") << R"_3_(}
 \\
     \makecell[l]{Psycholoog:} &
-    \makecell[l]{)_" << psych.fullName() << "}\n";
-
+    \makecell[l]{)_3_" << psych.fullName() << "}\n";
 
     return out.str();
-
 }

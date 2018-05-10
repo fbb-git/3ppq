@@ -18,7 +18,7 @@ g_log << "data collection completed: writing " << g_options.data() << endl;
 
     data.seekp(0, ios::end);
     
-    data << wipData << endl;
+    data << wipData;
 
     Report report{ wipData };
     report.generate();

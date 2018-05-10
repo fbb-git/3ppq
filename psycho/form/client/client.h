@@ -34,7 +34,7 @@ class Client
     static size_t const s_completedSize;
 
     public:
-        Client(FBB::CGI &cgi);
+    Client(FBB::CGI &cgi);
 
         void process();
         void accept(std::string const &query);
@@ -50,8 +50,6 @@ class Client
         void emailRequest(WIPdata const &wipData);
 
         void otherPage(WIPdata &wipData, size_t idx);
-
-        void selfInstructions(WIPdata const &wipData);
 
         void pidCid(WIPdata const &wipData);
         void inviteOther(WIPdata const &wipData, size_t idx);

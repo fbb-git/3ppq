@@ -96,6 +96,7 @@ U blijft zelf anoniem in dit onderzoek. Uw antwoorden worden niet aan $1
 doorgegeven. Uw antwoorden en die van twee anderen worden gemiddeld. Dit
 gemiddelde en de betekenis ervan worden vervolgens met $1 besproken.
 
+<p>
 
 <input type="submit" value="Start de vragenlijst">
 

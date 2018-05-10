@@ -85,7 +85,6 @@ function setArrows()
     document.getElementById('backID1').style.visibility = backwardVisible;
     document.getElementById('backID2').style.visibility = backwardVisible;
 
-
     var forwardVisible = answer == 0 || idx + 1 == nQuestions ? 
                                 'hidden' 
                             : 

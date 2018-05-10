@@ -41,6 +41,7 @@ class WIPdata
 
         WIPdata(char const *csvFile, char const *psychEmail,    // mainly for
                 bool gender, char const *clientName);           // testing
+        WIPdata() = default;
 
         uint16_t psychID() const;
         std::string const &clientIdent() const;
@@ -70,6 +71,7 @@ class WIPdata
         bool hasEmail() const;          // email addresses available
 
         LockGuard read();
+        void read(char const *path);        // for testing purposes only
 
         void write() const;
 

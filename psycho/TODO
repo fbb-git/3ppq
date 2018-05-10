@@ -19,14 +19,9 @@ Homepage mal: Wim, 3 May 2018 11:28:41, 6 May 2018 17:17:21     -- te groot
               (vervangt voorstel uit posting 29 Apr 2018 17:15:25,
                zie ook 19 Apr 2018 10:27:06)
 
-Gegenereerde rapporten blijven een maand beschikbaar (en daarna mogelijk nog
-    enige tijd via backup-restores, cf. 2 May 2018 11:31:12)
-
 Niet-geactiveerde psycholoog registraties worden na twee dagen verwijderd.
 
 2 May 2018 08:00:06: Portaal? (da's normaliter de home-page)
-
-Client spelling: trema's
 
 Functionaliteitstest
 
@@ -49,6 +44,15 @@ Wachtwoord vereisten (15 Apr 2018 13:31:47)?
 ===========================================================================
 Gedaan:
 =======
+
+Gegenereerde rapporten blijven een maand beschikbaar (en daarna mogelijk nog
+    enige tijd via backup-restores, cf. 2 May 2018 11:31:12)
+        geimplementeerd via 't volgende dagelijks geexecuteerde crontab
+        command: 
+
+        find ~/ssl/reports 
+
+Client spelling: trema's
 
 NIP nummer tonen bij 't opvragen van 't profiel door een psycholoog.
 

@@ -76,7 +76,7 @@ class Psych
         std::string const &eMail() const;
         bool get(std::string const &key);
         uint16_t ID() const;
-
+        bool ack() const;           // true: acknowledgement received
         std::string fullName() const;
 
     private:
@@ -177,6 +177,11 @@ class Psych
 
         std::vector<LockGuard> updateWIPemail() const;
 };
+
+inline bool Psych::ack() const
+{
+    return d_ack == 0;
+}
 
 inline std::string Psych::fullName() const
 {

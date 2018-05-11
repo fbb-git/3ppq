@@ -1,0 +1,36 @@
+<nav class="top-menu-markup">                                               
+    <ul class="spread">                                                     
+        <li class="li-linewise">
+            <a href="#" title="Activiteiten m.b.t. cli&euml;nten" 
+                onclick="validate('clientPage')" > 
+                Cli&euml;nt 
+            </a>
+        </li>
+        <li class="li-linewise">
+            <a href="#" title="Download verzamelde data"
+                onclick="validate('dataPage')" >
+                Data
+            </a>
+        </li>
+        <li class="li-linewise">
+            <a href="#" title="Download documenten"
+                onclick="validate('docPage')" >
+                Data
+            </a>
+        </li>
+        <li class=li-linewise>
+            <a href="#" title="Wijzig uw eigen gegevens"
+                onclick="validate('profilePage')"
+            >
+                Profiel
+            </a>
+        </li>
+        <li class=li-linewise>
+            <a href="#" title="3ppq contact informatie"
+                onclick="validate('contactPage')"
+            >
+                Profiel
+            </a>
+        </li>
+    </ul>                                                                   
+</nav>                                                                      

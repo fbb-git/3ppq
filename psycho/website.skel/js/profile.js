@@ -24,8 +24,6 @@ function home()
 
 function validate(action) 
 {
-    alert("localStorage.eMail: " + localStorage.eMail);
-
     if (action == 0)
         return true;
 

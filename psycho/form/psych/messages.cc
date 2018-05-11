@@ -1,13 +1,13 @@
 #include "psych.ih"
 
 string Psych::messages()
+try
 {
     string path = g_options.moldsDir() + "messages";
 
-    if (not Tools::rwExists(path))
-        return "<h1>Er zijn geen berichten</h1>";
-
     ifstream in{ path };
+
+    Exception::open(in, g_options.moldsDir() + "messages");
 
     ostringstream msg;
 
@@ -16,4 +16,8 @@ string Psych::messages()
             "</pre>\n";
 
     return msg.str();
+}
+catch (...)
+{
+    return "<h1>Er zijn geen berichten</h1>";
 }

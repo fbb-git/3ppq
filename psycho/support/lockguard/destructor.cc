@@ -2,14 +2,20 @@
 
 LockGuard::~LockGuard()
 {
-    if (d_count)
-        --d_count;
+    if (d_fd == -1)
+        return;
 
-    if (d_fd != -1 and d_count == 0)
+    if (s_locked[d_path] != 0)
+        --s_locked[d_path];
+
+    if (s_locked[d_path] == 0)
     {
-        if (Tools::rwExists(d_path))
-            flock(d_fd, LOCK_UN);
+        if (not Tools::rwExists(d_path))        // actual file doesn't exits
+            unlink( (d_path + ".lck").c_str() );    // then rm the .lck file
         else
-            unlink( (d_path + ".lck").c_str() );
+        {
+            flock(d_fd, LOCK_UN);               // else unlock
+            s_locked.erase(d_path);             // and rm from the list of
+        }                                       // locked file names
     }
 }

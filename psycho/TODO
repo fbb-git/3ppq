@@ -2,9 +2,6 @@
 TODO
 ====
 
-In 't rapport vermelden over hoeveel anderen het gemiddelde is berekend.
-(10 May 2018 17:17:27)
-
 Homepage mal: Wim, 3 May 2018 11:28:41, 6 May 2018 17:17:21     -- te groot
               (vervangt voorstel uit posting 29 Apr 2018 17:15:25,
                zie ook 19 Apr 2018 10:27:06)
@@ -16,11 +13,6 @@ Niet-geactiveerde psycholoog registraties worden na twee dagen verwijderd.
 2 May 2018 08:00:06: Portaal? (da's normaliter de home-page)
 
 Functionaliteitstest
-
-Wat doen we bij 't uitblijven van beoordelingen, m.n. door de anderen?
-    (26 Apr 2018 11:29:27, 25 Apr 2018 12:53:50)
-     (10 May 2018 01:38:58: 1 herinnerings-email naar 'ander' na een week)
-
 
 Wachtwoord vereisten (15 Apr 2018 13:31:47): 
     10 May 2018 01:38:58: lengte van 5 characters, minstens bestaand uit een
@@ -48,6 +40,47 @@ g
 > nieuw wachtwoord\222
 
 
+Registratiepagina Fri, 11 May 2018 12:00:26:
+
+> - Tekst \221Om de faciliteiten \205.  aanmelden\222 verwijderen
+> - \221Zodra uw aanmelding is verwerkt\222 vervangen in \221Na registratie\222
+> - \221Naam\222 wijzigen in \221Voorletter(s)\222. Dit omdat de cliënt een e-m\
+ail
+> krijgt waarin de psycholoog genoemd wordt. Netter vind ik dan R.M. Mosterman
+> i.p.v. Ineke Mosterman.
+> - \221E-mail adres\222 vervangen in \221E-mail\222
+> - \221Wachtwoord\222 wijzigen in \221Kies een wachtwoord\222
+> - Hierachter aangeven welke eisen er aan wachtwoord worden gesteld:
+> - \221Aanmelden\222 vervangen door \221Registreren\222
+> - Op de gehele site \2213PPQ\222 vervangen door \2213ppq\222
+> - De tekst \2213ppq neemt privacy serieus\205\222 verwijderen.
+
+
+Aanmelding is verwerkt pagina: Fri, 11 May 2018 12:00:26:
+
+> 2a.   Hierna volgde de pagina: Uw aanmelding is verwerkt
+> - +logo en \226persoonlijkheid in perspectief
+> - vervangen door \221Uw registratie is verwerkt\222
+> - \221e-mail adres\222 vervangen door \221e-mailadres\222
+Eventueel e-mail-adres: koppelingen van Engelse en Nederlandse woorden krijgen
+een koppelteken.
+
+Registratie:  Fri, 11 May 2018 12:00:26:
+> Minstens 5 minuten later (zelfs na de mail met het gewijzigde wachtwoord),
+> krijg ik toch op elfen@planet.nl het bericht binnen dat ik geregistreerd ben
+> (e-mailtekst 1). De mail is correct, met uitzondering van de aanhef: \221Best\
+e\222
+> moet \221Geachte\222 zijn.
+
+Wb de vertraging: wellicht maken jullie gebruik van greylisting oid, waarbij
+een nieuw inkomende mail een tijdje wordt aangehouden voordat 't wordt
+doorgestuurd naar de geadresseerde: een anti-spam maatregel. Wel is 't zo dat
+'t nummer pas wordt gemaild wanneer je de verificatiepagina opent. Dat kan nog
+wel even worden toegevoegd aan de tekst van de pagina.
+
+
+
+
 ===========================================================================
 Aandachtspunten:
 ================
@@ -59,10 +92,20 @@ Gebruiksprotocol moet worden bijgewerkt (e.g. recente grafiek/beschrijving)
 Gedaan:
 =======
 
+In 't rapport vermelden over hoeveel anderen het gemiddelde is berekend.
+(10 May 2018 17:17:27): niet nodig (11 May 2018 19:30:13). In het rapport is
+`drie' verwijderd.
+
+
 Verifieer ontvangen form-data
 
 In e-mail naar zelf en anderen vermelden dat de beoordelingen binnen een week
 worden verwacht. (10 May 2018 17:16:18)
+
+Wat doen we bij 't uitblijven van beoordelingen, m.n. door de anderen?
+    (26 Apr 2018 11:29:27, 25 Apr 2018 12:53:50)
+     (10 May 2018 01:38:58: 1 herinnerings-email naar 'ander' na een week)
+    Geen mail meer sturen: 11 May 2018 17:46:19
 
 Entry 'Data' om de verzamelde data te kunnen downloaden (2 May 2018 08:00:06).
 

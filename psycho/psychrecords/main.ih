@@ -3,11 +3,12 @@
 #include <iostream>
 #include <string>
 #include <bobcat/log>
+#include <bobcat/datetime>
 
 #include "../support/tools/tools.h"
 #include "../support/options/options.h"
 #include "../support/datastore/datastore.h"
-//#include "../support/lockguard/lockguard.h"
+#include "../support/lockguard/lockguard.h"
 #include "../form/psych/psych.h"
 
 namespace Icmbuild
@@ -19,6 +20,7 @@ namespace Icmbuild
 
 void usage(std::string const &progname);
 void list();
+void expired();
 
 using namespace std;
 using namespace FBB;

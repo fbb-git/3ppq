@@ -18,6 +18,8 @@ try
 
     if (argv[1] == "list"s)
         list();
+    else if (argv[1] == "expired"s)
+        expired();
     else
         usage(basename(argv[0]));
 }

@@ -15,7 +15,8 @@ Where:
        modify: modify all records (after modifying the Psych's toString 
                member, defining a new data organization. Following the
                modification, update the Psych's read function accordingly
-
+       expired: remove expired psychologist registrations (older then two
+               days, without received acknowledgements
 )";
     throw 0;
 }

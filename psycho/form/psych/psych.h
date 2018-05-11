@@ -77,6 +77,7 @@ class Psych
         bool get(std::string const &key);
         uint16_t ID() const;
         bool ack() const;           // true: acknowledgement received
+        uint32_t registrationTime() const;
         std::string fullName() const;
 
     private:
@@ -178,6 +179,11 @@ class Psych
 
         std::vector<LockGuard> updateWIPemail() const;
 };
+
+inline uint32_t Psych::registrationTime() const
+{
+    return d_time;
+}
 
 inline bool Psych::ack() const
 {

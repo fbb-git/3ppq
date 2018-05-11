@@ -3,12 +3,14 @@
 
 #include <iosfwd>
 #include <string>
+#include <unordered_map>
 
 class LockGuard
 {
-    int d_fd = -1;
-    std::string d_path;
-    size_t d_count = 0;
+    int d_fd = -1;                  // fd of the .lck file
+    std::string d_path;             // path of the file, not of the .lck file
+
+    static std::unordered_map<std::string, size_t> s_locked;
 
     public:
         LockGuard() = default;

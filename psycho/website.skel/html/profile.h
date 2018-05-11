@@ -21,27 +21,36 @@
     <ul class="spread">                                                     
         <li class="li-linewise">
             <a href="#" title="Activiteiten m.b.t. cli&euml;nten" 
-                onclick="validate(1)" > 
+                onclick="validate('clientPage')" > 
                 Cli&euml;nt 
             </a>
         </li>
         <li class="li-linewise">
-            <a href="#" title="Download/selecteer verzamelde data"
-                onclick="return false; validate(2)" >
+            <a href="/data.html" title="Download verzamelde data"
+                onclick="validate(0)" >
                 Data
+            </a>
+        </li>
+        <li class="li-linewise">
+            <a href="/documents.html" title="Download documenten"
+                onclick="validate(0)" >
+                Documents
             </a>
         </li>
         <li class=li-linewise>
             <a href="#" title="Wijzig uw eigen gegevens"
-                onclick="return false"
-            >
+                onclick="return false;" >
                 Profiel
             </a>
-
+        </li>
+        <li class=li-linewise>
+            <a href="/contact.html" title="3ppq contact informatie"
+                onclick="validate(0)" >
+                Contact
+            </a>
         </li>
     </ul>                                                                   
 </nav>                                                                      
- 
 
 <h1>Wijzigen van uw profiel</h1>
 

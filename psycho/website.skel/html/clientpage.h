@@ -21,33 +21,43 @@ $3
 <nav class="top-menu-markup">                                               
     <ul class="spread">                                                     
         <li class="li-linewise">
-            <a href="" title="Activiteiten m.b.t. cli&euml;nten" 
-                onclick="return false" > 
+            <a href="#" title="Activiteiten m.b.t. cli&euml;nten" 
+                onclick="return false;" > 
                 Cli&euml;nt 
             </a>
         </li>
         <li class="li-linewise">
-            <a href="/wip.html" title="Download data en documenten"
-                onclick="validate('dataPage')" >
+            <a href="/data.html" title="Download verzamelde data"
+                onclick="validate(0)" >
                 Data
+            </a>
+        </li>
+        <li class="li-linewise">
+            <a href="/documents.html" title="Download documenten"
+                onclick="validate(0)" >
+                Documenten
             </a>
         </li>
         <li class=li-linewise>
             <a href="#" title="Wijzig uw eigen gegevens"
-                onclick="validate('profilePage')"
-            >
+                onclick="validate('profilePage')" >
                 Profiel
             </a>
-
+        </li>
+        <li class=li-linewise>
+            <a href="/contact.html" title="3ppq contact informatie"
+                onclick="validate(0)" >
+                Contact
+            </a>
         </li>
     </ul>                                                                   
 </nav>                                                                      
 
-<h1>Cli&euml;nt-configuratie</h1>
+<h1>Cli&euml;nt-verwerking</h1>
 
 $1
 
-<h3>Cli&euml;nt:</h3>
+<h3>Cli&euml;nten:</h3>
 
 <table class=lightgrey style="border-collapse: collapse;">
 <tr>
@@ -100,17 +110,6 @@ $1
 </table>
 <script> window.onload=setValues(); </script>
 <p>
-
-Door op de knop <em>3PPQ</em> te klikken keert u terug naar de 3PPQ-homepage. 
-<p>
-
-<table style="border-collapse: collapse;">
-<tr>
-    <td>
-        <input type=submit value=3PPQ onclick="return home()">
-    </td>
-</tr>
-</table>
 
 
 

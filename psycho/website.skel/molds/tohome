@@ -1,0 +1,10 @@
+Door op de knop <em>3PPQ</em> te klikken keert u terug naar de 3PPQ-homepage. 
+<p>
+
+<table style="border-collapse: collapse;">
+<tr>
+    <td>
+        <input type=submit value=3PPQ onclick="return home()">
+    </td>
+</tr>
+</table>

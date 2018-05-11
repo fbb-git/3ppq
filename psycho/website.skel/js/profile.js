@@ -24,25 +24,17 @@ function home()
 
 function validate(action) 
 {
-    var state = 
-        [ 
-            "clientPage", 
-            "dataPage", 
-            "profilePage", 
-            "contactPage" 
-        ];
+    alert("localStorage.eMail: " + localStorage.eMail);
 
-    if (action < 1 || action > 5 )
-    {
-        window.open('/index.html', '_self'); 
-        return false;
-    }
+    if (action == 0)
+        return true;
 
     addHidden("type",   "psych");
+    addHidden("email",  localStorage.eMail);
 
-    if (action < 5)
+    if (action != 'submit')
     {
-        addHidden("state",  state[action - 1]);
+        addHidden("state",  action);
         document.getElementsByName('form')[0].submit();
         return;
     }
@@ -81,7 +73,7 @@ function validate(action)
 function key(event)
 {
     var enter = event.which || event.keyCode;
-    if (enter == 13 && validate(5))
+    if (enter == 13 && validate('submit'))
         document.getElementsByName('form')[0].submit();
 }
 

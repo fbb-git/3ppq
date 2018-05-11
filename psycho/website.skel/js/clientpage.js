@@ -100,6 +100,10 @@ function process(action)
 
 function validate(action)           // actions from the menu
 {
+    if (action == 0)
+        return true;
+
+    addHidden("email",  localStorage.eMail);
     addHidden("state",  action);
     addHidden("type",   "psych");
     document.getElementsByName('form')[0].submit();

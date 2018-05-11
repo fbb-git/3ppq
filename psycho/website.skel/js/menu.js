@@ -1,9 +1,11 @@
 function validate(action) 
 {
-    localStorage.eMail = document.forms["form"]['email'].value;
-
     alert("localStorage.eMail: " + localStorage.eMail);
 
+    if (action == 0)
+        return true;
+
+    addHidden("email",  localStorage.eMail);
     addHidden("state",  action);
     addHidden("type",   "psych");
 

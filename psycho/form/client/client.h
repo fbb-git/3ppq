@@ -57,12 +57,16 @@ class Client
 
         std::string loginHash(uint16_t login) const;
 
+        void selfCompleted(WIPdata &wipData, std::string const &ratings);
+        void metaCompleted(WIPdata &wipData, std::string const &ratings);
+
+        void otherCompleted(WIPdata &wipData, std::string const &ratings);
         bool otherRatingsCompleted(WIPdata &wipData) const;
         void checkCompleted(WIPdata &wipData) const;
 
-        void selfCompleted(WIPdata &wipData, std::string const &ratings);
-        void metaCompleted(WIPdata &wipData, std::string const &ratings);
-        void otherCompleted(WIPdata &wipData, std::string const &ratings);
 };
         
 #endif
+
+
+

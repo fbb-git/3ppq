@@ -1,0 +1,143 @@
+<VirtualHost *:80>
+
+        # must link to ${basePath}/www/
+    Define webRoot  /var/www/psycho
+
+    Define basePath /home/frank/src/psycho/website
+
+    DocumentRoot ${webRoot}
+
+    ServerName  localhost
+
+    Alias /css              ${basePath}/css
+    Alias /js               ${basePath}/js
+    Alias /images           ${basePath}/images
+    Alias /docs             ${basePath}/docs
+    ScriptAlias /bin        ${basePath}/bin
+
+    <Directory "/tmp/">
+        Require all granted
+    </Directory>
+
+    <Directory "${webRoot}" >
+        Require all granted
+        Options Indexes FollowSymLinks MultiViews Includes ExecCGI    
+    </Directory>
+
+
+    <Directory "${basePath}/docs" >
+        Options FollowSymlinks
+        Require all granted
+    </Directory>
+
+    <Directory "${basePath}/images" >
+       Require all granted
+    </Directory>
+
+    <Directory "${basePath}/css" >
+       Require all granted
+    </Directory>
+
+    <Directory "${basePath}/js" >
+       Require all granted
+       Options Includes FollowSymLinks
+    </Directory>
+
+    <Directory "${basePath}/bin" >
+    Require all granted
+       Options FollowSymLinks ExecCGI    
+    </Directory>
+
+
+#    DocumentRoot /var/www/psycho
+#
+#    ServerName  localhost
+#
+#    Options Indexes FollowSymLinks MultiViews Includes ExecCGI    
+#
+#    Alias /css             /home/frank/src/psycho/css
+#    Alias /js              /home/frank/src/psycho/js
+#    Alias /images          /home/frank/src/psycho/images
+#    ScriptAlias /bin       /home/frank/src/psycho/bin
+#
+#        # links to /home/frank/src/psycho/www/index.html
+#    <Directory "/var/www/psycho/" >
+#    Require all granted
+#       Options Indexes FollowSymLinks MultiViews Includes ExecCGI    
+#    </Directory>
+#
+#    <Directory "/home/frank/src/psycho/images/" >
+#       Require all granted
+#    </Directory>
+#
+#    <Directory "/home/frank/src/psycho/css/" >
+#       Require all granted
+#    </Directory>
+#
+#    <Directory "/home/frank/src/psycho/js/" >
+#       Require all granted
+#       Options Includes
+#    </Directory>
+#
+#    <Directory "/home/frank/src/psycho/bin/" >
+#    Require all granted
+#       Options FollowSymLinks ExecCGI    
+#    </Directory>
+# 
+#
+#     DocumentRoot /var/www/html
+#     ServerName  localhost
+#     #    SSLEngine off
+#       
+#     Options Indexes FollowSymLinks MultiViews Includes ExecCGI    
+# 
+#     #    RewriteEngine on
+#     #    RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+#     #    RewriteRule .* - [F]
+# 
+#         # executes /home/frank/src/maze/bin/rtform
+#     <Directory "/var/www/html" >
+#     Require all granted
+#     Options Indexes FollowSymLinks MultiViews Includes ExecCGI    
+#     </Directory>
+# 
+#     Alias /images           /home/frank/src/maze/images
+#     ScriptAlias /bin        /home/frank/src/maze/bin
+# 
+#       <Directory "/home/frank/src/maze/bin"> 
+#           Require all granted
+#           Options ExecCGI  FollowSymLinks  
+#          AllowOverride All
+#       </Directory>
+#  
+#       <Directory "/home/frank/src/maze/rt-game"> 
+#           Require all granted
+#           Options Indexes ExecCGI  FollowSymLinks  Includes MultiViews
+#          AllowOverride All
+# 
+# 
+#             AddHandler server-parsed .shtml
+#             AddType text/html .shtml
+#             AddOutputFilter INCLUDES .shtml
+# 
+#         </Directory>
+#  
+#       <Directory "/home/frank/src/maze/images" >
+#           Require all granted
+#          AllowOverride All
+#       </Directory>
+
+
+</VirtualHost>
+
+
+
+
+
+
+
+
+
+
+
+

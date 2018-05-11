@@ -67,8 +67,7 @@ do
 done
 
 try cd website.skel
-tar cf - --exclude .filler --exclude '*/ORG' --exclude README . |
-                                            (cd ${website}; tar xf -)
+tar cf - --exclude-from exclude . | (cd ${website}; tar xf -)
 
 try cd ${website}
 

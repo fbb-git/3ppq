@@ -2,16 +2,8 @@
 TODO
 ====
 
-WIP: Verifieer ontvangen form-data
-
-Toevoegen entry Documenten op de psychologenpagina
-
-Documentenpagina met hyperlinks naar 3ppq vorm [1-3] naar 3ppq-vorm-[1-3].pdf
-    (Beschikbaar in posting 29 Apr 2018 18:51:55). Zie ook gebruiksprotocol
-    (28 Apr 2018 21:08:46)
-
-Entry 'Data' om de verzamelde data te kunnen downloaden (2 May 2018 08:00:06).
-
+In 't rapport vermelden over hoeveel anderen het gemiddelde is berekend.
+(10 May 2018 17:17:27)
 
 Homepage mal: Wim, 3 May 2018 11:28:41, 6 May 2018 17:17:21     -- te groot
               (vervangt voorstel uit posting 29 Apr 2018 17:15:25,
@@ -33,19 +25,44 @@ Wat doen we bij 't uitblijven van beoordelingen, m.n. door de anderen?
 Wachtwoord vereisten (15 Apr 2018 13:31:47): 
     10 May 2018 01:38:58: lengte van 5 characters, minstens bestaand uit een
     letter, cijfer, en een niet alfa-numeriek teken: .,\/#!$%\^&\*;:{}=\-_`~()
+    (confirmed: 10 May 2018 17:17:27)
 
 
 Gegenereerde rapporten blijven een maand beschikbaar (en daarna mogelijk nog
     enige tijd via backup-restores, cf. 2 May 2018 11:31:12)
 
-Beschkbaar maken van een lege plot 10 May 2018 11:27:36
 
-Beschikbaar maken van een demo-plot 10 May 2018 11:27:36
+===========================================================================
+Aandachtspunten:
+================
+
+Gebruiksprotocol moet worden bijgewerkt (e.g. recente grafiek/beschrijving)
 
 
 ===========================================================================
 Gedaan:
 =======
+
+Verifieer ontvangen form-data
+
+In e-mail naar zelf en anderen vermelden dat de beoordelingen binnen een week
+worden verwacht. (10 May 2018 17:16:18)
+
+Entry 'Data' om de verzamelde data te kunnen downloaden (2 May 2018 08:00:06).
+
+Beschkbaar maken van een lege plot 10 May 2018 11:27:36
+
+Beschikbaar maken van een demo-plot 10 May 2018 11:27:36
+
+Toevoegen entry Documenten op de psychologenpagina
+
+Documentenpagina met hyperlinks naar 3ppq vorm [1-3] naar 3ppq-vorm-[1-3].pdf
+    (Beschikbaar in posting 29 Apr 2018 18:51:55). Zie ook gebruiksprotocol
+    (28 Apr 2018 21:08:46)
+
+
+10 May 2018 12:51:37 demonstratie-plot (data: 30 Mar 2018 16:12:30), en lege
+plot toegevoegd aan Documenten
 
 VOORSTEL: Documenten en Data samenvoegen (doen we niet: 10 May 2018 01:38:58)
 

@@ -45,21 +45,24 @@ fi
 
 if [ ! -e ${website}/bin/form ] ; then
     cd support
-    icmbuild || exit 1
+    icmbuild
 
     cd ${base}/form
-    icmbuild || exit 1
+    icmbuild
 
     icmbuild install program ${website}/bin/form
+
+    [ -e ${website}/bin/form ] || exit 1
 fi
 
 try cd ${base}
 
 if [ ! -e ${website}/bin/fsplot ] ; then
-    cd ../fsplot
+    try cd fsplot
     icmbuild || exit 1
 
     icmbuild install program ${website}/bin/fsplot
+    [ -e ${website}/bin/fsplot ] || exit 1
 fi
 
 try cd ${base}

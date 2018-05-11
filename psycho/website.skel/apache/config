@@ -3,6 +3,8 @@
         # must link to ${basePath}/www/
     Define webRoot  /var/www/psycho
 
+    # UPDATE TO THE ACTUAL BASE PATH:
+    # ===============================
     Define basePath /home/frank/src/psycho/website
 
     DocumentRoot ${webRoot}

@@ -1,8 +1,13 @@
 #!/bin/bash
 
+if [ $# -eq 0 ] ; then
+    echo "provide path to the website's base directory (containing ./www)"
+    exit 1
+fi
+
 cd support
 icmbuild
 cd ../form
 icmbuild
-cp tmp/bin/binary ../website/bin/form
+cp tmp/bin/binary $1/bin/form
 

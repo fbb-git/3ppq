@@ -2,9 +2,14 @@
 
 if [ $# -eq 0 ] ; then
     echo "
-First argument must be the target directory, created if non-existing.
+First argument must be the website's base directory, created if non-existing.
+Below this base directory directories like ./www are defined. The website's
+base path must also be specified in apache's configuration, see 
+website.skel/apache/config for an example.
+
 Run this script as the destination user from the location where this script
 is located. 
+
 The destination user should be a member of the group www-data.
 The target directory may be specified as a relative or absolute path.
 

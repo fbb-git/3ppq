@@ -11,8 +11,8 @@
 
 Hartelijk dank voor het invullen van de vragenlijst.
 
-Klik desgewenst op onderstaande knop om de 3PPQ homepage te openen.
+Klik desgewenst op onderstaande knop om de 3ppq homepage te openen.
 <p>
 
-<input type=submit value="3PPQ homepage">
+<input type=submit value="3ppq homepage">
 

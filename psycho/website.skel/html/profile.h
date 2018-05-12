@@ -68,8 +68,8 @@ Wijzig de hieronder vermelde gegevens. Vermeld dan uw huidige wachtwoord en
 druk op de <em>Enter</em> toets. 
 <p>
 
-Door op de knop <em>3PPQ</em> te klikken keert u terug naar de
-3PPQ-homepage. 
+Door op de knop <em>3ppq</em> te klikken keert u terug naar de
+3ppq-homepage. 
 <p>
 
 <div class="lightgrey">
@@ -142,7 +142,7 @@ Door op de knop <em>3PPQ</em> te klikken keert u terug naar de
 </tr>
 <tr>
     <td>
-    <input type="submit" value="3PPQ"
+    <input type="submit" value="3ppq"
            onclick="return home()">
     </td>
 </tr>

@@ -13,8 +13,8 @@
 
 Klik op de knop <em>Inloggen</em> om in te loggen.
 <p>
-Door op de knop <em>3PPQ</em> te klikken keert u terug naar de
-3PPQ-homepage. 
+Door op de knop <em>3ppq</em> te klikken keert u terug naar de
+3ppq-homepage. 
 <p>
 
 <div class=lightgrey>
@@ -30,7 +30,7 @@ Door op de knop <em>3PPQ</em> te klikken keert u terug naar de
         onclick="window.open('/register.html', '_self'); return false;">
 </td>
 <td>
-    <input type="submit" value="3PPQ" 
+    <input type="submit" value="3ppq" 
         onclick="window.open('/index.html', '_self'); return false;">
 </td>
 </table>
@@ -38,7 +38,7 @@ Door op de knop <em>3PPQ</em> te klikken keert u terug naar de
 
 
 <footer class="lastline">
-    3PPQ neemt privacy serieus. Download onze 
+    3ppq neemt privacy serieus. Download onze 
     <a href="privacy.pdf"> privacy verklaring</a><br>
     Vragen of opmerkingen? Stuur dan een e-mail naar 
         <a href="mailto:3ppq@3ppq.nl">3ppq@3ppq.nl</a>

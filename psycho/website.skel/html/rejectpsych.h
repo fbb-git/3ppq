@@ -16,8 +16,8 @@ of onjuist (b.v. uw e-mail adres bevat geen @-teken).
 
 Klik op de knop <em>Aanmelden</em> om uw gegevens aan te passen.
 <p>
-Door op de knop <em>3PPQ homepage</em> te klikken keert u terug naar de
-3PPQ-homepage. 
+Door op de knop <em>3ppq homepage</em> te klikken keert u terug naar de
+3ppq-homepage. 
 <p>
 
 <div class=lightgrey>
@@ -28,7 +28,7 @@ Door op de knop <em>3PPQ homepage</em> te klikken keert u terug naar de
         onclick="window.open('/register.html', '_self'); return false;">
 </td>
 <td>
-    <input type="submit" value="3PPQ homepage" 
+    <input type="submit" value="3ppq homepage" 
         onclick="window.open('/index.html', '_self'); return false;">
 </td>
 </table>

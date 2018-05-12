@@ -10,7 +10,7 @@
 <form name="form" action="/bin/form" 
       onsubmit="return validate()" method="post">
 
-<h1>3PPQ Aanmeldingsverificatie</h1>
+<h1>3ppq Aanmeldingsverificatie</h1>
 
 Geachte $0 $1,<p>
 

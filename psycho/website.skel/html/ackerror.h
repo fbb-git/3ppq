@@ -12,8 +12,8 @@
 Het door u vermelde verificatienummer is onjuist. 
 
 <p> Klik op de knop <em>Verificatie</em> om het juiste nummer alsnog in te
-vullen, of klik op de knop <em>3PPQ</em> om terug te keren naar de
-3PPQ-homepage.
+vullen, of klik op de knop <em>3ppq</em> om terug te keren naar de
+3ppq-homepage.
 
 <form name="form" action="/bin/form" 
       onsubmit="return validate()" method="post">
@@ -25,7 +25,7 @@ vullen, of klik op de knop <em>3PPQ</em> om terug te keren naar de
         <input type="submit" value="Verificatie">
     </td>
     <td>
-        <input type="submit" value="3PPQ" 
+        <input type="submit" value="3ppq" 
             onclick="window.open('/index.html', '_self'); return false;">
     </td>
 </tr>

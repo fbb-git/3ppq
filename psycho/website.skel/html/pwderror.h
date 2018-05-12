@@ -13,7 +13,7 @@ Het door u opgegeven wachtwoord is onjuist.
 
 <p>
 Klik op de knop <em>Inloggen</em> om in te loggen, of klik op de knop
-<em>3PPQ</em> om terug te keren naar de 3PPQ-homepage.
+<em>3ppq</em> om terug te keren naar de 3ppq-homepage.
 
 <p>
 
@@ -26,7 +26,7 @@ Klik op de knop <em>Inloggen</em> om in te loggen, of klik op de knop
             onclick="window.open('/psych.html', '_self'); return false;">
     </td>
     <td>
-        <input type="submit" value="3PPQ" 
+        <input type="submit" value="3ppq" 
             onclick="window.open('/index.html', '_self'); return false;">
     </td>
 </tr>

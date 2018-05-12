@@ -16,20 +16,6 @@ Functionaliteitstest
 Gegenereerde rapporten blijven een maand beschikbaar (en daarna mogelijk nog
     enige tijd via backup-restores, cf. 2 May 2018 11:31:12)
 
-Registratiepagina Fri, 11 May 2018 12:00:26:
-
-> - Tekst \221Om de faciliteiten \205.  aanmelden\222 verwijderen
-> - \221Zodra uw aanmelding is verwerkt\222 vervangen in \221Na registratie\222
-> - \221Naam\222 wijzigen in \221Voorletter(s)\222. Dit omdat de cliënt een e-m\
-ail
-> krijgt waarin de psycholoog genoemd wordt. Netter vind ik dan R.M. Mosterman
-> i.p.v. Ineke Mosterman.
-> - \221E-mail adres\222 vervangen in \221E-mail\222
-> - \221Wachtwoord\222 wijzigen in \221Kies een wachtwoord\222
-> - Hierachter aangeven welke eisen er aan wachtwoord worden gesteld:
-> - \221Aanmelden\222 vervangen door \221Registreren\222
-> - Op de gehele site \2213PPQ\222 vervangen door \2213ppq\222
-> - De tekst \2213ppq neemt privacy serieus\205\222 verwijderen.
 
 
 Aanmelding is verwerkt pagina: Fri, 11 May 2018 12:00:26:
@@ -70,6 +56,21 @@ Niet-geactiveerde psycholoog registraties worden na twee dagen verwijderd.
 ===========================================================================
 Gedaan:
 =======
+
+Registratiepagina Fri, 11 May 2018 12:00:26:
+
+> - Tekst \221Om de faciliteiten \205.  aanmelden\222 verwijderen
+> - \221Zodra uw aanmelding is verwerkt\222 vervangen in \221Na registratie\222
+> - \221Naam\222 wijzigen in \221Voorletter(s)\222. Dit omdat de cliënt een e-m\
+ail
+> krijgt waarin de psycholoog genoemd wordt. Netter vind ik dan R.M. Mosterman
+> i.p.v. Ineke Mosterman.
+> - \221E-mail adres\222 vervangen in \221E-mail\222
+> - \221Wachtwoord\222 wijzigen in \221Kies een wachtwoord\222
+> - Hierachter aangeven welke eisen er aan wachtwoord worden gesteld:
+> - \221Aanmelden\222 vervangen door \221Registreren\222
+> - Op de gehele site \2213PPQ\222 vervangen door \2213ppq\222
+> - De tekst \2213ppq neemt privacy serieus\205\222 verwijderen.
 
 Wachtwoord vereisten (15 Apr 2018 13:31:47): 
     10 May 2018 01:38:58: lengte van 5 characters, minstens bestaand uit een

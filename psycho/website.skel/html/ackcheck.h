@@ -17,8 +17,8 @@ van uw e-mail adres eenmalig te vermelden.
 
 Klik op de knop <em>Inloggen</em> om in te loggen.
 <p>
-Door op de knop <em>3PPQ homepage</em> te klikken keert u terug naar de
-3PPQ-homepage. 
+Door op de knop <em>3ppq homepage</em> te klikken keert u terug naar de
+3ppq-homepage. 
 <p>
 
 <div class=lightgrey>
@@ -29,7 +29,7 @@ Door op de knop <em>3PPQ homepage</em> te klikken keert u terug naar de
         onclick="window.open('/psych.html', '_self'); return false;">
 </td>
 <td>
-    <input type="submit" value="3PPQ homepage" 
+    <input type="submit" value="3ppq homepage" 
         onclick="window.open('/index.html', '_self'); return false;">
 </td>
 </table>

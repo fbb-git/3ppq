@@ -12,11 +12,6 @@ Homepage mal: Wim, 3 May 2018 11:28:41, 6 May 2018 17:17:21     -- te groot
 
 Functionaliteitstest
 
-Wachtwoord vereisten (15 Apr 2018 13:31:47): 
-    10 May 2018 01:38:58: lengte van 5 characters, minstens bestaand uit een
-    letter, cijfer, en een niet alfa-numeriek teken: .,\/#!$%\^&\*;:{}=\-_`~()
-    (confirmed: 10 May 2018 17:17:27)
-
 
 Gegenereerde rapporten blijven een maand beschikbaar (en daarna mogelijk nog
     enige tijd via backup-restores, cf. 2 May 2018 11:31:12)
@@ -75,6 +70,11 @@ Niet-geactiveerde psycholoog registraties worden na twee dagen verwijderd.
 ===========================================================================
 Gedaan:
 =======
+
+Wachtwoord vereisten (15 Apr 2018 13:31:47): 
+    10 May 2018 01:38:58: lengte van 5 characters, minstens bestaand uit een
+    letter, cijfer, en een niet alfa-numeriek teken: .,\/#!$%^&*;:{}=\-_`~()
+    (confirmed: 10 May 2018 17:17:27)
 
 Inlogpagina Fri, 11 May 2018 12:00:26:
 

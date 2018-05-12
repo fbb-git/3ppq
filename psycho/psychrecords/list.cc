@@ -17,7 +17,11 @@ void list()
         Psych psych;
         psych.get(ep->key);
 
+        DateTime registrationTime(psych.registrationTime(), 
+                                    DateTime::UTC);
+
         cout << "   e-mail: " << psych.eMail() << ", acknowledged: " <<
-                                 psych.ack() << endl;
+                                 psych.ack() << 
+                                ", since: " << registrationTime << endl;
     }
 }

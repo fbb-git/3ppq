@@ -30,8 +30,6 @@ g_log << "addPsych called" << endl;
 
     LockGuard lg{ d_data.lg() };
 
-    reportsDir(pwd);
-
     d_display.out(
         d_data.add(emailKey(), toString()) ? "ackcheck.h" : "knownpsych.h"
     );

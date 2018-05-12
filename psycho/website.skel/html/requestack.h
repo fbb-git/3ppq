@@ -3,7 +3,7 @@
 </head>
 
 <body class="full"> 
-    <img src="/images/profile.jpg" class=logo>
+    <img src="/images/3ppqUL.jpg" class=logo>
 
 <div class="container">
 
@@ -12,7 +12,7 @@
 
 <h1>3PPQ Aanmeldingsverificatie</h1>
 
-Beste $0 $1,<p>
+Geachte $0 $1,<p>
 
 U heeft per e-mail een verificatienummer ontvangen.<br>
 U kunt het ontvangen nummer hieronder invullen. Druk vervolgens op de

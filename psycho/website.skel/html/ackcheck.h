@@ -5,7 +5,7 @@
 
 <h1>Uw aanmelding is verwerkt</h1>
 
-Ter controle van uw e-mail adres ontvangt u, wanneer u voor de eerste keer
+Ter controle van uw e-mail adres ontvangt u, zodra u voor de eerste keer
 inlogt, een e-mail waarin een verificatienummer is vermeld.
 <p>
 

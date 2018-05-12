@@ -9,8 +9,6 @@
 
 <h1>Aanmeldingsverificatienummer onjuist</h1>
 
-<!-- img src="/images/aanmelden.jpg" class=logo-->
-
 Het door u vermelde verificatienummer is onjuist. 
 
 <p> Klik op de knop <em>Verificatie</em> om het juiste nummer alsnog in te

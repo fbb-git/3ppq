@@ -6,6 +6,7 @@
 
 #include <bobcat/log>
 #include <bobcat/configfile>
+#include <bobcat/glob>
 
 #include "../support/tools/tools.h"
 #include "../support/options/options.h"

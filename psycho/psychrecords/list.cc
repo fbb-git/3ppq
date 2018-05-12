@@ -20,7 +20,8 @@ void list()
         DateTime registrationTime(psych.registrationTime(), 
                                     DateTime::UTC);
 
-        cout << "   e-mail: " << psych.eMail() << ", acknowledged: " <<
+        cout << "   e-mail: " << psych.eMail() << 
+                ", ID = " << psych.ID() << ", acknowledged: " <<
                                  psych.ack() << 
                                 ", since: " << registrationTime << endl;
     }

@@ -36,11 +36,12 @@ try
         {
             cout << argv[1] << "(ID = " << ID << ") was removed\n";
 
-                                                // remove the reports/ID dir
-            Tools::childProcess(g_config.findKeyTail("rm:") + " -rf " +
-                                g_options.reportsDir() + ID);
-            cout << "directory " << g_options.reportsDir() + ID << 
-                    " was removed\n";
+            Glob glob{ g_options.reportsDir() + ID + ".*" };
+            for (auto const *name: glob)
+            {
+                if (unlink(name) != 0)
+                    g_log << "could not remove `" << name << '\'' << endl;
+            }
         }
     }
 }

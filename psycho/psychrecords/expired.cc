@@ -39,10 +39,10 @@ void expired()
         
         if (not psych.get(hash))                    // get the psych's record
             g_log << addr << " not found\n";
-        else
-        {
+        else if (dataStore.erase(hash))
             g_log << "removed " << addr << endl;
-        }
+        else
+            g_log << "could not auot-remove " << addr << endl;
     }
 }
 

@@ -8,7 +8,7 @@ namespace {
 
 Options g_options{ g_base };
 
-Log g_log{ "/tmp/log" };
+Log g_log{ g_options.log() };
 
 int main(int argc, char **argv)
 try

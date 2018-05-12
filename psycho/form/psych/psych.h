@@ -53,7 +53,8 @@ class Psych
     // data below are saved to file
 
     uint32_t    d_time;             // registration time 
-    uint16_t    d_ack;              // if != 0 then e-mail acknowledge
+    uint16_t    d_ack;              // if != 0 then e-mail acknowledgement
+                                    // pending
     uint16_t    d_nClients;         // # clients this psychologist
     uint16_t    d_ID;               // identification number
                                     

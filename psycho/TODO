@@ -13,26 +13,6 @@ Homepage mal: Wim, 3 May 2018 11:28:41, 6 May 2018 17:17:21     -- te groot
 Functionaliteitstest
 
 
-Gegenereerde rapporten blijven een maand beschikbaar (en daarna mogelijk nog
-    enige tijd via backup-restores, cf. 2 May 2018 11:31:12)
-
-
-
-Registratie:  Fri, 11 May 2018 12:00:26:
-> Minstens 5 minuten later (zelfs na de mail met het gewijzigde wachtwoord),
-> krijg ik toch op elfen@planet.nl het bericht binnen dat ik geregistreerd ben
-> (e-mailtekst 1). De mail is correct, met uitzondering van de aanhef: \221Best\
-e\222
-> moet \221Geachte\222 zijn.
-
-Wb de vertraging: wellicht maken jullie gebruik van greylisting oid, waarbij
-een nieuw inkomende mail een tijdje wordt aangehouden voordat 't wordt
-doorgestuurd naar de geadresseerde: een anti-spam maatregel. Wel is 't zo dat
-'t nummer pas wordt gemaild wanneer je de verificatiepagina opent. Dat kan nog
-wel even worden toegevoegd aan de tekst van de pagina.
-
-
-
 ===========================================================================
 Aandachtspunten:
 ================
@@ -44,9 +24,29 @@ Niet-geactiveerde psycholoog registraties worden na twee dagen verwijderd.
     (Procedure: implemented, needs activation by 3ppq's cron)
 
 
+Gegenereerde rapporten blijven een maand beschikbaar (en daarna mogelijk nog
+    enige tijd via backup-restores, cf. 2 May 2018 11:31:12)
+    (Trivial: simple cron-job will handle this)
+
 ===========================================================================
 Gedaan:
 =======
+
+Registratie:  Fri, 11 May 2018 12:00:26:
+> Minstens 5 minuten later (zelfs na de mail met het gewijzigde wachtwoord),
+> krijg ik toch op elfen@planet.nl het bericht binnen dat ik geregistreerd ben
+> (e-mailtekst 1). De mail is correct, met uitzondering van de aanhef: \221Best\
+e\222
+> moet \221Geachte\222 zijn.
+
+Cannot reproduce: registration  
+    e-mail: frank@suffix.rc.rug.nl, acknowledged: 1, 
+    since: Sat May 12 12:32:33 2018
+
+received an e-mail with time stamp:
+                12 May 2018 14:33:34 +0200, only about a minute later.
+
+
 
 Aanmelding is verwerkt pagina: Fri, 11 May 2018 12:00:26:
 

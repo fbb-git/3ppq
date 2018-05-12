@@ -5,6 +5,7 @@
           charset=windows-1252">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/js/preamble.js"></script>
+    <script src="/js/pwdcheck.js"></script>
     <script src="/js/register.js"></script>
 </head>
 
@@ -37,7 +38,7 @@ u voor de eerste keer inlogt.
 <table style="border-collapse: collapse;">
 
 <tr class="darkrow">
-    <td class=right>Naam: </td> 
+    <td class=right>Voorletter(s): </td> 
     <td ><input class=margin type="text" name="name" size="50"></td>
 </tr>
 
@@ -47,7 +48,7 @@ u voor de eerste keer inlogt.
 </tr>
 
 <tr class=darkrow>
-    <td class=right>E-mail adres: </td> 
+    <td class=right>E-mail: </td> 
     <td ><input class=margin type="email" name="email" size="50"></td>
 </tr>
 
@@ -70,7 +71,9 @@ u voor de eerste keer inlogt.
 
 <tr>
     <td class=right> Wachtwoord:</td>
-    <td> <input class=margin type="password" name="pwd" size="20"> </td>
+    <td> <input class=margin type="password" name="pwd" size="20" title=
+  "Minstens 5 tekens: letters, cijfers en&#010;-.,\/#!$%\^&\*;:{}=`~() tekens"
+        > </td>
 </tr>
 
 <tr>

@@ -24,7 +24,11 @@ bool Psych::validProfileData(uint8_t *field)
 
 De nieuwe gegevens van uw profiel konden niet worden verwerkt.<br>
 Controleer met name uw NIP-nummer en e-mail adres.<br>
-Ook dient een eventueel nieuw wachtwoord twee keer te zijn vermeld.
+Ook dient een eventueel nieuw wachtwoord twee keer te zijn vermeld en
+moet een nieuw wachtwoord minstens uit )_" + 
+          to_string(Tools::MIN_PWD_LENGTH) + R"_( tekens bestaan, waaronder
+letters, cijfers en tekens uit de serie: 
+        <pre>-.,\/#!$%\^&\*;:{}=`~()</pre>
 <p>
 )_"
         }

@@ -17,6 +17,9 @@ function validate()
         return false;
     }
 
+    if (!pwdCheck(pwd))
+        return false;
+
     if (pwd != pwd2)
     {
         alert("De passwords verschillen: ze moeten gelijk zijn");
@@ -28,4 +31,6 @@ function validate()
 
     return true;
 } 
+
+
 

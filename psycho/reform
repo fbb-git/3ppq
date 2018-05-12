@@ -5,9 +5,13 @@ if [ $# -eq 0 ] ; then
     exit 1
 fi
 
+base=`pwd`
+
 cd support
 icmbuild
-cd ../form
+cd ${base}/form
 icmbuild
-cp tmp/bin/binary $1/bin/form
+cd ${base}
+
+cp form/tmp/bin/binary $1/bin/form
 

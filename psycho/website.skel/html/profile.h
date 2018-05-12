@@ -7,6 +7,7 @@
 
     <script src="/js/preamble.js"></script>
     <script>var fields=$3;</script>
+    <script src="/js/pwdcheck.js"></script>
     <script src="/js/profile.js"></script>
 </head>
 

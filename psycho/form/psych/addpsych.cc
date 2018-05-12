@@ -9,6 +9,8 @@
 
 void Psych::addPsych()
 {
+g_log << "addPsych called" << endl;
+
     if (not validRegistrationData(&d_nip, &d_field))
     {
         d_display.out("rejectpsych.h");

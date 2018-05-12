@@ -97,6 +97,7 @@ class Psych
         void addPsych();
         uint8_t parseField();
         bool validRegistrationData(uint64_t *nip, uint8_t *field);
+        static bool pwdRequirements(std::string const &pwd);
         void reportsDir(std::string const &pwd) const;
 
         void verifyAck();

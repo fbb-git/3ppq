@@ -11,6 +11,7 @@
 #include <bobcat/cgi>
 #include <bobcat/glob>
 #include <bobcat/stat>
+#include <bobcat/pattern>
 
 #include "../../support/global/global.h"
 #include "../../support/options/options.h"

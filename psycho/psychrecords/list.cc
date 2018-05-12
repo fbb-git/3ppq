@@ -17,6 +17,7 @@ void list()
         Psych psych;
         psych.get(ep->key);
 
-        cout << "   e-mail: " << psych.eMail() << endl;
+        cout << "   e-mail: " << psych.eMail() << ", acknowledged: " <<
+                                 psych.ack() << endl;
     }
 }

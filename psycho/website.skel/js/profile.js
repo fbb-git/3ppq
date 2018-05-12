@@ -58,6 +58,9 @@ function validate(action)
         return false;
     }
 
+    if (newpwd != "" && !pwdCheck(newpwd))
+        return false;
+        
     if (newpwd != newpwd2)
     {
         alert("Het nieuwe wachtwoord moet gelijk zijn aan de verificatie");

@@ -12,7 +12,7 @@ void Psych::verifyAck()
     uint16_t ack = Tools::valueOr(d_cgi->param1("ack"), 0);
     if (ack == 0 || ack != d_ack)
     {
-        d_display.append({ "email", "mode", "pwd" });
+        d_display.append({ "mode", "pwd" });
         d_display.out("ackerror.h");
         return;
     }

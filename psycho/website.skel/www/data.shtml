@@ -63,7 +63,7 @@ De verzamelde data zijn beschikbaar via
 </form>
 </div>  <!-- container -->
 
-<!--#include file="csvfooter">
+<!--#include file="csvfooter" -->
 
 </body></html>
 

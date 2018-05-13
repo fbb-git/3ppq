@@ -66,18 +66,18 @@ De volgende documenten zijn beschikbaar:
     <li> <a href="/docs/gebruiksprotocol.pdf"> gebruiksprotocol </a>
     <li> <a href="/docs/emptyplot.pdf"> Lege grafiek </a>
     <li> <a href="/docs/demoplot.pdf"> Voorbeeld ingevulde grafiek </a>
-    <li> <a href="/docs/fweights.csv"> 42 x 6 factorgewichtenmatrix. </a> (CSV
-        bestand: de eerste vijf kolommen zijn de factorgewichten voor de
+    <li> <a href="/docs/fweights.csv"> 42 x 6 factorgewichtenmatrix. </a> <br>
+       (CSV bestand: de eerste vijf kolommen zijn de factorgewichten voor de
         factoren die in het voorbeeld van de ingevulde grafiek zijn genoemd,
         de zesde kolom zijn de factorgewichten voor de `algemene
-        persoonlijkheidsfactor'. 
+        persoonlijkheidsfactor'.)
     <li><a href="/docs/privacyverklaring.pdf"> de 3ppq privacy verklaring</a>
 </ul>
 
 </form>
 </div>  <!-- container -->
 
-<!--#include file="csvfooter">
+<!--#include file="csvfooter" -->
 
 </body></html>
 

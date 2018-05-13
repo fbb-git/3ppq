@@ -1,4 +1,4 @@
-#include "datafilterstreambuf.h"
+#include "filterstreambuf.h"
 
 #include <iostream>
 

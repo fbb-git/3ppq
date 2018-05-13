@@ -1,5 +1,0 @@
-#include "datafilterstreambuf.ih"
-
-DataFilterStreambuf::
-{
-}

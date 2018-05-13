@@ -1,6 +1,7 @@
-#include "datafilterstreambuf.ih"
+#include "filterstreambuf.ih"
 
-bool DataFilterStreambuf::filter(char const **srcBegin, char const **srcEnd) 
+bool FilterStreambuf::trailer(
+                            char const **srcBegin, char const **srcEnd) 
 {
     while (getline(d_in, d_buffer))
     {
@@ -8,15 +9,8 @@ bool DataFilterStreambuf::filter(char const **srcBegin, char const **srcEnd)
         {
             d_buffer += "\n\n";
 
-            if (not d_csvData)
-            {
-                d_csvData = true;
-                cout << "Content-type: text/csv\r\n\r\n";
-            }
-
             *srcBegin = &d_buffer.front();
             *srcEnd   = &d_buffer.back();
-
 
             return true;
         }

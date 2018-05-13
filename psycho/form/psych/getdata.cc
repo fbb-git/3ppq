@@ -15,9 +15,9 @@ try
 
     requireEqual("email", d_eMail);
 
-    DataFilterStreambuf dataFilterStreambuf{ in, d_ID };
+    FilterStreambuf filterStreambuf{ in, d_ID };
 
-    istream ownData{ &dataFilterStreambuf };
+    istream ownData{ &filterStreambuf };
 
     cout << ownData.rdbuf();
 

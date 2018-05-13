@@ -81,12 +81,12 @@ try cd ${website}
 
 try touch log
 
-try chgrp -R www-data .
+chgrp -fR www-data .
 
 try chmod o-rwx .               # no access except for www-data and
                                 # user
 
                                 # www-data may write log and some directories
-try chmod -R g+w log data tmp reports
+chmod -fR g+w log data tmp reports
 
 echo ready.

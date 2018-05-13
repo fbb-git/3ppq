@@ -45,9 +45,6 @@
 </nav>                                                                      
  
 <p>
-De in de menubalk vermelde opties zijn mogelijk deels operationeel.<br>
-Plaats de muis boven een optie voor een korte beschrijving van hun functie.
-<p>
 
 <!-- messages for the psychologist -->
 $0

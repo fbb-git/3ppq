@@ -95,6 +95,8 @@ class Psych
         bool pwdMatch() const;
         void requestAck();
 
+        void getData();                 // called from www/data.shtml
+
         void addPsych();
         uint8_t parseField();
         bool validRegistrationData(uint64_t *nip, uint8_t *field);

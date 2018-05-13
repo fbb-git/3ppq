@@ -10,6 +10,7 @@ Psych::Map Psych::s_state = // states must retrieve the psych's data
     { "verifyAck",        &Psych::verifyAck },      // verify the Ack nr
     { "addPsych",         &Psych::addPsych },       // add a new psych.
     { "report",           &Psych::report },         // download a report
+    { "getData",          &Psych::getData },        // download a report
 };
 
 Psych::Map2display Psych::s_clientPageRequest =

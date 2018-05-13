@@ -2,6 +2,7 @@
 
 #include "../../support/global/global.h"
 #include "../../support/display/display.h"
+#include "../../support/tools/tools.h"
 
 using namespace std;
 using namespace FBB;

@@ -61,6 +61,8 @@ struct Tools
                                                             // on failure
     static void delay();
 
+    static void textHtml();
+
     static bool checkParam(FBB::CGI &cgi, char const *param);
 
     static long long valueOr(std::string const &value, int fallback);

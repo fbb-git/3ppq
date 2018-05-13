@@ -7,6 +7,7 @@
 
     <script src="/js/preamble.js"></script>
     <script src="/js/menu.js"></script>
+    <script src="/js/data.js"></script>
 </head>
 
 <body class="full">
@@ -56,9 +57,31 @@
 
 <h1>Data</h1>
 
+De door u verzamelde data zijn beschikbaar als CSV bestand via
+<a href="#" onclick="getData()">deze hyperlink</a>.
+<p>
 
-De verzamelde data zijn beschikbaar via
-<a href="/docs/data.csv">deze hyperlink</a>.
+De CSV data zijn gegroepeerd in blokken van vijf regels. Elke block bevat de
+beoordelingsdata van een volledige vragenlijstafname. Mochten sommige
+`anderen' de vragenlijst niet (binnen een week) hebben ingevuld dan zijn de
+antwoorden op de vragen voor die `anderen' gecodeerd als -2.
+
+<p>
+
+Elke regel uit het CSV bestand bevat de volgende kolommen:
+<ul>
+    <li> Kolom 1: Uw intern gebruikte identificatienummer
+    <li> Kolom 2: De door u gedefini&euml;erde client-identificatie
+    <li> Kolom 3: 1: zelfperspectief, 2: metaperspectief, 3: anderperspectief
+    <li> Kolom 4: Een standaard <em>timestamp</em> (aantal seconden sinds 1
+        jan. 1970, 0:00 uur): het moment dat de afnameprocedure is gestart;
+    <li> Kolom 5: Een standaard <em>timestamp</em>: het moment dat alle data
+        zijn ontvangen (eventueel dus een week na het tijdstip vermeld in
+        kolom 4). 
+    <li> Kolom 6 t/m kolom 47: de antwoorden op, resp. vraag 1 t/m vraag 42,
+        gecodeerd als -2: ontbrekend, -1: nee! -.5: nee, 0: ?, .5: ja; 1: ja!
+</ul>
+<p>
 
 </form>
 </div>  <!-- container -->

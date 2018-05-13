@@ -17,7 +17,7 @@ var questions = [
     "anderen het werk laat doen",                           // 16. 
     "hardop lacht",                                         // 17. 
     "moeilijk te begrijpen is",                             // 18. 
-    "doet wat van hem/haar verwacht wordt",                 // 19. 
+    "doet wat van _himHer_ verwacht wordt",                 // 19. 
     "zich aan de regels houdt",                             // 20. 
     "iets met iemand deelt",                                // 21. 
     "doorgaat tot het doel is bereikt",                     // 22. 
@@ -32,11 +32,11 @@ var questions = [
     "bevelen opvolgt",                                      // 31. 
     "doet wat anderen doen",                                // 32. 
     "tegen de stroom in zwemt",                             // 33. 
-    "alles doet om zijn/haar zin te krijgen",               // 34. 
+    "alles doet om _hisHer_ zin te krijgen",                // 34. 
     "iets doet zonder nadenken",                            // 35. 
     "openstaat voor idee&euml;n",                           // 36. 
     "beslissingen aan anderen overlaat",                    // 37. 
-    "weet waarover hij/zij spreekt",                        // 38. 
+    "weet waarover _heShe_ spreekt",                        // 38.
     "graag iets nieuws leert",                              // 39. 
     "zaken overdrijft",                                     // 40. 
     "hulp afslaat",                                         // 41. 

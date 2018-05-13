@@ -6,6 +6,10 @@
 //  sessionStorage.questions = questions array
 //  sessionStorage.ratings = Array(questions.length);
 
+//  sessionStorage.heShe = "hij" or "zij";      _heShe_
+//  sessionStorage.himHer = "hem" or "haar";    _himHer_
+//  sessionStorage.hisHer = "zijn" or "haar";   _hisHer_
+
 var nQuestions = 0;
 var idx = 0;
 
@@ -26,7 +30,6 @@ function validate()
 function answer(value)
 {
     var ratings = sessionStorage.ratings;
-//    var idx = Number(sessionStorage.idx);
 
     sessionStorage.ratings = 
         ratings.substr(0, idx) + value + ratings.substr(idx + 1);

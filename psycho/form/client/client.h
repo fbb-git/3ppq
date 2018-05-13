@@ -32,6 +32,9 @@ class Client
 
     static CompletedHandler s_completed[];
     static size_t const s_completedSize;
+    static char const *s_hisHer[2];
+    static char const *s_himHer[2];
+    static char const *s_heShe[2];
 
     public:
     Client(FBB::CGI &cgi);

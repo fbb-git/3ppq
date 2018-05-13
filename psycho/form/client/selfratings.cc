@@ -11,7 +11,10 @@ void Client::selfRatings(WIPdata &wipData, RatingType type,
 
     d_display.out(file, 
         {
-            opening
+            opening,
+            s_himHer[wipData.gender()],
+            s_hisHer[wipData.gender()],
+            s_heShe[wipData.gender()]
         }
     );
 }

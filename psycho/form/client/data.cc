@@ -18,4 +18,7 @@ Client::CompletedHandler Client::s_completed[] =
 
 size_t const Client::s_completedSize = size(s_completed);
 
-
+char const *Client::s_heShe[2] =    { "hij",    "zij" };
+char const *Client::s_hisHer[2] =   { "zijn",   "haar" };
+char const *Client::s_himHer[2] =   { "hem",    "haar" };
+        

@@ -45,7 +45,7 @@ class WIPdata
 
         uint16_t psychID() const;
         std::string const &clientIdent() const;
-        bool gender() const;
+        bool gender() const;                            // false: F, true: M
         std::string const &clientName() const;
 
         uint16_t clientLogin() const;

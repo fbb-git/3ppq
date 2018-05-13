@@ -31,7 +31,7 @@
             </a>
         </li>
         <li class="li-linewise">
-            <a href="/documents.html" title="Download documenten"
+            <a href="/documents.shtml" title="Download documenten"
                 onclick="validate(0)" >
                 Documenten
             </a>
@@ -62,5 +62,8 @@ De verzamelde data zijn beschikbaar via
 
 </form>
 </div>  <!-- container -->
+
+<!--#include file="csvfooter">
+
 </body></html>
 

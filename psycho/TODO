@@ -2,6 +2,67 @@
 TODO
 ====
 
+Deactivatie moet WIPdata verwijderen.
+
+install moet permissies www-data.www-data files (WIPdata?) ongemoeid laten
+
+13 May 2018 16:41:09
+
+Breedte/hoogte getoonde informatie tot maxima beperken (-> Annotations!)
+
+
+13 May 2018 15:43:37 teksten van items:
+
+> - De termen hem/haar en hij/zij zijn nog niet in de juiste geslachtsvorm
+> gedefinieerd
+
+
+13 May 2018 15:43:37 eind vd zelfafname: tekst wordt:
+
+\223U hebt alle vragen van deel 1 beantwoord. Klik \
+op
+> \221verstuur\222 om uw vragen op te slaan en naar deel 2 te gaan.\224
+
+
+13 May 2018 15:43:37 eind vd metaafname: tekst wordt:
+
+>
+> - Aan het eind van de meta-afname volgt de tekst: 'In de laatste fase van
+> het psychologisch onderzoek worden drie anderen benaderd om de vragenlijst
+> over u in te vullen.
+>
+> Om deze drie anderen een uitnodiging te kunnen sturen, dient u hieronder hun
+> e-mailadressen in te vullen. Zorgt u er alstublieft voor de e-mailadressen
+> correct in te vullen.'
+>
+> Graag wijzigen in: \223U hebt alle vragen van deel 2 beantwoord. Klik op
+> \221verstuur\222 om uw vragen op te slaan en naar deel 3 te gaan.\224
+>
+> - Deel 3 begint met de tekst: 'In de laatste fase van het psychologisch
+> onderzoek worden drie anderen benaderd om de vragenlijst over u in te
+> vullen.
+>
+> Om deze drie anderen een uitnodiging te kunnen sturen, dient u hieronder hun
+> e-mailadressen in te vullen. Zorgt u er alstublieft voor de e-mailadressen
+> correct in te vullen.'
+>
+> Graag vervangen door de tekst uit het gebruikersprotocol: \223Het derde
+> onderdeel van dit onderzoek bestaat uit het voorleggen van de vragen aan
+> drie anderen die u goed kennen. Wilt u daartoe de drie e-mailadressen van
+> deze anderen hieronder invullen? Wanneer u op \221verstuur\222 klikt krijgen \
+deze
+> drie anderen een uitnodiging om de vragen te beantwoorden en bent u klaar
+> met het onderzoek.\224
+>
+> - Hierna volgt de melding: 'Hartelijk dank voor het invullen van de
+> vragenlijst. Klik desgewenst op onderstaande knop om de 3ppq homepage te
+> openen.'
+>
+> Vervangen door: \223Het onderzoek is afgerond. Uw psycholoog krijgt de
+> resultaten en zal deze met u bespreken.\224 De knop 3ppq homepage kan
+> achterwege blijven.
+>
+
 Functionaliteitstest
 
 ===========================================================================
@@ -19,9 +80,27 @@ Gegenereerde rapporten blijven een maand beschikbaar (en daarna mogelijk nog
     enige tijd via backup-restores, cf. 2 May 2018 11:31:12)
     (Trivial: simple cron-job will handle this)
 
+
+11 May 2018 15:16:14
+Als er iets *niet* werkt, dan is 't heel prettig wanneer je ook de tijd waarop
+je dat constateert vermeldt, zodak ik kan kijken wat de logs te vertellen
+hebben.
+
 ===========================================================================
 Gedaan:
 =======
+
+13 May 2018 15:43:37
+
+> - De antwoordballetjes staan niet op gelijke afstand. Dat is storend voor de
+> preciezen (terwijl het omgekeerde niet het geval is). Indien mogelijk
+> aanpassing.
+
+13 May 2018 15:43:37 vragenpresentatie:
+
+> - Aangezien het om een vraag gaat, dient aan alle items een vraagteken te
+> worden toegevoegd.
+
 
 12 May 2018 19:19:50: Tekst bij de data-pagina:
 > De data worden beschikbaar gesteld in een CSV-bestand

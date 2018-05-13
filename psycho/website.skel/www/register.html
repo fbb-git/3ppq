@@ -14,10 +14,46 @@
 
 <div class="container">
 
-<h1>Registratie als psycholoog</h1>
+<nav class="top-menu-markup">                                               
+    <ul class="spread">                                                     
+        <li class="li-linewise">
+            <a href="/auteurs.html" title="Auteurs van de 3ppq" 
+                onclick="validate(0)" >
+                Auteurs 
+            </a>
+        </li>
+        <li class="li-linewise">
+            <a href="/toelichting.html" title="Nadere toelichting" 
+                onclick="validate(0)" >
+                Toelichting
+            </a>
+        </li>
+        <li class="li-linewise">
+            <a href="/psych.html" title="Inloggen als geregistreerd gebruiker"
+                onclick="validate(0" >
+                Inloggen
+            </a>
+        </li>
+        <li class=li-linewise>
+            <a href="/register.html" title="Gebruikersregistratie "
+                onclick="return false;" >
+                Registreren
+            </a>
+        </li>
+        <li class=li-linewise>
+            <a href="/homecontact.shtml" title="3ppq contact informatie"
+                onclick="validate(0)" >
+                Contact
+            </a>
+        </li>
+    </ul>                                                                   
+</nav>                                                                      
+
+
+<h1>Gebruikersregistratie</h1>
 
 Vul de hieronder gevraagde gegevens in, en klik vervolgens op 
-<em>Aanmelden</em>.
+<em>Registreren</em>.
 <p>
 
 Na registratie ontvangt u een e-mail waarin een bevestigingsnummer staat. Dat
@@ -26,7 +62,7 @@ bevestigingsnummer wordt u gevraagd nadat u voor de eerste keer hebt ingelogd.
 <p>
 
 <form name="form" action="/bin/form" 
-      onsubmit="return validate()" method="post">
+      onsubmit="return validate(1)" method="post">
 
 
 <div class="lightgrey">

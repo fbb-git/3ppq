@@ -45,7 +45,7 @@
             </a>
         </li>
         <li class=li-linewise>
-            <a href="/contact.html" title="3ppq contact informatie"
+            <a href="/psychcontact.html" title="3ppq contact informatie"
                 onclick="validate(0)"
             >
                 Contact
@@ -61,7 +61,7 @@ De door u verzamelde data zijn beschikbaar als CSV bestand via
 <a href="#" onclick="getData()">deze hyperlink</a>.
 <p>
 
-De CSV data zijn gegroepeerd in blokken van vijf regels. Elke block bevat de
+De CSV data zijn gegroepeerd in blokken van vijf regels. Elke blok bevat de
 beoordelingsdata van een volledige vragenlijstafname. Mochten sommige
 `anderen' de vragenlijst niet (binnen een week) hebben ingevuld dan zijn de
 antwoorden op de vragen voor die `anderen' gecodeerd als -2.

@@ -32,12 +32,17 @@
 
 .container          /* all info in the body up to the footer */
 {
+    max-width: 780px; 
+    clear: both;
     min-height: 85%;
     font-size: 16px;
     line-height: 1.5;
 
     padding-left:5px;
     padding-right:5px;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .darkrow        /* dark table rows */
@@ -54,7 +59,7 @@
     
 .full               /* used to fillup the page (body) completely */
 {
-    max-width: 780px;
+    max-width: 900px;       /* 780px; */
     max-height: 560px;
     font-family:  Arial, Verdana, Helvetica, sans-serif;
     margin-left: auto;
@@ -112,6 +117,7 @@
 
 .top-menu-markup
 {
+    clear: both;
     background-color: #eeffee;
     height: 1.5em;
 }

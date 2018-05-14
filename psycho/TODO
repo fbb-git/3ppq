@@ -2,9 +2,12 @@
 TODO
 ====
 
+<nav> sections above <div container> sections
+
 Deactivatie moet WIPdata verwijderen.
 
 install moet permissies www-data.www-data files (WIPdata?) ongemoeid laten
+
 
 13 May 2018 15:43:37 eind vd zelfafname: tekst wordt:
 
@@ -78,6 +81,10 @@ hebben.
 ===========================================================================
 Gedaan:
 =======
+
+14 May 2018 06:06:27  menu-balk onder 't logo over de max-breedte.
+
+13 May 2018 19:44:35 Logo zonder tekst-wrap
 
 13 May 2018 15:43:37 teksten van items:
 

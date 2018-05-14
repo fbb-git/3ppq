@@ -34,8 +34,8 @@ function answer(value)
     sessionStorage.ratings = 
         ratings.substr(0, idx) + value + ratings.substr(idx + 1);
 
-    if ((1 + idx) < nQuestions)
-        ++sessionStorage.idx;
+//    if ((1 + idx) < nQuestions)
+//        ++sessionStorage.idx;
 
     window.location.reload();
 }
@@ -83,18 +83,15 @@ function setArrows()
     }
     document.getElementById('lastDiv').style.visibility = lastDivVisible;
 
+    if (idx == 0)
+        document.getElementById('backID1').setAttribute('disabled', '');
+    else
+        document.getElementById('backID1').removeAttribute('disabled');
 
-    var backwardVisible = idx == 0 ? 'hidden' : 'visible';
-    document.getElementById('backID1').style.visibility = backwardVisible;
-    document.getElementById('backID2').style.visibility = backwardVisible;
-
-    var forwardVisible = answer == 0 || idx + 1 == nQuestions ? 
-                                'hidden' 
-                            : 
-                                'visible';
-
-    document.getElementById('forwardID1').style.visibility = forwardVisible;
-    document.getElementById('forwardID2').style.visibility = forwardVisible;
+    if (answer == 0 || idx + 1 == nQuestions)
+        document.getElementById('forwardID1').setAttribute('disabled', '');
+    else
+        document.getElementById('forwardID1').removeAttribute('disabled');
 }
 
     

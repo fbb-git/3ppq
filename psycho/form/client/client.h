@@ -36,6 +36,13 @@ class Client
     static char const *s_himHer[2];
     static char const *s_heShe[2];
 
+    static char const s_closeSelf[];
+    static char const s_closeMeta[];
+    static char const s_closeOther[];
+    static char const s_selfThanks[];
+    static char const s_otherThanks[];
+
+
     public:
     Client(FBB::CGI &cgi);
 
@@ -47,11 +54,17 @@ class Client
 
         void answered();
 
-        void clientPage(WIPdata &wipData);
+        void clientPage(WIPdata &wipData);  // show self, meta ratings, email
+                                            // request. 
+
+                                            // self/meta-ratings instructions
         void selfRatings(WIPdata &wipData, RatingType type, 
-                         char const *file, char const *opening);
+                         char const *file, 
+                         char const *opening, char const *closing); 
+
         void emailRequest(WIPdata const &wipData);
 
+                                            // show other page
         void otherPage(WIPdata &wipData, size_t idx);
 
         void pidCid(WIPdata const &wipData);
@@ -70,6 +83,3 @@ class Client
 };
         
 #endif
-
-
-

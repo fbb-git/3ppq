@@ -10,14 +10,14 @@
 <form name="form" action="/bin/form" onsubmit="return validate()" 
       method="post">
 
-In de laatste fase van het psychologisch onderzoek worden drie anderen
-benaderd om de vragenlijst over u in te vullen.
+
+Het derde onderdeel van dit onderzoek bestaat uit het voorleggen van de vragen
+aan drie anderen die u goed kennen. Wilt u daartoe de drie e-mailadressen van
+deze anderen hieronder invullen? Wanneer u op `Verstuur' klikt krijgen 
+deze drie anderen een uitnodiging om de vragen te beantwoorden en bent u klaar
+met het onderzoek.
 
 <p>
-
-Om deze drie anderen een uitnodiging te kunnen sturen, dient u hieronder hun
-e-mailadressen in te vullen. Zorgt u er alstublieft voor de e-mailadressen
-correct in te vullen.
 
 <div class="lightgrey">
 

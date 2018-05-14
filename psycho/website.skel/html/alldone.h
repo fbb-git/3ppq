@@ -9,10 +9,8 @@
 
 <form name="form" action="/bin/form" onsubmit="validate()" method="post">
 
-Hartelijk dank voor het invullen van de vragenlijst.
+<script>document.write(sessionStorage.thanks)</script>
 
-Klik desgewenst op onderstaande knop om de 3ppq homepage te openen.
 <p>
 
-<input type=submit value="3ppq homepage">
 

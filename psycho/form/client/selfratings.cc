@@ -1,7 +1,8 @@
 #include "client.ih"
 
 void Client::selfRatings(WIPdata &wipData, RatingType type, 
-                         char const *file, char const *opening)
+                         char const *file, 
+                         char const *opening, char const *closing)
 {
 //    g_log << "self ratings " << type << endl;
 
@@ -14,7 +15,9 @@ void Client::selfRatings(WIPdata &wipData, RatingType type,
             opening,
             s_himHer[wipData.gender()],
             s_hisHer[wipData.gender()],
-            s_heShe[wipData.gender()]
+            s_heShe[wipData.gender()],
+            closing,
+            s_selfThanks
         }
     );
 }

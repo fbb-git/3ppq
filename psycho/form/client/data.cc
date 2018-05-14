@@ -22,3 +22,24 @@ char const *Client::s_heShe[2] =    { "hij",    "zij" };
 char const *Client::s_hisHer[2] =   { "zijn",   "haar" };
 char const *Client::s_himHer[2] =   { "hem",    "haar" };
         
+char const Client::s_closeSelf[] = 
+    "U hebt alle vragen van deel 1 beantwoord. Klik op "
+    "`Verstuur' om uw vragen op te slaan en naar deel 2 te gaan.";
+
+char const Client::s_closeMeta[] = 
+    "U hebt alle vragen van deel 2 beantwoord. Klik op "
+    "`Verstuur' om uw vragen op te slaan en naar deel 3 te gaan.";
+
+char const Client::s_closeOther[] = 
+    "Dit was de laatste vraag. Als u wilt kunt u nog antwoorden wijzigen. "
+    "Door op onderstaande knop `Verstuur' te klikken worden uw antwoorden "
+    "definitief.";
+
+char const Client::s_selfThanks[] = 
+    "Het onderzoek is afgerond. Uw psycholoog krijgt de resultaten "
+    "en zal deze met u bespreken.";
+
+char const Client::s_otherThanks[] = 
+    "Hartelijk dank voor het invullen van de vragenlijst.";
+
+

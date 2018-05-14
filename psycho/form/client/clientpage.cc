@@ -7,10 +7,15 @@ void Client::clientPage(WIPdata &wipData)
 
 
     if (wipData.selfRatings().front() == 0)         // no self ratings yet
-        selfRatings(wipData, SELF, "selfinstructions.h", "Bent u");
+        selfRatings(
+            wipData, SELF, "selfinstructions.h", "Bent u", s_closeSelf
+        );
 
     else if (wipData.metaRatings().front() == 0)   // no meta ratings yet
-        selfRatings(wipData, META, "metainstructions.h", "Vinden anderen u");
+        selfRatings(
+            wipData, META, "metainstructions.h", "Vinden anderen u", 
+            s_closeMeta
+        );
 
     else if (not wipData.hasEmail())
         emailRequest(wipData);

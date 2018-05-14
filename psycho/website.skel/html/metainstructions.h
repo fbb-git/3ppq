@@ -2,7 +2,12 @@
     <script src="/js/questions.js"></script>
     <script src="/js/instructions.js"></script>
     <script>
-        sessionStorage.opening = "$0";      // vinden anderen u
+        sessionStorage.opening  = "$0";     // vinden anderen u
+        sessionStorage.himHer   = "$1";
+        sessionStorage.hisHer   = "$2";
+        sessionStorage.heShe    = "$3";
+        sessionStorage.closing  = "$4";
+        sessionStorage.thanks   = "$5";
     </script>
 </head>
 

@@ -14,7 +14,12 @@ void Client::otherPage(WIPdata &wipData, size_t idx)
     d_display.out("otherinstructions.h", 
         {
             "Is",
-            wipData.clientName()
+            wipData.clientName(),
+            s_himHer[wipData.gender()],
+            s_hisHer[wipData.gender()],
+            s_heShe[wipData.gender()],
+            s_closeOther,
+            s_otherThanks
         }
     );
 }

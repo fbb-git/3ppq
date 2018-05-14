@@ -20,12 +20,14 @@ g_log << "data collection completed: writing " << g_options.data() << endl;
     
     data << wipData;
 
-    Report report{ wipData };
-    report.generate();
+//    Report report{ wipData };
+//    report.generate();
 
     Psych psych;
     if (not psych.get(Tools::md5hash(wipData.psychEmail())))
         throw false;
+
+    psych.deactivateClient(wipData);
 
     g_mailer.sendmail(
         wipData.psychEmail(),

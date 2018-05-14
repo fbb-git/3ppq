@@ -19,6 +19,7 @@ namespace FBB
 };
 
 class LockGuard;
+class WIPdata;
 
 class Psych
 {
@@ -80,6 +81,8 @@ class Psych
         bool ack() const;           // true: acknowledgement received
         uint32_t registrationTime() const;
         std::string fullName() const;
+
+        void deactivateClient(WIPdata const &wipData);  // 2.cc
 
     private:
         void read(std::string const &data);

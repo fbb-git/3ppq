@@ -4,14 +4,14 @@ void Psych::clientPage()
 {
     DisplayInfo displayInfo = { s_add + s_addActive };
 
-g_log << "clientpage request = `" << d_cgi->param1("request") << "', "
-        "valid client data: active: " <<  d_cgi->param1("active") << 
-           ", form-email: " <<  d_cgi->param1("clEmail") << 
-           ", email: " << d_cgi->param1("email") << 
-           ", ID: " << d_cgi->param1("ident") << 
-           ", gender: " << d_cgi->param1("gender") << 
-           ", name: " << d_cgi->param1("name") << 
-           ", lastname: " << d_cgi->param1("lastName") << endl;
+//g_log << "clientpage request = `" << d_cgi->param1("request") << "', "
+//        "valid client data: active: " <<  d_cgi->param1("active") << 
+//           ", form-email: " <<  d_cgi->param1("clEmail") << 
+//           ", email: " << d_cgi->param1("email") << 
+//           ", ID: " << d_cgi->param1("ident") << 
+//           ", gender: " << d_cgi->param1("gender") << 
+//           ", name: " << d_cgi->param1("name") << 
+//           ", lastname: " << d_cgi->param1("lastName") << endl;
 
     {
         LockGuard lg { d_data.lg() };

@@ -32,7 +32,7 @@
             </a>
         </li>
         <li class=li-linewise>
-            <a href="/psychcontact.html" title="3ppq contact informatie"
+            <a href="/psychcontact.shtml" title="3ppq contact informatie"
                 onclick="validate(0)" >
                 Contact
             </a>

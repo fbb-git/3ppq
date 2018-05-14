@@ -2,8 +2,6 @@
 TODO
 ====
 
-<nav> sections above <div container> sections
-
 Deactivatie moet WIPdata verwijderen.
 
 install moet permissies www-data.www-data files (WIPdata?) ongemoeid laten
@@ -36,6 +34,8 @@ hebben.
 ===========================================================================
 Gedaan:
 =======
+
+<nav> sections above <div container> sections
 
 Zodra er een rapport is geproduceerd moet 'deactiveren' uit 't client-menu
 worden vervangen door 'versturen'

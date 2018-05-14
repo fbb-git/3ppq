@@ -11,11 +11,7 @@
 
 <body class="full">
     <img src="/images/3ppqUL.jpg" class=logo>
-
-<div class="container">
-
 <form name="form" action="/bin/form" method="post">
-
 <nav class="top-menu-markup">                                               
     <ul class="spread">                                                     
         <li class="li-linewise">
@@ -44,7 +40,7 @@
             </a>
         </li>
         <li class=li-linewise>
-            <a href="/psychcontact.html" title="3ppq contact informatie"
+            <a href="/psychcontact.shtml" title="3ppq contact informatie"
                 onclick="validate(0)"
             >
                 Contact
@@ -52,10 +48,9 @@
         </li>
     </ul>                                                                   
 </nav>                                                                      
- 
+<div class="container">
 
 <h1>Documenten</h1>
-
 
 De volgende documenten zijn beschikbaar:
 

@@ -4,11 +4,7 @@
 
 <body class="full"> 
     <img src="/images/3ppqUL.jpg" class=logo>
-
-<div class="container">
-
 <form name="form" action="/bin/form" method="post">
-
 <nav class="top-menu-markup">                                               
     <ul class="spread">                                                     
         <li class="li-linewise">
@@ -43,13 +39,10 @@
         </li>
     </ul>                                                                   
 </nav>                                                                      
+<div class="container">
  
 <p>
 
 <!-- messages for the psychologist -->
 $0
-
-</div>
-
-
 

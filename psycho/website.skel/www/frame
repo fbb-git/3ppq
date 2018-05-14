@@ -11,7 +11,8 @@
 
 <body class="full">
     <img src="/images/3ppqUL.jpg" class=logo>
-
+<form ...>
+    NAV MENU HERE
 <div class="container">
 
 <h1>    </h1>
@@ -46,6 +47,7 @@ Door op de knop <em>3ppq</em> te klikken keert u terug naar de
 </td>
 </div>
 
+</div>  <!-- container -->
 
 <footer class="lastline">
     3ppq neemt privacy serieus. Download onze 
@@ -56,6 +58,5 @@ Door op de knop <em>3ppq</em> te klikken keert u terug naar de
 ==================================================================
 
 
-</div>  <!-- container -->
-</body></html>
+</form></body></html>
 

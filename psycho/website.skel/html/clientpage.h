@@ -11,9 +11,6 @@ $0
 
 <body class="full">
     <img src="/images/3ppqUL.jpg" class=logo>
-
-<div class="container">
-
 <form name="form" action="/bin/form" onsubmit='return false' method="post">
 
 $3
@@ -45,7 +42,7 @@ $3
             </a>
         </li>
         <li class=li-linewise>
-            <a href="/psychcontact.html" title="3ppq contact informatie"
+            <a href="/psychcontact.shtml" title="3ppq contact informatie"
                 onclick="validate(0)" >
                 Contact
             </a>
@@ -53,11 +50,13 @@ $3
     </ul>                                                                   
 </nav>                                                                      
 
+<div class="container">
+
 <h1>Cli&euml;nt-verwerking</h1>
 
 $1
 
-<h3>Cli&euml;nten:</h3>
+<h3>Details:</h3>
 
 <table class=lightgrey style="border-collapse: collapse;">
 <tr>
@@ -109,7 +108,6 @@ $1
 </tr>
 </table>
 <script> window.onload=setValues(); </script>
-<p>
 
 
 

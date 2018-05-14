@@ -13,11 +13,7 @@
 
 <body class="full">
     <img src="/images/3ppqUL.jpg" class=logo>
-
-<div class="container">
-
 <form name="form" action="/bin/form" method="post">
-
 <nav class="top-menu-markup">                                               
     <ul class="spread">                                                     
         <li class="li-linewise">
@@ -45,16 +41,16 @@
             </a>
         </li>
         <li class=li-linewise>
-            <a href="/psychcontact.html" title="3ppq contact informatie"
+            <a href="/psychcontact.shtml" title="3ppq contact informatie"
                 onclick="validate(0)" >
                 Contact
             </a>
         </li>
     </ul>                                                                   
 </nav>                                                                      
+<div class="container">
 
 <h1>Wijzigen van uw profiel</h1>
-
 
 Nadat u uw profiel-gegevens hebt gewijzigd dient u uw wachtwoord te vermelden
 om de nieuwe gegevens te activeren.
@@ -140,13 +136,6 @@ Door op de knop <em>3ppq</em> te klikken keert u terug naar de
 <tr>
     <td>&nbsp;</td>
 </tr>
-<tr>
-    <td>
-    <input type="submit" value="3ppq"
-           onclick="return home()">
-    </td>
-</tr>
-
 </table>
 
 

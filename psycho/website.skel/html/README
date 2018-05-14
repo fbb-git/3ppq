@@ -16,7 +16,9 @@ Pages may include stuff that belongs to the head: start by including 'head':
     <script src="/js/XXX.js"></script>
 </head>
 
-<body class="full"> 
+<body class="full">
+<form ....>
+NAV SPECIFICATIONS GO HERE 
 <div class="container">
 
 <header class='title'>
@@ -25,7 +27,7 @@ Pages may include stuff that belongs to the head: start by including 'head':
 
 
 followed by the body's contents.
-At the end, </div></body></html> is provided by the 'form' program
+At the end, </div></form></body></html> is provided by the 'form' program
 
 
 All pages must be forms, validation js functions should be called

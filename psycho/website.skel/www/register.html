@@ -11,9 +11,7 @@
 
 <body class="full">
     <img src="/images/3ppqUL.jpg" class=logo>
-
-<div class="container">
-
+<form name=form action="/bin/form" onsubmit="return validate(1)" method=post>
 <nav class="top-menu-markup">                                               
     <ul class="spread">                                                     
         <li class="li-linewise">
@@ -55,6 +53,7 @@
     </ul>                                                                   
 </nav>                                                                      
 
+<div class="container">
 
 <h1>Gebruikersregistratie</h1>
 
@@ -66,10 +65,6 @@ Na registratie ontvangt u een e-mail waarin een bevestigingsnummer staat. Dat
 bevestigingsnummer wordt u gevraagd nadat u voor de eerste keer hebt ingelogd.
 
 <p>
-
-<form name="form" action="/bin/form" 
-      onsubmit="return validate(1)" method="post">
-
 
 <div class="lightgrey">
 
@@ -136,8 +131,6 @@ bevestigingsnummer wordt u gevraagd nadat u voor de eerste keer hebt ingelogd.
 </tr>
 </table>
 
-</form>
-
 </div>  <!-- container -->
 
 <footer class="lastline">
@@ -145,4 +138,4 @@ bevestigingsnummer wordt u gevraagd nadat u voor de eerste keer hebt ingelogd.
         <a href="mailto:3ppq@3ppq.nl">3ppq@3ppq.nl</a>
 </footer>
 
-</body></html>
+</form></body></html>

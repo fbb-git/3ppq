@@ -2,7 +2,7 @@
 
 <body class="full"> 
     <img src="/images/profile.jpg" class=logo>
-
+<form>
 <div class="container">
 
 <h1>Aanmelding kan niet worden verwerkt</h1>
@@ -10,9 +10,6 @@
 Uw aanmelding kan niet worden verwerkt: de verstrekte informatie is onvolledig
 of onjuist (b.v. uw e-mail adres bevat geen @-teken).
 <p>
-
-
-<form>
 
 Klik op de knop <em>Aanmelden</em> om uw gegevens aan te passen.
 <p>

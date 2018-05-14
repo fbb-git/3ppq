@@ -4,12 +4,9 @@
 
 <body class="full"> 
     <img src="/images/3ppqUL.jpg" class=logo>
-
-<div class="container">
-
 <form name="form" action="/bin/form" onsubmit="return validate()" 
       method="post">
-
+<div class="container">
 
 Het derde onderdeel van dit onderzoek bestaat uit het voorleggen van de vragen
 aan drie anderen die u goed kennen. Wilt u daartoe de drie e-mailadressen van

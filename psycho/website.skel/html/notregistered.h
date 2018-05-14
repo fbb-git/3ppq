@@ -2,7 +2,7 @@
 
 <body class="full"> 
     <img src="/images/3ppqUL.jpg" class=logo>
-
+<form>
 <div class="container">
 
 <h1>Niet geregistreerd e-mail adres</h1>
@@ -22,7 +22,6 @@ Door op de knop <em>3ppq</em> te klikken keert u terug naar de
 3ppq-homepage. 
 <p>
 
-<form>
 <div class=lightgrey>
 <table>
 <tr>

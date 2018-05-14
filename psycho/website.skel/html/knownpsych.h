@@ -2,7 +2,7 @@
 
 <body class="full"> 
     <img src="/images/3ppqUL.jpg" class=logo>
-
+<form>
 <div class="container">
 
 <h1>Aanmelding kan niet worden verwerkt</h1>
@@ -18,8 +18,6 @@ wachtwoord.
 Door op de knop <em>3ppq homepage</em> te klikken keert u terug naar de
 3ppq-homepage. 
 <p>
-
-<form>
 
 <div class=lightgrey>
 <table>

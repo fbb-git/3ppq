@@ -1,8 +1,7 @@
 </head>
-
 <body class="full"> 
     <img src="/images/3ppqUL.jpg" class=logo>
-
+<form>
 <div class="container">
 
 <h1>Uw wachtwoord is gewijzigd.</h1>
@@ -15,8 +14,6 @@ Klik op de knop <em>Inloggen</em> om in te loggen.
 
 Door op de knop <em>3ppq</em> te klikken keert u terug naar de 3ppq-homepage.
 <p>
-
-<form>
 
 <div class=lightgrey>
 <table>

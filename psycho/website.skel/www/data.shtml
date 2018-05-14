@@ -13,8 +13,6 @@
 <body class="full">
     <img src="/images/3ppqUL.jpg" class=logo>
 
-<div class="container">
-
 <form name="form" action="/bin/form" method="post">
 
 <nav class="top-menu-markup">                                               
@@ -45,7 +43,7 @@
             </a>
         </li>
         <li class=li-linewise>
-            <a href="/psychcontact.html" title="3ppq contact informatie"
+            <a href="/psychcontact.shtml" title="3ppq contact informatie"
                 onclick="validate(0)"
             >
                 Contact
@@ -54,6 +52,7 @@
     </ul>                                                                   
 </nav>                                                                      
  
+<div class="container">
 
 <h1>Data</h1>
 

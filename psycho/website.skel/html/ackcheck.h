@@ -1,6 +1,6 @@
 <body class="full"> 
     <img src="/images/3ppqUL.jpg" class=logo>
-
+<form>
 <div class="container">
 
 <h1>Uw registratie is verwerkt</h1>
@@ -12,8 +12,6 @@ inlogt, een e-mail waarin een verificatienummer is vermeld.
 Dat nummer dient u, nadat u voor de eerste keer hebt ingelogd, ter verificatie
 van uw e-mail adres eenmalig te vermelden.
 <p>
-
-<form>
 
 Klik op de knop <em>Inloggen</em> om in te loggen.
 <p>

@@ -2,7 +2,7 @@
 
 <body class="full"> 
     <img src="/images/3ppqUL.jpg" class=logo>
-
+<form>
 <div class="container">
 
 <h1>Wachtwoord onjuist</h1>
@@ -17,7 +17,6 @@ Klik op de knop <em>Inloggen</em> om in te loggen, of klik op de knop
 
 <p>
 
-<form>
 <div class=lightgrey>
 <table>
 <tr>

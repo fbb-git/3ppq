@@ -13,11 +13,9 @@
 
 <body class="full"> 
     <img src="/images/3ppqUL.jpg" class=logo>
-
-<div class="container">
-
 <form name="form" action="/bin/form" onsubmit="return validate()" 
       method="post">
+<div class="container">
 
 <b>Toelichting en invulinstructie</b><p>
 

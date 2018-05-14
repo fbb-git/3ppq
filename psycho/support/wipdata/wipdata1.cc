@@ -21,7 +21,10 @@ WIPdata::WIPdata(std::string const &psychEmail,
     LockGuard lg = d_io.lg();
 
     if (Tools::rwExists(name))
-        throw Exception{} << name << " already exists";
+    {
+        g_log << name << " already exists" << endl;
+        throw Tools::BUSY;
+    }
 
     for (auto &login: d_otherLogin)
         login = Tools::random(1000, 9999);

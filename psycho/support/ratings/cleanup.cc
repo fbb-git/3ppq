@@ -11,9 +11,12 @@ void Ratings::cleanup(vector< vector<string> > const &data)
     for (size_t idx = 0; idx != 2; ++idx)
     {
         if (data[idx][Tools::TYPE].find_first_of("12") == string::npos)
-            throw Exception{} << "data ordering corruped: line " << idx + 1 <<
+        {
+            g_log << "data ordering corruped: line " << idx + 1 <<
                                 ", expected 1 or 2, found " << 
-                                data[idx][Tools::TYPE];
+                                data[idx][Tools::TYPE] << endl;
+            throw Tools::NO_DATA;
+        }
 
         transform(data[idx].begin() + Tools::N_PRE, data[idx].end(), 
                   d_data[idx].begin(), 
@@ -27,8 +30,11 @@ void Ratings::cleanup(vector< vector<string> > const &data)
     for (size_t idx = 2; idx != Tools::N_LINES; ++idx)
     {
         if (data[idx][Tools::TYPE].find("3") == string::npos)
-            throw Exception{} << "data ordering corruped: line " << idx + 1 <<
-                        ", expected 3, found " << data[idx][Tools::TYPE];
+        {
+            g_log << "data ordering corruped: line " << idx + 1 <<
+                     ", expected 3, found " << data[idx][Tools::TYPE] << endl;
+            throw Tools::NO_DATA;
+        }
 
         double *dest = &d_data[2][0];
 

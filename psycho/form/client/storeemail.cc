@@ -7,7 +7,7 @@ void Client::storeEmail()
     LockGuard lg = wipData.read();
 
     if (wipData.hasEmail())
-        throw false;
+        throw Tools::DATA_AVAILABLE;
 
     for (size_t idx = 0; idx != Tools::N_OTHER; ++idx)
     {

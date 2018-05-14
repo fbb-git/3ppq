@@ -5,12 +5,12 @@ void Psych::report()
     LockGuard lg { d_data.lg() };
 
     if (not get())
-        throw false;
+        throw Tools::NO_PSYCH;
 
     size_t clientIdx = stoul(d_cgi->param1("show"));
 
     if (clientIdx >= d_client.size())       // illegal client idx
-        throw false;
+        throw Tools::NO_CLIENT;
 
     string path = g_options.reportsDir() + 
                 to_string(d_ID) + '.' + d_client[clientIdx].ident() + ".pdf";
@@ -18,7 +18,7 @@ void Psych::report()
     Stat stat{ path };
 
     if (not stat)                           // no such report??
-        throw false;
+        throw Tools::NO_REPORT;
 
     ifstream in{ path };
 

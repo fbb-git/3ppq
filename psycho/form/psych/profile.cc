@@ -5,7 +5,7 @@ void Psych::profile()
     LockGuard lg { d_data.lg() };
 
     if (not get())
-        throw false;
+        throw Tools::NO_PSYCH;
 
     requireEqual("email", d_eMail);
 

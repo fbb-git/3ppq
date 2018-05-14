@@ -6,12 +6,12 @@ g_log << "Client accept: " << query << endl;
 
     WIPdata wipData(query);
 
-    LockGuard lg = wipData.read();      // if reading fails, throw false,
-                                        // results in showing /index.html
+    LockGuard lg = wipData.read();      // if reading fails, throws an
+                                        // error-enum value
 
     string hash = query.substr(query.find('=') + 1);
     if (hash.length() != Tools::HASH_TXT_SIZE)
-        throw false;
+        throw Tools::NO_QUERY;
 
     if (hash == loginHash(wipData.clientLogin()))   // self/meta ratings use
     {
@@ -34,5 +34,5 @@ g_log << "BINGO!" << endl;
         }
     }
 
-    throw false;
+    throw Tools::NO_QUERY;
 }

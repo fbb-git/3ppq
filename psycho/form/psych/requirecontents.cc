@@ -7,5 +7,5 @@ void Psych::requireContents(char const *name)
 
     g_log << "cgi param " << name << " `" << d_cgi->param1(name) << 
                                             "': no contents" << endl;
-    throw false;
+    throw Tools::REQUIRE;
 }

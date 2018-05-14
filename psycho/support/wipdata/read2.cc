@@ -11,7 +11,7 @@ LockGuard WIPdata::read()
     if (not Tools::rwExists(name))
     {
         g_log << '`' << name << "' not available" << endl;
-        throw false;
+        throw Tools::NO_DATA;
     }
 
     d_io.open();

@@ -5,7 +5,7 @@ void Client::otherPage(WIPdata &wipData, size_t idx)
     g_log << "other page " << idx << " starts" << endl;
 
     if (wipData.otherRatings(idx).front() != 0)         // ratings already
-        throw false;                                    // available.
+        throw Tools::DATA_AVAILABLE;                    // available.
 
     pidCid(wipData);
     d_display.append("ratingType",  to_string(OTHER));

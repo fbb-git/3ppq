@@ -10,7 +10,7 @@ void Client::otherCompleted(WIPdata &wipData, string const &ratings)
         || 
         wipData.otherRatings(otherIdx).front() != 0
     )
-        throw false;
+        throw Tools::DATA_AVAILABLE;
 
     wipData.setOtherRatings(otherIdx, ratings);
     wipData.rmOtherLogin(otherIdx);

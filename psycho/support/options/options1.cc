@@ -6,7 +6,10 @@ Options::Options(std::string const &baseDir)
     d_base = cp;
 
     if (cp == 0)
-        throw Exception{} << baseDir << ": does not exist";
+    {
+        g_log << baseDir << ": does not exist" << endl;
+        throw Tools::NO_DATA;
+    }
 
     free(cp);
 
@@ -23,7 +26,10 @@ Options::Options(std::string const &baseDir)
             !=
             (Stat::UR | Stat::UW | Stat::UX)
     )
-        throw Exception{} << d_base << 
-                ": not a directory or insufficient permissions";
+    {
+        g_log << d_base << ": not a directory or insufficient permissions" <<
+                                                                    endl;
+        throw Tools::NO_DATA;
+    }
 }
 

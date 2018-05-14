@@ -1,7 +1,6 @@
 #include "psych.ih"
 
 void Psych::getData()
-try
 {
     ifstream in;
 
@@ -10,7 +9,7 @@ try
     {
         LockGuard lg { d_data.lg() };
         if (not get())
-            throw false;
+            throw Tools::NO_PSYCH;
     }
 
     requireEqual("email", d_eMail);
@@ -25,14 +24,7 @@ try
         return;
 
     cout.clear();
-    throw -1;
-}
-catch (bool)
-{
-    throw;
-}
-catch (...)
-{
+
     Tools::textHtml();
 
     d_display.out(

@@ -5,7 +5,7 @@ string Report::headerInfo() const
     Psych psych;
 
     if (not psych.get(Tools::md5hash(d_psychEmail)))
-        throw false;
+        throw Tools::NO_PSYCH;
 
     ostringstream out;
     

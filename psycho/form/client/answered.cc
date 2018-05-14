@@ -1,7 +1,7 @@
 #include "client.ih"
 
-    // when ratings are already available, then throw false, resulting in
-    // the /index.html page being shown.
+    // when ratings are already available, then throw DATA_AVAILABLE,
+    // resulting in an error page being shown.
 
 void Client::answered()
 {
@@ -19,7 +19,8 @@ void Client::answered()
 //g_log << "               meta rating 0 = " << (int)wipData.metaRatings().front() << endl;
 
     if (type >= s_completedSize)
-        throw false;
+        throw Tools::DATA_AVAILABLE;
+
                                     // self-, meta-, otherCompleted
     (this->*s_completed[type])(wipData, ratings);
 }

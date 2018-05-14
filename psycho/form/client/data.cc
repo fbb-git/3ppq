@@ -24,11 +24,13 @@ char const *Client::s_himHer[2] =   { "hem",    "haar" };
         
 char const Client::s_closeSelf[] = 
     "U hebt alle vragen van deel 1 beantwoord. Klik op "
-    "`Verstuur' om uw vragen op te slaan en naar deel 2 te gaan.";
+    "`Verstuur' om uw vragen op te slaan, waarna u direct verder kunt "
+    "gaan met deel 2.";
 
 char const Client::s_closeMeta[] = 
     "U hebt alle vragen van deel 2 beantwoord. Klik op "
-    "`Verstuur' om uw vragen op te slaan en naar deel 3 te gaan.";
+    "`Verstuur' om uw vragen op te slaan, waarna u direct verder kunt "
+    "gaan met deel 3.";
 
 char const Client::s_closeOther[] = 
     "Dit was de laatste vraag. Als u wilt kunt u nog antwoorden wijzigen. "

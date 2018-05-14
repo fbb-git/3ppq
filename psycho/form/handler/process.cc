@@ -21,11 +21,21 @@ try
     else 
         d_client.accept(d_cgi.query());
 }
-catch (bool)
+catch (Tools::MessageEnum enumValue)
 {
+    g_log << "Caught enumValue " << enumValue << endl;
+
     logParams();
-    Display display(d_cgi);
-    display.homePage();
+
+    DateTime now{ DateTime::LOCALTIME };
+
+    Display display;
+    display.out("error.h",
+        {
+            Tools::message(enumValue),
+            now.rfc2822()            
+        }
+    );
 }
 
 

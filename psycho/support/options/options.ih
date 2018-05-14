@@ -15,6 +15,9 @@
 #include <bobcat/exception>
 #include <bobcat/arg>
 
+#include "../global/global.h"
+#include "../tools/tools.h"
+
 using namespace std;
 using namespace FBB;
 

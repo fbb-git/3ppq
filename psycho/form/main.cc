@@ -29,4 +29,9 @@ catch (exception const &exc)
     g_log.setLevel(0);
     g_log << "EXCEPTION: " << exc.what() << endl;
 }
+catch (...)
+{
+    g_log.setLevel(0);
+    g_log << "Unexpected exception" << endl;
+}
 

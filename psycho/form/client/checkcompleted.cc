@@ -25,7 +25,7 @@ g_log << "data collection completed: writing " << g_options.data() << endl;
 
     Psych psych;
     if (not psych.get(Tools::md5hash(wipData.psychEmail())))
-        throw false;
+        throw Tools::NO_PSYCH;
 
     psych.deactivateClient(wipData);
 

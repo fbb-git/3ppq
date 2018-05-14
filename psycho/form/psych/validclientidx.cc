@@ -7,7 +7,7 @@ size_t Psych::validClientIdx()
     if (idx < d_client.size())
         return idx;
 
-    throw false;
+    throw Tools::NO_CLIENT;
 }
 
 

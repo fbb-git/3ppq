@@ -14,5 +14,5 @@ void Psych::requireOneOf(char const *name, char const *charSet)
     g_log << "cgi param " << name << " `" << d_cgi->param1(name) << 
              "': does not contain one of " << charSet << endl;
 
-    throw false;
+    throw Tools::REQUIRE;
 }

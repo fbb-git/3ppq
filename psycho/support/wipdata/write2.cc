@@ -37,6 +37,9 @@ void WIPdata::write(ostream &out) const
     Tools::writeN(out, &size);
     Tools::writeN(out, encrypted);
 
-    if (not out.good())
-        throw Exception{} << "writing WIPdata failed";
+    if (out.good())
+        return;
+
+    g_log << "writing WIPdata failed" << endl;
+    throw Tools::NO_DATA;
 }

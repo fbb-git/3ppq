@@ -6,7 +6,7 @@ WIPdata::WIPdata(string const &query)
     size_t equal = query.find('=', dot);
 
     if (equal == string::npos)          // invalid query
-        throw false;
+        throw Tools::QUERY;
 
     d_psychID = stoul(query.substr(0, dot));
     ++dot;

@@ -16,7 +16,7 @@ void Psych::clientPage()
     {
         LockGuard lg { d_data.lg() };
         if (not get())
-            throw false;
+            throw Tools::NO_PSYCH;
 
                                     // all forms must have the psych's e-mail
         requireEqual("email", d_eMail); 

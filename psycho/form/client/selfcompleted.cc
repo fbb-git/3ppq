@@ -5,7 +5,7 @@ void Client::selfCompleted(WIPdata &wipData, string const &ratings)
     g_log << "self completed " << (int)wipData.selfRatings().front() << endl;
 
     if (wipData.selfRatings().front() != 0)
-        throw false;
+        throw Tools::DATA_AVAILABLE;
 
     wipData.setSelfRatings(ratings);
 

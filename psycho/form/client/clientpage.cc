@@ -21,5 +21,5 @@ void Client::clientPage(WIPdata &wipData)
         emailRequest(wipData);
 
     else 
-        throw false;
+        throw Tools::DATA_AVAILABLE;
 }

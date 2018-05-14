@@ -11,6 +11,6 @@ g_log << "child " << command << " starts" << endl;
     if (process.waitForChild() != 0)
     {
         g_log << "Child process `" << command << "' failed" << endl;
-        throw false;
+        throw CHILD;
     }
 }

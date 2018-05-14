@@ -22,46 +22,57 @@
 Deze vragenlijst gaat over hoe u bent. Bijvoorbeeld:
 <p>
 
-<div class=center-text>
-
-    $0 iemand die        <!-- is deze persoon / bent u -->
-        gemakkelijk vrienden maakt?
-    <p>
-
-</div>
-
 <table class=center-table>
 <tr>
-    <td><input type="radio" name="answer" disabled></td>
-    <td> &nbsp;&nbsp;</td>
-
-    <td><input type="radio" name="answer" disabled></td>
-    <td> &nbsp;&nbsp;</td>
-
-    <td><input type="radio" name="answer" disabled></td>
-    <td> &nbsp;&nbsp;</td>
-
-    <td><input type="radio" name="answer" disabled></td>
-    <td> &nbsp;&nbsp;</td>
-
-    <td><input type="radio" name="answer" disabled></td>
-    <td> &nbsp;&nbsp;</td>
-
-    <td><input type="radio" name="answer" disabled></td>
-    <td> &nbsp;&nbsp;</td>
-
-    <td><input type="radio" name="answer" disabled></td>
-    <td> &nbsp;&nbsp;</td>
+    <td colspan=2>
+     $0 iemand die...
+    </td>
 </tr>
 <tr>
-    <td class=center-text>&lt;</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+    <td></td>
+    <td class=center-text>
+        ... gemakkelijk vrienden maakt?
+    </td>
+</tr>
+<tr>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+    <td></td>
+<td>
+<table class=center-table>
+<tr>
+    <td></td>
+    <td></td>
+
+    <td><input type=radio name=one disabled></td>
+    <td></td>
+
+    <td><input type=radio name=one disabled></td>
+    <td></td>
+
+    <td><input type=radio name=one disabled></td>
+    <td></td>
+
+    <td><input type=radio name=one disabled></td>
+    <td></td>
+
+    <td><input type=radio name=one disabled></td>
+    <td></td>
+
+</tr>
+<tr>
+    <td><button type=button disabled>terug</button></td>
     <td></td>
 
     <td class=center-text>nee!</td>
     <td></td>
 
     <td class=center-text>nee</td>
-        <td></td>
+    <td></td>
 
     <td class=center-text>?</td>
     <td></td>
@@ -72,18 +83,41 @@ Deze vragenlijst gaat over hoe u bent. Bijvoorbeeld:
     <td class=center-text>ja!</td>
     <td></td>
 
-    <td class=center-text>&gt;</td>
+    <td><button type=button disabled>verder</button></td>
 </tr>
+<tr>
+    <td></td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;</td>
 
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;</td>
+
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;</td>
+
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;</td>
+
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;</td>
+
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td></td>
+</tr>
+</table>
+</td>
+</tr>
 </table>
 <p>
 
-Kies het meest passende antwoord.
+Kies het meest passende antwoord en klik dan op `verder' om naar de volgende
+vraag te gaan. Door op `terug' te klikken gaat u terug naar de vorige vraag.
 <p>
-
-Na beantwoording van een vraag gaat u automatisch naar de volgende vraag. Via
-<tt>&lt;</tt> kunt u terug naar de vorige vraag, en via <tt>&gt;</tt> naar de
-volgende vraag<br>
 
 U kunt uw antwoorden nog veranderen voor u de vragenlijst verstuurt. 
 <p>

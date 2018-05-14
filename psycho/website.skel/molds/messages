@@ -1,11 +1,9 @@
-Mon, 14 May 2018 12:27:31 +0200
+Mon, 14 May 2018 15:56:34 +0200
 
     Browser cache verversen! 
 
-    Alle menu-ingangen zouden moeten werken
-
-    Zie ook de TODO lijst op https://3ppq.nl/TODO.txt voor de laatst 
-        verwerkte items.
+    Bij fouten die de voortgang onmogelijk maken wordt een error-pagina 
+    getoond met een korte beschrijving van aard en tijdstip.
 
     Home page tot nader order beschikbaar onder https://3ppq.nl/home.html
 

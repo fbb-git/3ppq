@@ -20,7 +20,7 @@
         <li class="li-linewise">
             <a href="#" title="Activiteiten m.b.t. cli&euml;nten" 
                 onclick="validate('clientPage')" > 
-                Cli&euml;nt 
+                Cli&euml;nten 
             </a>
         </li>
         <li class="li-linewise">

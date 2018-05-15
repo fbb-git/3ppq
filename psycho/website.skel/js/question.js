@@ -34,8 +34,8 @@ function answer(value)
     sessionStorage.ratings = 
         ratings.substr(0, idx) + value + ratings.substr(idx + 1);
 
-//    if ((1 + idx) < nQuestions)
-//        ++sessionStorage.idx;
+    if ((1 + idx) < nQuestions)
+        ++sessionStorage.idx;
 
     window.location.reload();
 }

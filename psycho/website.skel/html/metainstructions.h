@@ -93,6 +93,7 @@ dat u bent. Bijvoorbeeld:
 <tr>
     <td></td>
     <td>&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;</td>
 
     <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>

@@ -15,6 +15,7 @@ namespace
 
 Options g_options{ g_base };
 ConfigFile  g_config{ g_options.config(), ConfigFile::RemoveComment };
+Log g_log{ g_options.log() };
 
 int main(int argc, char **argv)
 try

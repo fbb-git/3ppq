@@ -2,9 +2,6 @@ var nr;
 
 function validate(type) 
 {
-    if (type == 0)
-        return true;
-
     var email = document.forms["form"]["email"].value;
 
     switch (nr)

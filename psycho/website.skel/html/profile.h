@@ -9,42 +9,59 @@
     <script>var fields=$3;</script>
     <script src="/js/pwdcheck.js"></script>
     <script src="/js/profile.js"></script>
+    <script src="/js/topage.js"></script>
 </head>
 
 <body class="full">
     <img src="/images/3ppqUL.jpg" class=logo>
 <form name="form" action="/bin/form" method="post">
 <nav class="top-menu-markup">                                               
-    <ul class="spread">                                                     
+    <ul class="spread">
         <li class="li-linewise">
-            <a href="#" title="Activiteiten m.b.t. cli&euml;nten" 
-                onclick="validate('clientPage')" > 
+            <a href="/home.html" title="3ppq home-page (en uitloggen)" 
+                onclick="return toPage('/home.html')" >
+                <img border=0 src="/images/home.png" height=16em >
+            </a>
+        </li>
+        <li class="li-linewise">
+            <button class=topmenu 
+                    title="Cli&euml;ntafhandeling"
+                    onclick="validate('clientPage')" 
+            >
                 Cli&euml;nten 
-            </a>
+            </button>
         </li>
         <li class="li-linewise">
-            <a href="/data.shtml" title="Download verzamelde data"
-                onclick="validate(0)" >
+            <button class=topmenu 
+                title= "Download verzamelde data"
+                onclick= "return toPage('/data.shtml')"
+            >
                 Data
-            </a>
+            </button>
         </li>
         <li class="li-linewise">
-            <a href="/documents.shtml" title="Download documenten"
-                onclick="validate(0)" >
-                Documents
-            </a>
+            <button class=topmenu 
+                title="Download documenten"
+                onclick="return toPage('/documents.shtml')"
+            >
+                Documenten
+            </button>
         </li>
-        <li class=li-linewise>
-            <a href="#" title="Wijzig uw eigen gegevens"
-                onclick="return false;" >
+        <li class="li-linewise">
+            <button class=topmenu 
+                title= "Wijzig uw eigen gegevens"
+                onclick="return false"
+            >
                 Profiel
-            </a>
+            </button>
         </li>
-        <li class=li-linewise>
-            <a href="/psychcontact.shtml" title="3ppq contact informatie"
-                onclick="validate(0)" >
+        <li class="li-linewise">
+            <button class=topmenu 
+                title= "3ppq contact informatie"
+                onclick= "return toPage('/psychcontact.shtml')"
+            >
                 Contact
-            </a>
+            </button>
         </li>
     </ul>                                                                   
 </nav>                                                                      

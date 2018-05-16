@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html><head>
-    <link rel="stylesheet" href="/css/3ppq.css">
-    <meta http-equiv="content-type" content="text/html;
-          charset=windows-1252">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script src="/js/preamble.js"></script>
-    <script src="/js/menu.js"></script>
     <script src="/js/topage.js"></script>
-</head>
-
-<body class="full">
-    <img src="/images/3ppqUL.jpg" class=logo>
-<form name="form" action="/bin/form" method="post">
 <nav class="top-menu-markup">                                               
     <ul class="spread">
         <li class="li-linewise">
@@ -39,7 +25,8 @@
         </li>
         <li class="li-linewise">
             <button class=topmenu 
-                title="Download documenten" onclick="return false"
+                title="Download documenten"
+                onclick="return toPage('/documents.shtml')"
             >
                 Documenten
             </button>
@@ -62,32 +49,3 @@
         </li>
     </ul>                                                                   
 </nav>                                                                      
-<div class="container">
-
-<h1>Documenten</h1>
-
-De volgende documenten zijn beschikbaar:
-
-<ul>
-    <li> <a href="/docs/3ppq-1.pdf"> 3ppq vorm 1 (zelfbeoordelingen) </a>
-    <li> <a href="/docs/3ppq-2.pdf"> 3ppq vorm 2 (meta-beoordelingen) </a>
-    <li> <a href="/docs/3ppq-3.pdf"> 3ppq vorm 2 (anderen-beoordelingen) </a>
-    <li> <a href="/docs/gebruiksprotocol.pdf"> gebruiksprotocol </a>
-    <li> <a href="/docs/emptyplot.pdf"> Lege grafiek </a>
-    <li> <a href="/docs/demoplot.pdf"> Voorbeeld ingevulde grafiek </a>
-    <li> <a href="/docs/fweights.csv"> 42 x 6 factorgewichtenmatrix. </a> <br>
-       (CSV bestand: de eerste vijf kolommen zijn de factorgewichten voor de
-        factoren die in het voorbeeld van de ingevulde grafiek zijn genoemd,
-        de zesde kolom zijn de factorgewichten voor de `algemene
-        persoonlijkheidsfactor'.)
-    <li><a href="/docs/privacyverklaring.pdf"> de 3ppq privacy verklaring</a>
-</ul>
-
-</form>
-</div>  <!-- container -->
-
-<!--#include file="csvfooter" -->
-<!--#include file="footer" -->
-
-</body></html>
-

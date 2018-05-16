@@ -28,7 +28,7 @@ knop <em>Login</em>, om terug te keren naar de login-pagina.
 <tr>
     <td>
         <input type="submit" value="Login" 
-            onclick="window.open('/psych.html', '_self'); return false;">
+            onclick="window.open('/inloggen.html', '_self'); return false;">
     </td>
 </tr>
 </table>

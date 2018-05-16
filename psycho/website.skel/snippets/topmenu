@@ -1,9 +1,4 @@
     <script src="/js/topage.js"></script>
-</head>
-
-<body class="full">
-    <img src="/images/3ppqUL.jpg" class=logo>
-<form>
 <nav class="top-menu-markup">                                               
     <ul class="spread">
         <li class="li-linewise">
@@ -54,33 +49,6 @@
         </li>
     </ul>                                                                   
 </nav>                                                                      
-
-
-
-<div class="container">
-
-<h1>Opdracht niet uitgevoerd</h1>
-
-<h2>$0</h2>
-<p>
-
-Tijdstip: $1
-<p>
-
-Wanneer de oorzaak van dit probleem onduidelijk is, dan kunt u ons desgewenst 
-de foutmelding en het tijdstip waarop de fout is opgetreden per e-mail
-toesturen. 
-<p>
-
-U vindt het te gebruiken e-mail adres op de <a href="/homecontact.shtml">
-contact pagina</a>.
-
-
-
-
-
-
-
 
 
 

@@ -14,10 +14,9 @@ Functionaliteitstest
     Verder vind ik de onderstreping lelijk
     en overbodig en zou ik dus heel graag de onderstreping verwijderd zien.
 
-Toelichting:
-- De grafiek is te groot, valt buiten de rechterkantlijn van de tekst van de
-webpagina. Ik zou daar graag een versie van een paar slagen kleiner
-geplaatst zien, zodat ie niet buiten de tekst valt.
+          <button class="link">Clicky</button>
+    to make the button look like normal text you can use css:
+          button.link { background:none;border:none; }
 
 ===========================================================================
 Aandachtspunten:
@@ -44,9 +43,20 @@ hebben.
 Gedaan:
 =======
 
+
 15 May 2018 20:48:01
-- De witregel voor de laatste alinea (die begint met \221De inhoud \205\222is
-weggevallen. Graag alsnog toevoegen.
+
+    Toelichting:
+    - De grafiek is te groot, valt buiten de rechterkantlijn van de tekst van
+      de webpagina. Ik zou daar graag een versie van een paar slagen kleiner
+      geplaatst zien, zodat ie niet buiten de tekst valt.
+
+    - De witregel voor de laatste alinea (die begint met \221De inhoud
+      \205\222is weggevallen. Graag alsnog toevoegen.
+
+    - Contact: 
+      Eerste zin verwijderend. 
+      opmerkingen  toegevoegd
 
 Tue15 May 2018 13:00:48:
 

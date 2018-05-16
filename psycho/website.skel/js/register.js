@@ -1,8 +1,5 @@
 function validate(type) 
 {
-    if (type == 0)
-        return true;
-
     var form = document.forms["form"];
 
     var name =      form["name"].value;

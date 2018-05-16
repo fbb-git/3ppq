@@ -12,21 +12,18 @@ function setFields()
         document.getElementById("c16").checked = true;
 }
 
-var goHome = 1;
-
-function home()
-{
-    if (goHome)
-        window.open('/index.html', '_self'); 
-    goHome = 1;
-    return false;
-}
+// var goHome = 1;
+// 
+// function home()
+// {
+//     if (goHome)
+//         window.open('/index.html', '_self'); 
+//     goHome = 1;
+//     return false;
+// }
 
 function validate(action) 
 {
-    if (action == 0)
-        return true;
-
     addHidden("type",   "psych");
     addHidden("email",  localStorage.eMail);
 
@@ -37,7 +34,7 @@ function validate(action)
         return;
     }
 
-    goHome = 0;
+//    goHome = 0;
 
     var form = document.forms["form"];
 

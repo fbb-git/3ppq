@@ -22,7 +22,7 @@ Klik op de knop <em>Inloggen</em> om in te loggen, of klik op de knop
 <tr>
     <td>
         <input type="submit" value="Inloggen" 
-            onclick="window.open('/psych.html', '_self'); return false;">
+            onclick="window.open('/inloggen.html', '_self'); return false;">
     </td>
     <td>
         <input type="submit" value="3ppq" 

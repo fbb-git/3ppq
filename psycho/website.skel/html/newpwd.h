@@ -20,7 +20,7 @@ Door op de knop <em>3ppq</em> te klikken keert u terug naar de 3ppq-homepage.
 <tr>
     <td>
         <input value="Inloggen" type="submit"
-         onclick="window.open('/psych.html', '_self'); return false;">
+         onclick="window.open('/inloggen.html', '_self'); return false;">
     </td>
     <td>
         <input type="submit" value="3ppq" 

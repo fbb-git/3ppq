@@ -7,52 +7,66 @@
     <style></style>
 
     <script src="/js/preamble.js"></script>
-    <script src="/js/psych.js"></script>
+    <script src="/js/inloggen.js"></script>
+    <script src="/js/topage.js"></script>
 </head>
 
 <body class="full"> 
     <img src="/images/3ppqUL.jpg" class=logo>
 <form name=form action="/bin/form" onsubmit="return validate(1)" method=post>
 <nav class="top-menu-markup">                                               
-    <ul class="spread">                                                     
+    <ul class="spread">
         <li class="li-linewise">
             <a href="/home.html" title="3ppq home-page" 
-                onclick="validate(0)" >
+                onclick="return toPage('/home.html')" >
             <img border=0 src="/images/home.png" height=16em >
             </a>
         </li>
         <li class="li-linewise">
-            <a href="/auteurs.html" title="Auteurs van de 3ppq" 
-                onclick="validate(0)" >
-                Auteurs 
-            </a>
+            <button class=topmenu 
+                title="'3ppq auteurs"
+                onclick="return toPage('/auteurs.shml')"
+            >
+                Auteurs
+            </button>
         </li>
         <li class="li-linewise">
-            <a href="/toelichting.html" title="Nadere toelichting" 
-                onclick="validate(0)" >
+            <button class=topmenu 
+                title="'Nadere informatie over 3ppq"
+                onclick="return toPage('/toelichting.html')"
+            >
                 Toelichting
-            </a>
+            </button>
         </li>
         <li class="li-linewise">
-            <a href="#" title="Inloggen als geregistreerd gebruiker"
-                onclick="return false;" >
+            <button class=topmenu 
+                title="Inloggen als geregistreerd gebruiker"
+                onclick= "return false"
+            >
                 Inloggen
-            </a>
+            </button>
         </li>
-        <li class=li-linewise>
-            <a href="/register.html" title="Gebruikersregistratie "
-                onclick="validate(0)" >
+        <li class="li-linewise">
+            <button class=topmenu 
+                title= "Gebruikersregistratie"
+                onclick= "return toPage('/register.shtml')"
+            >
                 Registreren
-            </a>
+            </button>
         </li>
-        <li class=li-linewise>
-            <a href="/homecontact.shtml" title="3ppq contact informatie"
-                onclick="validate(0)" >
+        <li class="li-linewise">
+            <button class=topmenu 
+                title= "3ppq contact informatie"
+                onclick= "return toPage('/homecontact.shtml')"
+            >
                 Contact
-            </a>
+            </button>
         </li>
     </ul>                                                                   
 </nav>                                                                      
+
+
+
 <div class="container">
 
 <h1>Inloggen</h1>
@@ -76,14 +90,6 @@
         <input type="submit" value="Inloggen" onclick="nr = 2">
         <input type="submit" value="Wachtwoord kwijt" onclick="nr = 1">
     </td>
-<tr>
-    <td></td>
-    <td>    
-        <input type="submit" value="Registreren" 
-            onclick="window.open('/register.html', '_self');return false;">
-        Geen inloggegevens? Eenmalige registratie voor NIP-psychologen
-    </td>
-</tr>
 </table>
 </div>
 

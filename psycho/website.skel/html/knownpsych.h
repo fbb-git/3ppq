@@ -24,11 +24,11 @@ Door op de knop <em>3ppq homepage</em> te klikken keert u terug naar de
 <tr>
 <td>
     <input type="submit" value="Aanmelden" 
-        onclick="window.open('/register.html', '_self'); return false;">
+        onclick="window.open('/register.shtml', '_self'); return false;">
 </td>
 <td>
     <input type="submit" value="Inloggen" 
-        onclick="window.open('/psych.html', '_self'); return false;">
+        onclick="window.open('/inloggen.html', '_self'); return false;">
 </td>
 <td>
     <input type="submit" value="3ppq homepage" 

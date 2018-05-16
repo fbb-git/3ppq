@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd support
+
+for dir in support form fsplot psychrm psychrecords ; do
+    cd ../$dir
+    if [ "$1" == "-f" ] ; then
+        icmbuild clean
+    fi
+    icmbuild
+done

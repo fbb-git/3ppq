@@ -11,6 +11,7 @@
 #define CXXFLAGS            " --std=c++17 -Wall -O2" \
                             " -fdiagnostics-color=never "
 #define IH                  ".ih"
+#define PRECOMP             "-x c++-header"
 #define REFRESH
 #define LDFLAGS             "-s"
 #define ADD_LIBRARIES       "support bobcat crypto"

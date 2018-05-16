@@ -8,6 +8,17 @@ install moet permissies www-data.www-data files (WIPdata?) ongemoeid laten
 
 Functionaliteitstest
 
+15 May 2018 20:48:01
+    footnote met copyright en policy op elke pagina
+
+    Verder vind ik de onderstreping lelijk
+    en overbodig en zou ik dus heel graag de onderstreping verwijderd zien.
+
+Toelichting:
+- De grafiek is te groot, valt buiten de rechterkantlijn van de tekst van de
+webpagina. Ik zou daar graag een versie van een paar slagen kleiner
+geplaatst zien, zodat ie niet buiten de tekst valt.
+
 ===========================================================================
 Aandachtspunten:
 ================
@@ -32,6 +43,10 @@ hebben.
 ===========================================================================
 Gedaan:
 =======
+
+15 May 2018 20:48:01
+- De witregel voor de laatste alinea (die begint met \221De inhoud \205\222is
+weggevallen. Graag alsnog toevoegen.
 
 Tue15 May 2018 13:00:48:
 

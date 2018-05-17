@@ -1,17 +1,5 @@
-team 3ppq -> 3ppq team
-werkgroep 3ppq -> 3ppq werkgroep
+Copyright notices op webpagina's (16 May 2018 13:16:17)
 
---------------
-
-Deactivatie moet WIPdata verwijderen.
-
----------------------------
-
-install moet permissies www-data.www-data files (WIPdata?) ongemoeid laten
-
----------------------------
-
-Functionaliteitstest
-
+----------------------------------
 
 

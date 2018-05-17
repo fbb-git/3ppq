@@ -2,12 +2,13 @@
     <script src="/js/questions.js"></script>
     <script src="/js/instructions.js"></script>
     <script>
-        sessionStorage.opening  = "$0 $1";     // is [name client] 
-        sessionStorage.himHer   = "$2";
-        sessionStorage.hisHer   = "$3";
-        sessionStorage.heShe    = "$4";
-        sessionStorage.closing  = "$5";
-        sessionStorage.thanks   = "$6";
+        sessionStorage.opening      = "$0 $1";     // is [name client] 
+        sessionStorage.himHer       = "$2";
+        sessionStorage.hisHer       = "$3";
+        sessionStorage.heShe        = "$4";
+        sessionStorage.closing      = "$5";
+        sessionStorage.thanks       = "$6";
+        sessionStorage.nQuestions   = "$7";
     </script>
 </head>
 

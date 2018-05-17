@@ -17,7 +17,8 @@ void Client::selfRatings(WIPdata &wipData, RatingType type,
             s_hisHer[wipData.gender()],
             s_heShe[wipData.gender()],
             closing,
-            s_selfThanks
+            s_selfThanks,
+            nQuestions()
         }
     );
 }

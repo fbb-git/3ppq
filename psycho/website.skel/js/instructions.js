@@ -17,7 +17,8 @@ function validate(next)
 
     sessionStorage.ratings = answers.join('');
 
-    sessionStorage.nQuestions = questions.length;
+    //  sessionStorage.nQuestions = questions.length;
+    //  set by bin/form/client/selfratings.cc and -/otherpage.cc
 
     window.open(next, '_self');
 

@@ -19,7 +19,8 @@ void Client::otherPage(WIPdata &wipData, size_t idx)
             s_hisHer[wipData.gender()],
             s_heShe[wipData.gender()],
             s_closeOther,
-            s_otherThanks
+            s_otherThanks,
+            nQuestions(),
         }
     );
 }

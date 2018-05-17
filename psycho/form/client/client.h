@@ -80,6 +80,7 @@ class Client
         bool otherRatingsCompleted(WIPdata &wipData) const;
         void checkCompleted(WIPdata &wipData) const;
 
+        static std::string nQuestions();
 };
         
 #endif

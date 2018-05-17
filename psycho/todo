@@ -1,3 +1,0 @@
-#!/bin/bash
-
-(date -R; cat TODO) | ssh oosix 'cat > /var/lib/3ppq/ssl/TODO.txt'

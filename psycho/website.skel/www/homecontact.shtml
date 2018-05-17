@@ -23,7 +23,7 @@
         <li class="li-linewise">
             <button class=topmenu 
                 title="'3ppq auteurs"
-                onclick="return toPage('/auteurs.shml')"
+                onclick="return toPage('/auteurs.shtml')"
             >
                 Auteurs
             </button>

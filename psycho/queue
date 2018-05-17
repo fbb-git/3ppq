@@ -1,6 +1,3 @@
 #!/bin/bash
 
-(date -R; cat queue.done) > qd
-mv qd queue.done
-
 scp queue.txt  oosix:/var/lib/3ppq/website/www/

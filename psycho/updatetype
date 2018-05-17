@@ -12,6 +12,7 @@ install is called after handling 'full' or 'refresh', if specified
 "
 
 else
+    git push
     echo $1 | ssh oosix 'cat > /var/lib/3ppq/tmp/updatetype'
 fi
     

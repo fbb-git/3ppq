@@ -1,10 +1,3 @@
-registratiepagina toevoegen:  
-
-Door u te registreren geeft u toestemming dat de anonieme data 
-van uw cliënten gebruikt kunnen worden voor wetenschappelijk onderzoek
-
---------------
-
 team 3ppq -> 3ppq team
 werkgroep 3ppq -> 3ppq werkgroep
 
@@ -19,5 +12,6 @@ install moet permissies www-data.www-data files (WIPdata?) ongemoeid laten
 ---------------------------
 
 Functionaliteitstest
+
 
 

@@ -11,6 +11,7 @@ Psych::Map Psych::s_state = // states must retrieve the psych's data
     { "addPsych",         &Psych::addPsych },       // add a new psych.
     { "report",           &Psych::report },         // download a report
     { "getData",          &Psych::getData },        // download a report
+    { "nQuest",           &Psych::nQuest },         // set # questions
 };
 
 Psych::Map2display Psych::s_clientPageRequest =

@@ -99,6 +99,7 @@ class Psych
         void requestAck();
 
         void getData();                 // called from www/data.shtml
+        void nQuest();                  // change the # questions to use
 
         void addPsych();
         uint8_t parseField();

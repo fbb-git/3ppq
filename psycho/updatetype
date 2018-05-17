@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ $# == 0 ] ; then
+    echo "
+use argument 
+    full    - for full recompilation + std
+    recomp  - call recomp for all program sources + 'std'
+    std     - remove website/html and website/www
+
+if no files are refreshed in the git archive nothing happens. Otherwise
+install is called after handling 'full' or 'refresh', if specified
+"
+
+else
+    echo $1 | ssh oosix 'cat > /var/lib/3ppq/tmp/updatetype'
+fi
+    

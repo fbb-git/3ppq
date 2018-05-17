@@ -1,4 +1,23 @@
-update.txt beschikbaar maken als https://3ppq.nl/update.txt
+registratiepagina toevoegen:  
+
+Door u te registreren geeft u toestemming dat de anonieme data 
+van uw cliënten gebruikt kunnen worden voor wetenschappelijk onderzoek
+
+--------------
+
+team 3ppq -> 3ppq team
+werkgroep 3ppq -> 3ppq werkgroep
+
+--------------
+
+Deactivatie moet WIPdata verwijderen.
 
 ---------------------------
+
+install moet permissies www-data.www-data files (WIPdata?) ongemoeid laten
+
+---------------------------
+
+Functionaliteitstest
+
 

@@ -1,32 +1,27 @@
-    <script src="/js/preamble.js"></script>
-    <script src="/js/questions.js"></script>
-    <script src="/js/instructions.js"></script>
-    <script>
-        sessionStorage.opening  = "$0 $1";     // is [name client] 
-        sessionStorage.himHer   = "$2";
-        sessionStorage.hisHer   = "$3";
-        sessionStorage.heShe    = "$4";
-        sessionStorage.closing  = "$5";
-        sessionStorage.thanks   = "$6";
-    </script>
+<!DOCTYPE html>
+<html><head>
+    <link rel="stylesheet" href="/css/3ppq.css">
+    <meta http-equiv="content-type" content="text/html;
+          charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body class="full"> 
     <img src="/images/3ppqUL.jpg" class=logo>
 <form name="form" action="/bin/form" 
-        onsubmit="return validate('/question.html')" 
+    onsubmit="window.open('/question.html', '_self'); return false;" 
       method="post">
 <div class="container">
 
 <b>Toelichting en invulinstructie</b><p>
 
-Deze vragenlijst gaat over hoe $1 is. Bijvoorbeeld:
+Deze vragenlijst gaat over hoe u bent. Bijvoorbeeld:
 <p>
 
 <table class=center-table>
 <tr>
     <td colspan=2>
-     Is $1 iemand die...
+     <script>document.write(sessionStorage.opening);</script> iemand die...
     </td>
 </tr>
 <tr>
@@ -115,26 +110,26 @@ Deze vragenlijst gaat over hoe $1 is. Bijvoorbeeld:
 </td>
 </tr>
 </table>
-
+<p>
 
 Kies het meest passende antwoord en klik dan op `verder' om naar de volgende
 vraag te gaan. Door op `terug' te klikken gaat u terug naar de vorige vraag.
 <p>
 
-De vragenlijst bestaat uit 42 van dergelijke vragen. Als u in een rustig tempo
-werkt, kost het een minuut of tien.
-<p>
-
-Na beantwoording van een vraag gaat u automatisch naar de volgende vraag. Via
-<tt>&lt;</tt> kunt u terug naar de vorige vraag, en via <tt>&gt;</tt> naar de
-volgende vraag<br>
-
 U kunt uw antwoorden nog veranderen voor u de vragenlijst verstuurt. 
 <p>
 
-U blijft zelf anoniem in dit onderzoek. Uw antwoorden worden niet aan $1
-doorgegeven. Uw antwoorden en die van twee anderen worden gemiddeld. Dit
-gemiddelde en de betekenis ervan worden vervolgens met $1 besproken.
+Dit onderdeel van de lijst bevat 42 vragen. Als u in een rustig tempo
+werkt, kost het een minuut of tien.
+
 <p>
 
 <input type="submit" value="Start de vragenlijst">
+
+</form>
+
+</div></body></html>
+
+
+
+

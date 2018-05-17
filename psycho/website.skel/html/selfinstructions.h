@@ -13,122 +13,24 @@
 
 <body class="full"> 
     <img src="/images/3ppqUL.jpg" class=logo>
-<form name="form" action="/bin/form" onsubmit="return validate()" 
+<form name="form" action="/bin/form" 
+        onsubmit="return validate('/selfinstructions.html')" 
       method="post">
 <div class="container">
 
-<b>Toelichting en invulinstructie</b><p>
+<b>Algemene instructie</b><p>
 
-Deze vragenlijst gaat over hoe u bent. Bijvoorbeeld:
-<p>
-
-<table class=center-table>
-<tr>
-    <td colspan=2>
-     $0 iemand die...
-    </td>
-</tr>
-<tr>
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-</tr>
-<tr>
-    <td></td>
-    <td class=center-text>
-        ... gemakkelijk vrienden maakt?
-    </td>
-</tr>
-<tr>
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-</tr>
-<tr>
-    <td></td>
-<td>
-<table class=center-table>
-<tr>
-    <td></td>
-    <td></td>
-
-    <td><input type=radio name=one disabled></td>
-    <td></td>
-
-    <td><input type=radio name=one disabled></td>
-    <td></td>
-
-    <td><input type=radio name=one disabled></td>
-    <td></td>
-
-    <td><input type=radio name=one disabled></td>
-    <td></td>
-
-    <td><input type=radio name=one disabled></td>
-    <td></td>
-
-</tr>
-<tr>
-    <td><button type=button disabled>terug</button></td>
-    <td></td>
-
-    <td class=center-text>nee!</td>
-    <td></td>
-
-    <td class=center-text>nee</td>
-    <td></td>
-
-    <td class=center-text>?</td>
-    <td></td>
-
-    <td class=center-text>ja</td>
-    <td></td>
-
-    <td class=center-text>ja!</td>
-    <td></td>
-
-    <td><button type=button disabled>verder</button></td>
-</tr>
-<tr>
-    <td></td>
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;
-       &nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;</td>
-
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    <td>&nbsp;&nbsp;</td>
-
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    <td>&nbsp;&nbsp;</td>
-
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    <td>&nbsp;&nbsp;</td>
-
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    <td>&nbsp;&nbsp;</td>
-
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;
-       &nbsp;&nbsp;&nbsp;&nbsp;
-       &nbsp;&nbsp;&nbsp;&nbsp;</td>
-    <td></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-<p>
-
-Kies het meest passende antwoord en klik dan op `verder' om naar de volgende
-vraag te gaan. Door op `terug' te klikken gaat u terug naar de vorige vraag.
-<p>
-
-U kunt uw antwoorden nog veranderen voor u de vragenlijst verstuurt. 
-<p>
-
-Dit onderdeel van de lijst bevat 42 vragen. Als u in een rustig tempo
-werkt, kost het een minuut of tien.
+Het navolgende onderzoek bestaat uit drie delen, die elk eindigen met de optie
+`verstuur'. U kunt niet verder gaan met een volgend deel voordat u `verstuur'
+hebt aangeklikt. Hiermee worden uw antwoorden opgeslagen. Wanneer u
+tussentijds het onderzoek afbreekt worden antwoorden die nog niet verstuurd
+zijn niet opgeslagen. U wordt verzocht om het gehele onderzoek in een keer te
+doorlopen.  Het totale onderzoek duurt ongeveer 20 minuten.  Klik op `start
+deel 1' om een eerste serie van 42 vragen te beantwoorden.
 
 <p>
 
-<input type="submit" value="Start de vragenlijst">
+<input type="submit" value="Start deel 1">
 
 
 

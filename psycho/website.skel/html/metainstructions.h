@@ -14,7 +14,8 @@
 <body class="full"> 
     <img src="/images/3ppqUL.jpg" class=logo>
 
-<form name="form" action="/bin/form" onsubmit="return validate()" 
+<form name="form" action="/bin/form" 
+        onsubmit="return validate('/question.html')" 
       method="post">
 
 <div class="container">

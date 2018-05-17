@@ -1,4 +1,4 @@
-function validate() 
+function validate(next) 
 {
     var form = document.forms["form"];
 
@@ -19,7 +19,7 @@ function validate()
 
     sessionStorage.nQuestions = questions.length;
 
-    window.open('/question.html', '_self');
+    window.open(next, '_self');
 
     return false;
 } 

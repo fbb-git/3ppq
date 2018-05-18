@@ -1,8 +1,4 @@
 
-Responsief is bij grijze balk weggevallen. Zie image-1
-
-----------------------------------
-
 Namen van menu-ingangen of cursief maken of onderstrepen als je op de
 betreffende pagina staat
 

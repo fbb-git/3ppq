@@ -1,9 +1,4 @@
 
-Namen van menu-ingangen of cursief maken of onderstrepen als je op de
-betreffende pagina staat
-
-----------------------------------
-
 Copyright notices op webpagina's (16 May 2018 13:16:17)
 
 

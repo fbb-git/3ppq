@@ -46,7 +46,7 @@
             </button>
         </li>
         <li class="li-linewise">
-            <button class=topmenu 
+            <button class=topmenu id=underline
                 title= "Gebruikersregistratie" onclick= "return false"
             >
                 Registreren

@@ -2,5 +2,5 @@
 
 Handler::~Handler()
 {
-    cout << "</div></form></body></html>\n";
+    cout << "</div></form><br>&nbsp;<br>&nbsp;<br>&nbsp;<br></body></html>\n";
 }

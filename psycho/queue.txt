@@ -1,11 +1,7 @@
 
-
-Op alle webpages: Na onderste regel 3 witregels invoegen, zodat pagina niet op onderrand scherm stopt.
-
-----------------------------------
-
-Auteurspagina: weergeven zonder opsommingspunten; indeling en cursief conform aangepaste versie Auteurs.pdf
-(Typefout in kop op webpage wijzigen: Enekele = enkele. Verwijzing naar Documenten tussen ( ). Zie ook .pdf
+Auteurspagina: weergeven zonder opsommingspunten; indeling en cursief conform
+aangepaste versie Auteurs.pdf (Typefout in kop op webpage wijzigen: Enekele =
+enkele. Verwijzing naar Documenten tussen ( ). Zie ook .pdf
 
 ----------------------------------
 
@@ -17,7 +13,8 @@ Responsief is bij grijze balk weggevallen. Zie image-1
 
 ----------------------------------
 
-Namen van menu-ingangen of cursief maken of onderstrepen als je op de betreffende pagina staat
+Namen van menu-ingangen of cursief maken of onderstrepen als je op de
+betreffende pagina staat
 
 ----------------------------------
 

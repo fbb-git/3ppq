@@ -1,11 +1,50 @@
 
+Menu-ingang Registreren laten vervallen. Op inlogpagina terugplaatsen van
+versie met Registreren-functie. Zie inlogpainga.pdf (18 May 2018 16:35:30)
+
+
+-----------------------------------
+
+Menu-ingang Privacy toevoegen: hierachter de privacyverklaring zetten als
+webpagina
+
+
+-----------------------------------
+
+Onder de knoppen Inloggen en Wachtwoord kwijt twee witregels (grijsregels,
+want de achtergrond is grijs), dan de tekst: 
+Geen inloggegevens? Eenmalige registratie voor psychologen NIP. Zie ook
+bijlage inlogpagina.pdf  (18 May 2018 16:35:30)
+Daaronder de knop Registreren
+
+-----------------------------------
+
+Op de Registrerenpagina tijdelijk (in afwachting van reactie NIP en
+vragenlijsttests) de volgende tekst plaatsen: U kunt zich helaas nog niet
+registreren. De 3ppq is binnenkort voor u beschikbaar.  
+
+-----------------------------------
+
 Copyright notices op webpagina's (16 May 2018 13:16:17)
 
+Alleen op homepage onderaan plaatsen (we hoeven niet te overdrijven): (na de
+laatste regel twee witregels, dan in kleiner Arial font (ongeveer 2 punten
+schat ik) de tekst:  
+Copyright (c) 2018 Team 3ppq, GPLv3 or later. No warranty. Vervolgens de drie
+eindwitregels. 
 
-(Tekst is nog niet vastgesteld)
+-----------------------------------
 
-----------------------------------
+De grijze menubalk is er helaas slechter op geworden, zowel op normaal scherm
+als ook op iphone. Zie bijlagen screenmenubalk.pdf en image-2.jpg. (18 May
+2018 16:35:30) 
+Toen de balk nog lichtgroen was, was hij wel goed. Misschien domme suggestie,
+maar zou je de instellingen van de groene menubalk misschien kunnen
+terugvinden en -plaatsen?  
+En als dat niet kan, dan maar de voorlaatste versie gebruiken. 
 
+Balk wordt grijs.
 
+-----------------------------------
 
 

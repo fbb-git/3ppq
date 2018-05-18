@@ -136,24 +136,6 @@
     z-index: -1;                                                                
 }                                                                               
 
-.li-linewise        /* items in a list next to each other, use with .spread */
-{
-    margin: 0 auto;
-    display: inline;
-    line-height: 40px;
-//  height: 60px;
-
-}
-
-.spread             /* spread elements over the available width */              
-{
-    list-style-type: none;
-    margin: 0;
-    padding: 0.25em 0;
-    display: flex;
-    justify-content: center;
-}
-
 .center-text
 {
     text-align: center;
@@ -165,10 +147,33 @@
     margin-right: auto;
 }
 
+.spread             /* spread elements over the available width */              
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0  0  0 1em;
+
+    float: left;
+    line-height: 3em;
+
+//    display: flex;
+//    justify-content: center;
+}
+
+.li-linewise        /* items in a list next to each other, use with .spread */
+{
+    float: left;
+    line-height: 3em;
+//  height: 60px;
+
+    padding: 0 0 0 1em;
+
+//    display: inline;
+}
+
 .topmenu            /* used for menu-buttons */
 {
-    font-size: 1.2em; 
+    font-size: 1.1em; 
     background: none; 
     border: none;
 }
-

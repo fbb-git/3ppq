@@ -1,14 +1,4 @@
 
-Auteurspagina: weergeven zonder opsommingspunten; indeling en cursief conform
-aangepaste versie Auteurs.pdf (Typefout in kop op webpage wijzigen: Enekele =
-enkele. Verwijzing naar Documenten tussen ( ). Zie ook .pdf
-
-----------------------------------
-
-Auteurspagina: voetnoot betreffende CVS bestanden verwijderen.
-
-----------------------------------
-
 Responsief is bij grijze balk weggevallen. Zie image-1
 
 ----------------------------------

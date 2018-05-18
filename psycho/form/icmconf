@@ -1,4 +1,4 @@
-#define CLS
+//#define CLS
 #define MAIN                "main.cc"
 #define LIBRARY             "handler"
 #define SOURCES             "*.cc"

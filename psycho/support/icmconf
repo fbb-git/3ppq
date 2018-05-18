@@ -1,4 +1,4 @@
-#define CLS
+//#define CLS
 #define LIBRARY             "support"
 #define SOURCES             "*.cc"
 #define OBJ_EXT             ".o"

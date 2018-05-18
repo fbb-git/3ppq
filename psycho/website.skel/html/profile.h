@@ -9,7 +9,6 @@
     <script>var fields=$3;</script>
     <script src="/js/pwdcheck.js"></script>
     <script src="/js/profile.js"></script>
-    <script src="/js/topage.js"></script>
 </head>
 
 <body class="full">
@@ -18,50 +17,41 @@
 <nav class="top-menu-markup">                                               
     <ul class="spread">
         <li class="li-linewise">
-            <a href="/home.html" title="3ppq home-page (en uitloggen)" 
-                onclick="return toPage('/home.html')" >
+            <a href="/home.html" title="3ppq home-page (en uitloggen)" >
                 <img border=0 src="/images/home.png" height=16em >
             </a>
         </li>
         <li class="li-linewise">
-            <button class=topmenu 
-                    title="Cli&euml;ntafhandeling"
-                    onclick="validate('clientPage')" 
+            <a href="#" title="Activiteiten m.b.t. cli&euml;nten" 
+               onclick="validate('clientPage')" 
             >
                 Cli&euml;nten 
-            </button>
+            </a>
         </li>
         <li class="li-linewise">
-            <button class=topmenu 
-                title= "Download verzamelde data"
-                onclick= "return toPage('/data.shtml')"
+            <a href="/data.shtml" title="Download verzamelde data"
             >
                 Data
-            </button>
+            </a>
         </li>
         <li class="li-linewise">
-            <button class=topmenu 
-                title="Download documenten"
-                onclick="return toPage('/documents.shtml')"
+            <a href="/documents.shtml" title="Download documenten"
             >
                 Documenten
-            </button>
+            </a>
         </li>
         <li class="li-linewise">
-            <button class=topmenu 
-                title= "Wijzig uw eigen gegevens" id=underline
-                onclick="return false"
+            <a href="#" title="Wijzig uw eigen gegevens"
+                onclick="return false;"
             >
                 Profiel
-            </button>
+            </a>
         </li>
         <li class="li-linewise">
-            <button class=topmenu 
-                title= "3ppq contact informatie"
-                onclick= "return toPage('/psychcontact.shtml')"
+            <a href="/psychcontact.shtml" title="3ppq contact informatie"
             >
                 Contact
-            </button>
+            </a>
         </li>
     </ul>                                                                   
 </nav>                                                                      

@@ -35,16 +35,5 @@ eindwitregels.
 
 -----------------------------------
 
-De grijze menubalk is er helaas slechter op geworden, zowel op normaal scherm
-als ook op iphone. Zie bijlagen screenmenubalk.pdf en image-2.jpg. (18 May
-2018 16:35:30) 
-Toen de balk nog lichtgroen was, was hij wel goed. Misschien domme suggestie,
-maar zou je de instellingen van de groene menubalk misschien kunnen
-terugvinden en -plaatsen?  
-En als dat niet kan, dan maar de voorlaatste versie gebruiken. 
-
-Balk wordt grijs.
-
------------------------------------
 
 

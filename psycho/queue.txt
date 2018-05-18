@@ -1,6 +1,33 @@
 
-Copyright notices op webpagina's (16 May 2018 13:16:17)
+
+Op alle webpages: Na onderste regel 3 witregels invoegen, zodat pagina niet op onderrand scherm stopt.
 
 ----------------------------------
+
+Auteurspagina: weergeven zonder opsommingspunten; indeling en cursief conform aangepaste versie Auteurs.pdf
+(Typefout in kop op webpage wijzigen: Enekele = enkele. Verwijzing naar Documenten tussen ( ). Zie ook .pdf
+
+----------------------------------
+
+Auteurspagina: voetnoot betreffende CVS bestanden verwijderen.
+
+----------------------------------
+
+Responsief is bij grijze balk weggevallen. Zie image-1
+
+----------------------------------
+
+Namen van menu-ingangen of cursief maken of onderstrepen als je op de betreffende pagina staat
+
+----------------------------------
+
+Copyright notices op webpagina's (16 May 2018 13:16:17)
+
+
+(Tekst is nog niet vastgesteld)
+
+----------------------------------
+
+
 
 

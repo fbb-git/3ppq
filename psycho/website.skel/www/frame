@@ -13,50 +13,12 @@
     <img src="/images/3ppqUL.jpg" class=logo>
 <form ...>
     NAV MENU HERE
+
 <div class="container">
 
 <h1>    </h1>
 
-CONTENTS
-
-
-
-==================================================================
-Klik op de knop <em>Inloggen</em> om in te loggen.
-<p>
-Door op de knop <em>3ppq</em> te klikken keert u terug naar de
-3ppq-homepage. 
-<p>
-
-<div class="lightgrey">
-<table style="border-collapse: collapse;">
-<tr class="darkrow">
-
-<td class=right>
-<td>
-    <input type="submit" value="Inloggen" 
-        onclick="window.open('/inloggen.html', '_self'); return false;">
-</td>
-<td>
-    <input type="submit" value="Aanmelden" 
-        onclick="window.open('/register.shtml', '_self'); return false;">
-</td>
-<td>
-    <input type="submit" value="3ppq" 
-        onclick="window.open('/index.html', '_self'); return false;">
-</td>
-</div>
-
-</div>  <!-- container -->
-
-<footer class="lastline">
-    3ppq neemt privacy serieus. Download onze 
-    <a href="privacy.pdf"> privacy verklaring</a><br>
-    Vragen of opmerkingen? Stuur dan een e-mail naar 
-        <a href="mailto:3ppq@3ppq.nl">3ppq@3ppq.nl</a>
-</footer>
-==================================================================
-
+CONTENTS HERE
 
 </form>
 <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>

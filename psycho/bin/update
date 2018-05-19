@@ -1,0 +1,49 @@
+#!/bin/bash
+
+cleanup()
+{
+    rm -f ~/website/html/* ~/website/www/* ~/website/docs/*
+}
+
+cd ~/psycho
+
+nLines=`git pull 2>/dev/null | wc -l`
+
+date > /tmp/3ppq
+
+[ ${nLines} -eq 1 ] && exit 0           # no git-update
+
+echo update available task, `cat ~/tmp/updatetype` >> /tmp/3ppq
+
+mv ~/website/www/queue.txt ~/tmp/
+
+case `cat ~/tmp/updatetype` in
+    ('full')
+        ./recomp -f >> /tmp/3ppq 2>&1
+        cleanup
+    ;;
+
+    ('recomp')
+        ./recomp >> /tmp/3ppq 2>&1
+        cleanup
+    ;;
+
+    ('std')
+        cleanup
+    ;;
+esac
+    
+echo installing >> /tmp/3ppq
+~/psycho/install ~/website >> /tmp/3ppq
+echo "" > ~/tmp/updatetype
+
+
+echo restoring queue.txt >> /tmp/3ppq
+date > ~/website/www/update.txt
+mv ~/tmp/queue.txt ~/website/www/
+
+echo installing messages >> /tmp/3ppq
+mkdir -p ~/website/molds
+cp website.skel/molds/messages ~/website/molds
+
+

@@ -42,7 +42,7 @@ function answer(value)
 
 function forward()
 {
-    if (idx + 1 == nQuestions)
+    if (idx + 1 >= nQuestions)
         submit();
     else
     {
@@ -76,7 +76,7 @@ function setArrows()
 
     if (answer >= 1 && answer <= 5)
     {
-        if (1 + idx == nQuestions)
+        if (1 + idx >= nQuestions)
             lastDivVisible = 'visible';
         
         document.getElementById("nr" + answer).checked = true;

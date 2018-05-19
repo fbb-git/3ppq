@@ -1,4 +1,15 @@
+22 Sat, 19 May 2018 16:02:21 +0200
+
+Er blijkt een loop in de vragenlijsten zijn geslopen: na vraag 42 volgt vraag
+43 met ... en dan vraag 44 die de inhoud van vraag 1 heeft. Ergens in de 80
+begint hij voor de derde keer.
+
+Wellicht vanwege niet overal in question.js gechecked op >= nQuestions.
+Aangepast, getest en niet reproduceerbaar.
+
+-----------------------------------
 21 Sat, 19 May 2018 15:45:21 +0200
+
 Homepage op defaultpage zetten (als ik het goed zeg). Oftewel groen licht! 
 
 -----------------------------------

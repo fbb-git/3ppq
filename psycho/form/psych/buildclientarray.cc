@@ -1,7 +1,8 @@
 #include "psych.ih"
 
 size_t Psych::buildClientArray(string *array, 
-                               vector<bool> &reportExists) const
+                               vector<bool> &reportExists,
+                               bool *clientsChanged)
 {
     size_t idLength = 0;
     for (auto const &client: d_client)
@@ -14,10 +15,20 @@ size_t Psych::buildClientArray(string *array,
 
     ostringstream out;
 
-    for (auto const &client: d_client)      // construct the client array
+    for (auto &client: d_client)      // construct the client array
     {
 //    g_log << client.id() << ": active = " << client.active() << 
 //                            ", login0 = " << client.login0() << endl;
+
+        if (client.active() and not WIPdata::exists(d_ID, client.ident()))
+        {
+            g_log << "deactivating client " << 
+                     d_ID << '.' << client.ident() << ": no WIPdata" << endl;
+
+            WIPdata::remove(d_ID, client.ident());
+            client.deactivate();
+            *clientsChanged = true;
+        }
 
         ifstream in{ reportPre + client.ident() + ".pdf" };
         reportExists.push_back(

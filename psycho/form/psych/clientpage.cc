@@ -13,32 +13,32 @@ void Psych::clientPage()
 //           ", name: " << d_cgi->param1("name") << 
 //           ", lastname: " << d_cgi->param1("lastName") << endl;
 
-    {
-        LockGuard lg { d_data.lg() };
-        if (not get())
-            throw Tools::NO_PSYCH;
-
-                                    // all forms must have the psych's e-mail
-        requireEqual("email", d_eMail); 
     
-        displayInfo.clientIdx = d_client.size();
+    bool updated = false;
+    LockGuard lg { d_data.lg() };
+    if (not get())
+        throw Tools::NO_PSYCH;
 
-        if (                        // determine the function to perform
-            auto iter = s_clientPageRequest.find(d_cgi->param1("request")); 
-            iter != s_clientPageRequest.end()
-        )
-        {
-            displayInfo = (this->*iter->second)();    
-                                        // add, addActive, deactivate, show, 
-                                        // update, updateActive, remove, 
+                                // all forms must have the psych's e-mail
+    requireEqual("email", d_eMail); 
 
-            d_data.update(emailKey(), toString());
-        }
-    }                                    
+    displayInfo.clientIdx = d_client.size();
+
+    if (                        // determine the function to perform
+        auto iter = s_clientPageRequest.find(d_cgi->param1("request")); 
+        iter != s_clientPageRequest.end()
+    )
+    {
+        displayInfo = (this->*iter->second)();    
+                                    // add, addActive, deactivate, show, 
+                                    // update, updateActive, remove, 
+
+        updated = true;
+    }
 
 g_log << "clientpage idx = " << displayInfo.clientIdx <<  endl;
 
-
-    displayClientPage(displayInfo);
+    if (displayClientPage(displayInfo) or updated)
+        d_data.update(emailKey(), toString());
 }
 

@@ -1,6 +1,8 @@
 #include "psych.ih"
 
-void Psych::displayClientPage(DisplayInfo const &displayInfo)
+    // return true if infoClient -> buildClientArray has modified clients'
+    // data 
+bool Psych::displayClientPage(DisplayInfo const &displayInfo)
 {
     ostringstream out;                          // construct the variables
 
@@ -9,9 +11,12 @@ void Psych::displayClientPage(DisplayInfo const &displayInfo)
 
     vector<bool> reportExists;
 
+    bool clientsChanged = false;
+
                                         // any defined clients?
     if (d_client.size())                // then create the <select> section
-        infoClient(&clientArray, &clientSelect, reportExists);  
+        clientsChanged = 
+            infoClient(&clientArray, &clientSelect, reportExists);  
 
     d_display.out(
         "clientpage.h",
@@ -28,5 +33,7 @@ void Psych::displayClientPage(DisplayInfo const &displayInfo)
             reportHyperlink(reportExists, displayInfo.clientIdx)
         }
     );
+
+    return clientsChanged;
 }
 

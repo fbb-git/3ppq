@@ -121,14 +121,18 @@ class Psych
         void noPwd();
 
         void clientPage();                  // show the client page
-        void displayClientPage(DisplayInfo const &displayInfo);
+
+                                            // true: clients data were changed
+        bool displayClientPage(DisplayInfo const &displayInfo);
         std::string reportHyperlink(std::vector<bool> &reportExists, 
                                     size_t idx) const;
 
-        void infoClient(std::string *clientArray, std::string *clientSelect,
+                                            // true: clients data changed
+        bool infoClient(std::string *clientArray, std::string *clientSelect,
                         std::vector<bool> &reportExists);
         size_t buildClientArray(std::string *array, 
-                                std::vector<bool> &reportExists) const;
+                                std::vector<bool> &reportExists,
+                                bool *clientsChanged);
         void buildSelectTag(std::string *select, 
                             std::vector<bool> const &reportExists, 
                             size_t idLength) const;

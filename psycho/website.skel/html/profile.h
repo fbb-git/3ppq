@@ -17,7 +17,7 @@
 <nav class="top-menu-markup">                                               
     <ul class="spread">
         <li class="li-linewise">
-            <a href="/home.html" title="3ppq home-page (en uitloggen)" >
+            <a href="/home.shtml" title="3ppq home-page (en uitloggen)" >
                 <img border=0 src="/images/home.png" height=16em >
             </a>
         </li>

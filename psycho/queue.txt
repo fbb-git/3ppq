@@ -1,13 +1,6 @@
+<notice>home.html is home.shtml vanaf Sat, 19 May 2018 09:30</notice>
 
-Copyright notices op webpagina's (16 May 2018 13:16:17)
 
-Alleen op homepage onderaan plaatsen (we hoeven niet te overdrijven): (na de
-laatste regel twee witregels, dan in kleiner Arial font (ongeveer 2 punten
-schat ik) de tekst:  
-Copyright (c) 2018 Team 3ppq, GPLv3 or later. No warranty. Vervolgens de drie
-eindwitregels. 
-
------------------------------------
 
 
 

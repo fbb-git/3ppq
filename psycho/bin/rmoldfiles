@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# to be called by cron, once a day, configure the website location if
+# necessary
+
+website=~/website
+
+    # remove reports after a month
+
+find ${website}/reports/ -type f -ctime +31 -exec rm -f '{}' ';'
+
+
+    # remove incomplete data after 10 days
+
+files=`find ${website}/data/ -type f -regex '.*/[0-9]+.*' -ctime +10 \
+            -exec ls '{}' ';'`
+
+for file in $files ; do
+    rm -f ${files}*
+done

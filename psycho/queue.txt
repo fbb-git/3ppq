@@ -1,1 +1,19 @@
-<empty>
+
+Copyright notice:
+Nog een witregel toevoegen tussen tekst en copyrightmelding
+Gele markering verwijderen
+Aanhalingstekens rond (c)-teken verwijderen
+Na warranty punt toevoegen
+
+-----------------------------------
+
+Homepage op defaultpage zetten (als ik het goed zeg). Oftewel groen licht! 
+
+-----------------------------------
+
+Er blijkt een loop in de vragenlijsten zijn geslopen: na vraag 42 volgt vraag
+43 met ... en dan vraag 44 die de inhoud van vraag 1 heeft. Ergens in de 80
+begint hij voor de derde keer.
+
+
+-----------------------------------

@@ -16,7 +16,7 @@ class PsychClient
     uint16_t d_ID = 0;              // internal client nr
     uint32_t d_active = 0;          // active since, or 0 if not active
 
-    bool        d_gender = false;   // false: female, true: male
+    bool d_gender = false;          // false: female, true: male
 
     std::string d_ident;            // id used by the psychologist for this
                                     // client

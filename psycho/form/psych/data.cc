@@ -25,18 +25,21 @@ Psych::Map2display Psych::s_clientPageRequest =
     { "update",         &Psych::updateClient }, 
 };
 
+    // submitrequest: call psych/clientpage with the argument as request.
+    // process: returns client idx and calls submitRequest passing
+    //          the argument to submitRequest
 string Psych::s_activate = R"(
-                <input type=submit name='action' value="Versturen"
+                <input type=submit name='action' value="Afname activeren"
                     title="verstuur een uitnodiging aan deze cli&euml;nt"
                     onclick='process("activate")'>)";
 
 string Psych::s_add = R"(
-                <input type=submit name='action' value=Toevoegen
+                <input type=submit name='action' value='Aan lijst toevoegen'
                     title="cli&euml;nt toevoegen"
                     onclick='submitRequest("add")' >)";
 
 string Psych::s_addActive = R"(
-                <input type=submit name='action' value="Toevoegen + versturen"
+                <input type=submit name='action' value="Toevoegen + activeren"
                     title="cli&euml;nt toevoegen + uitnodiging versturen"
                     onclick='submitRequest("addActivate")' >)";
 

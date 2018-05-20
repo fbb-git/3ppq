@@ -25,12 +25,26 @@ ConfigFile  g_config{ g_options.config(), ConfigFile::RemoveComment };
 int main(int argc, char **argv)
 try
 {
-    WIPdata wipData;
-    wipData.read(argv[1]);
+    if (argc == 1)
+    {
+        cout << "1 arg: wipdata file,\n"
+                "2 args: 1st is pid.cid, and pid.cid.csv must exist\n";
+        return 0;
+    }
 
-    Report report{ wipData };
-    report.generate();
+    if (argc == 2)
+    {
+        WIPdata wipData;
+        wipData.read(argv[1]);
 
+        Report report{ wipData };
+        report.generate();
+    }
+    else
+    {
+        Report report{ argv[1] };
+        report.generate();
+    }
 }
 catch (exception const &exc)
 {

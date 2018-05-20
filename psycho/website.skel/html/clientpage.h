@@ -74,7 +74,7 @@ $1
     <td>
         <table style="border-collapse: collapse;">
             <tr>
-                <td class=right>ID: </td> 
+                <td class=right>Client ID: </td> 
                 <td ><input class=margin pattern="^[-'\w.:;/]+$"
                             type=text name=ident size=5>
                 $4
@@ -91,14 +91,14 @@ $1
                         pattern="^['\w.\s]+$" size=50></td>
             </tr>
             <tr class=darkrow>
-                <td class=right> Geslacht: </td>
+                <td class=right>Geslacht: </td>
                 <td> 
                     <input id=gender1 type=radio name=gender value=M> M<br>
                     <input id=gender2 type=radio name=gender value=F> V
                 </td>
             </tr>
             <tr>
-                <td class=right>E-mail adres: </td> 
+                <td class=right>E-mail: </td> 
                 <td ><input class=margin type=email name=clEmail size=50></td>
             </tr>
             <tr class=darkrow>
@@ -108,7 +108,7 @@ $1
             <tr>
                 <td>&nbsp;</td>
             <tr>
-            <!-- submitActions -->
+            <!-- submitActions, psych/{clientpage.cc,data.cc} -->
             $2
         </table>
     </td>

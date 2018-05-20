@@ -31,6 +31,8 @@ class Report
 
     public:
         Report(WIPdata const &wipData);
+        Report(char const *pidCid);
+
         ~Report();
 
         void generate() const;

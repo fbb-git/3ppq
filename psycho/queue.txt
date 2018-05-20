@@ -1,1 +1,44 @@
-<empty>
+
+Aanpassing van de indeling van de clientenpagina om deze begrijpelijker te
+maken. Ik ben uitgegaan van bestaande opzet van alle gegevens op 1 pagina en
+het handhaven van door jou gedefinieerde functies:
+
+(Zie clientenpagina.pdf)
+
+- De titel Clientverwerking vervangen door Clientgegevens
+En daaronder beginnen met het invulscherm (dus de clientlijst naar onderen
+verplaatsen) 
+
+- ID vervangen door Client ID
+- E-mail adres vervangen door E-mail
+Verder is het invulscherm prima
+- De knop Toevoegen hernoemen in Aan lijst toevoegen
+- De knop Versturen hernoemen in Afname activeren
+
+Zodra een van beide knoppen wordt aangeklikt, dient het scherm leeg te
+worden. De gegevens zijn dan verplaatst naar de clientlijst. 
+
+Daaronder de kop Clientlijst
+Daaronder de tekst: Klik op een client om de clientgegevens te tonen, te
+kunnen wijzigen of om een rapport te kunnen ophalen. 
+(Zodra je op een client in de Clientlijst tikt, vult deze het invulscherm en
+worden de andere knoppen zichtbaar (wijzigen, deactiveren en verwijderen).  
+
+Hieronder de clientenlijst. 
+
+-----------------------------
+
+Aanpassen en uitbreiden van de Clientlijst:
+- ID vervangen door Client ID
+- Naam vervangen door Achternaam (de aanspreeknaam Konijntje Hofstee wil je er
+niet in hebben staan. Identieke achternamen zijn te  onderscheiden door de
+Client ID.)  
+- De laatst toegevoegde client bovenaan in de Clientlijst plaatsen.
+
+De drie volgende kolommen zijn uitbreidingen. Ik weet niet of het technisch te
+ingewikkeld is, maar vooral inzicht in de actuele stand  
+van zaken, de Status, lijkt mij een prettige service aan de gebruiker. Graag
+jouw visie.  
+(Zie clientenpagina.pdf voor mogelijke feedback-opties)
+
+

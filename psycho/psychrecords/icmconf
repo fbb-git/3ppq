@@ -14,7 +14,7 @@
 #define IH                  ".ih"
 //#define PRECOMP             "-x c++-header"
 #define REFRESH
-#define LDFLAGS             ""
+#define LDFLAGS             "-s"
 #define ADD_LIBRARIES       "handler support bobcat crypto"
 #define ADD_LIBRARY_PATHS   "../../support/tmp ../../form/tmp"
 #define DEFCOM              "program"

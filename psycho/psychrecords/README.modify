@@ -1,0 +1,25 @@
+To modify psychologist or client-data (PsychClients) the following steps are
+required:
+
+    1. Update psych/tostring.cc and optionally psychclient.tostring.cc so that
+        placeholders of new fields are added with default values 
+        to the returned strings.
+
+    2. Run 
+            psychrecords modify newData
+        where newData is the base name (no extensions) of the new DataStore
+        file
+
+    3. Add new data members to psych.h and psychclient.h 
+
+    4. Update psych/tostring.cc and psychclient.tostring.cc so that the data
+        members instead of the default values are written to the returned
+        string
+
+    5. Update psych/read.cc and psychclient/get.cc so that the new data
+        members are read
+
+    6. Install 
+            newData     to .../website/data/psych
+            newData.idx to .../website/data/psych.idx
+

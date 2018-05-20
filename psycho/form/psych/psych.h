@@ -77,6 +77,8 @@ class Psych
 
         std::string const &eMail() const;
         bool get(std::string const &key);
+        void put(DataStore &dataStore, std::string const &key) const;
+
         uint16_t ID() const;
         bool ack() const;           // true: acknowledgement received
         uint32_t registrationTime() const;

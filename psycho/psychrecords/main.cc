@@ -20,6 +20,8 @@ try
         list();
     else if (argv[1] == "expired"s)
         expired();
+    else if (argv[1] == "modify"s and argc == 3)
+        modify(argv[2]);
     else
         usage(basename(argv[0]));
 }

@@ -12,10 +12,11 @@ void usage(std::string const &progname)
 Where:
    action - action to perform
        list:   list all entries + stored e-mail addresses
-       modify: (NOT YET) modify all records (after modifying the Psych's
+       modify newData: modify all records (after modifying the Psych's
                toString member, defining a new data organization. Following 
-               the modification, update the Psych's read function accordingly
-       expired: remove expired psychologist registrations (older then two
+               the modification, update Psych's read function accordingly
+               see also README.modify. The new data are written to 'newData'
+       expired: remove expired psychologist registrations (older than two
                days, without received acknowledgements
 )";
     throw 0;

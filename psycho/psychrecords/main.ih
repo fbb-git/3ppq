@@ -21,6 +21,7 @@ namespace Icmbuild
 void usage(std::string const &progname);
 void list();
 void expired();
+void modify(char const *destination);
 
 using namespace std;
 using namespace FBB;

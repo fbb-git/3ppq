@@ -19,7 +19,7 @@ namespace {
 
 
 Options g_options{ g_base };
-Log     g_log{ "log" };           // generic log facility
+Log     g_log{ "/tmp/log" };           // generic log facility
 ConfigFile  g_config{ g_options.config(), ConfigFile::RemoveComment };
 
 int main(int argc, char **argv)
@@ -28,7 +28,8 @@ try
     if (argc == 1)
     {
         cout << "1 arg: wipdata file,\n"
-                "2 args: 1st is pid.cid, and pid.cid.csv must exist\n";
+                "2 args: 1st is pid.cid, pid.cid.csv must exist\n"
+                "       2nd is psych e-mail\n";
         return 0;
     }
 
@@ -42,7 +43,7 @@ try
     }
     else
     {
-        Report report{ argv[1] };
+        Report report{ argv[1], argv[2] };
         report.generate();
     }
 }

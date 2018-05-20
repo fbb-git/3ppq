@@ -1,6 +1,6 @@
 #include "report.ih"
 
-Report::Report(char const *pidCid)
+Report::Report(char const *pidCid, char const *psychEmail)
 :
     d_pidCid(pidCid),
     d_pathPrefix(g_options.tmpDir() + d_pidCid + '.'),
@@ -20,7 +20,7 @@ Report::Report(char const *pidCid)
 
     d_clientIdent(d_pidCid.substr(d_pidCid.find('.') + 1)),
     d_from(0),
-    d_psychEmail("frank@localhost")
+    d_psychEmail(psychEmail)
 {}
 
 

@@ -31,7 +31,7 @@ class Report
 
     public:
         Report(WIPdata const &wipData);
-        Report(char const *pidCid);
+        Report(char const *pidCid, char const *psychemail);
 
         ~Report();
 

@@ -1,7 +1,8 @@
-#include "psych.ih"
+#include "clientpage.ih"
 
 // static
-string Psych::fixedWidth(string const &txt, size_t length, Tools::Align align)
+string ClientPage::fixedWidth(string const &txt, size_t length, 
+                              Tools::Align align)
 {
     string blanks;
 

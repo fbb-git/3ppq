@@ -1,6 +1,6 @@
 #include "psych.ih"
 
-Psych::DisplayInfo Psych::updateClient()
+ClientPage::Info Psych::updateClient()
 {
     uint16_t idx = validClientIdx();
 

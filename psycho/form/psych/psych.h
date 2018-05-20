@@ -6,12 +6,15 @@
 #include <vector>
 #include <string>
 
+#include <bobcat/align>
+
 #include "../psychclient/psychclient.h"
 #include "../../support/datastore/datastore.h"
 #include "../../support/display/display.h"
 #include "../../support/tools/tools.h"
 
-#include <bobcat/align>
+#include "../clientpage/clientpage.h"
+
 
 namespace FBB
 {
@@ -23,15 +26,15 @@ class WIPdata;
 
 class Psych
 {
-    struct DisplayInfo
-    {
-        std::string submitActions;
-        size_t      clientIdx;          // show this client idx unless >=
-    };                                  // d_client.size()
+//    struct DisplayInfo
+//    {
+//        std::string submitActions;
+//        size_t      clientIdx;          // show this client idx unless >=
+//    };                                  // d_client.size()
 
     typedef std::unordered_map<std::string, void (Psych::*)()>  Map;
     typedef std::unordered_map<std::string, 
-                               DisplayInfo (Psych::*)()>      Map2display;
+                               ClientPage::Info (Psych::*)()>   Map2display;
 
     DataStore d_data;          // psychologists' data
     FBB::CGI *d_cgi = 0;
@@ -46,7 +49,7 @@ class Psych
     static std::string s_add;
     static std::string s_addActive;
     static std::string s_deactivate;
-    static std::string s_erase;
+//    static std::string s_erase;
     static std::string s_remove;
     static std::string s_update;
     
@@ -104,8 +107,8 @@ class Psych
         void nQuest();                  // change the # questions to use
 
         void addPsych();
-        uint8_t parseField();
         bool validRegistrationData(uint64_t *nip, uint8_t *field);
+        uint8_t parseField();
         static bool pwdRequirements(std::string const &pwd);
 
         void verifyAck();
@@ -119,31 +122,10 @@ class Psych
         bool validProfileData(uint8_t *field);
         bool changedPwd();
 
-
         void noPwd();
 
         void clientPage();                  // show the client page
-
-                                            // true: clients data were changed
-        bool displayClientPage(DisplayInfo const &displayInfo);
-        std::string reportHyperlink(std::vector<bool> &reportExists, 
-                                    size_t idx) const;
-
-                                            // true: clients data changed
-        bool infoClient(std::string *clientArray, std::string *clientSelect,
-                        std::vector<bool> &reportExists);
-        size_t buildClientArray(std::string *array, 
-                                std::vector<bool> &reportExists,
-                                bool *clientsChanged);
-        void buildSelectTag(std::string *select, 
-                            std::vector<bool> const &reportExists, 
-                            size_t idLength) const;
-        void startSelect(std::ostream &out,  size_t idLength) const;
-        void endSelect(std::ostream &out, bool foundReport) const;
-
         void report();                      // download a report
-
-//        void selectTag(std::string *clientArray, std::string *clientSelect);
 
 //  -------------------------------------------------------------------------
 //                  client      
@@ -157,13 +139,13 @@ class Psych
 //   6      0          0           0                    -
 //  -------------------------------------------------------------------------
 
-        DisplayInfo activateClient();   // handles 3 by removing existing file
-        DisplayInfo addClient();        // logs 5
-        DisplayInfo addActivateClient();// logs 5
-        DisplayInfo deactivateClient(); // logs 6 if no wip file
-        DisplayInfo removeClient();
-        DisplayInfo showClient();
-        DisplayInfo updateClient();
+        ClientPage::Info activateClient();   // handles 3 by removing existing file
+        ClientPage::Info addClient();        // logs 5
+        ClientPage::Info addActivateClient();// logs 5
+        ClientPage::Info deactivateClient(); // logs 6 if no wip file
+        ClientPage::Info removeClient();
+        ClientPage::Info showClient();
+        ClientPage::Info updateClient();
 
         PsychClient &validClientData();
         size_t validClientIdx();
@@ -180,14 +162,9 @@ class Psych
         void requireContents(char const *name);
         long long requireNumber(char const *name);
 
-//        uint32_t validClientData();         // throws false on failure
         void inviteClient(PsychClient &client);
 
-//        std::vector<PsychClient>::iterator existingClient();
-
         std::string toString() const;
-        static std::string fixedWidth(std::string const &txt, size_t length,
-                                      Tools::Align align = Tools::LEFT);
         static std::string newPassword();
 
         std::vector<LockGuard> updateWIPemail() const;
@@ -217,6 +194,28 @@ inline uint16_t Psych::ID() const
 {
     return d_ID;
 }
+
+//        void selectTag(std::string *clientArray, std::string *clientSelect);
+//                                            // true: clients data were changed
+//        bool displayClientPage(DisplayInfo const &displayInfo);
+//        std::string reportHyperlink(std::vector<bool> &reportExists, 
+//                                    size_t idx) const;
+//
+//                                            // true: clients data changed
+//        bool infoClient(std::string *clientArray, std::string *clientSelect,
+//                        std::vector<bool> &reportExists);
+//        size_t buildClientArray(std::string *array, 
+//                                std::vector<bool> &reportExists,
+//                                bool *clientsChanged);
+//        void buildSelectTag(std::string *select, 
+//                            std::vector<bool> const &reportExists, 
+//                            size_t idLength) const;
+//        void startSelect(std::ostream &out,  size_t idLength) const;
+//        void endSelect(std::ostream &out, bool foundReport) const;
+//        static std::string fixedWidth(std::string const &txt, size_t length,
+//                                      Tools::Align align = Tools::LEFT);
+//        uint32_t validClientData();         // throws false on failure
+//        std::vector<PsychClient>::iterator existingClient();
 
 #endif
 

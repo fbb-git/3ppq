@@ -1,8 +1,8 @@
-#include "psych.ih"
+#include "clientpage.ih"
 
-void Psych::startSelect(ostream &out, size_t idLength) const
+void ClientPage::startSelect(ostream &out, size_t idLength) const
 {
-    size_t nRows = std::max(Tools::min(d_client.size(), 
+    size_t nRows = std::max(Tools::min(d_clients.size(), 
                                        Tools::MAX_CLIENT_SELECT_ROWS),
                             2UL);
     

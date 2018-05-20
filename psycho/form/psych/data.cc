@@ -43,10 +43,10 @@ string Psych::s_addActive = R"(
                     title="cli&euml;nt toevoegen + uitnodiging versturen"
                     onclick='submitRequest("addActivate")' >)";
 
-string Psych::s_erase = R"(
-                <input type=submit value="Velden wissen"
-                    title="wis de inhoud van de invulvelden"
-                    onclick='resetFields()' >)";
+//string Psych::s_erase = R"(
+//                <input type=submit value="Velden wissen"
+//                    title="wis de inhoud van de invulvelden"
+//                    onclick='resetFields()' >)";
 
 string Psych::s_deactivate = R"(
                 <input type=submit name='action' value="Deactiveren"

@@ -18,10 +18,7 @@ try
 {
     Tools::setLogLevel();
 
-    Tools::debug() << "start" << endl;
-
     Handler handler;                    // Form handling object
-
     handler.process();                  // process incoming forms
 }
 catch (exception const &exc)

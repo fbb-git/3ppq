@@ -1,6 +1,6 @@
 #include "psych.ih"
 
-Psych::DisplayInfo Psych::deactivateClient()
+ClientPage::Info Psych::deactivateClient()
 {
     PsychClient &client = validClientData();
 

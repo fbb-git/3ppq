@@ -1,21 +1,21 @@
-#include "psych.ih"
+#include "clientpage.ih"
 
-size_t Psych::buildClientArray(string *array, 
-                               vector<bool> &reportExists,
-                               bool *clientsChanged)
+size_t ClientPage::buildClientArray(string *array)
 {
     size_t idLength = 0;
-    for (auto const &client: d_client)
-        idLength = ::max(idLength, client.ident().length());
-    ++idLength;
 
+    for (auto const &client: d_clients)
+        idLength = ::max(idLength, client.ident().length());
+
+    ++idLength;
 
     string pid = to_string(d_ID);
     string reportPre = g_options.reportsDir() + pid + '.';
 
     ostringstream out;
 
-    for (auto &client: d_client)      // construct the client array
+    size_t idx = 0;
+    for (auto const &client: d_clients)     // construct the client array
     {
 //    g_log << client.id() << ": active = " << client.active() << 
 //                            ", login0 = " << client.login0() << endl;
@@ -26,12 +26,12 @@ size_t Psych::buildClientArray(string *array,
                      d_ID << '.' << client.ident() << ": no WIPdata" << endl;
 
             WIPdata::remove(d_ID, client.ident());
-            client.deactivate();
-            *clientsChanged = true;
+            d_deactivated.push_back(idx);
         }
+        ++idx;
 
         ifstream in{ reportPre + client.ident() + ".pdf" };
-        reportExists.push_back(
+        d_reportExists.push_back(
                         Tools::rwExists(reportPre + client.ident() + ".pdf")
                     );
 
@@ -42,7 +42,7 @@ size_t Psych::buildClientArray(string *array,
                 client.name()       << "\",\""  <<      //  3
                 client.lastName()   << "\",\""  <<      //  4
                 client.eMail()      << "\","    <<      //  5
-                reportExists.back() << "],\n";          //  6
+                d_reportExists.back() << "],\n";          //  6
     }
     *array = out.str();
 

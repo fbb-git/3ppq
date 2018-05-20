@@ -1,6 +1,6 @@
 #include "psych.ih"
 
-Psych::DisplayInfo Psych::addActivateClient()
+ClientPage::Info Psych::addActivateClient()
 {
     if (pushClient())
     {

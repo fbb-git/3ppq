@@ -1,0 +1,12 @@
+#include "clientpage.h"
+
+#include <sstream>
+#include <iomanip>
+
+#include "../../support/global/global.h"
+#include "../../support/display/display.h"
+#include "../../support/wipdata/wipdata.h"
+#include "../psychclient/psychclient.h"
+
+using namespace std;
+

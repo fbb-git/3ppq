@@ -1,8 +1,8 @@
-#include "psych.ih"
+#include "clientpage.ih"
 
-string Psych::reportHyperlink(vector<bool> &reportExists, size_t idx) const
+string ClientPage::reportHyperlink(size_t idx) const
 {
-    return idx >= d_client.size() || not reportExists[idx] ? 
+    return idx >= d_clients.size() || not d_reportExists[idx] ? 
             ""
         :
             R"_(<a href="/report.html" onclick="report()_" +

@@ -1,11 +1,8 @@
 #include "psych.h"
 
-//#include <iostream>
-//#define CERR std::cerr << __FILE__": "
-
 #include <ctime>
-#include <iomanip>
-#include <algorithm>
+//                      #include <iomanip>
+//                      #include <algorithm>
 #include <sstream>
 
 #include <bobcat/cgi>

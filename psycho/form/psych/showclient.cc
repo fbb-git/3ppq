@@ -1,6 +1,6 @@
 #include "psych.ih"
 
-Psych::DisplayInfo Psych::showClient()
+ClientPage::Info Psych::showClient()
 {
     PsychClient &client = d_client[validClientIdx()];
 

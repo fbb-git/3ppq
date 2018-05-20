@@ -1,6 +1,6 @@
 #include "psych.ih"
 
-Psych::DisplayInfo Psych::addClient()
+ClientPage::Info Psych::addClient()
 {
     if (pushClient())
         rmExistingWIPdata(d_client.back(), "removed");

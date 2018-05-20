@@ -1,6 +1,7 @@
-#include "psych.ih"
+#include "clientpage.ih"
 
-void Psych::endSelect(ostream &out, bool foundReport) const
+// static
+void ClientPage::endSelect(ostream &out, bool foundReport)
 {
     out << R"_(
             </select>

@@ -1,4 +1,129 @@
 
+Deel 1 (zelf):
+P1 De tekst van Algemene instructie als volgt in alineas indelen:
+
+Het navolgende onderzoek bestaat uit drie delen, die elk eindigen met de optie Verstuur. (witregel)
+U kunt niet verder gaan met een volgend deel voordat u Verstuur hebt aangeklikt. Hiermee worden uw antwoorden opgeslagen. (witregel)
+Wanneer u tussentijds het onderzoek afbreekt worden antwoorden die nog niet verstuurd zijn niet opgeslagen. (witregel)
+U wordt verzocht om het gehele onderzoek in een keer te doorlopen. (witregel)
+Het totale onderzoek duurt ongeveer 20 minuten. (witregel)
+Klik op Start deel 1 om een eerste serie van 42 vragen te beantwoorden.
+
+------------------------
+
+P1 en verder: De aanhalingstekens kloppen niet (moeilijk om in ASCI tekens uit te leggen): 
+Bij aanhalingsteken openen gebruik je zo te zien een accent grave (het tekentje linksboven op je toetsenbord) 
+en bij het aanhalingsteken sluiten gebruik je de apostrof (die naast de puntkomma staat op je toetsenbord). 
+Liever van beide apostrofs maken.
+Dit komt op p1 voor bij Verstuur (2x) en bij Start deel 1 
+
+------------------------
+
+P2 
+- Verwijderen: Toelichting en invulinstructie 
+- Wijzigen: de tekst Deze vragenlijst gaat over hoe u bent. in: Deze vragen gaan over hoe u als persoon bent.
+- Na de antwoordschaal: 1 witregel verwijderen.
+- Kies het meest passende antwoord. (witregel toevoegen)
+- Voeg toe: Per vraag kunt u slechts een (NB: met accenten) antwoord aanklikken. U kunt uw keuze veranderen door een ander antwoord aan te klikken.
+U kunt ook teruggaan naar een eerdere vraag om uw antwoord te bekijken of veranderen.
+- Verwijderen: U kunt uw antwoorden nog veranderen voor u de vragenlijst verstuurt.
+- Laatste zin verwijderen: Dit onderdeel van ... etc
+
+-------------------------
+
+Bij het voorbeeld en alle vragen:
+- Inspringen iets minder ver (meer naar links dus), zodat de terugknop net enkele posities van de linkermarge staat.
+- De aanklikknopjes dienen op gelijke afstand te staan. (Met mijn boerenverstand vermoed ik dat dit samenhangt met de antwoordcategorieen
+eronder. Gebruik je misschien tabs in de ene regel en spaties in de andere? Mogelijk gaat het wel goed als je de aanklikknopjes onder de 
+antwoordcategorieen plaatst? Andere optie die ik zie, maar ik weet niet of dat technisch kan, is er een tabel van twee rijen en zeven kolommen met onzichtbare 
+lijnen van te maken, waarin de celinhoud gecentreerd staat.)
+
+-------------------------
+
+Bij vraag 19, 34 en 38: hem/haar en hij/zij is nu systematisch veranderd in hem en hij bij de vrouwelijke client en vice versa bij de vrouwelijke client.
+Graag omkeren.
+
+-------------------------
+
+Bij vraag 42 van deel 1:
+- Na het woord Beantwoord nieuwe regel beginnen
+- Aanhalingstekens Verstuur wijzigen
+- Het woord Direct verwijderen 
+
+-------------------------
+
+Deel 2 (meta):
+- Verwijderen: Toelichting en invulinstructie 
+- Verwijderen: In het vorige onderdeel .... hoe anderen vinden dat u bent.
+- Vervangen door: De volgende 42 vragen gaan over hoe anderen vinden dat u als persoon bent. 
+- Nieuwe regel: Bijvoorbeeld: etc.
+- Na antwoordschaal witregel verwijderen
+- Anderen niet cursief
+- Laatste zin verwijderen: Zulke vragen zijn vaak lastiger te beantwoorden etc.
+
+-------------------------
+
+Bij vraag 42 van deel 2:
+- Na het woord Beantwoord nieuwe regel beginnen
+- Aanhalingstekens Verstuur wijzigen
+- Het woord Direct verwijderen 
+
+-------------------------
+
+Instructie deel 3:
+- Nieuwe regel bij Wilt u ...
+- Nieuwe regel bij Wanneer ...
+- E-mail adres wijzigen in E-mail
+- Eerste ander vervangen door 1 (resp. 2 en 3) 
+(Dus E-mail 1, E-mail 2 en E-mail 3. Dit heeft te maken met de lay-out op klein scherm)
+
+-------------------------
+
+Uitnodigings e-mail met link aan ander:
+
+- Uw antwoorden worden niet aan hem doorgegeven.. wijzigen in: Uw antwoorden worden niet aan Aanspreeknaamclient doorgegeven.
+- Invoegen na: Uw e-mailadres wordt na het invullen van de vragenlijst verwijderd. (witregel) Voor de voortgang van het onderzoek is het belangrijk dat de vragenlijst binnen een week wordt ingevuld.
+Vervolgens de url.
+- Hierna: Bedankt voor uw medewerking.
+
+-------------------------
+
+Vragenlijst vorm 2 (ander):
+
+P1 toevoegen:
+Algemene instructie (witregel)
+Het navolgende onderzoek bestaat uit 42 vragen en eindigt met de optie Verstuur. (witregel)
+Uw antwoorden worden pas opgeslagen wanneer u Verstuur hebt aangeklikt. (witregel)
+Wanneer u tussentijds het onderzoek afbreekt gaan uw al ingevulde antwoorden verloren. 
+U wordt dan ook verzocht om alle vragen in een keer te doorlopen. 
+Het beantwoorden van de vragen duurt ongeveer 10 minuten. (witregel)
+U blijft zelf anoniem in dit onderzoek. Uw antwoorden worden niet aan Aanspreeknaamclient doorgegeven. Uw antwoorden en die van twee anderen worden gemiddeld. 
+Dit gemiddelde en de betekenis ervan zullen met Aanspreeknaamclient worden besproken.
+- Knop Verder toevoegen
+
+--------------------------
+
+P2 
+- Verwijderen: Toelichting en invulinstructie 
+De tekst wordt:
+- Deze vragenlijst gaat over hoe Aanspreeknaamclient is. (Dus achternaam verwijderen).
+- Bijvoorbeeld: is Aanspreeknaamclient (geen achternaam) iemand die ... etc
+- Na de antwoordschaal: 1 witregel verwijderen.
+- Kies het meest passende antwoord. (witregel toevoegen)
+- Verwijderen: en klik dan op verder om ... tot en met .... besproken.
+- Voeg toe: Per vraag kunt u slechts een (NB: met accenten) antwoord aanklikken. U kunt uw keuze veranderen door een ander antwoord aan te klikken.
+U kunt ook teruggaan naar een eerdere vraag om uw antwoord te bekijken of veranderen. (witregel)
+
+--------------------------
+
+Bij alle vragen alleen Aanspreeknaamclient gebruiken.
+
+--------------------------
+
+Bij vraag 42: tekst wijzigen in: U hebt alle vragen beantwoord. Klik op Verstuur om uw vragen op te slaan.
+
+-------------------------- 
+
 Aanpassing van de indeling van de clientenpagina om deze begrijpelijker te
 maken. Ik ben uitgegaan van bestaande opzet van alle gegevens op 1 pagina en
 het handhaven van door jou gedefinieerde functies:
@@ -40,5 +165,7 @@ ingewikkeld is, maar vooral inzicht in de actuele stand
 van zaken, de Status, lijkt mij een prettige service aan de gebruiker. Graag
 jouw visie.  
 (Zie clientenpagina.pdf voor mogelijke feedback-opties)
+
+------------------------------
 
 

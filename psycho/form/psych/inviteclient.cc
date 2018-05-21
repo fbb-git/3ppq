@@ -21,7 +21,7 @@ void Psych::inviteClient(PsychClient &client)
             g_options.mailDir() + "activateclient", 
             {
                 client.genderText(),                        // $0
-                client.name() + ' ' + client.lastName(),    // $1
+                client.lastName(),                          // $1
                 psychName,                                  // $2
                 link,                                       // $3
             }

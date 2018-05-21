@@ -118,9 +118,9 @@ Deze vragenlijst gaat over hoe $1 is. Bijvoorbeeld:
 </table>
 
 
-Kies het meest passende antwoord en klik dan op `verder' om naar de volgende
-vraag te gaan. Door op `terug' te klikken gaat u terug naar de vorige vraag.
-<p>
+Kies het meest passende antwoord en klik dan op &#x2018;verder&#x2019; om naar
+de volgende vraag te gaan. Door op &#x2018;terug&#x2019; te klikken gaat u
+terug naar de vorige vraag.  <p>
 
 De vragenlijst bestaat uit 42 van dergelijke vragen. Als u in een rustig tempo
 werkt, kost het een minuut of tien.

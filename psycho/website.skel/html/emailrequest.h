@@ -10,9 +10,9 @@
 
 Het derde onderdeel van dit onderzoek bestaat uit het voorleggen van de vragen
 aan drie anderen die u goed kennen. Wilt u daartoe de drie e-mailadressen van
-deze anderen hieronder invullen? Wanneer u op `Verstuur' klikt krijgen 
-deze drie anderen een uitnodiging om de vragen te beantwoorden en bent u klaar
-met het onderzoek.
+deze anderen hieronder invullen? Wanneer u op &#x2018;Verstuur&#x2019; klikt
+krijgen deze drie anderen een uitnodiging om de vragen te beantwoorden en bent
+u klaar met het onderzoek.
 
 <p>
 

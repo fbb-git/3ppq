@@ -70,8 +70,9 @@ De door u verzamelde data zijn beschikbaar als CSV bestand via
 
 De CSV data zijn gegroepeerd in blokken van vijf regels. Elke blok bevat de
 beoordelingsdata van een volledige vragenlijstafname. Mochten sommige
-`anderen' de vragenlijst niet (binnen een week) hebben ingevuld dan zijn de
-antwoorden op de vragen voor die `anderen' gecodeerd als -2.
+&#x2018;anderen&#x2019; de vragenlijst niet (binnen een week) hebben ingevuld
+dan zijn de antwoorden op de vragen voor die &#x2018;anderen&#x2019; gecodeerd
+als -2.
 
 <p>
 

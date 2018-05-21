@@ -1,3 +1,37 @@
+25 Mon, 21 May 2018 10:30:09 +0200
+
+P1 en verder: De aanhalingstekens kloppen niet (moeilijk om in ASCI tekens uit
+te leggen): Bij aanhalingsteken openen gebruik je zo te zien een accent grave
+(het tekentje linksboven op je toetsenbord) en bij het aanhalingsteken sluiten
+gebruik je de apostrof (die naast de puntkomma staat op je toetsenbord).
+Liever van beide apostrofs maken.  Dit komt op p1 voor bij Verstuur (2x) en
+bij Start deel 1
+
+Vervangen door &#x2018; en &#x2019; in html pagina's
+
+------------------------
+
+24 Mon, 21 May 2018 09:50:39 +0200
+
+Deel 1 (zelf):
+P1 De tekst van Algemene instructie als volgt in alineas indelen:
+
+Het navolgende onderzoek bestaat uit drie delen, die elk eindigen met de optie
+Verstuur. (witregel)
+
+U kunt niet verder gaan met een volgend deel voordat u Verstuur hebt
+aangeklikt. Hiermee worden uw antwoorden opgeslagen. (witregel)
+
+Wanneer u tussentijds het onderzoek afbreekt worden antwoorden die nog niet
+verstuurd zijn niet opgeslagen. (witregel)
+
+U wordt verzocht om het gehele onderzoek in een keer te doorlopen. (witregel)
+Het totale onderzoek duurt ongeveer 20 minuten. (witregel)
+Klik op Start deel 1 om een eerste serie van 42 vragen te beantwoorden.
+
+------------------------
+
+
 23 Mon, 21 May 2018 09:42:54 +0200
 
 Uitnodigings e-mail met link aan client:

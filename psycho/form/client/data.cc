@@ -30,12 +30,11 @@ char const Client::s_closeSelf[] =
 char const Client::s_closeMeta[] = 
     "U hebt alle vragen van deel 2 beantwoord.<p>\n"
     "Klik op &#x2018;Verstuur&#x2019; om uw vragen op te slaan, "
-    "waarna u verder kunt gaan met deel 3.";
+    "waarna u verder kunt gaan met deel 3.\n";
 
 char const Client::s_closeOther[] = 
-    "Dit was de laatste vraag. Als u wilt kunt u nog antwoorden wijzigen. "
-    "Door op onderstaande knop &#x2018;Verstuur&#x2019; te klikken worden uw antwoorden "
-    "definitief.";
+    "U hebt alle vragen beantwoord. Klik op &#x2018;Verstuur&#x2019; "
+    "om uw vragen op te slaan\n";
 
 char const Client::s_selfThanks[] = 
     "Het onderzoek is afgerond. Uw psycholoog krijgt de resultaten "

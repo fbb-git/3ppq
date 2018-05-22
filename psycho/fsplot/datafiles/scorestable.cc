@@ -11,11 +11,11 @@ void DataFiles::scoresTable(char const *path) const
     out.precision(2);                           // 2 digits behind the .
 
     StrVector label {
-                        "Extraversie",
-                        "Mildheid",
-                        "Ordelijkheid",
-                        "Emotionele Stabiliteit",
-                        "Automomie",
+                        "Spontaan",
+                        "Mild",
+                        "Voorspelbaar",
+                        "Onverstoorbaar",
+                        "Kritisch",
                         "Algemene Factor",
                     };
 

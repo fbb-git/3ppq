@@ -1,13 +1,4 @@
 
-Instructie deel 3:
-- Nieuwe regel bij Wilt u ...
-- Nieuwe regel bij Wanneer ...
-- E-mail adres wijzigen in E-mail
-- Eerste ander vervangen door 1 (resp. 2 en 3) 
-(Dus E-mail 1, E-mail 2 en E-mail 3. Dit heeft te maken met de lay-out op klein scherm)
-
--------------------------
-
 Uitnodigings e-mail met link aan ander:
 
 - Uw antwoorden worden niet aan hem doorgegeven.. wijzigen in: Uw antwoorden worden niet aan Aanspreeknaamclient doorgegeven.

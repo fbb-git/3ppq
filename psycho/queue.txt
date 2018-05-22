@@ -1,14 +1,4 @@
-
-Bij alle vragen wordt de nieuwe schaal:
-ja    O------O------O------O------O   nee 
-
-Omdat de regel hierdoor langer wordt, de terug- en verderknoppen onder ja en nee zetten
-
---------------------------
-
-Alle vragen dienen te worden gespiegeld (lopen van ja naar nee i.p.v. van nee naar ja)
-
---------------------------
+30 
 
 Bij vraag 19, 34 en 38: hem/haar en hij/zij is nu systematisch veranderd in hem en hij bij de vrouwelijke client en vice versa bij de vrouwelijke client.
 Graag omkeren.

@@ -1,17 +1,18 @@
-27 Tue, 22 May 2018 15:09:10 +0200
+29 Tue, 22 May 2018 15:19:30 +0200
 
-P2 
-- Verwijderen: Toelichting en invulinstructie 
-- Wijzigen: de tekst Deze vragenlijst gaat over hoe u bent. in: Deze vragen gaan over hoe u als persoon bent.
-- Na de antwoordschaal: 1 witregel verwijderen.
-- Kies het meest passende antwoord. (witregel toevoegen)
-- Voeg toe: Per vraag kunt u slechts een (NB: met accenten) antwoord aanklikken. U kunt uw keuze veranderen door een ander antwoord aan te klikken.
-U kunt ook teruggaan naar een eerdere vraag om uw antwoord te bekijken of veranderen.
-- Verwijderen: U kunt uw antwoorden nog veranderen voor u de vragenlijst verstuurt.
-- Laatste zin verwijderen: Dit onderdeel van ... etc
+Alle vragen dienen te worden gespiegeld (lopen van ja naar nee i.p.v. van nee naar ja)
+
+--------------------------
+
+28 Tue, 22 May 2018 15:19:30 +0200
+
+Bij alle vragen wordt de nieuwe schaal:
+ja    O------O------O------O------O   nee 
+
+Omdat de regel hierdoor langer wordt, de terug- en verderknoppen onder ja en nee zetten
 
 -------------------------
-26 Tue, 22 May 2018 15:09:10 +0200
+27 Tue, 22 May 2018 15:09:10 +0200
 
 Aanvulling op #1 hierboven:
 P2 Verwijderen: Kies het meest passende antwoord.
@@ -23,6 +24,20 @@ Kies op de schaal tussen ja en nee het meest passende antwoord: (witregel)
       O------O------O------X------O     als het eerder nee dan ja is
       O------O------O------O------X     als het duidelijk nee is
 (Voor alle duidelijkheid: ---- dient ononderbroken lijn te worden als dat mogelijk is)
+
+--------------------------
+26 Tue, 22 May 2018 15:09:10 +0200
+
+P2 
+- Verwijderen: Toelichting en invulinstructie 
+- Wijzigen: de tekst Deze vragenlijst gaat over hoe u bent. in: Deze vragen gaan over hoe u als persoon bent.
+- Na de antwoordschaal: 1 witregel verwijderen.
+- Kies het meest passende antwoord. (witregel toevoegen)
+- Voeg toe: Per vraag kunt u slechts een (NB: met accenten) antwoord aanklikken. U kunt uw keuze veranderen door een ander antwoord aan te klikken.
+U kunt ook teruggaan naar een eerdere vraag om uw antwoord te bekijken of veranderen.
+- Verwijderen: U kunt uw antwoorden nog veranderen voor u de vragenlijst verstuurt.
+- Laatste zin verwijderen: Dit onderdeel van ... etc
+
 
 --------------------------
 

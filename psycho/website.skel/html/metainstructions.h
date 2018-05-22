@@ -21,12 +21,10 @@
 
 <div class="container">
 
-<b>Toelichting en invulinstructie</b><p>
+De volgende 42 vragen gaan over hoe anderen vinden dat u als persoon bent. 
+<p>
 
-In het vorige onderdeel hebt u de vragenlijst ingevuld over uzelf. In dit 
-tweede en laatste onderdeel van de vragenlijst is de vraag hoe anderen vinden 
-dat u bent. Bijvoorbeeld:
-
+Bijvoorbeeld:
 <p>
 
 <table class=center-table>
@@ -49,89 +47,61 @@ dat u bent. Bijvoorbeeld:
 </tr>
 <tr>
     <td></td>
-<td>
-<table class=center-table>
-<tr>
-    <td></td>
-    <td></td>
+    <td>
+        <table class=center-table>
+        <tr>
+            <td style="text-align:center">ja</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        
+            <td><input type=radio name=one disabled></td>
+            <td><hr class=hr3em></td>
+        
+            <td><input type=radio name=one disabled></td>
+            <td><hr class=hr3em></td>
+        
+            <td><input type=radio name=one disabled></td>
+            <td><hr class=hr3em></td>
+        
+            <td><input type=radio name=one disabled></td>
+            <td><hr class=hr3em></td>
+        
+            <td><input type=radio name=one disabled></td>
 
-    <td><input type=radio name=one disabled></td>
-    <td></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="text-align:center">nee</td>
+        
+        </tr>
+        <tr>
+            <td><button type=button disabled>Terug</button></td>
+            <td></td>
 
-    <td><input type=radio name=one disabled></td>
-    <td></td>
-
-    <td><input type=radio name=one disabled></td>
-    <td></td>
-
-    <td><input type=radio name=one disabled></td>
-    <td></td>
-
-    <td><input type=radio name=one disabled></td>
-    <td></td>
-
-</tr>
-<tr>
-    <td><button type=button disabled>terug</button></td>
-    <td></td>
-
-    <td class=center-text>nee!</td>
-    <td></td>
-
-    <td class=center-text>nee</td>
-    <td></td>
-
-    <td class=center-text>?</td>
-    <td></td>
-
-    <td class=center-text>ja</td>
-    <td></td>
-
-    <td class=center-text>ja!</td>
-    <td></td>
-
-    <td><button type=button disabled>verder</button></td>
-</tr>
-<tr>
-    <td></td>
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;
-       &nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;</td>
-
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    <td>&nbsp;&nbsp;</td>
-
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    <td>&nbsp;&nbsp;</td>
-
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    <td>&nbsp;&nbsp;</td>
-
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    <td>&nbsp;&nbsp;</td>
-
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;
-       &nbsp;&nbsp;&nbsp;&nbsp;
-       &nbsp;&nbsp;&nbsp;&nbsp;</td>
-    <td></td>
+            <td></td>
+            <td></td>
+        
+            <td></td>
+            <td></td>
+        
+            <td></td>
+            <td></td>
+        
+            <td></td>
+            <td></td>
+        
+            <td></td>
+        
+            <td></td>
+            <td><button type=button disabled>verder</button></td>
+        </tr>
+        </table>
+    </td>
 </tr>
 </table>
-</td>
-</tr>
-</table>
-<p>
 
 Kies het meest passende antwoord.
 <p>
 
-Denk bij <em>anderen</em> niet aan een bepaalde persoon, maar aan anderen in
+Denk bij anderen niet aan een bepaalde persoon, maar aan anderen in
 het algemeen.
-<p>
-
-Zulke vragen zijn vaak lastiger te beantwoorden, maar meestal heeft u wel een 
-idee.
 <p>
 
 <input type="submit" value="Start de vragenlijst">

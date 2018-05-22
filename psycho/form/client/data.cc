@@ -23,18 +23,18 @@ char const *Client::s_hisHer[2] =   { "haar", "zijn"};
 char const *Client::s_himHer[2] =   { "haar", "hem" };
         
 char const Client::s_closeSelf[] = 
-    "U hebt alle vragen van deel 1 beantwoord. Klik op "
-    "`Verstuur' om uw vragen op te slaan, waarna u direct verder kunt "
-    "gaan met deel 2.";
+    "U hebt alle vragen van deel 1 beantwoord.<p>\n"
+    "Klik op &#x2018;Verstuur&#x2019; om uw vragen op te slaan, "
+    "waarna u verder kunt gaan met deel 2.\n";
 
 char const Client::s_closeMeta[] = 
-    "U hebt alle vragen van deel 2 beantwoord. Klik op "
-    "`Verstuur' om uw vragen op te slaan, waarna u direct verder kunt "
-    "gaan met deel 3.";
+    "U hebt alle vragen van deel 2 beantwoord.<p>\n"
+    "Klik op &#x2018;Verstuur&#x2019; om uw vragen op te slaan, "
+    "waarna u verder kunt gaan met deel 3.";
 
 char const Client::s_closeOther[] = 
     "Dit was de laatste vraag. Als u wilt kunt u nog antwoorden wijzigen. "
-    "Door op onderstaande knop `Verstuur' te klikken worden uw antwoorden "
+    "Door op onderstaande knop &#x2018;Verstuur&#x2019; te klikken worden uw antwoorden "
     "definitief.";
 
 char const Client::s_selfThanks[] = 

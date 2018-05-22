@@ -1,9 +1,3 @@
-Bij vraag 42 van deel 1:
-- Na het woord Beantwoord nieuwe regel beginnen
-- Aanhalingstekens Verstuur wijzigen
-- Het woord Direct verwijderen 
-
--------------------------
 
 Deel 2 (meta):
 - Verwijderen: Toelichting en invulinstructie 
@@ -13,13 +7,6 @@ Deel 2 (meta):
 - Na antwoordschaal witregel verwijderen
 - Anderen niet cursief
 - Laatste zin verwijderen: Zulke vragen zijn vaak lastiger te beantwoorden etc.
-
--------------------------
-
-Bij vraag 42 van deel 2:
-- Na het woord Beantwoord nieuwe regel beginnen
-- Aanhalingstekens Verstuur wijzigen
-- Het woord Direct verwijderen 
 
 -------------------------
 

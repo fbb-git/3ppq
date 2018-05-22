@@ -18,9 +18,9 @@ Client::CompletedHandler Client::s_completed[] =
 
 size_t const Client::s_completedSize = size(s_completed);
 
-char const *Client::s_heShe[2] =    { "hij",    "zij" };
-char const *Client::s_hisHer[2] =   { "zijn",   "haar" };
-char const *Client::s_himHer[2] =   { "hem",    "haar" };
+char const *Client::s_heShe[2] =    { "zij",  "hij" };
+char const *Client::s_hisHer[2] =   { "haar", "zijn"};
+char const *Client::s_himHer[2] =   { "haar", "hem" };
         
 char const Client::s_closeSelf[] = 
     "U hebt alle vragen van deel 1 beantwoord. Klik op "

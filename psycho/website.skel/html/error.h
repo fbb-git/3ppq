@@ -13,49 +13,44 @@
             </a>
         </li>
         <li class="li-linewise">
-            <button class=topmenu 
-                title="'3ppq auteurs"
+            <a href="/auteurs.html" title="Auteurs van de 3ppq" 
                 onclick="return toPage('/auteurs.shtml')"
             >
-                Auteurs
-            </button>
+                Auteurs 
+            </a>
         </li>
         <li class="li-linewise">
-            <button class=topmenu 
-                title="'Nadere informatie over 3ppq"
+            <a href="/toelichting.html" title="Nadere toelichting"
                 onclick="return toPage('/toelichting.html')"
             >
                 Toelichting
-            </button>
+            </a>
         </li>
+
         <li class="li-linewise">
-            <button class=topmenu 
-                title="Inloggen als geregistreerd gebruiker"
+            <a href="/psych.html" title="Inloggen/registreren als gebruiker"
                 onclick= "return toPage('/inloggen.html')"
             >
                 Inloggen
-            </button>
+            </a>
         </li>
-        <li class="li-linewise">
-            <button class=topmenu 
-                title= "Gebruikersregistratie"
-                onclick= "return toPage('/register.shtml')"
+        <li class=li-linewise>
+            <a href="/privary.html" title="Privacyverklaring "
+                onclick= "return toPage('/privacy.shtml')"
             >
-                Registreren
-            </button>
+                Privacy
+            </a>
         </li>
-        <li class="li-linewise">
-            <button class=topmenu 
-                title= "3ppq contact informatie"
+
+        <li class=li-linewise>
+            <a href="/homecontact.shtml" title="3ppq contact informatie"
                 onclick= "return toPage('/homecontact.shtml')"
             >
                 Contact
-            </button>
+            </a>
         </li>
     </ul>                                                                   
 </nav>                                                                      
-
-
 
 <div class="container">
 

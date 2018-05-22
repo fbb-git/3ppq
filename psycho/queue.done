@@ -1,3 +1,31 @@
+27 Tue, 22 May 2018 15:09:10 +0200
+
+P2 
+- Verwijderen: Toelichting en invulinstructie 
+- Wijzigen: de tekst Deze vragenlijst gaat over hoe u bent. in: Deze vragen gaan over hoe u als persoon bent.
+- Na de antwoordschaal: 1 witregel verwijderen.
+- Kies het meest passende antwoord. (witregel toevoegen)
+- Voeg toe: Per vraag kunt u slechts een (NB: met accenten) antwoord aanklikken. U kunt uw keuze veranderen door een ander antwoord aan te klikken.
+U kunt ook teruggaan naar een eerdere vraag om uw antwoord te bekijken of veranderen.
+- Verwijderen: U kunt uw antwoorden nog veranderen voor u de vragenlijst verstuurt.
+- Laatste zin verwijderen: Dit onderdeel van ... etc
+
+-------------------------
+26 Tue, 22 May 2018 15:09:10 +0200
+
+Aanvulling op #1 hierboven:
+P2 Verwijderen: Kies het meest passende antwoord.
+Toevoegen: 
+Kies op de schaal tussen ja en nee het meest passende antwoord: (witregel)
+      X------O------O------O------O     als het duidelijk ja is    [of "uitgesproken" of zo; alsjeblieft niet "helemaal"]
+      O------X------O------O------O     als het eerder ja dan nee is
+      O------O------X------O------O     als het geen ja en geen nee is    [niet "of"]
+      O------O------O------X------O     als het eerder nee dan ja is
+      O------O------O------O------X     als het duidelijk nee is
+(Voor alle duidelijkheid: ---- dient ononderbroken lijn te worden als dat mogelijk is)
+
+--------------------------
+
 25 Mon, 21 May 2018 10:30:09 +0200
 
 P1 en verder: De aanhalingstekens kloppen niet (moeilijk om in ASCI tekens uit

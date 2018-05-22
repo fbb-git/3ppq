@@ -1,23 +1,14 @@
-P2 
-- Verwijderen: Toelichting en invulinstructie 
-- Wijzigen: de tekst Deze vragenlijst gaat over hoe u bent. in: Deze vragen gaan over hoe u als persoon bent.
-- Na de antwoordschaal: 1 witregel verwijderen.
-- Kies het meest passende antwoord. (witregel toevoegen)
-- Voeg toe: Per vraag kunt u slechts een (NB: met accenten) antwoord aanklikken. U kunt uw keuze veranderen door een ander antwoord aan te klikken.
-U kunt ook teruggaan naar een eerdere vraag om uw antwoord te bekijken of veranderen.
-- Verwijderen: U kunt uw antwoorden nog veranderen voor u de vragenlijst verstuurt.
-- Laatste zin verwijderen: Dit onderdeel van ... etc
 
--------------------------
+Bij alle vragen wordt de nieuwe schaal:
+ja    O------O------O------O------O   nee 
 
-Bij het voorbeeld en alle vragen:
-- Inspringen iets minder ver (meer naar links dus), zodat de terugknop net enkele posities van de linkermarge staat.
-- De aanklikknopjes dienen op gelijke afstand te staan. (Met mijn boerenverstand vermoed ik dat dit samenhangt met de antwoordcategorieen
-eronder. Gebruik je misschien tabs in de ene regel en spaties in de andere? Mogelijk gaat het wel goed als je de aanklikknopjes onder de 
-antwoordcategorieen plaatst? Andere optie die ik zie, maar ik weet niet of dat technisch kan, is er een tabel van twee rijen en zeven kolommen met onzichtbare 
-lijnen van te maken, waarin de celinhoud gecentreerd staat.)
+Omdat de regel hierdoor langer wordt, de terug- en verderknoppen onder ja en nee zetten
 
--------------------------
+--------------------------
+
+Alle vragen dienen te worden gespiegeld (lopen van ja naar nee i.p.v. van nee naar ja)
+
+--------------------------
 
 Bij vraag 19, 34 en 38: hem/haar en hij/zij is nu systematisch veranderd in hem en hij bij de vrouwelijke client en vice versa bij de vrouwelijke client.
 Graag omkeren.
@@ -147,4 +138,6 @@ jouw visie.
 
 ------------------------------
 
+Rapport: onder Scores de labels wijzigen in Spontaan, Mild, Voorspelbaar, Onverstoorbaar, Kritisch
 
+-----------------------------

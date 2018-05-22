@@ -9,7 +9,8 @@ g_log << "Client accept: " << query << endl;
     LockGuard lg = wipData.read();      // if reading fails, throws an
                                         // error-enum value
 
-    string hash = query.substr(query.find('_') + 1);
+                                        // eventually drop =
+    string hash = query.substr(query.find_first_of("=_") + 1);
     if (hash.length() != Tools::HASH_TXT_SIZE)
     {
         g_log << "incorrect hash length" << endl;

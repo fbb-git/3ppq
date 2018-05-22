@@ -16,8 +16,9 @@ void Client::inviteOther(WIPdata const &wipData, size_t idx)
             g_options.mailDir() + "inviteother", 
             {
                 wipData.clientName(),                   // $0
-                wipData.gender() ? "hem" : "haar",      // $1
-                Tools::link(wipData.psychID(),          // $2
+                wipData.clientLastName(),               // $1
+                wipData.gender() ? "hem" : "haar",      // $2
+                Tools::link(wipData.psychID(),          // $3
                             wipData.clientIdent(),
                             wipData.otherLogin(idx))
             }

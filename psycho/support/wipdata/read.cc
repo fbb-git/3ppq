@@ -33,6 +33,7 @@ g_log << "WIPdata::read" << endl;
 
     Tools::readN(addresses, &d_gender);
     getline(addresses, d_clientName);
+    getline(addresses, d_clientLastName);
     getline(addresses, d_psychEmail);
 
     for (auto &mail: d_otherEmail)

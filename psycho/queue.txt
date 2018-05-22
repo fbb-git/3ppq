@@ -1,13 +1,4 @@
 
-Uitnodigings e-mail met link aan ander:
-
-- Uw antwoorden worden niet aan hem doorgegeven.. wijzigen in: Uw antwoorden worden niet aan Aanspreeknaamclient doorgegeven.
-- Invoegen na: Uw e-mailadres wordt na het invullen van de vragenlijst verwijderd. (witregel) Voor de voortgang van het onderzoek is het belangrijk dat de vragenlijst binnen een week wordt ingevuld.
-Vervolgens de url.
-- Hierna: Bedankt voor uw medewerking.
-
--------------------------
-
 Vragenlijst vorm 2 (ander):
 
 P1 toevoegen:

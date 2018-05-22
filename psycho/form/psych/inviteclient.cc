@@ -5,7 +5,8 @@ void Psych::inviteClient(PsychClient &client)
     client.activate();
 
     WIPdata wipData{ d_eMail, d_ID, client.ident(), 
-                     client.name() + ' ' + client.lastName(), 
+                     client.name(),
+                     client.lastName(), 
                      client.gender() };
 
     string psychName{ d_name + ' ' + d_lastName };

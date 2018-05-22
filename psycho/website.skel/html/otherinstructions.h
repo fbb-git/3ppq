@@ -133,7 +133,7 @@ volgende vraag<br>
 U kunt uw antwoorden nog veranderen voor u de vragenlijst verstuurt. 
 <p>
 
-U blijft zelf anoniem in dit onderzoek. Uw antwoorden worden niet aan $1
+U blijft zelf anoniem in dit onderzoek. Uw antwoorden worden niet aan $0
 doorgegeven. Uw antwoorden en die van twee anderen worden gemiddeld. Dit
 gemiddelde en de betekenis ervan worden vervolgens met $1 besproken.
 <p>

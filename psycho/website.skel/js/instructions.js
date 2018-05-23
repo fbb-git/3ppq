@@ -13,7 +13,12 @@ function validate(next)
     sessionStorage.questions = questions.join('|') + '|';
 
     var answers = Array(questions.length);
-    answers.fill(0);
+
+    var idx;
+    for (idx = 0; idx != questions.length; ++idx)
+    answers[idx] = 0;
+
+//    answers.fill(0);          doesn't work on IE 8 or whatever
 
     sessionStorage.ratings = answers.join('');
 

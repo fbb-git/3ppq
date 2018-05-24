@@ -6,29 +6,7 @@ niet in hebben staan. Identieke achternamen zijn te  onderscheiden door de
 Client ID.)  
 - De laatst toegevoegde client bovenaan in de Clientlijst plaatsen.
 
-De drie volgende kolommen zijn uitbreidingen. Ik weet niet of het technisch te
-ingewikkeld is, maar vooral inzicht in de actuele stand  
-van zaken, de Status, lijkt mij een prettige service aan de gebruiker. Graag
-jouw visie.  
-(Zie clientenpagina.pdf voor mogelijke feedback-opties)
-
 ------------------------------
-
-Rapport: 
-Controleren en aanpassen: De berekening van de scores lijkt niet te kloppen. Op alle rapporten die ik heb bekeken is het M-A verschil op alle schalen 0. De Z-M en Z-A verschillen kloppen ook niet. (zie ook rapport2.pdf)
-
----------------
-
-Nog een paar algemene dingen:
-- In de menubalk heeft de ingang Privacy een afwijkende kleur
-- Als je op contact klikt, verandert de ingang Privacy in Registreren
-
----------------
-
-Documentenpagina: De PDF's onder 3ppq vorm 1, 2 en 3 verwijderen en weggooien. Aangepaste versies volgen.
-Idem voor gebruiksprotocol
-
-----------------
 
 Documentenpagina rubriceren met achtereenvolgens kopjes Gebruiksprotocol, Paper en Pencil versies, Literatuur, Overige documenten. Toe te voegen artikelen volgen
 

@@ -13,14 +13,14 @@
             </a>
         </li>
         <li class="li-linewise">
-            <a href="/auteurs.html" title="Auteurs van de 3ppq" 
+            <a href="#" title="Auteurs van de 3ppq" 
                 onclick="return toPage('/auteurs.shtml')"
             >
                 Auteurs 
             </a>
         </li>
         <li class="li-linewise">
-            <a href="/toelichting.html" title="Nadere toelichting"
+            <a href="#" title="Nadere toelichting"
                 onclick="return toPage('/toelichting.html')"
             >
                 Toelichting
@@ -28,14 +28,14 @@
         </li>
 
         <li class="li-linewise">
-            <a href="/psych.html" title="Inloggen/registreren als gebruiker"
+            <a href="#" title="Inloggen/registreren als gebruiker"
                 onclick= "return toPage('/inloggen.html')"
             >
                 Inloggen
             </a>
         </li>
         <li class=li-linewise>
-            <a href="/privary.html" title="Privacyverklaring "
+            <a href="#" title="Privacyverklaring "
                 onclick= "return toPage('/privacy.shtml')"
             >
                 Privacy
@@ -43,7 +43,7 @@
         </li>
 
         <li class=li-linewise>
-            <a href="/homecontact.shtml" title="3ppq contact informatie"
+            <a href="#" title="3ppq contact informatie"
                 onclick= "return toPage('/homecontact.shtml')"
             >
                 Contact
@@ -67,7 +67,7 @@ de foutmelding en het tijdstip waarop de fout is opgetreden per e-mail
 toesturen. 
 <p>
 
-U vindt het te gebruiken e-mail adres op de <a href="/homecontact.shtml">
+U vindt het te gebruiken e-mail adres op de <a href="#">
 contact pagina</a>.
 
 

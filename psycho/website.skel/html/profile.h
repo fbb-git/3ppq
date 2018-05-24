@@ -80,7 +80,7 @@ Door op de knop <em>3ppq</em> te klikken keert u terug naar de
 <table style="border-collapse: collapse;">
 
 <tr class="darkrow">
-    <td class=right>Naam: </td> 
+    <td class=right>Voorletter(s): </td> 
     <td ><input class=margin type="text" name="name" value="$0" 
                 size="50"></td>
 </tr>

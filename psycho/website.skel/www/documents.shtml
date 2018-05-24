@@ -58,13 +58,25 @@
 
 <h1>Documenten</h1>
 
-De volgende documenten zijn beschikbaar:
+
+<h2>Gebruiksprotocol</h2>
+
+<a href="/docs/gebruiksprotocol.pdf"> gebruiksprotocol </a>
+
+<h2>Paper en Pencil versies</h2>
 
 <ul>
     <li> <a href="/docs/3ppq-1.pdf"> 3ppq vorm 1 (zelfbeoordelingen) </a>
     <li> <a href="/docs/3ppq-2.pdf"> 3ppq vorm 2 (meta-beoordelingen) </a>
     <li> <a href="/docs/3ppq-3.pdf"> 3ppq vorm 2 (anderen-beoordelingen) </a>
-    <li> <a href="/docs/gebruiksprotocol.pdf"> gebruiksprotocol </a>
+</ul>
+
+
+<h2>Literatuur</h2>
+
+<h2>Overige documenten</h2>
+
+<ul>
     <li> <a href="/docs/emptyplot.pdf"> Lege grafiek </a>
     <li> <a href="/docs/demoplot.pdf"> Voorbeeld ingevulde grafiek </a>
     <li> <a href="/docs/fweights.csv"> 42 x 6 factorgewichtenmatrix. </a> <br>

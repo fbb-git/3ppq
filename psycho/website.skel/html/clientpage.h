@@ -59,9 +59,7 @@ $3
 
 <div class="container">
 
-<h1>Cli&euml;nt-verwerking</h1>
-
-$1
+<h1>Cli&euml;ntgegevens</h1>
 
 <h3>Details:</h3>
 
@@ -114,7 +112,15 @@ $1
     </td>
 </tr>
 </table>
+
+$1
+
 <script> window.onload=setValues(); </script>
+
+
+
+
+
 
 
 

@@ -63,5 +63,3 @@ string Psych::s_update = R"(
                 <input type=submit name='action' value=Wijzigen
                     title="cli&euml;nt gegevens wijzigen"
                     onclick='process("update")' >)";
-
-

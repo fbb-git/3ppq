@@ -9,8 +9,10 @@ ClientPage::Info Psych::addActivateClient()
     }
 
     return  {
-                s_update + s_deactivate + s_remove,
-                d_client.size() - 1
+                //s_update + s_deactivate + s_remove,
+                //d_client.size() - 1
+                s_add + s_addActive,
+                d_client.size()
             };
 
 

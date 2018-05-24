@@ -7,6 +7,12 @@ void ClientPage::startSelect(ostream &out, size_t idLength) const
                             2UL);
     
     out << R"(
+    <h3>Cli&euml;ntlijst</h3>
+
+    Klik op een cli&euml;nt om de cli&euml;ntgegevens te tonen, te kunnen
+wijzigen of om een rapport (R) te kunnen ophalen.
+<p>
+
     <table>         
     <tr>            
     <td class=topAlign>

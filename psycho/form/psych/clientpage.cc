@@ -4,7 +4,8 @@ void Psych::clientPage()
 {
     ClientPage::Info info = { s_add + s_addActive };
 
-//g_log << "clientpage request = `" << d_cgi->param1("request") << "', "
+g_log << "clientpage request = `" << d_cgi->param1("request") << '\'' << endl;
+
 //        "valid client data: active: " <<  d_cgi->param1("active") << 
 //           ", form-email: " <<  d_cgi->param1("clEmail") << 
 //           ", email: " << d_cgi->param1("email") << 
@@ -37,6 +38,9 @@ void Psych::clientPage()
 
 g_log << "clientpage idx = " << info.clientIdx <<  endl;
 
+//  set info.clientIdx to d_client.size() to clear the fields in, e.g.,
+//  activate().
+
     ClientPage page{ d_display, d_client, d_ID };
 
     if (page.display(info, d_eMail) or updated)
@@ -46,9 +50,6 @@ g_log << "clientpage idx = " << info.clientIdx <<  endl;
 
         d_data.update(emailKey(), toString());
     }
-
-//FBB    if (displayClientPage(displayInfo) or updated)
-//FBB        d_data.update(emailKey(), toString());
 }
 
 

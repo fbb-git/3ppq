@@ -8,11 +8,13 @@ ClientPage::Info Psych::activateClient()
 
     inviteClient(client);
     
-    size_t idx = &client - &d_client.front();
+//    size_t idx = &client - &d_client.front();
 
     return  {
-                s_update + s_deactivate + s_remove,
-                idx
+                //s_update + s_deactivate + s_remove,
+                //idx
+                s_add + s_addActive,
+                d_client.size()         // clear the page
             };
 }
 

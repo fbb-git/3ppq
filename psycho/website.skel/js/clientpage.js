@@ -76,6 +76,11 @@ function setValues()
  
 function submitRequest(request)
 {
+//    var form = document.forms["form"];
+//
+//    if (request == "activate")
+//        form.reset();
+
     addHidden("request",   request);
     addHidden("state",     "clientPage");
     addHidden("type",      "psych");

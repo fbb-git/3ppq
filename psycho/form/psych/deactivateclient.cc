@@ -17,6 +17,8 @@ ClientPage::Info Psych::deactivateClient()
     return  {
                 s_update + s_activate + s_remove,
                 idx
+//                s_add + s_addActive,
+//                d_client.size()
             };
 }
 

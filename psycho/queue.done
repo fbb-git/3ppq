@@ -1,3 +1,35 @@
+42 Thu, 24 May 2018 10:20:41 +0200
+
+Aanpassing van de indeling van de clientenpagina om deze begrijpelijker te
+maken. Ik ben uitgegaan van bestaande opzet van alle gegevens op 1 pagina en
+het handhaven van door jou gedefinieerde functies:
+
+(Zie clientenpagina.pdf)
+
+- De titel Clientverwerking vervangen door Clientgegevens
+En daaronder beginnen met het invulscherm (dus de clientlijst naar onderen
+verplaatsen) 
+
+- ID vervangen door Client ID
+- E-mail adres vervangen door E-mail
+Verder is het invulscherm prima
+- De knop Toevoegen hernoemen in Aan lijst toevoegen
+- De knop Versturen hernoemen in Afname activeren
+
+Zodra een van beide knoppen wordt aangeklikt, dient het scherm leeg te
+worden. De gegevens zijn dan verplaatst naar de clientlijst. 
+
+Daaronder de kop Clientlijst
+Daaronder de tekst: Klik op een client om de clientgegevens te tonen, te
+kunnen wijzigen of om een rapport te kunnen ophalen. 
+(Zodra je op een client in de Clientlijst tikt, vult deze het invulscherm en
+worden de andere knoppen zichtbaar (wijzigen, deactiveren en verwijderen).  
+
+Hieronder de clientenlijst. 
+
+-----------------------------
+
+
 41 Tue, 22 May 2018 20:22:44 +0200
 
 Rapport: onder Scores de labels wijzigen in Spontaan, Mild, Voorspelbaar, Onverstoorbaar, Kritisch

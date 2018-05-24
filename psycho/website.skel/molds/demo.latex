@@ -1,4 +1,4 @@
-\documentclass[11pt,dutch]{article}
+\documentclass[10pt,dutch]{article}
 \usepackage[dutch]{babel}
 \usepackage{epsf}
 \usepackage{caption}
@@ -90,61 +90,60 @@
  \\
     \hline
 %   $ 3: name of the scores file
-    \makecell[l]{Extraversie} &
-    \makecell[r]{0.27} &
-    \makecell[r]{-0.01} &
-    \makecell[r]{-0.01} &
-    \makecell[l]{} &
-    \makecell[r]{+0.28} &
-    \makecell[r]{-0.00} &
-    \makecell[r]{+0.00}
-\\
-    \makecell[l]{Mildheid} &
-    \makecell[r]{0.02} &
-    \makecell[r]{0.15} &
-    \makecell[r]{0.21} &
-    \makecell[l]{} &
-    \makecell[r]{-0.19} &
-    \makecell[r]{-0.06} &
-    \makecell[r]{+0.00}
-\\
-    \makecell[l]{Ordelijkheid} &
-    \makecell[r]{0.12} &
-    \makecell[r]{-0.08} &
-    \makecell[r]{0.13} &
-    \makecell[l]{} &
-    \makecell[r]{-0.01} &
-    \makecell[r]{-0.21} &
-    \makecell[r]{+0.00}
-\\
-    \makecell[l]{Emotionele Stabiliteit} &
-    \makecell[r]{-0.26} &
-    \makecell[r]{0.02} &
-    \makecell[r]{-0.20} &
-    \makecell[l]{} &
-    \makecell[r]{-0.06} &
-    \makecell[r]{+0.22} &
-    \makecell[r]{+0.00}
-\\
-    \makecell[l]{Automomie} &
-    \makecell[r]{0.02} &
-    \makecell[r]{-0.11} &
-    \makecell[r]{0.11} &
-    \makecell[l]{} &
-    \makecell[r]{-0.09} &
+    \makecell[l]{Spontaan} &
     \makecell[r]{-0.22} &
-    \makecell[r]{+0.00}
+    \makecell[r]{-0.11} &
+    \makecell[r]{-0.17} &
+    \makecell[l]{} &
+    \makecell[r]{-0.12} &
+    \makecell[r]{-0.06} &
+    \makecell[r]{+0.06}
+\\
+    \makecell[l]{Mild} &
+    \makecell[r]{0.03} &
+    \makecell[r]{-0.08} &
+    \makecell[r]{-0.02} &
+    \makecell[l]{} &
+    \makecell[r]{+0.11} &
+    \makecell[r]{+0.06} &
+    \makecell[r]{-0.06}
+\\
+    \makecell[l]{Voorspelbaar} &
+    \makecell[r]{0.30} &
+    \makecell[r]{0.28} &
+    \makecell[r]{0.36} &
+    \makecell[l]{} &
+    \makecell[r]{+0.02} &
+    \makecell[r]{-0.05} &
+    \makecell[r]{-0.08}
+\\
+    \makecell[l]{Onverstoorbaar} &
+    \makecell[r]{-0.08} &
+    \makecell[r]{-0.03} &
+    \makecell[r]{0.04} &
+    \makecell[l]{} &
+    \makecell[r]{-0.05} &
+    \makecell[r]{-0.12} &
+    \makecell[r]{-0.07}
+\\
+    \makecell[l]{Kritisch} &
+    \makecell[r]{0.40} &
+    \makecell[r]{0.38} &
+    \makecell[r]{0.44} &
+    \makecell[l]{} &
+    \makecell[r]{+0.03} &
+    \makecell[r]{-0.03} &
+    \makecell[r]{-0.06}
 \\
     \makecell[l]{Algemene Factor} &
-    \makecell[r]{0.19} &
-    \makecell[r]{0.02} &
-    \makecell[r]{0.33} &
+    \makecell[r]{0.35} &
+    \makecell[r]{0.29} &
+    \makecell[r]{0.45} &
     \makecell[l]{} &
-    \makecell[r]{-0.14} &
-    \makecell[r]{-0.31} &
-    \makecell[r]{+0.00}
+    \makecell[r]{+0.06} &
+    \makecell[r]{-0.10} &
+    \makecell[r]{-0.16}
 \\
-
     \hline
 \end{tabular}
 \end{center}

@@ -20,6 +20,8 @@ class Fscores
 
     private:
         void compute();
+        static void difference(Dvector2 &ret, size_t dest, 
+                               size_t left, size_t right);
 };
         
 inline Dvector2 const &Fscores::scores() const

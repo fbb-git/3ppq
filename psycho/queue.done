@@ -1,3 +1,18 @@
+55 Thu, 24 May 2018 21:23:37 +0200
+
+Aanpassen en uitbreiden van de Clientlijst:
+- ID vervangen door Client ID
+
+- De laatst toegevoegde client bovenaan in de Clientlijst plaatsen.
+
+Niet gedaan:
+- Naam vervangen door Achternaam (de aanspreeknaam Konijntje Hofstee wil je er
+niet in hebben staan. Identieke achternamen zijn te  onderscheiden door de
+Client ID.) 
+ 
+
+------------------------------
+
 54  Thu, 24 May 2018 16:50:19 +0200
 
 Documentenpagina rubriceren met achtereenvolgens kopjes Gebruiksprotocol,

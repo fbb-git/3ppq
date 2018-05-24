@@ -6,17 +6,26 @@ void ClientPage::buildSelectTag(string *select, size_t idLength) const
 
     startSelect(out, idLength);
 
-    size_t idx = 0;
+    size_t idx = d_clients.size();
     bool foundReport = false;
-    for (auto const &client: d_clients)
+
+    if (idLength < 10)      // at least 'Client ID ' long
+        idLength = 10;
+
+    for (
+        auto client = d_clients.crbegin(), done = d_clients.crend(); 
+            client != done;
+                ++client
+    )
     {
+        --idx;
+
         foundReport |= d_reportExists[idx];
 
         out << setw(11) << ' ' << "<option value=" << idx << '>' <<
-                fixedWidth(client.ident(), idLength) <<  
+                fixedWidth(client->ident(), idLength, Tools::RIGHT) <<  
                 (d_reportExists[idx] ? "R" : "&nbsp;") << ' ' <<
-                client.name() <<  ' ' <<  client.lastName() << "</option>\n";
-        ++idx;
+                client->name() <<  ' ' <<  client->lastName() << "</option>\n";
     }
 
     endSelect(out, foundReport);

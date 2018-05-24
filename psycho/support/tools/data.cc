@@ -4,7 +4,7 @@ char const *Tools::s_messages[] =
 {
     "Vereiste parameters ontbreken of zijn foutief gespecificeerd", // REQUIRE,            
     "Onbekende gebruiker",                                          // NO_PSYCH,           
-    "Onbekende cli&euml;t",                                         // NO_CLIENT,          
+    "Onbekende cli&euml;nt",                                        // NO_CLIENT,          
     "Rapport niet beschikbaar",                                     // NO_REPORT,          
     "Niet gedefinieerde opdracht",                                  // NO_STATE,           
     "De vragenlijst is al ingevuld",                                // DATA_AVAILABLE,     

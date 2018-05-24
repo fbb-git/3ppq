@@ -1,12 +1,4 @@
-
-Aanpassen en uitbreiden van de Clientlijst:
-- ID vervangen door Client ID
-- Naam vervangen door Achternaam (de aanspreeknaam Konijntje Hofstee wil je er
-niet in hebben staan. Identieke achternamen zijn te  onderscheiden door de
-Client ID.)  
-- De laatst toegevoegde client bovenaan in de Clientlijst plaatsen.
-
-------------------------------
+<empty>
 
 
 

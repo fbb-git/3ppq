@@ -17,7 +17,7 @@ wijzigen of om een rapport (R) te kunnen ophalen.
     <tr>            
     <td class=topAlign>
             <span class=monospace style=' margin-left: 4px' > 
-                  <b>ID&nbsp;&nbsp;&nbsp;Naam</b> </span>
+                  <b>Cli&euml;nt&nbsp;ID&nbsp;&nbsp;&nbsp;Naam</b> </span>
             <br>
             <select class=monospace id=selectID onclick='process("show")'
                      size=)" << nRows << ">\n";

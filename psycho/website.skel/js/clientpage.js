@@ -68,6 +68,8 @@ function setValues()
             form['lastName'].value =    clients[idx][4];
             form['clEmail'].value =     clients[idx][5];
 
+            idx = clients.length - 1 - idx;
+
             document.getElementById("selectID").
                         getElementsByTagName('option')[idx].selected = true;
          }

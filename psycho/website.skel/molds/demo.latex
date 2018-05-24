@@ -1,4 +1,4 @@
-\documentclass[dutch]{article}
+\documentclass[11pt,dutch]{article}
 \usepackage[dutch]{babel}
 \usepackage{epsf}
 \usepackage{caption}
@@ -32,7 +32,7 @@
 %\AddToShipoutPictureBG*{%
 %  \AtPageUpperRight{\raisebox{-\height}{\frame{
 %%                               $ 0: logo eps file
-%    \includegraphics[width=3cm]{/home/frank/git/psycho/src/psycho/website/images/3ppqUL.eps}
+%    \includegraphics[width=3cm]{/home/frank/git/3ppq/src/psycho/website/images/3ppqUL.eps}
 % }}}}
 
 \thispagestyle{empty}
@@ -41,7 +41,8 @@
 %           more negative x coordinate: more to the left
 %           more negative y coordinate: lower
   \node [shift={(-3.7cm,.3cm)}] at (current page.north east)
-{\includegraphics[width=2.3cm]{/home/frank/git/psycho/src/psycho/website/images/3ppqUL.eps}};
+{\includegraphics[width=2.3cm]{/home/frank/git/3ppq/src/psycho/website/images/3ppqUL.eps}};
+
 % {\includegraphics[width=2cm]{example-image}};
 
 \begin{tabular}{ll}
@@ -59,7 +60,7 @@
 \begin{center}
 \begin{figure}[h]
 %                                   $ 2: name of the plot eps file
-\centerline{\scalebox{.5}{\epsffile{1.es.eps}}}
+\centerline{\scalebox{.5}{\epsffile{demoplot.eps}}}
 \caption*{\label{}}
 \end{figure}
 \end{center}

@@ -15,7 +15,7 @@
 <body class="full"> 
     <img src="/images/3ppqUL.jpg" class=logo>
 <form name="form" action="/bin/form" 
-        onsubmit="return validate('/selfinstructions.html')" 
+        onsubmit="return validate('/selfinstructions.shtml')" 
       method="post">
 <div class="container">
 

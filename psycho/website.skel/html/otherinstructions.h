@@ -16,7 +16,7 @@
 <body class="full"> 
     <img src="/images/3ppqUL.jpg" class=logo>
 <form name="form" action="/bin/form" 
-        onsubmit="return validate('/otherinstructions.html')" 
+        onsubmit="return validate('/otherinstructions.shtml')" 
       method="post">
 <div class="container">
 
@@ -24,10 +24,10 @@
 
 
 Het navolgende onderzoek bestaat uit 42 vragen en eindigt met de optie
-&#2018;Verstuur&#2019;.
+&#x2018;Verstuur&#x2019;.
 <p> 
 
-Uw antwoorden worden pas opgeslagen wanneer u &#2018;Verstuur&#2019; hebt
+Uw antwoorden worden pas opgeslagen wanneer u &#x2018;Verstuur&#x2019; hebt
 aangeklikt. 
 <p>
 
@@ -38,7 +38,7 @@ Het beantwoorden van de vragen duurt ongeveer 10 minuten.
 <p>
 U blijft zelf anoniem in dit onderzoek. Uw antwoorden worden niet aan $0
 doorgegeven. Uw antwoorden en die van twee anderen worden gemiddeld.  
-Dit gemiddelde en de betekenis ervan zullen met $0 worden
+Dit gemiddelde en de betekenis ervan zullen met $1 worden
 besproken. 
 <p>
 

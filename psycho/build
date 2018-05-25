@@ -1,0 +1,5 @@
+#!/bin/bash
+
+[ ../VERSION -nt ../version.cc ] && touch ../version.cc
+
+icmbuild

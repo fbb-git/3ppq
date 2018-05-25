@@ -5,8 +5,8 @@
 void usage(std::string const &progname)
 {
     cout << "\n" <<
-    progname << " by " << Icmbuild::author << "\n" <<
-    progname << " V" << Icmbuild::version << " " << Icmbuild::years << "\n"
+    progname << " by " << author << "\n" <<
+    progname << " V" << version << " " << years << "\n"
     "\n"
     "Usage: " << progname << " csv gnuplotIn gnuplotData scores\n"
     "Where:\n"

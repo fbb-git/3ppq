@@ -11,12 +11,9 @@
 #include "../support/lockguard/lockguard.h"
 #include "../form/psych/psych.h"
 
-namespace Icmbuild
-{
-    extern char version[];
-    extern char years[];
-    extern char author[];
-};
+extern char version[];
+extern char years[];
+extern char author[];
 
 void usage(std::string const &progname);
 void list();

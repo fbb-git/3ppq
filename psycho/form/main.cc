@@ -13,9 +13,15 @@ Log         g_log{ g_options.log() };           // generic log facility
 ConfigFile  g_config{ g_options.config(), ConfigFile::RemoveComment };
 Mailer      g_mailer;
 
-int main()
+int main(int argc, char **argv)
 try
 {
+    if (argc > 1 and "--version"s == argv[1])
+    {
+        cout << "V " << version << '\n';
+        return 0;
+    }
+        
     Tools::setLogLevel();
 
     Handler handler;                    // Form handling object

@@ -17,6 +17,13 @@ try
     if (argc == 1)
         usage(basename(argv[0]));
 
+    if (argc > 1 and "--version"s == argv[1])
+    {
+        cout << "V " << version << '\n';
+        return 0;
+    }
+        
+
     string hash = Tools::md5hash(argv[1]);      // hash the psych's e-mail
 
     Psych psych;

@@ -16,16 +16,13 @@
 #include "datafiles/datafiles.h"
 #include "gnuplot/gnuplot.h"
 
-namespace Icmbuild
-{
-    extern char version[];
-    extern char years[];
-    extern char author[];
-};
-
 void usage(std::string const &progname);
 
 using namespace std;
 using namespace FBB;
+
+extern char version[];
+extern char years[];
+extern char author[];
 
 

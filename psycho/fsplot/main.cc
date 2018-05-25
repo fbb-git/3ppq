@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 try
 {
     Arg &arg = Arg::initialize("hv", longOptions, longEnd, argc, argv);
-    arg.versionHelp(usage, Icmbuild::version, 4);
+    arg.versionHelp(usage, version, 4);
 
     Ratings ratings{ argv[1] };             // extract the data from the csvs
 

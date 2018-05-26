@@ -118,11 +118,18 @@
         Voorbeeld ingevulde grafiek </a>
     <li> <a href="/docs/fweights.csv" target="_blank"> 
         42 x 6 factorgewichtenmatrix. </a> <br>
-       (CSV bestand: de eerste vijf kolommen zijn de factorgewichten voor de
-        factoren die in het voorbeeld van de ingevulde grafiek zijn genoemd,
+
+    (CSV bestanden zijn <em>Comma Separated Value</em> bestanden en kunnen
+    door data-verwerkende programmatuur worden gelezen. Voor meer informatie,
+    zie <a href="https://www.ietf.org/rfc/rfc4180.txt" target="_blank">
+        het offici&euml;le RFC document</a>.<br>
+       De eerste vijf kolommen van de factorgewichtenmatrix 
+        zijn de gewichten voor de factoren die in het voorbeeld van de
+        ingevulde grafiek zijn genoemd, 
         de zesde kolom zijn de factorgewichten voor de &#x2019;algemene
         persoonlijkheidsfactor&#x2019;.)
-    <li> <a href="https://github.com/fbb-git/3ppq" target="_blank">
+
+    <li> <a href="https://fbb-git.github.io/3ppq/" target="_blank">
             Bronteksten 3ppq programma's en web-pagina's</a>
 </ul>
 

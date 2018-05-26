@@ -1,0 +1,64 @@
+#!/bin/bash
+
+echo if any modified or untracked files are shown, handle these first:
+echo
+git st
+echo -n "Continue [Yn] ? "
+read yesno
+[ "$yesno" == "y" -o "$yesno" == "" ]   ||   exit 0
+
+# echo -n "Need to (re)create 3ppq's wip files for gh-pages [y/n] ? "
+# read yesno
+# 
+# if [ "$yesno" == "y" ] ; then
+#     git co master
+#     cd psycho
+#     ./build man
+#     ./build manual or build uguide
+#     ./build github
+#     ./build distclean
+#     cd ..    
+#     git co gh-pages
+# 
+#     cp -r ../wip/changelog.txt ../wip/psychoman.html ../wip/manual/* .
+# fi
+
+# copy below to eof of target update files:
+
+echo
+echo -n "Check index.yo: version and last 5 releases [y/n] ? "
+read yesno
+
+if [ "$yesno" == "y" ] ; then
+    cat release.yo
+    emacs index.yo
+fi
+
+yodl2html index.yo || exit 1
+
+
+echo "Running 'git st': check for unexpected files"
+git st
+
+echo
+
+echo -n "ci change to index.html etc., push the result and co master [y/n] ? "
+read yesno
+
+if [ "$yesno" == "y" ] ; then
+
+    RELEASE=`head -n1 ../wip/release.yo | 
+                sed 's/SUBST(_CurVers_)(\(.*\))/\1/'`
+
+    msgDefault="gh-pages for release ${RELEASE}"
+
+    echo -n "Enter the ci message [default: $msgDefault]"
+
+    read msg;
+
+    [ "$msg" == "" ] && msg=$msgDefault
+
+    git ci -am "$msg"
+    git push
+    git co master
+fi

@@ -2,6 +2,8 @@
 
 #   Internal use only
 
+cd psycho
+
 cp changelog ~/git/3ppq/wip/
 
 echo '

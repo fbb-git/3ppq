@@ -5,6 +5,11 @@ try
 {
     string path = g_options.moldsDir() + "messages";
 
+    Stat stat{ path };
+
+    if (not stat or stat.size() == 0)
+        throw 0;
+
     ifstream in{ path };
 
     Exception::open(in, g_options.moldsDir() + "messages");

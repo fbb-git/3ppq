@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#   Internal use only
+
+cp changelog ~/git/3ppq/wip/
+
+echo '
+#include "VERSION"
+SUBST(_CurVers_)(VERSION)
+SUBST(_CurYrs_)(YEARS)
+' | gcc -E - | grep -v '^#' | sed 's/"//g' > ~/git/3ppq/wip/release.yo
+
+cd ..
+gh co gh-pages
+

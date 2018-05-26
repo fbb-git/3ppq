@@ -11,5 +11,5 @@ SUBST(_CurYrs_)(YEARS)
 ' | gcc -E - | grep -v '^#' | sed 's/"//g' > ~/git/3ppq/wip/release.yo
 
 cd ..
-gh co gh-pages
+git co gh-pages
 

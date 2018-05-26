@@ -49,7 +49,7 @@ read yesno
 
 if [ "$yesno" == "y" ] ; then
 
-    RELEASE=`head -n1 ../wip/release.yo | 
+    RELEASE=`grep _CurVers_ ../wip/release.yo | 
                 sed 's/SUBST(_CurVers_)(\(.*\))/\1/'`
 
     msgDefault="gh-pages for release ${RELEASE}"

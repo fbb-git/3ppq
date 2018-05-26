@@ -24,6 +24,19 @@ htmlcommand(
 
 This is the main page of the _Product_ project hosted at GitHub.com.
 
+The _Product_ project started early 2018 following an initiative of
+W.K.B. Hofstee. 
+
+The _Product_ project is realized in close cooperation with W.K.B. Hofstee,
+R.M. Mosterman, A.A. Jolijn Hendriks, and H.A.L. Kiers. The purpose of the
+project is to make available an on-line questionnaire for personality
+assessment based on three different perspectives: a person's self-perspective,
+a person's meta perspective, where he/she predicts how others will complete
+the questionnaire when rating him/her, and the other-perspective, where three
+others complete the questionnaire, rating the target person. 
+
+The questionnaire and its handling is (at version _CurVers_) only available in
+Dutch. The official _Product_ (Dutch) website is lurl(https://3ppq.nl).
 
 The project's repository can be reached at 
 lurl(https://github.com/fbb-git/_project_).

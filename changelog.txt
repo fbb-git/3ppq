@@ -1,0 +1,40 @@
+3ppq (0.91.00)
+
+  * Documents and reports open in new browser windows
+
+  * Added github link to the documents page
+
+ -- Frank B. Brokken <f.b.brokken@rug.nl>  Sat, 26 May 2018 05:44:54 +0200
+
+3ppq (0.90.00)
+
+  * See the github logs for an overview of activities up to 0.90.00
+
+  * Beta version of 3ppq now available as release 0.90.00
+
+ -- Frank B. Brokken <f.b.brokken@rug.nl>  Fri May 25 19:23:12 2018 +0200
+
+3ppq (0.00.01)
+
+  * Starting writing the https://www.icce.rug.nl/psycho documentation.
+
+  * The documentation now shows the current version.
+
+  * oosix defines the mail address psycho@icce.rug.nl, and the /var/lib/psycho
+    account. Incoming mail is properly received.
+
+  * Web-pages are now at /var/lib/psycho/www, using symlinks from
+    /var/www/ssl_icce.rug. 
+
+  * Completed an initial demo version of a web-client signup form. It
+    does not yet perform actions.
+
+ -- Frank B. Brokken <f.b.brokken@rug.nl>  Tue, 13 Mar 2018 17:31:24 +0100
+
+3ppq (0.00.00)
+
+  * Initial installation of 'psycho': gnuplot/ containing gnuplot demo and
+    configuration, setup/ containing the libreoffice-impress setup.odp
+    document. 
+
+ -- Frank B. Brokken <f.b.brokken@rug.nl>  Mon, 12 Mar 2018 09:25:15 +0100

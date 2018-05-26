@@ -2,6 +2,8 @@
 
 if [ $# -eq 0 ] ; then
     echo "
+Provide initial option  --all to call ./build for all 3ppq programs.
+
 First argument must be the website's base directory, created if non-existing.
 Below this base directory directories like ./www are defined. The website's
 base path must also be specified in apache's configuration, see 
@@ -15,6 +17,13 @@ The target directory may be specified as a relative or absolute path.
 
 "
     exit 1
+fi
+
+if [ "$1" == "--all" ] ; then
+    all=1
+    shift
+else
+    all=0
 fi
 
 base=`pwd`
@@ -43,12 +52,23 @@ if [ ! -d ${website} ] ; then
     exit 1
 fi
 
-if [ ! -e ${website}/bin/form ] ; then
-    cd support
+if [ ${all} -eq 1 ] ; then
+    try cd support
     icmbuild
 
-    cd ${base}/form
+    for program in form fsplot psychrm psychrecords
+    do
+        echo "
+        ./build ${program}"
+        try cd ${base}/${program}
+        ./build
+    done
+elif [ ! -e ${website}/bin/form ] ; then
+    try cd support
     icmbuild
+
+    try cd ${base}/form
+    ./build
 
     icmbuild install program ${website}/bin/form
 
@@ -59,7 +79,7 @@ try cd ${base}
 
 if [ ! -e ${website}/bin/fsplot ] ; then
     try cd fsplot
-    icmbuild || exit 1
+    ./build || exit 1
 
     icmbuild install program ${website}/bin/fsplot
     [ -e ${website}/bin/fsplot ] || exit 1

@@ -61,14 +61,17 @@
 
 <h2>Gebruiksprotocol</h2>
 
-<a href="/docs/gebruiksprotocol.pdf"> gebruiksprotocol </a>
+<a href="/docs/gebruiksprotocol.pdf" target="_blank"> gebruiksprotocol </a>
 
 <h2>Paper en Pencil versies</h2>
 
 <ul>
-    <li> <a href="/docs/3ppq-1.pdf"> 3ppq vorm 1 (zelfbeoordelingen) </a>
-    <li> <a href="/docs/3ppq-2.pdf"> 3ppq vorm 2 (meta-beoordelingen) </a>
-    <li> <a href="/docs/3ppq-3.pdf"> 3ppq vorm 2 (anderen-beoordelingen) </a>
+    <li> <a href="/docs/3ppq-1.pdf" target="_blank"> 
+                3ppq vorm 1 (zelfbeoordelingen) </a>
+    <li> <a href="/docs/3ppq-2.pdf" target="_blank"> 
+                3ppq vorm 2 (meta-beoordelingen) </a>
+    <li> <a href="/docs/3ppq-3.pdf" target="_blank"> 
+                3ppq vorm 2 (anderen-beoordelingen) </a>
 </ul>
 
 
@@ -77,13 +80,18 @@
 <h2>Overige documenten</h2>
 
 <ul>
-    <li> <a href="/docs/emptyplot.pdf"> Lege grafiek </a>
-    <li> <a href="/docs/demoplot.pdf"> Voorbeeld ingevulde grafiek </a>
-    <li> <a href="/docs/fweights.csv"> 42 x 6 factorgewichtenmatrix. </a> <br>
+    <li> <a href="/docs/emptyplot.pdf" target="_blank"> 
+        Lege grafiek </a>
+    <li> <a href="/docs/demoplot.pdf" target="_blank"> 
+        Voorbeeld ingevulde grafiek </a>
+    <li> <a href="/docs/fweights.csv" target="_blank"> 
+        42 x 6 factorgewichtenmatrix. </a> <br>
        (CSV bestand: de eerste vijf kolommen zijn de factorgewichten voor de
         factoren die in het voorbeeld van de ingevulde grafiek zijn genoemd,
         de zesde kolom zijn de factorgewichten voor de &#x2019;algemene
         persoonlijkheidsfactor&#x2019;.)
+    <li> <a href="https://github.com/fbb-git/3ppq" target="_blank">
+            Bronteksten 3ppq programma's en web-pagina's</a>
 </ul>
 
 </form>

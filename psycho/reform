@@ -10,7 +10,7 @@ base=`pwd`
 cd support
 icmbuild
 cd ${base}/form
-icmbuild
+./build
 cd ${base}
 
 cp form/tmp/bin/binary $1/bin/form

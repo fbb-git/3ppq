@@ -59,9 +59,6 @@
     </ul>                                                                   
 </nav>                                                                      
 
-
-
-
 <div class="container">
 
 <h1>Gebruikersregistratie</h1>
@@ -132,11 +129,19 @@ registreren. De 3ppq is binnenkort voor u beschikbaar
 Door u te registreren geeft u toestemming dat de anonieme data 
 van uw cli&euml;nten gebruikt kunnen worden voor wetenschappelijk onderzoek.
 
+
 </div>
+
+<p>
+<!--
+<input type=submit value=Registreren>
+-->
 
 </div>  <!-- container -->
 
+
 </form>
+
 
 <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
 

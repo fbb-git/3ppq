@@ -52,6 +52,21 @@
  
 <p>
 
+De website 3ppq.nl is in juni 2018 in gebruik genomen na uitvoerige ontwikkel-
+en testprocedures.  Mocht u ondanks onze betrachte zorgvuldigheid op
+onregelmatigheden of onduidelijkheden stuiten, dan stellen wij het op
+prijs wanneer u ons daarop wilt attenderen. U kunt, ook voor vragen en andere
+opmerkingen, een e-mail sturen naar <a
+href="mailto:3ppq@3ppq.nl">3ppq@3ppq.nl</a>.
+
+Voor gebruik wordt u geadviseerd het gebruiksprotocol te lezen, waarin alle
+stappen van het gebruik van 3ppq.nl worden beschreven, zowel voor u als
+gebruiker die de afnames beheert, als ook voor de cli&euml;nt die het
+onderzoek doorloopt. U kunt daardoor uw cli&euml;nt goed informeren over hoe
+het onderzoek verloopt. Tevens zijn in het gebruiksprotocol aanwijzingen
+opgenomen om de resultaten te kunnen interpreteren.
+
+
 <!-- messages for the psychologist -->
 $0
 

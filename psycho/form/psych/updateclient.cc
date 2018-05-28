@@ -4,6 +4,9 @@ ClientPage::Info Psych::updateClient()
 {
     uint16_t idx = validClientIdx();
 
+    if (idx == d_client.size())
+        throw Tools::NO_CLIENT;
+
     requireContents("ident");
     requireContents("name");
     requireContents("lastName");

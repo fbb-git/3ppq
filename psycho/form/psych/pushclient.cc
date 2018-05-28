@@ -12,8 +12,8 @@ bool Psych::pushClient()
 
     for( PsychClient const &client: d_client)
     {
-        if (client.ident() == ident)
-            return false;
+        if (client.ident() == ident)            // client already exists
+            return false;                       // do not add
     }
     d_client.push_back(
         PsychClient(

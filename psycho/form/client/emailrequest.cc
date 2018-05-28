@@ -6,5 +6,5 @@ void Client::emailRequest(WIPdata const &wipData)
         throw Tools::EMAIL_AVAILABLE;
 
     pidCid(wipData);
-    d_display.out("emailrequest.h");
+    d_display.out("emailrequest.h");    // -> storeEmail
 }

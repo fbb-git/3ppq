@@ -3,7 +3,7 @@
 ClientPage::Info Psych::addActivateClient()
 {
     if (pushClient())
-    {
+    {                           // just in case WIP data exist...
         rmExistingWIPdata(d_client.back(), "removed");
         inviteClient(d_client.back());
     }

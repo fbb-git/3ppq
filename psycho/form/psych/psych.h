@@ -139,7 +139,8 @@ class Psych
 //   6      0          0           0                    -
 //  -------------------------------------------------------------------------
 
-        ClientPage::Info activateClient();   // handles 3 by removing existing file
+        ClientPage::Info activateClient();   // handles 3 by removing existing 
+                                             //           file
         ClientPage::Info addClient();        // logs 5
         ClientPage::Info addActivateClient();// logs 5
         ClientPage::Info deactivateClient(); // logs 6 if no wip file
@@ -147,7 +148,7 @@ class Psych
         ClientPage::Info showClient();
         ClientPage::Info updateClient();
 
-        PsychClient &validClientData();
+        PsychClient *validClientData();
         size_t validClientIdx();
 
         bool pushClient();

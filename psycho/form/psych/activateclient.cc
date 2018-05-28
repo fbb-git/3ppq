@@ -2,13 +2,18 @@
 
 ClientPage::Info Psych::activateClient()
 {
-    PsychClient &client = validClientData();
+    PsychClient *client = validClientData();
 
-    rmExistingWIPdata(client, "renewed");
+    if (client == 0)
+        throw Tools::NO_CLIENT;
 
-    inviteClient(client);
+    if (client->active() != 0)
+        g_log << "client " << client->ID() << 
+                    " already active: request ignored" << endl;
+    else
+        inviteClient(*client);
     
-//    size_t idx = &client - &d_client.front();
+                //    size_t idx = &client - &d_client.front();
 
     return  {
                 //s_update + s_deactivate + s_remove,

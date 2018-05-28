@@ -20,6 +20,11 @@ class Tools
     static char const *s_messages[];
 
     public:
+        enum class ForkChild
+        {
+            DONE
+        };
+
         enum MessageEnum
         {
             REQUIRE,            

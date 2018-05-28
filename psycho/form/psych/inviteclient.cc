@@ -12,7 +12,7 @@ void Psych::inviteClient(PsychClient &client)
     string psychName{ d_name + ' ' + d_lastName };
 
     string link =  Tools::link(d_ID, client.ident(), wipData.clientLogin());
-    Tools::debug() << "inviteClient: link = " << link << endl;
+    g_log << "inviteClient: link = " << link << endl;
 
     g_mailer.sendmail(
         d_eMail,

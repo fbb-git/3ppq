@@ -1,8 +1,7 @@
 #include "report.ih"
 
-void Report::generate() const
+void Report::generate()
 {
-    fsplot();
-    latex();
-    dvipdf();
+    g_log << "generating report (background)" << endl;
+    fork();
 }

@@ -4,7 +4,6 @@
 
 #include <bobcat/exception>
 #include <bobcat/cgi>
-#include <bobcat/glob>
 
 #include "../../support/global/global.h"
 #include "../../support/options/options.h"

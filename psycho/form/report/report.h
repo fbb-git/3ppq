@@ -3,9 +3,11 @@
 
 #include <string>
 
+#include <bobcat/fork>
+
 class WIPdata;
 
-class Report
+class Report: private FBB::Fork
 {
     std::string d_pidCid;
     std::string d_pathPrefix;       // prefix (including the final .) of 
@@ -33,11 +35,14 @@ class Report
         Report(WIPdata const &wipData);
         Report(char const *pidCid, char const *psychemail);
 
-        ~Report();
+        virtual ~Report();          // Currently no actions
 
-        void generate() const;
+        void generate();
 
     private:
+        void childProcess() override;
+        void parentProcess() override;
+
         void fsplot() const;
         void latex() const;
         void dvipdf() const;

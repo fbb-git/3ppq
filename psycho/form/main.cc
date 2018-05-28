@@ -27,6 +27,10 @@ try
     Handler handler;                    // Form handling object
     handler.process();                  // process incoming forms
 }
+catch ([[maybe_unused]] Tools::ForkChild done)
+{
+    return 0;
+}
 catch (exception const &exc)
 {
     g_log.setLevel(0);

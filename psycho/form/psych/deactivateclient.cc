@@ -8,9 +8,12 @@ ClientPage::Info Psych::deactivateClient()
         throw Tools::NO_CLIENT;
 
     if (WIPdata::exists(d_ID, client->ident()))
+    {
         WIPdata::remove(d_ID, client->ident());
+        g_log << d_ID << '.' << client->ident() << " ABORTED" << endl;
+    }
     else
-        g_log << "deactivate: non-existing wip data " << 
+        g_log << "deactivate: no WIPdata " << 
                   d_ID << '.' << client->ident() << endl;
 
     client->deactivate();

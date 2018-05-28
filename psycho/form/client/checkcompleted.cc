@@ -9,7 +9,8 @@ void Client::checkCompleted(WIPdata &wipData) const
     )
         return;
 
-g_log << "data collection completed: writing " << g_options.data() << endl;
+    g_log << "data collection " << wipData.pidCid() << 
+            " completed. Appending CSV data to " << g_options.data() << endl;
 
     LockStream data{ g_options.data() };
 
@@ -43,14 +44,9 @@ g_log << "data collection completed: writing " << g_options.data() << endl;
         )
     );
     
-    for (char const *name: 
-                    Glob{ g_options.tmpDir() + wipData.pidCid() + ".*" } )
-        unlink(name);
-    
+    g_log << wipData.pdiCid() << " DONE" << endl;
+
     wipData.remove();
-
-g_log << "data stored" << endl;
-
 }
 
 

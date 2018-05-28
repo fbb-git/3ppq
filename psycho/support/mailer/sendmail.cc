@@ -33,22 +33,13 @@ void Mailer::sendmail(string const &psychEmail, string to,
                             to << endl;
     }
 
-    istringstream text{ txt };
-    
-    string replyTo{ g_config.findKeyTail("replyTo:") };
-    if (not replyTo.empty())
-        replyTo.insert(0, "-r ");
+    d_txt = txt;
+    d_to = to;
+    d_subject = subject;
 
-    g_log << "sending mail..." << endl;
+    fork();
 
-    CinInserter mail;
-    mail.execute("/usr/bin/mail " + replyTo + " -s '" + subject + "' " + to);
-
-    mail << text.rdbuf();
-    mail.stop();
-
-    Tools::stdLog() << "mail (" << subject << ") sent to " << to << 
-                       ", return code: " << mail.ret() << endl;
+    g_log << "mail (" << subject << ") sent to " << to << endl;
 }
 
 

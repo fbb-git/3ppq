@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html><head>
+    <link rel="stylesheet" href="/css/3ppq.css">
+    <meta http-equiv="content-type" content="text/html;
+          charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/preamble.js"></script>
+    <script src="/js/pwdcheck.js"></script>
+    <script src="/js/register.js"></script>
+    <script src="/js/topage.js"></script>
+</head>
+
+<body class="full">
+    <img src="/images/3ppqUL.jpg" class=logo>
+<form name=form action="/bin/form" onsubmit="return validate(1)" method=post>
+<nav class="top-menu-markup">                                               
+    <ul class="spread">
+        <li class="li-linewise">
+            <a href="/home.shtml" title="3ppq home-page" 
+                onclick="return toPage('/home.shtml')" >
+            <img border=0 src="/images/home.png" height=16em >
+            </a>
+        </li>
+        <li class="li-linewise">
+            <a href="#" title="Auteurs van de 3ppq" 
+                onclick="return toPage('/auteurs.shtml')"
+            >
+                Auteurs 
+            </a>
+        </li>
+        <li class="li-linewise">
+            <a href="#" title="Nadere toelichting"
+                onclick="return toPage('/toelichting.html')"
+            >
+                Toelichting
+            </a>
+        </li>
+        <li class="li-linewise">
+            <a href="#" title="Inloggen/registreren als gebruiker"
+                onclick= "return toPage('/inloggen.html')"
+            >
+                Inloggen
+            </a>
+        </li>
+        <li class=li-linewise>
+            <a href="#" title="Privacyverklaring "
+                onclick= "return toPage('/privacy.shtml')"
+            >
+                Privacy
+            </a>
+        </li>
+        <li class=li-linewise>
+            <a href="#" title="3ppq contact informatie"
+                onclick= "return toPage('/homecontact.shtml')"
+            >
+                Contact
+            </a>
+        </li>
+    </ul>                                                                   
+</nav>                                                                      
+
+<div class="container">
+
+<h1>Gebruikersregistratie</h1>
+
+Vul de hieronder gevraagde gegevens in, en klik vervolgens op 
+<em>Registreren</em>.
+<p>
+
+Na registratie ontvangt u een e-mail waarin een bevestigingsnummer staat. Dat
+bevestigingsnummer wordt u gevraagd nadat u voor de eerste keer hebt ingelogd.
+
+<p>
+U kunt zich helaas nog niet
+registreren. De 3ppq is binnenkort voor u beschikbaar
+<p>
+
+<div class="lightgrey">
+
+<table style="border-collapse: collapse;">
+
+<tr class="darkrow">
+    <td class=right>Voorletter(s): </td> 
+    <td ><input class=margin type="text" name="name" size="50"></td>
+</tr>
+
+<tr >
+    <td class=right>Achternaam: </td> 
+    <td ><input class=margin type="text" name="lastName" size="50"></td>
+</tr>
+
+<tr class=darkrow>
+    <td class=right>E-mail: </td> 
+    <td ><input class=margin type="email" name="email" size="50"></td>
+</tr>
+
+<tr>
+    <td class=right>NIP-nummer: </td> 
+    <td ><input class=margin pattern='[0-9]{1,8}' type="text" name="nip" 
+            size="15"> </td>
+</tr>
+
+<tr class=darkrow>
+    <td class=right>Werkzaam op het gebied van:</td>
+    <td >
+        <input type="checkbox" name="field" value="1"> A&O<br> 
+        <input type="checkbox" name="field" value="2"> GGZ<br> 
+        <input type="checkbox" name="field" value="4"> Onderwijs<br> 
+        <input type="checkbox" name="field" value="8"> Onderzoek<br> 
+        <input type="checkbox" name="field" value="16"> anders<br> 
+    </td>
+</tr>
+
+<tr>
+    <td class=right> Kies een wachtwoord:</td>
+    <td> <input class=margin type="password" name="pwd" size="20" title=
+  "Minstens 5 tekens: letters, cijfers en&#010;-.,\/#!$%^&*;:{}=`~() tekens"
+        > </td>
+</tr>
+
+<tr>
+    <td class=right> Wachtwoord nogmaals:</td>
+    <td> <input class=margin type="password" name="pwd2" size="20"></td>
+</tr>
+</table>
+
+<p>
+
+Door u te registreren geeft u toestemming dat de anonieme data 
+van uw cli&euml;nten gebruikt kunnen worden voor wetenschappelijk onderzoek.
+
+
+</div>
+
+<p>
+<input type=submit value=Registreren>
+
+</div>  <!-- container -->
+
+
+</form>
+
+
+<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
+
+</body></html>

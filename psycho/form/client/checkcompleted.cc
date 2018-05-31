@@ -44,7 +44,7 @@ void Client::checkCompleted(WIPdata &wipData) const
         )
     );
     
-    g_log << wipData.pdiCid() << " DONE" << endl;
+    g_log << wipData.pidCid() << " DONE" << endl;
 
     wipData.remove();
 }

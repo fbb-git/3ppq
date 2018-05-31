@@ -1,3 +1,9 @@
 Nogmaals versturen van uitnodigingen aan cli&euml;nten waarvan de
-vragenlijstafname al plaatsvindt (b.v. t.g.v. een page-reload) 
+vragenlijstafname al plaatsvindt (b.v. ten gevolge van een page-reload)
 is voorkomen.
+
+<p>
+
+Er is geen wachttijd meer bij het verversen van web-pagina's ten gevolge van
+de rapport-constructie of doordat eerst meerdere e-mmails moeten worden
+verstuurd.

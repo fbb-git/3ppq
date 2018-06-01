@@ -81,13 +81,12 @@ response sets (Hofstee, 2010). De vragenlijst bestaat aldus uit 42 items.
 De antwoordinstructie voor de drie versies luidt:
 <p>
 <blockquote>
-    Deze vragenlijst gaat over hoe u bent (hoe anderen vinden dat u bent / hoe
-    [naam] is) als persoon, bijvoorbeeld: <br>
+    Deze vragen gaan over hoe u als persoon bent (hoe anderen vinden dat u
+bent), bijvoorbeeld: <br> 
 
-    Bent u (Vinden anderen u / Is [naam]) iemand die:
-    ... makkelijk vrienden maakt? <br>
+    Bent u (Vinden anderen u / Is [naam]) iemand die ...
 
-    nee! nee ? ja ja!
+<!--#include file="instructionstail"-->
 </blockquote>
 
 <h2>Scoringsprogramma</h2>

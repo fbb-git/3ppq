@@ -29,14 +29,11 @@ U kunt niet verder gaan met een volgend deel voordat u &#x2018;verstuur&#x2019;
 hebt aangeklikt. Hiermee worden uw antwoorden opgeslagen.
 <p>
 
-Wanneer u
-tussentijds het onderzoek afbreekt worden antwoorden die nog niet verstuurd
-zijn niet opgeslagen.
+Wanneer u tussentijds het onderzoek afbreekt worden antwoorden die nog niet
+verstuurd zijn niet opgeslagen.
 <p>
 
-U wordt verzocht om het gehele onderzoek in een keer te
-doorlopen.
-
+U wordt verzocht om het gehele onderzoek in een keer te doorlopen.
 <p>
 
 Het totale onderzoek duurt ongeveer 20 minuten.

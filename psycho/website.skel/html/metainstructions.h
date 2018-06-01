@@ -33,6 +33,7 @@ Bijvoorbeeld:
      $0 iemand die...
     </td>
 </tr>
+
 <tr>
     <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 </tr>

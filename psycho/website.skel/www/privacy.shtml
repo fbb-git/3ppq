@@ -67,34 +67,26 @@
 
 <h2>Persoonsgegevens</h2>
 
-Voor het verlenen van haar diensten via de website heeft de Werkgroep 3ppq
-enkele persoonsgegevens nodig. Bij het verwerken hiervan is de Werkgroep
-gebonden aan de Algemene Verordening Gegevensbescherming (AVG). Deze wet stelt
-regels ter bescherming van de privacy van betrokkenen.<br>
-
-De Werkgroep 3ppq gebruikt persoonsgegevens alleen voor het doel waarvoor ze
-verkregen worden. De website https://3ppq.nl kent drie soorten gebruikers van
-wie gegevens worden vastgelegd:
-
+Bij gebruik van de website <tt>https://3ppq.nl</tt> worden persoonsgegevens
+opgevraagd van:
     <ol>
-     <li> De psychologen die met behulp van de website de 3ppq bij hun
-        cli&euml;nten af willen nemen. Voor het aanmaken van een
-        gebruikersaccount worden van hen naam, lidmaatschapsnummer NIP,
-        e-mailadres en werkterrein vastgelegd. Deze gegevens blijven voor de
-        duur van de gebruikersovereenkomst worden bewaard.
-     <li> De respondenten (cli&euml;nten) die op uitnodiging van de psycholoog
-        de 3ppq invullen (zelfrapportages). Van hen wordt de (aanspreek)naam,
-        het geslacht en het e- mailadres opgeslagen voor de duur van het
-        onderzoek.
-     <li> De respondenten (anderen) die op uitnodiging van de cli&euml;nt de
-        3ppq invullen (anderrapportages). Van hen wordt alleen het e-mailadres
-        opgeslagen voor de duur van het onderzoek.
-    </ol><br>
+    <li> De psychologen die met behulp van de website de 3ppq bij hun
+cli&euml;nten af willen nemen. Voor het aanmaken van een gebruikersaccount
+worden van hen naam, lidmaatschapsnummer NIP, e-mailadres en werkterrein
+vastgelegd. Deze gegevens blijven in sterk versleutelde vorm alleen
+beschikbaar voor de psycholoog voor de duur van de gebruikersovereenkomst.
 
-Zodra het onderzoek naar de cli&euml;nt is afgerond worden de persoonsgegevens
-(namen, e- mailadressen) verwijderd. De ingevulde antwoorden van de
-respondenten blijven (anoniem) bewaard voor wetenschappelijke analyses van de
-3ppq-methode.
+    <li> De respondenten (cli&euml;nten) die op uitnodiging van de psycholoog
+de 3ppq invullen (zelfrapportages). Van hen wordt de (aanspreek)naam, het
+geslacht en het e- mailadres in sterk versleutelde vorm opgeslagen. Deze
+informatie is alleen toegankelijk voor de psycholoog, en kunnen naar inzicht
+van de psycholoog op elk gewenst moment uit het systeem worden verwijderd.
+
+    <li> De respondenten (anderen) die op uitnodiging van de cli&euml;nt de 3ppq
+invullen (anderrapportages). Van hen wordt alleen het e-mailadres in sterk
+versleutelde vorm opgeslagen. Zodra een respondent de 3ppq vragenlijst heeft
+ingevuld wordt het e-mailadres van die respondent uit het systeem verwijderd.
+    </ol>
 
 <h2>Rechten van de cli&euml;nt</h2>
 

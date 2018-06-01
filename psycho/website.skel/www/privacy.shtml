@@ -82,10 +82,11 @@ geslacht en het e- mailadres in sterk versleutelde vorm opgeslagen. Deze
 informatie is alleen toegankelijk voor de psycholoog, en kunnen naar inzicht
 van de psycholoog op elk gewenst moment uit het systeem worden verwijderd.
 
-    <li> De respondenten (anderen) die op uitnodiging van de cli&euml;nt de 3ppq
-invullen (anderrapportages). Van hen wordt alleen het e-mailadres in sterk
-versleutelde vorm opgeslagen. Zodra een respondent de 3ppq vragenlijst heeft
-ingevuld wordt het e-mailadres van die respondent uit het systeem verwijderd.
+    <li> De respondenten (anderen) die op uitnodiging van de cli&euml;nt de
+3ppq invullen (anderrapportages). Van hen wordt alleen het e-mailadres in
+sterk versleutelde vorm opgeslagen. Zodra een respondent de 3ppq vragenlijst
+heeft ingevuld, of wanneer de 3ppq afnameprocedure wordt gestaakt, wordt het
+e-mailadres van die respondent uit het systeem verwijderd.
     </ol>
 
 <h2>Rechten van de cli&euml;nt</h2>

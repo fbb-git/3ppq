@@ -11,8 +11,6 @@ Dvector2 Fscores::table() const
             ret[factor][type] = d_fscores[type][factor];
     }
 
-    cout << "\ndifferences\n\n";
-    
     for (
         size_t dest = Tools::N_PERSPECTIVES, left = 0; 
             left != Tools::N_PERSPECTIVES; 

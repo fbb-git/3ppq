@@ -9,8 +9,9 @@ class Fscores
     Dvector2 d_fscores;
 
     static double s_weights[Tools::N_FACTORS][Tools::N_QUESTIONS];
+    static double s_orgWeights[Tools::N_QUESTIONS][Tools::N_FACTORS];
 
-    Dvector2 const &d_data;
+    Dvector2 const &d_data;     // [perspectives][questions]
 
     public:
         Fscores(Dvector2 const &data);

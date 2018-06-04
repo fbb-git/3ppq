@@ -31,12 +31,12 @@ Uw antwoorden worden pas opgeslagen wanneer u &#x2018;Verstuur&#x2019; hebt
 aangeklikt. 
 <p>
 
-Wanneer u tussentijds het onderzoek afbreekt gaan uw al ingevulde antwoorden
-verloren.  U wordt dan ook verzocht om alle vragen in een keer te doorlopen. 
-Het beantwoorden van de vragen duurt ongeveer 10 minuten.
+Wanneer u tussentijds het onderzoek afbreekt gaan uw inmiddels gegeven
+antwoorden verloren.  U wordt dan ook verzocht om alle vragen in een keer te
+doorlopen.  Het beantwoorden van de vragen duurt ongeveer 10 minuten.
 
 <p>
-U blijft zelf anoniem in dit onderzoek. Uw antwoorden worden niet aan $0
+U blijft zelf anoniem in dit onderzoek. Uw antwoorden worden niet aan $1
 doorgegeven. Uw antwoorden en die van twee anderen worden gemiddeld.  
 Dit gemiddelde en de betekenis ervan zullen met $1 worden
 besproken. 

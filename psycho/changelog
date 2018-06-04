@@ -1,3 +1,12 @@
+3ppq (0.92.00)
+
+  * Recognizing  (for testing purposes) configuration option 'oneOther: true'
+    in which case one one other-rating is required.
+
+  * Various cosmetic improvements
+
+ -- Frank B. Brokken <f.b.brokken@rug.nl>  Mon, 04 Jun 2018 15:27:16 +0200
+
 3ppq (0.91.00)
 
   * Documents and reports open in new browser windows

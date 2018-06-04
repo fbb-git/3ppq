@@ -34,6 +34,9 @@ url:  http://localhost
     # log: std                      -- all but the debug msgs are logged
 log: debug
 
+    # for testing purposes: only one other-rating required
+oneOther: true
+
     # path names of used child process, not residing in website/bin
 gnuplot:    /usr/bin/gnuplot
 latex:      /usr/bin/latex

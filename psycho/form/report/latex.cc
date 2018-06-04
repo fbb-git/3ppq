@@ -12,11 +12,7 @@ void Report::latex() const
                     d_latexInput;
 
     for (size_t idx = 0; idx != 2; ++idx)
-    {
         Tools::childProcess(command);
-        g_log << "DONE" << endl;
-    }
-   
 }
 
 

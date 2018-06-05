@@ -46,6 +46,8 @@ class DataIdx
                                                     // offset 
                                                     // (not thread-safe!)
 
+        size_t size() const;                        // nRecords
+
     private:
         void extend();                  // extend the .idx file
         void updateHeader(std::ostream &out);
@@ -66,5 +68,9 @@ class DataIdx
         static bool noKey(std::string const &key);
 };
 
+inline size_t DataIdx::size() const
+{
+    return d_header[N_KEYS];
+}
         
 #endif

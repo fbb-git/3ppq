@@ -13,7 +13,7 @@ ostream &Psych::insertInto(ostream &out) const
 
     for (size_t idx = 0; idx != d_client.size(); ++idx)
         out << "        client " << (idx + 1) << ":\n" <<
-               d_client[idx];
+               d_client[idx] << '\n';
 
     return out;
 }

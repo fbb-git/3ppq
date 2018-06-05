@@ -7,20 +7,13 @@
 #include <bobcat/log>
 #include <bobcat/datetime>
 
-#include "../support/tools/tools.h"
-#include "../support/options/options.h"
-#include "../support/datastore/datastore.h"
-#include "../support/lockguard/lockguard.h"
-#include "../form/psych/psych.h"
+#include "records/records.h"
 
 extern char version[];
 extern char years[];
 extern char author[];
 
 void usage(std::string const &progname);
-int list(std::string const &data);
-int expired(std::string const &data);
-int modify(std::string const &data, std::string const &destination);
 
 using namespace std;
 using namespace FBB;

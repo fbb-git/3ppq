@@ -1,0 +1,17 @@
+#include "records.h"
+
+#include <iostream>
+//#define CERR std::cerr << __FILE__": "
+
+#include <bobcat/arg>
+
+#include "../../support/datastore/datastore.h"
+#include "../../form/psych/psych.h"
+
+//#include "../support/options/options.h"
+// #include "../support/lockguard/lockguard.h"
+
+
+using namespace std;
+using namespace FBB;
+

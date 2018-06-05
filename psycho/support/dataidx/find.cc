@@ -1,6 +1,7 @@
 #include "dataidx.ih"
 
-    // return Entry index
+    // return the Entry's index in the DataIdx table
+
 size_t DataIdx::find(Entry *entry, string const &key)
 {
     size_t idx = hash(key);                         // key's hash value

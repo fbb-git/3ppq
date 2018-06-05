@@ -3,7 +3,7 @@
 ostream &PsychClient::insertInto(ostream &out) const
 {
     return out <<
-        "           Initials and name: " << d_name.length() << ' ' << 
+        "           Initials and name: " << d_name << ' ' << 
                                             d_lastName << "\n"
         "                      gender: " << d_gender << "\n" 
         "                      e-mail: " << d_eMail << "\n"

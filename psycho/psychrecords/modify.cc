@@ -1,8 +1,8 @@
 #include "main.ih"
 
-void modify(char const *destination)
+int modify(string const &data, string const &destination)
 {
-    DataIdx dataIdx(g_options.psych() + ".idx");
+    DataIdx dataIdx(data + ".idx");
 
     DataStore newStorage{ destination };
 
@@ -16,8 +16,10 @@ void modify(char const *destination)
 
         cout << "Entry at offset " << ep->offset << endl;
 
-        Psych psych;
+        Psych psych{ data };
         psych.get(ep->key);
         psych.put(newStorage, ep->key);
     }
+
+    return 0;
 }

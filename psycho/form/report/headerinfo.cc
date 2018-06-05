@@ -2,7 +2,7 @@
 
 string Report::headerInfo() const
 {
-    Psych psych;
+    Psych psych{ g_options.psych() };
 
     if (not psych.get(Tools::md5hash(d_psychEmail)))
         throw Tools::NO_PSYCH;

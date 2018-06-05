@@ -1,0 +1,19 @@
+The DataStore object uses a DataIdx object to store the locations where
+information is stored.
+
+The DataIdx file starts with a header consisting of three uint16_t values:
+    
+    - the number of keys currently in use
+    - the numbr of bits used when computing primes
+    - the number of available locations (the capacity)
+
+Following the header, `capacity' Entries follow. Each entry consists of two
+elements:
+
+    - Tools::KEY_SIZE bytes holding the # bytes used for comuting the
+            hash-value of the key (currently, the key is the e-mail address,
+            the hash is MD5, the key size equals 16)
+
+    - offset: the offset of the data in the DataStore file.
+
+

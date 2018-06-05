@@ -13,6 +13,9 @@ namespace FBB
 
 class PsychClient
 {
+    friend std::ostream &operator<<(std::ostream &out, 
+                                    PsychClient const &client);
+
     uint16_t d_ID = 0;              // internal client nr
     uint32_t d_active = 0;          // active since, or 0 if not active
 
@@ -49,7 +52,14 @@ class PsychClient
         std::string const &name() const;
         std::string const &lastName() const;
         std::string const &eMail() const;
+
+        std::ostream &insertInto(std::ostream &out) const;
 };
+
+inline std::ostream &operator<<(std::ostream &out, PsychClient const &client)
+{
+    return client.insertInto(out);
+}
 
 inline void PsychClient::activate()
 {

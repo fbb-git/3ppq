@@ -26,11 +26,7 @@ class WIPdata;
 
 class Psych
 {
-//    struct DisplayInfo
-//    {
-//        std::string submitActions;
-//        size_t      clientIdx;          // show this client idx unless >=
-//    };                                  // d_client.size()
+    friend std::ostream &operator<<(std::ostream &out, Psych const &psych);
 
     typedef std::unordered_map<std::string, void (Psych::*)()>  Map;
     typedef std::unordered_map<std::string, 
@@ -59,7 +55,10 @@ class Psych
     uint32_t    d_time;             // registration time 
     uint16_t    d_ack;              // if != 0 then e-mail acknowledgement
                                     // pending
+
     uint16_t    d_nClients;         // # clients this psychologist
+                                    // (unique order number)
+
     uint16_t    d_ID;               // identification number
                                     
     std::string d_pwdHash;          // MD5 hash of the password (16 bytes)
@@ -71,10 +70,10 @@ class Psych
     std::string d_lastName;
     std::string d_eMail;
 
-    std::vector<PsychClient> d_client;  // client info
-
+    std::vector<PsychClient> d_client;  // client info. # actual clients is
+                                        // determined as d_client.size()
     public:
-        Psych();                    // used by the 'psychrecords' program
+        Psych(std::string const &data); 
         Psych(FBB::CGI &cgi);
         void process();
 
@@ -169,7 +168,14 @@ class Psych
         static std::string newPassword();
 
         std::vector<LockGuard> updateWIPemail() const;
+
+        std::ostream &insertInto(std::ostream &out) const;
 };
+
+inline std::ostream &operator<<(std::ostream &out, Psych const &psych)
+{
+    return psych.insertInto(out);
+}
 
 inline uint32_t Psych::registrationTime() const
 {
@@ -195,28 +201,6 @@ inline uint16_t Psych::ID() const
 {
     return d_ID;
 }
-
-//        void selectTag(std::string *clientArray, std::string *clientSelect);
-//                                            // true: clients data were changed
-//        bool displayClientPage(DisplayInfo const &displayInfo);
-//        std::string reportHyperlink(std::vector<bool> &reportExists, 
-//                                    size_t idx) const;
-//
-//                                            // true: clients data changed
-//        bool infoClient(std::string *clientArray, std::string *clientSelect,
-//                        std::vector<bool> &reportExists);
-//        size_t buildClientArray(std::string *array, 
-//                                std::vector<bool> &reportExists,
-//                                bool *clientsChanged);
-//        void buildSelectTag(std::string *select, 
-//                            std::vector<bool> const &reportExists, 
-//                            size_t idLength) const;
-//        void startSelect(std::ostream &out,  size_t idLength) const;
-//        void endSelect(std::ostream &out, bool foundReport) const;
-//        static std::string fixedWidth(std::string const &txt, size_t length,
-//                                      Tools::Align align = Tools::LEFT);
-//        uint32_t validClientData();         // throws false on failure
-//        std::vector<PsychClient>::iterator existingClient();
 
 #endif
 

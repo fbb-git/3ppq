@@ -1,16 +1,15 @@
 #include "main.ih"
 
-void expired()
+int expired(string const &data)
 {
-    DataIdx dataIdx(g_options.psych() + ".idx");
+    DataIdx dataIdx(data + ".idx");
 
     uint64_t offset = 0;
     DateTime beforeYesterday{ time(0) - 2 * 24 * 3600, DateTime::UTC };
 
     std::vector<string> eMail;
 
-    DataStore dataStore{ g_options.psych() };
-    LockGuard lg{ dataStore.lg() };
+    DataStore dataStore{ data };
 
     while (true)
     {
@@ -21,7 +20,7 @@ void expired()
 
         cout << "Entry at offset " << ep->offset << endl;
 
-        Psych psych;
+        Psych psych{ data };
         psych.get(ep->key);
 
         DateTime registrationTime(psych.registrationTime(), 
@@ -31,7 +30,7 @@ void expired()
             eMail.push_back(psych.eMail());
     }
 
-    Psych psych;
+    Psych psych{ data };
 
     for (string const &addr: eMail)
     {
@@ -44,6 +43,7 @@ void expired()
         else
             g_log << "could not auot-remove " << addr << endl;
     }
+    return 0;
 }
 
 

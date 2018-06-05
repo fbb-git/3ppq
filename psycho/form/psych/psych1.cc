@@ -1,6 +1,6 @@
 #include "psych.ih"
 
-Psych::Psych()
+Psych::Psych(string const &data)
 :
-    d_data(g_options.psych())
+    d_data(data)
 {}

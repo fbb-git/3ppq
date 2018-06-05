@@ -24,7 +24,7 @@ void Client::checkCompleted(WIPdata &wipData) const
     Report report{ wipData };
     report.generate();
 
-    Psych psych;
+    Psych psych{ g_options.psych() };
     if (not psych.get(Tools::md5hash(wipData.psychEmail())))
         throw Tools::NO_PSYCH;
 

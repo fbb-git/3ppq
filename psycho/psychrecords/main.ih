@@ -2,6 +2,8 @@
 
 #include <iostream>
 #include <string>
+
+#include <bobcat/arg>
 #include <bobcat/log>
 #include <bobcat/datetime>
 
@@ -16,9 +18,9 @@ extern char years[];
 extern char author[];
 
 void usage(std::string const &progname);
-void list();
-void expired();
-void modify(char const *destination);
+int list(std::string const &data);
+int expired(std::string const &data);
+int modify(std::string const &data, std::string const &destination);
 
 using namespace std;
 using namespace FBB;

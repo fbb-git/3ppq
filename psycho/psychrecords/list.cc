@@ -1,8 +1,8 @@
 #include "main.ih"
 
-void list()
+int list(string const &data)
 {
-    DataIdx dataIdx(g_options.psych() + ".idx");
+    DataIdx dataIdx(data + ".idx");
 
     uint64_t offset = 0;
     while (true)
@@ -14,15 +14,13 @@ void list()
 
         cout << "Entry at offset " << ep->offset << endl;
 
-        Psych psych;
+        Psych psych{ data };
         psych.get(ep->key);
 
-        DateTime registrationTime(psych.registrationTime(), 
-                                    DateTime::UTC);
-
-        cout << "   e-mail: " << psych.eMail() << 
-                ", ID = " << psych.ID() << ", acknowledged: " <<
-                                 psych.ack() << 
-                                ", since: " << registrationTime << endl;
+        if (psych.eMail().empty())
+            cout << "   (ghost)\n";
+        else
+            cout << psych << '\n';
     }
+    return 0;
 }

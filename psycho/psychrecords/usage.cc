@@ -11,8 +11,8 @@ void usage(std::string const &progname)
     "Usage: " << progname << R"R( option data [newData]
 Where:
    option - action to perform (short options between parentheses)
-       --expired (-e): remove expired psychologist registrations (older than
-               two days, without received acknowledgements)
+       --expired (-e) nDays: remove psychologist registrations (older
+               than `nDays' days) unless acknowledgements were received
        --remove (-r) email|offset: remove a record by email or offset
        --help (-h): show this help information
        --list (-l): list all entries + stored e-mail addresses in 'data'

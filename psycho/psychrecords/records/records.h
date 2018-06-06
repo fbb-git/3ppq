@@ -24,8 +24,13 @@ class Records
         void process();
 
     private:
+        void expired() const;
         void list() const;
+        void modify() const;
         void remove() const;
+
+        void removeExistingNew() const;
+        static void remove(std::string const &path);
 };
         
 #endif

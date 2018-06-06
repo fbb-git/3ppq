@@ -88,6 +88,8 @@ class Psych
 
         void deactivateClient(WIPdata const &wipData);  // 2.cc
 
+        bool erase();               // used by psychrecords
+
     private:
         void read(std::string const &data);
         bool get();                     // get psych record

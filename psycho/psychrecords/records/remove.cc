@@ -2,6 +2,8 @@
 
 void Records::remove() const
 {
+    removeExistingNew();
+
     string request;                     // get the request
     d_arg.option(&request, 'r');
 

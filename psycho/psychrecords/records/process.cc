@@ -8,11 +8,11 @@ void Records::process()
     if (d_arg.option('r'))
         return remove();
 
-//    if (d_arg.option('e'))
-//        return expired(arg[0]);
-//
-//    if (d_arg.option(&newData, 'm'))
-//        return modify(arg[0], newData);
+    if (d_arg.option('e'))
+        return expired();
+
+    if (d_arg.option('m'))
+        return modify();
 
     d_arg.help();
 

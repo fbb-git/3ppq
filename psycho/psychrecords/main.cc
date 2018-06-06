@@ -4,7 +4,7 @@ namespace {
 
 Arg::LongOption longOptions[] =
 {
-    Arg::LongOption{"expired", 'e'},
+    Arg::LongOption{"expired", 'e'},        // number of days
     Arg::LongOption{"list", 'l'},
     Arg::LongOption{"log", 'L'},
     Arg::LongOption{"modify", 'm'},
@@ -22,7 +22,8 @@ Log g_log;
 int main(int argc, char **argv)
 try
 {
-    Arg &arg = Arg::initialize("ehlL:mr:v", longOptions, longEnd, argc, argv);
+    Arg &arg = Arg::initialize("e:hlL:mr:v", longOptions, longEnd, 
+                               argc, argv);
 
     arg.versionHelp(usage, version, 1);
 

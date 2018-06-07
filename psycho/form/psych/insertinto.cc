@@ -6,6 +6,7 @@ ostream &Psych::insertInto(ostream &out) const
 
     out <<
         "   Initials and name: " << d_name << ' ' << d_lastName << "\n"
+        "             E-mail: `" << d_eMail << "'\n"
         "        Registration: " << registrationTime << "\n"
         "                 NIP: " << d_nip << "\n"
         "                  ID: " << d_ID << "\n"
